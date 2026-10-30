@@ -162,3 +162,16 @@ def test_ideas_respect_style_defaults_and_avoid(saas, g, idx):
         defaults = idx[x["style"]].get("ideas") or []
         # at least half of the style's own defaults survive into the bundle
         assert len(set(defaults) & set(x["ideas"])) >= max(1, len(defaults) // 2), (x["style"], x["ideas"])
+
+
+def test_ideas_for_other_product_types_are_not_picked(saas, g, idx):
+    """An idea whose only product-type edges point elsewhere (a commerce drawer, a portfolio bio hero)
+    must not land on a SaaS direction unless the style itself asks for it."""
+    for x in recommend(saas, g, 5):
+        defaults = set(idx[x["style"]].get("ideas") or [])
+        for iid in x["ideas"]:
+            if iid in defaults:
+                continue
+            suits = [e for e in g["edges"] if e["kind"] == "suits" and e["to"] == iid]
+            if suits:
+                assert any(e["from"] == "product-type.saas" for e in suits), (x["style"], iid)

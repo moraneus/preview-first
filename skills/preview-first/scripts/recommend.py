@@ -34,6 +34,10 @@ LIST_KINDS = {
 
 class _Graph:
     def __init__(self, graph: dict):
+        self.incoming: Dict[str, List[dict]] = defaultdict(list)
+        for e in graph.get("edges", []):
+            if e.get("kind") == "suits":
+                self.incoming[e["to"]].append(e)
         self.graph = graph
         self.idx = _common.node_index(graph)
         self.by_kind = _common.nodes_by_kind(graph)
@@ -209,6 +213,8 @@ def _idea_scores(g: _Graph, style: dict, product: str, moods: List[str], page_ty
         e = g.edge(product, iid, "suits")
         if e:
             score += 0.6 * float(e["weight"])
+        elif g.incoming.get(iid) and iid not in defaults:
+            continue  # the idea names other product types and not this one: a commerce drawer on a SaaS page
         for m in moods:
             e = g.edge(m, iid, "expresses")
             if e:
@@ -257,7 +263,10 @@ def _ideas_for(g: _Graph, style: dict, product: str, moods: List[str], page_type
 
     for slot in IDEA_SLOTS:
         allow_zero = slot in (("navigation",), ("typography", "craft"))  # every direction gets a nav device and one type craft; other slots need a real fit
-        pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and (sc > 0 or allow_zero) and ok(iid, True)), None)
+        # prefer ideas the draft can show (a render hook), then contract-only ones
+        pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and g.idx[iid].get("renders") and (sc > 0 or allow_zero) and ok(iid, True)), None)
+        if pick is None:
+            pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and (sc > 0 or allow_zero) and ok(iid, True)), None)
         if pick is None and allow_zero:
             pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and ok(iid, False)), None)
         if pick:
