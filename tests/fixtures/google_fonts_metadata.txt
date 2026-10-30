@@ -1,0 +1,2 @@
+)]}'
+{"familyMetadataList":[{"family":"Inter","displayName":null,"category":"Sans Serif","popularity":2,"trending":40,"lastModified":"2026-09-01","fonts":{"400":{}}},{"family":"Figtree","category":"Sans Serif","popularity":25,"trending":3,"lastModified":"2026-08-11","fonts":{"400":{},"500":{}}},{"family":"Fraunces","category":"Serif","popularity":130,"trending":12,"lastModified":"2026-05-02","fonts":{"600":{}}}],"promotedScript":null}

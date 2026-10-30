@@ -1,0 +1,37 @@
+name: weekly knowledge refresh
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh live knowledge into the bundled snapshot
+        run: python3 skills/preview-first/scripts/refresh_knowledge.py --bundled
+      - name: Validate and test
+        run: |
+          python3 skills/preview-first/scripts/validate_graph.py --quiet
+          python3 -m pip install --quiet pytest
+          python3 -m pytest -q
+      - name: Open a pull request with the refreshed data
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore(knowledge): weekly live refresh"
+          title: "chore(knowledge): weekly live refresh"
+          body: |
+            Automated refresh of `skills/preview-first/knowledge/live/` (font popularity, Baseline status, library releases, design feeds).
+            Review the diff for anything surprising before merging.
+          branch: chore/knowledge-refresh
+          delete-branch: true
+          labels: knowledge

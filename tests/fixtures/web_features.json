@@ -1,0 +1,5 @@
+{"features": {
+  "container-queries": {"name": "Container queries", "status": {"baseline": "high", "baseline_low_date": "2023-02-14", "baseline_high_date": "2025-08-14", "support": {"chrome": "106", "firefox": "110", "safari": "16"}}},
+  "anchor-positioning": {"name": "Anchor positioning", "status": {"baseline": false, "support": {"chrome": "125", "safari": "27"}}},
+  "light-dark": {"name": "light-dark()", "status": {"baseline": "low", "baseline_low_date": "2024-05-13", "support": {"chrome": "123", "firefox": "120", "safari": "17.5"}}}
+}}

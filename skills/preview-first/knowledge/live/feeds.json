@@ -1,0 +1,650 @@
+{
+  "fetched": "2026-10-30T06:21:54+00:00",
+  "feeds": {
+    "web.dev": {
+      "url": "https://web.dev/static/blog/feed.xml",
+      "items": [
+        {
+          "title": "New to the web platform in September",
+          "link": "https://web.dev/blog/web-platform-09-2026?hl=en",
+          "updated": "Fri, 02 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "August 2026 Baseline monthly digest",
+          "link": "https://web.dev/blog/baseline-digest-aug-2026?hl=en",
+          "updated": "Mon, 28 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Find features to support for Interop 2027 with your coding agent",
+          "link": "https://web.dev/blog/coding-agents-interop-proposals?hl=en",
+          "updated": "Fri, 18 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Submit your proposals for Interop 2027",
+          "link": "https://web.dev/blog/interop-2027-proposals?hl=en",
+          "updated": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New to the web platform in August",
+          "link": "https://web.dev/blog/web-platform-08-2026?hl=en",
+          "updated": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "July 2026 Baseline monthly digest",
+          "link": "https://web.dev/blog/baseline-digest-jul-2026?hl=en",
+          "updated": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New to the web platform in July",
+          "link": "https://web.dev/blog/web-platform-07-2026?hl=en",
+          "updated": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Baseline Features audit is now available in Lighthouse",
+          "link": "https://web.dev/blog/baseline-lighthouse-features-audit?hl=en",
+          "updated": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "June 2026 Baseline monthly digest",
+          "link": "https://web.dev/blog/baseline-digest-jun-2026?hl=en",
+          "updated": "Fri, 17 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New to the web platform in June",
+          "link": "https://web.dev/blog/web-platform-06-2026?hl=en",
+          "updated": "Tue, 30 Jun 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    "Chrome for Developers": {
+      "url": "https://developer.chrome.com/static/blog/feed.xml",
+      "items": [
+        {
+          "title": "What's New in WebGPU (Chrome 155-156)",
+          "link": "https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en",
+          "updated": "Wed, 07 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Shipping JPEG XL in Chrome",
+          "link": "https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en",
+          "updated": "Tue, 06 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Email verification updates, October 2026",
+          "link": "https://developer.chrome.com/blog/email-verification-october-2026?hl=en",
+          "updated": "Mon, 05 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chrome 156 beta",
+          "link": "https://developer.chrome.com/blog/chrome-156-beta?hl=en",
+          "updated": "Wed, 30 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "HTML-in-Canvas updates: Iterating toward a better Web API",
+          "link": "https://developer.chrome.com/blog/html-in-canvas-ot-changes?hl=en",
+          "updated": "Tue, 29 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Connection allowlists: Secure your web application's network access",
+          "link": "https://developer.chrome.com/blog/connection-allowlist-announcement?hl=en",
+          "updated": "Wed, 23 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New in Chrome 154",
+          "link": "https://developer.chrome.com/blog/new-in-chrome-154?hl=en",
+          "updated": "Tue, 22 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New in DevTools - October 2026",
+          "link": "https://developer.chrome.com/blog/new-in-devtools-october-2026?hl=en",
+          "updated": "Tue, 22 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Enhance multitasking extensions with the new Tabs Split View API",
+          "link": "https://developer.chrome.com/blog/split-view-api-extensions?hl=en",
+          "updated": "Wed, 16 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chrome 155 beta",
+          "link": "https://developer.chrome.com/blog/chrome-155-beta?hl=en",
+          "updated": "Wed, 16 Sep 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    "Smashing Magazine": {
+      "url": "https://www.smashingmagazine.com/feed/",
+      "items": [
+        {
+          "title": "Accordion Icons: Which Work Best?",
+          "link": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
+          "updated": "Fri, 23 Oct 2026 13:00:00 GMT"
+        },
+        {
+          "title": "Embracing Playful Imperfection With The CSS `random()` Function",
+          "link": "https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/",
+          "updated": "Tue, 20 Oct 2026 10:00:00 GMT"
+        },
+        {
+          "title": "Is Your Organization Messing Up AI Adoption?",
+          "link": "https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/",
+          "updated": "Fri, 16 Oct 2026 10:00:00 GMT"
+        },
+        {
+          "title": "A Practical Guide To Naming Things",
+          "link": "https://smashingmagazine.com/2026/10/how-name-things/",
+          "updated": "Tue, 06 Oct 2026 10:00:00 GMT"
+        },
+        {
+          "title": "Under Autumn’s Spell (October 2026 Wallpapers Edition)",
+          "link": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
+          "updated": "Wed, 30 Sep 2026 13:30:00 GMT"
+        },
+        {
+          "title": "Stop Treating CSS Container Queries Like Traditional Media Queries",
+          "link": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
+          "updated": "Wed, 16 Sep 2026 13:00:00 GMT"
+        },
+        {
+          "title": "Building A UX ROI Case That Survives The Boardroom",
+          "link": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
+          "updated": "Fri, 11 Sep 2026 13:00:00 GMT"
+        },
+        {
+          "title": "The Death Of The Button: Why The Best Interface Is No Interface",
+          "link": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
+          "updated": "Wed, 09 Sep 2026 10:00:00 GMT"
+        },
+        {
+          "title": "The Many Faces Of September (2026 Wallpapers Edition)",
+          "link": "https://smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/",
+          "updated": "Mon, 31 Aug 2026 11:00:00 GMT"
+        },
+        {
+          "title": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions",
+          "link": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
+          "updated": "Wed, 26 Aug 2026 13:00:00 GMT"
+        },
+        {
+          "title": "Why Your Website Should Never Stop Changing",
+          "link": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
+          "updated": "Tue, 25 Aug 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Timing Charts: A Blueprint For SMIL Animations",
+          "link": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
+          "updated": "Thu, 20 Aug 2026 13:00:00 GMT"
+        },
+        {
+          "title": "New EU Guidelines For AI Labelling",
+          "link": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/",
+          "updated": "Thu, 13 Aug 2026 10:00:00 GMT"
+        },
+        {
+          "title": "Building Tactile UX: Honoring Intentional Design With Lottie",
+          "link": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
+          "updated": "Tue, 11 Aug 2026 10:00:00 GMT"
+        },
+        {
+          "title": "How Baseline Can Help You Ship Less JavaScript",
+          "link": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
+          "updated": "Fri, 07 Aug 2026 13:00:00 GMT"
+        }
+      ]
+    },
+    "CSS-Tricks": {
+      "url": "https://css-tricks.com/feed/",
+      "items": [
+        {
+          "title": "The Frankenstein Table",
+          "link": "https://css-tricks.com/the-frankenstein-table/",
+          "updated": "Thu, 29 Oct 2026 13:47:08 +0000"
+        },
+        {
+          "title": "What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and More",
+          "link": "https://css-tricks.com/whats-important-19/",
+          "updated": "Tue, 27 Oct 2026 15:09:16 +0000"
+        },
+        {
+          "title": "CSS-Tricks has a new owner!",
+          "link": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+          "updated": "Mon, 26 Oct 2026 15:29:36 +0000"
+        },
+        {
+          "title": "Let’s Use the Emergent CSS random() Function in all the Browsers",
+          "link": "https://css-tricks.com/css-random-function-polyfill/",
+          "updated": "Mon, 31 Aug 2026 15:12:19 +0000"
+        },
+        {
+          "title": "What’s !important #18: <geolocation>, Syntax ::highlight()ing, named-feature(), and More",
+          "link": "https://css-tricks.com/whats-important-18/",
+          "updated": "Mon, 31 Aug 2026 14:08:55 +0000"
+        },
+        {
+          "title": "Creating Web Widgets Using the Document Picture-in-Picture API",
+          "link": "https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/",
+          "updated": "Thu, 27 Aug 2026 14:41:06 +0000"
+        },
+        {
+          "title": "animation-trigger",
+          "link": "https://css-tricks.com/almanac/properties/a/animation-trigger/",
+          "updated": "Wed, 26 Aug 2026 15:38:41 +0000"
+        },
+        {
+          "title": "MicroLighter: Syntax Highlighter",
+          "link": "https://css-tricks.com/microlighter-syntax-highlighter/",
+          "updated": "Tue, 25 Aug 2026 14:10:34 +0000"
+        },
+        {
+          "title": "WordPress PHP-Only Block Registration",
+          "link": "https://css-tricks.com/wordpress-php-block-registration/",
+          "updated": "Mon, 24 Aug 2026 13:54:02 +0000"
+        },
+        {
+          "title": "Resolved: CSS Class Prefix Selector",
+          "link": "https://css-tricks.com/resolved-css-class-prefix-selector/",
+          "updated": "Fri, 21 Aug 2026 15:13:03 +0000"
+        },
+        {
+          "title": "CSS Navigation Matching, Early Days",
+          "link": "https://css-tricks.com/css-navigation-matching-early-days/",
+          "updated": "Wed, 19 Aug 2026 14:44:41 +0000"
+        },
+        {
+          "title": "WordPress.com Student Plan",
+          "link": "https://css-tricks.com/wordpress-student-plan/",
+          "updated": "Wed, 19 Aug 2026 08:50:00 +0000"
+        },
+        {
+          "title": "Dark mode toggles: two states are enough",
+          "link": "https://css-tricks.com/dark-mode-toggles-two-states-are-enough/",
+          "updated": "Mon, 17 Aug 2026 14:15:50 +0000"
+        },
+        {
+          "title": "What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More",
+          "link": "https://css-tricks.com/whats-important-17/",
+          "updated": "Fri, 14 Aug 2026 14:01:51 +0000"
+        },
+        {
+          "title": "Blocked aria-hidden: The Warning is Right, and Every Fix You’ve Found is Wrong",
+          "link": "https://css-tricks.com/blocked-aria-hidden-fix/",
+          "updated": "Wed, 12 Aug 2026 13:43:56 +0000"
+        }
+      ]
+    },
+    "Josh Comeau": {
+      "url": "https://www.joshwcomeau.com/rss.xml",
+      "items": [
+        {
+          "title": "The Future of CSS ✨",
+          "link": "https://www.joshwcomeau.com/css/interop-2027/",
+          "updated": "Tue, 20 Oct 2026 13:15:00 GMT"
+        },
+        {
+          "title": "Getting Started with Anchor Positioning",
+          "link": "https://www.joshwcomeau.com/css/anchor-positioning/",
+          "updated": "Mon, 06 Jul 2026 13:15:00 GMT"
+        },
+        {
+          "title": "CSS vs. JavaScript",
+          "link": "https://www.joshwcomeau.com/animation/css-vs-javascript/",
+          "updated": "Tue, 26 May 2026 13:30:00 GMT"
+        },
+        {
+          "title": "Scroll-Driven Animations",
+          "link": "https://www.joshwcomeau.com/animation/scroll-driven-animations/",
+          "updated": "Tue, 28 Apr 2026 12:00:00 GMT"
+        },
+        {
+          "title": "Squash and Stretch",
+          "link": "https://www.joshwcomeau.com/animation/squash-and-stretch/",
+          "updated": "Mon, 13 Apr 2026 12:00:00 GMT"
+        },
+        {
+          "title": "Sneaky Header Blocker Trick",
+          "link": "https://www.joshwcomeau.com/css/header-blockers/",
+          "updated": "Mon, 23 Mar 2026 12:00:00 GMT"
+        },
+        {
+          "title": "Sprites on the Web",
+          "link": "https://www.joshwcomeau.com/animation/sprites/",
+          "updated": "Mon, 23 Feb 2026 11:00:00 GMT"
+        },
+        {
+          "title": "Brand New Layouts with CSS Subgrid",
+          "link": "https://www.joshwcomeau.com/css/subgrid/",
+          "updated": "Tue, 25 Nov 2025 12:00:00 GMT"
+        },
+        {
+          "title": "Springs and Bounces in Native CSS",
+          "link": "https://www.joshwcomeau.com/animation/linear-timing-function/",
+          "updated": "Tue, 28 Oct 2025 12:00:00 GMT"
+        },
+        {
+          "title": "The Big Gotcha With @starting-style",
+          "link": "https://www.joshwcomeau.com/css/starting-style/",
+          "updated": "Mon, 22 Sep 2025 11:30:00 GMT"
+        },
+        {
+          "title": "Color Shifting in CSS",
+          "link": "https://www.joshwcomeau.com/animation/color-shifting/",
+          "updated": "Mon, 08 Sep 2025 13:30:00 GMT"
+        },
+        {
+          "title": "An Interactive Guide to SVG Paths",
+          "link": "https://www.joshwcomeau.com/svg/interactive-guide-to-paths/",
+          "updated": "Mon, 18 Aug 2025 13:30:00 GMT"
+        },
+        {
+          "title": "A Friendly Introduction to SVG",
+          "link": "https://www.joshwcomeau.com/svg/friendly-introduction-to-svg/",
+          "updated": "Mon, 21 Jul 2025 13:30:00 GMT"
+        },
+        {
+          "title": "Partial Keyframes",
+          "link": "https://www.joshwcomeau.com/animation/partial-keyframes/",
+          "updated": "Tue, 10 Jun 2025 11:00:00 GMT"
+        },
+        {
+          "title": "The Height Enigma",
+          "link": "https://www.joshwcomeau.com/css/height-enigma/",
+          "updated": "Mon, 12 May 2025 11:30:00 GMT"
+        }
+      ]
+    },
+    "Tailwind CSS blog": {
+      "url": "https://tailwindcss.com/feeds/feed.xml",
+      "items": [
+        {
+          "title": "Tailwind Labs is joining Shopify",
+          "link": "https://tailwindcss.com/blog/tailwind-is-joining-shopify",
+          "updated": "Wed, 09 Sep 2026 13:15:00 GMT"
+        },
+        {
+          "title": "Tailwind CSS v4.3: Scrollbars, new colors, and more",
+          "link": "https://tailwindcss.com/blog/tailwindcss-v4-3",
+          "updated": "Fri, 08 May 2026 20:00:00 GMT"
+        },
+        {
+          "title": "Vanilla JavaScript support for Tailwind Plus",
+          "link": "https://tailwindcss.com/blog/vanilla-js-support-for-tailwind-plus",
+          "updated": "Fri, 25 Jul 2025 14:30:00 GMT"
+        },
+        {
+          "title": "Compass: A starter kit for online courses",
+          "link": "https://tailwindcss.com/blog/2025-05-14-compass-course-starter-kit",
+          "updated": "Wed, 14 May 2025 19:00:00 GMT"
+        },
+        {
+          "title": "Tailwind CSS v4.1: Text shadows, masks, and tons more",
+          "link": "https://tailwindcss.com/blog/tailwindcss-v4-1",
+          "updated": "Thu, 03 Apr 2025 20:00:00 GMT"
+        },
+        {
+          "title": "Tailwind UI is now Tailwind Plus",
+          "link": "https://tailwindcss.com/blog/tailwind-plus",
+          "updated": "Tue, 04 Mar 2025 16:00:00 GMT"
+        },
+        {
+          "title": "Tailwind CSS v4.0",
+          "link": "https://tailwindcss.com/blog/tailwindcss-v4",
+          "updated": "Wed, 22 Jan 2025 22:00:00 GMT"
+        },
+        {
+          "title": "Tailwind CSS v4.0 Beta 1",
+          "link": "https://tailwindcss.com/blog/tailwindcss-v4-beta",
+          "updated": "Thu, 21 Nov 2024 18:30:00 GMT"
+        },
+        {
+          "title": "Radiant: A beautiful new marketing site template",
+          "link": "https://tailwindcss.com/blog/2024-09-12-radiant-a-beautiful-new-marketing-site-template",
+          "updated": "Thu, 12 Sep 2024 10:30:00 GMT"
+        },
+        {
+          "title": "Headless UI v2.1: Simplified transition API and improved multi-dialog support",
+          "link": "https://tailwindcss.com/blog/2024-06-21-headless-ui-v2-1",
+          "updated": "Fri, 21 Jun 2024 15:00:00 GMT"
+        },
+        {
+          "title": "Automatically clean up whitespace and duplicate class names",
+          "link": "https://tailwindcss.com/blog/2024-05-30-prettier-plugin-collapse-whitespace",
+          "updated": "Fri, 31 May 2024 16:30:00 GMT"
+        },
+        {
+          "title": "Catalyst: Application layouts, navigation menus, description lists, and more",
+          "link": "https://tailwindcss.com/blog/2024-05-24-catalyst-application-layouts",
+          "updated": "Fri, 24 May 2024 20:00:00 GMT"
+        },
+        {
+          "title": "Headless UI v2.0 for React",
+          "link": "https://tailwindcss.com/blog/headless-ui-v2",
+          "updated": "Tue, 07 May 2024 16:00:00 GMT"
+        },
+        {
+          "title": "We're hiring a Design Engineer + Staff Engineer",
+          "link": "https://tailwindcss.com/blog/hiring-a-design-engineer-and-staff-engineer",
+          "updated": "Tue, 19 Mar 2024 18:00:00 GMT"
+        },
+        {
+          "title": "Open-sourcing our progress on Tailwind CSS v4.0",
+          "link": "https://tailwindcss.com/blog/tailwindcss-v4-alpha",
+          "updated": "Wed, 06 Mar 2024 16:30:00 GMT"
+        }
+      ]
+    },
+    "Vercel blog": {
+      "url": "https://vercel.com/atom",
+      "items": [
+        {
+          "title": "Strix now supports Vercel AI Gateway",
+          "link": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
+          "updated": "2026-10-29T18:44:00.000Z"
+        },
+        {
+          "title": "IP geolocation now covers more visitors at higher resolution",
+          "link": "https://vercel.com/changelog/improved-ip-geolocation-data",
+          "updated": "2026-10-29T17:00:00.000Z"
+        },
+        {
+          "title": "Vercel Flags starts 7x faster and no longer extends function duration",
+          "link": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
+          "updated": "2026-10-29T06:00:00.000Z"
+        },
+        {
+          "title": "The fx adapter now runs the harness on the host",
+          "link": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
+          "updated": "2026-10-29T06:00:00.000Z"
+        },
+        {
+          "title": "Node.js 26 LTS is now Generally Available on Vercel",
+          "link": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
+          "updated": "2026-10-29T00:00:00.000Z"
+        },
+        {
+          "title": "Vercel Connect adds webhook triggers for more providers",
+          "link": "https://vercel.com/changelog/vercel-connect-adds-webhook-triggers-for-more-providers",
+          "updated": "2026-10-29T00:00:00.000Z"
+        },
+        {
+          "title": "Control AI crawlers and assistants separately in Vercel Firewall",
+          "link": "https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules",
+          "updated": "2026-10-29T00:00:00.000Z"
+        },
+        {
+          "title": "Vercel Plugin is now available in Antigravity",
+          "link": "https://vercel.com/changelog/vercel-plugin-is-now-available-in-antigravity",
+          "updated": "2026-10-29T00:00:00.000Z"
+        },
+        {
+          "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
+          "link": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
+          "updated": "2026-10-29T00:00:00.000Z"
+        },
+        {
+          "title": "Vercel CI is now in beta",
+          "link": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
+          "updated": "2026-10-28T19:00:00.000Z"
+        },
+        {
+          "title": "Box Mount now runs in Vercel Sandbox",
+          "link": "https://vercel.com/changelog/box-mount-now-runs-in-vercel-sandbox",
+          "updated": "2026-10-28T18:00:00.000Z"
+        },
+        {
+          "title": "Vercel Container Registry now supports 2 GB compressed image layers",
+          "link": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers-new",
+          "updated": "2026-10-28T09:32:00.000Z"
+        },
+        {
+          "title": "Introducing Virtual Models on AI Gateway",
+          "link": "https://vercel.com/blog/ai-gateway-virtual-models",
+          "updated": "2026-10-28T07:25:00.000Z"
+        },
+        {
+          "title": "Introducing Vercel CI",
+          "link": "https://vercel.com/blog/introducing-vercel-ci",
+          "updated": "2026-10-28T07:00:00.000Z"
+        },
+        {
+          "title": "Vercel Agent can now validate alerts before paging",
+          "link": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
+          "updated": "2026-10-28T06:00:00.000Z"
+        }
+      ]
+    },
+    "WebKit blog": {
+      "url": "https://webkit.org/feed/",
+      "items": [
+        {
+          "title": "WebKit Features for Safari 27.2",
+          "link": "https://webkit.org/blog/18515/webkit-features-for-safari-27-2/",
+          "updated": "Mon, 26 Oct 2026 18:30:01 +0000"
+        },
+        {
+          "title": "WebKit Features for Safari 27.1",
+          "link": "https://webkit.org/blog/18486/webkit-features-for-safari-27-1/",
+          "updated": "Fri, 23 Oct 2026 17:00:59 +0000"
+        },
+        {
+          "title": "Release Notes for Safari Technology Preview 255",
+          "link": "https://webkit.org/blog/18482/release-notes-for-safari-technology-preview-255/",
+          "updated": "Thu, 22 Oct 2026 21:22:48 +0000"
+        },
+        {
+          "title": "Blocking Identity Resolution Infrastructure",
+          "link": "https://webkit.org/blog/18438/blocking-identity-resolution-infrastructure/",
+          "updated": "Mon, 19 Oct 2026 17:50:24 +0000"
+        },
+        {
+          "title": "Release Notes for Safari Technology Preview 254",
+          "link": "https://webkit.org/blog/18420/release-notes-for-safari-technology-preview-254/",
+          "updated": "Thu, 08 Oct 2026 23:29:40 +0000"
+        },
+        {
+          "title": "Release Notes for Safari Technology Preview 253",
+          "link": "https://webkit.org/blog/18357/release-notes-for-safari-technology-preview-253/",
+          "updated": "Wed, 23 Sep 2026 21:46:47 +0000"
+        },
+        {
+          "title": "WebKit Features for Safari 27.0",
+          "link": "https://webkit.org/blog/18325/webkit-features-for-safari-27-0/",
+          "updated": "Thu, 17 Sep 2026 11:30:41 +0000"
+        },
+        {
+          "title": "Release Notes for Safari Technology Preview 252",
+          "link": "https://webkit.org/blog/18304/release-notes-for-safari-technology-preview-252/",
+          "updated": "Fri, 11 Sep 2026 17:02:22 +0000"
+        },
+        {
+          "title": "Submit your ideas for Interop 2027",
+          "link": "https://webkit.org/blog/18283/submit-your-ideas-for-interop-2027/",
+          "updated": "Thu, 03 Sep 2026 21:53:33 +0000"
+        },
+        {
+          "title": "Fixing Top-Level Await in Safari",
+          "link": "https://webkit.org/blog/18227/fixing-top-level-await-in-safari/",
+          "updated": "Wed, 02 Sep 2026 17:05:29 +0000"
+        }
+      ]
+    },
+    "Mozilla Hacks": {
+      "url": "https://hacks.mozilla.org/feed/",
+      "items": [
+        {
+          "title": "Intent to Ship: JPEG XL",
+          "link": "https://hacks.mozilla.org/2026/08/intent-to-ship-jpeg-xl/",
+          "updated": "Mon, 24 Aug 2026 15:32:15 +0000"
+        },
+        {
+          "title": "PACT: Anonymous Credentials for the Web",
+          "link": "https://hacks.mozilla.org/2026/06/pact-anonymous-credentials-for-the-web/",
+          "updated": "Tue, 23 Jun 2026 15:29:52 +0000"
+        },
+        {
+          "title": "Announcing Web Serial Support in Firefox",
+          "link": "https://hacks.mozilla.org/2026/05/web-serial-support-in-firefox/",
+          "updated": "Thu, 21 May 2026 18:00:05 +0000"
+        },
+        {
+          "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+          "link": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+          "updated": "Thu, 07 May 2026 16:01:21 +0000"
+        },
+        {
+          "title": "Trustworthy JavaScript for the Open Web",
+          "link": "https://hacks.mozilla.org/2026/05/trustworthy-javascript-for-the-open-web/",
+          "updated": "Tue, 05 May 2026 15:49:11 +0000"
+        },
+        {
+          "title": "Firefox Developer Edition and Beta: Try out Mozilla’s .rpm package!",
+          "link": "https://hacks.mozilla.org/2026/03/firefox-developer-edition-and-beta-try-out-mozillas-rpm-package/",
+          "updated": "Wed, 25 Mar 2026 16:17:11 +0000"
+        },
+        {
+          "title": "Why is WebAssembly a second-class language on the web?",
+          "link": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
+          "updated": "Thu, 26 Feb 2026 16:02:36 +0000"
+        },
+        {
+          "title": "Goodbye innerHTML, Hello setHTML: Stronger XSS Protection in Firefox 148",
+          "link": "https://hacks.mozilla.org/2026/02/goodbye-innerhtml-hello-sethtml-stronger-xss-protection-in-firefox-148/",
+          "updated": "Tue, 24 Feb 2026 13:00:02 +0000"
+        },
+        {
+          "title": "Launching Interop 2026",
+          "link": "https://hacks.mozilla.org/2026/02/launching-interop-2026/",
+          "updated": "Thu, 12 Feb 2026 17:07:24 +0000"
+        },
+        {
+          "title": "CRLite: Fast, private, and comprehensive certificate revocation checking in Firefox",
+          "link": "https://hacks.mozilla.org/2025/08/crlite-fast-private-and-comprehensive-certificate-revocation-checking-in-firefox/",
+          "updated": "Tue, 19 Aug 2025 16:03:19 +0000"
+        },
+        {
+          "title": "Improving Firefox Stability in the Enterprise by Reducing DLL Injection",
+          "link": "https://hacks.mozilla.org/2025/03/improving-firefox-stability-in-the-enterprise-by-reducing-dll-injection/",
+          "updated": "Tue, 25 Mar 2025 18:31:16 +0000"
+        },
+        {
+          "title": "Launching Interop 2025",
+          "link": "https://hacks.mozilla.org/2025/02/interop-2025/",
+          "updated": "Thu, 13 Feb 2025 16:59:13 +0000"
+        },
+        {
+          "title": "Introducing Uniffi for React Native: Rust-Powered Turbo Modules",
+          "link": "https://hacks.mozilla.org/2024/12/introducing-uniffi-for-react-native-rust-powered-turbo-modules/",
+          "updated": "Wed, 04 Dec 2024 19:38:01 +0000"
+        },
+        {
+          "title": "Llamafile v0.8.14: a new UI, performance gains, and more",
+          "link": "https://hacks.mozilla.org/2024/10/llamafile-v0-8-14-a-new-ui-performance-gains-and-more/",
+          "updated": "Wed, 16 Oct 2024 13:32:30 +0000"
+        },
+        {
+          "title": "0Din: A GenAI Bug Bounty Program – Securing Tomorrow’s AI Together",
+          "link": "https://hacks.mozilla.org/2024/08/0din-a-genai-bug-bounty-program-securing-tomorrows-ai-together/",
+          "updated": "Thu, 08 Aug 2024 18:39:13 +0000"
+        }
+      ]
+    }
+  }
+}

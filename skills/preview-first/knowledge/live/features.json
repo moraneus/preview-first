@@ -1,0 +1,237 @@
+{
+  "fetched": "2026-10-30T06:21:41+00:00",
+  "source": "web-features",
+  "features": {
+    "container-queries": {
+      "name": "Container queries (size)",
+      "baseline": "widely",
+      "baseline_low_date": "2023-02-14",
+      "baseline_high_date": "2025-08-14",
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "110",
+        "firefox_android": "110",
+        "safari": "16",
+        "safari_ios": "16"
+      }
+    },
+    "has": {
+      "name": ":has()",
+      "baseline": "widely",
+      "baseline_low_date": "2023-12-19",
+      "baseline_high_date": "2026-06-19",
+      "support": {
+        "chrome": "105",
+        "chrome_android": "105",
+        "edge": "105",
+        "firefox": "121",
+        "firefox_android": "121",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "oklab": {
+      "name": "Oklab and OkLCh",
+      "baseline": "widely",
+      "baseline_low_date": "2023-05-09",
+      "baseline_high_date": "2025-11-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "113",
+        "firefox_android": "113",
+        "safari": "15.4",
+        "safari_ios": "15.4"
+      }
+    },
+    "color-mix": {
+      "name": "color-mix()",
+      "baseline": "widely",
+      "baseline_low_date": "2023-05-09",
+      "baseline_high_date": "2025-11-09",
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "113",
+        "firefox_android": "113",
+        "safari": "16.2",
+        "safari_ios": "16.2"
+      }
+    },
+    "relative-color": {
+      "name": "Relative colors",
+      "baseline": "newly",
+      "baseline_low_date": "2024-09-16",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "125",
+        "chrome_android": "125",
+        "edge": "125",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "18",
+        "safari_ios": "18"
+      }
+    },
+    "light-dark": {
+      "name": "light-dark()",
+      "baseline": "newly",
+      "baseline_low_date": "2024-05-13",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "123",
+        "chrome_android": "123",
+        "edge": "123",
+        "firefox": "120",
+        "firefox_android": "120",
+        "safari": "17.5",
+        "safari_ios": "17.5"
+      }
+    },
+    "registered-custom-properties": {
+      "name": "Registered custom properties",
+      "baseline": "newly",
+      "baseline_low_date": "2024-07-09",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "85",
+        "chrome_android": "85",
+        "edge": "85",
+        "firefox": "128",
+        "firefox_android": "128",
+        "safari": "16.4",
+        "safari_ios": "16.4"
+      }
+    },
+    "starting-style": {
+      "name": "@starting-style",
+      "baseline": "newly",
+      "baseline_low_date": "2024-08-06",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "firefox": "129",
+        "firefox_android": "129",
+        "safari": "17.5",
+        "safari_ios": "17.5"
+      }
+    },
+    "popover": {
+      "name": "Popover",
+      "baseline": "newly",
+      "baseline_low_date": "2025-01-27",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "116",
+        "chrome_android": "116",
+        "edge": "116",
+        "firefox": "125",
+        "firefox_android": "125",
+        "safari": "17",
+        "safari_ios": "18.3"
+      }
+    },
+    "text-wrap-balance": {
+      "name": "text-wrap: balance",
+      "baseline": "newly",
+      "baseline_low_date": "2024-05-13",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "114",
+        "chrome_android": "114",
+        "edge": "114",
+        "firefox": "121",
+        "firefox_android": "121",
+        "safari": "17.5",
+        "safari_ios": "17.5"
+      }
+    },
+    "text-wrap-pretty": {
+      "name": "text-wrap: pretty",
+      "baseline": "limited",
+      "baseline_low_date": null,
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "117",
+        "chrome_android": "117",
+        "edge": "117",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "anchor-positioning": {
+      "name": "Anchor positioning",
+      "baseline": "limited",
+      "baseline_low_date": null,
+      "baseline_high_date": null,
+      "support": {
+        "safari": "27",
+        "safari_ios": "27"
+      }
+    },
+    "linear-easing": {
+      "name": "linear() easing",
+      "baseline": "widely",
+      "baseline_low_date": "2023-12-11",
+      "baseline_high_date": "2026-06-11",
+      "support": {
+        "chrome": "113",
+        "chrome_android": "113",
+        "edge": "113",
+        "firefox": "112",
+        "firefox_android": "112",
+        "safari": "17.2",
+        "safari_ios": "17.2"
+      }
+    },
+    "view-transitions": {
+      "name": "View transitions",
+      "baseline": "newly",
+      "baseline_low_date": "2025-10-14",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "111",
+        "chrome_android": "111",
+        "edge": "111",
+        "firefox": "144",
+        "firefox_android": "144",
+        "safari": "18",
+        "safari_ios": "18"
+      }
+    },
+    "scroll-driven-animations": {
+      "name": "Scroll-driven animations",
+      "baseline": "limited",
+      "baseline_low_date": null,
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "115",
+        "chrome_android": "115",
+        "edge": "115",
+        "safari": "26",
+        "safari_ios": "26"
+      }
+    },
+    "backdrop-filter": {
+      "name": "backdrop-filter",
+      "baseline": "newly",
+      "baseline_low_date": "2024-09-16",
+      "baseline_high_date": null,
+      "support": {
+        "chrome": "76",
+        "chrome_android": "76",
+        "edge": "79",
+        "firefox": "103",
+        "firefox_android": "103",
+        "safari": "18",
+        "safari_ios": "18"
+      }
+    }
+  }
+}

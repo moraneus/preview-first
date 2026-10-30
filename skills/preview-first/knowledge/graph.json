@@ -918,7 +918,7 @@
         "safari": 15.4
       },
       "global_pct": 95.1,
-      "web_features_id": "oklch",
+      "web_features_id": "oklab",
       "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",

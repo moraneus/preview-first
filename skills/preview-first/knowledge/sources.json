@@ -1,0 +1,50 @@
+{
+  "updated": "2026-10-30",
+  "notes": "Machine-readable sources only. Entries marked verify:true are skipped until a maintainer confirms the URL. No HTML scraping.",
+  "fonts": {
+    "name": "Google Fonts metadata",
+    "url": "https://fonts.google.com/metadata/fonts",
+    "parser": "google_fonts_metadata",
+    "auth": "none",
+    "fields": "family, category, popularity rank, trending rank, lastModified"
+  },
+  "features": {
+    "name": "web-features (Baseline) data",
+    "url": "https://cdn.jsdelivr.net/npm/web-features/data.json",
+    "parser": "web_features",
+    "auth": "none",
+    "ids": [
+      "container-queries", "has", "oklab", "color-mix", "relative-color", "light-dark",
+      "registered-custom-properties", "starting-style", "popover", "text-wrap-balance", "text-wrap-pretty",
+      "anchor-positioning", "linear-easing", "view-transitions", "scroll-driven-animations", "backdrop-filter"
+    ]
+  },
+  "releases": [
+    {"name": "motion", "url": "https://github.com/motiondivision/motion/releases.atom", "npm": "motion"},
+    {"name": "gsap", "url": "https://github.com/greensock/GSAP/releases.atom", "npm": "gsap"},
+    {"name": "tailwindcss", "url": "https://github.com/tailwindlabs/tailwindcss/releases.atom", "npm": "tailwindcss"},
+    {"name": "shadcn", "url": "https://github.com/shadcn-ui/ui/releases.atom", "npm": "shadcn"},
+    {"name": "radix-primitives", "url": "https://github.com/radix-ui/primitives/releases.atom", "npm": "@radix-ui/react-dialog"},
+    {"name": "lucide", "url": "https://github.com/lucide-icons/lucide/releases.atom", "npm": "lucide-react"},
+    {"name": "phosphor", "url": "https://github.com/phosphor-icons/core/releases.atom", "npm": "@phosphor-icons/core"}
+  ],
+  "npm": [
+    {"name": "motion"}, {"name": "gsap"}, {"name": "tailwindcss"}, {"name": "shadcn"}, {"name": "@radix-ui/react-dialog"},
+    {"name": "lucide-react"}, {"name": "@phosphor-icons/core"}, {"name": "@heroicons/react"}, {"name": "@tabler/icons-react"}
+  ],
+  "npm_url": "https://api.npmjs.org/downloads/point/last-week/{name}",
+  "feeds": [
+    {"name": "web.dev", "url": "https://web.dev/static/blog/feed.xml"},
+    {"name": "Chrome for Developers", "url": "https://developer.chrome.com/static/blog/feed.xml"},
+    {"name": "Smashing Magazine", "url": "https://www.smashingmagazine.com/feed/"},
+    {"name": "CSS-Tricks", "url": "https://css-tricks.com/feed/"},
+    {"name": "Josh Comeau", "url": "https://www.joshwcomeau.com/rss.xml"},
+    {"name": "Tailwind CSS blog", "url": "https://tailwindcss.com/feeds/feed.xml"},
+    {"name": "Vercel blog", "url": "https://vercel.com/atom"},
+    {"name": "WebKit blog", "url": "https://webkit.org/feed/"},
+    {"name": "Mozilla Hacks", "url": "https://hacks.mozilla.org/feed/"},
+    {"name": "Linear changelog", "url": "https://linear.app/changelog/rss", "verify": true},
+    {"name": "Rauno Freiberg", "url": "https://rauno.me/rss.xml", "verify": true},
+    {"name": "Emil Kowalski", "url": "https://emilkowal.ski/rss.xml", "verify": true}
+  ]
+}
