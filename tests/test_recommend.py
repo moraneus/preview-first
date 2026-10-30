@@ -11,7 +11,7 @@ GRAPH = ROOT / "skills" / "preview-first" / "knowledge" / "graph.json"
 
 @pytest.fixture(scope="module")
 def g():
-    return json.load(open(GRAPH))
+    return json.load(open(GRAPH, encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
@@ -21,12 +21,12 @@ def idx(g):
 
 @pytest.fixture
 def saas():
-    return json.load(open(FIXTURES / "brief_saas.json"))
+    return json.load(open(FIXTURES / "brief_saas.json", encoding="utf-8"))
 
 
 @pytest.fixture
 def unknown():
-    return json.load(open(FIXTURES / "brief_unknown.json"))
+    return json.load(open(FIXTURES / "brief_unknown.json", encoding="utf-8"))
 
 
 def _edge_exists(g, a, b, kind):
@@ -81,7 +81,7 @@ def test_alternatives_pair_with_style(saas, g):
 
 def test_bundle_shape(saas, g, idx):
     x = recommend(saas, g, 1)[0]
-    assert set(x["treatments"]) == set(json.load(open(ROOT / "skills/preview-first/knowledge/schema.json"))["node_kinds"]["treatment"]["axis_values"])
+    assert set(x["treatments"]) == set(json.load(open(ROOT / "skills/preview-first/knowledge/schema.json", encoding="utf-8"))["node_kinds"]["treatment"]["axis_values"])
     assert x["icon_set"].startswith("icon-set.")
     assert all(m.startswith("motion-pattern.") for m in x["motion"])
     assert x["motion_level"] in (0, 1, 2, 3)

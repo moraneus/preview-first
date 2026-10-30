@@ -14,7 +14,7 @@ EMOJI_RE = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
 
 @pytest.fixture(scope="module")
 def directions():
-    return json.load(open(FIXTURES / "directions_two.json"))
+    return json.load(open(FIXTURES / "directions_two.json", encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
@@ -96,13 +96,13 @@ def test_devices_non_default_are_hidden(directions, idx):
 def test_build_writes_draft_and_devices(tmp_path, directions):
     report = build(directions, tmp_path, load_graph(), load_devices())
     assert (tmp_path / "A/draft.html").exists() and (tmp_path / "A/devices.html").exists()
-    html = (tmp_path / "A/devices.html").read_text()
+    html = (tmp_path / "A/devices.html").read_text(encoding="utf-8")
     assert "device-frames.css" in html
 
 
 def test_draft_css_and_js_handle_safe_areas():
     from conftest import ROOT
-    css = (ROOT / "skills/preview-first/assets/preview/draft.css").read_text()
-    js = (ROOT / "skills/preview-first/assets/preview/preview.js").read_text()
+    css = (ROOT / "skills/preview-first/assets/preview/draft.css").read_text(encoding="utf-8")
+    js = (ROOT / "skills/preview-first/assets/preview/preview.js").read_text(encoding="utf-8")
     assert "--pf-safe-top" in css and "env(safe-area-inset-top)" in css
     assert 'sa-top' in js and "--pf-safe-" in js

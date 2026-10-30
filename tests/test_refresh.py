@@ -18,14 +18,14 @@ from refresh_knowledge import (
 
 
 def test_parse_google_fonts_metadata():
-    out = parse_google_fonts_metadata((FIXTURES / "google_fonts_metadata.txt").read_text())
+    out = parse_google_fonts_metadata((FIXTURES / "google_fonts_metadata.txt").read_text(encoding="utf-8"))
     fams = {f["family"]: f for f in out["families"]}
     assert fams["Figtree"]["popularity"] == 25 and fams["Figtree"]["trending"] == 3 and fams["Figtree"]["category"] == "Sans Serif"
     assert out["fetched"]
 
 
 def test_parse_web_features():
-    out = parse_web_features((FIXTURES / "web_features.json").read_text(), ["container-queries", "anchor-positioning", "light-dark", "missing"])
+    out = parse_web_features((FIXTURES / "web_features.json").read_text(encoding="utf-8"), ["container-queries", "anchor-positioning", "light-dark", "missing"])
     f = out["features"]
     assert f["container-queries"]["baseline"] == "widely" and f["light-dark"]["baseline"] == "newly" and f["anchor-positioning"]["baseline"] == "limited"
     assert f["container-queries"]["support"]["chrome"] == "106"
@@ -33,9 +33,9 @@ def test_parse_web_features():
 
 
 def test_parse_atom_and_rss():
-    entries = parse_atom((FIXTURES / "releases.atom").read_text())
+    entries = parse_atom((FIXTURES / "releases.atom").read_text(encoding="utf-8"))
     assert entries[0]["title"] == "v12.30.0" and entries[0]["link"].startswith("https://github.com/") and entries[0]["updated"].startswith("2026-10-20")
-    items = parse_rss((FIXTURES / "feed.xml").read_text())
+    items = parse_rss((FIXTURES / "feed.xml").read_text(encoding="utf-8"))
     assert items[0]["title"].startswith("Baseline 2026") and items[0]["link"] == "https://web.dev/blog/baseline-2026" and items[0]["updated"]
 
 
@@ -56,14 +56,14 @@ def test_refresh_records_failures_and_writes_others(tmp_path):
         if "broken" in url:
             raise OSError("boom")
         if "metadata" in url:
-            return (FIXTURES / "google_fonts_metadata.txt").read_text()
+            return (FIXTURES / "google_fonts_metadata.txt").read_text(encoding="utf-8")
         if "data.json" in url:
-            return (FIXTURES / "web_features.json").read_text()
+            return (FIXTURES / "web_features.json").read_text(encoding="utf-8")
         if "releases.atom" in url:
-            return (FIXTURES / "releases.atom").read_text()
+            return (FIXTURES / "releases.atom").read_text(encoding="utf-8")
         if "npmjs" in url:
             return '{"downloads": 7}'
-        return (FIXTURES / "feed.xml").read_text()
+        return (FIXTURES / "feed.xml").read_text(encoding="utf-8")
 
     report = refresh(sources, tmp_path, fetcher=fetcher)
     assert "fonts" in report["ok"] and "features" in report["ok"] and "release:motion" in report["ok"] and "feed:web.dev" in report["ok"]
@@ -71,7 +71,7 @@ def test_refresh_records_failures_and_writes_others(tmp_path):
     assert any(f["name"] == "feed:skip" and "verify" in f["error"] for f in report["skipped"])
     for name in ("fonts.json", "features.json", "releases.json", "feeds.json"):
         assert (tmp_path / name).exists(), name
-    rel = json.load(open(tmp_path / "releases.json"))
+    rel = json.load(open(tmp_path / "releases.json", encoding="utf-8"))
     assert rel["releases"]["motion"]["latest"]["title"] == "v12.30.0" and rel["releases"]["motion"]["npm_weekly_downloads"] == 7
 
 
@@ -82,8 +82,8 @@ def test_annotate_graph_adds_live_fields(tmp_path):
         {"id": "style.s", "kind": "style", "name": "s"},
     ], "edges": [{"from": "style.s", "to": "platform-feature.container-queries", "kind": "requires", "weight": 1}]}
     live = {
-        "fonts": parse_google_fonts_metadata((FIXTURES / "google_fonts_metadata.txt").read_text()),
-        "features": parse_web_features((FIXTURES / "web_features.json").read_text(), ["container-queries"]),
+        "fonts": parse_google_fonts_metadata((FIXTURES / "google_fonts_metadata.txt").read_text(encoding="utf-8")),
+        "features": parse_web_features((FIXTURES / "web_features.json").read_text(encoding="utf-8"), ["container-queries"]),
     }
     out = annotate_graph(graph, live)
     pairing = next(n for n in out["nodes"] if n["id"] == "type-pairing.x")
@@ -97,7 +97,7 @@ def test_is_stale_and_newest(tmp_path, monkeypatch):
     bundled = tmp_path / "bundled"
     cache = tmp_path / "cache"
     bundled.mkdir(); cache.mkdir()
-    (bundled / "fonts.json").write_text(json.dumps({"fetched": "2020-01-01T00:00:00+00:00"}))
+    (bundled / "fonts.json").write_text(json.dumps({"fetched": "2020-01-01T00:00:00+00:00"}), encoding="utf-8")
     assert newest_live_dir(bundled, cache) == bundled
     assert is_stale(bundled, days=7) is True
     (cache / "fonts.json").write_text(json.dumps({"fetched": time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime())}))
@@ -106,15 +106,15 @@ def test_is_stale_and_newest(tmp_path, monkeypatch):
 
 
 def test_sources_json_shape():
-    sources = json.load(open(ROOT / "skills/preview-first/knowledge/sources.json"))
+    sources = json.load(open(ROOT / "skills/preview-first/knowledge/sources.json", encoding="utf-8"))
     assert sources["fonts"]["url"].startswith("https://") and sources["features"]["ids"]
     assert len(sources["feeds"]) >= 8 and len(sources["releases"]) >= 5
     assert all(f["url"].startswith("https://") for f in sources["feeds"])
 
 
 def test_workflows_exist():
-    ci = (ROOT / ".github/workflows/ci.yml").read_text()
-    refresh_wf = (ROOT / ".github/workflows/refresh.yml").read_text()
+    ci = (ROOT / ".github/workflows/ci.yml").read_text(encoding="utf-8")
+    refresh_wf = (ROOT / ".github/workflows/refresh.yml").read_text(encoding="utf-8")
     assert "validate_graph.py" in ci and "pytest" in ci and "3.9" in ci
     assert "schedule" in refresh_wf and "refresh_knowledge.py" in refresh_wf and "create-pull-request" in refresh_wf
 

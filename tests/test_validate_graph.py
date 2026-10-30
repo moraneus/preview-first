@@ -8,7 +8,7 @@ SCHEMA = ROOT / "skills" / "preview-first" / "knowledge" / "schema.json"
 
 
 def _load(p):
-    return json.load(open(p))
+    return json.load(open(p, encoding="utf-8"))
 
 
 def _errors():

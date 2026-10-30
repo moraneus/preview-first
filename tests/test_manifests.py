@@ -4,8 +4,8 @@ from conftest import ROOT
 
 
 def test_plugin_and_marketplace_names_match():
-    plugin = json.load(open(ROOT / ".claude-plugin" / "plugin.json"))
-    market = json.load(open(ROOT / ".claude-plugin" / "marketplace.json"))
+    plugin = json.load(open(ROOT / ".claude-plugin" / "plugin.json", encoding="utf-8"))
+    market = json.load(open(ROOT / ".claude-plugin" / "marketplace.json", encoding="utf-8"))
     assert plugin["name"] == "preview-first"
     assert market["name"] == "preview-first"
     assert market["plugins"][0]["name"] == "preview-first"
@@ -14,7 +14,7 @@ def test_plugin_and_marketplace_names_match():
 
 
 def test_skill_frontmatter_portable_keys_only():
-    text = (ROOT / "skills" / "preview-first" / "SKILL.md").read_text()
+    text = (ROOT / "skills" / "preview-first" / "SKILL.md").read_text(encoding="utf-8")
     assert text.startswith("---\n")
     fm = text.split("---")[1]
     keys = {

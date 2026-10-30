@@ -19,9 +19,9 @@ class _Srv:
 
 @pytest.fixture
 def server(tmp_path):
-    (tmp_path / "index.html").write_text("<!DOCTYPE html><title>ok</title>")
+    (tmp_path / "index.html").write_text("<!DOCTYPE html><title>ok</title>", encoding="utf-8")
     (tmp_path / "assets").mkdir()
-    (tmp_path / "assets" / "a.css").write_text("body{}")
+    (tmp_path / "assets" / "a.css").write_text("body{}", encoding="utf-8")
     httpd = make_server(tmp_path, 0)
     t = threading.Thread(target=httpd.serve_forever, daemon=True)
     t.start()
@@ -57,7 +57,7 @@ def test_serves_index_and_sets_no_store(server):
 def test_post_select_writes_file(server):
     r = _post(server.url + "/select", {"direction": "B", "overrides": {"palette": "palette.x"}})
     assert r.status == 204
-    data = json.load(open(server.dir / "selection.json"))
+    data = json.load(open(server.dir / "selection.json", encoding="utf-8"))
     assert data["direction"] == "B" and data["overrides"]["palette"] == "palette.x" and "selected_at" in data
 
 
@@ -67,7 +67,7 @@ def test_post_invalid_selection_is_400(server):
 
 
 def test_path_traversal_forbidden(server):
-    (server.dir.parent / "secret.txt").write_text("x")
+    (server.dir.parent / "secret.txt").write_text("x", encoding="utf-8")
     assert _get(server.url + "/../secret.txt").status == 403
     assert _get(server.url + "/assets/../../secret.txt").status == 403
 
@@ -78,7 +78,7 @@ def test_foreign_host_forbidden(server):
 
 
 def test_stale_server_json_detected(tmp_path):
-    (tmp_path / "server.json").write_text(json.dumps({"pid": 999999, "port": 1}))
+    (tmp_path / "server.json").write_text(json.dumps({"pid": 999999, "port": 1}), encoding="utf-8")
     assert is_stale(tmp_path) is True
     assert is_stale(tmp_path / "nowhere") is False
 
@@ -92,7 +92,7 @@ def test_stop_refuses_unrelated_pid(tmp_path, monkeypatch):
 
 def test_wait_for_selection(tmp_path):
     assert wait_for_selection(tmp_path, 0.2) is None
-    (tmp_path / "selection.json").write_text(json.dumps({"direction": "A"}))
+    (tmp_path / "selection.json").write_text(json.dumps({"direction": "A"}), encoding="utf-8")
     assert wait_for_selection(tmp_path, 0.2)["direction"] == "A"
 
 
@@ -126,7 +126,7 @@ def test_select_refuses_foreign_origin(server):
 
 def test_ping_returns_token_and_alive_check(tmp_path):
     from serve_preview import is_alive_server, PING_PATH
-    (tmp_path / "index.html").write_text("x")
+    (tmp_path / "index.html").write_text("x", encoding="utf-8")
     httpd = make_server(tmp_path, 0, token="abc123")
     t = threading.Thread(target=httpd.serve_forever, daemon=True); t.start()
     try:
@@ -148,7 +148,7 @@ def test_ping_returns_token_and_alive_check(tmp_path):
 
 
 def test_select_rejects_unknown_direction(server):
-    (server.dir / "data.json").write_text(json.dumps({"directions": [{"id": "A"}, {"id": "B"}]}))
+    (server.dir / "data.json").write_text(json.dumps({"directions": [{"id": "A"}, {"id": "B"}]}), encoding="utf-8")
     assert _post(server.url + "/select", {"direction": "Z", "overrides": {}}).status == 400
     assert _post(server.url + "/select", {"direction": "A", "overrides": {}}).status == 204
 

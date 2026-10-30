@@ -8,7 +8,7 @@ REFS = ["process", "color", "typography", "motion", "components", "layout", "ant
 
 
 def _skill_text():
-    return (SKILL / "SKILL.md").read_text()
+    return (SKILL / "SKILL.md").read_text(encoding="utf-8")
 
 
 def test_skill_md_length_and_frontmatter():
@@ -33,12 +33,12 @@ def test_every_reference_exists_and_is_linked():
         path = SKILL / "references" / ("%s.md" % ref)
         assert path.exists(), ref
         assert "references/%s.md" % ref in text, ref
-        assert 60 <= len(path.read_text().splitlines()) <= 600, ref
+        assert 60 <= len(path.read_text(encoding="utf-8").splitlines()) <= 600, ref
 
 
 def test_components_reference_lists_every_treatment():
-    text = (SKILL / "references" / "components.md").read_text()
-    schema = json.load(open(SKILL / "knowledge" / "schema.json"))
+    text = (SKILL / "references" / "components.md").read_text(encoding="utf-8")
+    schema = json.load(open(SKILL / "knowledge" / "schema.json", encoding="utf-8"))
     for axis, values in schema["node_kinds"]["treatment"]["axis_values"].items():
         assert axis in text, axis
         for v in values:
@@ -53,12 +53,12 @@ def test_skill_names_the_flow_and_the_wait():
 
 def test_docs_have_no_tells():
     for path in [SKILL / "SKILL.md"] + [SKILL / "references" / ("%s.md" % r) for r in REFS]:
-        text = path.read_text()
+        text = path.read_text(encoding="utf-8")
         assert "—" not in text, path.name
         assert not re.search("[\U0001F300-\U0001FAFF]", text), path.name
 
 
 def test_anti_patterns_cover_known_tells():
-    text = (SKILL / "references" / "anti-patterns.md").read_text().lower()
+    text = (SKILL / "references" / "anti-patterns.md").read_text(encoding="utf-8").lower()
     for tell in ("purple", "inter", "emoji", "eyebrow", "lorem", "gradient", "three", "arrow"):
         assert tell in text, tell

@@ -12,12 +12,12 @@ SCHEMA_PATH = ROOT / "skills" / "preview-first" / "knowledge" / "schema.json"
 
 @pytest.fixture(scope="module")
 def graph():
-    return json.load(open(GRAPH_PATH))
+    return json.load(open(GRAPH_PATH, encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")
 def schema():
-    return json.load(open(SCHEMA_PATH))
+    return json.load(open(SCHEMA_PATH, encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")

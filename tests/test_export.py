@@ -12,7 +12,7 @@ SELECTION = {"direction": "A", "overrides": {"palette": "palette.inline-paper", 
 
 @pytest.fixture
 def directions():
-    return json.load(open(FIXTURES / "directions_two.json"))
+    return json.load(open(FIXTURES / "directions_two.json", encoding="utf-8"))
 
 
 def _export(project, directions, selection=SELECTION):
@@ -24,7 +24,7 @@ def test_fresh_export_writes_contract_and_tokens(tmp_project, directions):
     design = tmp_project / "design"
     for name in ("DESIGN.md", "tokens.json", "tokens.css"):
         assert (design / name).exists(), name
-    md = (design / "DESIGN.md").read_text()
+    md = (design / "DESIGN.md").read_text(encoding="utf-8")
     assert GEN_START in md and GEN_END in md
     for heading in ("## Identity", "## Palette", "## Typography", "## Spacing and radius", "## Elevation", "## Layout", "## Components",
                     "## Motion", "## Iconography", "## Imagery", "## Writing style", "## Accessibility floor", "## Device checks", "## Do not", "## Project notes"):
@@ -35,7 +35,7 @@ def test_fresh_export_writes_contract_and_tokens(tmp_project, directions):
 
 def test_tokens_json_is_dtcg(tmp_project, directions):
     _export(tmp_project, directions)
-    tokens = json.load(open(tmp_project / "design" / "tokens.json"))
+    tokens = json.load(open(tmp_project / "design" / "tokens.json", encoding="utf-8"))
     assert set(tokens) >= {"color", "font", "size", "radius", "space", "duration", "easing"}
 
     def leaves(node):
@@ -53,28 +53,28 @@ def test_tokens_json_is_dtcg(tmp_project, directions):
 
 def test_tokens_css_has_modes_and_motion(tmp_project, directions):
     _export(tmp_project, directions)
-    css = (tmp_project / "design" / "tokens.css").read_text()
+    css = (tmp_project / "design" / "tokens.css").read_text(encoding="utf-8")
     assert "--pf-color-bg:" in css and '[data-theme="dark"]' in css and "--pf-dur-base:" in css and "--pf-font-heading:" in css
 
 
 def test_tailwind_only_when_detected(tmp_project, directions):
     _export(tmp_project, directions)
     assert not (tmp_project / "design" / "tailwind.css").exists()
-    (tmp_project / "app.css").write_text('@import "tailwindcss";\n')
+    (tmp_project / "app.css").write_text('@import "tailwindcss";\n', encoding="utf-8")
     _export(tmp_project, directions)
-    tw = (tmp_project / "design" / "tailwind.css").read_text()
+    tw = (tmp_project / "design" / "tailwind.css").read_text(encoding="utf-8")
     assert "@theme" in tw and "--color-primary:" in tw and "--font-heading:" in tw
 
 
 def test_reexport_preserves_project_notes_and_keeps_history(tmp_project, directions):
     _export(tmp_project, directions)
     md_path = tmp_project / "design" / "DESIGN.md"
-    md = md_path.read_text()
+    md = md_path.read_text(encoding="utf-8")
     md = md.replace("## Project notes\n", "## Project notes\n\nKeep the invoice table dense; finance users asked for it.\n")
-    md_path.write_text(md)
+    md_path.write_text(md, encoding="utf-8")
     selection = dict(SELECTION, overrides={"radius": "lg"})
     report = _export(tmp_project, directions, selection)
-    new = md_path.read_text()
+    new = md_path.read_text(encoding="utf-8")
     assert "Keep the invoice table dense; finance users asked for it." in new
     assert "Radius scale: **lg**" in new
     assert report["history"] and (tmp_project / "design" / "history").exists()
@@ -84,9 +84,9 @@ def test_reexport_preserves_project_notes_and_keeps_history(tmp_project, directi
 def test_claude_md_pointer_is_idempotent(tmp_project, directions):
     _export(tmp_project, directions)
     _export(tmp_project, directions)
-    text = (tmp_project / "CLAUDE.md").read_text()
+    text = (tmp_project / "CLAUDE.md").read_text(encoding="utf-8")
     assert text.count("design/DESIGN.md") == 1
-    assert ".design-preview/" in (tmp_project / ".gitignore").read_text()
+    assert ".design-preview/" in (tmp_project / ".gitignore").read_text(encoding="utf-8")
 
 
 def test_overrides_change_palette_and_pairing(tmp_project, directions):
@@ -94,7 +94,7 @@ def test_overrides_change_palette_and_pairing(tmp_project, directions):
     directions["directions"][0]["bundle"]["alternatives"]["type_pairings"] = ["type-pairing.geist-geist"]
     selection = dict(SELECTION, overrides={"palette": "palette.paper-ink", "pairing": "type-pairing.geist-geist", "motion": "2"})
     _export(tmp_project, directions, selection)
-    md = (tmp_project / "design" / "DESIGN.md").read_text()
+    md = (tmp_project / "design" / "DESIGN.md").read_text(encoding="utf-8")
     assert "Paper & Ink" in md and "Geist" in md and "Motion level: **2**" in md
 
 
@@ -105,7 +105,7 @@ def test_unknown_direction_raises(tmp_project, directions):
 
 def test_cli(tmp_project, directions, tmp_path):
     sel = tmp_path / "selection.json"
-    sel.write_text(json.dumps(SELECTION))
+    sel.write_text(json.dumps(SELECTION), encoding="utf-8")
     assert main(["--selection", str(sel), "--directions", str(FIXTURES / "directions_two.json"), "--project", str(tmp_project)]) == 0
     assert (tmp_project / "design" / "DESIGN.md").exists()
 
@@ -113,13 +113,13 @@ def test_cli(tmp_project, directions, tmp_path):
 def test_reexport_keeps_text_above_markers_and_unmarked_files(tmp_project, directions):
     _export(tmp_project, directions)
     md_path = tmp_project / "design" / "DESIGN.md"
-    md_path.write_text("Top note kept.\n\n" + md_path.read_text())
+    md_path.write_text("Top note kept.\n\n" + md_path.read_text(encoding="utf-8"))
     _export(tmp_project, directions)
-    assert md_path.read_text().startswith("Top note kept.")
+    assert md_path.read_text(encoding="utf-8").startswith("Top note kept.")
     # a hand-written file with no markers is preserved as free text
-    md_path.write_text("# My own contract\n\nHand written, no markers.\n")
+    md_path.write_text("# My own contract\n\nHand written, no markers.\n", encoding="utf-8")
     _export(tmp_project, directions)
-    new = md_path.read_text()
+    new = md_path.read_text(encoding="utf-8")
     assert GEN_START in new and "Hand written, no markers." in new
 
 
@@ -131,13 +131,13 @@ def test_history_never_overwrites(tmp_project, directions):
 
 
 def test_tailwind_v3_gets_note_not_theme(tmp_project, directions):
-    (tmp_project / "tailwind.config.js").write_text("module.exports = {}")
-    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^3.4.0"}}))
+    (tmp_project / "tailwind.config.js").write_text("module.exports = {}", encoding="utf-8")
+    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^3.4.0"}}), encoding="utf-8")
     _export(tmp_project, directions)
     assert not (tmp_project / "design" / "tailwind.css").exists()
     assert (tmp_project / "design" / "tailwind.md").exists()
-    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^4.1.0"}}))
+    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^4.1.0"}}), encoding="utf-8")
     _export(tmp_project, directions)
-    tw = (tmp_project / "design" / "tailwind.css").read_text()
+    tw = (tmp_project / "design" / "tailwind.css").read_text(encoding="utf-8")
     assert tw.index('@import "tailwindcss"') < tw.index("@theme") and tw.index('@import "./tokens.css"') < tw.index("@theme")
     assert "@theme inline" in tw

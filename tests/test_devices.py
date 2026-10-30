@@ -6,7 +6,7 @@ from _common import load_devices
 from conftest import ROOT
 from validate_graph import validate_against
 
-SCHEMA = json.load(open(ROOT / "skills/preview-first/knowledge/schema.json"))
+SCHEMA = json.load(open(ROOT / "skills/preview-first/knowledge/schema.json", encoding="utf-8"))
 
 
 @pytest.fixture(scope="module")

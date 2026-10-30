@@ -8,13 +8,13 @@ from palette import ROLES, derive_roles, motion_tokens, resolve_palette, scale_t
 
 @pytest.fixture
 def pal():
-    g = json.load(open(FIXTURES / "mini_graph.json"))
+    g = json.load(open(FIXTURES / "mini_graph.json", encoding="utf-8"))
     return next(n for n in g["nodes"] if n["id"] == "palette.good")
 
 
 @pytest.fixture
 def pairing():
-    g = json.load(open(FIXTURES / "mini_graph.json"))
+    g = json.load(open(FIXTURES / "mini_graph.json", encoding="utf-8"))
     return next(n for n in g["nodes"] if n["id"] == "type-pairing.p")
 
 

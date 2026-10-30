@@ -14,7 +14,7 @@ def graph():
 
 
 def test_from_css_extracts_colours_fonts_radius():
-    obs = from_css((FIXTURES / "site.css").read_text())
+    obs = from_css((FIXTURES / "site.css").read_text(encoding="utf-8"))
     assert obs["colors"][0] == "#58a6ff"  # most frequent
     assert "#0b0f14" in obs["colors"] and "#e6edf3" in obs["colors"]
     assert obs["fonts"][:2] == ["Geist", "Space Grotesk"] or set(obs["fonts"][:2]) == {"Geist", "Space Grotesk"}
@@ -22,14 +22,14 @@ def test_from_css_extracts_colours_fonts_radius():
 
 
 def test_from_tailwind_config():
-    obs = from_tailwind_config((FIXTURES / "tailwind.config.js").read_text())
+    obs = from_tailwind_config((FIXTURES / "tailwind.config.js").read_text(encoding="utf-8"))
     assert {"#0f766e", "#111827", "#f9fafb"} <= set(obs["colors"])
     assert "Manrope" in obs["fonts"] and "Fraunces" in obs["fonts"]
     assert 12 in obs["radius"]
 
 
 def test_from_dtcg():
-    obs = from_dtcg(json.load(open(FIXTURES / "tokens_dtcg.json")))
+    obs = from_dtcg(json.load(open(FIXTURES / "tokens_dtcg.json", encoding="utf-8")))
     assert obs["colors"][:2] == ["#fbfaf7", "#1f1d1a"]
     assert obs["fonts"] == ["Newsreader", "Inter Tight"]
     assert obs["radius"] == [6]
@@ -43,7 +43,7 @@ def test_from_url_ignores_cross_origin_styles():
     def fetcher(url, timeout=15):
         fetched.append(url)
         if url.endswith("/site.css"):
-            return (FIXTURES / "site.css").read_text()
+            return (FIXTURES / "site.css").read_text(encoding="utf-8")
         if url.endswith("other.css"):
             return "body{color:#ff0000}"
         return html
@@ -55,7 +55,7 @@ def test_from_url_ignores_cross_origin_styles():
 
 
 def test_to_direction_light_look_builds(graph, tmp_path):
-    obs = from_dtcg(json.load(open(FIXTURES / "tokens_dtcg.json")))
+    obs = from_dtcg(json.load(open(FIXTURES / "tokens_dtcg.json", encoding="utf-8")))
     d = to_direction(obs, graph, id="X", name="Current look")
     assert d["id"] == "X" and d["bundle"]["style"].startswith("style.")
     assert isinstance(d["bundle"]["palette"], dict) and d["bundle"]["palette"]["scheme"] in ("light", "both")
@@ -67,7 +67,7 @@ def test_to_direction_light_look_builds(graph, tmp_path):
 
 
 def test_to_direction_dark_look_picks_dark_style(graph):
-    obs = from_css((FIXTURES / "site.css").read_text())
+    obs = from_css((FIXTURES / "site.css").read_text(encoding="utf-8"))
     d = to_direction(obs, graph)
     assert d["bundle"]["style"] == "style.dark-console"
     assert d["bundle"]["palette"]["scheme"] == "dark"
@@ -76,9 +76,9 @@ def test_to_direction_dark_look_picks_dark_style(graph):
 
 def test_cli_appends_to_directions(tmp_path):
     directions = tmp_path / "directions.json"
-    directions.write_text(json.dumps(json.load(open(FIXTURES / "directions_two.json"))))
+    directions.write_text(json.dumps(json.load(open(FIXTURES / "directions_two.json", encoding="utf-8"))))
     assert main(["--css", str(FIXTURES / "site.css"), "--into", str(directions), "--name", "Today"]) == 0
-    out = json.load(open(directions))
+    out = json.load(open(directions, encoding="utf-8"))
     assert [d["id"] for d in out["directions"]] == ["A", "B", "C"] and out["directions"][2]["name"] == "Today"
 
 
