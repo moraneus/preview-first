@@ -109,3 +109,26 @@ def test_wait_for_selection(tmp_path):
 def test_status_cli(tmp_path, capsys):
     assert serve_preview.main(["--dir", str(tmp_path), "--status"]) == 0
     assert json.loads(capsys.readouterr().out)["running"] is False
+
+
+def test_select_requires_json_content_type(server):
+    req = urllib.request.Request(server.url + "/select", data=b'{"direction":"A"}', headers={"Content-Type": "text/plain"}, method="POST")
+    try:
+        r = urllib.request.urlopen(req, timeout=5)
+    except urllib.error.HTTPError as e:
+        r = e
+    assert r.status == 415
+    assert not (server.dir / "selection.json").exists()
+
+
+def test_select_refuses_foreign_origin(server):
+    req = urllib.request.Request(server.url + "/select", data=b'{"direction":"A"}',
+                                 headers={"Content-Type": "application/json", "Origin": "https://evil.example"}, method="POST")
+    try:
+        r = urllib.request.urlopen(req, timeout=5)
+    except urllib.error.HTTPError as e:
+        r = e
+    assert r.status == 403
+    req = urllib.request.Request(server.url + "/select", data=b'{"direction":"A"}',
+                                 headers={"Content-Type": "application/json", "Origin": server.url}, method="POST")
+    assert urllib.request.urlopen(req, timeout=5).status == 204

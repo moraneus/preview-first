@@ -76,6 +76,19 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         if self.path.split("?", 1)[0] != "/select":
             self.send_error(HTTPStatus.NOT_FOUND)
             return
+        # Cross-site protection: a foreign page cannot send application/json without a CORS
+        # preflight (never approved here), and any Origin that is not local is refused outright.
+        ctype = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        if ctype != "application/json":
+            self.send_error(HTTPStatus.UNSUPPORTED_MEDIA_TYPE, "send application/json")
+            return
+        origin = (self.headers.get("Origin") or "").strip()
+        if origin and origin != "null":
+            host = origin.split("://", 1)[-1].split("/", 1)[0]
+            bare = host.rsplit(":", 1)[0] if host.count(":") == 1 else host
+            if bare not in LOCAL_HOSTS:
+                self.send_error(HTTPStatus.FORBIDDEN, "cross-origin selection refused")
+                return
         try:
             length = int(self.headers.get("Content-Length") or 0)
             body = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
