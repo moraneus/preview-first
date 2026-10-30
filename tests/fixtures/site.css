@@ -1,0 +1,13 @@
+:root {
+  --bg: #0b0f14;
+  --fg: #e6edf3;
+  --accent: #58a6ff;
+  --accent-2: #f78166;
+  --radius: 8px;
+  font-family: "Geist", system-ui, sans-serif;
+}
+h1, h2 { font-family: "Space Grotesk", sans-serif; color: var(--fg); }
+body { background: var(--bg); color: #e6edf3; }
+.btn { background: #58a6ff; color: #0b0f14; border-radius: 8px; }
+.card { background: #161b22; border-radius: 12px; border: 1px solid #30363d; }
+a { color: #58a6ff; }

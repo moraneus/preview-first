@@ -1,0 +1,13 @@
+{
+  "color": {
+    "background": {"$type": "color", "$value": "#fbfaf7"},
+    "text": {"$type": "color", "$value": "#1f1d1a"},
+    "primary": {"$type": "color", "$value": "#1d4ed8"},
+    "accent": {"$type": "color", "$value": "#b45309"}
+  },
+  "font": {
+    "heading": {"$type": "fontFamily", "$value": ["Newsreader", "Georgia", "serif"]},
+    "body": {"$type": "fontFamily", "$value": ["Inter Tight", "system-ui", "sans-serif"]}
+  },
+  "radius": {"md": {"$type": "dimension", "$value": "6px"}}
+}

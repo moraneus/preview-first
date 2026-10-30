@@ -280,6 +280,13 @@ def main(argv: Sequence[str]) -> int:
     ap.add_argument("--list", choices=sorted(LIST_KINDS))
     ns = ap.parse_args(list(argv))
     graph = _common.load_json(ns.graph)
+    try:  # annotate with live data when a snapshot exists (bundled or user cache)
+        from refresh_knowledge import annotate_graph, load_live
+        live = load_live()
+        if live:
+            graph = annotate_graph(graph, live)
+    except Exception:  # live data is optional
+        pass
     if ns.list:
         kind = LIST_KINDS[ns.list]
         for n in sorted(_common.nodes_by_kind(graph).get(kind, []), key=lambda x: x["id"]):
