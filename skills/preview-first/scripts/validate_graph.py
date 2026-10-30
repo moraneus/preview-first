@@ -49,6 +49,8 @@ def validate_against(spec: Dict[str, Any], obj: Any, path: str = "$") -> List[st
             return problems
     if "enum" in spec and obj not in spec["enum"]:
         problems.append("%s: %r not in %s" % (path, obj, spec["enum"]))
+    if "pattern" in spec and isinstance(obj, str) and not re.fullmatch(spec["pattern"], obj):
+        problems.append("%s: %r does not match pattern %s" % (path, obj, spec["pattern"]))
     if isinstance(obj, dict):
         for key in spec.get("required", []):
             if key not in obj:

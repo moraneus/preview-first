@@ -138,14 +138,18 @@
     });
   });
 
-  // Font notice: name the real faces when the browser fell back.
+  // Font notice: name the real faces when the browser fell back. document.fonts.load resolves
+  // with the faces that matched; an empty list means no @font-face exists for that family.
   var main = document.querySelector("main[data-fonts]");
-  if (main && document.fonts && document.fonts.check && !root.hasAttribute("data-embed")) {
+  if (main && document.fonts && document.fonts.load && !root.hasAttribute("data-embed")) {
     var fams = (main.getAttribute("data-fonts") || "").split("|").filter(Boolean);
-    var check = function () {
-      var missing = fams.filter(function (f) {
-        try { return !document.fonts.check('16px "' + f + '"'); } catch (e) { return false; }
-      });
+    Promise.all(fams.map(function (f) {
+      return document.fonts.load('16px "' + f + '"').then(function (faces) {
+        var ok = faces.some(function (face) { return face.status === "loaded"; });
+        return ok ? null : f;
+      }).catch(function () { return f; });
+    })).then(function (results) {
+      var missing = results.filter(Boolean);
       var notice = main.querySelector(".pf-font-notice");
       if (!notice) return;
       if (missing.length) {
@@ -154,10 +158,7 @@
       } else {
         notice.hidden = true;
       }
-    };
-    Promise.all(fams.map(function (f) {
-      try { return document.fonts.load('16px "' + f + '"').catch(function () { return null; }); } catch (e) { return Promise.resolve(null); }
-    })).then(function () { return document.fonts.ready; }).then(function () { setTimeout(check, 800); });
+    });
   }
 
   // Motion demos.

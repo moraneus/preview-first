@@ -157,3 +157,48 @@ def test_dark_first_direction_defaults_to_dark_theme(out):
     d, _ = out
     assert 'data-theme="dark"' in (d / "B/tile.html").read_text().split("<head>")[0]
     assert 'data-theme="dark"' not in (d / "A/tile.html").read_text().split("<head>")[0]
+
+
+def test_direction_id_cannot_escape_out_dir(tmp_path):
+    directions = json.load(open(FIXTURES / "directions_two.json"))
+    directions["directions"][0]["id"] = "../escaped"
+    with pytest.raises(ValueError):
+        build(directions, tmp_path / "p", load_graph(), load_devices())
+    assert not (tmp_path / "escaped").exists()
+
+
+def test_vendor_fonts_rewrites_links(tmp_path):
+    directions = json.load(open(FIXTURES / "directions_two.json"))
+    calls = []
+
+    def fetcher(url, timeout=20):
+        calls.append(url)
+        if url.endswith(".woff2"):
+            return b"wOF2fake"
+        return "@font-face{font-family:'Fraunces';src:url(https://fonts.gstatic.com/s/fraunces/v1/abc.woff2) format('woff2');}"
+
+    report = build(directions, tmp_path, load_graph(), load_devices(), vendor_fonts=True, fetcher=fetcher)
+    html = (tmp_path / "A/tile.html").read_text()
+    assert "fonts.googleapis.com/css2" not in html
+    assert 'href="../fonts/' in html
+    css_files = list((tmp_path / "fonts").glob("*.css"))
+    assert css_files and "url(" in css_files[0].read_text() and "gstatic" not in css_files[0].read_text()
+    assert list((tmp_path / "fonts").glob("*.woff2"))
+    assert not [w for w in report["warnings"] if "vendoring" in w]
+
+
+def test_font_notice_uses_fonts_load_result():
+    js = (ASSETS / "preview.js").read_text()
+    assert "document.fonts.load(" in js and "fonts.check(" not in js
+
+
+def test_tile_copy_follows_the_brief_not_invoicing(tmp_path):
+    directions = json.load(open(FIXTURES / "directions_two.json"))
+    directions["brief"]["product"] = "Pawfect, a dog grooming booking site"
+    directions["brief"]["words"] = {"name": "Pawfect"}
+    for d in directions["directions"]:
+        d["copy"] = {"headline": "Grooming that fits your week", "features": [{"title": "Book in a minute", "body": "Pick a slot, pick a groomer."}, {"title": "Reminders that work", "body": "Text the day before."}], "nav": ["Services", "Prices", "About", "Book"]}
+    build(directions, tmp_path, load_graph(), load_devices())
+    html = (tmp_path / "A/tile.html").read_text()
+    assert "Invoice 0142" not in html and "ledgerline" not in html.lower()
+    assert "Pawfect" in html and "Reminders that work" in html

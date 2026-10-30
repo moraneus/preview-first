@@ -95,3 +95,18 @@ def test_font_stack_strips_css_breaking_characters(pairing):
     css = scale_tokens("md", "regular", pairing)
     assert "}" not in css.split("--pf-font-heading:")[1].split("\n")[0]
     assert "background:red" not in css.replace(" ", "") or ";" not in css.split("--pf-font-heading:")[1].split("\n")[0][:-1]
+
+
+def test_scoped_tokens_css_targets_root_not_descendants(pal):
+    css = tokens_css(resolve_palette(pal), selector='[data-palette="palette.good"]')
+    assert ':root[data-palette="palette.good"] {' in css
+    assert ':root[data-palette="palette.good"][data-theme="dark"]' in css
+    assert ':root[data-palette="palette.good"]:not([data-theme="light"])' in css
+    assert ':root:not([data-theme="light"]) [data-palette' not in css
+
+
+def test_brand_override_moves_focus_ring_when_it_passes(pal):
+    r = resolve_palette(pal, {"brand_primary": "#1d4ed8"})
+    assert r["light"]["focus"]["hex"] == "#1d4ed8"
+    r = resolve_palette(pal, {"brand_primary": "#fff59d"})  # fails ui contrast on white: focus keeps a passing colour
+    assert r["light"]["focus"]["hex"] != "#fff59d"

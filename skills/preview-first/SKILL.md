@@ -135,7 +135,7 @@ When they reply:
   write `selection.json` yourself with the matching overrides.
 - For a mutation ("B but warmer", "fewer rounded corners", "swap the headline font"), edit
   `directions.json` (or use an alternative from the bundle), rebuild, and point them back to
-  the same URL. The server keeps running; the page reloads.
+  the same URL. The server keeps running; ask them to refresh the page.
 - For "show me more", run `recommend.py` again with `--count 5` or a changed brief, add the new
   directions under new ids, and rebuild.
 

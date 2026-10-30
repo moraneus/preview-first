@@ -90,16 +90,6 @@ def test_stop_refuses_unrelated_pid(tmp_path, monkeypatch):
     assert not (tmp_path / "server.json").exists()
 
 
-def test_stop_kills_matching_process(tmp_path, monkeypatch):
-    (tmp_path / "server.json").write_text(json.dumps({"pid": 4242, "port": 1}))
-    killed = []
-    monkeypatch.setattr(serve_preview, "_alive", lambda pid: True)
-    monkeypatch.setattr(serve_preview, "_cmdline", lambda pid: "python3 serve_preview.py --dir %s --foreground" % tmp_path)
-    monkeypatch.setattr(serve_preview.os, "kill", lambda pid, sig: killed.append((pid, sig)))
-    assert stop(tmp_path) is True
-    assert killed and killed[0][0] == 4242
-
-
 def test_wait_for_selection(tmp_path):
     assert wait_for_selection(tmp_path, 0.2) is None
     (tmp_path / "selection.json").write_text(json.dumps({"direction": "A"}))
@@ -132,3 +122,47 @@ def test_select_refuses_foreign_origin(server):
     req = urllib.request.Request(server.url + "/select", data=b'{"direction":"A"}',
                                  headers={"Content-Type": "application/json", "Origin": server.url}, method="POST")
     assert urllib.request.urlopen(req, timeout=5).status == 204
+
+
+def test_ping_returns_token_and_alive_check(tmp_path):
+    from serve_preview import is_alive_server, PING_PATH
+    (tmp_path / "index.html").write_text("x")
+    httpd = make_server(tmp_path, 0, token="abc123")
+    t = threading.Thread(target=httpd.serve_forever, daemon=True); t.start()
+    try:
+        port = httpd.server_address[1]
+        r = urllib.request.urlopen("http://127.0.0.1:%d%s" % (port, PING_PATH), timeout=5)
+        assert json.load(r)["token"] == "abc123"
+        assert is_alive_server({"port": port, "token": "abc123", "dir": str(tmp_path.resolve())}) is True
+        assert is_alive_server({"port": port, "token": "wrong", "dir": str(tmp_path.resolve())}) is False
+        (tmp_path / "server.json").write_text(json.dumps({"pid": 4242, "port": port, "token": "abc123", "dir": str(tmp_path.resolve())}))
+        assert is_stale(tmp_path) is False
+        killed = []
+        serve_preview.os.kill = lambda pid, sig: killed.append(pid)  # restored below
+        try:
+            assert stop(tmp_path) is True and killed == [4242]
+        finally:
+            del serve_preview.os.kill
+    finally:
+        httpd.shutdown(); httpd.server_close()
+
+
+def test_select_rejects_unknown_direction(server):
+    (server.dir / "data.json").write_text(json.dumps({"directions": [{"id": "A"}, {"id": "B"}]}))
+    assert _post(server.url + "/select", {"direction": "Z", "overrides": {}}).status == 400
+    assert _post(server.url + "/select", {"direction": "A", "overrides": {}}).status == 204
+
+
+def test_watch_directory_shuts_server_down(tmp_path):
+    from serve_preview import _watch_directory
+    d = tmp_path / "proj"; d.mkdir()
+    events = []
+
+    class Fake:
+        def shutdown(self):
+            events.append("shutdown")
+
+    import shutil
+    shutil.rmtree(d)
+    _watch_directory(d, Fake(), interval=0.01, max_checks=3)
+    assert events == ["shutdown"]

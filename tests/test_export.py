@@ -60,7 +60,7 @@ def test_tokens_css_has_modes_and_motion(tmp_project, directions):
 def test_tailwind_only_when_detected(tmp_project, directions):
     _export(tmp_project, directions)
     assert not (tmp_project / "design" / "tailwind.css").exists()
-    (tmp_project / "tailwind.config.js").write_text("module.exports = {}")
+    (tmp_project / "app.css").write_text('@import "tailwindcss";\n')
     _export(tmp_project, directions)
     tw = (tmp_project / "design" / "tailwind.css").read_text()
     assert "@theme" in tw and "--color-primary:" in tw and "--font-heading:" in tw
@@ -108,3 +108,36 @@ def test_cli(tmp_project, directions, tmp_path):
     sel.write_text(json.dumps(SELECTION))
     assert main(["--selection", str(sel), "--directions", str(FIXTURES / "directions_two.json"), "--project", str(tmp_project)]) == 0
     assert (tmp_project / "design" / "DESIGN.md").exists()
+
+
+def test_reexport_keeps_text_above_markers_and_unmarked_files(tmp_project, directions):
+    _export(tmp_project, directions)
+    md_path = tmp_project / "design" / "DESIGN.md"
+    md_path.write_text("Top note kept.\n\n" + md_path.read_text())
+    _export(tmp_project, directions)
+    assert md_path.read_text().startswith("Top note kept.")
+    # a hand-written file with no markers is preserved as free text
+    md_path.write_text("# My own contract\n\nHand written, no markers.\n")
+    _export(tmp_project, directions)
+    new = md_path.read_text()
+    assert GEN_START in new and "Hand written, no markers." in new
+
+
+def test_history_never_overwrites(tmp_project, directions):
+    reports = [_export(tmp_project, directions) for _ in range(4)]
+    hist = {r["history"] for r in reports if r["history"]}
+    assert len(hist) == 3
+    assert all((tmp_project / "design" / "history").exists() for _ in hist)
+
+
+def test_tailwind_v3_gets_note_not_theme(tmp_project, directions):
+    (tmp_project / "tailwind.config.js").write_text("module.exports = {}")
+    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^3.4.0"}}))
+    _export(tmp_project, directions)
+    assert not (tmp_project / "design" / "tailwind.css").exists()
+    assert (tmp_project / "design" / "tailwind.md").exists()
+    (tmp_project / "package.json").write_text(json.dumps({"devDependencies": {"tailwindcss": "^4.1.0"}}))
+    _export(tmp_project, directions)
+    tw = (tmp_project / "design" / "tailwind.css").read_text()
+    assert tw.index('@import "tailwindcss"') < tw.index("@theme") and tw.index('@import "./tokens.css"') < tw.index("@theme")
+    assert "@theme inline" in tw

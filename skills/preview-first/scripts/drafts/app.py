@@ -9,13 +9,19 @@ VARIANTS = {
     "detail": ["panel", "drawer"],
 }
 
-ROWS = [
-    ("0142", "Acme Studio", "Due 12 Nov", "1,240.00", "Draft", "pf-badge"),
-    ("0141", "Northwind", "Paid 2 Nov", "3,980.00", "Paid", "pf-badge pf-badge-success"),
-    ("0140", "Globex", "Overdue 9 days", "860.00", "Overdue", "pf-badge pf-badge-warning"),
-    ("0139", "Initech", "Paid 28 Oct", "2,150.00", "Paid", "pf-badge pf-badge-success"),
-    ("0138", "Umbrella", "Failed", "410.00", "Failed", "pf-badge pf-badge-danger"),
-]
+STATUSES = [("Draft", "pf-badge"), ("Done", "pf-badge pf-badge-success"), ("Pending", "pf-badge pf-badge-warning"),
+            ("Done", "pf-badge pf-badge-success"), ("Failed", "pf-badge pf-badge-danger")]
+DATES = ["Updated today", "Updated 2 Nov", "Pending 9 days", "Updated 28 Oct", "Failed"]
+
+
+def _rows(p):
+    """Table rows built from the brief's own feature titles, never a fixed domain."""
+    feats = features(p)
+    rows = []
+    for i in range(5):
+        f = feats[i % len(feats)]
+        rows.append(("%04d" % (142 - i), f["title"], DATES[i], "%d" % (120 * (i + 3)), STATUSES[i][0], STATUSES[i][1]))
+    return rows
 
 
 def _shell_open(p, v: str) -> str:
@@ -32,21 +38,21 @@ def _shell_open(p, v: str) -> str:
 
 def _table(p, v: str) -> str:
     rows = "".join('<tr><td><code>%s</code></td><td>%s</td><td class="pf-muted">%s</td><td class="pfd-num">%s</td><td><span class="%s">%s</span></td></tr>' % (
-        E(a), E(b), E(c), E(d), cls, E(st)) for a, b, c, d, st, cls in ROWS)
+        E(a), E(b), E(c), E(d), cls, E(st)) for a, b, c, d, st, cls in _rows(p))
     toolbar = ('<div class="pfd-toolbar"><h1>%s</h1><div class="pf-row"><label class="pf-field"><input class="pf-input" type="search" placeholder="Search" aria-label="Search"></label>'
                '<button class="pf-btn pf-btn-secondary pf-btn-sm" type="button">Filter</button><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button></div></div>') % (
         E(p.copy.get("nav", ["Items"])[1] if len(p.copy.get("nav", [])) > 1 else "Items"), E(p.copy.get("cta_primary", "New")))
-    table = ('<table class="pfd-table pfd-table-%s"><thead><tr><th>Number</th><th>Client</th><th>Status date</th><th class="pfd-num">Amount</th><th>Status</th></tr></thead>'
+    table = ('<table class="pfd-table pfd-table-%s"><thead><tr><th>Id</th><th>Name</th><th>Updated</th><th class="pfd-num">Count</th><th>Status</th></tr></thead>'
              '<tbody>%s</tbody></table>') % (E(v), rows)
     return section("table", v, toolbar + table)
 
 
 def _detail(p, v: str) -> str:
     f = features(p)[0]
-    body = ('<header class="pfd-detail-head"><div><p class="pf-kicker">Invoice 0142</p><h2>%s</h2></div><span class="pf-badge">Draft</span></header>'
-            '<p>%s</p><dl class="pfd-kv"><dt>Client</dt><dd>Acme Studio</dd><dt>Due</dt><dd>12 Nov 2026</dd><dt>Total</dt><dd class="pfd-num">1,240.00</dd></dl>'
-            '<div class="pf-row"><button class="pf-btn pf-btn-primary" type="button">Send</button><button class="pf-btn pf-btn-secondary" type="button">Edit</button>'
-            '<button class="pf-btn pf-btn-quiet" type="button">Delete</button></div>') % (E(f["title"]), E(f["body"]))
+    body = ('<header class="pfd-detail-head"><div><p class="pf-kicker">Item 0142</p><h2>%s</h2></div><span class="pf-badge">Draft</span></header>'
+            '<p>%s</p><dl class="pfd-kv"><dt>Owner</dt><dd>%s</dd><dt>Updated</dt><dd>Today</dd><dt>Count</dt><dd class="pfd-num">360</dd></dl>'
+            '<div class="pf-row"><button class="pf-btn pf-btn-primary" type="button">%s</button><button class="pf-btn pf-btn-secondary" type="button">Edit</button>'
+            '<button class="pf-btn pf-btn-quiet" type="button">Delete</button></div>') % (E(f["title"]), E(f["body"]), E(brand(p)), E(p.copy.get("cta_primary", "Save")))
     if v == "panel":
         return section("detail", v, '<aside class="pfd-panel">%s</aside>' % body)
     return section("detail", v, '<div class="pfd-drawer-scrim"><aside class="pfd-drawer">%s</aside></div>' % body)

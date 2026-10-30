@@ -62,27 +62,56 @@ def _apply_overrides(direction: dict, overrides: dict, idx: Dict[str, dict]) -> 
     return d
 
 
-def _detect_tailwind(project: Path) -> bool:
-    for pattern in ("tailwind.config.js", "tailwind.config.ts", "tailwind.config.cjs", "tailwind.config.mjs"):
-        if (project / pattern).exists():
-            return True
+def _detect_tailwind(project: Path) -> Optional[str]:
+    """Return "v4", "v3" or None. v4 is recognised by `@import "tailwindcss"` or a tailwindcss ^4
+    dependency; a config file alone (or a ^3 dependency) means v3."""
+    version = None
+    pkg = project / "package.json"
+    if pkg.exists():
+        try:
+            data = json.loads(pkg.read_text(encoding="utf-8"))
+            for key in ("dependencies", "devDependencies"):
+                spec = (data.get(key) or {}).get("tailwindcss")
+                if spec:
+                    digits = re.search(r"(\d+)", str(spec))
+                    version = "v4" if digits and int(digits.group(1)) >= 4 else "v3"
+        except (OSError, ValueError):
+            pass
+    if version == "v4":
+        return "v4"
     for css in list(project.glob("*.css")) + list(project.glob("*/*.css")) + list(project.glob("*/*/*.css")):
         if "node_modules" in css.parts:
             continue
         try:
             if '@import "tailwindcss"' in css.read_text(encoding="utf-8", errors="ignore"):
-                return True
+                return "v4"
         except OSError:
             continue
-    return False
+    if version == "v3":
+        return "v3"
+    for pattern in ("tailwind.config.js", "tailwind.config.ts", "tailwind.config.cjs", "tailwind.config.mjs"):
+        if (project / pattern).exists():
+            return "v3"
+    return None
+
+
+DEFAULT_NOTES = "## Project notes\n\nDecisions and constraints that are specific to this project. This section is never overwritten by preview-first.\n"
+
+
+def _split_free_text(existing: Optional[str]):
+    """Return (text before the start marker, text after the end marker). A file without markers
+    is kept whole as free text after the generated block, so nothing hand-written is lost."""
+    if not existing:
+        return "", DEFAULT_NOTES
+    if GEN_START in existing and GEN_END in existing:
+        head = existing.split(GEN_START, 1)[0]
+        tail = existing.split(GEN_END, 1)[1].lstrip("\n")
+        return head, (tail if tail.strip() else DEFAULT_NOTES)
+    return "", "## Project notes (previous DESIGN.md, kept verbatim)\n\n" + existing.strip() + "\n"
 
 
 def _free_text(existing: Optional[str]) -> str:
-    default = "## Project notes\n\nDecisions and constraints that are specific to this project. This section is never overwritten by preview-first.\n"
-    if not existing or GEN_END not in existing:
-        return default
-    tail = existing.split(GEN_END, 1)[1].lstrip("\n")
-    return tail if tail.strip() else default
+    return _split_free_text(existing)[1]
 
 
 def _fmt_hex_table(p: Prepared) -> str:
@@ -311,8 +340,17 @@ def _dtcg(p: Prepared) -> dict:
     return out
 
 
+def _tailwind_v3_note(p: Prepared) -> str:
+    rows = "\n".join("        %s: 'var(--pf-color-%s)'," % (role.replace("_", "-"), role.replace("_", "-")) for role in ROLES)
+    return ("# Tailwind v3 mapping\n\nThis project uses Tailwind v3, which has no `@theme`. Import `design/tokens.css` once, then "
+            "extend the config so utilities resolve to the contract:\n\n```js\n// tailwind.config.js\nmodule.exports = {\n  theme: {\n    extend: {\n      colors: {\n%s\n      },\n"
+            "      fontFamily: { heading: 'var(--pf-font-heading)', body: 'var(--pf-font-body)', mono: 'var(--pf-font-mono)' },\n"
+            "      borderRadius: { sm: 'var(--pf-radius-sm)', md: 'var(--pf-radius-md)', lg: 'var(--pf-radius-lg)', xl: 'var(--pf-radius-xl)', full: 'var(--pf-radius-full)' },\n"
+            "    },\n  },\n};\n```\n\nUpgrade to Tailwind v4 and re-run the export to get `design/tailwind.css` with an `@theme` block instead.\n") % rows
+
+
 def _tailwind_css(p: Prepared) -> str:
-    lines = ['@import "tailwindcss";', "", "/* preview-first design tokens for Tailwind v4 */", "@theme {"]
+    lines = ['@import "tailwindcss";', '@import "./tokens.css";', "", "/* preview-first design tokens for Tailwind v4. `inline` keeps the var() references live. */", "@theme inline {"]
     for role in ROLES:
         lines.append("  --color-%s: var(--pf-color-%s);" % (role.replace("_", "-"), role.replace("_", "-")))
     lines.append("  --font-heading: var(--pf-font-heading);")
@@ -323,8 +361,6 @@ def _tailwind_css(p: Prepared) -> str:
     for k in ("fast", "base", "slow", "page"):
         lines.append("  --duration-%s: var(--pf-dur-%s);" % (k, k))
     lines.append("}")
-    lines.append("")
-    lines.append('@import "./tokens.css";')
     return "\n".join(lines) + "\n"
 
 
@@ -348,24 +384,34 @@ def export(selection: dict, directions: dict, project: Path, graph: dict, device
     existing_md = None
     if (design / "DESIGN.md").exists():
         existing_md = (design / "DESIGN.md").read_text(encoding="utf-8")
-        history = design / "history" / _dt.datetime.now().strftime("%Y%m%d-%H%M%S")
-        history.mkdir(parents=True, exist_ok=True)
+        stamp = _dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+        history = design / "history" / stamp
+        n = 1
+        while history.exists():
+            n += 1
+            history = design / "history" / ("%s-%d" % (stamp, n))
+        history.mkdir(parents=True, exist_ok=False)
         for f in design.iterdir():
             if f.is_file():
                 shutil.copy2(f, history / f.name)
     design.mkdir(parents=True, exist_ok=True)
 
     written = []
-    md = render_design_md(p, selection, devices, _free_text(existing_md))
+    head_text, free_text = _split_free_text(existing_md)
+    md = head_text + render_design_md(p, selection, devices, free_text)
     (design / "DESIGN.md").write_text(md, encoding="utf-8")
     written.append(str(design / "DESIGN.md"))
     _common.dump_json(design / "tokens.json", _dtcg(p))
     written.append(str(design / "tokens.json"))
     (design / "tokens.css").write_text("/* Generated by preview-first from direction %s. Edit DESIGN.md notes, not this file. */\n" % p.id + p.tokens_css(), encoding="utf-8")
     written.append(str(design / "tokens.css"))
-    if _detect_tailwind(project):
+    tw = _detect_tailwind(project)
+    if tw == "v4":
         (design / "tailwind.css").write_text(_tailwind_css(p), encoding="utf-8")
         written.append(str(design / "tailwind.css"))
+    elif tw == "v3":
+        (design / "tailwind.md").write_text(_tailwind_v3_note(p), encoding="utf-8")
+        written.append(str(design / "tailwind.md"))
 
     claude = project / "CLAUDE.md"
     updated = False

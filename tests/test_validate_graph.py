@@ -58,3 +58,11 @@ def test_validate_file_selection():
 def test_finding_is_namedtuple():
     f = Finding("error", "x", "m")
     assert f.level == "error" and f.node_id == "x"
+
+
+def test_validate_file_enforces_direction_id_pattern():
+    schema = _load(SCHEMA)
+    base = {"version": 1, "brief": {}, "directions": [{"id": "../x", "name": "n", "bundle": {"style": "s", "palette": "p", "type_pairing": "t", "treatments": {}, "motion": [], "icon_set": "i"}}]}
+    assert any("pattern" in p for p in validate_file(base, "directions", schema))
+    base["directions"][0]["id"] = "A"
+    assert validate_file(base, "directions", schema) == []

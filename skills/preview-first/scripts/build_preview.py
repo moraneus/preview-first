@@ -129,28 +129,33 @@ class Prepared:
             parts.append(tokens_css(resolve_palette(p, self.overrides), selector='[data-palette="%s"]' % p["id"]))
         for p in [self.pairing] + self.alt_pairings:
             css = scale_tokens(self.radius_scale, self.density, p)
-            parts.append(css.replace(":root {", '[data-pairing="%s"] {' % p["id"], 1))
+            parts.append(css.replace(":root {", ':root[data-pairing="%s"] {' % p["id"], 1))
         for scale in RADIUS:
-            lines = ['[data-radius="%s"] {' % scale]
+            lines = [':root[data-radius="%s"] {' % scale]
             lines += ["  --pf-radius-%s: %s;" % (k, v) for k, v in RADIUS[scale].items()]
             lines.append("}")
             parts.append("\n".join(lines))
         for density in ("airy", "regular", "compact"):
             css = scale_tokens(self.radius_scale, density, self.pairing)
             keep = [l for l in css.splitlines() if "--pf-space-" in l or "--pf-density" in l]
-            parts.append('[data-density="%s"] {\n%s\n}' % (density, "\n".join(keep)))
+            parts.append(':root[data-density="%s"] {\n%s\n}' % (density, "\n".join(keep)))
         for level in range(4):
-            parts.append(motion_tokens(level).replace(":root {", '[data-motion="%d"] {' % level, 1))
+            parts.append(motion_tokens(level).replace(":root {", ':root[data-motion="%d"] {' % level, 1))
         return "\n".join(parts) + "\n"
 
     # -- misc --------------------------------------------------------------
+    vendored: Dict[str, str] = {}
+
     def font_links(self) -> List[str]:
         urls = []
         for p in [self.pairing] + self.alt_pairings:
             u = p.get("css_url")
             if u and u not in urls:
                 urls.append(u)
-        return urls
+        return [self.vendored.get(u, u) for u in urls]
+
+    def remote_font_urls(self) -> List[str]:
+        return [u for u in (p.get("css_url") for p in [self.pairing] + self.alt_pairings) if u]
 
     def font_families(self) -> List[str]:
         fams = [self.pairing["heading"]["family"], self.pairing["body"]["family"]]
@@ -182,10 +187,10 @@ def _chrome(p: Prepared, all_dirs: List[Prepared], view: str, depth: int = 1) ->
     up = "../" * depth
     dirs = "".join(
         '<a class="pfc-dir%s" href="%s%s/%s.html">%s <span>%s</span></a>'
-        % (" is-current" if d.id == p.id else "", up, d.id, view, E(d.id), E(d.name)) for d in all_dirs
+        % (" is-current" if d.id == p.id else "", up, E(d.id), view, E(d.id), E(d.name)) for d in all_dirs
     )
     views = "".join(
-        '<a class="pfc-view%s" href="%s%s/%s.html">%s</a>' % (" is-current" if v == view else "", up, p.id, v, label)
+        '<a class="pfc-view%s" href="%s%s/%s.html">%s</a>' % (" is-current" if v == view else "", up, E(p.id), v, label)
         for v, label in VIEWS
     )
 
@@ -216,7 +221,7 @@ def _chrome(p: Prepared, all_dirs: List[Prepared], view: str, depth: int = 1) ->
 
 def _head(p: Prepared, title: str, depth: int = 1, extra_css: Sequence[str] = ()) -> str:
     up = "../" * depth
-    links = "".join('<link rel="stylesheet" href="%s">' % E(u) for u in p.font_links())
+    links = "".join('<link rel="stylesheet" href="%s">' % E(u if u.startswith("http") else up + u) for u in p.font_links())
     css = "".join('<link rel="stylesheet" href="%s">' % E(c) for c in extra_css)
     return (
         '<title>%s</title>'
@@ -324,25 +329,33 @@ def _tile_body(p: Prepared) -> str:
     buttons += '<div class="pf-row" data-component="button-secondary">%s</div>' % "".join(
         '<button class="pf-btn pf-btn-secondary" type="button" data-state="%s">%s</button>' % (s, E(p.copy.get("cta_secondary", "Learn more"))) for s in ("default", "hover", "focus"))
     buttons += '<div class="pf-row" data-component="button-quiet"><button class="pf-btn pf-btn-quiet" type="button" data-state="default">Cancel</button><button class="pf-btn pf-btn-danger" type="button" data-state="default">Delete project</button></div>'
+    brand = (p.brief.get("words") or {}).get("name") or p.name
+    sample_email = "sam@%s.example" % (_slug(brand) or "example")
+    field_label = (p.copy.get("form") or {}).get("fields", ["Email"])[0] if (p.copy.get("form") or {}).get("fields") else "Email"
     inputs = "".join(
         '<label class="pf-field" data-state="%s"><span>%s</span><input class="pf-input" type="text" data-state="%s" value="%s"%s>%s</label>' % (
-            s, "Work email" if s != "error" else "Work email", s, "ada@ledgerline.dev" if s != "default" else "", " disabled" if s == "disabled" else "",
-            '<small class="pf-error">Use the address on the contract.</small>' if s == "error" else "")
+            s, E(field_label), s, E(sample_email) if s != "default" else "", " disabled" if s == "disabled" else "",
+            '<small class="pf-error">Check the address and try again.</small>' if s == "error" else "")
         for s in ("default", "focus", "error", "disabled"))
     inputs = '<div class="pf-grid-2" data-component="input">%s</div>' % inputs
-    select = ('<div class="pf-row" data-component="select"><label class="pf-field"><span>Currency</span><select class="pf-select"><option>EUR</option><option>USD</option><option>ILS</option></select></label>'
-              '<label class="pf-check"><input type="checkbox" checked><span>Send a copy to me</span></label>'
-              '<label class="pf-switch"><input type="checkbox" role="switch" checked><span class="pf-switch-track"></span><span>Automatic reminders</span></label></div>')
-    card = ('<div class="pf-grid-2" data-component="card"><article class="pf-card"><h3>%s</h3><p>%s</p><a class="pf-link" href="#">Read the guide</a></article>'
-            '<article class="pf-card"><span class="pf-badge">Draft</span><h3>Invoice 0142</h3><p class="pf-muted">Due 12 Nov · 3 line items</p>'
-            '<div class="pf-row"><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">Send</button><button class="pf-btn pf-btn-secondary pf-btn-sm" type="button">Edit</button></div></article></div>') % (
-        E(p.copy["features"][0]["title"]) if p.copy.get("features") else "Card title", E(p.copy["features"][0]["body"]) if p.copy.get("features") else "Card body.")
+    nav_words = p.copy.get("nav", ["Overview", "Settings"])
+    select = ('<div class="pf-row" data-component="select"><label class="pf-field"><span>%s</span><select class="pf-select"><option>%s</option><option>%s</option></select></label>'
+              '<label class="pf-check"><input type="checkbox" checked><span>Email me a copy</span></label>'
+              '<label class="pf-switch"><input type="checkbox" role="switch" checked><span class="pf-switch-track"></span><span>Notifications</span></label></div>') % (
+        E(nav_words[0] if nav_words else "Section"), E(nav_words[0] if nav_words else "One"), E(nav_words[1] if len(nav_words) > 1 else "Two"))
+    feats = p.copy.get("features") or [{"title": "Card title", "body": "Card body."}]
+    second = feats[1] if len(feats) > 1 else feats[0]
+    card = ('<div class="pf-grid-2" data-component="card"><article class="pf-card"><h3>%s</h3><p>%s</p><a class="pf-link" href="#">Read more</a></article>'
+            '<article class="pf-card"><span class="pf-badge">New</span><h3>%s</h3><p class="pf-muted">%s</p>'
+            '<div class="pf-row"><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button><button class="pf-btn pf-btn-secondary pf-btn-sm" type="button">Later</button></div></article></div>') % (
+        E(feats[0]["title"]), E(feats[0]["body"]), E(second["title"]), E(second["body"][:80]), E(p.copy.get("cta_primary", "Open")))
     badges = ('<div class="pf-row" data-component="badge"><span class="pf-badge">Neutral</span><span class="pf-badge pf-badge-primary">Primary</span>'
-              '<span class="pf-badge pf-badge-success">Paid</span><span class="pf-badge pf-badge-warning">Overdue</span><span class="pf-badge pf-badge-danger">Failed</span></div>')
-    alerts = ('<div class="pf-stack" data-component="alert"><div class="pf-alert pf-alert-info"><strong>Saved.</strong> Changes apply to new invoices.</div>'
-              '<div class="pf-alert pf-alert-danger"><strong>Payment failed.</strong> The card was declined; try another card or pay by transfer.</div></div>')
-    tabs = ('<div class="pf-tabs" role="tablist" data-component="tabs"><button role="tab" aria-selected="true" class="pf-tab">Overview</button>'
-            '<button role="tab" aria-selected="false" class="pf-tab">Line items</button><button role="tab" aria-selected="false" class="pf-tab">Activity</button><span class="pf-tab-indicator"></span></div>')
+              '<span class="pf-badge pf-badge-success">Done</span><span class="pf-badge pf-badge-warning">Pending</span><span class="pf-badge pf-badge-danger">Failed</span></div>')
+    alerts = ('<div class="pf-stack" data-component="alert"><div class="pf-alert pf-alert-info"><strong>Saved.</strong> Your changes are live.</div>'
+              '<div class="pf-alert pf-alert-danger"><strong>Could not save.</strong> The connection dropped; your edits are kept, try again.</div></div>')
+    tabs = ('<div class="pf-tabs" role="tablist" data-component="tabs"><button role="tab" aria-selected="true" class="pf-tab">%s</button>'
+            '<button role="tab" aria-selected="false" class="pf-tab">%s</button><button role="tab" aria-selected="false" class="pf-tab">Activity</button><span class="pf-tab-indicator"></span></div>') % (
+        E(nav_words[0] if nav_words else "Overview"), E(nav_words[1] if len(nav_words) > 1 else "Details"))
     nav_links = "".join('<a href="#">%s</a>' % E(x) for x in p.copy.get("nav", [])[:4])
     nav = ('<nav class="pf-nav" data-component="nav" aria-label="Sample navigation"><span class="pf-wordmark">%s</span><div class="pf-nav-links">%s</div>'
            '<button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button></nav>') % (
@@ -388,18 +401,17 @@ def _gallery(dirs: List[Prepared], brief: dict) -> str:
         strip = "".join('<span style="background:%s" title="%s"></span>' % (r[k]["hex"], k) for k in ("bg", "surface", "text", "primary", "accent"))
         cards.append(
             '<article class="pfg-card" data-direction="%s">'
-            '<link rel="stylesheet" href="%s/tokens.css">'
             '<div class="pfg-thumb"><iframe class="pfg-frame" loading="lazy" src="%s/draft.html?embed=1%s" title="%s draft" tabindex="-1"></iframe></div>'
             '<div class="pfg-body"><p class="pfc-kicker">Direction %s · %s</p><h2>%s</h2><p>%s</p>'
             '<div class="pfg-strip">%s</div>'
             '<p class="pfg-type"><span style="font-family:%s">%s</span> <span class="pfc-muted">with %s</span></p>'
             '<nav class="pfg-links"><a href="%s/tile.html">Tile</a><a href="%s/draft.html">Draft</a><a href="%s/devices.html">Devices</a></nav>'
             '<button class="pfc-select" type="button" data-action="select" data-direction="%s">Select %s</button></div></article>'
-            % (E(p.id), E(p.id), E(p.id), "&theme=dark" if p.palette.get("scheme") == "dark" else "", E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
+            % (E(p.id), E(p.id), "&theme=dark" if p.palette.get("scheme") == "dark" else "", E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
                E("'%s', %s" % (p.pairing["heading"]["family"], p.pairing["fallback_heading"])), E(p.pairing["heading"]["family"]),
                E(p.pairing["body"]["family"]), E(p.id), E(p.id), E(p.id), E(p.id), E(p.name))
         )
-    links = "".join('<link rel="stylesheet" href="%s">' % E(u) for p in dirs for u in p.font_links())
+    links = "".join('<link rel="stylesheet" href="%s">' % E(u) for p in dirs for u in p.font_links())  # gallery sits at out/, vendored paths are already relative to it
     body = (
         '<header class="pfg-head"><p class="pfc-kicker">preview-first</p><h1>Design directions for %s</h1>'
         '<p class="pfc-muted">%s</p><div class="pfc-controls"><button class="pfc-theme" type="button" data-control="theme" aria-pressed="false">Dark</button></div></header>'
@@ -418,35 +430,52 @@ def _gallery(dirs: List[Prepared], brief: dict) -> str:
 
 # ---------------------------------------------------------------- fonts (optional vendoring)
 
-def _vendor_fonts(dirs: List[Prepared], out: Path, warnings: List[str]) -> None:
+def _default_fetch(url: str, timeout: int = 20):
+    ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+    req = urllib.request.Request(url, headers={"User-Agent": ua})
+    data = urllib.request.urlopen(req, timeout=timeout).read()
+    return data if url.endswith(".woff2") else data.decode("utf-8")
+
+
+def _vendor_fonts(dirs: List[Prepared], out: Path, warnings: List[str], fetcher=None) -> Dict[str, str]:
+    """Download each font stylesheet and its woff2 files into out/fonts/. Returns a map from the
+    remote stylesheet URL to the relative path pages should link instead."""
+    fetch = fetcher or _default_fetch
     fonts_dir = out / "fonts"
     fonts_dir.mkdir(parents=True, exist_ok=True)
-    ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-    seen = set()
+    mapping: Dict[str, str] = {}
     for p in dirs:
-        for url in p.font_links():
-            if url in seen:
+        for url in p.remote_font_urls():
+            if url in mapping:
                 continue
-            seen.add(url)
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": ua})
-                css = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
+                css = fetch(url)
+                if isinstance(css, bytes):
+                    css = css.decode("utf-8")
+
                 def repl(m):
                     furl = m.group(1)
-                    fname = _slug(furl.rsplit("/", 1)[-1].split("?")[0]) + ".woff2"
+                    fname = _slug(furl.rsplit("/", 1)[-1].split("?")[0].rsplit(".", 1)[0]) + ".woff2"
                     target = fonts_dir / fname
                     if not target.exists():
-                        target.write_bytes(urllib.request.urlopen(urllib.request.Request(furl, headers={"User-Agent": ua}), timeout=20).read())
+                        data = fetch(furl)
+                        target.write_bytes(data if isinstance(data, bytes) else data.encode("utf-8"))
                     return "url(%s)" % fname
+
                 css = re.sub(r"url\((https://[^)]+\.woff2)\)", repl, css)
-                (fonts_dir / (_slug(url) + ".css")).write_text(css, encoding="utf-8")
+                name = _slug(url)[:80] + ".css"
+                (fonts_dir / name).write_text(css, encoding="utf-8")
+                mapping[url] = "fonts/" + name
             except Exception as exc:  # network failures are reported, not fatal
                 warnings.append("font vendoring failed for %s: %s" % (url, exc))
+    for p in dirs:
+        p.vendored = dict(mapping)
+    return mapping
 
 
 # ---------------------------------------------------------------- build
 
-def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_fonts: bool = False) -> dict:
+def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_fonts: bool = False, fetcher=None) -> dict:
     out = Path(out)
     problems = validate_file(directions, "directions", _common.load_schema())
     if problems:
@@ -457,6 +486,8 @@ def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_
     warnings: List[str] = []
     pages: List[str] = []
 
+    if vendor_fonts:
+        _vendor_fonts(dirs, out, warnings, fetcher)
     (out / "assets").mkdir(parents=True, exist_ok=True)
     for name in ("preview.css", "tile.css", "draft.css", "preview.js", "device-frames.css"):
         shutil.copyfile(PREVIEW_ASSETS / name, out / "assets" / name)
@@ -503,8 +534,6 @@ def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_
         "devices": devices,
         "built": _common.now_iso(),
     })
-    if vendor_fonts:
-        _vendor_fonts(dirs, out, warnings)
     return {"pages": pages, "warnings": warnings, "out": str(out)}
 
 

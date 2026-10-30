@@ -78,6 +78,9 @@ def resolve_palette(palette: dict, overrides: Optional[dict] = None) -> dict:
         if brand_primary:
             out[mode]["primary"] = _entry(brand_primary)
             out[mode]["on_primary"] = _entry(best_on_colour(out[mode]["primary"]["hex"]))
+            # The focus ring follows the brand colour when it is visible enough against the page.
+            if grade(out[mode]["primary"]["hex"], out[mode]["bg"]["hex"], "ui")["ok"]:
+                out[mode]["focus"] = _entry(brand_primary)
         if brand_accent:
             out[mode]["accent"] = _entry(brand_accent)
             out[mode]["on_accent"] = _entry(best_on_colour(out[mode]["accent"]["hex"]))
@@ -116,12 +119,15 @@ def tokens_css(resolved: dict, selector: str = ":root", scheme: str = "both") ->
         lines.append("}")
         return "\n".join(lines)
 
-    light_sel = selector
-    dark_sel = selector + '[data-theme="dark"]' if selector != ":root" else '[data-theme="dark"]'
-    if selector.startswith("["):
-        dark_sel = '[data-theme="dark"] %s, %s[data-theme="dark"]' % (selector, selector)
-    auto_sel = (":root:not([data-theme=\"light\"])" if selector == ":root"
-                else ':root:not([data-theme="light"]) %s' % selector)
+    if selector == ":root":
+        light_sel, dark_sel, auto_sel = ":root", '[data-theme="dark"]', ':root:not([data-theme="light"])'
+    else:
+        # Scoped variants live on <html> too, so they must target :root with higher specificity
+        # than the base tokens, never a descendant.
+        scoped = selector if selector.startswith(":root") else ":root" + selector
+        light_sel = scoped
+        dark_sel = scoped + '[data-theme="dark"]'
+        auto_sel = scoped + ':not([data-theme="light"])'
     parts = [block(light_sel, "light", "color-scheme: light dark;")]
     if scheme in ("both", "dark"):
         parts.append(block(dark_sel, "dark"))

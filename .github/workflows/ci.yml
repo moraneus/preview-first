@@ -7,23 +7,28 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        os: [ubuntu-latest]
         python: ["3.9", "3.12"]
+        include:
+          - os: windows-latest
+            python: "3.12"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
       - name: Validate knowledge graph
-        run: python3 skills/preview-first/scripts/validate_graph.py --quiet
+        run: python skills/preview-first/scripts/validate_graph.py --quiet
       - name: Install pytest
-        run: python3 -m pip install --quiet pytest
+        run: python -m pip install --quiet pytest
       - name: Run tests
-        run: python3 -m pytest -q
+        run: python -m pytest -q
       - name: Smoke build the preview
+        shell: bash
         run: |
-          python3 skills/preview-first/scripts/build_preview.py --directions tests/fixtures/directions_two.json --out /tmp/preview-smoke
-          test -f /tmp/preview-smoke/index.html
-          test -f /tmp/preview-smoke/A/devices.html
+          python skills/preview-first/scripts/build_preview.py --directions tests/fixtures/directions_two.json --out "$RUNNER_TEMP/preview-smoke"
+          test -f "$RUNNER_TEMP/preview-smoke/index.html"
+          test -f "$RUNNER_TEMP/preview-smoke/A/devices.html"

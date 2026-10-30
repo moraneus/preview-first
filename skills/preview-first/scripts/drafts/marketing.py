@@ -53,9 +53,8 @@ def _features(p, v: str) -> str:
 
 def _proof(p, v: str) -> str:
     proof = p.copy.get("proof") or ""
-    if v == "none" or (not proof and v == "logos-text"):
-        if v == "none":
-            return section("proof", v, "")
+    if v == "none":
+        return section("proof", v, "")
     if v == "quote":
         inner = '<blockquote class="pfd-quote"><p>%s</p><footer class="pf-muted">%s</footer></blockquote>' % (
             E(proof or "A short, attributed quote from a real customer goes here. Nothing invented."), E("Name, role, company (real, with permission)"))

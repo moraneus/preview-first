@@ -128,7 +128,7 @@
             "type": "object",
             "required": ["id", "name", "bundle"],
             "properties": {
-              "id": {"type": "string"},
+              "id": {"type": "string", "pattern": "[A-Za-z0-9][A-Za-z0-9_-]{0,31}"},
               "name": {"type": "string"},
               "rationale": {"type": "string"},
               "bundle": {

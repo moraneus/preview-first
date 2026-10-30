@@ -14,10 +14,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import secrets
 import signal
 import subprocess
 import sys
+import threading
 import time
+import urllib.request
 import webbrowser
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -30,12 +33,15 @@ import _common  # noqa: E402
 from validate_graph import validate_file  # noqa: E402
 
 LOCAL_HOSTS = {"localhost", "127.0.0.1", "[::1]", "::1"}
+PING_PATH = "/__pf/ping"
+MAX_BODY = 64 * 1024
 
 
 # ---------------------------------------------------------------- handler
 
 class PreviewHandler(SimpleHTTPRequestHandler):
     preview_dir: Path = Path(".")
+    token: str = ""
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(self.preview_dir), **kwargs)
@@ -63,8 +69,17 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         return True
 
     def do_GET(self):
-        if self._guard():
-            super().do_GET()
+        if not self._guard():
+            return
+        if self.path.split("?", 1)[0] == PING_PATH:
+            body = json.dumps({"token": self.token, "dir": str(Path(self.directory).resolve()), "pid": os.getpid()}).encode("utf-8")
+            self.send_response(HTTPStatus.OK)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        super().do_GET()
 
     def do_HEAD(self):
         if self._guard():
@@ -91,6 +106,9 @@ class PreviewHandler(SimpleHTTPRequestHandler):
                 return
         try:
             length = int(self.headers.get("Content-Length") or 0)
+            if length > MAX_BODY:
+                self.send_error(HTTPStatus.REQUEST_ENTITY_TOO_LARGE)
+                return
             body = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
         except (ValueError, UnicodeDecodeError):
             self.send_error(HTTPStatus.BAD_REQUEST, "body must be JSON")
@@ -99,6 +117,10 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         if problems:
             self.send_error(HTTPStatus.BAD_REQUEST, "; ".join(problems[:3]))
             return
+        known = _known_directions(Path(self.directory))
+        if known is not None and body.get("direction") not in known:
+            self.send_error(HTTPStatus.BAD_REQUEST, "unknown direction %r" % body.get("direction"))
+            return
         body.setdefault("overrides", {})
         body.setdefault("selected_at", _common.now_iso())
         _common.dump_json(Path(self.directory) / "selection.json", body)
@@ -106,8 +128,18 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         self.end_headers()
 
 
-def make_server(directory: Path, port: int = 0) -> ThreadingHTTPServer:
-    handler = type("BoundPreviewHandler", (PreviewHandler,), {"preview_dir": Path(directory)})
+def _known_directions(directory: Path):
+    data = directory / "data.json"
+    if not data.exists():
+        return None
+    try:
+        return {d["id"] for d in _common.load_json(data).get("directions", [])}
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
+
+
+def make_server(directory: Path, port: int = 0, token: Optional[str] = None) -> ThreadingHTTPServer:
+    handler = type("BoundPreviewHandler", (PreviewHandler,), {"preview_dir": Path(directory), "token": token or secrets.token_hex(16)})
     httpd = ThreadingHTTPServer(("127.0.0.1", port), handler)
     httpd.daemon_threads = True
     return httpd
@@ -153,29 +185,42 @@ def read_status(directory: Path) -> Optional[dict]:
         return None
 
 
+def is_alive_server(info: dict, timeout: float = 1.0) -> bool:
+    """True when a preview server answers the ping on the recorded port with the recorded token
+    for the recorded directory. This is what makes stop() safe: it never trusts a pid alone."""
+    try:
+        port = int(info.get("port") or 0)
+        if not port:
+            return False
+        req = urllib.request.Request("http://127.0.0.1:%d%s" % (port, PING_PATH), headers={"Host": "127.0.0.1:%d" % port})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except Exception:
+        return False
+    if data.get("token") != info.get("token"):
+        return False
+    want = info.get("dir")
+    return not want or str(Path(want).resolve()) == str(Path(data.get("dir", "")).resolve())
+
+
 def is_stale(directory: Path) -> bool:
     info = read_status(directory)
     if not info:
         return False
-    pid = int(info.get("pid", 0) or 0)
-    if not pid or not _alive(pid):
-        return True
-    return "serve_preview" not in _cmdline(pid)
+    return not is_alive_server(info)
 
 
 def stop(directory: Path) -> bool:
     info = read_status(directory)
     stopped = False
-    if info:
+    if info and is_alive_server(info):
         pid = int(info.get("pid", 0) or 0)
-        if pid and _alive(pid):
-            cmd = _cmdline(pid)
-            if "serve_preview" in cmd and str(Path(directory).resolve()) in cmd or ("serve_preview" in cmd and str(directory) in cmd):
-                try:
-                    os.kill(pid, signal.SIGTERM)
-                    stopped = True
-                except OSError:
-                    stopped = False
+        if pid:
+            try:
+                os.kill(pid, signal.SIGTERM)
+                stopped = True
+            except OSError:
+                stopped = False
     try:
         _server_json(directory).unlink()
     except FileNotFoundError:
@@ -199,12 +244,25 @@ def wait_for_selection(directory: Path, timeout_s: float) -> Optional[dict]:
 
 # ---------------------------------------------------------------- start
 
+def _watch_directory(directory: Path, httpd, interval: float = 2.0, max_checks: Optional[int] = None) -> None:
+    """Shut the server down once the project directory disappears."""
+    checks = 0
+    while max_checks is None or checks < max_checks:
+        checks += 1
+        if not Path(directory).exists():
+            httpd.shutdown()
+            return
+        time.sleep(interval)
+
+
 def serve_foreground(directory: Path, port: int, open_browser: bool = False) -> int:
     directory = Path(directory).resolve()
-    httpd = make_server(directory, port)
+    token = secrets.token_hex(16)
+    httpd = make_server(directory, port, token)
     actual = httpd.server_address[1]
     url = "http://127.0.0.1:%d/index.html" % actual
-    _common.dump_json(_server_json(directory), {"port": actual, "pid": os.getpid(), "url": url, "dir": str(directory), "started": _common.now_iso()})
+    _common.dump_json(_server_json(directory), {"port": actual, "pid": os.getpid(), "url": url, "dir": str(directory), "token": token, "started": _common.now_iso()})
+    threading.Thread(target=_watch_directory, args=(directory, httpd), daemon=True).start()
     if open_browser:
         try:
             webbrowser.open(url)
@@ -234,9 +292,12 @@ def serve_foreground(directory: Path, port: int, open_browser: bool = False) -> 
 def start_detached(directory: Path, port: int, open_browser: bool) -> dict:
     directory = Path(directory).resolve()
     if is_stale(directory):
-        _server_json(directory).unlink(missing_ok=True)
+        try:
+            _server_json(directory).unlink()
+        except FileNotFoundError:
+            pass
     info = read_status(directory)
-    if info and _alive(int(info.get("pid", 0) or 0)):
+    if info and is_alive_server(info):
         if open_browser:
             webbrowser.open(info["url"])
         return info
