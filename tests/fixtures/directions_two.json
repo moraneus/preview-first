@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "brief": {
+    "product": "Ledgerline, an invoicing tool for freelance developers",
+    "audience": "solo developers and small studios",
+    "product_type": "product-type.saas",
+    "moods": ["mood.precise", "mood.calm"],
+    "page_type": "marketing",
+    "constraints": {"scheme": "both"},
+    "words": {"name": "Ledgerline", "tagline": "Invoices that match your git log"}
+  },
+  "directions": [
+    {
+      "id": "A",
+      "name": "Ledger",
+      "rationale": "Precise and calm: a paper-like canvas with a serif voice and one steady blue, because the brief asked for trust without noise.",
+      "bundle": {
+        "style": "style.paper-editorial",
+        "style_family": "editorial",
+        "palette": {"id": "palette.inline-paper", "kind": "palette", "name": "Paper ink", "temperature": "warm", "scheme": "both",
+          "light": {"bg": "oklch(0.985 0.006 85)", "surface": "oklch(0.965 0.008 85)", "surface_raised": "oklch(1 0 0)", "text": "oklch(0.22 0.01 60)", "text_muted": "oklch(0.48 0.012 60)", "border": "oklch(0.88 0.008 80)", "primary": "oklch(0.42 0.12 255)", "on_primary": "oklch(0.99 0 0)", "accent": "oklch(0.52 0.14 35)", "on_accent": "oklch(0.99 0 0)", "success": "oklch(0.5 0.12 150)", "warning": "oklch(0.6 0.13 80)", "danger": "oklch(0.5 0.18 25)", "focus": "oklch(0.42 0.12 255)"},
+          "dark": {"bg": "oklch(0.17 0.008 60)", "surface": "oklch(0.21 0.008 60)", "surface_raised": "oklch(0.25 0.008 60)", "text": "oklch(0.94 0.006 85)", "text_muted": "oklch(0.72 0.008 85)", "border": "oklch(0.32 0.008 60)", "primary": "oklch(0.76 0.1 255)", "on_primary": "oklch(0.16 0 0)", "accent": "oklch(0.78 0.11 35)", "on_accent": "oklch(0.16 0 0)", "success": "oklch(0.75 0.12 150)", "warning": "oklch(0.8 0.12 80)", "danger": "oklch(0.72 0.16 25)", "focus": "oklch(0.76 0.1 255)"}},
+        "type_pairing": {"id": "type-pairing.inline-fraunces", "kind": "type-pairing", "name": "Fraunces / Figtree",
+          "heading": {"family": "Fraunces", "category": "serif-transitional", "weights": [600], "source": "google"},
+          "body": {"family": "Figtree", "category": "geometric", "weights": [400, 500, 600], "source": "google"},
+          "mono": {"family": "JetBrains Mono", "category": "mono", "weights": [400], "source": "google"},
+          "fallback_heading": "Georgia, 'Times New Roman', serif", "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+          "scale_ratio": 1.25, "measure_ch": 66, "license": "OFL",
+          "css_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Figtree:wght@400;500;600&family=JetBrains+Mono&display=swap"},
+        "treatments": {"button_shape": "rounded", "button_fill": "solid", "input_edge": "hairline", "card_edge": "border", "nav": "airy", "divider": "hairline", "image_corner": "sm", "focus_ring": "offset", "link_style": "underline", "elevation": "none"},
+        "motion": ["motion-pattern.press-scale-97", "motion-pattern.hover-tint", "motion-pattern.enter-fade-up-8", "motion-pattern.page-crossfade-vt", "motion-pattern.exit-fade-fast"],
+        "motion_level": 1,
+        "icon_set": "icon-set.phosphor",
+        "radius_scale": "sm",
+        "density": "airy",
+        "alternatives": {"palettes": [], "type_pairings": [], "icon_sets": ["icon-set.lucide"]}
+      },
+      "copy": {
+        "headline": "Invoices that match your git log",
+        "subhead": "Ledgerline turns merged pull requests into line items, so billing a client takes four minutes, not an evening.",
+        "cta_primary": "Start free",
+        "cta_secondary": "See a sample invoice",
+        "nav": ["Product", "Pricing", "Docs", "Sign in"],
+        "features": [
+          {"title": "Pull requests become line items", "body": "Connect a repository and every merged PR is a draft line with hours from your commits."},
+          {"title": "Clients approve in one click", "body": "Send a link, not a PDF. Approval, questions and payment live on one page."},
+          {"title": "Taxes done per country", "body": "VAT, GST and sales tax rules applied by client address."}
+        ],
+        "proof": "Used by 1,200 independent developers in 40 countries, per our October 2026 customer count.",
+        "form": {"title": "Get the first invoice out today", "fields": ["Work email"], "submit": "Create account"},
+        "footer": "Ledgerline is made in Tel Aviv."
+      },
+      "layout": {"hero": "editorial", "features": "list", "proof": "quote", "cta": "form", "footer": "columns"}
+    },
+    {
+      "id": "B",
+      "name": "Console",
+      "bundle": {
+        "style": "style.dark-console",
+        "style_family": "dark",
+        "palette": {"id": "palette.inline-console", "kind": "palette", "name": "Carbon signal", "temperature": "cool", "scheme": "dark",
+          "light": {"bg": "oklch(0.985 0.004 240)", "surface": "oklch(0.96 0.005 240)", "surface_raised": "oklch(1 0 0)", "text": "oklch(0.2 0.01 240)", "text_muted": "oklch(0.47 0.012 240)", "border": "oklch(0.87 0.008 240)", "primary": "oklch(0.45 0.12 190)", "on_primary": "oklch(0.99 0 0)", "accent": "oklch(0.55 0.15 60)", "on_accent": "oklch(0.1 0 0)", "success": "oklch(0.5 0.12 150)", "warning": "oklch(0.6 0.13 80)", "danger": "oklch(0.5 0.18 25)", "focus": "oklch(0.45 0.12 190)"},
+          "dark": {"bg": "oklch(0.14 0.008 240)", "surface": "oklch(0.18 0.008 240)", "surface_raised": "oklch(0.22 0.008 240)", "text": "oklch(0.93 0.005 240)", "text_muted": "oklch(0.7 0.01 240)", "border": "oklch(0.3 0.01 240)", "primary": "oklch(0.8 0.12 190)", "on_primary": "oklch(0.14 0 0)", "accent": "oklch(0.8 0.14 60)", "on_accent": "oklch(0.14 0 0)", "success": "oklch(0.75 0.12 150)", "warning": "oklch(0.8 0.12 80)", "danger": "oklch(0.72 0.16 25)", "focus": "oklch(0.8 0.12 190)"}},
+        "type_pairing": {"id": "type-pairing.inline-geist", "kind": "type-pairing", "name": "Geist / Geist",
+          "heading": {"family": "Geist", "category": "neo-grotesque", "weights": [500, 600], "source": "google"},
+          "body": {"family": "Geist", "category": "neo-grotesque", "weights": [400, 500], "source": "google"},
+          "mono": {"family": "Geist Mono", "category": "mono", "weights": [400], "source": "google"},
+          "fallback_heading": "system-ui, -apple-system, sans-serif", "fallback_body": "system-ui, -apple-system, sans-serif",
+          "scale_ratio": 1.2, "measure_ch": 64, "license": "OFL",
+          "css_url": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono&display=swap"},
+        "treatments": {"button_shape": "rounded", "button_fill": "soft", "input_edge": "filled", "card_edge": "border", "nav": "sidebar", "divider": "hairline", "image_corner": "sm", "focus_ring": "glow", "link_style": "colour", "elevation": "none"},
+        "motion": ["motion-pattern.press-scale-97", "motion-pattern.hover-tint", "motion-pattern.enter-scale-95", "motion-pattern.skeleton-shimmer"],
+        "motion_level": 1,
+        "icon_set": "icon-set.lucide",
+        "radius_scale": "sm",
+        "density": "compact",
+        "alternatives": {"palettes": [], "type_pairings": [], "icon_sets": ["icon-set.tabler"]}
+      }
+    }
+  ]
+}

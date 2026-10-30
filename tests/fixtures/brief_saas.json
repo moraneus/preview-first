@@ -1,0 +1,10 @@
+{
+  "product": "Ledgerline, an invoicing tool for freelance developers",
+  "audience": "solo developers and small studios who bill clients monthly",
+  "product_type": "product-type.saas",
+  "moods": ["precise", "calm", "trustworthy"],
+  "page_type": "marketing",
+  "constraints": {"scheme": "both"},
+  "admired": ["https://linear.app"],
+  "words": {"name": "Ledgerline", "tagline": "Invoices that match your git log"}
+}

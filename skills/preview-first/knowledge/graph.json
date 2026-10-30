@@ -2275,7 +2275,18 @@
         "dentist",
         "plumber",
         "boutique",
-        "hotel"
+        "hotel",
+        "groomer",
+        "grooming",
+        "pet",
+        "dog",
+        "vet",
+        "barber",
+        "spa",
+        "florist",
+        "studio",
+        "clinic appointment",
+        "neighbourhood shop"
       ],
       "page_type": "marketing",
       "needs": [
@@ -2705,6 +2716,3890 @@
       ],
       "motion_level": 0,
       "temperature_hint": "neutral",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.paper-ink",
+      "kind": "palette",
+      "name": "Paper & Ink",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "ink",
+      "notes": "Warm paper canvas with a blue-black ink primary and one vermilion accent; the default for editorial and poster layouts.",
+      "light": {
+        "bg": "oklch(0.975 0.010 80.0)",
+        "surface": "oklch(0.955 0.010 80.0)",
+        "surface_raised": "oklch(0.990 0.006 80.0)",
+        "text": "oklch(0.210 0.016 80.0)",
+        "text_muted": "oklch(0.470 0.014 80.0)",
+        "border": "oklch(0.870 0.010 80.0)",
+        "primary": "oklch(0.260 0.025 260.0)",
+        "on_primary": "oklch(0.985 0.008 80.0)",
+        "accent": "oklch(0.520 0.170 38.0)",
+        "on_accent": "oklch(0.985 0.008 80.0)",
+        "focus": "oklch(0.500 0.120 255.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 80.0)",
+        "surface": "oklch(0.210 0.008 80.0)",
+        "surface_raised": "oklch(0.250 0.008 80.0)",
+        "text": "oklch(0.930 0.005 80.0)",
+        "text_muted": "oklch(0.700 0.008 80.0)",
+        "border": "oklch(0.330 0.008 80.0)",
+        "primary": "oklch(0.880 0.020 260.0)",
+        "on_primary": "oklch(0.170 0.015 80.0)",
+        "accent": "oklch(0.740 0.136 38.0)",
+        "on_accent": "oklch(0.170 0.015 80.0)",
+        "focus": "oklch(0.760 0.100 260.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.slate-signal",
+      "kind": "palette",
+      "name": "Slate & Signal",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "blue",
+      "notes": "Cool slate neutrals with a clear blue primary and a signal-orange accent; product UI, dashboards and bento grids.",
+      "light": {
+        "bg": "oklch(0.985 0.010 250.0)",
+        "surface": "oklch(0.965 0.010 250.0)",
+        "surface_raised": "oklch(0.995 0.006 250.0)",
+        "text": "oklch(0.210 0.016 250.0)",
+        "text_muted": "oklch(0.470 0.014 250.0)",
+        "border": "oklch(0.870 0.010 250.0)",
+        "primary": "oklch(0.480 0.160 252.0)",
+        "on_primary": "oklch(0.985 0.008 250.0)",
+        "accent": "oklch(0.680 0.170 55.0)",
+        "on_accent": "oklch(0.170 0.015 250.0)",
+        "focus": "oklch(0.550 0.150 252.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 250.0)",
+        "surface": "oklch(0.210 0.008 250.0)",
+        "surface_raised": "oklch(0.250 0.008 250.0)",
+        "text": "oklch(0.930 0.005 250.0)",
+        "text_muted": "oklch(0.700 0.008 250.0)",
+        "border": "oklch(0.330 0.008 250.0)",
+        "primary": "oklch(0.740 0.128 252.0)",
+        "on_primary": "oklch(0.170 0.015 250.0)",
+        "accent": "oklch(0.720 0.136 55.0)",
+        "on_accent": "oklch(0.170 0.015 250.0)",
+        "focus": "oklch(0.760 0.120 252.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.graphite-amber",
+      "kind": "palette",
+      "name": "Graphite & Amber",
+      "temperature": "neutral",
+      "scheme": "dark",
+      "hue_family": "amber",
+      "notes": "Near-black graphite with amber reserved for the one thing that matters; consoles, engineering tools and dense data.",
+      "light": {
+        "bg": "oklch(0.985 0.006 260.0)",
+        "surface": "oklch(0.965 0.006 260.0)",
+        "surface_raised": "oklch(0.995 0.004 260.0)",
+        "text": "oklch(0.210 0.010 260.0)",
+        "text_muted": "oklch(0.470 0.008 260.0)",
+        "border": "oklch(0.870 0.006 260.0)",
+        "primary": "oklch(0.320 0.012 260.0)",
+        "on_primary": "oklch(0.985 0.006 260.0)",
+        "accent": "oklch(0.780 0.150 80.0)",
+        "on_accent": "oklch(0.170 0.009 260.0)",
+        "focus": "oklch(0.550 0.130 80.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.005 260.0)",
+        "surface": "oklch(0.180 0.005 260.0)",
+        "surface_raised": "oklch(0.220 0.005 260.0)",
+        "text": "oklch(0.930 0.004 260.0)",
+        "text_muted": "oklch(0.700 0.005 260.0)",
+        "border": "oklch(0.300 0.005 260.0)",
+        "primary": "oklch(0.880 0.010 260.0)",
+        "on_primary": "oklch(0.170 0.009 260.0)",
+        "accent": "oklch(0.820 0.120 80.0)",
+        "on_accent": "oklch(0.170 0.009 260.0)",
+        "focus": "oklch(0.800 0.120 80.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.moss-cream",
+      "kind": "palette",
+      "name": "Moss & Cream",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "green",
+      "notes": "Soft cream with a mossy green primary and ochre accent; warm organic brands, food, gardens, wellbeing.",
+      "light": {
+        "bg": "oklch(0.975 0.012 90.0)",
+        "surface": "oklch(0.955 0.012 90.0)",
+        "surface_raised": "oklch(0.990 0.007 90.0)",
+        "text": "oklch(0.210 0.019 90.0)",
+        "text_muted": "oklch(0.470 0.017 90.0)",
+        "border": "oklch(0.870 0.012 90.0)",
+        "primary": "oklch(0.440 0.090 135.0)",
+        "on_primary": "oklch(0.985 0.008 90.0)",
+        "accent": "oklch(0.720 0.130 70.0)",
+        "on_accent": "oklch(0.170 0.018 90.0)",
+        "focus": "oklch(0.550 0.150 135.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 90.0)",
+        "surface": "oklch(0.210 0.010 90.0)",
+        "surface_raised": "oklch(0.250 0.010 90.0)",
+        "text": "oklch(0.930 0.006 90.0)",
+        "text_muted": "oklch(0.700 0.010 90.0)",
+        "border": "oklch(0.330 0.010 90.0)",
+        "primary": "oklch(0.740 0.072 135.0)",
+        "on_primary": "oklch(0.170 0.018 90.0)",
+        "accent": "oklch(0.760 0.104 70.0)",
+        "on_accent": "oklch(0.170 0.018 90.0)",
+        "focus": "oklch(0.760 0.120 135.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.ink-coral",
+      "kind": "palette",
+      "name": "Ink & Coral",
+      "temperature": "neutral",
+      "scheme": "both",
+      "hue_family": "coral",
+      "notes": "Near-neutral canvas, ink primary and a single coral accent; swiss grids and poster type that want one warm hit.",
+      "light": {
+        "bg": "oklch(0.985 0.006 270.0)",
+        "surface": "oklch(0.965 0.006 270.0)",
+        "surface_raised": "oklch(0.995 0.004 270.0)",
+        "text": "oklch(0.210 0.010 270.0)",
+        "text_muted": "oklch(0.470 0.008 270.0)",
+        "border": "oklch(0.870 0.006 270.0)",
+        "primary": "oklch(0.250 0.015 270.0)",
+        "on_primary": "oklch(0.985 0.006 270.0)",
+        "accent": "oklch(0.700 0.160 30.0)",
+        "on_accent": "oklch(0.170 0.009 270.0)",
+        "focus": "oklch(0.550 0.150 30.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.005 270.0)",
+        "surface": "oklch(0.210 0.005 270.0)",
+        "surface_raised": "oklch(0.250 0.005 270.0)",
+        "text": "oklch(0.930 0.004 270.0)",
+        "text_muted": "oklch(0.700 0.005 270.0)",
+        "border": "oklch(0.330 0.005 270.0)",
+        "primary": "oklch(0.880 0.012 270.0)",
+        "on_primary": "oklch(0.170 0.009 270.0)",
+        "accent": "oklch(0.740 0.128 30.0)",
+        "on_accent": "oklch(0.170 0.009 270.0)",
+        "focus": "oklch(0.780 0.120 30.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.ocean-sand",
+      "kind": "palette",
+      "name": "Ocean & Sand",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "blue",
+      "notes": "Deep ocean blue over sandy neutrals with a pale gold accent; travel, glass panels over a coloured field, coastal brands.",
+      "light": {
+        "bg": "oklch(0.985 0.010 75.0)",
+        "surface": "oklch(0.965 0.010 75.0)",
+        "surface_raised": "oklch(0.995 0.006 75.0)",
+        "text": "oklch(0.210 0.016 75.0)",
+        "text_muted": "oklch(0.470 0.014 75.0)",
+        "border": "oklch(0.870 0.010 75.0)",
+        "primary": "oklch(0.440 0.130 228.0)",
+        "on_primary": "oklch(0.985 0.008 75.0)",
+        "accent": "oklch(0.800 0.120 82.0)",
+        "on_accent": "oklch(0.170 0.015 75.0)",
+        "focus": "oklch(0.550 0.150 228.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 75.0)",
+        "surface": "oklch(0.210 0.008 75.0)",
+        "surface_raised": "oklch(0.250 0.008 75.0)",
+        "text": "oklch(0.930 0.005 75.0)",
+        "text_muted": "oklch(0.700 0.008 75.0)",
+        "border": "oklch(0.330 0.008 75.0)",
+        "primary": "oklch(0.740 0.104 228.0)",
+        "on_primary": "oklch(0.170 0.015 75.0)",
+        "accent": "oklch(0.840 0.096 82.0)",
+        "on_accent": "oklch(0.170 0.015 75.0)",
+        "focus": "oklch(0.760 0.120 228.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.plum-linen",
+      "kind": "palette",
+      "name": "Plum & Linen",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "plum",
+      "notes": "Muted plum on warm linen with an olive accent; boutique retail, editorial fashion, hospitality.",
+      "light": {
+        "bg": "oklch(0.985 0.010 70.0)",
+        "surface": "oklch(0.965 0.010 70.0)",
+        "surface_raised": "oklch(0.995 0.006 70.0)",
+        "text": "oklch(0.210 0.016 70.0)",
+        "text_muted": "oklch(0.470 0.014 70.0)",
+        "border": "oklch(0.870 0.010 70.0)",
+        "primary": "oklch(0.400 0.110 330.0)",
+        "on_primary": "oklch(0.985 0.008 70.0)",
+        "accent": "oklch(0.520 0.100 115.0)",
+        "on_accent": "oklch(0.985 0.008 70.0)",
+        "focus": "oklch(0.550 0.150 330.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 70.0)",
+        "surface": "oklch(0.210 0.008 70.0)",
+        "surface_raised": "oklch(0.250 0.008 70.0)",
+        "text": "oklch(0.930 0.005 70.0)",
+        "text_muted": "oklch(0.700 0.008 70.0)",
+        "border": "oklch(0.330 0.008 70.0)",
+        "primary": "oklch(0.740 0.088 330.0)",
+        "on_primary": "oklch(0.170 0.015 70.0)",
+        "accent": "oklch(0.740 0.080 115.0)",
+        "on_accent": "oklch(0.170 0.015 70.0)",
+        "focus": "oklch(0.760 0.120 330.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.forest-brass",
+      "kind": "palette",
+      "name": "Forest & Brass",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "green",
+      "notes": "Deep forest green with a brass accent on warm paper; heritage brands, outdoor goods, members' clubs.",
+      "light": {
+        "bg": "oklch(0.985 0.010 100.0)",
+        "surface": "oklch(0.965 0.010 100.0)",
+        "surface_raised": "oklch(0.995 0.006 100.0)",
+        "text": "oklch(0.210 0.016 100.0)",
+        "text_muted": "oklch(0.470 0.014 100.0)",
+        "border": "oklch(0.870 0.010 100.0)",
+        "primary": "oklch(0.370 0.080 152.0)",
+        "on_primary": "oklch(0.985 0.008 100.0)",
+        "accent": "oklch(0.720 0.120 85.0)",
+        "on_accent": "oklch(0.170 0.015 100.0)",
+        "focus": "oklch(0.550 0.150 152.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 100.0)",
+        "surface": "oklch(0.210 0.008 100.0)",
+        "surface_raised": "oklch(0.250 0.008 100.0)",
+        "text": "oklch(0.930 0.005 100.0)",
+        "text_muted": "oklch(0.700 0.008 100.0)",
+        "border": "oklch(0.330 0.008 100.0)",
+        "primary": "oklch(0.740 0.064 152.0)",
+        "on_primary": "oklch(0.170 0.015 100.0)",
+        "accent": "oklch(0.760 0.096 85.0)",
+        "on_accent": "oklch(0.170 0.015 100.0)",
+        "focus": "oklch(0.760 0.120 152.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.midnight-lime",
+      "kind": "palette",
+      "name": "Midnight & Lime",
+      "temperature": "cool",
+      "scheme": "dark",
+      "hue_family": "lime",
+      "notes": "Midnight blue-black with one glowing lime and a cool blue secondary (light mode uses a deeper chartreuse so the primary reads on white); luminous-dark launches, developer tools with attitude.",
+      "light": {
+        "bg": "oklch(0.985 0.015 265.0)",
+        "surface": "oklch(0.965 0.015 265.0)",
+        "surface_raised": "oklch(0.995 0.009 265.0)",
+        "text": "oklch(0.210 0.020 265.0)",
+        "text_muted": "oklch(0.470 0.020 265.0)",
+        "border": "oklch(0.870 0.015 265.0)",
+        "primary": "oklch(0.540 0.170 125.0)",
+        "on_primary": "oklch(0.985 0.008 265.0)",
+        "accent": "oklch(0.500 0.150 250.0)",
+        "on_accent": "oklch(0.985 0.008 265.0)",
+        "focus": "oklch(0.540 0.160 125.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.012 265.0)",
+        "surface": "oklch(0.180 0.012 265.0)",
+        "surface_raised": "oklch(0.220 0.012 265.0)",
+        "text": "oklch(0.930 0.007 265.0)",
+        "text_muted": "oklch(0.700 0.012 265.0)",
+        "border": "oklch(0.300 0.012 265.0)",
+        "primary": "oklch(0.860 0.190 125.0)",
+        "on_primary": "oklch(0.170 0.020 265.0)",
+        "accent": "oklch(0.740 0.120 250.0)",
+        "on_accent": "oklch(0.170 0.020 265.0)",
+        "focus": "oklch(0.860 0.150 125.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.clay-bone",
+      "kind": "palette",
+      "name": "Clay & Bone",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "clay",
+      "notes": "Bone neutrals with a brown-red clay primary and a slate-teal accent; ceramics, craft and studio sites, use knowingly since cream plus terracotta is a known tell.",
+      "light": {
+        "bg": "oklch(0.975 0.012 60.0)",
+        "surface": "oklch(0.955 0.012 60.0)",
+        "surface_raised": "oklch(0.990 0.007 60.0)",
+        "text": "oklch(0.210 0.019 60.0)",
+        "text_muted": "oklch(0.470 0.017 60.0)",
+        "border": "oklch(0.870 0.012 60.0)",
+        "primary": "oklch(0.470 0.120 40.0)",
+        "on_primary": "oklch(0.985 0.008 60.0)",
+        "accent": "oklch(0.450 0.070 200.0)",
+        "on_accent": "oklch(0.985 0.008 60.0)",
+        "focus": "oklch(0.550 0.150 40.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 60.0)",
+        "surface": "oklch(0.210 0.010 60.0)",
+        "surface_raised": "oklch(0.250 0.010 60.0)",
+        "text": "oklch(0.930 0.006 60.0)",
+        "text_muted": "oklch(0.700 0.010 60.0)",
+        "border": "oklch(0.330 0.010 60.0)",
+        "primary": "oklch(0.740 0.096 40.0)",
+        "on_primary": "oklch(0.170 0.018 60.0)",
+        "accent": "oklch(0.740 0.056 200.0)",
+        "on_accent": "oklch(0.170 0.018 60.0)",
+        "focus": "oklch(0.760 0.120 40.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.steel-cyan",
+      "kind": "palette",
+      "name": "Steel & Cyan",
+      "temperature": "cool",
+      "scheme": "dark",
+      "hue_family": "cyan",
+      "notes": "Cool steel darks with a cyan primary and amber for alerts; monitoring, infra dashboards and luminous product pages.",
+      "light": {
+        "bg": "oklch(0.985 0.012 240.0)",
+        "surface": "oklch(0.965 0.012 240.0)",
+        "surface_raised": "oklch(0.995 0.007 240.0)",
+        "text": "oklch(0.210 0.019 240.0)",
+        "text_muted": "oklch(0.470 0.017 240.0)",
+        "border": "oklch(0.870 0.012 240.0)",
+        "primary": "oklch(0.500 0.120 205.0)",
+        "on_primary": "oklch(0.985 0.008 240.0)",
+        "accent": "oklch(0.740 0.140 78.0)",
+        "on_accent": "oklch(0.170 0.018 240.0)",
+        "focus": "oklch(0.550 0.150 205.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.010 240.0)",
+        "surface": "oklch(0.180 0.010 240.0)",
+        "surface_raised": "oklch(0.220 0.010 240.0)",
+        "text": "oklch(0.930 0.006 240.0)",
+        "text_muted": "oklch(0.700 0.010 240.0)",
+        "border": "oklch(0.300 0.010 240.0)",
+        "primary": "oklch(0.800 0.110 205.0)",
+        "on_primary": "oklch(0.170 0.018 240.0)",
+        "accent": "oklch(0.780 0.112 78.0)",
+        "on_accent": "oklch(0.170 0.018 240.0)",
+        "focus": "oklch(0.760 0.120 205.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.lavender-stone",
+      "kind": "palette",
+      "name": "Lavender & Stone",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "violet",
+      "notes": "Muted lavender on faintly violet stone with a sage accent; quiet wellbeing, journaling and calm productivity apps.",
+      "light": {
+        "bg": "oklch(0.985 0.008 290.0)",
+        "surface": "oklch(0.965 0.008 290.0)",
+        "surface_raised": "oklch(0.995 0.005 290.0)",
+        "text": "oklch(0.210 0.013 290.0)",
+        "text_muted": "oklch(0.470 0.011 290.0)",
+        "border": "oklch(0.870 0.008 290.0)",
+        "primary": "oklch(0.480 0.100 290.0)",
+        "on_primary": "oklch(0.985 0.008 290.0)",
+        "accent": "oklch(0.480 0.080 145.0)",
+        "on_accent": "oklch(0.985 0.008 290.0)",
+        "focus": "oklch(0.550 0.150 290.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 290.0)",
+        "surface": "oklch(0.210 0.006 290.0)",
+        "surface_raised": "oklch(0.250 0.006 290.0)",
+        "text": "oklch(0.930 0.004 290.0)",
+        "text_muted": "oklch(0.700 0.006 290.0)",
+        "border": "oklch(0.330 0.006 290.0)",
+        "primary": "oklch(0.740 0.080 290.0)",
+        "on_primary": "oklch(0.170 0.012 290.0)",
+        "accent": "oklch(0.740 0.064 145.0)",
+        "on_accent": "oklch(0.170 0.012 290.0)",
+        "focus": "oklch(0.760 0.120 290.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.terminal-green",
+      "kind": "palette",
+      "name": "Terminal Green",
+      "temperature": "cool",
+      "scheme": "dark",
+      "hue_family": "green",
+      "notes": "Green-tinted near-black with phosphor green and amber; terminals, CLIs, hacker-adjacent developer products.",
+      "light": {
+        "bg": "oklch(0.985 0.008 150.0)",
+        "surface": "oklch(0.965 0.008 150.0)",
+        "surface_raised": "oklch(0.995 0.005 150.0)",
+        "text": "oklch(0.210 0.013 150.0)",
+        "text_muted": "oklch(0.470 0.011 150.0)",
+        "border": "oklch(0.870 0.008 150.0)",
+        "primary": "oklch(0.460 0.140 145.0)",
+        "on_primary": "oklch(0.985 0.008 150.0)",
+        "accent": "oklch(0.740 0.150 85.0)",
+        "on_accent": "oklch(0.170 0.012 150.0)",
+        "focus": "oklch(0.550 0.150 145.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.006 150.0)",
+        "surface": "oklch(0.180 0.006 150.0)",
+        "surface_raised": "oklch(0.220 0.006 150.0)",
+        "text": "oklch(0.930 0.004 150.0)",
+        "text_muted": "oklch(0.700 0.006 150.0)",
+        "border": "oklch(0.300 0.006 150.0)",
+        "primary": "oklch(0.800 0.160 145.0)",
+        "on_primary": "oklch(0.170 0.012 150.0)",
+        "accent": "oklch(0.780 0.120 85.0)",
+        "on_accent": "oklch(0.170 0.012 150.0)",
+        "focus": "oklch(0.760 0.120 145.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.ruby-chalk",
+      "kind": "palette",
+      "name": "Ruby & Chalk",
+      "temperature": "neutral",
+      "scheme": "both",
+      "hue_family": "red",
+      "notes": "Chalk-white neutrals, a ruby primary and a deep teal accent; bold editorial, events, ticketing.",
+      "light": {
+        "bg": "oklch(0.985 0.006 20.0)",
+        "surface": "oklch(0.965 0.006 20.0)",
+        "surface_raised": "oklch(0.995 0.004 20.0)",
+        "text": "oklch(0.210 0.010 20.0)",
+        "text_muted": "oklch(0.470 0.008 20.0)",
+        "border": "oklch(0.870 0.006 20.0)",
+        "primary": "oklch(0.460 0.180 15.0)",
+        "on_primary": "oklch(0.985 0.006 20.0)",
+        "accent": "oklch(0.440 0.090 195.0)",
+        "on_accent": "oklch(0.985 0.006 20.0)",
+        "focus": "oklch(0.550 0.150 15.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.005 20.0)",
+        "surface": "oklch(0.210 0.005 20.0)",
+        "surface_raised": "oklch(0.250 0.005 20.0)",
+        "text": "oklch(0.930 0.004 20.0)",
+        "text_muted": "oklch(0.700 0.005 20.0)",
+        "border": "oklch(0.330 0.005 20.0)",
+        "primary": "oklch(0.740 0.144 15.0)",
+        "on_primary": "oklch(0.170 0.009 20.0)",
+        "accent": "oklch(0.740 0.072 195.0)",
+        "on_accent": "oklch(0.170 0.009 20.0)",
+        "focus": "oklch(0.760 0.120 15.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.cobalt-paper",
+      "kind": "palette",
+      "name": "Cobalt & Paper",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "blue",
+      "notes": "Saturated cobalt on warm paper with a flat yellow accent; swiss and brutalist layouts that want a primary colour pairing.",
+      "light": {
+        "bg": "oklch(0.975 0.010 85.0)",
+        "surface": "oklch(0.955 0.010 85.0)",
+        "surface_raised": "oklch(0.990 0.006 85.0)",
+        "text": "oklch(0.210 0.016 85.0)",
+        "text_muted": "oklch(0.470 0.014 85.0)",
+        "border": "oklch(0.870 0.010 85.0)",
+        "primary": "oklch(0.460 0.190 262.0)",
+        "on_primary": "oklch(0.985 0.008 85.0)",
+        "accent": "oklch(0.860 0.150 95.0)",
+        "on_accent": "oklch(0.170 0.015 85.0)",
+        "focus": "oklch(0.550 0.150 262.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 85.0)",
+        "surface": "oklch(0.210 0.008 85.0)",
+        "surface_raised": "oklch(0.250 0.008 85.0)",
+        "text": "oklch(0.930 0.005 85.0)",
+        "text_muted": "oklch(0.700 0.008 85.0)",
+        "border": "oklch(0.330 0.008 85.0)",
+        "primary": "oklch(0.740 0.152 262.0)",
+        "on_primary": "oklch(0.170 0.015 85.0)",
+        "accent": "oklch(0.900 0.120 95.0)",
+        "on_accent": "oklch(0.170 0.015 85.0)",
+        "focus": "oklch(0.760 0.120 262.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.olive-ivory",
+      "kind": "palette",
+      "name": "Olive & Ivory",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "olive",
+      "notes": "Ivory canvas, olive primary and a rust accent; organic food, slow fashion and garden brands.",
+      "light": {
+        "bg": "oklch(0.975 0.014 95.0)",
+        "surface": "oklch(0.955 0.014 95.0)",
+        "surface_raised": "oklch(0.990 0.008 95.0)",
+        "text": "oklch(0.210 0.020 95.0)",
+        "text_muted": "oklch(0.470 0.020 95.0)",
+        "border": "oklch(0.870 0.014 95.0)",
+        "primary": "oklch(0.440 0.090 112.0)",
+        "on_primary": "oklch(0.985 0.008 95.0)",
+        "accent": "oklch(0.500 0.130 35.0)",
+        "on_accent": "oklch(0.985 0.008 95.0)",
+        "focus": "oklch(0.550 0.150 112.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.011 95.0)",
+        "surface": "oklch(0.210 0.011 95.0)",
+        "surface_raised": "oklch(0.250 0.011 95.0)",
+        "text": "oklch(0.930 0.007 95.0)",
+        "text_muted": "oklch(0.700 0.011 95.0)",
+        "border": "oklch(0.330 0.011 95.0)",
+        "primary": "oklch(0.740 0.072 112.0)",
+        "on_primary": "oklch(0.170 0.020 95.0)",
+        "accent": "oklch(0.740 0.104 35.0)",
+        "on_accent": "oklch(0.170 0.020 95.0)",
+        "focus": "oklch(0.760 0.120 112.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.cocoa-peach",
+      "kind": "palette",
+      "name": "Cocoa & Peach",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "brown",
+      "notes": "Intentionally monochrome: cocoa brown primary with a peach tint of the same hue; bakeries, cafes, soft product UI with a warm bias.",
+      "light": {
+        "bg": "oklch(0.975 0.012 55.0)",
+        "surface": "oklch(0.955 0.012 55.0)",
+        "surface_raised": "oklch(0.990 0.007 55.0)",
+        "text": "oklch(0.210 0.019 55.0)",
+        "text_muted": "oklch(0.470 0.017 55.0)",
+        "border": "oklch(0.870 0.012 55.0)",
+        "primary": "oklch(0.340 0.060 45.0)",
+        "on_primary": "oklch(0.985 0.008 55.0)",
+        "accent": "oklch(0.840 0.100 45.0)",
+        "on_accent": "oklch(0.170 0.018 55.0)",
+        "focus": "oklch(0.550 0.150 45.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 55.0)",
+        "surface": "oklch(0.210 0.010 55.0)",
+        "surface_raised": "oklch(0.250 0.010 55.0)",
+        "text": "oklch(0.930 0.006 55.0)",
+        "text_muted": "oklch(0.700 0.010 55.0)",
+        "border": "oklch(0.330 0.010 55.0)",
+        "primary": "oklch(0.740 0.048 45.0)",
+        "on_primary": "oklch(0.170 0.018 55.0)",
+        "accent": "oklch(0.880 0.080 45.0)",
+        "on_accent": "oklch(0.170 0.018 55.0)",
+        "focus": "oklch(0.760 0.120 45.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.navy-gold",
+      "kind": "palette",
+      "name": "Navy & Gold",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "navy",
+      "notes": "Classic navy with a solid (never gradient) gold accent; finance, law, institutions, trust-first marketing.",
+      "light": {
+        "bg": "oklch(0.985 0.008 250.0)",
+        "surface": "oklch(0.965 0.008 250.0)",
+        "surface_raised": "oklch(0.995 0.005 250.0)",
+        "text": "oklch(0.210 0.013 250.0)",
+        "text_muted": "oklch(0.470 0.011 250.0)",
+        "border": "oklch(0.870 0.008 250.0)",
+        "primary": "oklch(0.320 0.100 260.0)",
+        "on_primary": "oklch(0.985 0.008 250.0)",
+        "accent": "oklch(0.760 0.140 85.0)",
+        "on_accent": "oklch(0.170 0.012 250.0)",
+        "focus": "oklch(0.550 0.150 260.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 250.0)",
+        "surface": "oklch(0.210 0.006 250.0)",
+        "surface_raised": "oklch(0.250 0.006 250.0)",
+        "text": "oklch(0.930 0.004 250.0)",
+        "text_muted": "oklch(0.700 0.006 250.0)",
+        "border": "oklch(0.330 0.006 250.0)",
+        "primary": "oklch(0.740 0.080 260.0)",
+        "on_primary": "oklch(0.170 0.012 250.0)",
+        "accent": "oklch(0.800 0.112 85.0)",
+        "on_accent": "oklch(0.170 0.012 250.0)",
+        "focus": "oklch(0.760 0.120 260.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.arctic-teal",
+      "kind": "palette",
+      "name": "Arctic & Teal",
+      "temperature": "cool",
+      "scheme": "light",
+      "hue_family": "teal",
+      "notes": "Icy blue-white neutrals with a teal primary and pale sky accent; health, clean tech, glass panels over cool fields.",
+      "light": {
+        "bg": "oklch(0.985 0.010 220.0)",
+        "surface": "oklch(0.965 0.010 220.0)",
+        "surface_raised": "oklch(0.995 0.006 220.0)",
+        "text": "oklch(0.210 0.016 220.0)",
+        "text_muted": "oklch(0.470 0.014 220.0)",
+        "border": "oklch(0.870 0.010 220.0)",
+        "primary": "oklch(0.470 0.110 185.0)",
+        "on_primary": "oklch(0.985 0.008 220.0)",
+        "accent": "oklch(0.820 0.080 235.0)",
+        "on_accent": "oklch(0.170 0.015 220.0)",
+        "focus": "oklch(0.550 0.150 185.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 220.0)",
+        "surface": "oklch(0.210 0.008 220.0)",
+        "surface_raised": "oklch(0.250 0.008 220.0)",
+        "text": "oklch(0.930 0.005 220.0)",
+        "text_muted": "oklch(0.700 0.008 220.0)",
+        "border": "oklch(0.330 0.008 220.0)",
+        "primary": "oklch(0.740 0.088 185.0)",
+        "on_primary": "oklch(0.170 0.015 220.0)",
+        "accent": "oklch(0.860 0.064 235.0)",
+        "on_accent": "oklch(0.170 0.015 220.0)",
+        "focus": "oklch(0.760 0.120 185.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.charcoal-saffron",
+      "kind": "palette",
+      "name": "Charcoal & Saffron",
+      "temperature": "neutral",
+      "scheme": "both",
+      "hue_family": "saffron",
+      "notes": "Charcoal primary with a saffron accent on near-neutral surfaces; monochrome engineering UI that needs one warm signal.",
+      "light": {
+        "bg": "oklch(0.985 0.006 60.0)",
+        "surface": "oklch(0.965 0.006 60.0)",
+        "surface_raised": "oklch(0.995 0.004 60.0)",
+        "text": "oklch(0.210 0.010 60.0)",
+        "text_muted": "oklch(0.470 0.008 60.0)",
+        "border": "oklch(0.870 0.006 60.0)",
+        "primary": "oklch(0.300 0.010 250.0)",
+        "on_primary": "oklch(0.985 0.006 60.0)",
+        "accent": "oklch(0.740 0.170 70.0)",
+        "on_accent": "oklch(0.170 0.009 60.0)",
+        "focus": "oklch(0.560 0.140 70.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.005 60.0)",
+        "surface": "oklch(0.210 0.005 60.0)",
+        "surface_raised": "oklch(0.250 0.005 60.0)",
+        "text": "oklch(0.930 0.004 60.0)",
+        "text_muted": "oklch(0.700 0.005 60.0)",
+        "border": "oklch(0.330 0.005 60.0)",
+        "primary": "oklch(0.880 0.008 250.0)",
+        "on_primary": "oklch(0.170 0.009 60.0)",
+        "accent": "oklch(0.780 0.136 70.0)",
+        "on_accent": "oklch(0.170 0.009 60.0)",
+        "focus": "oklch(0.800 0.120 70.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.carbon-signal",
+      "kind": "palette",
+      "name": "Carbon & Signal",
+      "temperature": "neutral",
+      "scheme": "dark",
+      "hue_family": "orange",
+      "notes": "Carbon black with a signal red-orange primary and a cool cyan secondary; dark consoles, motorsport and hardware launches.",
+      "light": {
+        "bg": "oklch(0.985 0.006 250.0)",
+        "surface": "oklch(0.965 0.006 250.0)",
+        "surface_raised": "oklch(0.995 0.004 250.0)",
+        "text": "oklch(0.210 0.010 250.0)",
+        "text_muted": "oklch(0.470 0.008 250.0)",
+        "border": "oklch(0.870 0.006 250.0)",
+        "primary": "oklch(0.560 0.190 36.0)",
+        "on_primary": "oklch(0.985 0.006 250.0)",
+        "accent": "oklch(0.460 0.120 210.0)",
+        "on_accent": "oklch(0.985 0.006 250.0)",
+        "focus": "oklch(0.550 0.150 36.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.005 250.0)",
+        "surface": "oklch(0.180 0.005 250.0)",
+        "surface_raised": "oklch(0.220 0.005 250.0)",
+        "text": "oklch(0.930 0.004 250.0)",
+        "text_muted": "oklch(0.700 0.005 250.0)",
+        "border": "oklch(0.300 0.005 250.0)",
+        "primary": "oklch(0.680 0.170 36.0)",
+        "on_primary": "oklch(0.170 0.009 250.0)",
+        "accent": "oklch(0.760 0.100 210.0)",
+        "on_accent": "oklch(0.170 0.009 250.0)",
+        "focus": "oklch(0.760 0.120 36.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.pine-chalk",
+      "kind": "palette",
+      "name": "Pine & Chalk",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "green",
+      "notes": "Dark pine green on cool chalk with a copper accent; outdoor, forestry, considered B2B with a natural note.",
+      "light": {
+        "bg": "oklch(0.985 0.008 170.0)",
+        "surface": "oklch(0.965 0.008 170.0)",
+        "surface_raised": "oklch(0.995 0.005 170.0)",
+        "text": "oklch(0.210 0.013 170.0)",
+        "text_muted": "oklch(0.470 0.011 170.0)",
+        "border": "oklch(0.870 0.008 170.0)",
+        "primary": "oklch(0.390 0.080 165.0)",
+        "on_primary": "oklch(0.985 0.008 170.0)",
+        "accent": "oklch(0.560 0.130 50.0)",
+        "on_accent": "oklch(0.985 0.008 170.0)",
+        "focus": "oklch(0.550 0.150 165.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 170.0)",
+        "surface": "oklch(0.210 0.006 170.0)",
+        "surface_raised": "oklch(0.250 0.006 170.0)",
+        "text": "oklch(0.930 0.004 170.0)",
+        "text_muted": "oklch(0.700 0.006 170.0)",
+        "border": "oklch(0.330 0.006 170.0)",
+        "primary": "oklch(0.740 0.064 165.0)",
+        "on_primary": "oklch(0.170 0.012 170.0)",
+        "accent": "oklch(0.740 0.104 50.0)",
+        "on_accent": "oklch(0.170 0.012 170.0)",
+        "focus": "oklch(0.760 0.120 165.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.denim-wheat",
+      "kind": "palette",
+      "name": "Denim & Wheat",
+      "temperature": "neutral",
+      "scheme": "light",
+      "hue_family": "blue",
+      "notes": "Wheat-tinted neutrals with a denim blue primary and a wheat accent; workwear, education, honest utility brands.",
+      "light": {
+        "bg": "oklch(0.975 0.014 80.0)",
+        "surface": "oklch(0.955 0.014 80.0)",
+        "surface_raised": "oklch(0.990 0.008 80.0)",
+        "text": "oklch(0.210 0.020 80.0)",
+        "text_muted": "oklch(0.470 0.020 80.0)",
+        "border": "oklch(0.870 0.014 80.0)",
+        "primary": "oklch(0.440 0.100 245.0)",
+        "on_primary": "oklch(0.985 0.008 80.0)",
+        "accent": "oklch(0.800 0.110 85.0)",
+        "on_accent": "oklch(0.170 0.020 80.0)",
+        "focus": "oklch(0.550 0.150 245.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.011 80.0)",
+        "surface": "oklch(0.210 0.011 80.0)",
+        "surface_raised": "oklch(0.250 0.011 80.0)",
+        "text": "oklch(0.930 0.007 80.0)",
+        "text_muted": "oklch(0.700 0.011 80.0)",
+        "border": "oklch(0.330 0.011 80.0)",
+        "primary": "oklch(0.740 0.080 245.0)",
+        "on_primary": "oklch(0.170 0.020 80.0)",
+        "accent": "oklch(0.840 0.088 85.0)",
+        "on_accent": "oklch(0.170 0.020 80.0)",
+        "focus": "oklch(0.760 0.120 245.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.espresso-cream",
+      "kind": "palette",
+      "name": "Espresso & Cream",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "brown",
+      "notes": "Low-chroma espresso on cream with a quiet forest accent; quiet luxury, hospitality, premium editorial.",
+      "light": {
+        "bg": "oklch(0.975 0.016 70.0)",
+        "surface": "oklch(0.955 0.016 70.0)",
+        "surface_raised": "oklch(0.990 0.010 70.0)",
+        "text": "oklch(0.210 0.020 70.0)",
+        "text_muted": "oklch(0.470 0.020 70.0)",
+        "border": "oklch(0.870 0.016 70.0)",
+        "primary": "oklch(0.300 0.050 50.0)",
+        "on_primary": "oklch(0.985 0.008 70.0)",
+        "accent": "oklch(0.440 0.070 150.0)",
+        "on_accent": "oklch(0.985 0.008 70.0)",
+        "focus": "oklch(0.550 0.120 50.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.013 70.0)",
+        "surface": "oklch(0.210 0.013 70.0)",
+        "surface_raised": "oklch(0.250 0.013 70.0)",
+        "text": "oklch(0.930 0.008 70.0)",
+        "text_muted": "oklch(0.700 0.013 70.0)",
+        "border": "oklch(0.330 0.013 70.0)",
+        "primary": "oklch(0.740 0.040 50.0)",
+        "on_primary": "oklch(0.170 0.020 70.0)",
+        "accent": "oklch(0.740 0.056 150.0)",
+        "on_accent": "oklch(0.170 0.020 70.0)",
+        "focus": "oklch(0.760 0.100 50.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.iris-fog",
+      "kind": "palette",
+      "name": "Iris & Fog",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "indigo",
+      "notes": "A muted iris primary (one flat solid, no gradient) on fog grey with an apricot accent; creative tools and glass layers.",
+      "light": {
+        "bg": "oklch(0.985 0.008 270.0)",
+        "surface": "oklch(0.965 0.008 270.0)",
+        "surface_raised": "oklch(0.995 0.005 270.0)",
+        "text": "oklch(0.210 0.013 270.0)",
+        "text_muted": "oklch(0.470 0.011 270.0)",
+        "border": "oklch(0.870 0.008 270.0)",
+        "primary": "oklch(0.480 0.130 282.0)",
+        "on_primary": "oklch(0.985 0.008 270.0)",
+        "accent": "oklch(0.780 0.140 60.0)",
+        "on_accent": "oklch(0.170 0.012 270.0)",
+        "focus": "oklch(0.550 0.150 282.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 270.0)",
+        "surface": "oklch(0.210 0.006 270.0)",
+        "surface_raised": "oklch(0.250 0.006 270.0)",
+        "text": "oklch(0.930 0.004 270.0)",
+        "text_muted": "oklch(0.700 0.006 270.0)",
+        "border": "oklch(0.330 0.006 270.0)",
+        "primary": "oklch(0.740 0.104 282.0)",
+        "on_primary": "oklch(0.170 0.012 270.0)",
+        "accent": "oklch(0.820 0.112 60.0)",
+        "on_accent": "oklch(0.170 0.012 270.0)",
+        "focus": "oklch(0.760 0.120 282.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.sage-linen",
+      "kind": "palette",
+      "name": "Sage & Linen",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "green",
+      "notes": "Low-chroma sage on linen with a dusty rose accent; skincare, interiors, quiet luxury with warmth.",
+      "light": {
+        "bg": "oklch(0.975 0.012 85.0)",
+        "surface": "oklch(0.955 0.012 85.0)",
+        "surface_raised": "oklch(0.990 0.007 85.0)",
+        "text": "oklch(0.210 0.019 85.0)",
+        "text_muted": "oklch(0.470 0.017 85.0)",
+        "border": "oklch(0.870 0.012 85.0)",
+        "primary": "oklch(0.440 0.060 150.0)",
+        "on_primary": "oklch(0.985 0.008 85.0)",
+        "accent": "oklch(0.560 0.090 15.0)",
+        "on_accent": "oklch(0.985 0.008 85.0)",
+        "focus": "oklch(0.550 0.150 150.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 85.0)",
+        "surface": "oklch(0.210 0.010 85.0)",
+        "surface_raised": "oklch(0.250 0.010 85.0)",
+        "text": "oklch(0.930 0.006 85.0)",
+        "text_muted": "oklch(0.700 0.010 85.0)",
+        "border": "oklch(0.330 0.010 85.0)",
+        "primary": "oklch(0.740 0.048 150.0)",
+        "on_primary": "oklch(0.170 0.018 85.0)",
+        "accent": "oklch(0.740 0.072 15.0)",
+        "on_accent": "oklch(0.170 0.018 85.0)",
+        "focus": "oklch(0.760 0.120 150.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.brick-parchment",
+      "kind": "palette",
+      "name": "Brick & Parchment",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "red",
+      "notes": "Brick red on parchment with a deep blue-green accent; publishing, architecture, civic and heritage sites.",
+      "light": {
+        "bg": "oklch(0.975 0.016 80.0)",
+        "surface": "oklch(0.955 0.016 80.0)",
+        "surface_raised": "oklch(0.990 0.010 80.0)",
+        "text": "oklch(0.210 0.020 80.0)",
+        "text_muted": "oklch(0.470 0.020 80.0)",
+        "border": "oklch(0.870 0.016 80.0)",
+        "primary": "oklch(0.440 0.130 28.0)",
+        "on_primary": "oklch(0.985 0.008 80.0)",
+        "accent": "oklch(0.420 0.070 200.0)",
+        "on_accent": "oklch(0.985 0.008 80.0)",
+        "focus": "oklch(0.550 0.150 28.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.013 80.0)",
+        "surface": "oklch(0.210 0.013 80.0)",
+        "surface_raised": "oklch(0.250 0.013 80.0)",
+        "text": "oklch(0.930 0.008 80.0)",
+        "text_muted": "oklch(0.700 0.013 80.0)",
+        "border": "oklch(0.330 0.013 80.0)",
+        "primary": "oklch(0.740 0.104 28.0)",
+        "on_primary": "oklch(0.170 0.020 80.0)",
+        "accent": "oklch(0.740 0.056 200.0)",
+        "on_accent": "oklch(0.170 0.020 80.0)",
+        "focus": "oklch(0.760 0.120 28.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.nordic-ice",
+      "kind": "palette",
+      "name": "Nordic Ice",
+      "temperature": "cool",
+      "scheme": "light",
+      "hue_family": "blue",
+      "notes": "Pale ice neutrals with a clear glacier blue primary and a pale sun accent; Scandinavian product sites, fintech, travel.",
+      "light": {
+        "bg": "oklch(0.985 0.010 230.0)",
+        "surface": "oklch(0.965 0.010 230.0)",
+        "surface_raised": "oklch(0.995 0.006 230.0)",
+        "text": "oklch(0.210 0.016 230.0)",
+        "text_muted": "oklch(0.470 0.014 230.0)",
+        "border": "oklch(0.870 0.010 230.0)",
+        "primary": "oklch(0.500 0.120 236.0)",
+        "on_primary": "oklch(0.985 0.008 230.0)",
+        "accent": "oklch(0.860 0.120 90.0)",
+        "on_accent": "oklch(0.170 0.015 230.0)",
+        "focus": "oklch(0.550 0.150 236.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 230.0)",
+        "surface": "oklch(0.210 0.008 230.0)",
+        "surface_raised": "oklch(0.250 0.008 230.0)",
+        "text": "oklch(0.930 0.005 230.0)",
+        "text_muted": "oklch(0.700 0.008 230.0)",
+        "border": "oklch(0.330 0.008 230.0)",
+        "primary": "oklch(0.740 0.096 236.0)",
+        "on_primary": "oklch(0.170 0.015 230.0)",
+        "accent": "oklch(0.900 0.096 90.0)",
+        "on_accent": "oklch(0.170 0.015 230.0)",
+        "focus": "oklch(0.760 0.120 236.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.obsidian-copper",
+      "kind": "palette",
+      "name": "Obsidian & Copper",
+      "temperature": "warm",
+      "scheme": "dark",
+      "hue_family": "copper",
+      "notes": "Warm obsidian darks with a copper primary and a teal secondary; premium hardware, audio, dark product launches.",
+      "light": {
+        "bg": "oklch(0.985 0.008 40.0)",
+        "surface": "oklch(0.965 0.008 40.0)",
+        "surface_raised": "oklch(0.995 0.005 40.0)",
+        "text": "oklch(0.210 0.013 40.0)",
+        "text_muted": "oklch(0.470 0.011 40.0)",
+        "border": "oklch(0.870 0.008 40.0)",
+        "primary": "oklch(0.520 0.130 50.0)",
+        "on_primary": "oklch(0.985 0.008 40.0)",
+        "accent": "oklch(0.460 0.100 190.0)",
+        "on_accent": "oklch(0.985 0.008 40.0)",
+        "focus": "oklch(0.550 0.150 50.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.006 40.0)",
+        "surface": "oklch(0.180 0.006 40.0)",
+        "surface_raised": "oklch(0.220 0.006 40.0)",
+        "text": "oklch(0.930 0.004 40.0)",
+        "text_muted": "oklch(0.700 0.006 40.0)",
+        "border": "oklch(0.300 0.006 40.0)",
+        "primary": "oklch(0.740 0.120 50.0)",
+        "on_primary": "oklch(0.170 0.012 40.0)",
+        "accent": "oklch(0.760 0.090 190.0)",
+        "on_accent": "oklch(0.170 0.012 40.0)",
+        "focus": "oklch(0.760 0.120 50.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.cherry-paper",
+      "kind": "palette",
+      "name": "Cherry & Paper",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "red",
+      "notes": "Cherry red on warm paper with an ink-navy accent; posters, magazines, food and events.",
+      "light": {
+        "bg": "oklch(0.975 0.010 85.0)",
+        "surface": "oklch(0.955 0.010 85.0)",
+        "surface_raised": "oklch(0.990 0.006 85.0)",
+        "text": "oklch(0.210 0.016 85.0)",
+        "text_muted": "oklch(0.470 0.014 85.0)",
+        "border": "oklch(0.870 0.010 85.0)",
+        "primary": "oklch(0.500 0.190 22.0)",
+        "on_primary": "oklch(0.985 0.008 85.0)",
+        "accent": "oklch(0.300 0.060 260.0)",
+        "on_accent": "oklch(0.985 0.008 85.0)",
+        "focus": "oklch(0.550 0.150 22.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 85.0)",
+        "surface": "oklch(0.210 0.008 85.0)",
+        "surface_raised": "oklch(0.250 0.008 85.0)",
+        "text": "oklch(0.930 0.005 85.0)",
+        "text_muted": "oklch(0.700 0.008 85.0)",
+        "border": "oklch(0.330 0.008 85.0)",
+        "primary": "oklch(0.740 0.152 22.0)",
+        "on_primary": "oklch(0.170 0.015 85.0)",
+        "accent": "oklch(0.740 0.048 260.0)",
+        "on_accent": "oklch(0.170 0.015 85.0)",
+        "focus": "oklch(0.760 0.120 22.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.harbor-grey",
+      "kind": "palette",
+      "name": "Harbor Grey",
+      "temperature": "cool",
+      "scheme": "light",
+      "hue_family": "blue",
+      "notes": "Grey-blue harbour primary on cool greys with a mustard accent; data-dense tools, logistics, enterprise admin.",
+      "light": {
+        "bg": "oklch(0.985 0.010 240.0)",
+        "surface": "oklch(0.965 0.010 240.0)",
+        "surface_raised": "oklch(0.995 0.006 240.0)",
+        "text": "oklch(0.210 0.016 240.0)",
+        "text_muted": "oklch(0.470 0.014 240.0)",
+        "border": "oklch(0.870 0.010 240.0)",
+        "primary": "oklch(0.440 0.080 230.0)",
+        "on_primary": "oklch(0.985 0.008 240.0)",
+        "accent": "oklch(0.720 0.130 85.0)",
+        "on_accent": "oklch(0.170 0.015 240.0)",
+        "focus": "oklch(0.550 0.150 230.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 240.0)",
+        "surface": "oklch(0.210 0.008 240.0)",
+        "surface_raised": "oklch(0.250 0.008 240.0)",
+        "text": "oklch(0.930 0.005 240.0)",
+        "text_muted": "oklch(0.700 0.008 240.0)",
+        "border": "oklch(0.330 0.008 240.0)",
+        "primary": "oklch(0.740 0.064 230.0)",
+        "on_primary": "oklch(0.170 0.015 240.0)",
+        "accent": "oklch(0.760 0.104 85.0)",
+        "on_accent": "oklch(0.170 0.015 240.0)",
+        "focus": "oklch(0.760 0.120 230.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.mustard-ink",
+      "kind": "palette",
+      "name": "Mustard & Ink",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "yellow",
+      "notes": "Flat mustard primary with dark text and an ink accent; poster type and brutalist layouts.",
+      "light": {
+        "bg": "oklch(0.975 0.010 90.0)",
+        "surface": "oklch(0.955 0.010 90.0)",
+        "surface_raised": "oklch(0.990 0.006 90.0)",
+        "text": "oklch(0.210 0.016 90.0)",
+        "text_muted": "oklch(0.470 0.014 90.0)",
+        "border": "oklch(0.870 0.010 90.0)",
+        "primary": "oklch(0.550 0.140 90.0)",
+        "on_primary": "oklch(0.985 0.008 90.0)",
+        "accent": "oklch(0.280 0.050 265.0)",
+        "on_accent": "oklch(0.985 0.008 90.0)",
+        "focus": "oklch(0.560 0.130 90.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.008 90.0)",
+        "surface": "oklch(0.210 0.008 90.0)",
+        "surface_raised": "oklch(0.250 0.008 90.0)",
+        "text": "oklch(0.930 0.005 90.0)",
+        "text_muted": "oklch(0.700 0.008 90.0)",
+        "border": "oklch(0.330 0.008 90.0)",
+        "primary": "oklch(0.670 0.112 90.0)",
+        "on_primary": "oklch(0.170 0.015 90.0)",
+        "accent": "oklch(0.740 0.040 265.0)",
+        "on_accent": "oklch(0.170 0.015 90.0)",
+        "focus": "oklch(0.840 0.130 90.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.violet-ash",
+      "kind": "palette",
+      "name": "Violet & Ash",
+      "temperature": "neutral",
+      "scheme": "both",
+      "hue_family": "violet",
+      "notes": "A muted, desaturated violet (not purple-pink gradient territory) on ash grey with a moss accent; research tools, archives, publishing.",
+      "light": {
+        "bg": "oklch(0.985 0.006 300.0)",
+        "surface": "oklch(0.965 0.006 300.0)",
+        "surface_raised": "oklch(0.995 0.004 300.0)",
+        "text": "oklch(0.210 0.010 300.0)",
+        "text_muted": "oklch(0.470 0.008 300.0)",
+        "border": "oklch(0.870 0.006 300.0)",
+        "primary": "oklch(0.460 0.090 300.0)",
+        "on_primary": "oklch(0.985 0.006 300.0)",
+        "accent": "oklch(0.520 0.090 130.0)",
+        "on_accent": "oklch(0.985 0.006 300.0)",
+        "focus": "oklch(0.550 0.150 300.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.005 300.0)",
+        "surface": "oklch(0.210 0.005 300.0)",
+        "surface_raised": "oklch(0.250 0.005 300.0)",
+        "text": "oklch(0.930 0.004 300.0)",
+        "text_muted": "oklch(0.700 0.005 300.0)",
+        "border": "oklch(0.330 0.005 300.0)",
+        "primary": "oklch(0.740 0.072 300.0)",
+        "on_primary": "oklch(0.170 0.009 300.0)",
+        "accent": "oklch(0.740 0.072 130.0)",
+        "on_accent": "oklch(0.170 0.009 300.0)",
+        "focus": "oklch(0.760 0.120 300.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.tangerine-slate",
+      "kind": "palette",
+      "name": "Tangerine & Slate",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "orange",
+      "notes": "Bright tangerine with dark text, slate blue secondary on cool neutrals; playful or brutalist product sites.",
+      "light": {
+        "bg": "oklch(0.985 0.012 255.0)",
+        "surface": "oklch(0.965 0.012 255.0)",
+        "surface_raised": "oklch(0.995 0.007 255.0)",
+        "text": "oklch(0.210 0.019 255.0)",
+        "text_muted": "oklch(0.470 0.017 255.0)",
+        "border": "oklch(0.870 0.012 255.0)",
+        "primary": "oklch(0.670 0.180 55.0)",
+        "on_primary": "oklch(0.170 0.018 255.0)",
+        "accent": "oklch(0.440 0.080 250.0)",
+        "on_accent": "oklch(0.985 0.008 255.0)",
+        "focus": "oklch(0.580 0.160 55.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 255.0)",
+        "surface": "oklch(0.210 0.010 255.0)",
+        "surface_raised": "oklch(0.250 0.010 255.0)",
+        "text": "oklch(0.930 0.006 255.0)",
+        "text_muted": "oklch(0.700 0.010 255.0)",
+        "border": "oklch(0.330 0.010 255.0)",
+        "primary": "oklch(0.760 0.150 55.0)",
+        "on_primary": "oklch(0.170 0.018 255.0)",
+        "accent": "oklch(0.740 0.064 250.0)",
+        "on_accent": "oklch(0.170 0.018 255.0)",
+        "focus": "oklch(0.800 0.140 55.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.teal-sand",
+      "kind": "palette",
+      "name": "Teal & Sand",
+      "temperature": "neutral",
+      "scheme": "light",
+      "hue_family": "teal",
+      "notes": "Teal primary on sand neutrals with a sand accent; travel, booking, friendly SaaS.",
+      "light": {
+        "bg": "oklch(0.985 0.012 80.0)",
+        "surface": "oklch(0.965 0.012 80.0)",
+        "surface_raised": "oklch(0.995 0.007 80.0)",
+        "text": "oklch(0.210 0.019 80.0)",
+        "text_muted": "oklch(0.470 0.017 80.0)",
+        "border": "oklch(0.870 0.012 80.0)",
+        "primary": "oklch(0.450 0.110 185.0)",
+        "on_primary": "oklch(0.985 0.008 80.0)",
+        "accent": "oklch(0.800 0.100 75.0)",
+        "on_accent": "oklch(0.170 0.018 80.0)",
+        "focus": "oklch(0.550 0.150 185.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 80.0)",
+        "surface": "oklch(0.210 0.010 80.0)",
+        "surface_raised": "oklch(0.250 0.010 80.0)",
+        "text": "oklch(0.930 0.006 80.0)",
+        "text_muted": "oklch(0.700 0.010 80.0)",
+        "border": "oklch(0.330 0.010 80.0)",
+        "primary": "oklch(0.740 0.088 185.0)",
+        "on_primary": "oklch(0.170 0.018 80.0)",
+        "accent": "oklch(0.840 0.080 75.0)",
+        "on_accent": "oklch(0.170 0.018 80.0)",
+        "focus": "oklch(0.760 0.120 185.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.marine-bone",
+      "kind": "palette",
+      "name": "Marine & Bone",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "blue",
+      "notes": "Deep marine blue on bone with a coral accent; maritime, insurance, editorial with a nautical note.",
+      "light": {
+        "bg": "oklch(0.985 0.008 70.0)",
+        "surface": "oklch(0.965 0.008 70.0)",
+        "surface_raised": "oklch(0.995 0.005 70.0)",
+        "text": "oklch(0.210 0.013 70.0)",
+        "text_muted": "oklch(0.470 0.011 70.0)",
+        "border": "oklch(0.870 0.008 70.0)",
+        "primary": "oklch(0.390 0.120 242.0)",
+        "on_primary": "oklch(0.985 0.008 70.0)",
+        "accent": "oklch(0.700 0.150 30.0)",
+        "on_accent": "oklch(0.170 0.012 70.0)",
+        "focus": "oklch(0.550 0.150 242.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 70.0)",
+        "surface": "oklch(0.210 0.006 70.0)",
+        "surface_raised": "oklch(0.250 0.006 70.0)",
+        "text": "oklch(0.930 0.004 70.0)",
+        "text_muted": "oklch(0.700 0.006 70.0)",
+        "border": "oklch(0.330 0.006 70.0)",
+        "primary": "oklch(0.740 0.096 242.0)",
+        "on_primary": "oklch(0.170 0.012 70.0)",
+        "accent": "oklch(0.740 0.120 30.0)",
+        "on_accent": "oklch(0.170 0.012 70.0)",
+        "focus": "oklch(0.760 0.120 242.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.lime-graphite",
+      "kind": "palette",
+      "name": "Lime & Graphite",
+      "temperature": "cool",
+      "scheme": "dark",
+      "hue_family": "lime",
+      "notes": "Graphite darks with an acid lime primary and a magenta secondary (deeper chartreuse in light mode); neo-brutalist, music, streetwear, loud launches.",
+      "light": {
+        "bg": "oklch(0.985 0.006 150.0)",
+        "surface": "oklch(0.965 0.006 150.0)",
+        "surface_raised": "oklch(0.995 0.004 150.0)",
+        "text": "oklch(0.210 0.010 150.0)",
+        "text_muted": "oklch(0.470 0.008 150.0)",
+        "border": "oklch(0.870 0.006 150.0)",
+        "primary": "oklch(0.540 0.170 130.0)",
+        "on_primary": "oklch(0.985 0.006 150.0)",
+        "accent": "oklch(0.520 0.170 340.0)",
+        "on_accent": "oklch(0.985 0.006 150.0)",
+        "focus": "oklch(0.550 0.160 130.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.005 150.0)",
+        "surface": "oklch(0.180 0.005 150.0)",
+        "surface_raised": "oklch(0.220 0.005 150.0)",
+        "text": "oklch(0.930 0.004 150.0)",
+        "text_muted": "oklch(0.700 0.005 150.0)",
+        "border": "oklch(0.300 0.005 150.0)",
+        "primary": "oklch(0.860 0.180 130.0)",
+        "on_primary": "oklch(0.170 0.009 150.0)",
+        "accent": "oklch(0.720 0.140 340.0)",
+        "on_accent": "oklch(0.170 0.009 150.0)",
+        "focus": "oklch(0.860 0.140 130.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.rose-granite",
+      "kind": "palette",
+      "name": "Rose & Granite",
+      "temperature": "neutral",
+      "scheme": "both",
+      "hue_family": "rose",
+      "notes": "Dusty rose primary on granite greys with a granite-blue accent; beauty, interiors, quiet premium retail.",
+      "light": {
+        "bg": "oklch(0.985 0.006 350.0)",
+        "surface": "oklch(0.965 0.006 350.0)",
+        "surface_raised": "oklch(0.995 0.004 350.0)",
+        "text": "oklch(0.210 0.010 350.0)",
+        "text_muted": "oklch(0.470 0.008 350.0)",
+        "border": "oklch(0.870 0.006 350.0)",
+        "primary": "oklch(0.500 0.120 5.0)",
+        "on_primary": "oklch(0.985 0.006 350.0)",
+        "accent": "oklch(0.400 0.040 250.0)",
+        "on_accent": "oklch(0.985 0.006 350.0)",
+        "focus": "oklch(0.550 0.150 5.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.005 350.0)",
+        "surface": "oklch(0.210 0.005 350.0)",
+        "surface_raised": "oklch(0.250 0.005 350.0)",
+        "text": "oklch(0.930 0.004 350.0)",
+        "text_muted": "oklch(0.700 0.005 350.0)",
+        "border": "oklch(0.330 0.005 350.0)",
+        "primary": "oklch(0.740 0.096 5.0)",
+        "on_primary": "oklch(0.170 0.009 350.0)",
+        "accent": "oklch(0.740 0.032 250.0)",
+        "on_accent": "oklch(0.170 0.009 350.0)",
+        "focus": "oklch(0.760 0.120 5.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.bronze-night",
+      "kind": "palette",
+      "name": "Bronze & Night",
+      "temperature": "warm",
+      "scheme": "dark",
+      "hue_family": "bronze",
+      "notes": "Warm night darks with a bronze primary and dusk-blue secondary; galleries, watches, dark hospitality.",
+      "light": {
+        "bg": "oklch(0.985 0.010 60.0)",
+        "surface": "oklch(0.965 0.010 60.0)",
+        "surface_raised": "oklch(0.995 0.006 60.0)",
+        "text": "oklch(0.210 0.016 60.0)",
+        "text_muted": "oklch(0.470 0.014 60.0)",
+        "border": "oklch(0.870 0.010 60.0)",
+        "primary": "oklch(0.500 0.110 70.0)",
+        "on_primary": "oklch(0.985 0.008 60.0)",
+        "accent": "oklch(0.460 0.100 255.0)",
+        "on_accent": "oklch(0.985 0.008 60.0)",
+        "focus": "oklch(0.550 0.150 70.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.008 60.0)",
+        "surface": "oklch(0.180 0.008 60.0)",
+        "surface_raised": "oklch(0.220 0.008 60.0)",
+        "text": "oklch(0.930 0.005 60.0)",
+        "text_muted": "oklch(0.700 0.008 60.0)",
+        "border": "oklch(0.300 0.008 60.0)",
+        "primary": "oklch(0.740 0.100 70.0)",
+        "on_primary": "oklch(0.170 0.015 60.0)",
+        "accent": "oklch(0.740 0.090 255.0)",
+        "on_accent": "oklch(0.170 0.015 60.0)",
+        "focus": "oklch(0.760 0.120 70.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.mint-charcoal",
+      "kind": "palette",
+      "name": "Mint & Charcoal",
+      "temperature": "cool",
+      "scheme": "dark",
+      "hue_family": "mint",
+      "notes": "Charcoal with a soft mint primary and a lilac secondary; dark playful product, fintech apps, luminous launches.",
+      "light": {
+        "bg": "oklch(0.985 0.008 200.0)",
+        "surface": "oklch(0.965 0.008 200.0)",
+        "surface_raised": "oklch(0.995 0.005 200.0)",
+        "text": "oklch(0.210 0.013 200.0)",
+        "text_muted": "oklch(0.470 0.011 200.0)",
+        "border": "oklch(0.870 0.008 200.0)",
+        "primary": "oklch(0.460 0.110 165.0)",
+        "on_primary": "oklch(0.985 0.008 200.0)",
+        "accent": "oklch(0.500 0.110 300.0)",
+        "on_accent": "oklch(0.985 0.008 200.0)",
+        "focus": "oklch(0.550 0.150 165.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.140 0.006 200.0)",
+        "surface": "oklch(0.180 0.006 200.0)",
+        "surface_raised": "oklch(0.220 0.006 200.0)",
+        "text": "oklch(0.930 0.004 200.0)",
+        "text_muted": "oklch(0.700 0.006 200.0)",
+        "border": "oklch(0.300 0.006 200.0)",
+        "primary": "oklch(0.840 0.120 165.0)",
+        "on_primary": "oklch(0.170 0.012 200.0)",
+        "accent": "oklch(0.780 0.090 300.0)",
+        "on_accent": "oklch(0.170 0.012 200.0)",
+        "focus": "oklch(0.760 0.120 165.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.butter-cobalt",
+      "kind": "palette",
+      "name": "Butter & Cobalt",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "blue",
+      "notes": "Butter-tinted neutrals, a cobalt primary and a butter yellow accent; playful geometric and soft product UI.",
+      "light": {
+        "bg": "oklch(0.975 0.016 95.0)",
+        "surface": "oklch(0.955 0.016 95.0)",
+        "surface_raised": "oklch(0.990 0.010 95.0)",
+        "text": "oklch(0.210 0.020 95.0)",
+        "text_muted": "oklch(0.470 0.020 95.0)",
+        "border": "oklch(0.870 0.016 95.0)",
+        "primary": "oklch(0.460 0.180 262.0)",
+        "on_primary": "oklch(0.985 0.008 95.0)",
+        "accent": "oklch(0.900 0.130 95.0)",
+        "on_accent": "oklch(0.170 0.020 95.0)",
+        "focus": "oklch(0.550 0.150 262.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.013 95.0)",
+        "surface": "oklch(0.210 0.013 95.0)",
+        "surface_raised": "oklch(0.250 0.013 95.0)",
+        "text": "oklch(0.930 0.008 95.0)",
+        "text_muted": "oklch(0.700 0.013 95.0)",
+        "border": "oklch(0.330 0.013 95.0)",
+        "primary": "oklch(0.740 0.144 262.0)",
+        "on_primary": "oklch(0.170 0.020 95.0)",
+        "accent": "oklch(0.900 0.104 95.0)",
+        "on_accent": "oklch(0.170 0.020 95.0)",
+        "focus": "oklch(0.760 0.120 262.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.sand-indigo",
+      "kind": "palette",
+      "name": "Sand & Indigo",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "indigo",
+      "notes": "Deep flat indigo (one solid, no gradient, no purple drift) on sand with an ochre accent; publishing, academia, textiles.",
+      "light": {
+        "bg": "oklch(0.975 0.014 75.0)",
+        "surface": "oklch(0.955 0.014 75.0)",
+        "surface_raised": "oklch(0.990 0.008 75.0)",
+        "text": "oklch(0.210 0.020 75.0)",
+        "text_muted": "oklch(0.470 0.020 75.0)",
+        "border": "oklch(0.870 0.014 75.0)",
+        "primary": "oklch(0.400 0.130 276.0)",
+        "on_primary": "oklch(0.985 0.008 75.0)",
+        "accent": "oklch(0.760 0.120 75.0)",
+        "on_accent": "oklch(0.170 0.020 75.0)",
+        "focus": "oklch(0.550 0.150 276.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.011 75.0)",
+        "surface": "oklch(0.210 0.011 75.0)",
+        "surface_raised": "oklch(0.250 0.011 75.0)",
+        "text": "oklch(0.930 0.007 75.0)",
+        "text_muted": "oklch(0.700 0.011 75.0)",
+        "border": "oklch(0.330 0.011 75.0)",
+        "primary": "oklch(0.740 0.104 276.0)",
+        "on_primary": "oklch(0.170 0.020 75.0)",
+        "accent": "oklch(0.800 0.096 75.0)",
+        "on_accent": "oklch(0.170 0.020 75.0)",
+        "focus": "oklch(0.760 0.120 276.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.hazard-yellow",
+      "kind": "palette",
+      "name": "Hazard Yellow",
+      "temperature": "warm",
+      "scheme": "both",
+      "hue_family": "yellow",
+      "notes": "Flat hazard yellow with black text and a red secondary; in light mode the primary is a deeper ochre-yellow so it reads on white, the full hazard yellow lives in dark mode and large fills; neo-brutalist and poster layouts.",
+      "light": {
+        "bg": "oklch(0.985 0.004 90.0)",
+        "surface": "oklch(0.965 0.004 90.0)",
+        "surface_raised": "oklch(0.995 0.002 90.0)",
+        "text": "oklch(0.210 0.006 90.0)",
+        "text_muted": "oklch(0.470 0.006 90.0)",
+        "border": "oklch(0.870 0.004 90.0)",
+        "primary": "oklch(0.550 0.160 98.0)",
+        "on_primary": "oklch(0.985 0.004 90.0)",
+        "accent": "oklch(0.520 0.200 25.0)",
+        "on_accent": "oklch(0.985 0.004 90.0)",
+        "focus": "oklch(0.580 0.140 98.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.004 90.0)",
+        "surface": "oklch(0.210 0.004 90.0)",
+        "surface_raised": "oklch(0.250 0.004 90.0)",
+        "text": "oklch(0.930 0.004 90.0)",
+        "text_muted": "oklch(0.700 0.004 90.0)",
+        "border": "oklch(0.330 0.004 90.0)",
+        "primary": "oklch(0.880 0.170 98.0)",
+        "on_primary": "oklch(0.170 0.006 90.0)",
+        "accent": "oklch(0.740 0.160 25.0)",
+        "on_accent": "oklch(0.170 0.006 90.0)",
+        "focus": "oklch(0.880 0.140 98.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.sky-tomato",
+      "kind": "palette",
+      "name": "Sky & Tomato",
+      "temperature": "cool",
+      "scheme": "both",
+      "hue_family": "sky",
+      "notes": "Bright sky blue primary with a tomato accent on cool white; playful geometric, kids, consumer apps.",
+      "light": {
+        "bg": "oklch(0.985 0.008 235.0)",
+        "surface": "oklch(0.965 0.008 235.0)",
+        "surface_raised": "oklch(0.995 0.005 235.0)",
+        "text": "oklch(0.210 0.013 235.0)",
+        "text_muted": "oklch(0.470 0.011 235.0)",
+        "border": "oklch(0.870 0.008 235.0)",
+        "primary": "oklch(0.540 0.150 237.0)",
+        "on_primary": "oklch(0.985 0.008 235.0)",
+        "accent": "oklch(0.680 0.180 30.0)",
+        "on_accent": "oklch(0.170 0.012 235.0)",
+        "focus": "oklch(0.550 0.150 237.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.006 235.0)",
+        "surface": "oklch(0.210 0.006 235.0)",
+        "surface_raised": "oklch(0.250 0.006 235.0)",
+        "text": "oklch(0.930 0.004 235.0)",
+        "text_muted": "oklch(0.700 0.006 235.0)",
+        "border": "oklch(0.330 0.006 235.0)",
+        "primary": "oklch(0.740 0.120 237.0)",
+        "on_primary": "oklch(0.170 0.012 235.0)",
+        "accent": "oklch(0.680 0.144 30.0)",
+        "on_accent": "oklch(0.170 0.012 235.0)",
+        "focus": "oklch(0.760 0.120 237.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "palette.poppy-cream",
+      "kind": "palette",
+      "name": "Poppy & Cream",
+      "temperature": "warm",
+      "scheme": "light",
+      "hue_family": "orange",
+      "notes": "Poppy red-orange primary with a leaf-green accent on cream; playful retail, food delivery, brutalist menus.",
+      "light": {
+        "bg": "oklch(0.975 0.012 85.0)",
+        "surface": "oklch(0.955 0.012 85.0)",
+        "surface_raised": "oklch(0.990 0.007 85.0)",
+        "text": "oklch(0.210 0.019 85.0)",
+        "text_muted": "oklch(0.470 0.017 85.0)",
+        "border": "oklch(0.870 0.012 85.0)",
+        "primary": "oklch(0.570 0.190 32.0)",
+        "on_primary": "oklch(0.985 0.008 85.0)",
+        "accent": "oklch(0.500 0.140 150.0)",
+        "on_accent": "oklch(0.985 0.008 85.0)",
+        "focus": "oklch(0.550 0.150 32.0)",
+        "success": "oklch(0.500 0.130 150.0)",
+        "warning": "oklch(0.700 0.150 75.0)",
+        "danger": "oklch(0.520 0.190 27.0)"
+      },
+      "dark": {
+        "bg": "oklch(0.170 0.010 85.0)",
+        "surface": "oklch(0.210 0.010 85.0)",
+        "surface_raised": "oklch(0.250 0.010 85.0)",
+        "text": "oklch(0.930 0.006 85.0)",
+        "text_muted": "oklch(0.700 0.010 85.0)",
+        "border": "oklch(0.330 0.010 85.0)",
+        "primary": "oklch(0.740 0.152 32.0)",
+        "on_primary": "oklch(0.170 0.018 85.0)",
+        "accent": "oklch(0.740 0.112 150.0)",
+        "on_accent": "oklch(0.170 0.018 85.0)",
+        "focus": "oklch(0.760 0.120 32.0)",
+        "success": "oklch(0.740 0.110 150.0)",
+        "warning": "oklch(0.800 0.120 75.0)",
+        "danger": "oklch(0.700 0.150 27.0)"
+      },
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.fraunces-figtree",
+      "kind": "type-pairing",
+      "name": "Fraunces / Figtree",
+      "heading": {
+        "family": "Fraunces",
+        "category": "serif-old-style",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Figtree",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "warm",
+        "literate",
+        "considered",
+        "friendly"
+      ],
+      "notes": "Fraunces' soft old-style curves carry the personality at display sizes while Figtree stays quiet and even in running text; keep Fraunces upright and under 64px to avoid the oversized-italic-serif tell.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.instrument-serif-instrument-sans",
+      "kind": "type-pairing",
+      "name": "Instrument Serif / Instrument Sans",
+      "heading": {
+        "family": "Instrument Serif",
+        "category": "serif-transitional",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Instrument Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Instrument+Sans:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "editorial",
+        "sharp",
+        "contemporary"
+      ],
+      "notes": "Drawn as a family, the condensed high-contrast serif and the neutral grotesque share proportions, so headlines feel sharp without the body fighting them; use the roman, not the italic, for H1.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.newsreader-source-sans-3",
+      "kind": "type-pairing",
+      "name": "Newsreader / Source Sans 3",
+      "heading": {
+        "family": "Newsreader",
+        "category": "serif-transitional",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Source Sans 3",
+        "category": "humanist",
+        "weights": [
+          400,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 68,
+      "css_url": "https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "newsy",
+        "trustworthy",
+        "calm",
+        "literate"
+      ],
+      "notes": "Newsreader's optical-size axis keeps headlines crisp and decks readable, and Source Sans 3's humanist rhythm matches its transitional body shapes for long-form reading.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.source-serif-4-public-sans",
+      "kind": "type-pairing",
+      "name": "Source Serif 4 / Public Sans",
+      "heading": {
+        "family": "Source Serif 4",
+        "category": "serif-transitional",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Public Sans",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "civic",
+        "clear",
+        "trustworthy",
+        "fintech"
+      ],
+      "notes": "Two workhorse faces with matched x-heights: Source Serif 4 gives documents authority, Public Sans keeps UI and forms plain and legible, the kind of pairing legal and fintech products can trust.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.libre-caslon-text-work-sans",
+      "kind": "type-pairing",
+      "name": "Libre Caslon Text / Work Sans",
+      "heading": {
+        "family": "Libre Caslon Text",
+        "category": "serif-old-style",
+        "weights": [
+          400,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Work Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "classic",
+        "bookish",
+        "assured"
+      ],
+      "notes": "Caslon's sturdy old-style forms give headlines a printed-book weight and Work Sans, an early-grotesque revival, is period-adjacent without competing in texture.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.playfair-display-dm-sans",
+      "kind": "type-pairing",
+      "name": "Playfair Display / DM Sans",
+      "heading": {
+        "family": "Playfair Display",
+        "category": "serif-didone",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "DM Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Didot, 'Bodoni MT', Georgia, serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "fashion",
+        "high-contrast",
+        "dramatic",
+        "luxury"
+      ],
+      "notes": "A Didone headline needs a low-contrast geometric body, which DM Sans supplies; the classic magazine contrast works because the sans has no calligraphic stress to argue with (never swap in a humanist sans).",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "type-pairing",
+      "name": "Cormorant Garamond / Hanken Grotesk",
+      "heading": {
+        "family": "Cormorant Garamond",
+        "category": "serif-old-style",
+        "weights": [
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Hanken Grotesk",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "refined",
+        "quiet",
+        "luxurious",
+        "airy"
+      ],
+      "notes": "Cormorant's small x-height and long extenders read as refinement at large sizes, and Hanken Grotesk's plain, slightly narrow grotesque recedes so the serif and the whitespace carry the page.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.literata-albert-sans",
+      "kind": "type-pairing",
+      "name": "Literata / Albert Sans",
+      "heading": {
+        "family": "Literata",
+        "category": "serif-transitional",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Albert Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 68,
+      "css_url": "https://fonts.googleapis.com/css2?family=Literata:wght@500;600;700&family=Albert+Sans:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "readerly",
+        "warm",
+        "steady"
+      ],
+      "notes": "Literata was drawn for long screen reading and its optical sizes keep headlines from going spindly; Albert Sans adds a soft geometric counterpoint for UI labels without stealing attention.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.lora-nunito-sans",
+      "kind": "type-pairing",
+      "name": "Lora / Nunito Sans",
+      "heading": {
+        "family": "Lora",
+        "category": "serif-transitional",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Nunito Sans",
+        "category": "humanist",
+        "weights": [
+          400,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 68,
+      "css_url": "https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "warm",
+        "human",
+        "calm",
+        "wellness"
+      ],
+      "notes": "Lora's brushy, moderate-contrast serif and Nunito Sans' rounded humanist forms share a gentle calligraphic stress, so the pairing feels warm and organic rather than corporate.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.eb-garamond-onest",
+      "kind": "type-pairing",
+      "name": "EB Garamond / Onest",
+      "heading": {
+        "family": "EB Garamond",
+        "category": "serif-old-style",
+        "weights": [
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Onest",
+        "category": "humanist",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Onest:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "scholarly",
+        "timeless",
+        "understated"
+      ],
+      "notes": "Old-style Garamond and a humanist sans descend from the same broad-nib stress, so unlike Didone + humanist this is harmonious; Onest's slightly larger x-height keeps body copy modern.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.young-serif-rethink-sans",
+      "kind": "type-pairing",
+      "name": "Young Serif / Rethink Sans",
+      "heading": {
+        "family": "Young Serif",
+        "category": "serif-old-style",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Rethink Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Young+Serif&family=Rethink+Sans:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "chunky",
+        "friendly",
+        "warm",
+        "indie"
+      ],
+      "notes": "Young Serif's heavy, low-contrast letterforms behave like a display face so one weight is enough; Rethink Sans' clean geometry keeps the page from tipping into kitsch.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.gloock-manrope",
+      "kind": "type-pairing",
+      "name": "Gloock / Manrope",
+      "heading": {
+        "family": "Gloock",
+        "category": "serif-didone",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Manrope",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Didot, 'Bodoni MT', Georgia, serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Gloock&family=Manrope:wght@400;500;600;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "dramatic",
+        "poster",
+        "luxury",
+        "high-contrast"
+      ],
+      "notes": "Gloock is a single-weight Didone built for poster sizes, so pair it with Manrope's even geometric strokes at 1.414 scale and keep it to one or two lines per page; a humanist body would clash with its vertical stress.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.dm-serif-display-dm-sans",
+      "kind": "type-pairing",
+      "name": "DM Serif Display / DM Sans",
+      "heading": {
+        "family": "DM Serif Display",
+        "category": "serif-transitional",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "DM Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Georgia, 'Times New Roman', serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "confident",
+        "editorial",
+        "brand"
+      ],
+      "notes": "Designed as siblings, DM Serif Display's Scotch-roman contrast and DM Sans' low-contrast geometry share a skeleton, which is why the heading and body feel like one voice at two volumes.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.inter-tight-inter",
+      "kind": "type-pairing",
+      "name": "Inter Tight / Inter",
+      "heading": {
+        "family": "Inter Tight",
+        "category": "neo-grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Inter",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "product",
+        "neutral",
+        "technical"
+      ],
+      "notes": "Inter Tight gives the headline the tight tracking Inter lacks at display sizes so the family stops looking like an unchosen default; only use it with a distinct accent colour and real product imagery.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.geist-geist",
+      "kind": "type-pairing",
+      "name": "Geist / Geist",
+      "heading": {
+        "family": "Geist",
+        "category": "neo-grotesque",
+        "weights": [
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Geist",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "Geist Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "engineering",
+        "monochrome",
+        "precise"
+      ],
+      "notes": "One sans for everything with Geist Mono reserved for code, paths and IDs is the Vercel design.md recipe; the discipline is in the restraint, not the face.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.bricolage-grotesque-figtree",
+      "kind": "type-pairing",
+      "name": "Bricolage Grotesque / Figtree",
+      "heading": {
+        "family": "Bricolage Grotesque",
+        "category": "grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Figtree",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "quirky",
+        "bold",
+        "playful",
+        "indie"
+      ],
+      "notes": "Bricolage's optical-size axis turns on its wonky display details only at headline sizes, and Figtree's smooth geometry below it keeps the quirk from infecting the reading text.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.schibsted-grotesk-inter",
+      "kind": "type-pairing",
+      "name": "Schibsted Grotesk / Inter",
+      "heading": {
+        "family": "Schibsted Grotesk",
+        "category": "grotesque",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Inter",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "newspaper",
+        "swiss",
+        "direct"
+      ],
+      "notes": "A newspaper grotesque with real character at headline sizes over Inter at text sizes gives a Swiss-grid page two distinct voices without leaving the grotesque family.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.plus-jakarta-sans",
+      "kind": "type-pairing",
+      "name": "Plus Jakarta Sans / Plus Jakarta Sans",
+      "heading": {
+        "family": "Plus Jakarta Sans",
+        "category": "geometric",
+        "weights": [
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Plus Jakarta Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "friendly",
+        "product",
+        "rounded",
+        "approachable"
+      ],
+      "notes": "A single geometric family at two weights is the quietest way to get a soft product voice; the slightly rounded terminals read friendly without needing pill-shaped type tricks.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.outfit-nunito-sans",
+      "kind": "type-pairing",
+      "name": "Outfit / Nunito Sans",
+      "heading": {
+        "family": "Outfit",
+        "category": "geometric",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Nunito Sans",
+        "category": "humanist",
+        "weights": [
+          400,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "playful",
+        "bright",
+        "geometric",
+        "consumer"
+      ],
+      "notes": "Outfit's pure circles and verticals suit bright colour blocks and big rounded cards, and Nunito Sans softens the body copy so the page stays likeable rather than cold.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.sora-work-sans",
+      "kind": "type-pairing",
+      "name": "Sora / Work Sans",
+      "heading": {
+        "family": "Sora",
+        "category": "geometric",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Work Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "techy",
+        "modern",
+        "glow",
+        "startup"
+      ],
+      "notes": "Sora's wide, slightly squared geometry reads as technical on a dark canvas, and Work Sans' plainer grotesque keeps paragraphs neutral under glow and glass effects.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.host-grotesk-funnel-sans",
+      "kind": "type-pairing",
+      "name": "Host Grotesk / Funnel Sans",
+      "heading": {
+        "family": "Host Grotesk",
+        "category": "grotesque",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Funnel Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@500;600;700&family=Funnel+Sans:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "fresh",
+        "swiss",
+        "neutral",
+        "unexpected"
+      ],
+      "notes": "Two 2024-25 Google releases nobody has defaulted to yet: Host Grotesk's compact grotesque headlines over Funnel Sans' open geometric text avoid the Inter-everywhere tell while staying strictly neutral.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.chivo-be-vietnam-pro",
+      "kind": "type-pairing",
+      "name": "Chivo / Be Vietnam Pro",
+      "heading": {
+        "family": "Chivo",
+        "category": "grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Be Vietnam Pro",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Chivo:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "grotesque",
+        "punchy",
+        "swiss",
+        "raw"
+      ],
+      "notes": "Chivo's heavy grotesque weights give headlines the punch a visible grid wants, and Be Vietnam Pro's cleaner neo-grotesque keeps body text from going muddy at small sizes.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.atkinson-hyperlegible-next",
+      "kind": "type-pairing",
+      "name": "Atkinson Hyperlegible Next / Atkinson Hyperlegible Next",
+      "heading": {
+        "family": "Atkinson Hyperlegible Next",
+        "category": "humanist",
+        "weights": [
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Atkinson Hyperlegible Next",
+        "category": "humanist",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 68,
+      "css_url": "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "accessible",
+        "clear",
+        "civic",
+        "dense"
+      ],
+      "notes": "Built for low-vision readers with unambiguous glyphs, this family at two weights is the safe choice for dense tables and forms where character confusion costs money.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.archivo-archivo",
+      "kind": "type-pairing",
+      "name": "Archivo / Archivo",
+      "heading": {
+        "family": "Archivo",
+        "category": "grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Archivo",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Helvetica, Arial, system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap",
+      "license": "OFL",
+      "moods": [
+        "raw",
+        "industrial",
+        "grid",
+        "direct"
+      ],
+      "notes": "Archivo's width axis lets the heading run condensed and heavy while the body stays normal width, so one grotesque does both jobs on a visible grid with hard edges.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.roboto-flex",
+      "kind": "type-pairing",
+      "name": "Roboto Flex / Roboto Flex",
+      "heading": {
+        "family": "Roboto Flex",
+        "category": "neo-grotesque",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Roboto Flex",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap",
+      "license": "Apache-2.0",
+      "moods": [
+        "dashboard",
+        "dense",
+        "utilitarian",
+        "tabular"
+      ],
+      "notes": "Roboto Flex's optical-size and grade axes keep 12px table text and 40px titles equally crisp, and its tabular figures line up in tight rows; one variable file covers the whole dashboard.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.manrope-ibm-plex-sans",
+      "kind": "type-pairing",
+      "name": "Manrope / IBM Plex Sans",
+      "heading": {
+        "family": "Manrope",
+        "category": "geometric",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "product",
+        "soft",
+        "modern",
+        "saas"
+      ],
+      "notes": "Manrope's rounded geometric headlines carry the product personality and IBM Plex Sans' slightly engineered grotesque keeps settings pages and forms businesslike underneath.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.jetbrains-mono-inter",
+      "kind": "type-pairing",
+      "name": "JetBrains Mono / Inter",
+      "heading": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Inter",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "terminal",
+        "developer",
+        "dark",
+        "precise"
+      ],
+      "notes": "Mono headlines at a modest 1.2 scale read like a good terminal prompt rather than a gimmick, and Inter below them keeps prose and tables legible on near-black surfaces.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "type-pairing",
+      "name": "IBM Plex Mono / IBM Plex Sans",
+      "heading": {
+        "family": "IBM Plex Mono",
+        "category": "mono",
+        "weights": [
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "IBM Plex Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "IBM Plex Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "engineering",
+        "systems",
+        "documentation",
+        "dense"
+      ],
+      "notes": "Plex Mono and Plex Sans share widths and weights, so mono headings, sans prose and mono data columns align on the same baseline grid without visual seams.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.geist-mono-geist",
+      "kind": "type-pairing",
+      "name": "Geist Mono / Geist",
+      "heading": {
+        "family": "Geist Mono",
+        "category": "mono",
+        "weights": [
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Geist",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "Geist Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "console",
+        "bento",
+        "developer",
+        "monochrome"
+      ],
+      "notes": "Leading with Geist Mono for titles and captions and dropping to Geist for sentences gives bento cells and dark consoles a data-first voice while staying one coherent superfamily.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.space-mono-space-grotesk",
+      "kind": "type-pairing",
+      "name": "Space Mono / Space Grotesk",
+      "heading": {
+        "family": "Space Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Space Grotesk",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "brutalist",
+        "retro-tech",
+        "raw",
+        "loud"
+      ],
+      "notes": "Space Mono's quirky retro terminals make a deliberately unpolished headline, and Space Grotesk (its proportional sibling) carries the same DNA; reserve it for brutalist pages since Space Grotesk alone is now a default tell.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.martian-mono-public-sans",
+      "kind": "type-pairing",
+      "name": "Martian Mono / Public Sans",
+      "heading": {
+        "family": "Martian Mono",
+        "category": "mono",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Public Sans",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "Martian Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "data",
+        "dashboard",
+        "precise",
+        "technical"
+      ],
+      "notes": "Martian Mono's width axis gives compact mono headers and labels that sit over dense tables, and Public Sans' neutral neo-grotesque handles the surrounding UI copy.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.azeret-mono-albert-sans",
+      "kind": "type-pairing",
+      "name": "Azeret Mono / Albert Sans",
+      "heading": {
+        "family": "Azeret Mono",
+        "category": "mono",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Albert Sans",
+        "category": "geometric",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500;600;700&family=Albert+Sans:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "brutalist",
+        "bold",
+        "sticker",
+        "indie"
+      ],
+      "notes": "Azeret Mono is a chunky display mono built to be set large with thick borders and hard shadows, and Albert Sans' plain geometry keeps the body copy from adding more noise.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.syne-manrope",
+      "kind": "type-pairing",
+      "name": "Syne / Manrope",
+      "heading": {
+        "family": "Syne",
+        "category": "display",
+        "weights": [
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Manrope",
+        "category": "geometric",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Arial Black', Impact, system-ui, sans-serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "poster",
+        "wide",
+        "art-direction",
+        "bold"
+      ],
+      "notes": "Syne's extended heavy weights are the image at poster scale, so everything else is small Manrope aligned to the grid; one headline per screen is the rule.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.unbounded-onest",
+      "kind": "type-pairing",
+      "name": "Unbounded / Onest",
+      "heading": {
+        "family": "Unbounded",
+        "category": "display",
+        "weights": [
+          600,
+          700,
+          800
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Onest",
+        "category": "humanist",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Arial Black', Impact, system-ui, sans-serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 60,
+      "css_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Onest:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "wide",
+        "playful",
+        "loud",
+        "crypto"
+      ],
+      "notes": "Unbounded's ultra-wide geometric display letters fill a hero on their own; Onest's compact humanist body is the counterweight that keeps the rest of the page readable.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.archivo-black-archivo",
+      "kind": "type-pairing",
+      "name": "Archivo Black / Archivo",
+      "heading": {
+        "family": "Archivo Black",
+        "category": "display",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Archivo",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Arial Black', Impact, system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 62,
+      "css_url": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "brutalist",
+        "heavy",
+        "flat",
+        "loud"
+      ],
+      "notes": "Archivo Black is the fat grotesque neo-brutalism wants for flat fills and thick borders, and regular Archivo is literally the same design at text weight so the hierarchy is seamless.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.anton-work-sans",
+      "kind": "type-pairing",
+      "name": "Anton / Work Sans",
+      "heading": {
+        "family": "Anton",
+        "category": "display",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Work Sans",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Impact, 'Arial Narrow', system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 60,
+      "css_url": "https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "condensed",
+        "poster",
+        "impact",
+        "sport"
+      ],
+      "notes": "Anton's tall condensed caps pack a long headline into a tight block, and Work Sans' wider grotesque text opens the page back up beneath it; set Anton tight and never in italic.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.clash-display-satoshi",
+      "kind": "type-pairing",
+      "name": "Clash Display / Satoshi",
+      "heading": {
+        "family": "Clash Display",
+        "category": "display",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "fontshare"
+      },
+      "body": {
+        "family": "Satoshi",
+        "category": "geometric",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "source": "fontshare"
+      },
+      "fallback_heading": "'Arial Black', Impact, system-ui, sans-serif",
+      "fallback_body": "'Avenir Next', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.414,
+      "measure_ch": 62,
+      "license": "Fontshare EULA",
+      "moods": [
+        "poster",
+        "contemporary",
+        "brand",
+        "sharp"
+      ],
+      "notes": "Clash Display's wide, slightly squared display forms give poster-type headlines a distinct 2020s brand voice, and Satoshi (same foundry) is a neutral geometric that stays out of the way; self-host both via Fontshare.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.cal-sans-hanken-grotesk",
+      "kind": "type-pairing",
+      "name": "Cal Sans / Hanken Grotesk",
+      "heading": {
+        "family": "Cal Sans",
+        "category": "display",
+        "weights": [
+          400
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Hanken Grotesk",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500,
+          600
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "'Arial Black', Impact, system-ui, sans-serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.333,
+      "measure_ch": 64,
+      "css_url": "https://fonts.googleapis.com/css2?family=Cal+Sans&family=Hanken+Grotesk:wght@400;500;600&display=swap",
+      "license": "OFL",
+      "moods": [
+        "product",
+        "crisp",
+        "startup",
+        "friendly"
+      ],
+      "notes": "Cal Sans is the single-weight display face Cal.com ships for headlines; over Hanken Grotesk's plain text it gives a product page a clear, non-default headline voice at low cost.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.roboto-slab-roboto-flex",
+      "kind": "type-pairing",
+      "name": "Roboto Slab / Roboto Flex",
+      "heading": {
+        "family": "Roboto Slab",
+        "category": "serif-slab",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Roboto Flex",
+        "category": "neo-grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Rockwell, 'Roboto Slab', Georgia, serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Roboto+Flex:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap",
+      "license": "Apache-2.0",
+      "moods": [
+        "sturdy",
+        "documentation",
+        "practical"
+      ],
+      "notes": "Roboto Slab and Roboto Flex share a skeleton, so slab headings over a flexible neo-grotesque body give documentation and dense admin pages structure without any stylistic seam.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.zilla-slab-lato",
+      "kind": "type-pairing",
+      "name": "Zilla Slab / Lato",
+      "heading": {
+        "family": "Zilla Slab",
+        "category": "serif-slab",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Lato",
+        "category": "humanist",
+        "weights": [
+          400,
+          700
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Rockwell, 'Roboto Slab', Georgia, serif",
+      "fallback_body": "'Gill Sans', 'Segoe UI', system-ui, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "css_url": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Lato:wght@400;700&display=swap",
+      "license": "OFL",
+      "moods": [
+        "open-source",
+        "warm",
+        "sturdy",
+        "civic"
+      ],
+      "notes": "Zilla Slab's soft slab serifs (Mozilla's brand face) and Lato's warm humanist sans both have a slight calligraphic warmth, so the pairing feels approachable rather than mechanical.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.bitter-hanken-grotesk",
+      "kind": "type-pairing",
+      "name": "Bitter / Hanken Grotesk",
+      "heading": {
+        "family": "Bitter",
+        "category": "serif-slab",
+        "weights": [
+          500,
+          600,
+          700
+        ],
+        "source": "google"
+      },
+      "body": {
+        "family": "Hanken Grotesk",
+        "category": "grotesque",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "google"
+      },
+      "fallback_heading": "Rockwell, 'Roboto Slab', Georgia, serif",
+      "fallback_body": "Helvetica, Arial, system-ui, sans-serif",
+      "scale_ratio": 1.2,
+      "measure_ch": 68,
+      "css_url": "https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Hanken+Grotesk:wght@400;500&display=swap",
+      "license": "OFL",
+      "moods": [
+        "readerly",
+        "earthy",
+        "steady"
+      ],
+      "notes": "Bitter was drawn as a reading slab for screens, so its headings stay soft and even, and Hanken Grotesk's quiet grotesque body keeps long articles calm.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.system-ui-stack",
+      "kind": "type-pairing",
+      "name": "System UI / System UI",
+      "heading": {
+        "family": "system-ui",
+        "category": "system",
+        "weights": [
+          600,
+          700
+        ],
+        "source": "system"
+      },
+      "body": {
+        "family": "system-ui",
+        "category": "system",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "system"
+      },
+      "mono": {
+        "family": "ui-monospace",
+        "category": "mono",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "system"
+      },
+      "fallback_heading": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "fallback_body": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 66,
+      "license": "system",
+      "moods": [
+        "native",
+        "fast",
+        "neutral",
+        "zero-request"
+      ],
+      "notes": "Zero font requests and native rendering on every platform; the right call for app shells, glass companions and data tools where the OS face is the honest choice.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "type-pairing.system-serif-stack",
+      "kind": "type-pairing",
+      "name": "System Serif / System Sans",
+      "heading": {
+        "family": "ui-serif",
+        "category": "system",
+        "weights": [
+          600,
+          700
+        ],
+        "source": "system"
+      },
+      "body": {
+        "family": "ui-sans-serif",
+        "category": "system",
+        "weights": [
+          400,
+          500
+        ],
+        "source": "system"
+      },
+      "fallback_heading": "ui-serif, 'Iowan Old Style', Georgia, 'Times New Roman', serif",
+      "fallback_body": "ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif",
+      "scale_ratio": 1.25,
+      "measure_ch": 68,
+      "license": "system",
+      "moods": [
+        "native",
+        "readerly",
+        "fast",
+        "editorial"
+      ],
+      "notes": "New York on Apple and Georgia elsewhere give an editorial headline with no webfont cost, over the platform sans; useful for content sites that must be fast on first paint.",
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
@@ -6322,6 +10217,1826 @@
       "to": "style.playful-geometric",
       "kind": "avoid_with",
       "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.paper-ink",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.cherry-paper",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.cobalt-paper",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.sage-linen",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.marine-bone",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.espresso-cream",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.ink-coral",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.paper-ink",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.ruby-chalk",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.charcoal-saffron",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.cobalt-paper",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.carbon-signal",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.graphite-amber",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.slate-signal",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.charcoal-saffron",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.steel-cyan",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.ink-coral",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.butter-cobalt",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.sky-tomato",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.slate-signal",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.teal-sand",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.iris-fog",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.cocoa-peach",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.graphite-amber",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.carbon-signal",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.terminal-green",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.steel-cyan",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.mint-charcoal",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.obsidian-copper",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.midnight-lime",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.steel-cyan",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.mint-charcoal",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.obsidian-copper",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.bronze-night",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.lime-graphite",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.espresso-cream",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.sage-linen",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.lavender-stone",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.rose-granite",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.pine-chalk",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.cocoa-peach",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.hazard-yellow",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.lime-graphite",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.poppy-cream",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.tangerine-slate",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.cobalt-paper",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.cherry-paper",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.carbon-signal",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.sky-tomato",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.butter-cobalt",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.poppy-cream",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.tangerine-slate",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.hazard-yellow",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.mint-charcoal",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.moss-cream",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.olive-ivory",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.forest-brass",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.cocoa-peach",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.sage-linen",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.clay-bone",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.pine-chalk",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.iris-fog",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.ocean-sand",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.arctic-teal",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.nordic-ice",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.midnight-lime",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.plum-linen",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.slate-signal",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.graphite-amber",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.teal-sand",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.steel-cyan",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.navy-gold",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.paper-ink",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.ink-coral",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.cherry-paper",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.mustard-ink",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.hazard-yellow",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.carbon-signal",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.cobalt-paper",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.slate-signal",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.graphite-amber",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.charcoal-saffron",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.steel-cyan",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.denim-wheat",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.terminal-green",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.lime-graphite",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.midnight-lime",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "palette.clay-bone",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.butter-cobalt",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.lime-graphite",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.sky-tomato",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "palette.poppy-cream",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.terminal-green",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "palette.carbon-signal",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.butter-cobalt",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.paper-ink",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.cocoa-peach",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "palette.poppy-cream",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.paper-ink",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.espresso-cream",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.violet-ash",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "palette.iris-fog",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.lime-graphite",
+      "kind": "avoid_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.midnight-lime",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.hazard-yellow",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.sky-tomato",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.butter-cobalt",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.poppy-cream",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.tangerine-slate",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.terminal-green",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.carbon-signal",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "palette.cobalt-paper",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.sage-linen",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.espresso-cream",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.lavender-stone",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.rose-granite",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "palette.harbor-grey",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.espresso-cream",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.graphite-amber",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.harbor-grey",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "palette.sage-linen",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.terminal-green",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.steel-cyan",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.carbon-signal",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "palette.lime-graphite",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.paper-ink",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "palette.mustard-ink",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.hazard-yellow",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.poppy-cream",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.lime-graphite",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "palette.sky-tomato",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.lavender-stone",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "palette.sage-linen",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.cocoa-peach",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "palette.sage-linen",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.hazard-yellow",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "palette.poppy-cream",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.fraunces-figtree",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.newsreader-source-sans-3",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.source-serif-4-public-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.literata-albert-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.libre-caslon-text-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.instrument-serif-instrument-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.system-serif-stack",
+      "kind": "pairs_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.schibsted-grotesk-inter",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.host-grotesk-funnel-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.chivo-be-vietnam-pro",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.archivo-archivo",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.system-ui-stack",
+      "kind": "pairs_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.geist-geist",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.geist-mono-geist",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.roboto-flex",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.atkinson-hyperlegible-next",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.plus-jakarta-sans",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.manrope-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.outfit-nunito-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.atkinson-hyperlegible-next",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.cal-sans-hanken-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.young-serif-rethink-sans",
+      "kind": "pairs_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.jetbrains-mono-inter",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.geist-mono-geist",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.martian-mono-public-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.geist-geist",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.sora-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.manrope-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.geist-geist",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.host-grotesk-funnel-sans",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.eb-garamond-onest",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.libre-caslon-text-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.gloock-manrope",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.instrument-serif-instrument-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.playfair-display-dm-sans",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.archivo-black-archivo",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.space-mono-space-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.azeret-mono-albert-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.bricolage-grotesque-figtree",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.chivo-be-vietnam-pro",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.anton-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.outfit-nunito-sans",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.bricolage-grotesque-figtree",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.unbounded-onest",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.plus-jakarta-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.young-serif-rethink-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.cal-sans-hanken-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.lora-nunito-sans",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.young-serif-rethink-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.fraunces-figtree",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.literata-albert-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.bitter-hanken-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.zilla-slab-lato",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.manrope-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.plus-jakarta-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.sora-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.cal-sans-hanken-grotesk",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.system-ui-stack",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.geist-mono-geist",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.martian-mono-public-sans",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.sora-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.host-grotesk-funnel-sans",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.syne-manrope",
+      "kind": "pairs_with",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.anton-work-sans",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.unbounded-onest",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.clash-display-satoshi",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.gloock-manrope",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.archivo-black-archivo",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.dm-serif-display-dm-sans",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.roboto-flex",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.atkinson-hyperlegible-next",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.martian-mono-public-sans",
+      "kind": "pairs_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.system-ui-stack",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.roboto-slab-roboto-flex",
+      "kind": "pairs_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.syne-manrope",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.anton-work-sans",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.unbounded-onest",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.gloock-manrope",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.playfair-display-dm-sans",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.archivo-black-archivo",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "type-pairing.clash-display-satoshi",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.space-mono-space-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.azeret-mono-albert-sans",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.archivo-black-archivo",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.anton-work-sans",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.space-mono-space-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "type-pairing.unbounded-onest",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.gloock-manrope",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.playfair-display-dm-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "type-pairing.jetbrains-mono-inter",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.anton-work-sans",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.gloock-manrope",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.eb-garamond-onest",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "type-pairing.lora-nunito-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.playfair-display-dm-sans",
+      "kind": "avoid_with",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.lora-nunito-sans",
+      "kind": "avoid_with",
+      "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "type-pairing.young-serif-rethink-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.libre-caslon-text-work-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.system-ui-stack",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "type-pairing.atkinson-hyperlegible-next",
+      "kind": "avoid_with",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.fraunces-figtree",
+      "kind": "avoid_with",
+      "weight": 0.65,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "type-pairing.lora-nunito-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.zilla-slab-lato",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "type-pairing.young-serif-rethink-sans",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "type-pairing.space-mono-space-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "type-pairing.cormorant-garamond-hanken-grotesk",
+      "kind": "avoid_with",
+      "weight": 0.75,
       "evidence": []
     }
   ]

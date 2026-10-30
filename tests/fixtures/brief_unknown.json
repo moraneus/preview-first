@@ -1,0 +1,9 @@
+{
+  "product": "Pawfect, a dog grooming booking site for a neighbourhood salon",
+  "audience": "local dog owners",
+  "product_type": "dog grooming booking",
+  "moods": ["cozy", "sparkly", "warm"],
+  "page_type": "marketing",
+  "constraints": {},
+  "words": {"name": "Pawfect"}
+}
