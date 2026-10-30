@@ -14,8 +14,10 @@ from typing import Dict, Sequence, Tuple
 RGB = Tuple[float, float, float]
 
 # WCAG 2 thresholds by role, APCA Lc thresholds by role.
-WCAG_MIN = {"body": 4.5, "large": 3.0, "ui": 3.0}
-APCA_MIN = {"body": 60.0, "large": 45.0, "ui": 30.0}
+# body: running text. label: button and form labels, 14px+ at medium weight.
+# large: 24px+ or 19px bold. ui: non-text indicators, borders, focus rings.
+WCAG_MIN = {"body": 4.5, "label": 4.5, "large": 3.0, "ui": 3.0}
+APCA_MIN = {"body": 60.0, "label": 45.0, "large": 45.0, "ui": 30.0}
 
 
 # ---------------------------------------------------------------- hex / rgb

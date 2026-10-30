@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "id_pattern": "^[a-z-]+\\.[a-z0-9][a-z0-9-]*$",
+  "common_required": ["id", "kind", "name", "source", "added", "last_verified", "confidence"],
+  "palette_roles": ["bg", "surface", "surface_raised", "text", "text_muted", "border", "primary", "on_primary", "accent", "on_accent", "success", "warning", "danger", "focus"],
+  "palette_checks": [
+    {"fg": "text", "bg": "bg", "role": "body"},
+    {"fg": "text", "bg": "surface", "role": "body"},
+    {"fg": "text", "bg": "surface_raised", "role": "body"},
+    {"fg": "on_primary", "bg": "primary", "role": "label"},
+    {"fg": "on_accent", "bg": "accent", "role": "label"},
+    {"fg": "text_muted", "bg": "bg", "role": "large"},
+    {"fg": "focus", "bg": "bg", "role": "ui"},
+    {"fg": "danger", "bg": "bg", "role": "ui"}
+  ],
+  "node_kinds": {
+    "style": {
+      "required": ["family", "summary", "traits", "signals", "radius_scale", "shadow", "density"],
+      "optional": ["era", "performance_note", "accessibility_note", "layout_defaults", "tells_to_avoid", "best_page_types"],
+      "enums": {
+        "family": ["minimal", "editorial", "technical", "soft", "expressive", "dark", "bold"],
+        "radius_scale": ["none", "sm", "md", "lg", "pill"],
+        "shadow": ["none", "hairline", "soft", "layered", "hard"],
+        "density": ["airy", "regular", "compact"]
+      }
+    },
+    "palette": {
+      "required": ["temperature", "scheme", "light", "dark"],
+      "optional": ["hue_family", "notes"],
+      "enums": {
+        "temperature": ["warm", "cool", "neutral"],
+        "scheme": ["light", "dark", "both"]
+      }
+    },
+    "type-pairing": {
+      "required": ["heading", "body", "fallback_heading", "fallback_body", "scale_ratio", "measure_ch", "license"],
+      "optional": ["mono", "css_url", "moods", "notes", "live"],
+      "face_required": ["family", "category", "weights", "source"],
+      "enums": {
+        "face.category": ["grotesque", "humanist", "geometric", "neo-grotesque", "serif-transitional", "serif-old-style", "serif-didone", "serif-slab", "mono", "display", "system"],
+        "face.source": ["google", "fontsource", "fontshare", "system", "self-hosted"]
+      }
+    },
+    "treatment": {
+      "required": ["axis", "value", "css_class"],
+      "optional": ["description"],
+      "axis_values": {
+        "button_shape": ["pill", "rounded", "square"],
+        "button_fill": ["solid", "outline", "ghost", "soft"],
+        "input_edge": ["hairline", "filled", "underline"],
+        "card_edge": ["border", "shadow", "flat", "inset"],
+        "nav": ["airy", "compact", "floating", "sidebar"],
+        "divider": ["hairline", "space", "rule"],
+        "image_corner": ["none", "sm", "lg"],
+        "focus_ring": ["offset", "inset", "glow"],
+        "link_style": ["underline", "colour", "both"],
+        "elevation": ["none", "one", "layered"]
+      }
+    },
+    "motion-pattern": {
+      "required": ["trigger", "duration_ms", "easing", "communicates", "implementation", "reduced_motion", "level"],
+      "optional": ["css", "notes"],
+      "enums": {
+        "trigger": ["hover", "press", "focus", "enter", "exit", "page", "scroll", "ambient", "layout"],
+        "implementation": ["css", "view-transitions", "scroll-driven", "motion", "gsap"],
+        "level": [0, 1, 2, 3]
+      }
+    },
+    "product-type": {
+      "required": ["aliases", "page_type"],
+      "optional": ["needs", "notes"],
+      "enums": {"page_type": ["marketing", "app", "content", "store"]}
+    },
+    "mood": {
+      "required": ["aliases"],
+      "optional": ["temperature_hint", "motion_level"],
+      "enums": {"temperature_hint": ["warm", "cool", "neutral"], "motion_level": [0, 1, 2, 3]}
+    },
+    "icon-set": {
+      "required": ["stroke", "license", "url"],
+      "optional": ["cdn", "notes"]
+    },
+    "platform-feature": {
+      "required": ["baseline", "support", "global_pct"],
+      "optional": ["web_features_id", "notes", "live"],
+      "enums": {"baseline": ["widely", "newly", "limited"]}
+    },
+    "reference-site": {
+      "required": ["url", "product_type", "observed", "seen"],
+      "optional": ["notes"]
+    }
+  },
+  "edge_kinds": ["pairs_with", "suits", "avoid_with", "requires", "expresses", "defaults_to", "evidence_for"],
+  "edge_evidence_expected": ["pairs_with", "suits", "avoid_with"],
+  "files": {
+    "brief": {
+      "type": "object",
+      "required": ["product", "product_type", "page_type"],
+      "properties": {
+        "product": {"type": "string"},
+        "audience": {"type": "string"},
+        "product_type": {"type": "string"},
+        "moods": {"type": "array", "items": {"type": "string"}},
+        "page_type": {"type": "string", "enum": ["marketing", "app", "content", "store"]},
+        "constraints": {
+          "type": "object",
+          "properties": {
+            "brand_colors": {"type": "array", "items": {"type": "string"}},
+            "fonts": {"type": "array", "items": {"type": "string"}},
+            "scheme": {"type": "string", "enum": ["light", "dark", "both"]},
+            "motion_level": {"type": "integer", "enum": [0, 1, 2, 3]}
+          }
+        },
+        "admired": {"type": "array", "items": {"type": "string"}},
+        "words": {"type": "object"}
+      }
+    },
+    "directions": {
+      "type": "object",
+      "required": ["version", "brief", "directions"],
+      "properties": {
+        "version": {"type": "integer"},
+        "brief": {"type": "object"},
+        "directions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "bundle"],
+            "properties": {
+              "id": {"type": "string"},
+              "name": {"type": "string"},
+              "rationale": {"type": "string"},
+              "bundle": {
+                "type": "object",
+                "required": ["style", "palette", "type_pairing", "treatments", "motion", "icon_set"],
+                "properties": {
+                  "style": {"type": "string"},
+                  "treatments": {"type": "object"},
+                  "motion": {"type": "array", "items": {"type": "string"}},
+                  "motion_level": {"type": "integer"},
+                  "icon_set": {"type": "string"},
+                  "radius_scale": {"type": "string"},
+                  "density": {"type": "string"},
+                  "alternatives": {"type": "object"}
+                }
+              },
+              "overrides": {"type": "object"},
+              "copy": {"type": "object"},
+              "layout": {"type": "object"}
+            }
+          }
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "required": ["direction"],
+      "properties": {
+        "direction": {"type": "string"},
+        "overrides": {"type": "object"},
+        "selected_at": {"type": "string"}
+      }
+    },
+    "device": {
+      "type": "object",
+      "required": ["id", "vendor", "model", "year", "kind", "viewport", "dpr", "safe_area", "cutout", "corner_radius", "share_rank", "default", "source", "verified"],
+      "properties": {
+        "kind": {"type": "string", "enum": ["phone", "foldable", "tablet", "laptop", "desktop"]},
+        "viewport": {"type": "object", "required": ["w", "h"]},
+        "cutout": {"type": "string", "enum": ["island", "notch", "punch", "none"]},
+        "fold": {"type": "object"},
+        "default": {"type": "boolean"},
+        "verified": {"type": "boolean"}
+      }
+    }
+  }
+}

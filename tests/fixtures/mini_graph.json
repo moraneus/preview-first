@@ -1,0 +1,34 @@
+{
+  "version": "test",
+  "updated": "2026-10-30",
+  "nodes": [
+    {"id": "style.a", "kind": "style", "name": "A", "family": "minimal", "summary": "s", "traits": ["t"], "signals": ["s"],
+     "radius_scale": "sm", "shadow": "none", "density": "regular", "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 0.9},
+    {"id": "style.b", "kind": "style", "name": "B", "family": "editorial", "summary": "s", "traits": ["t"], "signals": ["s"],
+     "radius_scale": "none", "shadow": "hairline", "density": "airy", "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 0.5},
+    {"id": "palette.good", "kind": "palette", "name": "Good", "temperature": "neutral", "scheme": "both",
+     "light": {"bg": "oklch(0.99 0 0)", "surface": "oklch(0.97 0 0)", "surface_raised": "oklch(1 0 0)", "text": "oklch(0.2 0 0)", "text_muted": "oklch(0.45 0 0)", "border": "oklch(0.88 0 0)", "primary": "oklch(0.45 0.15 260)", "on_primary": "oklch(1 0 0)", "accent": "oklch(0.5 0.15 30)", "on_accent": "oklch(1 0 0)", "success": "oklch(0.5 0.12 150)", "warning": "oklch(0.6 0.13 80)", "danger": "oklch(0.5 0.18 25)", "focus": "oklch(0.45 0.15 260)"},
+     "dark": {"bg": "oklch(0.15 0 0)", "surface": "oklch(0.2 0 0)", "surface_raised": "oklch(0.24 0 0)", "text": "oklch(0.95 0 0)", "text_muted": "oklch(0.7 0 0)", "border": "oklch(0.3 0 0)", "primary": "oklch(0.75 0.12 260)", "on_primary": "oklch(0.15 0 0)", "accent": "oklch(0.75 0.12 30)", "on_accent": "oklch(0.15 0 0)", "success": "oklch(0.75 0.12 150)", "warning": "oklch(0.8 0.12 80)", "danger": "oklch(0.7 0.16 25)", "focus": "oklch(0.75 0.12 260)"},
+     "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 0.9},
+    {"id": "palette.bad-contrast", "kind": "palette", "name": "Bad", "temperature": "warm", "scheme": "light",
+     "light": {"bg": "oklch(0.99 0 0)", "surface": "oklch(0.97 0 0)", "surface_raised": "oklch(1 0 0)", "text": "oklch(0.8 0 0)", "text_muted": "oklch(0.45 0 0)", "border": "oklch(0.88 0 0)", "primary": "oklch(0.45 0.15 260)", "on_primary": "oklch(1 0 0)", "accent": "oklch(0.5 0.15 30)", "on_accent": "oklch(1 0 0)", "success": "oklch(0.5 0.12 150)", "warning": "oklch(0.6 0.13 80)", "danger": "oklch(0.5 0.18 25)", "focus": "oklch(0.45 0.15 260)"},
+     "dark": {"bg": "oklch(0.15 0 0)", "surface": "oklch(0.2 0 0)", "surface_raised": "oklch(0.24 0 0)", "text": "oklch(0.95 0 0)", "text_muted": "oklch(0.7 0 0)", "border": "oklch(0.3 0 0)", "primary": "oklch(0.75 0.12 260)", "on_primary": "oklch(0.15 0 0)", "accent": "oklch(0.75 0.12 30)", "on_accent": "oklch(0.15 0 0)", "success": "oklch(0.75 0.12 150)", "warning": "oklch(0.8 0.12 80)", "danger": "oklch(0.7 0.16 25)", "focus": "oklch(0.75 0.12 260)"},
+     "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 0.9},
+    {"id": "type-pairing.p", "kind": "type-pairing", "name": "P",
+     "heading": {"family": "Fraunces", "category": "serif-transitional", "weights": [600], "source": "google"},
+     "body": {"family": "Figtree", "category": "geometric", "weights": [400, 500], "source": "google"},
+     "fallback_heading": "Georgia, serif", "fallback_body": "system-ui, sans-serif", "scale_ratio": 1.25, "measure_ch": 66,
+     "css_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Figtree:wght@400;500&display=swap", "license": "OFL",
+     "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 0.9},
+    {"id": "reference-site.x", "kind": "reference-site", "name": "X", "url": "https://example.com", "product_type": "product-type.saas",
+     "observed": {"style": "style.a"}, "seen": "2026-10-30", "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 1.0},
+    {"id": "product-type.saas", "kind": "product-type", "name": "SaaS", "aliases": ["saas"], "page_type": "marketing",
+     "source": "fixture", "added": "2026-10-30", "last_verified": "2026-10-30", "confidence": 1.0}
+  ],
+  "edges": [
+    {"from": "style.a", "to": "palette.good", "kind": "pairs_with", "weight": 0.9, "evidence": ["reference-site.x"]},
+    {"from": "style.a", "to": "palette.missing", "kind": "pairs_with", "weight": 0.9, "evidence": []},
+    {"from": "style.b", "to": "type-pairing.p", "kind": "pairs_with", "weight": 0.7, "evidence": []},
+    {"from": "product-type.saas", "to": "style.a", "kind": "suits", "weight": 0.8, "evidence": ["reference-site.x"]}
+  ]
+}

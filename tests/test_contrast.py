@@ -68,3 +68,8 @@ def test_cli_prints_grade(capsys):
     assert main(["#111111", "#ffffff", "--role", "body"]) == 0
     out = json.loads(capsys.readouterr().out)
     assert out["ok"] is True and out["wcag"] > 15
+
+
+def test_label_role_thresholds():
+    g = grade("#262626", "#b4c0f0", "label")
+    assert g["wcag_pass"] is True and g["apca_pass"] is True
