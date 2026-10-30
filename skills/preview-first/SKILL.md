@@ -215,6 +215,7 @@ into the graph.
 | `export_design.py` | Selection to `design/` contract and tokens | `--selection`, `--directions`, `--project` |
 | `import_direction.py` | Existing look to a direction | `--css`, `--tailwind`, `--tokens`, `--url`, `--into` |
 | `contrast.py` | Grade a colour pair | `FG BG --role` |
+| `palette.py` | Library: palette resolution and token CSS (used by build and export) | imported, no CLI |
 | `validate_graph.py` | Check the knowledge graph | `--strict` |
 | `refresh_knowledge.py` | Pull live data | `--status`, `--bundled` |
 

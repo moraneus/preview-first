@@ -52,7 +52,7 @@ Style nodes in `knowledge/graph.json` carry `tells_to_avoid`; read them for the 
 | Invented stats (10k users, 99.9% uptime, 4.9 stars) | `proof` `stats-sourced` with a figure and its source, or no stats |
 | Testimonials with first names and initials, stock avatars or gradient initials | A real attributed quote with permission, or the placeholder that says one is needed |
 | Decorative step numbers 01, 02, 03 | Numbers only for ordered steps, set in the body face |
-| Arrows appended to links and buttons ("Learn more ->") | The label alone; underline or colour marks the link |
+| Arrows appended to links and buttons (an arrow glyph or chevron after "Learn more") | The label alone; underline or colour marks the link |
 | Emoji icons (in lists, cards, headings, buttons) | Icons from the bundle's icon set at 24px, or no icon |
 | Checkmark bullet lists of benefits | Prose, a numbered list, or a list with rules |
 | Pill tag clouds of features | Short sentences |

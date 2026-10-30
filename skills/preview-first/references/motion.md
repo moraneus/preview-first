@@ -57,14 +57,14 @@ Ask what the element is doing, not what it is.
 
 Describe a spring by duration and bounce, not stiffness and damping. Apple's model: bounce 0.15 is barely perceptible, 0.3 is noticeable, above 0.4 is exaggerated (https://wwdcnotes.com/notes/wwdc23/10158). Motion uses `visualDuration` and `bounce` with a default bounce of 0.25 (https://motion.dev/docs/spring).
 
-- CSS: `linear()` lets a spring run without JS. The token `--pf-ease-spring` is a 4-point approximation of duration 0.26s, bounce about 0.2. Generate a better one with Motion's `spring()` helper, which emits a `linear()` string, or with https://linear-easing-generator.netlify.app.
+- In CSS, `linear()` lets a spring run without JS. The token `--pf-ease-spring` is a 4-point approximation of duration 0.26s, bounce about 0.2. Generate a better one with Motion's `spring()` helper, which emits a `linear()` string, or with https://linear-easing-generator.netlify.app.
 - `linear()` is Baseline widely available (Chrome 113, Firefox 112, Safari 17.2). Declare a plain `ease-out` first so an old engine still animates.
 - Motion: `transition={{ type: "spring", visualDuration: 0.4, bounce: 0.25 }}`.
-- GSAP: `ease: "elastic.out(1, 0.6)"` approximates a 0.3 bounce; `"back.out(1.4)"` approximates 0.15.
+- In GSAP, `ease: "elastic.out(1, 0.6)"` approximates a 0.3 bounce; `"back.out(1.4)"` approximates 0.15.
 - Springs belong on physical controls (switch thumb, slider knob, chip snap, drag release) and on `motion-pattern.spring-pop` at level 3. Never on page transitions, text or anything over 400ms.
 - Under reduced motion, springs become `linear` or `--pf-ease-out` at `--pf-dur-fast`.
 
-## View Transitions
+## View transitions
 
 Support: same-document Chrome 111, Safari 18, Firefox 144; cross-document Chrome 126, Safari 18.2, Firefox later; Baseline newly available since October 2025 (https://developer.chrome.com/blog/view-transitions-in-2025, https://web.dev/baseline/2025). `platform-feature.view-transitions` carries the live status.
 
