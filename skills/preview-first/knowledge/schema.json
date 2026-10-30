@@ -11,7 +11,8 @@
     {"fg": "on_accent", "bg": "accent", "role": "label"},
     {"fg": "text_muted", "bg": "bg", "role": "large"},
     {"fg": "focus", "bg": "bg", "role": "ui"},
-    {"fg": "danger", "bg": "bg", "role": "ui"}
+    {"fg": "danger", "bg": "bg", "role": "ui"},
+    {"fg": "primary", "bg": "bg", "role": "ui"}
   ],
   "node_kinds": {
     "style": {

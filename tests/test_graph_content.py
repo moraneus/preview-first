@@ -97,3 +97,49 @@ def test_motion_none_exists_and_levels_span(by):
 def test_validator_has_no_errors(graph, schema):
     errors = [f for f in validate(graph, schema) if f.level == "error"]
     assert errors == [], errors[:10]
+
+
+# ---------------------------------------------------------------- Task 5: palettes and pairings
+
+def test_palette_and_pairing_counts(by):
+    assert len(by["palette"]) >= 40
+    assert len(by["type-pairing"]) >= 30
+
+
+def test_each_style_has_three_palettes_and_pairings(graph, by):
+    for s in by["style"]:
+        pals = list(_edges(graph, s["id"], "pairs_with", "palette."))
+        pairs = list(_edges(graph, s["id"], "pairs_with", "type-pairing."))
+        assert len(pals) >= 3, s["id"]
+        assert len(pairs) >= 3, s["id"]
+
+
+def test_palettes_pass_contrast_in_both_modes(graph, schema):
+    bad = [f for f in validate(graph, schema) if f.node_id.startswith("palette.") and f.level == "error"]
+    assert bad == [], bad[:10]
+
+
+def test_pairings_have_fallback_stacks(by):
+    for p in by["type-pairing"]:
+        assert "," in p["fallback_body"] and "," in p["fallback_heading"], p["id"]
+
+
+def test_not_every_pairing_is_inter(by):
+    pairings = by["type-pairing"]
+    assert sum("Inter" in p["body"]["family"] for p in pairings) <= 3
+    assert len({p["heading"]["family"] for p in pairings}) >= 24
+
+
+def test_palette_temperature_and_scheme_spread(by):
+    pals = by["palette"]
+    assert {p["temperature"] for p in pals} == {"warm", "cool", "neutral"}
+    assert sum(p["scheme"] == "dark" for p in pals) >= 5
+    assert sum(p["scheme"] in ("light", "both") for p in pals) >= 25
+
+
+def test_every_dark_style_has_a_dark_first_palette(graph, by):
+    idx = {n["id"]: n for n in graph["nodes"]}
+    for s in by["style"]:
+        if s["family"] == "dark":
+            schemes = {idx[e["to"]]["scheme"] for e in _edges(graph, s["id"], "pairs_with", "palette.")}
+            assert "dark" in schemes or "both" in schemes, s["id"]

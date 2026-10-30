@@ -1,0 +1,912 @@
+{
+  "updated": "2026-10-30",
+  "source_report": "docs/research/2026-10-30-devices.md",
+  "devices": [
+    {
+      "id": "iphone-17",
+      "vendor": "Apple",
+      "model": "iPhone 17",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 402,
+        "h": 874
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 62,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 62,
+      "share_rank": 2,
+      "default": true,
+      "source": "https://yesviz.com/devices/iphone-17/",
+      "verified": true,
+      "notes": "Best-selling smartphone Q1+Q2 2026 (Counterpoint). Same geometry as iPhone 16 Pro / 17 Pro. Landscape: side insets 62, bottom 21."
+    },
+    {
+      "id": "iphone-17-pro-max",
+      "vendor": "Apple",
+      "model": "iPhone 17 Pro Max",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 440,
+        "h": 956
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 62,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 62,
+      "share_rank": 3,
+      "default": true,
+      "source": "https://yesviz.com/devices/iphone-17-pro-max/",
+      "verified": true,
+      "notes": "Counterpoint #2 Q2 2026. Physical 1320x2868. Landscape: side insets 62, bottom 21."
+    },
+    {
+      "id": "iphone-17-pro",
+      "vendor": "Apple",
+      "model": "iPhone 17 Pro",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 402,
+        "h": 874
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 62,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 62,
+      "share_rank": 4,
+      "default": false,
+      "source": "https://yesviz.com/devices/iphone-17-pro/",
+      "verified": true,
+      "notes": "Counterpoint #3 Q2 2026. Same geometry as iPhone 17."
+    },
+    {
+      "id": "iphone-air",
+      "vendor": "Apple",
+      "model": "iPhone Air",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 420,
+        "h": 912
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 68,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 62,
+      "share_rank": 27,
+      "default": false,
+      "source": "https://yesviz.com/devices/iphone-17-air/",
+      "verified": false,
+      "notes": "Report flags partial: landscape bottom inset reported as 29 (unusual), verify before relying on landscape values."
+    },
+    {
+      "id": "iphone-16e",
+      "vendor": "Apple",
+      "model": "iPhone 16e",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 47,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "notch",
+      "corner_radius": 47.33,
+      "share_rank": 11,
+      "default": true,
+      "source": "https://www.ios-resolution.com/",
+      "verified": false,
+      "notes": "Notch, not Dynamic Island. Safe-area insets inferred from the iPhone 13/14 class; report flags as unverified. Viewport 390x844 is 3.64% of all traffic (StatCounter)."
+    },
+    {
+      "id": "iphone-16",
+      "vendor": "Apple",
+      "model": "iPhone 16 (same geometry as 15 / 15 Pro / 14 Pro)",
+      "year": 2024,
+      "kind": "phone",
+      "viewport": {
+        "w": 393,
+        "h": 852
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 59,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 55,
+      "share_rank": 7,
+      "default": false,
+      "source": "https://useyourloaf.com/blog/iphone-16-screen-sizes/",
+      "verified": true,
+      "notes": "Chrome DevTools default preset. Counterpoint top-10 Q2 2026."
+    },
+    {
+      "id": "iphone-16-plus",
+      "vendor": "Apple",
+      "model": "iPhone 16 Plus (same geometry as 15 Plus / 15 Pro Max)",
+      "year": 2024,
+      "kind": "phone",
+      "viewport": {
+        "w": 430,
+        "h": 932
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 59,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 55,
+      "share_rank": 15,
+      "default": false,
+      "source": "https://useyourloaf.com/blog/iphone-16-screen-sizes/",
+      "verified": true
+    },
+    {
+      "id": "iphone-16-pro",
+      "vendor": "Apple",
+      "model": "iPhone 16 Pro",
+      "year": 2024,
+      "kind": "phone",
+      "viewport": {
+        "w": 402,
+        "h": 874
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 62,
+        "bottom": 34,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "island",
+      "corner_radius": 62,
+      "share_rank": 16,
+      "default": false,
+      "source": "https://useyourloaf.com/blog/iphone-16-screen-sizes/",
+      "verified": true,
+      "notes": "16 Pro Max shares iPhone 17 Pro Max geometry (440x956)."
+    },
+    {
+      "id": "samsung-galaxy-s25-ultra",
+      "vendor": "Samsung",
+      "model": "Galaxy S25 Ultra (S26 Ultra identical)",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 891
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 6,
+      "default": true,
+      "source": "https://yesviz.com/devices/samsung-s25-ultra/",
+      "verified": false,
+      "notes": "Top-selling Android model (Counterpoint, as S26 Ultra). Ships at FHD+ so DPR is 2.625 in practice; 3.5 at QHD+ with the same CSS viewport. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-s25-plus",
+      "vendor": "Samsung",
+      "model": "Galaxy S25+ (S26+ identical)",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 891
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 17,
+      "default": false,
+      "source": "https://yesviz.com/devices/samsung-s25+/",
+      "verified": false,
+      "notes": "DPR 2.625 at default FHD+, 3.5 at QHD+. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-s25",
+      "vendor": "Samsung",
+      "model": "Galaxy S25 (S26 identical)",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 360,
+        "h": 780
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 10,
+      "default": true,
+      "source": "https://yesviz.com/devices/samsung-s25/",
+      "verified": false,
+      "notes": "360x780 is 2.14% of all traffic (StatCounter). Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-z-fold7",
+      "vendor": "Samsung",
+      "model": "Galaxy Z Fold7",
+      "year": 2025,
+      "kind": "foldable",
+      "viewport": {
+        "w": 984,
+        "h": 1092
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 24,
+      "default": true,
+      "source": "https://yesviz.com/devices/samsung-z-fold7/",
+      "verified": false,
+      "fold": {
+        "folded": {
+          "w": 360,
+          "h": 840
+        },
+        "crease": true
+      },
+      "notes": "Viewport is the unfolded near-square inner display (1968x2184 physical). fold.folded is the cover display, inferred from the Z Flip7's identical 1080x2520 panel (report: unverified). Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-z-flip7",
+      "vendor": "Samsung",
+      "model": "Galaxy Z Flip7",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 360,
+        "h": 840
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 23,
+      "default": true,
+      "source": "https://yesviz.com/devices/samsung-z-flip7/",
+      "verified": false,
+      "notes": "Clamshell: the main 6.9in screen is a normal phone viewport for the web, so kind is phone with no fold field. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-a56",
+      "vendor": "Samsung",
+      "model": "Galaxy A56",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 892
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 13,
+      "default": false,
+      "source": "https://yesviz.com/devices/samsung-a55/",
+      "verified": false,
+      "notes": "Viewport inferred from Galaxy A55 (same panel); 360x800@3 also common on Samsung mid-range (StatCounter #3 resolution). Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-a36",
+      "vendor": "Samsung",
+      "model": "Galaxy A36",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 918
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 14,
+      "default": false,
+      "source": "https://yesviz.com/devices/samsung-a36/",
+      "verified": false,
+      "notes": "Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-a17",
+      "vendor": "Samsung",
+      "model": "Galaxy A17",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 892
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 8,
+      "default": false,
+      "source": "https://counterpointresearch.com/en/insights/iphone-17-global-best-selling-smartphone-in-q2-2026",
+      "verified": false,
+      "notes": "Counterpoint top-10 seller 2026 (A17 5G and 4G). Viewport inferred from the 1080x2340 6.7in panel class; report flags as unverified. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "google-pixel-10",
+      "vendor": "Google",
+      "model": "Pixel 10",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 924
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 12,
+      "default": true,
+      "source": "https://chromium.googlesource.com/devtools/devtools-frontend/+/main/front_end/models/emulation/EmulatedDevices.ts",
+      "verified": false,
+      "notes": "Chrome DevTools default preset 'Pixel 10'. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "google-pixel-10-pro",
+      "vendor": "Google",
+      "model": "Pixel 10 Pro",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 427,
+        "h": 952
+      },
+      "dpr": 3,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 25,
+      "default": false,
+      "source": "https://chromium.googlesource.com/devtools/devtools-frontend/+/main/front_end/models/emulation/EmulatedDevices.ts",
+      "verified": false,
+      "notes": "Conflict: Chrome preset for the identical-panel Pixel 9 Pro says 427x952@3; screensizechecker says 410x914@3.125. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "google-pixel-9a",
+      "vendor": "Google",
+      "model": "Pixel 9a",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 924
+      },
+      "dpr": 2.625,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 26,
+      "default": false,
+      "source": "https://chromium.googlesource.com/devtools/devtools-frontend/+/main/front_end/models/emulation/EmulatedDevices.ts",
+      "verified": false,
+      "notes": "Inferred: same 1080x2424 6.3in panel as Pixel 9/10; report flags as unverified. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "xiaomi-15-pro",
+      "vendor": "Xiaomi",
+      "model": "Xiaomi 15 Pro",
+      "year": 2024,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 914
+      },
+      "dpr": 3.5,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 18,
+      "default": false,
+      "source": "https://screensizechecker.com/devices/android-viewport-sizes",
+      "verified": false,
+      "notes": "Xiaomi is 11.09% of global mobile vendor share (StatCounter); source marks this viewport as an unverified reference. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "oneplus-13",
+      "vendor": "OnePlus",
+      "model": "OnePlus 13",
+      "year": 2025,
+      "kind": "phone",
+      "viewport": {
+        "w": 412,
+        "h": 905
+      },
+      "dpr": 3.5,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 28,
+      "default": false,
+      "source": "https://yesviz.com/devices/oneplus-13/",
+      "verified": false,
+      "notes": "Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "ipad-pro-13",
+      "vendor": "Apple",
+      "model": "iPad Pro 13 (M4 / M5)",
+      "year": 2025,
+      "kind": "tablet",
+      "viewport": {
+        "w": 1032,
+        "h": 1376
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 18,
+      "share_rank": 32,
+      "default": false,
+      "source": "https://www.ios-resolution.com/",
+      "verified": false,
+      "notes": "Chrome DevTools default preset 'iPad Pro 13'. Safe-area insets and corner radius carried over from the older iPad Pro generation; report flags as unverified."
+    },
+    {
+      "id": "ipad-air-11",
+      "vendor": "Apple",
+      "model": "iPad Air 11 (M3)",
+      "year": 2025,
+      "kind": "tablet",
+      "viewport": {
+        "w": 820,
+        "h": 1180
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 18,
+      "share_rank": 22,
+      "default": true,
+      "source": "https://www.ios-resolution.com/",
+      "verified": true,
+      "notes": "820x1180 is 5.06% of tablet traffic (StatCounter)."
+    },
+    {
+      "id": "ipad-11",
+      "vendor": "Apple",
+      "model": "iPad (A16) 11th gen",
+      "year": 2025,
+      "kind": "tablet",
+      "viewport": {
+        "w": 820,
+        "h": 1180
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 20,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 18,
+      "share_rank": 21,
+      "default": false,
+      "source": "https://www.ios-resolution.com/",
+      "verified": true,
+      "notes": "Same viewport as iPad Air 11."
+    },
+    {
+      "id": "samsung-galaxy-tab-s10-ultra",
+      "vendor": "Samsung",
+      "model": "Galaxy Tab S10 Ultra",
+      "year": 2024,
+      "kind": "tablet",
+      "viewport": {
+        "w": 924,
+        "h": 1480
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 16,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "punch",
+      "corner_radius": 0,
+      "share_rank": 35,
+      "default": false,
+      "source": "https://developer.samsung.com/galaxy-emulator-skin/galaxy_tab_series.html",
+      "verified": false,
+      "notes": "DPR 2 inferred from the 1848x2960 physical panel; no viewport database lists it. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "samsung-galaxy-tab-s10-plus",
+      "vendor": "Samsung",
+      "model": "Galaxy Tab S10+",
+      "year": 2024,
+      "kind": "tablet",
+      "viewport": {
+        "w": 876,
+        "h": 1400
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 24,
+        "bottom": 16,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 34,
+      "default": false,
+      "source": "https://developer.samsung.com/galaxy-emulator-skin/galaxy_tab_series.html",
+      "verified": false,
+      "notes": "DPR 2 inferred from the 1752x2800 panel (shared with Tab S9+); report flags as unverified. Android status bar (~24) and gesture bar (~16-24) insets are platform approximations; verified false."
+    },
+    {
+      "id": "macbook-air-13",
+      "vendor": "Apple",
+      "model": "MacBook Air 13 (M4)",
+      "year": 2025,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1470,
+        "h": 956
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 20,
+      "default": true,
+      "source": "https://www.apple.com/macbook-air/specs/",
+      "verified": true,
+      "notes": "macOS default scaled 'looks like' 1470x956; exact 2x native is 1280x832. 1470x956 is 1.32% of desktop traffic (StatCounter)."
+    },
+    {
+      "id": "macbook-air-15",
+      "vendor": "Apple",
+      "model": "MacBook Air 15 (M4)",
+      "year": 2025,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1710,
+        "h": 1107
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 30,
+      "default": false,
+      "source": "https://www.apple.com/macbook-air/specs/",
+      "verified": false,
+      "notes": "Default scaled resolution is forum-sourced (MacRumors); Apple does not publish it."
+    },
+    {
+      "id": "macbook-pro-14",
+      "vendor": "Apple",
+      "model": "MacBook Pro 14 (M4 / M5)",
+      "year": 2025,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1512,
+        "h": 982
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 37,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "notch",
+      "corner_radius": 0,
+      "share_rank": 29,
+      "default": false,
+      "source": "https://www.apple.com/macbook-pro/specs/",
+      "verified": false,
+      "notes": "Exact 2x. Camera notch sits inside the 37px menu bar; browsers never render under it, so safe_area.top is the menu bar height (approximation, verified false)."
+    },
+    {
+      "id": "macbook-pro-16",
+      "vendor": "Apple",
+      "model": "MacBook Pro 16 (M4 / M5)",
+      "year": 2025,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1728,
+        "h": 1117
+      },
+      "dpr": 2,
+      "safe_area": {
+        "top": 37,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "notch",
+      "corner_radius": 0,
+      "share_rank": 31,
+      "default": false,
+      "source": "https://www.apple.com/macbook-pro/specs/",
+      "verified": false,
+      "notes": "Exact 2x. Notch inside the 37px menu bar; safe_area.top approximates the menu bar height (verified false)."
+    },
+    {
+      "id": "microsoft-surface-laptop-7-13",
+      "vendor": "Microsoft",
+      "model": "Surface Laptop 7 13.8",
+      "year": 2024,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1536,
+        "h": 1024
+      },
+      "dpr": 1.5,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 33,
+      "default": false,
+      "source": "https://www.windowscentral.com/hardware/laptops/surface-laptop-7-copilot-pc-review",
+      "verified": false,
+      "notes": "3:2 panel, 2304x1536 at inferred 150% default scaling; report flags as unverified."
+    },
+    {
+      "id": "windows-laptop-1366",
+      "vendor": "Generic",
+      "model": "Windows laptop 1366x768",
+      "year": null,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1366,
+        "h": 768
+      },
+      "dpr": 1,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 9,
+      "default": false,
+      "source": "https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide",
+      "verified": true,
+      "notes": "7.95% of desktop traffic, 3.03% of all traffic (StatCounter September 2026). Generic class, no model year."
+    },
+    {
+      "id": "windows-laptop-1536",
+      "vendor": "Generic",
+      "model": "Windows laptop 1920x1080 at 125%",
+      "year": null,
+      "kind": "laptop",
+      "viewport": {
+        "w": 1536,
+        "h": 864
+      },
+      "dpr": 1.25,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 5,
+      "default": true,
+      "source": "https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide",
+      "verified": true,
+      "notes": "#2 desktop resolution: 9.99% of desktop traffic, 3.80% of all traffic (StatCounter September 2026). Generic class, no model year."
+    },
+    {
+      "id": "desktop-1080p",
+      "vendor": "Generic",
+      "model": "1080p desktop / monitor",
+      "year": null,
+      "kind": "desktop",
+      "viewport": {
+        "w": 1920,
+        "h": 1080
+      },
+      "dpr": 1,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 1,
+      "default": true,
+      "source": "https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide",
+      "verified": true,
+      "notes": "#1 resolution overall: 28.08% of desktop traffic, 10.69% of all traffic (StatCounter September 2026). Generic class, no model year."
+    },
+    {
+      "id": "desktop-1440p",
+      "vendor": "Generic",
+      "model": "1440p monitor",
+      "year": null,
+      "kind": "desktop",
+      "viewport": {
+        "w": 2560,
+        "h": 1440
+      },
+      "dpr": 1,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 19,
+      "default": false,
+      "source": "https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide",
+      "verified": true,
+      "notes": "3.95% of desktop traffic, 1.50% of all traffic (StatCounter September 2026). Generic class, no model year."
+    },
+    {
+      "id": "desktop-4k",
+      "vendor": "Generic",
+      "model": "4K monitor",
+      "year": null,
+      "kind": "desktop",
+      "viewport": {
+        "w": 3840,
+        "h": 2160
+      },
+      "dpr": 1,
+      "safe_area": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "cutout": "none",
+      "corner_radius": 0,
+      "share_rank": 36,
+      "default": false,
+      "source": "https://gs.statcounter.com/screen-resolution-stats/desktop/worldwide",
+      "verified": true,
+      "notes": "Usually scaled: 150% gives 2560x1440@1.5, 200% gives 1920x1080@2. Not in the StatCounter top list at native 1x. Generic class, no model year."
+    }
+  ]
+}
