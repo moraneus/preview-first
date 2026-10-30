@@ -290,4 +290,191 @@
   window.addEventListener("resize", fitThumbs);
 
   updateFrames();
+
+  // ------------------------------------------------------------ render hooks (design ideas)
+  (function hooks() {
+    var page = document.querySelector(".pfd[data-hooks]");
+    if (!page) return;
+    var set = {};
+    (page.getAttribute("data-hooks") || "").split(" ").forEach(function (h) { if (h) set[h] = true; });
+    var embed = root.hasAttribute("data-embed");
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function level() { return parseInt(root.getAttribute("data-motion") || "1", 10); }
+    function moving() { return !reduce && !root.hasAttribute("data-reduced") && level() > 0; }
+
+    // Live local time wherever a direction shows metadata (split nav, colophon, overlay, collage corner).
+    var clocks = document.querySelectorAll("[data-live-time]");
+    if (clocks.length) {
+      var tick = function () {
+        var d = new Date();
+        var t = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+        clocks.forEach(function (c) { c.textContent = t; c.setAttribute("datetime", d.toISOString()); });
+      };
+      tick(); setInterval(tick, 15000);
+    }
+
+    // Menu word and full-screen overlay.
+    var overlay = document.querySelector("[data-menu-overlay]");
+    if (overlay) {
+      var toggle = function (open) {
+        overlay.hidden = !open;
+        document.querySelectorAll('[data-action="menu"]').forEach(function (b) { b.setAttribute("aria-expanded", open ? "true" : "false"); });
+        if (open) { var first = overlay.querySelector("a"); if (first) first.focus(); }
+      };
+      document.querySelectorAll('[data-action="menu"]').forEach(function (b) {
+        b.addEventListener("click", function () { toggle(overlay.hidden); });
+      });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !overlay.hidden) toggle(false); });
+    }
+
+    // Numbered rail: highlight the section in view.
+    var rail = document.querySelector("[data-rail]");
+    if (rail && "IntersectionObserver" in window) {
+      var links = rail.querySelectorAll("a");
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          links.forEach(function (a) { a.setAttribute("aria-current", a.getAttribute("href") === "#" + en.target.id ? "true" : "false"); });
+        });
+      }, { rootMargin: "-40% 0px -50% 0px" });
+      links.forEach(function (a) { var t = document.querySelector(a.getAttribute("href")); if (t) io.observe(t); });
+    }
+
+    // Line mask reveal: split headline text into lines once fonts are ready.
+    if (set["motion-line-reveal"] && moving()) {
+      var split = function (el) {
+        if (el.querySelector(".pfd-line")) return;
+        var nodes = Array.prototype.slice.call(el.childNodes);
+        var words = [];
+        nodes.forEach(function (n) {
+          if (n.nodeType === 3) {
+            n.textContent.split(/\s+/).forEach(function (w) { if (w) { var s = document.createElement("span"); s.textContent = w; words.push(s); } });
+          } else if (n.nodeType === 1) { words.push(n); }
+        });
+        el.textContent = "";
+        words.forEach(function (w, i) { el.appendChild(w); if (i < words.length - 1) el.appendChild(document.createTextNode(" ")); });
+        var lines = [], top = null, cur = null;
+        words.forEach(function (w) {
+          var y = w.getBoundingClientRect().top;
+          if (top === null || Math.abs(y - top) > 2) { top = y; cur = []; lines.push(cur); }
+          cur.push(w);
+        });
+        if (lines.length < 1 || lines.length > 6) return;
+        el.textContent = "";
+        lines.forEach(function (ws, li) {
+          var wrap = document.createElement("span"); wrap.className = "pfd-line-wrap";
+          var line = document.createElement("span"); line.className = "pfd-line"; line.style.setProperty("--l", li);
+          ws.forEach(function (w, i) { line.appendChild(w); if (i < ws.length - 1) line.appendChild(document.createTextNode(" ")); });
+          wrap.appendChild(line); el.appendChild(wrap);
+        });
+      };
+      var run = function () { document.querySelectorAll(".pfd-reveal").forEach(split); };
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(run); else run();
+    }
+
+    // Preloader counter (showcase level only, once per session, never in embeds).
+    var pre = document.querySelector("[data-preloader]");
+    if (pre) {
+      var skip = embed || !moving() || level() < 3;
+      try { if (sessionStorage.getItem("pf:preloaded:" + direction)) skip = true; } catch (e) { /* ignore */ }
+      if (skip) { pre.remove(); } else {
+        var num = pre.querySelector(".pfd-preloader-count"), t0 = null;
+        var step = function (ts) {
+          if (t0 === null) t0 = ts;
+          var k = Math.min(1, (ts - t0) / 1100);
+          num.textContent = Math.round(100 * (1 - Math.pow(1 - k, 3)));
+          if (k < 1) requestAnimationFrame(step); else { pre.classList.add("is-done"); setTimeout(function () { pre.remove(); }, 700); }
+        };
+        requestAnimationFrame(step);
+        try { sessionStorage.setItem("pf:preloaded:" + direction, "1"); } catch (e) { /* ignore */ }
+      }
+    }
+
+    // Count up numerals once in view.
+    if (set["motion-count-up"] && "IntersectionObserver" in window) {
+      var nums = document.querySelectorAll("[data-count]");
+      var fmt = function (n, sample) { return sample.indexOf(",") >= 0 ? n.toLocaleString("en-US") : String(n); };
+      var cio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          cio.unobserve(en.target);
+          var raw = en.target.getAttribute("data-count") || "";
+          var m = raw.match(/^([^\d]*)([\d,.]+)(.*)$/);
+          if (!m || !moving()) return;
+          var target = parseFloat(m[2].replace(/,/g, "")), dec = (m[2].split(".")[1] || "").length, start = null;
+          var go = function (ts) {
+            if (start === null) start = ts;
+            var k = Math.min(1, (ts - start) / 900), e = 1 - Math.pow(1 - k, 3);
+            var v = target * e;
+            en.target.textContent = m[1] + fmt(dec ? +v.toFixed(dec) : Math.round(v), m[2]) + m[3];
+            if (k < 1) requestAnimationFrame(go); else en.target.textContent = raw;
+          };
+          requestAnimationFrame(go);
+        });
+      }, { threshold: 0.4 });
+      nums.forEach(function (n) { cio.observe(n); });
+    }
+
+    // Hover list: the image follows the pointer with a lag.
+    var hl = document.querySelector("[data-hover-list]");
+    if (hl && window.matchMedia("(hover: hover)").matches) {
+      var arts = {}, cur2 = null, tx = 0, ty = 0, x = 0, y = 0, raf = null;
+      hl.querySelectorAll("[data-hover-art-id]").forEach(function (a) { arts[a.getAttribute("data-hover-art-id")] = a; });
+      var loop = function () { x += (tx - x) * 0.14; y += (ty - y) * 0.14; if (cur2) cur2.style.transform = "translate3d(" + (x + 24) + "px," + (y - 90) + "px,0)"; raf = requestAnimationFrame(loop); };
+      hl.addEventListener("pointermove", function (e) { tx = e.clientX; ty = e.clientY; });
+      hl.querySelectorAll("[data-hover-art]").forEach(function (row) {
+        row.addEventListener("pointerenter", function (e) {
+          if (cur2) cur2.classList.remove("is-on");
+          cur2 = arts[row.getAttribute("data-hover-art")]; if (!cur2) return;
+          x = tx = e.clientX; y = ty = e.clientY; cur2.style.transform = "translate3d(" + (x + 24) + "px," + (y - 90) + "px,0)";
+          cur2.classList.add("is-on"); if (!raf) loop();
+        });
+        row.addEventListener("pointerleave", function () { if (cur2) cur2.classList.remove("is-on"); });
+      });
+    }
+
+    // Custom cursor (fine pointers, motion on, never in embeds).
+    var dot = document.querySelector("[data-cursor-dot]"), ring = document.querySelector("[data-cursor-ring]");
+    if (dot && ring && !embed && moving() && window.matchMedia("(pointer: fine)").matches) {
+      root.classList.add("pfd-cursor-on");
+      var cx = 0, cy = 0, rx = 0, ry = 0, started = false;
+      var cl = function () { rx += (cx - rx) * 0.18; ry += (cy - ry) * 0.18; ring.style.transform = "translate3d(" + rx + "px," + ry + "px,0)"; requestAnimationFrame(cl); };
+      document.addEventListener("pointermove", function (e) {
+        cx = e.clientX; cy = e.clientY; dot.style.transform = "translate3d(" + cx + "px," + cy + "px,0)";
+        if (!started) { started = true; rx = cx; ry = cy; cl(); }
+        var over = e.target.closest && e.target.closest("a, button, summary, [role=button]");
+        ring.classList.toggle("is-big", !!over);
+      });
+    }
+
+    // Magnetic buttons.
+    if (set["motion-magnetic"] && moving() && window.matchMedia("(pointer: fine)").matches) {
+      document.querySelectorAll(".pfd .pf-btn-primary, .pfd .pfd-btn-fill").forEach(function (b) {
+        b.classList.add("pfd-magnetic");
+        b.addEventListener("pointermove", function (e) {
+          var r = b.getBoundingClientRect(), dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2);
+          b.style.transform = "translate(" + Math.max(-8, Math.min(8, dx * 0.2)) + "px," + Math.max(-8, Math.min(8, dy * 0.2)) + "px)";
+        });
+        b.addEventListener("pointerleave", function () { b.style.transition = "transform 400ms cubic-bezier(.34,1.56,.64,1)"; b.style.transform = ""; setTimeout(function () { b.style.transition = ""; }, 400); });
+      });
+    }
+
+    // Scroll progress fallback where scroll-driven animations are missing.
+    var prog = document.querySelector("[data-progress]");
+    if (prog && !(window.CSS && CSS.supports && CSS.supports("animation-timeline: scroll()"))) {
+      var onScroll = function () { var h = document.documentElement; var k = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight); prog.style.transform = "scaleX(" + k + ")"; };
+      document.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+    }
+
+    // Strip counter.
+    var strip = document.querySelector("[data-strip]");
+    if (strip) {
+      var counter = strip.parentElement.querySelector(".pfd-strip-head .pfd-index");
+      var cards = strip.children.length;
+      strip.addEventListener("scroll", function () {
+        var i = Math.min(cards, 1 + Math.round(strip.scrollLeft / Math.max(1, strip.firstElementChild.getBoundingClientRect().width + 16)));
+        if (counter) counter.textContent = ("0" + i).slice(-2) + " / " + ("0" + cards).slice(-2);
+      }, { passive: true });
+    }
+  })();
 })();

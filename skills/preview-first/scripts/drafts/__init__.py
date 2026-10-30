@@ -30,33 +30,43 @@ def _split_product(product: str):
 
 
 def default_copy(brief: dict) -> dict:
-    """Neutral copy built only from the brief's own words. No lorem ipsum, no filler claims."""
+    """Neutral copy built only from the brief's own words. No lorem ipsum, no filler claims, and
+    no sentence repeated across sections."""
     words = brief.get("words") or {}
     name, rest = _split_product(brief.get("product", ""))
     name = words.get("name") or name or "Your product"
     rest = re.sub(r"^(an?|the)\s+", "", rest, flags=re.I)
     audience = (brief.get("audience") or "").strip().rstrip(".")
+    moods = [m.split(".")[-1].replace("-", " ") for m in (brief.get("moods") or [])]
     headline = words.get("tagline") or (rest[:1].upper() + rest[1:] if rest else name)
-    subhead = ("%s is %s%s." % (name, ("an " if rest[:1].lower() in "aeiou" else "a ") if rest else "", rest)) if rest else "%s, described in one honest sentence." % name
-    if audience:
-        subhead += " Made for %s." % audience
+    article = ("an " if rest[:1].lower() in "aeiou" else "a ") if rest else ""
+    subhead = ("%s is %s%s." % (name, article, rest)) if rest else "%s, described in one honest sentence." % name
+    lead = ("Made for %s." % audience) if audience else subhead
+    statement = subhead + ((" We built it for %s." % audience) if audience else "")
+    if moods:
+        statement += " It should feel %s." % (", ".join(moods[:-1]) + " and " + moods[-1] if len(moods) > 1 else moods[0])
     page_type = brief.get("page_type", "marketing")
     primary = {"marketing": "Get started", "app": "New item", "content": "Start reading", "store": "Shop the collection"}[page_type]
     secondary = {"marketing": "See how it works", "app": "Import", "content": "Browse the archive", "store": "View all"}[page_type]
     features = [
-        {"title": "What it does", "body": subhead.split(" Made for")[0]},
+        {"title": "What it does", "body": subhead},
         {"title": "Who it is for", "body": ("Built for %s." % audience) if audience else "Built for the people named in the brief."},
         {"title": "How it works", "body": "Three steps from first visit to the result, each one visible on screen."},
+        {"title": "What it costs", "body": "Pricing copy goes here once it is decided; the draft does not invent a number."},
     ]
     return {
         "headline": headline,
         "subhead": subhead,
+        "lead": lead,
+        "statement": statement,
         "cta_primary": primary,
         "cta_secondary": secondary,
+        "cta_line": "Start with %s today." % name,
         "nav": {"marketing": ["Product", "Pricing", "About", "Sign in"], "app": ["Overview", "Items", "Reports", "Settings"],
                 "content": ["Latest", "Topics", "About", "Subscribe"], "store": ["New", "Collections", "About", "Cart"]}[page_type],
         "features": features,
         "proof": "",
+        "meta": {"city": "", "year": "2026"},
         "form": {"title": "Stay in touch", "fields": ["Email"], "submit": "Subscribe"},
         "footer": "%s. Copy in this draft comes from the brief; replace it with your own." % name,
     }
@@ -64,7 +74,20 @@ def default_copy(brief: dict) -> dict:
 
 def render(page_type: str, p) -> str:
     mod = _MODULES.get(page_type, marketing)
-    return '<div class="pfd pfd-%s">%s</div>' % (E(page_type), mod.render(p))
+    hooks = sorted(getattr(p, "hooks", set()) or [])
+    classes = " ".join("pfd-hook-%s" % E(h) for h in hooks)
+    extras = ""
+    if "texture-grain" in hooks:
+        extras += '<div class="pfd-grain" aria-hidden="true"></div>'
+    if "texture-scanlines" in hooks:
+        extras += '<div class="pfd-scanlines" aria-hidden="true"></div>'
+    if "motion-scroll-progress" in hooks:
+        extras += '<div class="pfd-progress" aria-hidden="true" data-progress></div>'
+    if "motion-preloader" in hooks:
+        extras += '<div class="pfd-preloader" data-preloader aria-hidden="true"><span class="pfd-preloader-count">0</span></div>'
+    if "motion-cursor" in hooks:
+        extras += '<div class="pfd-cursor-dot" data-cursor-dot aria-hidden="true"></div><div class="pfd-cursor-ring" data-cursor-ring aria-hidden="true"></div>'
+    return '<div class="pfd pfd-%s %s" data-hooks="%s">%s%s</div>' % (E(page_type), classes, E(" ".join(hooks)), extras, mod.render(p))
 
 
 # ---------------------------------------------------------------- devices view

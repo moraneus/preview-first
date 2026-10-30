@@ -2,13 +2,16 @@
 from __future__ import annotations
 
 from . import art
-from ._shared import E, brand, features, pick, section
+from ._shared import E, brand, features, has, pick, section
 
 VARIANTS = {
-    "shell": ["sidebar", "topbar"],
-    "table": ["dense", "comfortable"],
-    "detail": ["panel", "drawer"],
+    "shell": ["sidebar", "topbar", "rail"],
+    "table": ["dense", "comfortable", "ledger"],
+    "detail": ["panel", "drawer", "inspector"],
 }
+SHELL_HOOKS = {"app-rail": "rail"}
+TABLE_HOOKS = {"app-ledger": "ledger"}
+DETAIL_HOOKS = {"app-inspector": "inspector"}
 
 STATUSES = [("Draft", "pf-badge"), ("Done", "pf-badge pf-badge-success"), ("Pending", "pf-badge pf-badge-warning"),
             ("Done", "pf-badge pf-badge-success"), ("Failed", "pf-badge pf-badge-danger")]
@@ -32,6 +35,13 @@ def _shell_open(p, v: str) -> str:
                 '<div class="pfd-sidefoot"><span class="pfd-avatar" aria-hidden="true"></span><span class="pf-small">ada@%s.dev</span></div></aside>') % (
             E(brand(p)), links, E(brand(p).lower()))
         return '<div class="pfd-shell pfd-shell-sidebar">%s<div class="pfd-main">' % side
+    if v == "rail":
+        rail = "".join('<a href="#" title="%s"%s><span aria-hidden="true">%s</span></a>' % (E(x), ' aria-current="page"' if i == 1 else "", E(x[:1])) for i, x in enumerate(p.copy.get("nav", [])[:5]))
+        side = ('<aside class="pfd-rail-shell"><span class="pf-wordmark pfd-rail-mark">%s</span><nav class="pfd-rail-nav" aria-label="Sections">%s</nav>'
+                '<span class="pfd-avatar" aria-hidden="true"></span></aside>') % (E(brand(p)[:1]), rail)
+        palette = ('<div class="pfd-palette" role="dialog" aria-label="Command palette"><div class="pfd-palette-input"><span class="pfd-index">&gt;</span><span>Search or run a command</span><kbd>K</kbd></div>'
+                   '<ul class="pfd-palette-list">%s</ul></div>') % "".join('<li><span>%s</span><kbd>%s</kbd></li>' % (E(f["title"]), "G %d" % (i + 1)) for i, f in enumerate(features(p)[:4]))
+        return '<div class="pfd-shell pfd-shell-rail">%s<div class="pfd-main">%s' % (side, palette if has(p, "app-command-palette") else "")
     top = ('<header class="pf-nav pfd-topbar"><span class="pf-wordmark">%s</span><div class="pf-nav-links">%s</div>'
            '<span class="pfd-avatar" aria-hidden="true"></span></header>') % (E(brand(p)), links)
     return '<div class="pfd-shell pfd-shell-topbar">%s<div class="pfd-main">' % top
@@ -43,6 +53,12 @@ def _table(p, v: str) -> str:
     toolbar = ('<div class="pfd-toolbar"><h1>%s</h1><div class="pf-row"><label class="pf-field"><input class="pf-input" type="search" placeholder="Search" aria-label="Search"></label>'
                '<button class="pf-btn pf-btn-secondary pf-btn-sm" type="button">Filter</button><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button></div></div>') % (
         E(p.copy.get("nav", ["Items"])[1] if len(p.copy.get("nav", [])) > 1 else "Items"), E(p.copy.get("cta_primary", "New")))
+    if v == "ledger":
+        rows = "".join('<tr><td class="pfd-index">%s</td><td>%s</td><td class="pf-muted">%s</td><td class="pfd-num">%s</td><td class="pfd-index">%s</td></tr>' % (
+            E(a), E(b), E(c), E(d), E(st.lower())) for a, b, c, d, st, cls in _rows(p))
+        table = ('<table class="pfd-table pfd-table-ledger"><thead><tr><th>Id</th><th>Name</th><th>Updated</th><th class="pfd-num">Count</th><th>Status</th></tr></thead>'
+                 '<tbody>%s</tbody></table>') % rows
+        return section("table", v, toolbar + table)
     table = ('<table class="pfd-table pfd-table-%s"><thead><tr><th>Id</th><th>Name</th><th>Updated</th><th class="pfd-num">Count</th><th>Status</th></tr></thead>'
              '<tbody>%s</tbody></table>') % (E(v), rows)
     return section("table", v, toolbar + table)
@@ -56,6 +72,9 @@ def _detail(p, v: str) -> str:
             '<button class="pf-btn pf-btn-quiet" type="button">Delete</button></div>') % (E(f["title"]), E(f["body"]), E(brand(p)), E(p.copy.get("cta_primary", "Save")))
     if v == "panel":
         return section("detail", v, '<aside class="pfd-panel">%s</aside>' % body)
+    if v == "inspector":
+        tabs = '<div class="pf-tabs" role="tablist"><button role="tab" aria-selected="true" class="pf-tab">Details</button><button role="tab" aria-selected="false" class="pf-tab">Activity</button><button role="tab" aria-selected="false" class="pf-tab">Notes</button></div>'
+        return section("detail", v, '<aside class="pfd-inspector">%s%s</aside>' % (tabs, body))
     return section("detail", v, '<div class="pfd-drawer-scrim"><aside class="pfd-drawer">%s</aside></div>' % body)
 
 
@@ -73,13 +92,13 @@ def _empty_and_settings(p) -> str:
 
 
 def render(p) -> str:
-    shell = pick(p, "shell", VARIANTS["shell"])
+    shell = pick(p, "shell", VARIANTS["shell"], SHELL_HOOKS)
     return "".join([
         _shell_open(p, shell),
         section("shell", shell, "", "pfd-shell-marker"),
         '<div class="pfd-work">',
-        _table(p, pick(p, "table", VARIANTS["table"])),
-        _detail(p, pick(p, "detail", VARIANTS["detail"])),
+        _table(p, pick(p, "table", VARIANTS["table"], TABLE_HOOKS)),
+        _detail(p, pick(p, "detail", VARIANTS["detail"], DETAIL_HOOKS)),
         "</div>",
         _empty_and_settings(p),
         "</div></div>",

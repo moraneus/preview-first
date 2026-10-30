@@ -109,7 +109,19 @@
         "sparklines",
         "mark",
         "glass",
-        "figure"
+        "figure",
+        "ascii",
+        "dither",
+        "flowfield",
+        "strands",
+        "stamp",
+        "ruler",
+        "globe",
+        "specimen",
+        "pixel",
+        "scan",
+        "grain_disc",
+        "ticket"
       ],
       "enums": {
         "family": [
@@ -510,7 +522,18 @@
         "image-sticker",
         "color-blocking",
         "color-inverted-section",
-        "color-single-accent"
+        "color-single-accent",
+        "store-lookbook",
+        "store-tiles",
+        "store-editorial-grid",
+        "store-sticky-buy",
+        "content-broadsheet",
+        "content-side-notes",
+        "content-archive",
+        "app-rail",
+        "app-ledger",
+        "app-inspector",
+        "app-command-palette"
       ]
     }
   },

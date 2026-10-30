@@ -36,8 +36,11 @@ def test_page_types_and_variants_declared():
     assert set(PAGE_TYPES) == {"marketing", "app", "content", "store"}
     assert {"split", "centered", "editorial", "product-first", "poster"} <= set(VARIANTS["marketing"]["hero"])
     assert {"bento", "list", "alternating", "columns"} <= set(VARIANTS["marketing"]["features"])
-    assert set(VARIANTS["app"]["shell"]) == {"sidebar", "topbar"}
-    assert set(VARIANTS["store"]["grid"]) == {"two", "three", "four"}
+    assert {"sidebar", "topbar", "rail"} <= set(VARIANTS["app"]["shell"])
+    assert {"two", "three", "four", "editorial"} <= set(VARIANTS["store"]["grid"])
+    assert {"lookbook", "tiles"} <= set(VARIANTS["store"]["hero"]) and {"broadsheet"} <= set(VARIANTS["content"]["header"])
+    assert {"ticker", "specimen", "manifesto", "numbers", "clip", "stacked"} <= set(VARIANTS["marketing"]["hero"])
+    assert {"numerals", "stack", "strip", "hover-list", "cells", "accordion"} <= set(VARIANTS["marketing"]["features"])
 
 
 def test_each_page_type_renders_every_variant(directions, idx):
@@ -55,7 +58,7 @@ def test_default_copy_has_no_tells():
     text = json.dumps(c)
     assert "—" not in text and "→" not in text and not EMOJI_RE.search(text)
     assert "lorem" not in text.lower()
-    assert c["headline"] and c["cta_primary"] and len(c["features"]) == 3
+    assert c["headline"] and c["cta_primary"] and len(c["features"]) >= 3
     assert "Pawfect" in text
 
 
@@ -147,3 +150,53 @@ def test_ledger_rows_and_collage_render(directions, idx):
     assert 'data-variant="ledger"' in html and html.count("pfd-ledger-row") >= 3 and "pfd-ledger-count" in html
     html = render("marketing", _prepared(directions, idx, 0, layout={"hero": "letter"}))
     assert 'data-variant="letter"' in html and "pfd-letter" in html
+
+
+# ---------------------------------------------------------------- render hooks (0.3.0)
+
+def test_hooks_change_nav_texture_and_sections(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["bundle"]["ideas"] = ["idea.split-nav-live-meta", "idea.film-grain", "idea.giant-numerals-features", "idea.colophon-footer", "idea.marquee-divider", "idea.outline-giant-word"]
+    d["layout"] = {}  # the fixture pins every section by hand; hooks only fill what the author left open
+    p = Prepared(d, directions["brief"], idx)
+    assert {"nav-split-meta", "texture-grain", "features-numerals", "footer-colophon", "section-marquee", "type-outline"} <= p.hooks
+    html = render("marketing", p)
+    assert 'data-variant="split-meta"' in html and "data-live-time" in html
+    assert 'class="pfd-grain"' in html and 'pfd-hook-texture-grain' in html
+    assert 'data-section="features" data-variant="numerals"' in html
+    assert 'data-section="footer" data-variant="colophon"' in html and "Set in " in html
+    assert 'class="pfd-marquee"' in html and 'class="pfd-outline"' in html
+
+
+def test_explicit_layout_beats_hooks(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["bundle"]["ideas"] = ["idea.giant-numerals-features"]
+    d["layout"] = {"features": "spec"}
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert 'data-section="features" data-variant="spec"' in html
+
+
+def test_numbers_hero_never_invents_figures(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["bundle"]["ideas"] = ["idea.numbers-hero"]
+    d["layout"] = {}
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert 'data-variant="numbers"' in html and "pfd-big-num" not in html
+    d["copy"]["numbers"] = [{"value": "1,200", "label": "developers"}, {"value": "40", "label": "countries"}, {"value": "4", "label": "minutes per invoice"}]
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert html.count("pfd-big-num") == 3
+
+
+def test_colour_blocking_and_inverted_ending(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["bundle"]["ideas"] = ["idea.inverted-closing-section"]
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert html.count("pfd-block-ink") == 2
+
+
+def test_store_content_app_variants_render(directions, idx):
+    for pt, layout, needle in (("store", {"hero": "lookbook", "grid": "editorial", "product": "sticky-buy"}, "pfd-lookbook"),
+                               ("content", {"header": "broadsheet", "article": "side-notes", "list": "archive"}, "pfd-broadsheet"),
+                               ("app", {"shell": "rail", "table": "ledger", "detail": "inspector"}, "pfd-shell-rail")):
+        html = render(pt, _prepared(directions, idx, 0, layout=layout, page_type=pt))
+        assert needle in html, pt
