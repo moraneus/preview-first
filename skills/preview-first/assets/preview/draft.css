@@ -349,7 +349,7 @@ section.pfd-hero-collage { position: relative; padding: 0 !important; max-width:
 /* textures */
 .pfd-grain { position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: .07; mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
-[data-theme="dark"] .pfd-grain { mix-blend-mode: screen; opacity: .09; }
+[data-theme="dark"] .pfd-grain { mix-blend-mode: screen; opacity: .05; }
 .pfd-scanlines { position: fixed; inset: 0; z-index: 40; pointer-events: none; background: repeating-linear-gradient(0deg, transparent 0 2px, rgb(0 0 0 / .14) 2px 3px); }
 @media (max-width: 420px) { .pfd-scanlines { display: none; } }
 .pfd-hook-texture-grid .pfd-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(color-mix(in oklab, var(--pf-color-text) 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in oklab, var(--pf-color-text) 7%, transparent) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(ellipse at 50% 0%, #000 55%, transparent 95%); -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 55%, transparent 95%); }
@@ -643,3 +643,8 @@ section.pfd-hero-lookbook { padding: 0 !important; max-width: none !important; }
   .pfd-archive-row { grid-template-columns: 1fr auto; }
   .pfd-archive-row .pfd-index { display: none; }
 }
+
+.pfd-app.pfd-hook-texture-crosses section::before, .pfd-app.pfd-hook-texture-crosses section::after { display: none; }
+.pfd-broadsheet-nav { display: flex; gap: var(--pf-space-4); }
+.pfd-broadsheet-nav a { color: inherit; text-decoration: none; }
+.pfd-broadsheet-nav a:hover { text-decoration: underline; text-underline-offset: .2em; }

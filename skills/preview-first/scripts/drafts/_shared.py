@@ -60,16 +60,12 @@ def headline(p, text: str, cls: str = "") -> str:
     """The H1 with the direction's type hooks applied: one outlined word or one word in a
     contrasting face. Never both."""
     words = text.split()
+    mark = None  # (index, css class) of the one decorated word
     if has(p, "type-outline") and len(words) > 1:
-        i = len(words) - 1
-        words[i] = '<span class="pfd-outline">%s</span>' % E(words[i])
-        body = " ".join(E(w) if not w.startswith("<span") else w for w in words)
+        mark = (len(words) - 1, "pfd-outline")
     elif has(p, "type-mixed-face") and len(words) > 2:
-        i = max(range(len(words)), key=lambda k: len(words[k]))
-        words[i] = '<span class="pfd-alt">%s</span>' % E(words[i])
-        body = " ".join(E(w) if not w.startswith("<span") else w for w in words)
-    else:
-        body = E(text)
+        mark = (max(range(len(words)), key=lambda k: len(words[k])), "pfd-alt")
+    body = " ".join('<span class="%s">%s</span>' % (mark[1], E(w)) if mark and k == mark[0] else E(w) for k, w in enumerate(words))
     if has(p, "motion-line-reveal"):
         cls += " pfd-reveal"
     return '<h1 class="%s">%s</h1>' % (E(cls.strip()), body)

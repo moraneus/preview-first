@@ -121,7 +121,8 @@
         "pixel",
         "scan",
         "grain_disc",
-        "ticket"
+        "ticket",
+        "object"
       ],
       "enums": {
         "family": [

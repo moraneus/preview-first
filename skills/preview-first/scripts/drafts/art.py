@@ -577,7 +577,29 @@ def ticket(seed: str, label: str = "") -> str:
     return _svg(800, 320, "".join(parts), label, "pfd-art-ticket")
 
 
+def obj(seed: str, label: str = "") -> str:
+    """A flat product stand-in: a vessel, box or disc on a plinth with one hard shadow. Reads as an
+    object photographed on a seamless, never as an icon."""
+    r = _rng(seed, "obj")
+    kind = r.choice(["bottle", "box", "disc", "cup", "tube"])
+    parts = ['<rect width="600" height="600" fill="%s"/>' % C["surface"], '<line x1="0" y1="430" x2="600" y2="430" stroke="%s" opacity=".35"/>' % C["text"]]
+    fill = r.choice([C["primary"], C["text"], C["accent"]])
+    if kind == "bottle":
+        parts.append('<path d="M250 430V250q0-30 20-40V150h60v60q20 10 20 40v180z" fill="%s"/><rect x="270" y="120" width="60" height="30" fill="%s"/>' % (fill, C["text"]))
+    elif kind == "box":
+        parts.append('<rect x="200" y="230" width="200" height="200" fill="%s"/><polygon points="200,230 240,190 440,190 400,230" fill="%s" opacity=".75"/><polygon points="400,230 440,190 440,390 400,430" fill="%s" opacity=".55"/>' % (fill, fill, fill))
+    elif kind == "disc":
+        parts.append('<ellipse cx="300" cy="400" rx="150" ry="30" fill="%s"/><circle cx="300" cy="300" r="120" fill="%s"/><circle cx="300" cy="300" r="40" fill="%s"/>' % (C["text"], fill, C["surface"]))
+    elif kind == "cup":
+        parts.append('<path d="M210 250h180l-20 180h-140z" fill="%s"/><path d="M390 280h30q40 10 30 60t-50 50h-20" fill="none" stroke="%s" stroke-width="16"/>' % (fill, fill))
+    else:
+        parts.append('<rect x="260" y="150" width="80" height="280" rx="40" fill="%s"/><rect x="275" y="130" width="50" height="30" fill="%s"/>' % (fill, C["text"]))
+    parts.append('<ellipse cx="320" cy="438" rx="120" ry="10" fill="%s" opacity=".18"/>' % C["text"])
+    return _svg(600, 600, "".join(parts), label, "pfd-art-object")
+
+
 GENERATORS.update({
+    "object": obj,
     "ascii": ascii_field, "dither": dither, "flowfield": flowfield, "strands": strands, "stamp": stamp, "ruler": ruler,
     "globe": globe, "specimen": specimen, "pixel": pixel, "scan": scan, "grain_disc": grain_disc, "ticket": ticket,
 })

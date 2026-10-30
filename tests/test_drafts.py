@@ -200,3 +200,12 @@ def test_store_content_app_variants_render(directions, idx):
                                ("app", {"shell": "rail", "table": "ledger", "detail": "inspector"}, "pfd-shell-rail")):
         html = render(pt, _prepared(directions, idx, 0, layout=layout, page_type=pt))
         assert needle in html, pt
+
+
+def test_headline_decoration_escapes_every_word(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["bundle"]["ideas"] = ["idea.outline-giant-word"]
+    d["layout"] = {}
+    d["copy"] = dict(d["copy"], headline="Invoices <span onclick=x> <script>alert(1)</script>")
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert "<script>" not in html and "<span onclick" not in html

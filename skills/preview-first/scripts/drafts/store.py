@@ -34,6 +34,8 @@ def _products(p):
 
 def _shot(p, seed: str, kind: str = None) -> str:
     kind = kind or (p.style.get("art") or {}).get("feature", "halftone")
+    if kind == "figure":  # line figures explain features; a store needs things on a seamless
+        kind = "object"
     svg = art.render(kind, seed=p.id + "-" + seed)
     if has(p, "image-duotone"):
         svg = svg.replace('<svg class="pfd-art ', '<svg class="pfd-art pfd-duotone ', 1)
