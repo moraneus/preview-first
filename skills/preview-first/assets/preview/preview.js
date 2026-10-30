@@ -49,6 +49,11 @@
 
   // Embed mode (gallery thumbnails and device frames): hide chrome, take state from the URL.
   if (params.get("embed") === "1") root.setAttribute("data-embed", "1");
+  // Device frames pass the device's safe areas so the embedded draft pads itself like a real page.
+  ["top", "bottom", "left", "right"].forEach(function (side) {
+    var v = parseInt(params.get("sa-" + side) || "0", 10);
+    if (v > 0) root.style.setProperty("--pf-safe-" + side, v + "px");
+  });
   var saved = readSaved();
   CONTROLS.concat(["theme"]).forEach(function (k) {
     var v = params.get(k) || saved[k];
@@ -190,6 +195,11 @@
       var url = new URL("draft.html", location.href);
       Object.keys(state).forEach(function (k) { if (state[k] && state[k] !== "system") url.searchParams.set(k, state[k]); });
       url.searchParams.set("embed", "1");
+      var rotated = dev.getAttribute("data-rotated") === "1";
+      var cs = getComputedStyle(dev);
+      var top = parseInt(cs.getPropertyValue("--sa-top") || "0", 10), bottom = parseInt(cs.getPropertyValue("--sa-bottom") || "0", 10);
+      if (rotated) { url.searchParams.set("sa-left", top); url.searchParams.set("sa-right", top); url.searchParams.set("sa-bottom", Math.min(bottom, 21)); }
+      else { url.searchParams.set("sa-top", top); url.searchParams.set("sa-bottom", bottom); }
       return url.toString();
     }
     function layout(dev) {
@@ -227,6 +237,7 @@
       var rot = dev.querySelector('[data-action="rotate"]');
       if (rot) rot.addEventListener("click", function () {
         dev.setAttribute("data-rotated", dev.getAttribute("data-rotated") === "1" ? "0" : "1");
+        if (!externalUrl) dev.querySelector("iframe").setAttribute("src", frameSrc(dev));
         layout(dev);
       });
     });

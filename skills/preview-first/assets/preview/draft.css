@@ -1,6 +1,9 @@
 /* preview-first: drafted page layouts (.pfd-*). Every section has variants chosen by the style,
    so two directions never share a layout by default. Uses the direction's tokens only. */
-.pfd { min-height: 100vh; }
+.pfd { min-height: 100vh; padding-top: var(--pf-safe-top, 0px); padding-bottom: var(--pf-safe-bottom, 0px); padding-left: var(--pf-safe-left, 0px); padding-right: var(--pf-safe-right, 0px); }
+@supports (padding-top: env(safe-area-inset-top)) {
+  .pfd { padding-top: max(var(--pf-safe-top, 0px), env(safe-area-inset-top)); padding-bottom: max(var(--pf-safe-bottom, 0px), env(safe-area-inset-bottom)); }
+}
 .pfd section { padding: var(--pf-space-12) var(--pf-space-8); max-width: 1200px; margin: 0 auto; }
 .pfd-media { position: relative; display: grid; place-items: center; gap: var(--pf-space-2); width: 100%; color: var(--pf-color-text-muted);
   background: var(--pf-color-surface); border: 1px solid var(--pf-color-border); border-radius: var(--pf-radius-md); font-size: var(--pf-text-xs); overflow: hidden; }
