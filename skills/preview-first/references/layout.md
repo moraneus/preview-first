@@ -127,7 +127,7 @@ Marketing heroes `ticker`, `specimen`, `manifesto`, `numbers`, `clip`, `stacked`
 - A style with no defaults for the brief's page type (for example neo-brutalist on a store) renders the first variant of every section. When `recommend.py` proposes such a style, set `layout` explicitly so the draft is a design decision, not an accident.
 - Two directions in the same preview must not share the hero variant, and should share at most one other section variant. Defaults already differ per style; check after overriding.
 
-Precedence: a variant the author set in `directions.json` `layout` wins; otherwise a render hook from the direction's ideas; otherwise the style's `layout_defaults`; otherwise the first variant in the module's `VARIANTS`.
+Precedence: a variant the author set in `directions.json` `layout` wins; then a render hook carried by one of the style's own `ideas`; then (for the hero) the style's `layout_defaults`, since the first screen is the style's identity; then any other hook from the direction's ideas; then the style's `layout_defaults` for the remaining sections; otherwise the first variant in the module's `VARIANTS`.
 
 ## Overriding layout in directions.json
 

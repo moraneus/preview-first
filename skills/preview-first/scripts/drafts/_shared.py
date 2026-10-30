@@ -9,7 +9,7 @@ E = html.escape
 
 NAV_VARIANTS = ["bar", "split-meta", "menu-word", "pill", "rail"]
 _NAV_HOOKS = (("nav-split-meta", "split-meta"), ("nav-menu-word", "menu-word"), ("nav-pill", "pill"), ("nav-rail", "rail"), ("nav-bar", "bar"))
-VERSION_LINE = "v0.3.0"
+VERSION_LINE = "v0.4.0"
 
 
 def hooks(p) -> set:
@@ -31,16 +31,27 @@ def section(name: str, variant: str, inner: str, extra_class: str = "") -> str:
 
 
 def pick(p, section_name: str, variants: List[str], hook_map: Optional[dict] = None) -> str:
-    """Variant choice: the author's explicit layout wins, then a render hook from the direction's
-    ideas, then the style default (first entry when nothing is set)."""
+    """Variant choice, in order: the author's explicit layout; a hook carried by one of the style's
+    own default ideas; for the hero the style's layout default; any other hook from the direction's
+    ideas; the style's layout default; the first variant."""
     v = explicit(p, section_name)
     if v in variants:
         return v
+    own = set()
+    for iid in (p.style.get("ideas") or []):
+        for i in getattr(p, "ideas", []) or []:
+            if i.get("id") == iid and i.get("renders"):
+                own.add(i["renders"])
+    for hook, variant in (hook_map or {}).items():
+        if hook in own and variant in variants:
+            return variant
+    default = (p.layout or {}).get(section_name)
+    if section_name == "hero" and default in variants:
+        return default  # the first screen is the style's identity; borrowed hooks do not replace it
     for hook, variant in (hook_map or {}).items():
         if has(p, hook) and variant in variants:
             return variant
-    v = (p.layout or {}).get(section_name)
-    return v if v in variants else variants[0]
+    return default if default in variants else variants[0]
 
 
 def brand(p) -> str:
@@ -100,13 +111,7 @@ def stickers(p) -> str:
 # ---------------------------------------------------------------- navigation
 
 def nav_variant(p) -> str:
-    v = explicit(p, "nav") or (p.layout or {}).get("nav")
-    if v in NAV_VARIANTS:
-        return v
-    for hook, variant in _NAV_HOOKS:
-        if has(p, hook):
-            return variant
-    return "bar"
+    return pick(p, "nav", NAV_VARIANTS, dict(_NAV_HOOKS))
 
 
 def _overlay(p, links: List[str]) -> str:
@@ -230,7 +235,7 @@ def block_classes(p, order: List[str]) -> dict:
     """Section background classes for colour-blocked and inverted-ending pages."""
     out = {name: "" for name in order}
     if has(p, "color-blocking"):
-        cycle = ["", "pfd-block-primary", "", "pfd-block-ink", "pfd-block-ink"]
+        cycle = ["", "pfd-block-primary", "pfd-block-tint", "pfd-block-ink", "pfd-block-ink"]
         for i, name in enumerate(order):
             out[name] = cycle[i % len(cycle)]
     if has(p, "color-inverted-section"):

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0 (2026-10-30)
+
+More templates, bolder ones, and a page that shows them all.
+
+- Five showcase heroes: split screen (two full-height panels, artwork on a solid primary panel), diagonal marquee bands, a mosaic of tiles with the text as one dark tile, kinetic type whose three lines slide at different speeds with scroll, and fanned cards. A mosaic feature grid (image-led masonry with captions) and a full-bleed poster band with the wordmark in difference blend. Scroll-driven motion hooks (parallax giant word, hero art scaling out, skewed marquee) and tilted framed images.
+- Ten more artwork generators: mesh, torus, letter stack, blob, mosaic, bars, sun, lattice, rays, word cloud.
+- Five bold styles: velodrome (lime on black, condensed display, kinetic type), festival poster (bone, signal red and mustard, diagonal bands, ticket), ultramarine (sand and deep blue, split screen, torus), pastel blocks (tinted section blocks, fanned cards, tilted frames), mosaic wall (image-led from the first pixel). Eight palettes from real sites and eight pairings (Big Shoulders with Mona Sans, Anton, Unbounded, Archivo Black, Syne, Bricolage Grotesque, Fraunces, Parkinsans over quiet bodies).
+- `docs/templates.md` and `docs/assets/templates.png`: every style's first screen for one brief, built by `tools/build_showcase.py`.
+- `recommend.py` accepts `--count` up to eight so a developer can see more directions at once.
+- Variant precedence: the author's layout, then hooks from the style's own ideas, then the style's default hero, then other hooks, then the style's defaults for the other sections. Fixed outlined words that rendered invisible, the mosaic text tile, and mosaic captions on colour blocks.
+
 ## 0.3.0 (2026-10-30)
 
 Non-generic by composition, not by colour.

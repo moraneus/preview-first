@@ -179,7 +179,7 @@ def test_explicit_layout_beats_hooks(directions, idx):
 def test_numbers_hero_never_invents_figures(directions, idx):
     d = copy.deepcopy(directions["directions"][0])
     d["bundle"]["ideas"] = ["idea.numbers-hero"]
-    d["layout"] = {}
+    d["layout"] = {"hero": "numbers"}
     html = render("marketing", Prepared(d, directions["brief"], idx))
     assert 'data-variant="numbers"' in html and "pfd-big-num" not in html
     d["copy"]["numbers"] = [{"value": "1,200", "label": "developers"}, {"value": "40", "label": "countries"}, {"value": "4", "label": "minutes per invoice"}]
@@ -209,3 +209,28 @@ def test_headline_decoration_escapes_every_word(directions, idx):
     d["copy"] = dict(d["copy"], headline="Invoices <span onclick=x> <script>alert(1)</script>")
     html = render("marketing", Prepared(d, directions["brief"], idx))
     assert "<script>" not in html and "<span onclick" not in html
+
+
+def test_showcase_variants_render(directions, idx):
+    for hero in ("split-screen", "diagonal", "mosaic", "kinetic", "fan"):
+        html = render("marketing", _prepared(directions, idx, 0, layout={"hero": hero}))
+        assert 'data-section="hero" data-variant="%s"' % hero in html
+    html = render("marketing", _prepared(directions, idx, 0, layout={"features": "mosaic"}))
+    assert "pfd-mo-grid" in html
+
+
+def test_style_default_ideas_win_over_other_hooks(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["layout"] = {}
+    # the fixture style (paper-editorial) lists hairline-accordion among its own ideas; a stacking-cards idea from elsewhere must not override it
+    d["bundle"]["ideas"] = ["idea.stacking-cards", "idea.hairline-accordion"]
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert 'data-section="features" data-variant="accordion"' in html
+
+
+def test_borrowed_hero_hook_does_not_replace_the_style_hero(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    d["layout"] = {}
+    d["bundle"]["ideas"] = ["idea.type-specimen-hero"]  # not among paper-editorial's own ideas
+    html = render("marketing", Prepared(d, directions["brief"], idx))
+    assert 'data-section="hero" data-variant="editorial"' in html

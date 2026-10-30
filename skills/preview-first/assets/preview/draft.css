@@ -337,7 +337,7 @@ section.pfd-hero-collage { position: relative; padding: 0 !important; max-width:
 .pfd-caption { padding-top: var(--pf-space-2); border-top: 1px solid color-mix(in oklab, var(--pf-color-text) 12%, transparent); }
 
 /* type hooks */
-.pfd-outline { -webkit-text-stroke: 1px currentColor; color: transparent; paint-order: stroke fill; }
+.pfd-outline { -webkit-text-stroke: 1px var(--pf-color-text); color: transparent; paint-order: stroke fill; }
 .pfd-alt { font-family: var(--pf-font-mono); font-weight: 400; letter-spacing: 0; }
 .pfd-hook-type-tight-display h1, .pfd-hook-type-tight-display .pfd-statement, .pfd-hook-type-tight-display .pfd-giant-word { letter-spacing: -0.05em; line-height: .9; }
 .pfd-hook-type-tabular, .pfd-hook-type-tabular * { font-variant-numeric: tabular-nums; }
@@ -697,7 +697,7 @@ section.pfd-hero-mosaic { padding-top: var(--pf-space-6) !important; }
 .pfd-mosaic-tile { overflow: hidden; background: var(--pf-color-surface); border: 1px solid color-mix(in oklab, var(--pf-color-text) 12%, transparent); display: grid; place-items: center; }
 .pfd-mosaic-tile.is-wide { grid-column: span 2; }
 .pfd-mosaic-tile .pfd-art { width: 100%; height: 100%; object-fit: cover; }
-.pfd-mosaic-text { grid-column: span 2; grid-row: span 2; display: grid; align-content: end; gap: var(--pf-space-4); padding: var(--pf-space-6); background: var(--pf-color-text); color: var(--pf-color-bg); --pf-color-text: var(--pfd-paper); --pf-color-text-muted: color-mix(in oklab, var(--pfd-paper) 70%, var(--pfd-ink)); }
+.pfd-mosaic-text { grid-column: span 2; grid-row: span 2; display: grid; align-content: end; gap: var(--pf-space-4); padding: var(--pf-space-6); background: var(--pfd-ink); color: var(--pfd-paper); --pf-color-text: var(--pfd-paper); --pf-color-text-muted: color-mix(in oklab, var(--pfd-paper) 70%, var(--pfd-ink)); }
 .pfd-mosaic-text .pf-btn-primary { background: var(--pfd-paper); color: var(--pfd-ink); border-color: var(--pfd-paper); }
 .pfd-mosaic-text .pf-btn-secondary { color: inherit; border-color: currentColor; background: transparent; }
 
@@ -705,7 +705,7 @@ section.pfd-hero-mosaic { padding-top: var(--pf-space-6) !important; }
 section.pfd-hero-kinetic { padding-left: 0 !important; padding-right: 0 !important; max-width: none !important; overflow-x: clip; }
 .pfd-kinetic { display: grid; gap: 0; padding: var(--pf-space-6) 0; }
 .pfd-kinetic-row { font-family: var(--pf-font-heading); font-size: clamp(3.5rem, 13vw, 14rem); line-height: .86; letter-spacing: -0.05em; font-weight: 700; white-space: nowrap; padding-left: calc(var(--pf-space-8) + var(--k) * 6vw); }
-.pfd-kinetic-row:nth-child(2) span { -webkit-text-stroke: 2px currentColor; color: transparent; paint-order: stroke fill; }
+.pfd-kinetic-row:nth-child(2) span { -webkit-text-stroke: 2px var(--pf-color-text); color: transparent; paint-order: stroke fill; }
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
     [data-motion="2"] .pfd-kinetic-row, [data-motion="3"] .pfd-kinetic-row { animation: pfd-kinetic linear both; animation-timeline: scroll(); animation-range: 0 60vh; }
@@ -729,7 +729,7 @@ section.pfd-hero-fan { display: grid; grid-template-columns: minmax(0, 1fr) minm
 .pfd-mo-wide { grid-column: span 2; }
 .pfd-mo-tall { grid-row: span 2; }
 .pfd-mo-cell .pfd-art { width: 100%; height: 100%; }
-.pfd-mo-cell figcaption { position: absolute; inset: auto 0 0 0; padding: var(--pf-space-3) var(--pf-space-4); background: color-mix(in oklab, var(--pf-color-bg) 88%, transparent); display: grid; gap: 2px; }
+.pfd-mo-cell figcaption { position: absolute; inset: auto 0 0 0; padding: var(--pf-space-3) var(--pf-space-4); background: color-mix(in oklab, var(--pf-color-surface) 92%, transparent); color: var(--pf-color-text); display: grid; gap: 2px; }
 .pfd-mo-cell h3 { font-size: var(--pf-text-base); }
 .pfd-mo-cell p { font-size: var(--pf-text-sm); color: var(--pf-color-text-muted); display: none; }
 .pfd-mo-wide p, .pfd-mo-tall p { display: block; }
@@ -762,3 +762,5 @@ section.pfd-hero-fan { display: grid; grid-template-columns: minmax(0, 1fr) minm
   .pfd-poster-band-line { position: static; margin: var(--pf-space-4) var(--pf-space-5) 0; }
   .pfd-poster-band { min-height: 48vh; }
 }
+
+.pfd-block-tint { background: color-mix(in oklab, var(--pf-color-accent) 22%, var(--pf-color-bg)); }
