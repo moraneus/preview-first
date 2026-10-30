@@ -1,0 +1,3 @@
+/* preview-first: device frames, drawn in CSS from the catalogue (viewport, cutout, corner radius).
+   No vendor artwork is bundled. Completed in Task 10. */
+.pf-devices { display: grid; gap: var(--pf-space-8) var(--pf-space-6); grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); align-items: start; }
