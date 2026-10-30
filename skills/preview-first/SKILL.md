@@ -4,7 +4,7 @@ description: This skill should be used before building or restyling any website 
 license: MIT
 metadata:
   author: moraneus
-  version: "0.2.1"
+  version: "0.3.0"
   repository: https://github.com/moraneus/preview-first
 ---
 

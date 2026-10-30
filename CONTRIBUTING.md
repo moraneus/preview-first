@@ -70,3 +70,7 @@ the devices view before opening a pull request that touches `assets/preview/`.
 
 Bump `version` in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` and the
 SKILL.md frontmatter together, add a CHANGELOG entry, tag `vX.Y.Z`.
+
+## Adding a design idea
+
+Ideas are `idea` nodes in `knowledge/graph.json`. Add one when you can name a real site that does it and describe it well enough to build: `category`, `what` with concrete values, `implementation`, `ai_tell_risk` and `ai_tell_note`, `seen_on` URLs, and `renders` only when a hook in `knowledge/schema.json` shows exactly that move. Add `pairs_with` edges to the styles it fits, run `validate_graph.py`, and read `skills/preview-first/references/ideas.md` first.

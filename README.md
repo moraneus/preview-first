@@ -3,12 +3,13 @@
 **Look before you build.** A Claude Code skill that shows you three to five complete web design directions in your browser, with real colour palettes, typography, components, motion and device frames, before any application code is written. Pick one, and it becomes a design contract that every later Claude session follows.
 
 [![CI](https://github.com/moraneus/preview-first/actions/workflows/ci.yml/badge.svg)](https://github.com/moraneus/preview-first/actions/workflows/ci.yml)
-![styles](https://img.shields.io/badge/styles-16-1f2937)
-![palettes](https://img.shields.io/badge/OKLCH_palettes-45-1f2937)
-![type pairings](https://img.shields.io/badge/type_pairings-43-1f2937)
+![styles](https://img.shields.io/badge/styles-26-1f2937)
+![design ideas](https://img.shields.io/badge/design_ideas-440-1f2937)
+![palettes](https://img.shields.io/badge/OKLCH_palettes-57-1f2937)
+![type pairings](https://img.shields.io/badge/type_pairings-60-1f2937)
 ![motion patterns](https://img.shields.io/badge/motion_patterns-26-1f2937)
 ![devices](https://img.shields.io/badge/devices-36-1f2937)
-![reference sites](https://img.shields.io/badge/reference_sites-112-1f2937)
+![reference sites](https://img.shields.io/badge/reference_sites-229-1f2937)
 ![dependencies](https://img.shields.io/badge/runtime_dependencies-0-1f2937)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1f2937)](LICENSE)
 
@@ -16,17 +17,21 @@
 
 ## Not the template
 
-Generated sites share a page order before they share a colour: centred headline, two buttons, screenshot, three cards, logo bar, testimonials, footer. preview-first never opens a direction with it. Every style defaults to a first-screen archetype taken from sites designers admire, and every image on the page is artwork generated from the direction's own palette (a product window, a terminal, a blueprint, isometric figures, a Swiss composition, contours, halftone, orbit rings, stickers, sparklines, a single mark), not a grey box with an icon.
+Generated sites share a page order before they share a colour: centred headline, two buttons, screenshot, three cards, logo bar, testimonials, footer. preview-first never opens a direction with it, and since 0.3.0 a direction is not a palette on a fixed skeleton either. Each one is a style plus eight to twelve **design ideas** drawn from a graph of 440 sourced moves observed on modern sites and templates: a split navigation with the studio's live local time, a specimen hero, giant numerals, a bordered grid with corner crosses, film grain, bracket buttons, a marquee of the product's real nouns, a colophon footer with the face in use and the version. Ideas with a render hook change the draft; the rest travel into the contract with their implementation notes and the sites they came from. No two directions in a set share a navigation device, a first screen or a texture.
 
-| Statement paragraph with captioned figures | Type wrapping a flat disc |
+| Acid lab: ticker hero, marquee, cells with crosses, bracket buttons | Archive index: index column, hover list, mono counts, colophon |
 |---|---|
-| ![A two-tone statement paragraph, then three captioned line figures with hairline rules, on a near-black page](docs/assets/archetype-statement.png) | ![A giant headline with alternating indents wrapping a flat disc of colour, square corners, a giant wordmark footer](docs/assets/archetype-wrap.png) |
+| ![A black page with the brand name scrolling at poster size, a slow marquee line, a bordered grid of cells with plus marks at the corners and acid green accents](docs/assets/idea-acid-lab.png) | ![An off-white index page with a sticky table of contents, a headline, and a list of rows with mono counts](docs/assets/idea-archive-index.png) |
 
-| Product-first stage | Full-bleed field with a quiet panel |
+| Clay canvas: statement, captioned contour figures, hairline accordion | Night grain: warm black, serif display, strands, giant numerals |
 |---|---|
-| ![A framed stage with the headline left and a generated product window bleeding past the frame on the right](docs/assets/archetype-product.png) | ![A halftone field with a small centred serif text panel and a specification list below](docs/assets/archetype-bleed.png) |
+| ![A warm off-white page with a two-tone statement, three captioned contour figures and a hairline accordion](docs/assets/idea-clay-canvas.png) | ![A warm near-black page with a Cormorant headline beside strands of line art and giant numerals](docs/assets/idea-night-grain.png) |
 
-At least two of every set come from styles marked distinct, and the exported contract records the archetype and artwork so the real build keeps the composition.
+| Store: phosphor terminal with category tiles and object stand-ins | Content: broadsheet masthead, side notes, archive index | App: icon rail, ledger table, inspector |
+|---|---|---|
+| ![A dark store with a grid of category tiles and flat product stand-ins in phosphor green and amber](docs/assets/idea-store-phosphor.png) | ![A newspaper masthead with a date line and issue number, a serif article with numbered side notes](docs/assets/idea-content-broadsheet.png) | ![An application shell with a 56px icon rail, a hairline ledger table and an inspector panel](docs/assets/idea-app-rail.png) |
+
+Every image on the page is artwork generated from the direction's own palette (twenty-six generators: product window, terminal, blueprint, ASCII field, dithered light, flow field, strands, stamp, ruler, globe, specimen, pixel mark, oscilloscope, grained disc, ticket, object stand-ins and more), never a grey box with an icon. The exported contract records the archetype, the artwork and every idea so the real build keeps the composition.
 
 ## Why
 
@@ -46,7 +51,7 @@ For each direction:
 - **Typography**: a real pairing loaded from Google Fonts, the scale from display to footnote, measure and leading, licence and fallback stacks.
 - **Components**: buttons in six states, inputs in four, selects, switches, cards, badges, alerts, tabs, navigation and footer, drawn with the direction's own treatments.
 - **Motion**: every allowed pattern playable on demand with its real duration and easing, plus a reduced-motion toggle.
-- **A drafted page** for your page type (marketing, app, content or store), using your product's words, not lorem ipsum. Layout variants differ per direction, so two directions are never the same template in new colours.
+- **A drafted page** for your page type (marketing, app, content or store), using your product's words, not lorem ipsum. Nineteen hero archetypes, fifteen feature archetypes, five navigation devices and the ideas attached to the direction mean two directions are never the same template in new colours.
 - **Devices**: the draft rendered at true viewport size inside CSS-drawn frames of the current best-selling phones, foldables, tablets and laptops, with Dynamic Island, punch holes, fold creases and safe areas. Point it at your running dev server later with `?url=`.
 
 Swap palette, type pairing, radius, density, motion level and theme live on any page. Select, and Claude exports the contract.
@@ -133,15 +138,16 @@ Decisions come from `skills/preview-first/knowledge/graph.json`, a graph of what
 
 | Nodes | Count | Edges |
 |---|---|---|
-| Styles (editorial, Swiss, monochrome engineering, soft product, dark console, luminous dark, quiet luxury, neo-brutalist, playful geometric, warm organic, glass, bento, poster type, data dense, studio wrap, lab figures) | 16 | `defaults_to` treatments and motion, `requires` platform features |
-| Palettes, OKLCH, light and dark, every role contrast-checked | 45 | `pairs_with` and `avoid_with` styles |
-| Type pairings with fallbacks, scale ratio, licence, loading URL | 43 | `pairs_with` and `avoid_with` styles |
+| Styles (sixteen from 0.1 and 0.2, plus acid lab, paper and signal, archive index, raw document, night grain, phosphor terminal, cobalt block, giant serif, signal orange, clay canvas) | 26 | `defaults_to` treatments and motion, `requires` platform features, `ideas` lists |
+| Design ideas: sourced moves with a description, implementation note, tell risk, sites seen on and an optional render hook (66 hooks implemented in the drafts) | 440 | `pairs_with` styles, `suits` from product types, `expresses` from moods |
+| Palettes, OKLCH, light and dark, every role contrast-checked | 57 | `pairs_with` and `avoid_with` styles |
+| Type pairings with fallbacks, scale ratio, licence, loading URL; families verified against the Google Fonts snapshot | 60 | `pairs_with` and `avoid_with` styles |
 | Component treatments (closed vocabulary across 10 axes) | 33 | |
-| Layout archetypes (hero 11, features 8, proof 5, call to action 4, footer 3) and artwork generators | 31 and 13 | chosen by each style's `layout_defaults` and `art` |
+| Layout archetypes (hero 19, features 15, proof 7, call to action 5, footer 4, nav 5, plus store, content and app variants) and artwork generators | 60 and 26 | chosen by `layout`, render hooks, then each style's `layout_defaults` and `art` |
 | Motion patterns with trigger, duration, easing, reduced-motion rule | 26 | |
-| Product types and moods with aliases | 22 and 20 | `suits` and `expresses` styles |
+| Product types and moods with aliases | 22 and 20 | `suits` and `expresses` styles and ideas |
 | Icon sets, platform features with Baseline status | 6 and 16 | |
-| Reference sites, fetched and recorded as evidence on edges | 112 | cited by 174 edges |
+| Reference sites, recorded as evidence on edges | 229 | cited by 2,212 edges |
 | Devices with viewport, DPR, safe areas, cutout, share rank | 36 | |
 
 Every node carries a source and dates. `validate_graph.py` checks the schema, every edge endpoint, and fails any palette whose text does not reach WCAG 4.5:1 and APCA Lc 60 on its background in both modes.
@@ -157,14 +163,15 @@ preview-first does not write your application code. It produces a decision and a
 ```
 skills/preview-first/   the skill: SKILL.md, references/, knowledge/, scripts/, assets/
 tests/                  pytest suite (standard library under test)
-docs/research/          the research that seeded the graph, with sources
+docs/research/          the research that seeded the graph, with sources (the 2026-10-30 ideas sweep included)
+tools/                  dev-only scripts that merged the research into the graph
 docs/superpowers/       design document and implementation plan
 .github/workflows/      ci.yml, refresh.yml
 ```
 
 ## Contributing
 
-Palettes, pairings, devices and reference sites are the most useful contributions. See [CONTRIBUTING.md](CONTRIBUTING.md). Run the validator and tests before opening a pull request:
+Design ideas with sources, palettes, pairings, devices and reference sites are the most useful contributions; see `skills/preview-first/references/ideas.md` for the idea shape and the render hooks. See [CONTRIBUTING.md](CONTRIBUTING.md). Run the validator and tests before opening a pull request:
 
 ```bash
 python3 skills/preview-first/scripts/validate_graph.py
