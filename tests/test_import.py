@@ -80,3 +80,11 @@ def test_cli_appends_to_directions(tmp_path):
     assert main(["--css", str(FIXTURES / "site.css"), "--into", str(directions), "--name", "Today"]) == 0
     out = json.load(open(directions))
     assert [d["id"] for d in out["directions"]] == ["A", "B", "C"] and out["directions"][2]["name"] == "Today"
+
+
+def test_hostile_font_names_are_dropped():
+    css = "body{font-family:\"Evil'; } body{background:red} x{\", Geist}"
+    obs = from_css(css)
+    assert obs["fonts"] == ["Geist"]
+    obs = from_dtcg({"font": {"body": {"$type": "fontFamily", "$value": ["Bad</style><script>", "Figtree"]}}})
+    assert obs["fonts"] == []  # only the first entry is considered, and it is rejected

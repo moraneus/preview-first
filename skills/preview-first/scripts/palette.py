@@ -1,6 +1,7 @@
 """Palette resolution (OKLCH to hex, overrides, contrast checks) and token CSS."""
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -140,8 +141,12 @@ def _fmt(value: float) -> str:
     return s or "0"
 
 
+_CSS_UNSAFE = re.compile(r"[\"'\\;{}<>\n\r]")
+
+
 def _font_stack(face: dict, fallback: str) -> str:
-    family = face["family"]
+    family = _CSS_UNSAFE.sub("", str(face["family"])).strip()[:64]
+    fallback = _CSS_UNSAFE.sub("", str(fallback)).strip()
     quoted = family if family.startswith(("system-ui", "-apple-system", "ui-")) else "'%s'" % family
     return "%s, %s" % (quoted, fallback)
 

@@ -31,6 +31,12 @@ GENERIC = {"serif", "sans-serif", "monospace", "system-ui", "ui-sans-serif", "ui
            "inherit", "initial", "unset", "-apple-system", "blinkmacsystemfont", "segoe ui", "roboto", "helvetica neue", "arial",
            "noto sans", "liberation sans", "apple color emoji", "segoe ui emoji", "georgia", "times new roman", "menlo", "monaco", "consolas", "courier new"}
 USER_AGENT = "preview-first/%s" % _common.VERSION
+FAMILY_OK = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _+.-]{0,63}$")
+
+
+def _valid_family(fam: str) -> bool:
+    """Imported names reach generated CSS and HTML, so only plain family names are accepted."""
+    return bool(fam) and bool(FAMILY_OK.match(fam)) and fam.lower() not in GENERIC and not fam.lower().startswith("var(")
 
 
 def _norm_hex(h: str) -> str:
@@ -43,7 +49,7 @@ def _collect(text: str) -> dict:
     for m in FONT_RE.findall(text):
         for fam in m.split(","):
             fam = fam.strip().strip("'\"").strip()
-            if fam and fam.lower() not in GENERIC and not fam.lower().startswith("var(") and fam not in fonts:
+            if _valid_family(fam) and fam not in fonts:
                 fonts.append(fam)
     radii = sorted({int(round(float(r))) for r in RADIUS_RE.findall(text) if float(r) > 0})
     return {"colors": [c for c, _ in colours.most_common()], "fonts": fonts, "radius": radii}
@@ -61,7 +67,7 @@ def _fonts_in(block: str) -> List[str]:
     for m in FONT_RE.findall(block):
         for fam in m.split(","):
             fam = fam.strip().strip("'\"").strip()
-            if fam and fam.lower() not in GENERIC and not fam.lower().startswith("var(") and fam not in out:
+            if _valid_family(fam) and fam not in out:
                 out.append(fam)
     return out
 
@@ -90,9 +96,8 @@ def from_tailwind_config(text: str) -> dict:
     for arr in re.findall(r"\[([^\]]+)\]", text):
         for fam in arr.split(","):
             fam = fam.strip().strip("'\"").strip()
-            if fam and fam.lower() not in GENERIC and " " not in fam.strip("'\"") or (fam and fam[0].isupper() and fam.lower() not in GENERIC):
-                if fam and fam not in obs["fonts"] and fam.lower() not in GENERIC and not fam.startswith("./") and not fam.startswith("src"):
-                    obs["fonts"].append(fam)
+            if _valid_family(fam) and fam[0].isupper() and fam not in obs["fonts"]:
+                obs["fonts"].append(fam)
     radii = {int(round(float(r))) for r in re.findall(r"\"?(?:xl|2xl|3xl|lg|md|sm|DEFAULT)\"?\s*:\s*\"([0-9.]+)px\"", text)}
     obs["radius"] = sorted(set(obs["radius"]) | radii)
     obs["source"] = "tailwind"
@@ -111,7 +116,7 @@ def from_dtcg(tokens: dict) -> dict:
                 colours.append(_norm_hex(v.strip()))
             elif t == "fontFamily":
                 fam = v[0] if isinstance(v, list) and v else v
-                if isinstance(fam, str) and fam.lower() not in GENERIC and fam not in fonts:
+                if isinstance(fam, str) and _valid_family(fam) and fam not in fonts:
                     fonts.append(fam)
             elif t == "dimension" and "radius" in "/".join(path).lower() and isinstance(v, str) and v.endswith("px"):
                 radii.append(int(round(float(v[:-2]))))

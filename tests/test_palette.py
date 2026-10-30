@@ -88,3 +88,10 @@ def test_derive_roles_builds_full_palette():
     roles = derive_roles("#fbfaf7", "#1f1d1a", "#1d4ed8")
     assert set(roles["light"]) == set(ROLES) and set(roles["dark"]) == set(ROLES)
     assert all(v.startswith("oklch(") for v in roles["light"].values())
+
+
+def test_font_stack_strips_css_breaking_characters(pairing):
+    pairing = dict(pairing, heading={"family": "Evil'; } body{background:red} x{", "category": "serif-transitional", "weights": [600], "source": "google"})
+    css = scale_tokens("md", "regular", pairing)
+    assert "}" not in css.split("--pf-font-heading:")[1].split("\n")[0]
+    assert "background:red" not in css.replace(" ", "") or ";" not in css.split("--pf-font-heading:")[1].split("\n")[0][:-1]
