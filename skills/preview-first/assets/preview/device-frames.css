@@ -1,3 +1,72 @@
-/* preview-first: device frames, drawn in CSS from the catalogue (viewport, cutout, corner radius).
-   No vendor artwork is bundled. Completed in Task 10. */
-.pf-devices { display: grid; gap: var(--pf-space-8) var(--pf-space-6); grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); align-items: start; }
+/* preview-first: device frames drawn in CSS from the catalogue. Each figure carries data-kind,
+   data-cutout, data-w, data-h, data-crease and --corner / --sa-* custom properties; preview.js sets
+   --scale so overlays match the scaled viewport. No vendor artwork is bundled. */
+.pf-device-toolbar { display: grid; gap: var(--pf-space-4); margin-bottom: var(--pf-space-8); }
+.pf-device-urlform { display: grid; grid-template-columns: minmax(0, 480px) auto; gap: var(--pf-space-3); align-items: end; }
+.pf-device-picker summary { cursor: pointer; font-size: var(--pf-text-sm); color: var(--pf-color-text-muted); }
+.pf-device-vendors { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--pf-space-4); margin-top: var(--pf-space-3); }
+.pf-device-vendor { border: 1px solid var(--pf-color-border); border-radius: var(--pf-radius-md); padding: var(--pf-space-3); display: grid; gap: var(--pf-space-1); }
+.pf-device-vendor legend { font-weight: 600; font-size: var(--pf-text-sm); padding: 0 var(--pf-space-1); }
+.pf-device-vendor label { display: flex; gap: var(--pf-space-2); align-items: center; font-size: var(--pf-text-sm); }
+.pf-device-vendor input { accent-color: var(--pf-color-primary); }
+
+.pf-devices { display: grid; gap: var(--pf-space-10) var(--pf-space-6); grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); align-items: start; }
+.pf-device { margin: 0; min-width: 0; display: grid; gap: var(--pf-space-3); justify-items: center; --bezel: 12px; --shell: #1a1a1c; --shell-edge: #3a3a3f; }
+.pf-device[data-kind="tablet"], .pf-device[data-kind="foldable"] { grid-column: span 2; }
+.pf-device[data-kind="laptop"], .pf-device[data-kind="desktop"] { grid-column: span 2; }
+@media (max-width: 700px) { .pf-device[data-kind] { grid-column: auto; } }
+.pf-device figcaption { display: grid; gap: 2px; justify-items: center; text-align: center; font-size: var(--pf-text-sm); color: var(--pf-color-text-muted); }
+.pf-device figcaption strong { color: var(--pf-color-text); }
+.pf-device figcaption .pf-btn { margin-top: var(--pf-space-2); }
+
+.pf-device-shell { position: relative; width: 100%; padding: var(--bezel); background: var(--shell); border-radius: calc(var(--corner, 0px) * var(--scale, 1) + var(--bezel)); box-shadow: 0 0 0 1px var(--shell-edge), 0 20px 50px rgba(0,0,0,.25); }
+.pf-screen { position: relative; width: 100%; overflow: hidden; background: #fff; border-radius: calc(var(--corner, 0px) * var(--scale, 1)); }
+.pf-screen iframe { position: absolute; top: 0; left: 0; display: block; border: 0; transform-origin: 0 0; background: #fff; }
+
+/* cutouts */
+.pf-device[data-cutout="island"] .pf-screen::before {
+  content: ""; position: absolute; left: 50%; top: calc(11px * var(--scale, 1)); z-index: 2;
+  width: calc(125px * var(--scale, 1)); height: calc(37px * var(--scale, 1)); transform: translateX(-50%);
+  background: #000; border-radius: 999px;
+}
+.pf-device[data-cutout="notch"][data-kind="phone"] .pf-screen::before {
+  content: ""; position: absolute; left: 50%; top: 0; z-index: 2; transform: translateX(-50%);
+  width: calc(160px * var(--scale, 1)); height: calc(32px * var(--scale, 1)); background: #000; border-radius: 0 0 calc(20px * var(--scale, 1)) calc(20px * var(--scale, 1));
+}
+.pf-device[data-cutout="notch"][data-kind="laptop"] .pf-screen::before {
+  content: ""; position: absolute; left: 50%; top: 0; z-index: 2; transform: translateX(-50%);
+  width: calc(180px * var(--scale, 1)); height: calc(30px * var(--scale, 1)); background: #000; border-radius: 0 0 calc(8px * var(--scale, 1)) calc(8px * var(--scale, 1));
+}
+.pf-device[data-cutout="punch"] .pf-screen::before {
+  content: ""; position: absolute; left: 50%; top: calc(10px * var(--scale, 1)); z-index: 2; transform: translateX(-50%);
+  width: calc(18px * var(--scale, 1)); height: calc(18px * var(--scale, 1)); background: #000; border-radius: 50%;
+}
+.pf-device[data-rotated="1"][data-cutout="island"] .pf-screen::before,
+.pf-device[data-rotated="1"][data-cutout="punch"] .pf-screen::before,
+.pf-device[data-rotated="1"][data-cutout="notch"][data-kind="phone"] .pf-screen::before { left: calc(11px * var(--scale, 1)); top: 50%; transform: translateY(-50%) rotate(90deg); transform-origin: center; }
+
+/* home indicator on phones and tablets with gesture bars */
+.pf-device[data-kind="phone"] .pf-screen::after, .pf-device[data-kind="foldable"] .pf-screen::after, .pf-device[data-kind="tablet"][data-cutout="none"] .pf-screen::after {
+  content: ""; position: absolute; left: 50%; bottom: calc(8px * var(--scale, 1)); z-index: 2; transform: translateX(-50%);
+  width: calc(134px * var(--scale, 1)); height: calc(5px * var(--scale, 1)); border-radius: 999px; background: rgba(0,0,0,.55); mix-blend-mode: difference;
+}
+.pf-device[data-kind="tablet"] .pf-screen::after { width: calc(240px * var(--scale, 1)); }
+
+/* fold crease */
+.pf-crease { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; transform: translateX(-50%); z-index: 2; background: rgba(0,0,0,.12); box-shadow: 0 0 12px 4px rgba(0,0,0,.08); pointer-events: none; }
+.pf-device[data-rotated="1"] .pf-crease { top: 50%; bottom: auto; left: 0; right: 0; width: auto; height: 2px; transform: translateY(-50%); }
+
+/* laptops and desktops */
+.pf-device[data-kind="laptop"] .pf-device-shell { --bezel: 10px; border-radius: 14px 14px 4px 4px; }
+.pf-device[data-kind="laptop"] .pf-device-base { position: absolute; left: -4%; right: -4%; bottom: -14px; height: 14px; background: #2a2a2e; border-radius: 0 0 10px 10px; box-shadow: 0 0 0 1px var(--shell-edge); }
+.pf-device[data-kind="laptop"] .pf-device-base::after { content: ""; position: absolute; left: 50%; top: 0; width: 18%; height: 4px; transform: translateX(-50%); background: #0e0e10; border-radius: 0 0 4px 4px; }
+.pf-device[data-kind="desktop"] .pf-device-shell { --bezel: 14px; border-radius: 10px; }
+.pf-device[data-kind="desktop"] .pf-device-base { position: absolute; left: 50%; bottom: -44px; width: 36%; height: 44px; transform: translateX(-50%); background: #2a2a2e; clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); }
+.pf-device[data-kind="laptop"], .pf-device[data-kind="desktop"] { padding-bottom: var(--pf-space-8); }
+
+/* safe-area overlay */
+.pf-safe { position: absolute; inset: 0; z-index: 3; pointer-events: none; display: none;
+  border-style: solid; border-color: color-mix(in oklab, var(--pf-color-danger) 25%, transparent);
+  border-width: calc(var(--sa-top, 0) * var(--scale, 1) * 1px) calc(var(--sa-right, 0) * var(--scale, 1) * 1px) calc(var(--sa-bottom, 0) * var(--scale, 1) * 1px) calc(var(--sa-left, 0) * var(--scale, 1) * 1px); }
+.pf-devices[data-safe] .pf-safe { display: block; }
+.pf-device[data-rotated="1"] .pf-safe { border-width: 0 calc(var(--sa-top, 0) * var(--scale, 1) * 1px) calc(21 * var(--scale, 1) * 1px) calc(var(--sa-top, 0) * var(--scale, 1) * 1px); }

@@ -135,7 +135,7 @@
 
   // Font notice: name the real faces when the browser fell back.
   var main = document.querySelector("main[data-fonts]");
-  if (main && document.fonts && document.fonts.check) {
+  if (main && document.fonts && document.fonts.check && !root.hasAttribute("data-embed")) {
     var fams = (main.getAttribute("data-fonts") || "").split("|").filter(Boolean);
     var check = function () {
       var missing = fams.filter(function (f) {
@@ -150,7 +150,9 @@
         notice.hidden = true;
       }
     };
-    document.fonts.ready.then(function () { setTimeout(check, 1500); });
+    Promise.all(fams.map(function (f) {
+      try { return document.fonts.load('16px "' + f + '"').catch(function () { return null; }); } catch (e) { return Promise.resolve(null); }
+    })).then(function () { return document.fonts.ready; }).then(function () { setTimeout(check, 800); });
   }
 
   // Motion demos.
@@ -169,7 +171,15 @@
   // Device frames: scale each iframe to its column, rotate, toggle, external url.
   var deviceGrid = document.querySelector(".pf-devices");
   if (deviceGrid) {
-    var externalUrl = params.get("url");
+    // Only http(s) pages may be framed; anything else (javascript:, data:, file:) is ignored.
+    var externalUrl = null;
+    try {
+      var candidate = params.get("url");
+      if (candidate) {
+        var parsed = new URL(candidate, location.href);
+        if (parsed.protocol === "http:" || parsed.protocol === "https:") externalUrl = parsed.toString();
+      }
+    } catch (e) { externalUrl = null; }
     var urlInput = document.querySelector("[data-device-url]");
     if (urlInput && externalUrl) urlInput.value = externalUrl;
     var urlNotice = document.querySelector(".pf-device-url-notice");
@@ -256,6 +266,16 @@
       });
     });
   }
+
+  // Gallery thumbnails: scale the 1280px draft to the card width.
+  function fitThumbs() {
+    document.querySelectorAll(".pfg-thumb").forEach(function (t) {
+      var f = t.querySelector("iframe");
+      if (f) f.style.transform = "scale(" + (t.clientWidth / 1280) + ")";
+    });
+  }
+  fitThumbs();
+  window.addEventListener("resize", fitThumbs);
 
   updateFrames();
 })();

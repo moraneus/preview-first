@@ -43,10 +43,13 @@ code { font-family: var(--pfc-mono); font-size: 0.85em; }
 /* ------------------------------------------------------------------ chrome bar */
 .pfc-bar {
   position: sticky; top: 0; z-index: 50;
-  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
-  padding: 10px 20px; background: var(--pfc-panel); border-bottom: 1px solid var(--pfc-line);
+  display: grid; grid-template-columns: auto auto auto 1fr auto; align-items: center; gap: 8px 20px;
+  padding: 8px 20px; background: var(--pfc-panel); border-bottom: 1px solid var(--pfc-line);
   font-size: 13px; color: var(--pfc-fg);
 }
+.pfc-bar .pfc-select { grid-column: 5; justify-self: end; }
+.pfc-bar .pfc-controls { grid-column: 1 / -1; margin-left: 0; padding-top: 6px; border-top: 1px solid var(--pfc-line); }
+@media (max-width: 900px) { .pfc-bar { grid-template-columns: 1fr 1fr; } .pfc-bar .pfc-select { grid-column: auto; } .pfc-dirs, .pfc-views { flex-wrap: wrap; } }
 .pfc-back { color: var(--pfc-muted); text-decoration: none; }
 .pfc-back:hover { color: var(--pfc-fg); text-decoration: underline; }
 .pfc-dirs, .pfc-views { display: flex; gap: 4px; }
@@ -76,11 +79,12 @@ code { font-family: var(--pfc-mono); font-size: 0.85em; }
 
 /* ------------------------------------------------------------------ gallery */
 .pfg { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; }
-.pfg-head { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: end; margin-bottom: 28px; }
+.pfg-head { display: grid; grid-template-columns: 1fr auto; gap: 4px 24px; align-items: start; margin-bottom: 28px; }
+.pfg-head > :not(.pfc-controls) { grid-column: 1; }
 .pfg-head h1 { margin: 0; font-size: 28px; font-weight: 600; letter-spacing: -0.01em; }
 .pfg-head p { margin: 4px 0 0; max-width: 70ch; }
-.pfg-head .pfc-controls { grid-row: 1 / span 2; }
-.pfg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.pfg-head .pfc-controls { grid-column: 2; grid-row: 1 / span 3; align-self: start; }
+.pfg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 24px; }
 .pfg-card { display: flex; flex-direction: column; background: var(--pfc-panel); border: 1px solid var(--pfc-line); border-radius: 10px; overflow: hidden; }
 .pfg-thumb { position: relative; aspect-ratio: 16 / 10; background: var(--pfc-bg); border-bottom: 1px solid var(--pfc-line); overflow: hidden; }
 .pfg-frame { position: absolute; inset: 0; width: 1280px; height: 800px; border: 0; transform-origin: 0 0; transform: scale(0.25); pointer-events: none; }

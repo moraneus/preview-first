@@ -151,3 +151,9 @@ def test_data_json_has_resolved_palettes(out):
 def test_cli(tmp_path):
     assert main(["--directions", str(FIXTURES / "directions_two.json"), "--out", str(tmp_path / "p")]) == 0
     assert (tmp_path / "p" / "index.html").exists()
+
+
+def test_dark_first_direction_defaults_to_dark_theme(out):
+    d, _ = out
+    assert 'data-theme="dark"' in (d / "B/tile.html").read_text().split("<head>")[0]
+    assert 'data-theme="dark"' not in (d / "A/tile.html").read_text().split("<head>")[0]

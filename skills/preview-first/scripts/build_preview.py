@@ -235,8 +235,9 @@ def _page(p: Prepared, all_dirs: List[Prepared], view: str, body: str, extra_css
         "lang": "en",
         "title": "%s · %s · preview-first" % (p.name, view),
         "head": _head(p, "%s · %s" % (p.name, view.capitalize()), depth, extra_css),
-        "html_attrs": ' data-direction="%s" data-palette="%s" data-pairing="%s" data-radius="%s" data-density="%s" data-motion="%d"' % (
-            E(p.id), E(p.palette["id"]), E(p.pairing["id"]), E(p.radius_scale), E(p.density), p.motion_level),
+        "html_attrs": ' data-direction="%s" data-palette="%s" data-pairing="%s" data-radius="%s" data-density="%s" data-motion="%d"%s' % (
+            E(p.id), E(p.palette["id"]), E(p.pairing["id"]), E(p.radius_scale), E(p.density), p.motion_level,
+            ' data-theme="dark"' if p.palette.get("scheme") == "dark" else ""),
         "chrome": _chrome(p, all_dirs, view, depth),
         "body": main,
         "scripts": '<script src="%sassets/preview.js" defer></script>' % ("../" * depth),
@@ -383,18 +384,18 @@ def _gallery(dirs: List[Prepared], brief: dict) -> str:
     name = (brief.get("words") or {}).get("name") or brief.get("product", "your product").split(",")[0]
     cards = []
     for p in dirs:
-        r = p.resolved["light"]
+        r = p.resolved["dark" if p.palette.get("scheme") == "dark" else "light"]
         strip = "".join('<span style="background:%s" title="%s"></span>' % (r[k]["hex"], k) for k in ("bg", "surface", "text", "primary", "accent"))
         cards.append(
             '<article class="pfg-card" data-direction="%s">'
             '<link rel="stylesheet" href="%s/tokens.css">'
-            '<div class="pfg-thumb"><iframe class="pfg-frame" loading="lazy" src="%s/draft.html?embed=1" title="%s draft" tabindex="-1"></iframe></div>'
+            '<div class="pfg-thumb"><iframe class="pfg-frame" loading="lazy" src="%s/draft.html?embed=1%s" title="%s draft" tabindex="-1"></iframe></div>'
             '<div class="pfg-body"><p class="pfc-kicker">Direction %s · %s</p><h2>%s</h2><p>%s</p>'
             '<div class="pfg-strip">%s</div>'
             '<p class="pfg-type"><span style="font-family:%s">%s</span> <span class="pfc-muted">with %s</span></p>'
             '<nav class="pfg-links"><a href="%s/tile.html">Tile</a><a href="%s/draft.html">Draft</a><a href="%s/devices.html">Devices</a></nav>'
             '<button class="pfc-select" type="button" data-action="select" data-direction="%s">Select %s</button></div></article>'
-            % (E(p.id), E(p.id), E(p.id), E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
+            % (E(p.id), E(p.id), E(p.id), "&theme=dark" if p.palette.get("scheme") == "dark" else "", E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
                E("'%s', %s" % (p.pairing["heading"]["family"], p.pairing["fallback_heading"])), E(p.pairing["heading"]["family"]),
                E(p.pairing["body"]["family"]), E(p.id), E(p.id), E(p.id), E(p.id), E(p.name))
         )
@@ -457,7 +458,7 @@ def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_
     pages: List[str] = []
 
     (out / "assets").mkdir(parents=True, exist_ok=True)
-    for name in ("preview.css", "tile.css", "preview.js", "device-frames.css"):
+    for name in ("preview.css", "tile.css", "draft.css", "preview.js", "device-frames.css"):
         shutil.copyfile(PREVIEW_ASSETS / name, out / "assets" / name)
     if ICON_ASSETS.exists():
         shutil.copytree(ICON_ASSETS, out / "assets" / "icons", dirs_exist_ok=True)
@@ -479,11 +480,12 @@ def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_
         (d / "tile.html").write_text(_page(p, dirs, "tile", _tile_body(p), extra_css=("../assets/tile.css",)), encoding="utf-8")
         pages.append(str(d / "tile.html"))
         if render_draft:
-            (d / "draft.html").write_text(_page(p, dirs, "draft", render_draft(brief.get("page_type", "marketing"), p)), encoding="utf-8")
+            (d / "draft.html").write_text(
+                _page(p, dirs, "draft", render_draft(brief.get("page_type", "marketing"), p), extra_css=("../assets/draft.css",)), encoding="utf-8")
             pages.append(str(d / "draft.html"))
         if render_devices:
             (d / "devices.html").write_text(
-                _page(p, dirs, "devices", render_devices(p, devices), extra_css=("../assets/device-frames.css",)), encoding="utf-8")
+                _page(p, dirs, "devices", render_devices(p, devices), extra_css=("../assets/tile.css", "../assets/device-frames.css")), encoding="utf-8")
             pages.append(str(d / "devices.html"))
         warnings.extend("%s: %s" % (p.id, w) for w in p.resolved["warnings"])
 
