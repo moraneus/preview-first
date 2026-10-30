@@ -42,6 +42,12 @@ def buttons(p, size: str = "") -> str:
 
 
 def footer(p, variant: str) -> str:
+    if variant == "giant":
+        links = "".join('<a href="#">%s</a>' % E(x) for x in p.copy.get("nav", [])[:5])
+        inner = ('<div class="pfd-footer-giant"><span class="pfd-giant-word" aria-hidden="true">%s</span>'
+                 '<div class="pfd-footer-giant-row"><p class="pf-muted">%s</p><nav class="pfd-footer-links">%s</nav></div></div>') % (
+            E(brand(p)), E(p.copy.get("footer", "")), links)
+        return section("footer", variant, '<footer class="pf-footer pf-footer-giant">%s</footer>' % inner)
     cols = ('<div class="pf-footer-cols"><div><h4>Product</h4><a href="#">Pricing</a><a href="#">Changelog</a><a href="#">Status</a></div>'
             '<div><h4>Company</h4><a href="#">About</a><a href="#">Contact</a></div>'
             '<div><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a></div></div>')

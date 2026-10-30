@@ -211,6 +211,14 @@ Direction **{p.id} · {p.name}**, selected {selection.get("selected_at", _common
 - Signals: {", ".join(p.style.get("signals", []))}.
 - Brief: {brief.get("product", "")} Audience: {brief.get("audience", "not stated")}. Moods: {", ".join(m.split(".")[-1] for m in brief.get("moods", []))}. Page type: {brief.get("page_type", "marketing")}.
 
+## Layout archetype
+
+The first screen is not the generic template (centred headline, two buttons, screenshot, three cards). Keep this composition when building the real page.
+
+- Hero: **{p.layout.get("hero", "see draft")}**. Sections: {", ".join("%s %s" % (k, v) for k, v in sorted(p.layout.items()) if k != "hero") or "per the draft"}.
+- Artwork: **{(p.style.get("art") or {}).get("hero", "none")}** in the hero, **{(p.style.get("art") or {}).get("feature", "none")}** in sections; generated from the palette, replace with real product imagery or photography of equal weight, never stock.
+- Inspired by: {", ".join(p.style.get("inspired_by", [])) or "the reference sites cited in the graph"}.
+
 ## Palette
 
 Palette **{p.palette["name"]}** ({p.palette.get("temperature")}, {p.palette.get("scheme")}). Authored in OKLCH, rendered to sRGB hex. Light and dark are two sets of the same roles; swap sets, never invert colours.

@@ -1,6 +1,7 @@
 """Content page draft: header, article, list of further reading, footer."""
 from __future__ import annotations
 
+from . import art
 from ._shared import E, brand, features, footer, nav, pick, placeholder, section
 
 VARIANTS = {
@@ -25,7 +26,7 @@ def _article(p, v: str) -> str:
         i, E(f["title"]), E(f["body"]), E("A second paragraph keeps the measure honest: around sixty-six characters per line, "
                                            "a line height that lets the eye return easily, and no decoration between paragraphs.")) for i, f in enumerate(feats[:3]))
     body = ('<article class="pfd-article"><header><p class="pf-kicker">%s · 6 min read</p><h1>%s</h1><p class="pf-lead">%s</p></header>%s%s</article>') % (
-        E("30 October 2026"), E(p.copy["headline"]), E(p.copy["subhead"]), placeholder("Lead image with a real caption", "16 / 9", "pfd-media-wide"), paras)
+        E("30 October 2026"), E(p.copy["headline"]), E(p.copy["subhead"]), art.render((p.style.get("art") or {}).get("feature", "contours"), seed=p.id + "-" + str("Lead image with a real caption")), paras)
     if v == "with-toc":
         toc = '<nav class="pfd-toc" aria-label="On this page"><p class="pf-small">On this page</p>%s</nav>' % "".join(
             '<a href="#s%d">%s</a>' % (i, E(f["title"])) for i, f in enumerate(feats[:3]))

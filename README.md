@@ -3,7 +3,7 @@
 **Look before you build.** A Claude Code skill that shows you three to five complete web design directions in your browser, with real colour palettes, typography, components, motion and device frames, before any application code is written. Pick one, and it becomes a design contract that every later Claude session follows.
 
 [![CI](https://github.com/moraneus/preview-first/actions/workflows/ci.yml/badge.svg)](https://github.com/moraneus/preview-first/actions/workflows/ci.yml)
-![styles](https://img.shields.io/badge/styles-14-1f2937)
+![styles](https://img.shields.io/badge/styles-16-1f2937)
 ![palettes](https://img.shields.io/badge/OKLCH_palettes-45-1f2937)
 ![type pairings](https://img.shields.io/badge/type_pairings-43-1f2937)
 ![motion patterns](https://img.shields.io/badge/motion_patterns-26-1f2937)
@@ -13,6 +13,20 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-1f2937)](LICENSE)
 
 ![Four design directions for one brief, side by side in the browser](docs/assets/gallery.png)
+
+## Not the template
+
+Generated sites share a page order before they share a colour: centred headline, two buttons, screenshot, three cards, logo bar, testimonials, footer. preview-first never opens a direction with it. Every style defaults to a first-screen archetype taken from sites designers admire, and every image on the page is artwork generated from the direction's own palette (a product window, a terminal, a blueprint, isometric figures, a Swiss composition, contours, halftone, orbit rings, stickers, sparklines, a single mark), not a grey box with an icon.
+
+| Statement paragraph with captioned figures | Type wrapping a flat disc |
+|---|---|
+| ![A two-tone statement paragraph, then three captioned line figures with hairline rules, on a near-black page](docs/assets/archetype-statement.png) | ![A giant headline with alternating indents wrapping a flat disc of colour, square corners, a giant wordmark footer](docs/assets/archetype-wrap.png) |
+
+| Product-first stage | Full-bleed field with a quiet panel |
+|---|---|
+| ![A framed stage with the headline left and a generated product window bleeding past the frame on the right](docs/assets/archetype-product.png) | ![A halftone field with a small centred serif text panel and a specification list below](docs/assets/archetype-bleed.png) |
+
+At least two of every set come from styles marked distinct, and the exported contract records the archetype and artwork so the real build keeps the composition.
 
 ## Why
 
@@ -119,10 +133,11 @@ Decisions come from `skills/preview-first/knowledge/graph.json`, a graph of what
 
 | Nodes | Count | Edges |
 |---|---|---|
-| Styles (editorial, Swiss, monochrome engineering, soft product, dark console, luminous dark, quiet luxury, neo-brutalist, playful geometric, warm organic, glass, bento, poster type, data dense) | 14 | `defaults_to` treatments and motion, `requires` platform features |
+| Styles (editorial, Swiss, monochrome engineering, soft product, dark console, luminous dark, quiet luxury, neo-brutalist, playful geometric, warm organic, glass, bento, poster type, data dense, studio wrap, lab figures) | 16 | `defaults_to` treatments and motion, `requires` platform features |
 | Palettes, OKLCH, light and dark, every role contrast-checked | 45 | `pairs_with` and `avoid_with` styles |
 | Type pairings with fallbacks, scale ratio, licence, loading URL | 43 | `pairs_with` and `avoid_with` styles |
 | Component treatments (closed vocabulary across 10 axes) | 33 | |
+| Layout archetypes (hero 11, features 8, proof 5, call to action 4, footer 3) and artwork generators | 31 and 13 | chosen by each style's `layout_defaults` and `art` |
 | Motion patterns with trigger, duration, easing, reduced-motion rule | 26 | |
 | Product types and moods with aliases | 22 and 20 | `suits` and `expresses` styles |
 | Icon sets, platform features with Baseline status | 6 and 16 | |

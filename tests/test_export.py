@@ -141,3 +141,9 @@ def test_tailwind_v3_gets_note_not_theme(tmp_project, directions):
     tw = (tmp_project / "design" / "tailwind.css").read_text(encoding="utf-8")
     assert tw.index('@import "tailwindcss"') < tw.index("@theme") and tw.index('@import "./tokens.css"') < tw.index("@theme")
     assert "@theme inline" in tw
+
+
+def test_contract_records_archetype_and_art(tmp_project, directions):
+    _export(tmp_project, directions)
+    md = (tmp_project / "design" / "DESIGN.md").read_text(encoding="utf-8")
+    assert "## Layout archetype" in md and "Hero: **" in md and "Artwork: **" in md

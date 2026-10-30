@@ -4,7 +4,7 @@ description: This skill should be used before building or restyling any website 
 license: MIT
 metadata:
   author: moraneus
-  version: "0.1.0"
+  version: "0.2.0"
   repository: https://github.com/moraneus/preview-first
 ---
 
@@ -101,6 +101,15 @@ Turn bundles into `.design-preview/directions.json` (schema in `knowledge/schema
 
 Before building, run the anti-tell check in `references/anti-patterns.md` on every direction.
 Refuse a tell unless the brief asked for it by name, and then say so in the rationale.
+
+The first screen rule: no direction opens with the generic template (centred headline, two
+buttons, a screenshot, then three identical cards). Each style defaults to a layout archetype
+observed on admired sites (statement paragraph with captioned figures, type wrapping a flat
+disc, product-first stage, display face beside an object, full-bleed art, sidebar index,
+poster type) and to generated artwork drawn from the palette (blueprint, isometric figures,
+terminal, Swiss composition, contours, halftone, orbit rings, stickers, sparklines, a single
+mark). Keep those defaults unless the brief asks for the familiar look by name. At least two of
+the directions come from styles marked `distinct`; the recommender enforces this.
 
 ### 5. Build and open the preview
 
@@ -223,7 +232,9 @@ into the graph.
 
 - Showing one direction. The value is the comparison; always three to five.
 - Directions that share a family or differ only in colour. Check the family, temperature,
-  type category and hero variant before building.
+  type category and hero archetype before building.
+- Overriding a style's layout defaults back to "centered" plus "columns" because it is safe.
+  That is the generated look the developer came here to avoid.
 - Lorem ipsum or generic copy. The draft must read like the product.
 - Starting to code before a selection exists, or picking for the developer.
 - Forgetting the wait: after opening the preview, stop and let them look.
@@ -236,6 +247,7 @@ into the graph.
 
 - `references/process.md`: the stage in detail, with the exact questions, message templates and edge cases.
 - `references/anti-patterns.md`: the tells list, the refusal rule and the pre-show checklist.
+- `references/archetypes.md`: the first-screen archetypes, section archetypes and generated artwork, with the sites they come from.
 - `references/color.md`: OKLCH palettes, roles, contrast policy, dark mode, brand overrides.
 - `references/typography.md`: pairing rules, scales, measures, loading, licences.
 - `references/motion.md`: levels, durations, easings, springs, view transitions, reduced motion.

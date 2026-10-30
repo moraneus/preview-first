@@ -1,6 +1,7 @@
 """Application draft: shell, data table, detail, empty state and settings form."""
 from __future__ import annotations
 
+from . import art
 from ._shared import E, brand, features, pick, section
 
 VARIANTS = {

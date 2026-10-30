@@ -17,12 +17,14 @@
   "node_kinds": {
     "style": {
       "required": ["family", "summary", "traits", "signals", "radius_scale", "shadow", "density"],
-      "optional": ["era", "performance_note", "accessibility_note", "layout_defaults", "tells_to_avoid", "best_page_types"],
+      "optional": ["era", "performance_note", "accessibility_note", "layout_defaults", "tells_to_avoid", "best_page_types", "art", "conventionality", "inspired_by"],
+      "art_kinds": ["ui_mock", "terminal", "blueprint", "isometric", "swiss", "contours", "halftone", "orbit", "stickers", "sparklines", "mark", "glass", "figure"],
       "enums": {
         "family": ["minimal", "editorial", "technical", "soft", "expressive", "dark", "bold"],
         "radius_scale": ["none", "sm", "md", "lg", "pill"],
         "shadow": ["none", "hairline", "soft", "layered", "hard"],
-        "density": ["airy", "regular", "compact"]
+        "density": ["airy", "regular", "compact"],
+        "conventionality": ["familiar", "distinct"]
       }
     },
     "palette": {

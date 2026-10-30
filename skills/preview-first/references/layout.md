@@ -174,3 +174,11 @@ Add a `layout` object to the direction with section names as keys and variant na
 - A page that only works at 1280. Check 360 and 1536 in the devices view before showing it.
 
 Sources: Vercel design guide on earned borders and no cards around sections (https://vercel.com/design.md); Apple Human Interface Guidelines on layout and 44pt targets (https://developer.apple.com/design/human-interface-guidelines/layout); WCAG 2.2 target size (https://www.w3.org/TR/WCAG22/); viewport units (https://web.dev/blog/viewport-units); container queries baseline (https://web.dev/baseline); device shares and viewports in `docs/research/2026-10-30-devices.md`.
+
+
+## Archetypes (0.2.0)
+
+Marketing heroes now default to the archetypes in `archetypes.md` (statement, mark, wrap,
+product-first, object, bleed, index, poster, editorial); features to figures, spec, index or
+bands; proof may be a statement; the call to action and footer may be giant. `centered` plus
+`columns` is never a default. Every style carries `art` and `conventionality`.

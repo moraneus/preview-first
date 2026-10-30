@@ -34,8 +34,8 @@ def _prepared(directions, idx, which=0, layout=None, page_type=None):
 
 def test_page_types_and_variants_declared():
     assert set(PAGE_TYPES) == {"marketing", "app", "content", "store"}
-    assert set(VARIANTS["marketing"]["hero"]) == {"split", "centered", "editorial", "product-shot", "poster"}
-    assert set(VARIANTS["marketing"]["features"]) == {"bento", "list", "alternating", "columns"}
+    assert {"split", "centered", "editorial", "product-first", "poster"} <= set(VARIANTS["marketing"]["hero"])
+    assert {"bento", "list", "alternating", "columns"} <= set(VARIANTS["marketing"]["features"])
     assert set(VARIANTS["app"]["shell"]) == {"sidebar", "topbar"}
     assert set(VARIANTS["store"]["grid"]) == {"two", "three", "four"}
 
@@ -106,3 +106,31 @@ def test_draft_css_and_js_handle_safe_areas():
     js = (ROOT / "skills/preview-first/assets/preview/preview.js").read_text(encoding="utf-8")
     assert "--pf-safe-top" in css and "env(safe-area-inset-top)" in css
     assert 'sa-top' in js and "--pf-safe-" in js
+
+
+# ---------------------------------------------------------------- non-generic archetypes
+
+def test_new_hero_archetypes_exist():
+    assert {"statement", "mark", "wrap", "product-first", "object", "bleed", "index"} <= set(VARIANTS["marketing"]["hero"])
+    assert {"figures", "spec", "index", "bands"} <= set(VARIANTS["marketing"]["features"])
+    assert "statement" in VARIANTS["marketing"]["proof"] and "giant" in VARIANTS["marketing"]["cta"] and "giant" in VARIANTS["marketing"]["footer"]
+
+
+def test_no_default_layout_is_the_generic_template(idx):
+    """No style may default to the centred hero plus bento/columns combination that reads as generated."""
+    generic_heroes = {"centered"}
+    for n in idx.values():
+        if n["kind"] == "style":
+            m = (n.get("layout_defaults") or {}).get("marketing", {})
+            assert m.get("hero") not in generic_heroes, n["id"]
+
+
+def test_drafts_render_art_not_wireframes(directions, idx):
+    html = render("marketing", _prepared(directions, idx, 0))
+    assert "<svg" in html and "pfd-art" in html
+    assert 'class="pfd-media ' not in html or html.count('class="pfd-media ') <= 1
+
+
+def test_statement_hero_has_two_tone_paragraph(directions, idx):
+    html = render("marketing", _prepared(directions, idx, 0, layout={"hero": "statement"}))
+    assert 'data-variant="statement"' in html and 'class="pfd-statement"' in html and "<em>" in html

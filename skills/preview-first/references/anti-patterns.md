@@ -8,6 +8,25 @@ Do not use a tell unless the brief asks for it by name. If it does, use it and n
 
 Style nodes in `knowledge/graph.json` carry `tells_to_avoid`; read them for the chosen style before authoring and check the draft against them before showing it.
 
+## The template itself
+
+The strongest tell is not a colour, it is the order of the page: navigation, centred headline
+with an eyebrow, two buttons, a product screenshot, three identical icon cards, a logo bar, a
+stats row, three testimonials, a call-to-action band, a sitemap footer. Readers recognise the
+sequence before they read a word.
+
+| Tell | Instead |
+|---|---|
+| Centred headline, subhead, two buttons, screenshot | One of the archetypes in `layout.md`: a two-tone statement paragraph with captioned figures, type wrapping a flat disc, a framed product stage with the real UI, a display face beside a single object, full-bleed artwork with small centred text, a sticky index column, poster type |
+| Three identical icon cards | Captioned figures with hairline column rules, a specification list, an index with large titles, alternating colour bands with artwork |
+| Grey boxes with an icon standing in for images | Generated artwork from `drafts/art.py` (blueprint, isometric, terminal, Swiss, contours, halftone, orbit, stickers, sparklines, mark, product window) in the direction's own palette, later replaced by real imagery of equal weight |
+| Logo bar, stats row, testimonials carousel by default | Only what the brief can source; a two-tone statement or a single attributed quote otherwise, or nothing |
+| Sitemap footer with four columns | A giant wordmark footer, or a single line with the real links |
+
+Every style's `layout_defaults` now point at an archetype, and `conventionality` marks the
+styles that still read as familiar SaaS; the recommender always includes at least two `distinct`
+styles in a set.
+
 ## Colour and effects
 
 | Tell | Instead |

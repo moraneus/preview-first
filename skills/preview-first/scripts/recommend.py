@@ -192,6 +192,9 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
 
     bundles: List[dict] = []
     families_used: set = set()
+    # At least two directions must come from styles marked "distinct" (not the familiar SaaS
+    # looks), so a set never reads as the generic template in different colours.
+    distinct_needed = 2 if count >= 3 else 1
     temp_count: Counter = Counter()
     cat_count: Counter = Counter()
     relax = 0  # 0 strict, 1 drop temperature rule, 2 drop category rule, 3 drop family rule
@@ -205,6 +208,10 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
                 continue
             style = g.idx[sid]
             if relax < 3 and style["family"] in families_used:
+                continue
+            distinct_have = sum(1 for b in bundles if g.idx[b["style"]].get("conventionality") == "distinct")
+            slots_left = count - len(bundles)
+            if relax < 3 and style.get("conventionality") != "distinct" and (distinct_needed - distinct_have) >= slots_left:
                 continue
             palettes = _candidates(g, sid, "palette.", moods, scheme)
             pairings = _candidates(g, sid, "type-pairing.", moods, None)

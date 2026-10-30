@@ -125,3 +125,10 @@ def test_palettes_and_pairings_unique_across_bundles(saas, g):
     b = recommend(saas, g, 5)
     assert len({x["palette"] for x in b}) == len(b)
     assert len({x["type_pairing"] for x in b}) == len(b)
+
+
+def test_at_least_two_distinct_directions(saas, g, idx):
+    b = recommend(saas, g, 4)
+    assert sum(idx[x["style"]].get("conventionality") == "distinct" for x in b) >= 2
+    b3 = recommend(saas, g, 3)
+    assert sum(idx[x["style"]].get("conventionality") == "distinct" for x in b3) >= 2

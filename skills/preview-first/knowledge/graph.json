@@ -1249,7 +1249,7 @@
       "layout_defaults": {
         "marketing": {
           "hero": "editorial",
-          "features": "list",
+          "features": "index",
           "proof": "quote",
           "cta": "inline",
           "footer": "columns"
@@ -1271,7 +1271,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "contours",
+        "feature": "figure"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://www.anthropic.com",
+        "https://granola.ai"
+      ]
     },
     {
       "id": "style.swiss-grid",
@@ -1297,10 +1306,10 @@
       "density": "regular",
       "layout_defaults": {
         "marketing": {
-          "hero": "poster",
-          "features": "columns",
-          "proof": "stats-sourced",
-          "cta": "band",
+          "hero": "wrap",
+          "features": "spec",
+          "proof": "statement",
+          "cta": "giant",
           "footer": "minimal"
         },
         "content": {
@@ -1319,7 +1328,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "swiss",
+        "feature": "mark"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://rauno.me",
+        "https://vercel.com"
+      ]
     },
     {
       "id": "style.mono-engineering",
@@ -1345,8 +1363,8 @@
       "density": "compact",
       "layout_defaults": {
         "marketing": {
-          "hero": "split",
-          "features": "list",
+          "hero": "statement",
+          "features": "figures",
           "proof": "logos-text",
           "cta": "inline",
           "footer": "columns"
@@ -1368,7 +1386,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "blueprint",
+        "feature": "figure"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://linear.app",
+        "https://vercel.com/design.md"
+      ]
     },
     {
       "id": "style.soft-product",
@@ -1394,8 +1421,8 @@
       "density": "regular",
       "layout_defaults": {
         "marketing": {
-          "hero": "centered",
-          "features": "bento",
+          "hero": "product-first",
+          "features": "bands",
           "proof": "quote",
           "cta": "band",
           "footer": "columns"
@@ -1418,7 +1445,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "ui_mock",
+        "feature": "figure"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://cal.com"
+      ]
     },
     {
       "id": "style.dark-console",
@@ -1444,11 +1479,11 @@
       "density": "compact",
       "layout_defaults": {
         "marketing": {
-          "hero": "product-shot",
-          "features": "list",
+          "hero": "object",
+          "features": "figures",
           "proof": "logos-text",
           "cta": "inline",
-          "footer": "minimal"
+          "footer": "giant"
         },
         "app": {
           "shell": "sidebar",
@@ -1467,7 +1502,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "terminal",
+        "feature": "figure"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://resend.com",
+        "https://warp.dev"
+      ]
     },
     {
       "id": "style.luminous-dark",
@@ -1493,10 +1537,10 @@
       "density": "regular",
       "layout_defaults": {
         "marketing": {
-          "hero": "centered",
-          "features": "bento",
+          "hero": "object",
+          "features": "bands",
           "proof": "stats-sourced",
-          "cta": "band",
+          "cta": "giant",
           "footer": "columns"
         }
       },
@@ -1511,7 +1555,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "orbit",
+        "feature": "glass"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://resend.com"
+      ]
     },
     {
       "id": "style.quiet-luxury",
@@ -1537,8 +1589,8 @@
       "density": "airy",
       "layout_defaults": {
         "marketing": {
-          "hero": "poster",
-          "features": "alternating",
+          "hero": "bleed",
+          "features": "index",
           "proof": "quote",
           "cta": "inline",
           "footer": "minimal"
@@ -1561,7 +1613,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "halftone",
+        "feature": "mark"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://www.aesop.com"
+      ]
     },
     {
       "id": "style.neo-brutalist",
@@ -1588,10 +1648,10 @@
       "layout_defaults": {
         "marketing": {
           "hero": "poster",
-          "features": "columns",
+          "features": "bands",
           "proof": "stats-sourced",
-          "cta": "band",
-          "footer": "columns"
+          "cta": "giant",
+          "footer": "giant"
         }
       },
       "best_page_types": [
@@ -1604,7 +1664,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "stickers",
+        "feature": "halftone"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://posthog.com",
+        "https://gumroad.com"
+      ]
     },
     {
       "id": "style.playful-geometric",
@@ -1630,8 +1699,8 @@
       "density": "regular",
       "layout_defaults": {
         "marketing": {
-          "hero": "split",
-          "features": "bento",
+          "hero": "mark",
+          "features": "bands",
           "proof": "quote",
           "cta": "band",
           "footer": "columns"
@@ -1647,7 +1716,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "swiss",
+        "feature": "mark"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://www.figma.com"
+      ]
     },
     {
       "id": "style.warm-organic",
@@ -1673,7 +1750,7 @@
       "density": "airy",
       "layout_defaults": {
         "marketing": {
-          "hero": "editorial",
+          "hero": "bleed",
           "features": "alternating",
           "proof": "quote",
           "cta": "inline",
@@ -1697,7 +1774,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "contours",
+        "feature": "contours"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://www.headspace.com"
+      ]
     },
     {
       "id": "style.glass-layered",
@@ -1723,8 +1808,8 @@
       "density": "regular",
       "layout_defaults": {
         "marketing": {
-          "hero": "centered",
-          "features": "bento",
+          "hero": "object",
+          "features": "bands",
           "proof": "logos-text",
           "cta": "band",
           "footer": "columns"
@@ -1746,7 +1831,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "glass",
+        "feature": "orbit"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://www.raycast.com"
+      ]
     },
     {
       "id": "style.bento-showcase",
@@ -1772,7 +1865,7 @@
       "density": "compact",
       "layout_defaults": {
         "marketing": {
-          "hero": "product-shot",
+          "hero": "product-first",
           "features": "bento",
           "proof": "stats-sourced",
           "cta": "inline",
@@ -1789,7 +1882,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "ui_mock",
+        "feature": "sparklines"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://linear.app/features"
+      ]
     },
     {
       "id": "style.poster-type",
@@ -1816,10 +1917,10 @@
       "layout_defaults": {
         "marketing": {
           "hero": "poster",
-          "features": "list",
-          "proof": "quote",
-          "cta": "band",
-          "footer": "minimal"
+          "features": "index",
+          "proof": "statement",
+          "cta": "giant",
+          "footer": "giant"
         },
         "content": {
           "header": "masthead",
@@ -1838,7 +1939,16 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "mark",
+        "feature": "halftone"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://lusion.co",
+        "https://basement.studio"
+      ]
     },
     {
       "id": "style.data-dense",
@@ -1870,7 +1980,7 @@
         },
         "marketing": {
           "hero": "split",
-          "features": "list",
+          "features": "spec",
           "proof": "stats-sourced",
           "cta": "inline",
           "footer": "columns"
@@ -1887,7 +1997,15 @@
       "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
-      "confidence": 0.85
+      "confidence": 0.85,
+      "art": {
+        "hero": "sparklines",
+        "feature": "sparklines"
+      },
+      "conventionality": "familiar",
+      "inspired_by": [
+        "https://www.metabase.com"
+      ]
     },
     {
       "id": "product-type.saas",
@@ -9569,6 +9687,111 @@
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
       "confidence": 0.7
+    },
+    {
+      "id": "style.studio-wrap",
+      "kind": "style",
+      "name": "Studio wrap",
+      "family": "expressive",
+      "summary": "A pale neutral canvas, one giant grotesque headline with alternating indents wrapping a single flat disc of saturated colour, square corners, almost no chrome; a designer's own site, not a product template.",
+      "traits": [
+        "giant grotesque at 72px plus",
+        "alternating line indents",
+        "one flat colour disc",
+        "pale grey canvas",
+        "square corners",
+        "inline links not buttons"
+      ],
+      "signals": [
+        "handmade",
+        "confident",
+        "witty",
+        "contemporary"
+      ],
+      "radius_scale": "none",
+      "shadow": "none",
+      "density": "airy",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "wrap",
+          "features": "index",
+          "proof": "statement",
+          "cta": "giant",
+          "footer": "giant"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "centered hero with two buttons",
+        "three cards"
+      ],
+      "art": {
+        "hero": "mark",
+        "feature": "figure"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://rauno.me",
+        "https://paco.me"
+      ],
+      "source": "docs/research/2026-10-30-layout-archetypes.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "style.lab-figures",
+      "kind": "style",
+      "name": "Lab figures",
+      "family": "technical",
+      "summary": "Near-black lab notebook: line-art isometric figures with mono captions (Fig 0.1), a two-tone statement paragraph instead of a headline and buttons, hairline column rules.",
+      "traits": [
+        "line-art figures",
+        "mono fig captions",
+        "two-tone statement paragraph",
+        "hairline column rules",
+        "no hero buttons",
+        "near-black neutral"
+      ],
+      "signals": [
+        "rigorous",
+        "curious",
+        "engineered",
+        "calm"
+      ],
+      "radius_scale": "sm",
+      "shadow": "none",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "statement",
+          "features": "figures",
+          "proof": "logos-text",
+          "cta": "inline",
+          "footer": "giant"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "purple glow",
+        "gradient text"
+      ],
+      "art": {
+        "hero": "isometric",
+        "feature": "figure"
+      },
+      "conventionality": "distinct",
+      "inspired_by": [
+        "https://linear.app"
+      ],
+      "source": "docs/research/2026-10-30-layout-archetypes.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
     }
   ],
   "edges": [
@@ -15499,6 +15722,657 @@
       "to": "type-pairing.cormorant-garamond-hanken-grotesk",
       "kind": "avoid_with",
       "weight": 0.75,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.button-fill-outline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.input-edge-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.card-edge-flat",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.underline-grow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.layout-flip",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "icon-set.radix",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.button-fill-soft",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.nav-compact",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.focus-ring-glow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.number-count-up",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "icon-set.lucide",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "palette.hazard-yellow",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "palette.paper-ink",
+      "kind": "pairs_with",
+      "weight": 0.8,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "palette.cobalt-paper",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "palette.sky-tomato",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "palette.carbon-signal",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "palette.graphite-amber",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "palette.harbor-grey",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "palette.terminal-green",
+      "kind": "pairs_with",
+      "weight": 0.65,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "palette.obsidian-copper",
+      "kind": "pairs_with",
+      "weight": 0.6,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "type-pairing.schibsted-grotesk-inter",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "type-pairing.host-grotesk-funnel-sans",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "type-pairing.archivo-black-archivo",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.studio-wrap",
+      "to": "type-pairing.geist-geist",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "type-pairing.geist-geist",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "type-pairing.inter-tight-inter",
+      "kind": "pairs_with",
+      "weight": 0.85,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "style.lab-figures",
+      "to": "type-pairing.ibm-plex-mono-ibm-plex-sans",
+      "kind": "pairs_with",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.event",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.studio-wrap",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": [
+        "reference-site.rauno"
+      ]
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.lab-figures",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.lab-figures",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.lab-figures",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.lab-figures",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.lab-figures",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": [
+        "reference-site.linear"
+      ]
+    },
+    {
+      "from": "mood.confident",
+      "to": "style.studio-wrap",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.studio-wrap",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.studio-wrap",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.modern",
+      "to": "style.studio-wrap",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.studio-wrap",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.lab-figures",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.lab-figures",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.lab-figures",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.lab-figures",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.lab-figures",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.cozy",
+      "to": "style.lab-figures",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.lab-figures",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.lab-figures",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.studio-wrap",
+      "kind": "avoid_with",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.elegant",
+      "to": "style.studio-wrap",
+      "kind": "avoid_with",
+      "weight": 0.7,
       "evidence": []
     }
   ]

@@ -4,7 +4,7 @@ import re
 from conftest import ROOT
 
 SKILL = ROOT / "skills/preview-first"
-REFS = ["process", "color", "typography", "motion", "components", "layout", "anti-patterns", "devices", "handoff", "platform"]
+REFS = ["process", "color", "typography", "motion", "components", "layout", "anti-patterns", "devices", "handoff", "platform", "archetypes"]
 
 
 def _skill_text():
