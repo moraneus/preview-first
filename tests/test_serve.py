@@ -84,7 +84,7 @@ def test_stale_server_json_detected(tmp_path):
 
 
 def test_stop_refuses_unrelated_pid(tmp_path, monkeypatch):
-    (tmp_path / "server.json").write_text(json.dumps({"pid": os.getpid(), "port": 1}))
+    (tmp_path / "server.json").write_text(json.dumps({"pid": os.getpid(), "port": 1}), encoding="utf-8")
     monkeypatch.setattr(serve_preview, "_cmdline", lambda pid: "python other.py")
     assert stop(tmp_path) is False
     assert not (tmp_path / "server.json").exists()
@@ -135,7 +135,7 @@ def test_ping_returns_token_and_alive_check(tmp_path):
         assert json.load(r)["token"] == "abc123"
         assert is_alive_server({"port": port, "token": "abc123", "dir": str(tmp_path.resolve())}) is True
         assert is_alive_server({"port": port, "token": "wrong", "dir": str(tmp_path.resolve())}) is False
-        (tmp_path / "server.json").write_text(json.dumps({"pid": 4242, "port": port, "token": "abc123", "dir": str(tmp_path.resolve())}))
+        (tmp_path / "server.json").write_text(json.dumps({"pid": 4242, "port": port, "token": "abc123", "dir": str(tmp_path.resolve())}), encoding="utf-8")
         assert is_stale(tmp_path) is False
         killed = []
         serve_preview.os.kill = lambda pid, sig: killed.append(pid)  # restored below

@@ -113,7 +113,7 @@ def test_cli(tmp_project, directions, tmp_path):
 def test_reexport_keeps_text_above_markers_and_unmarked_files(tmp_project, directions):
     _export(tmp_project, directions)
     md_path = tmp_project / "design" / "DESIGN.md"
-    md_path.write_text("Top note kept.\n\n" + md_path.read_text(encoding="utf-8"))
+    md_path.write_text("Top note kept.\n\n" + md_path.read_text(encoding="utf-8"), encoding="utf-8")
     _export(tmp_project, directions)
     assert md_path.read_text(encoding="utf-8").startswith("Top note kept.")
     # a hand-written file with no markers is preserved as free text

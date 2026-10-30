@@ -76,7 +76,7 @@ def test_to_direction_dark_look_picks_dark_style(graph):
 
 def test_cli_appends_to_directions(tmp_path):
     directions = tmp_path / "directions.json"
-    directions.write_text(json.dumps(json.load(open(FIXTURES / "directions_two.json", encoding="utf-8"))))
+    directions.write_text(json.dumps(json.load(open(FIXTURES / "directions_two.json", encoding="utf-8"))), encoding="utf-8")
     assert main(["--css", str(FIXTURES / "site.css"), "--into", str(directions), "--name", "Today"]) == 0
     out = json.load(open(directions, encoding="utf-8"))
     assert [d["id"] for d in out["directions"]] == ["A", "B", "C"] and out["directions"][2]["name"] == "Today"

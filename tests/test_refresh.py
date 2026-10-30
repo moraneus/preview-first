@@ -100,7 +100,7 @@ def test_is_stale_and_newest(tmp_path, monkeypatch):
     (bundled / "fonts.json").write_text(json.dumps({"fetched": "2020-01-01T00:00:00+00:00"}), encoding="utf-8")
     assert newest_live_dir(bundled, cache) == bundled
     assert is_stale(bundled, days=7) is True
-    (cache / "fonts.json").write_text(json.dumps({"fetched": time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime())}))
+    (cache / "fonts.json").write_text(json.dumps({"fetched": time.strftime("%Y-%m-%dT%H:%M:%S+00:00", time.gmtime())}), encoding="utf-8")
     assert newest_live_dir(bundled, cache) == cache
     assert is_stale(cache, days=7) is False
 
