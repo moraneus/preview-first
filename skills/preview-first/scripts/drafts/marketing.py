@@ -10,8 +10,8 @@ from . import art
 from ._shared import E, brand, buttons, features, footer, nav, pick, section
 
 VARIANTS = {
-    "hero": ["statement", "mark", "wrap", "product-first", "object", "bleed", "index", "split", "editorial", "poster", "centered"],
-    "features": ["figures", "spec", "index", "bands", "list", "alternating", "bento", "columns"],
+    "hero": ["statement", "mark", "wrap", "product-first", "object", "bleed", "index", "collage", "letter", "split", "editorial", "poster", "centered"],
+    "features": ["figures", "spec", "index", "bands", "ledger", "list", "alternating", "bento", "columns"],
     "proof": ["statement", "quote", "logos-text", "stats-sourced", "none"],
     "cta": ["giant", "band", "inline", "form"],
     "footer": ["giant", "columns", "minimal"],
@@ -21,6 +21,13 @@ VARIANTS = {
 def _art(p, slot: str, label: str = "") -> str:
     kind = (p.style.get("art") or {}).get(slot) or ("ui_mock" if slot == "hero" else "figure")
     return art.render(kind, seed="%s-%s" % (p.id, slot), label=label)
+
+
+def brief_line(p) -> str:
+    text = (p.brief.get("audience") or p.brief.get("product", "")).split(",")[0]
+    if len(text) <= 48:
+        return text
+    return text[:48].rsplit(" ", 1)[0]
 
 
 def _two_tone(headline: str, subhead: str) -> str:
@@ -66,6 +73,22 @@ def _hero(p, v: str) -> str:
         inner = ('<aside class="pfd-index-side"><span class="pf-wordmark">%s</span><p class="pf-small">%s</p><ol class="pfd-index-toc">%s</ol></aside>'
                  '<div class="pfd-index-main"><h1>%s</h1><p class="pf-lead">%s</p>%s%s</div>') % (
             E(name), E(c["subhead"]), toc, E(c["headline"]), E(features(p)[0]["body"]), buttons(p), _art(p, "hero"))
+    elif v == "collage":
+        feats = features(p)
+        kinds = ["figure", "mark", "contours", "halftone", "swiss", "figure"]
+        items = "".join('<div class="pfd-collage-item" style="--x:%d%%;--y:%d%%;--w:%dpx;--r:%ddeg">%s</div>' % (
+            x, y, w_, r_, art.render(kinds[i % len(kinds)], seed="%s-col%d" % (p.id, i)))
+            for i, (x, y, w_, r_) in enumerate([(4, 8, 180, -6), (72, 6, 220, 4), (82, 58, 160, -3), (10, 62, 200, 5), (46, 70, 150, -8)]))
+        inner = ('<div class="pfd-collage">%s<div class="pfd-collage-center"><span class="pfd-collage-word">%s</span><p class="pf-lead">%s</p>'
+                 '<a class="pf-link" href="#">%s</a></div></div>'
+                 '<div class="pfd-corner pfd-corner-bl">%s</div><div class="pfd-corner pfd-corner-br">%s</div>') % (
+            items, E(name), E(c["subhead"]), E(c["cta_primary"]), E(brief_line(p)), E("Local time 10:18"))
+    elif v == "letter":
+        feats = features(p)
+        paras = "".join("<p>%s %s</p>" % (E(f["title"]) + ".", E(f["body"])) for f in feats[:3])
+        inner = ('<article class="pfd-letter"><p class="pf-kicker">%s</p><h1>%s</h1><p class="pfd-letter-lead">%s</p>%s'
+                 '<p class="pfd-letter-sign">%s</p><a class="pf-link" href="#">%s</a></article>') % (
+            E("30 October 2026"), E(c["headline"]), E(c["subhead"]), paras, E("The %s team" % name), E(c["cta_primary"]))
     elif v == "split":
         inner = '<div class="pfd-hero-text">%s</div>%s' % (head, _art(p, "hero"))
     elif v == "editorial":
@@ -95,6 +118,12 @@ def _features(p, v: str) -> str:
     elif v == "bands":
         inner = "".join('<div class="pfd-band-row%s" id="f%d"><div><h3>%s</h3><p>%s</p></div>%s</div>' % (
             " is-accent" if i % 2 else "", i + 1, E(f["title"]), E(f["body"]), art.render((p.style.get("art") or {}).get("feature", "figure"), seed="%s-band%d" % (p.id, i))) for i, f in enumerate(feats[:3]))
+    elif v == "ledger":
+        rows = "".join('<a class="pfd-ledger-row" href="#f%d" id="f%d"><span class="pfd-ledger-title">%s</span><span class="pfd-ledger-thumbs">%s</span>'
+                       '<span class="pfd-ledger-count">(%d)</span><span class="pfd-ledger-year">2026</span></a>' % (
+            i + 1, i + 1, E(f["title"]), "".join(art.render("figure", seed="%s-led%d%d" % (p.id, i, j)) for j in range(1 + i % 3)), 3 + i * 4)
+            for i, f in enumerate(feats))
+        inner = '<div class="pfd-ledger"><h2>What you get <span class="pfd-ledger-count">(%d)</span></h2>%s</div>' % (len(feats), rows)
     elif v == "list":
         items = "".join('<li id="f%d"><h3>%s</h3><p>%s</p></li>' % (i + 1, E(f["title"]), E(f["body"])) for i, f in enumerate(feats))
         inner = '<div class="pfd-list-wrap"><h2>What you get</h2><ol class="pfd-list">%s</ol></div>' % items

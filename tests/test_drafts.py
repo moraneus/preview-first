@@ -134,3 +134,16 @@ def test_drafts_render_art_not_wireframes(directions, idx):
 def test_statement_hero_has_two_tone_paragraph(directions, idx):
     html = render("marketing", _prepared(directions, idx, 0, layout={"hero": "statement"}))
     assert 'data-variant="statement"' in html and 'class="pfd-statement"' in html and "<em>" in html
+
+
+def test_survey_archetypes_added():
+    assert {"collage", "letter"} <= set(VARIANTS["marketing"]["hero"])
+    assert "ledger" in VARIANTS["marketing"]["features"]
+
+
+def test_ledger_rows_and_collage_render(directions, idx):
+    html = render("marketing", _prepared(directions, idx, 0, layout={"hero": "collage", "features": "ledger"}))
+    assert 'data-variant="collage"' in html and html.count("pfd-collage-item") >= 4
+    assert 'data-variant="ledger"' in html and html.count("pfd-ledger-row") >= 3 and "pfd-ledger-count" in html
+    html = render("marketing", _prepared(directions, idx, 0, layout={"hero": "letter"}))
+    assert 'data-variant="letter"' in html and "pfd-letter" in html

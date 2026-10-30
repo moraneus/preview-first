@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1 (2026-10-30)
+
+- A 47-site layout survey with computed-style measurements (`docs/research/2026-10-30-layout-archetypes.md`) and its findings folded into `references/archetypes.md`.
+- Three more archetypes from the survey: collage hero, letter hero, ledger feature rows. Hairlines, mono labels and giant words now follow the measured values.
+
 ## 0.2.0 (2026-10-30)
 
 Non-generic by default.
