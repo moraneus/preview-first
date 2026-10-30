@@ -134,7 +134,7 @@ HOOK_OVERRIDES = {"transparent-floating-nav": "nav-bar", "underline-only-input":
                   "bracketed-figure-captions": "image-caption", "physical-material-ui": None, "hard-shadow-sticker": "image-sticker",
                   "sticker-filter-tabs": None, "build-version-stamp": "footer-colophon", "digit-roll-number-ticker": "motion-count-up",
                   "testimonial-flip-swap-hero": None, "bracketed-eyebrow-labels": "type-index-numbers", "hover-image-swap": "motion-hover-swap",
-                  "studio-locator-tabs": None, "dashboard-card-with-real-numbers": None, "hover-image-swap-card": "motion-hover-swap"}
+                  "studio-locator-tabs": None, "dashboard-card-with-real-numbers": None, "hover-image-swap-card": "motion-hover-swap", "tabular-numerals-for-data": "type-tabular"}
 
 
 def classify_hook(idea, hooks):

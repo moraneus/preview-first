@@ -105,7 +105,7 @@ as `ai_tell_risk: high` ideas with notes, and in `references/anti-patterns.md`.
 
 - `idea` nodes with render hooks, edges and sources; the recommender attaches eight to twelve
   per direction with coverage rules and no shared nav, hero or texture device across a set.
-- Fifty-five hooks implemented in the draft engine, with CSS and plain JavaScript, across all
+- Sixty-five hooks implemented in the draft engine, with CSS and plain JavaScript, across all
   four page types.
 - Ten new styles built from the findings (acid lab, paper and signal, archive index, raw
   document, night grain, phosphor terminal, cobalt block, giant serif, signal orange, clay
@@ -118,4 +118,4 @@ as `ai_tell_risk: high` ideas with notes, and in `references/anti-patterns.md`.
   line figures.
 - Default copy that no longer repeats the subhead, and heroes that refuse to invent numbers.
 
-Counts after the merge are in the README's graph table and in `CHANGELOG.md` under 0.3.0.
+Counts after the merge: 500 ideas (120 with a render hook), 235 reference sites, 1001 nodes and 4,000 edges in the graph; also in the README's graph table and in `CHANGELOG.md` under 0.3.0.

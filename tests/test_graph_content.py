@@ -162,3 +162,29 @@ def test_reference_sites_and_evidence(graph, by):
 def test_every_product_type_has_a_reference_site(by):
     covered = {r["product_type"] for r in by["reference-site"]}
     assert {p["id"] for p in by["product-type"]} - {"product-type.general-website"} <= covered
+
+
+# ---------------------------------------------------------------- 0.3.0: design ideas
+
+def test_ideas_count_and_shape(graph, by, schema):
+    ideas = by["idea"]
+    assert len(ideas) >= 250, len(ideas)
+    hooks = set(schema["node_kinds"]["idea"]["render_hooks"])
+    with_hook = [i for i in ideas if i.get("renders")]
+    assert len(with_hook) >= 100
+    assert {i["renders"] for i in with_hook} == hooks, "every render hook has at least one idea"
+    for i in ideas:
+        assert i["seen_on"] and all(u.startswith("http") for u in i["seen_on"]), i["id"]
+        assert i["what"] and i["implementation"], i["id"]
+    styles = {s["id"] for s in by["style"]}
+    for s in by["style"]:
+        assert len(s.get("ideas") or []) >= 4, s["id"]
+        assert all(any(n["id"] == i for n in ideas) for i in s["ideas"]), s["id"]
+    linked = {e["from"] for e in graph["edges"] if e["kind"] == "pairs_with" and e["to"] in styles and e["from"].startswith("idea.")}
+    assert len(linked) >= 200
+
+
+def test_high_risk_ideas_are_marked_and_explained(by):
+    high = [i for i in by["idea"] if i.get("ai_tell_risk") == "high"]
+    assert len(high) >= 15
+    assert all(i.get("ai_tell_note") for i in high)

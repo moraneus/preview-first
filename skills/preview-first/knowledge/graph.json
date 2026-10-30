@@ -31589,6 +31589,2692 @@
    "added": "2026-10-30",
    "last_verified": "2026-10-30",
    "confidence": 0.8
+  },
+  {
+   "id": "reference-site.figma",
+   "kind": "reference-site",
+   "name": "Figma",
+   "url": "https://www.figma.com",
+   "product_type": "product-type.saas",
+   "observed": {
+    "style": "style.soft-product",
+    "traits": [
+     "86px display at weight 340",
+     "eyebrow 18px +0.54px tracking",
+     "seven decorative colour blocks incl. navy",
+     "magenta #ff3d8b promo only",
+     "mono eyebrows and captions"
+    ],
+    "fonts": [
+     "Figma Sans",
+     "Figma Mono"
+    ],
+    "colours": [
+     "#ffffff",
+     "#f7f7f5",
+     "#000000",
+     "#e6e6e6",
+     "#dceeb1",
+     "#c5b0f4",
+     "#1f1d3d"
+    ],
+    "distinctness": 4,
+    "confirmed": false,
+    "year": 2025
+   },
+   "notes": "86px display at weight 340; eyebrow 18px +0.54px tracking; seven decorative colour blocks incl. navy; magenta #ff3d8b promo only; mono eyebrows and captions",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "reference-site.lovable",
+   "kind": "reference-site",
+   "name": "Lovable",
+   "url": "https://lovable.dev",
+   "product_type": "product-type.developer-tool",
+   "observed": {
+    "style": "style.mono-engineering",
+    "traits": [
+     "warm brown-black dark #2b2622",
+     "seven colours total, 3 to 4px radii",
+     "ink at .83 .82 .40 .04 alpha ramps",
+     "DM Mono terminals, Instrument Serif rare italics"
+    ],
+    "fonts": [
+     "Inter",
+     "DM Mono",
+     "Instrument Serif"
+    ],
+    "colours": [
+     "#2b2622",
+     "#383330",
+     "#3f3a36",
+     "#f7f5f0",
+     "#c9c0ad",
+     "#aea69c"
+    ],
+    "distinctness": 4,
+    "confirmed": false,
+    "year": 2025
+   },
+   "notes": "warm brown-black dark #2b2622; seven colours total, 3 to 4px radii; ink at .83 .82 .40 .04 alpha ramps; DM Mono terminals, Instrument Serif rare italics",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "reference-site.github",
+   "kind": "reference-site",
+   "name": "GitHub",
+   "url": "https://github.com",
+   "product_type": "product-type.developer-tool",
+   "observed": {
+    "style": "style.mono-engineering",
+    "traits": [
+     "Mona Sans at weights 425 460 480",
+     "dark #0d1117 with #000 hero bands",
+     "link blue #8dd6ff lifted for dark",
+     "Copilot gradient as one scene",
+     "green #5fed83 glow only"
+    ],
+    "fonts": [
+     "Mona Sans"
+    ],
+    "colours": [
+     "#0d1117",
+     "#000000",
+     "#151a22",
+     "#ffffff",
+     "#9198a1",
+     "#8dd6ff",
+     "#5fed83"
+    ],
+    "distinctness": 4,
+    "confirmed": false,
+    "year": 2025
+   },
+   "notes": "Mona Sans at weights 425 460 480; dark #0d1117 with #000 hero bands; link blue #8dd6ff lifted for dark; Copilot gradient as one scene; green #5fed83 glow only",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "reference-site.medium",
+   "kind": "reference-site",
+   "name": "Medium",
+   "url": "https://medium.com",
+   "product_type": "product-type.editorial",
+   "observed": {
+    "style": "style.paper-editorial",
+    "traits": [
+     "cream #f7f4ed canvas",
+     "120px GT Super at line-height 0.83",
+     "all weights 400",
+     "zero radius except pill CTA",
+     "one green illustration as the only colour"
+    ],
+    "fonts": [
+     "GT Super",
+     "Söhne"
+    ],
+    "colours": [
+     "#f7f4ed",
+     "#ffffff",
+     "#242424",
+     "#191919",
+     "#6b6b6b"
+    ],
+    "distinctness": 4,
+    "confirmed": false,
+    "year": 2025
+   },
+   "notes": "cream #f7f4ed canvas; 120px GT Super at line-height 0.83; all weights 400; zero radius except pill CTA; one green illustration as the only colour",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "reference-site.zed",
+   "kind": "reference-site",
+   "name": "Zed",
+   "url": "https://zed.dev",
+   "product_type": "product-type.developer-tool",
+   "observed": {
+    "style": "style.mono-engineering",
+    "traits": [
+     "warm paper #f5f5f3 with #eeede9 #e7e6e1 steps",
+     "IBM Plex Serif display 72px at weight 340",
+     "iA Writer body and mono",
+     "cobalt #004edb single accent",
+     "4px CTA radius, warm hairline #e2e2de"
+    ],
+    "fonts": [
+     "IBM Plex Serif",
+     "iA Writer Quattro",
+     "iA Writer Mono"
+    ],
+    "colours": [
+     "#f5f5f3",
+     "#eeede9",
+     "#16181d",
+     "#393d45",
+     "#e2e2de",
+     "#004edb",
+     "#1a1b1e"
+    ],
+    "distinctness": 5,
+    "confirmed": false,
+    "year": 2025
+   },
+   "notes": "warm paper #f5f5f3 with #eeede9 #e7e6e1 steps; IBM Plex Serif display 72px at weight 340; iA Writer body and mono; cobalt #004edb single accent; 4px CTA radius, warm hairline #e2e2de",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "reference-site.uncut",
+   "kind": "reference-site",
+   "name": "UNCUT.wtf",
+   "url": "https://uncut.wtf",
+   "product_type": "product-type.agency",
+   "observed": {
+    "style": "style.studio-wrap",
+    "traits": [
+     "grey canvas",
+     "Uncut Sans for everything, unicase ink-trap logo",
+     "strong size contrast",
+     "grid or list toggle",
+     "red animated hearts on credits"
+    ],
+    "fonts": [
+     "Uncut Sans"
+    ],
+    "colours": [],
+    "distinctness": 4,
+    "confirmed": false,
+    "year": 2024
+   },
+   "notes": "grey canvas; Uncut Sans for everything, unicase ink-trap logo; strong size contrast; grid or list toggle; red animated hearts on credits",
+   "seen": "2026-10-30",
+   "source": "research sweep 2026-10-30 (sites-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
+  },
+  {
+   "id": "idea.narrow-oldstyle-display-serif-at-96px",
+   "kind": "idea",
+   "name": "Narrow old-style serif, display only",
+   "category": "typography",
+   "what": "A condensed old-style display serif (Instrument Serif is the free one; Gloock or Libre Caslon Display are alternatives) set only at 72 to 120px, weight 400, line-height 0.95 to 1.0, letter-spacing -0.01em to -0.02em, never below 40px and never as body. Body stays in a plain grotesk at 16 to 18px so the serif is a headline voice, not a theme.",
+   "why": "The narrow proportions give large headlines the density of a magazine masthead while the plain body keeps the page quiet.",
+   "implementation": "h1{font-family:'Instrument Serif',serif;font-size:clamp(3rem,9vw,7.5rem);line-height:.95;letter-spacing:-.015em;text-wrap:balance;text-box-trim:trim-both;text-box-edge:cap alphabetic}",
+   "pitfalls": "Dropping it into an otherwise Inter page as a single italic word is now the most recognised generated-site cliche.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Instrument Serif itself is on the 2026 list of fonts that flag vibe-coded sites; it only reads handmade when it carries the whole headline system at true display sizes with a non-default body face.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Instrument+Serif",
+    "https://fonts.google.com/specimen/Instrument+Serif"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Instrument+Serif",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/instrumentserif/METADATA.pb"
+   ],
+   "suits_words": [
+    "editorial",
+    "studio",
+    "restaurant",
+    "portfolio",
+    "culture"
+   ],
+   "pairs_words": [
+    "mono-uppercase-label-voice",
+    "warm-paper-canvas-not-white"
+   ],
+   "avoid_words": [
+    "serif-italic-accent-word-in-sans-hero",
+    "gradient-restricted-to-one-stripe"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.bricolage-opsz-width-axis-headlines",
+   "kind": "idea",
+   "name": "Bricolage Grotesque optical-size headlines",
+   "category": "typography",
+   "what": "Bricolage Grotesque (Google Fonts, 2023) carries three axes: opsz 12 to 96, wdth 75 to 100, wght 200 to 800. Headlines use opsz 96, wdth 75 to 85 and wght 700 to 800 so the exaggerated ink traps and nervous Grotesque No. 9 character show; body uses opsz 12 at wght 400 where the same family turns neutral. One family, two personalities, zero extra font files.",
+   "why": "The optical-size axis gives you an expressive display cut and a calm text cut from one variable file, which no default stack does.",
+   "implementation": "h1{font-family:'Bricolage Grotesque';font-variation-settings:'opsz' 96,'wdth' 80;font-weight:800} body{font-optical-sizing:auto}",
+   "pitfalls": "Leaving font-optical-sizing on auto at 18px body gives the neutral cut, but setting opsz 96 at body sizes makes text look clumsy.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Appears mostly on independent culture and exhibition sites; generators rarely touch the width or opsz axes.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Bricolage+Grotesque",
+    "https://fonts.google.com/specimen/Bricolage+Grotesque"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Bricolage+Grotesque",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/bricolagegrotesque/METADATA.pb"
+   ],
+   "suits_words": [
+    "culture",
+    "studio",
+    "food",
+    "nonprofit",
+    "playful"
+   ],
+   "pairs_words": [
+    "variable-weight-off-the-hundreds",
+    "mono-uppercase-label-voice"
+   ],
+   "avoid_words": [
+    "ultralight-display-weights",
+    "inter-for-everything"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.fraunces-soft-wonk-dial",
+   "kind": "idea",
+   "name": "Fraunces SOFT and WONK axes",
+   "category": "typography",
+   "what": "Fraunces (Google Fonts) exposes SOFT 0 to 100 (ink-spread, Cooper-like) and WONK 0 or 1 (leaning n, m, h and flagged terminals) alongside opsz 9 to 144 and wght 100 to 900. Display at opsz 144, SOFT 80 to 100, WONK 1, wght 500 to 700; body at opsz 9 to 14, SOFT 0, WONK 0. The wonky alternates are what make a headline look drawn rather than typeset.",
+   "why": "Turning on alternates only at display size produces a handmade signature without a second typeface.",
+   "implementation": "h1{font-family:Fraunces;font-variation-settings:'opsz' 144,'SOFT' 90,'WONK' 1;font-weight:600;line-height:1}",
+   "pitfalls": "Fraunces is on the 2026 vibe-coded font list; using it at default settings (SOFT 0, WONK 0) in a centred hero is exactly the generated look.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Default Fraunces is a tell; axis-driven Fraunces with WONK on and large opsz is not, because generators do not set font-variation-settings.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Fraunces",
+    "https://fonts.google.com/specimen/Fraunces"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Fraunces",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/fraunces/METADATA.pb"
+   ],
+   "suits_words": [
+    "food",
+    "craft",
+    "children",
+    "wellness",
+    "publishing"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "yellow-highlighter-annotation"
+   ],
+   "avoid_words": [
+    "neutral-dark-surface-ladder",
+    "two-monos-code-vs-labels"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2021
+  },
+  {
+   "id": "idea.mono-uppercase-label-voice",
+   "kind": "idea",
+   "name": "Mono as the label voice",
+   "category": "typography",
+   "what": "All eyebrows, captions, nav items, table headers and metadata set in a monospace at 11 to 13px, uppercase, letter-spacing 0.06 to 0.1em, in the muted text colour; headlines and body stay proportional. Seen as Diatype Mono (Speakeasy), DM Mono (Dirty Vine), Geist Mono at 12 to 13px (Vercel), Anthropic Mono eyebrows, LatteraMonoLL at 11px (Nothing). Free equivalents: DM Mono, Geist Mono, JetBrains Mono, Fragment Mono, Commit Mono.",
+   "why": "A second voice for system text makes hierarchy legible without extra sizes or colours.",
+   "implementation": ".eyebrow{font:500 12px/1.3 'DM Mono',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-muted)}",
+   "pitfalls": "Krebs counts all-caps section labels on 10.5% of Show HN sites; it only works when mono labels are small, few, and the headline is clearly a different face.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Uppercase mono eyebrows are now common on generated dark pages; the handmade version keeps them to one per section at 11 to 12px with real tabular data nearby.",
+   "seen_on": [
+    "https://www.typewolf.com/",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/anthropic"
+   ],
+   "opened": [
+    "https://www.typewolf.com/",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/anthropic"
+   ],
+   "suits_words": [
+    "developer tools",
+    "hardware",
+    "editorial",
+    "studio"
+   ],
+   "pairs_words": [
+    "eyebrow-positive-tracking-vs-headline-negative",
+    "ink-is-the-brand"
+   ],
+   "avoid_words": [
+    "all-caps-everywhere"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2022
+  },
+  {
+   "id": "idea.ultralight-display-weights",
+   "kind": "idea",
+   "name": "Ultralight display weights 100 to 340",
+   "category": "typography",
+   "what": "Headlines set at weights well below 400: Figma 86px at weight 340, ElevenLabs Waldenburg 300, Stripe Sohne 300, Teenage Engineering 100 to 300, Nothing NType82 at 100, Mercury 480 display over 360 body. Free faces that hold up thin: Hanken Grotesk (100), Geist (100), Mona Sans (200), Sofia Sans (1 to 1000), Archivo (100), Epilogue (100). Pair with slightly positive tracking (+0.2 to +0.5px) because thin strokes read tighter.",
+   "why": "Thin large type reads as considered and expensive because it demands a quiet layout and a high-resolution screen.",
+   "implementation": "h1{font-family:'Hanken Grotesk';font-weight:200;font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:.005em;line-height:1.05}",
+   "pitfalls": "Below 300 on a 16px body fails contrast and shimmers on low-DPI screens; keep ultralight to 40px and above.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated pages default to 600 to 700 semibold headlines; weight 300 and below is a deliberate choice.",
+   "seen_on": [
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/elevenlabs",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/nothing"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/elevenlabs",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/nothing"
+   ],
+   "suits_words": [
+    "hardware",
+    "luxury",
+    "audio",
+    "fintech",
+    "architecture"
+   ],
+   "pairs_words": [
+    "ink-is-the-brand",
+    "three-size-type-scale"
+   ],
+   "avoid_words": [
+    "condensed-poster-gothic-hero",
+    "bricolage-opsz-width-axis-headlines"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.tracking-scaled-to-size",
+   "kind": "idea",
+   "name": "Tracking scaled to size",
+   "category": "typography",
+   "what": "Letter-spacing tightens as a percentage of size rather than a fixed value: Linear 80px/-3px (-3.75%), 56px/-1.8px, 28px/-0.6px, 16px/-0.05px; Framer 110px/-5.5px (-5%); Vercel 48px/-2.4px to 20px/-0.6px; Supabase 64px/-1.92px (-3%); Cursor 72px/-2.16px. Rule of thumb: -0.05em at 96px, -0.03em at 48px, -0.01em at 24px, 0 at 16px, +0.02 to +0.06em below 13px.",
+   "why": "Optical spacing changes with size, and a single tracking value makes either the hero loose or the captions cramped.",
+   "implementation": "Define per step: --t-96:-.05em;--t-48:-.03em;--t-24:-.01em;--t-16:0;--t-12:.06em and apply with the size token",
+   "pitfalls": "Applying -0.05em to a geometric sans with already tight sidebearings makes r-n pairs collide; test with 'rn' and 'cl'.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generators apply tracking-tight uniformly; a proportional ladder is invisible but reads as polished.",
+   "seen_on": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/supabase"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/supabase"
+   ],
+   "suits_words": [
+    "developer tools",
+    "saas",
+    "any"
+   ],
+   "pairs_words": [
+    "display-leading-at-or-below-one",
+    "eyebrow-positive-tracking-vs-headline-negative"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.display-leading-at-or-below-one",
+   "kind": "idea",
+   "name": "Display leading at or below 1.0",
+   "category": "typography",
+   "what": "Headline line-height between 0.83 and 1.05 while body stays at 1.5 to 1.6: Medium 120px at 0.83, Figma 86px at 1.0, Resend 96px at 1.0, Granola 68px/68px, Linear 1.05, Mercury 96px at 1.0. Combine with text-box-trim so the cap height sits flush to the container edge and the gap above the first line disappears.",
+   "why": "Tight stacks turn a two-line headline into one solid shape that anchors the hero without a background box.",
+   "implementation": "h1{line-height:.92;text-box-trim:trim-both;text-box-edge:cap alphabetic;margin-block-end:.5em}",
+   "pitfalls": "Below 0.9 descenders of line one touch ascenders of line two; only works with mostly-lowercase or all-caps headlines.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Default framework headings sit at 1.1 to 1.2; 0.9 is a visible authorial decision.",
+   "seen_on": [
+    "https://www.shadcn.io/design/medium",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/granola"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/medium",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/granola"
+   ],
+   "suits_words": [
+    "editorial",
+    "studio",
+    "saas",
+    "publishing"
+   ],
+   "pairs_words": [
+    "tracking-scaled-to-size",
+    "narrow-oldstyle-display-serif-at-96px"
+   ],
+   "avoid_words": [
+    "ultralight-display-weights"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.serif-display-sans-ui-two-voice",
+   "kind": "idea",
+   "name": "Serif display, sans UI, mono code",
+   "category": "typography",
+   "what": "Three roles, three faces: a text serif at display size (IBM Plex Serif 72px weight 340 at Zed; IBM Plex Serif 54px at Railway; Quadrant at Granola; Waldenburg 300 at ElevenLabs; Anthropic Serif at 88 to 90px), a humanist sans for UI and body (Inter, iA Writer, Melange), and a mono for code or labels. Free trio: Newsreader or Literata or Source Serif 4 at opsz 72 for display, Hanken Grotesk or Switzer or General Sans for UI, JetBrains Mono or Geist Mono for code.",
+   "why": "Each role gets a voice built for it, so hierarchy survives even when sizes are close.",
+   "implementation": "--font-display:'Newsreader',serif;--font-ui:'Hanken Grotesk',sans-serif;--font-code:'JetBrains Mono',monospace; h1{font-family:var(--font-display);font-weight:400;font-optical-sizing:auto}",
+   "pitfalls": "Picking a display-only serif (Playfair, Instrument Serif) for the serif role makes 24px subheads spindly; use a text serif with an opsz axis.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "The generated version is 'Inter plus one serif italic word'; the handmade version uses a text serif as a full headline system at weights 300 to 400.",
+   "seen_on": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/railway",
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/elevenlabs"
+   ],
+   "opened": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/railway",
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/elevenlabs"
+   ],
+   "suits_words": [
+    "developer tools",
+    "AI products",
+    "note apps",
+    "research"
+   ],
+   "pairs_words": [
+    "optical-size-axis-body-vs-display",
+    "warm-paper-canvas-not-white",
+    "two-monos-code-vs-labels"
+   ],
+   "avoid_words": [
+    "serif-italic-accent-word-in-sans-hero"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.variable-weight-off-the-hundreds",
+   "kind": "idea",
+   "name": "Variable weights off the hundreds",
+   "category": "typography",
+   "what": "Weights chosen between the standard stops using a variable font: GitHub Mona Sans at 425 (hero), 460 and 480 (h2, cards); Mercury 480 display, 360 body, 420 UI; Figma 340, 330, 320, 540; Zed 340 serif display; Shopify 330 display, 420 and 550 body. A 20 to 60 unit offset from 400 or 500 changes texture without reading as bold.",
+   "why": "Odd weights give a custom-cut feel because nobody ships a static 425 file.",
+   "implementation": "@font-face{font-family:'Mona Sans';src:url(MonaSans[wdth,wght].woff2) format('woff2-variations');font-weight:200 900} h1{font-weight:425}",
+   "pitfalls": "Requires the variable file; a static fallback snaps to 400 and the body suddenly looks heavier on the fallback.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated CSS uses font-semibold and font-bold; a weight of 460 is a hand-set value.",
+   "seen_on": [
+    "https://www.shadcn.io/design/github",
+    "https://www.shadcn.io/design/mercury",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/shopify"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/github",
+    "https://www.shadcn.io/design/mercury",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/shopify"
+   ],
+   "suits_words": [
+    "developer tools",
+    "fintech",
+    "design tools",
+    "any"
+   ],
+   "pairs_words": [
+    "ultralight-display-weights",
+    "stylistic-sets-to-de-default"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.optical-size-axis-body-vs-display",
+   "kind": "idea",
+   "name": "Optical size axis, body vs display",
+   "category": "typography",
+   "what": "Choose faces with an opsz axis and let it work: Newsreader 6 to 72, Literata 7 to 72, Source Serif 4 8 to 60, Fraunces 9 to 144, Bodoni Moda 6 to 96, Imbue 10 to 100, Merriweather (2024 variable rebuild) 18 to 144, Big Shoulders (2025 rebuild) 10 to 72, DM Sans 9 to 40, Roboto Flex 8 to 144, Google Sans Flex 1 to 144. At 14px the strokes thicken and spacing opens; at 96px contrast sharpens. Set font-optical-sizing:auto and size in px or rem so the browser maps correctly.",
+   "why": "Text sizes get the sturdiness they need and headlines get the finesse, exactly as metal type did.",
+   "implementation": "@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&display=swap'); html{font-optical-sizing:auto}",
+   "pitfalls": "Loading only a static 'Display' cut and using it at 16px is the common failure; the Google Fonts CSS API needs the opsz range requested.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Invisible as a feature but it is why handmade editorial sites look crisp at every size.",
+   "seen_on": [
+    "https://fonts.google.com/specimen/Newsreader",
+    "https://fonts.google.com/specimen/Literata",
+    "https://fonts.google.com/specimen/Big+Shoulders"
+   ],
+   "opened": [
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/literata/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulders/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/merriweather/METADATA.pb"
+   ],
+   "suits_words": [
+    "publishing",
+    "editorial",
+    "long-form docs",
+    "research"
+   ],
+   "pairs_words": [
+    "serif-display-sans-ui-two-voice",
+    "reading-size-serif-body"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.width-axis-compressed-headlines",
+   "kind": "idea",
+   "name": "Width axis for compressed headlines",
+   "category": "typography",
+   "what": "Use the wdth axis instead of a separate condensed family: Mona Sans and Hubot Sans 75 to 125, Archivo 62 to 125, Anybody 50 to 150, Mozilla Headline (2025) 75 to 125, League Gothic 75 to 100, Instrument Sans 75 to 100, Martian Mono 75 to 112.5, Roboto Flex 25 to 151. Headlines at wdth 75 to 85 and wght 700 to 800; body at wdth 100. Hubot Sans at wdth 75 reads as a tech poster face.",
+   "why": "Compressed headlines fit more words per line at larger sizes, so heroes can be set in two lines at 9vw.",
+   "implementation": "h1{font-family:'Hubot Sans';font-stretch:78%;font-weight:750;line-height:.9;text-transform:uppercase}",
+   "pitfalls": "Animating wdth on hover reflows the whole line; only animate on elements with a fixed width.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "font-stretch is almost never emitted by generators.",
+   "seen_on": [
+    "https://fonts.google.com/specimen/Hubot+Sans",
+    "https://fonts.google.com/specimen/Archivo",
+    "https://fonts.google.com/specimen/Mozilla+Headline"
+   ],
+   "opened": [
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/hubotsans/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/mozillaheadline/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/anybody/METADATA.pb"
+   ],
+   "suits_words": [
+    "developer tools",
+    "sport",
+    "events",
+    "hardware",
+    "news"
+   ],
+   "pairs_words": [
+    "condensed-poster-gothic-hero",
+    "display-leading-at-or-below-one"
+   ],
+   "avoid_words": [
+    "ultralight-display-weights"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.stylistic-sets-to-de-default",
+   "kind": "idea",
+   "name": "Stylistic sets to de-default a sans",
+   "category": "typography",
+   "what": "Turn on OpenType alternates so a familiar family stops looking stock: Vercel sets Inter ss01 and ss02; Raycast sets calt, kern, liga, ss03 site-wide and ss02 plus ss08 at display with liga off; Framer uses cv01, cv05, cv09, cv11, ss03, ss07; Stripe sets ss01 on body; Mercury ss03 on every family. Instrument Sans ships 12 stylistic sets; Kode Mono ss01 swaps D, Q, 8. On Geist or Hanken Grotesk the single-storey a and open 6/9 change the whole texture.",
+   "why": "Alternates alter the most frequent letters, so the same font reads as a custom cut.",
+   "implementation": "body{font-feature-settings:'ss01','ss03','cv11'} h1{font-feature-settings:'ss02','ss08','liga' 0}",
+   "pitfalls": "Inter with ss01 is still Inter; the trick only breaks the tell when applied to a less-seen family.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "font-feature-settings is rarely in generated CSS, and the alternate glyph shapes are what people subconsciously notice.",
+   "seen_on": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/stripe"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/stripe"
+   ],
+   "suits_words": [
+    "developer tools",
+    "saas",
+    "any"
+   ],
+   "pairs_words": [
+    "variable-weight-off-the-hundreds",
+    "tabular-numerals-for-data"
+   ],
+   "avoid_words": [
+    "inter-for-everything"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.tabular-numerals-for-data",
+   "kind": "idea",
+   "name": "Tabular numerals and slashed zero",
+   "category": "typography",
+   "what": "Numbers in pricing, tables, timers and stats set with font-variant-numeric: tabular-nums (Stripe applies tnum to money and numeric cells; Clerk ships a 'geistNumbers' cut; Linear uses Linear Mono for figures). Pair with slashed-zero and a mono or a sans with true tabular figures (Geist, Martian Mono, JetBrains Mono, IBM Plex Mono, Source Serif 4 has tnum too). Prices at 48 to 64px in tnum with the currency symbol at 60% size, superscript-aligned.",
+   "why": "Columns of figures align and animate without jitter, which is what makes a dashboard or pricing table feel engineered.",
+   "implementation": ".num{font-variant-numeric:tabular-nums slashed-zero;font-feature-settings:'tnum','zero'} .price sup{font-size:.6em;vertical-align:.5em}",
+   "pitfalls": "Not every free font has tabular figures (Instrument Serif does not); check the tnum feature before relying on it.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Stat banners are a Krebs tell (12.2%), but aligned tabular figures in a real table are the opposite signal.",
+   "seen_on": [
+    "https://www.shadcn.io/design/stripe",
+    "https://www.shadcn.io/design/clerk",
+    "https://www.shadcn.io/design/linear"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/stripe",
+    "https://www.shadcn.io/design/clerk",
+    "https://www.shadcn.io/design/linear"
+   ],
+   "suits_words": [
+    "fintech",
+    "developer tools",
+    "analytics",
+    "commerce"
+   ],
+   "pairs_words": [
+    "mono-uppercase-label-voice",
+    "two-monos-code-vs-labels"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2023,
+   "renders": "type-tabular"
+  },
+  {
+   "id": "idea.pixel-dot-matrix-product-voice",
+   "kind": "idea",
+   "name": "Pixel and dot-matrix type as product voice",
+   "category": "typography",
+   "what": "A dot or pixel face used for one role only, usually product names or counters: Nothing sets product names in Ndot at 20 to 40px uppercase while body is a proportional sans; Apagao (2025) uses Doto with a mono. Free variable options: Doto (ROND 0 to 100, wght 100 to 900), Tiny5 (BLED, JITT, ROND, wdth 50 to 200), Workbench and Sixtyfour (BLED and SCAN axes), Handjet (23 element shapes), Bitcount (2025, CRSV, ELSH, ELXP, slnt), Silkscreen, Jersey 10, Micro 5, Departure Mono.",
+   "why": "One dotted word on an otherwise clean page gives a hardware or terminal personality without a theme.",
+   "implementation": ".product-name{font-family:Doto;font-variation-settings:'ROND' 60;font-weight:700;text-transform:uppercase;letter-spacing:.04em}",
+   "pitfalls": "Pixel type for body or more than one role turns into a retro-game theme.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Rare in generated output; the risk is cliche (hacker terminal), not AI.",
+   "seen_on": [
+    "https://www.shadcn.io/design/nothing",
+    "https://fontsinuse.com/search?terms=Doto",
+    "https://fonts.google.com/specimen/Doto",
+    "https://fonts.google.com/specimen/Bitcount+Grid+Double"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/nothing",
+    "https://fontsinuse.com/search?terms=Doto",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/doto/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/tiny5/METADATA.pb"
+   ],
+   "suits_words": [
+    "hardware",
+    "audio",
+    "developer tools",
+    "games",
+    "events"
+   ],
+   "pairs_words": [
+    "ink-is-the-brand",
+    "mono-uppercase-label-voice",
+    "variable-axis-animated-on-scroll"
+   ],
+   "avoid_words": [
+    "narrow-oldstyle-display-serif-at-96px",
+    "warm-paper-canvas-not-white"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.viewport-scaled-type-no-breakpoints",
+   "kind": "idea",
+   "name": "Viewport-scaled type, no breakpoints",
+   "category": "typography",
+   "what": "Every size is a calc against 100vw instead of a breakpoint table: Teenage Engineering sets display 40px, nav 23px, body 19px and labels 13px as calc(100vw * k) with weights 100 to 300 in a mono-ish grotesk. The whole page scales like a printed sheet; nothing reflows into a 'mobile layout'.",
+   "why": "Proportions stay identical on every screen, which gives the page the feel of a fixed-format object.",
+   "implementation": ":root{--u:calc(100vw/1440)} h1{font-size:max(28px,calc(40*var(--u)))} body{font-size:max(14px,calc(19*var(--u)))}",
+   "pitfalls": "Pure vw sizes ignore user zoom and get tiny on phones; mix with rem (clamp) and set a floor of 14px for body.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generators emit Tailwind breakpoint classes; a vw-based scale is a different mental model.",
+   "seen_on": [
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://teenage.engineering"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/teenage-engineering"
+   ],
+   "suits_words": [
+    "hardware",
+    "studio",
+    "portfolio",
+    "print-minded brands"
+   ],
+   "pairs_words": [
+    "three-size-type-scale",
+    "ultralight-display-weights"
+   ],
+   "avoid_words": [
+    "reading-size-serif-body"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.ink-trap-grotesque-headline",
+   "kind": "idea",
+   "name": "Ink-trap grotesque headline",
+   "category": "typography",
+   "what": "A grotesk whose notched joins show at 48px and above: Familjen Grotesk (free, notches described as ink traps, tall x-height), Bricolage Grotesque compressed cuts, Uncut Sans (unicase logo with ink traps on uncut.wtf), Fivo Sans Modern (free display with large traps), Schibsted Grotesk. Set at 56 to 96px weight 600 to 700 with -0.02em so the traps read as deliberate cuts.",
+   "why": "The traps add a drawn, slightly industrial detail that a neo-grotesque like Inter or Helvetica lacks.",
+   "implementation": "h1{font-family:'Familjen Grotesk';font-weight:700;font-size:clamp(2.5rem,7vw,6rem);letter-spacing:-.02em}",
+   "pitfalls": "At body size the traps fill in and the face just looks like any grotesk, so choose it for the headline role only.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "None of these families appear on the vibe-coded list; Familjen Grotesk is on Google Fonts yet rarely chosen.",
+   "seen_on": [
+    "https://fonts.google.com/specimen/Familjen+Grotesk",
+    "https://fontsinuse.com/uses/58063/uncut-wtf-website",
+    "https://peopleofprint.com/best-of/free-and-open-source-fonts-selected-by-filippos-fragkogiannis/"
+   ],
+   "opened": [
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/familjengrotesk/DESCRIPTION.en_us.html",
+    "https://fontsinuse.com/uses/58063/uncut-wtf-website",
+    "https://peopleofprint.com/best-of/free-and-open-source-fonts-selected-by-filippos-fragkogiannis/"
+   ],
+   "suits_words": [
+    "studio",
+    "culture",
+    "tech hardware",
+    "fashion"
+   ],
+   "pairs_words": [
+    "ink-is-the-brand",
+    "display-leading-at-or-below-one"
+   ],
+   "avoid_words": [
+    "ultralight-display-weights"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2022
+  },
+  {
+   "id": "idea.quirky-grotesque-not-neo-grotesque",
+   "kind": "idea",
+   "name": "Quirky 19th-century grotesque",
+   "category": "typography",
+   "what": "Replace the neutral neo-grotesque with a crude, irregular one: paid references are Apercu, Mabry, Founders Grotesk, Dia (Typewolf's quirky list); free versions with the same irregularity are Uncut Sans (12 weights), Overused Grotesk, Nacelle, Apfel Grotezk (Collletttivo), Karrik (deliberately uneven weights), Terminal Grotesque (Velvetyne), Authentic Sans, Archivo. Use it for everything including body so the quirk becomes the brand, with a quiet mono for labels.",
+   "why": "Irregular letterforms read as human-made at every size, so even a plain layout feels authored.",
+   "implementation": "@font-face{font-family:'Uncut Sans';src:url(UncutSans-Variable.woff2);font-weight:300 700} body{font-family:'Uncut Sans',system-ui}",
+   "pitfalls": "Space Grotesk is the quirky grotesk everyone reaches for and is now a flagged font; the others above are not.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Uncut Sans, Karrik and Apfel appear on fontsinuse in independent studio work through 2026, not in generated output.",
+   "seen_on": [
+    "https://www.typewolf.com/top-10-quirky-grotesque-fonts",
+    "https://fontsinuse.com/search?terms=Uncut+Sans",
+    "https://fontsinuse.com/search?terms=Karrik",
+    "https://fontsinuse.com/search?terms=Overused+Grotesk"
+   ],
+   "opened": [
+    "https://www.typewolf.com/top-10-quirky-grotesque-fonts",
+    "https://fontsinuse.com/search?terms=Uncut+Sans",
+    "https://fontsinuse.com/search?terms=Karrik",
+    "https://fontsinuse.com/search?terms=Overused+Grotesk"
+   ],
+   "suits_words": [
+    "studio",
+    "agency",
+    "culture",
+    "fashion",
+    "indie software"
+   ],
+   "pairs_words": [
+    "mono-uppercase-label-voice",
+    "libre-experimental-display-one-word"
+   ],
+   "avoid_words": [
+    "inter-for-everything",
+    "space-grotesk-instrument-serif-geist-trio"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2022
+  },
+  {
+   "id": "idea.fontshare-serif-display-pairs",
+   "kind": "idea",
+   "name": "Fontshare serif display pairs",
+   "category": "typography",
+   "what": "Indian Type Foundry's free serifs used as display with a free sans for text: Boska (14 styles, high-contrast) with Inter at Tromso Kunstforening 2024; Zodiak (14 styles) with Cabinet Grotesk at SisInBiz 2026 and with JetBrains Mono at AL BIES; Sentient (12 styles) with Aether Mono; Erode, Gambetta, Recia, Rowan, Bespoke Serif, Melodrama are the others. Display at 64 to 96px weight 300 to 400 italic; text in Switzer, General Sans or Author at 16 to 17px.",
+   "why": "These serifs have real italics and multiple weights, so one family covers hero, pull quotes and captions with no licence.",
+   "implementation": "@font-face{font-family:Zodiak;src:url(Zodiak-Variable.woff2) format('woff2');font-weight:100 900} h1{font-family:Zodiak;font-weight:300;font-style:italic}",
+   "pitfalls": "Fontshare's own CSS API serves fixed weights; self-host the variable files to use intermediate weights and italics properly.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Satoshi and Clash Display are overexposed through Webflow templates; the serif side of Fontshare is still rarely seen.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Boska",
+    "https://fontsinuse.com/search?terms=Zodiak",
+    "https://fontsinuse.com/search?terms=Sentient",
+    "https://www.fontshare.com/fonts/zodiak"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Boska",
+    "https://fontsinuse.com/search?terms=Zodiak",
+    "https://fontsinuse.com/search?terms=Sentient",
+    "https://api.fontshare.com/v2/fonts?limit=100"
+   ],
+   "suits_words": [
+    "culture",
+    "fashion",
+    "hospitality",
+    "editorial",
+    "wellness"
+   ],
+   "pairs_words": [
+    "serif-italic-dek-paragraph",
+    "warm-paper-canvas-not-white"
+   ],
+   "avoid_words": [
+    "satoshi-clash-template-duo"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.satoshi-clash-template-duo",
+   "kind": "idea",
+   "name": "Satoshi plus Clash Display template duo",
+   "category": "typography",
+   "what": "The Fontshare pairing that ships with hundreds of Framer and Webflow templates: Clash Display 600 to 700 headlines over Satoshi 400 body, usually with -0.03em tracking and a dark canvas. Cabinet Grotesk heavy headlines are the sibling version (Matt Imling portfolio, Wieniawski Society 2025, Popina 2024).",
+   "why": "It works because Clash Display is genuinely a strong geometric display face, which is also why everyone picked it.",
+   "implementation": "If you must: use Clash Display only at 80px plus with tight leading and pair it with a serif or mono body, never Satoshi.",
+   "pitfalls": "Included only as a warning: in 2025 to 2026 this pair signals 'template' as strongly as Inter signals 'default'.",
+   "ai_tell_risk": "high",
+   "ai_tell_note": "Satoshi is now the second most common free sans after Inter in AI-built landing pages; Clash Display headlines mark Framer templates.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Satoshi",
+    "https://fontsinuse.com/search?terms=Cabinet+Grotesk",
+    "https://fontsinuse.com/search?terms=Clash+Display"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Satoshi",
+    "https://fontsinuse.com/search?terms=Cabinet+Grotesk",
+    "https://fontsinuse.com/search?terms=Clash+Display"
+   ],
+   "suits_words": [
+    "startup",
+    "agency"
+   ],
+   "pairs_words": [],
+   "avoid_words": [
+    "fontshare-serif-display-pairs",
+    "quirky-grotesque-not-neo-grotesque"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2021
+  },
+  {
+   "id": "idea.serif-italic-accent-word-in-sans-hero",
+   "kind": "idea",
+   "name": "Serif italic accent word in sans hero",
+   "category": "typography",
+   "what": "A sans headline (usually Inter, Geist or Space Grotesk) with one word swapped to Instrument Serif italic, often coloured. Krebs's April 2026 audit of 1,590 Show HN sites names this exact move as a core 'vibe-coded' pattern, together with the Space Grotesk, Instrument Serif and Geist trio.",
+   "why": "It once worked because contrast of style inside one line draws the eye; overuse killed the effect.",
+   "implementation": "Do not emit <em class='serif'> inside h1. If mixing faces, mix whole lines or use a Velvetyne display for the entire headline.",
+   "pitfalls": "Any mixed-face headline now needs a different logic (a whole clause, a different weight, a hand-drawn face) or it reads as generated.",
+   "ai_tell_risk": "high",
+   "ai_tell_note": "Named explicitly as a tell in the 2026 analysis; avoid in drafts.",
+   "seen_on": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://fontsinuse.com/search?terms=Instrument+Serif"
+   ],
+   "opened": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://fontsinuse.com/search?terms=Instrument+Serif"
+   ],
+   "suits_words": [],
+   "pairs_words": [],
+   "avoid_words": [
+    "narrow-oldstyle-display-serif-at-96px",
+    "serif-display-sans-ui-two-voice"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.space-grotesk-instrument-serif-geist-trio",
+   "kind": "idea",
+   "name": "Space Grotesk, Instrument Serif, Geist trio",
+   "category": "typography",
+   "what": "The three faces that the 2026 Show HN audit lists as the font signature of generated sites (with Syne and Fraunces as runners-up): Space Grotesk headlines, Instrument Serif accents, Geist or Inter body, often all three together. Modal Digital (2025) pairs Space Grotesk with Instrument Sans; Sommerfest 25 pairs Instrument Serif with Geist.",
+   "why": "Each is a good free font with a distinct voice, which is exactly why models converged on them.",
+   "implementation": "Substitutes: Hanken Grotesk or Switzer for Geist; Familjen Grotesk or Uncut Sans for Space Grotesk; Newsreader or Zodiak or Gloock for Instrument Serif.",
+   "pitfalls": "Listed so the draft generator can blacklist the combination; any one of them alone is defensible, the trio is not.",
+   "ai_tell_risk": "high",
+   "ai_tell_note": "Quoted by name in the design-slop audit; 15.8% of audited sites used these combos in the GIGAZINE summary.",
+   "seen_on": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://fontsinuse.com/search?terms=Geist"
+   ],
+   "opened": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://fontsinuse.com/search?terms=Geist"
+   ],
+   "suits_words": [],
+   "pairs_words": [],
+   "avoid_words": [
+    "everything"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.inter-for-everything",
+   "kind": "idea",
+   "name": "Inter for everything",
+   "category": "typography",
+   "what": "Inter at 400/600 for hero, body, buttons and labels, centred, on white or #0a0a0a. Krebs lists 'Inter used for everything, especially centered hero headlines' as pattern one; Inter logged 414 billion Google Fonts views in the year to May 2025. Even Linear, Raycast and Framer that use Inter do so with Inter Display, stylistic sets or a second display face.",
+   "why": "It is the safest UI face ever drawn, which is why it carries no information about the brand.",
+   "implementation": "Avoid font-family:Inter in marketing CSS; if used for UI set font-feature-settings:'ss01','cv11' and pair with a different display family.",
+   "pitfalls": "If Inter is required (product UI), keep it out of the hero and add a display face; otherwise swap to Hanken Grotesk, Instrument Sans, Mona Sans, Switzer or General Sans.",
+   "ai_tell_risk": "high",
+   "ai_tell_note": "Pattern one in the 2026 audit.",
+   "seen_on": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://www.shadcn.io/design/raycast"
+   ],
+   "opened": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://www.shadcn.io/design/raycast"
+   ],
+   "suits_words": [
+    "product UI only"
+   ],
+   "pairs_words": [
+    "stylistic-sets-to-de-default"
+   ],
+   "avoid_words": [
+    "everything else"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2020
+  },
+  {
+   "id": "idea.condensed-poster-gothic-hero",
+   "kind": "idea",
+   "name": "Condensed poster gothic hero",
+   "category": "typography",
+   "what": "Heavy condensed sans at 12 to 16vw uppercase, line-height 0.85, tracking 0 to +0.01em: Anton (Fermented Films 2024, Sage Space 2024, Panaille with League Gothic), Big Shoulders (2025 rebuild with opsz 10 to 72 and wght 100 to 900), League Gothic (wdth axis), Oswald, Anton SC (2024 small caps). Body stays small and light so the headline is a poster, not a heading.",
+   "why": "Condensed heavy caps let a two-word headline fill the viewport width and feel printed rather than typed.",
+   "implementation": "h1{font-family:'Big Shoulders';font-variation-settings:'opsz' 72;font-weight:800;font-size:14vw;line-height:.85;text-transform:uppercase;text-wrap:balance}",
+   "pitfalls": "Bebas Neue is the 2015 version of this move and reads as a template; use Anton, Big Shoulders or League Gothic with a wdth tweak.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated heroes are centred semibold sans at 48 to 64px; a 14vw condensed cap headline is a poster designer's choice.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Instrument+Serif",
+    "https://fonts.google.com/specimen/Big+Shoulders",
+    "https://fonts.google.com/specimen/Anton"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Instrument+Serif",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/bigshoulders/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/anton/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/leaguegothic/METADATA.pb"
+   ],
+   "suits_words": [
+    "events",
+    "film",
+    "sport",
+    "food",
+    "music",
+    "fashion"
+   ],
+   "pairs_words": [
+    "width-axis-compressed-headlines",
+    "international-orange-signal-red-accent",
+    "colour-blocking-by-section"
+   ],
+   "avoid_words": [
+    "ultralight-display-weights",
+    "pastel-tinted-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.reading-size-serif-body",
+   "kind": "idea",
+   "name": "Reading-size serif body, 18 to 24px",
+   "category": "typography",
+   "what": "Body prose in a text serif at 18 to 24px with line-height 1.4 to 1.5 and a 60 to 70ch measure: Anthropic body-lg 24px in its serif, Medium reading serif, Substack post body in a serif (substitutes named: Source Serif 4, Newsreader, Spectral), Daylight's Grenette. Free faces with text-grade italics and opsz: Newsreader, Literata, Source Serif 4, Crimson Pro, Spectral, EB Garamond.",
+   "why": "Large serif prose signals that the words are the product, which is why AI labs and publishers converge on it.",
+   "implementation": ".prose{font-family:Newsreader,serif;font-size:1.25rem;line-height:1.45;max-inline-size:65ch;font-optical-sizing:auto;hanging-punctuation:first}",
+   "pitfalls": "Serif body under 16px on screens looks thin; use opsz-aware fonts and never go below 17px.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated pages keep body in a 16px sans; a 20px Newsreader paragraph is an editorial decision.",
+   "seen_on": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/substack",
+    "https://www.shadcn.io/design/medium",
+    "https://www.typewolf.com/"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/substack",
+    "https://www.shadcn.io/design/medium",
+    "https://www.typewolf.com/"
+   ],
+   "suits_words": [
+    "research",
+    "publishing",
+    "AI products",
+    "essays",
+    "newsletters"
+   ],
+   "pairs_words": [
+    "optical-size-axis-body-vs-display",
+    "warm-paper-canvas-not-white",
+    "warm-grey-text-ladder"
+   ],
+   "avoid_words": [
+    "viewport-scaled-type-no-breakpoints",
+    "pixel-dot-matrix-product-voice"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.humanist-sans-instead-of-inter",
+   "kind": "idea",
+   "name": "Humanist sans instead of Inter",
+   "category": "typography",
+   "what": "A warm, slightly irregular sans for UI and body: Hanken Grotesk (100 to 900), Figtree (Makelog 2023, AELAQ 2024), Onest, Albert Sans, Instrument Sans (12 stylistic sets, wdth axis), Mona Sans (GitHub homepage 2022, Dribbble 2023), Atkinson Hyperlegible Next (2025, with Newsreader at Daylit Studio), Inclusive Sans (Connessioni estetiche 2025), Schibsted Grotesk, Switzer and General Sans from Fontshare. Set body at 16 to 17px weight 400 to 450 with -0.005em.",
+   "why": "Humanist proportions carry warmth at text sizes, and none of these is yet a default.",
+   "implementation": "body{font-family:'Hanken Grotesk',system-ui;font-weight:430;font-size:17px;line-height:1.55;letter-spacing:-.005em}",
+   "pitfalls": "Plus Jakarta Sans, Manrope, DM Sans and Poppins are the previous generation of 'not Inter' and now read as 2021 templates.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Geist is flagged; Hanken, Instrument Sans, Mona Sans and Atkinson Next are not.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Figtree",
+    "https://fontsinuse.com/search?terms=Mona+Sans",
+    "https://fontsinuse.com/search?terms=Newsreader",
+    "https://fontsinuse.com/search?terms=Instrument+Sans"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Figtree",
+    "https://fontsinuse.com/search?terms=Mona+Sans",
+    "https://fontsinuse.com/search?terms=Newsreader",
+    "https://fontsinuse.com/search?terms=Instrument+Sans"
+   ],
+   "suits_words": [
+    "saas",
+    "nonprofit",
+    "health",
+    "education",
+    "community"
+   ],
+   "pairs_words": [
+    "serif-display-sans-ui-two-voice",
+    "variable-weight-off-the-hundreds"
+   ],
+   "avoid_words": [
+    "inter-for-everything"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.variable-axis-animated-on-scroll",
+   "kind": "idea",
+   "name": "Variable axis animated on scroll",
+   "category": "typography",
+   "what": "Drive a custom font axis from scroll or hover instead of animating transform: Climate Crisis has a YEAR axis 1979 to 2050 built for exactly this; Doto ROND 0 to 100 rounds the dots; Tiny5 JITT and BLED; Fraunces SOFT and WONK; Geologica SHRP and CRSV; Afacad Flux slnt -14 to 14; Roboto Flex GRAD -200 to 150 (weight change without reflow). Register the axis value with @property and bind it to animation-timeline: scroll().",
+   "why": "The letterforms themselves change, which is a kind of motion no stock template produces.",
+   "implementation": "@property --yr{syntax:'<number>';inherits:true;initial-value:1979} h1{font-family:'Climate Crisis';font-variation-settings:'YEAR' var(--yr);animation:melt linear both;animation-timeline:scroll()} @keyframes melt{to{--yr:2050}}",
+   "pitfalls": "Animating wght or wdth reflows text every frame; prefer GRAD, SOFT, ROND, YEAR, which keep advance widths, and respect prefers-reduced-motion.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Requires @property and font-variation-settings knowledge that generated CSS does not show.",
+   "seen_on": [
+    "https://fonts.google.com/specimen/Climate+Crisis",
+    "https://fonts.google.com/specimen/Doto",
+    "https://fonts.google.com/specimen/Roboto+Flex"
+   ],
+   "opened": [
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/climatecrisis/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/doto/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/robotoflex/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/geologica/METADATA.pb"
+   ],
+   "suits_words": [
+    "developer tools",
+    "data",
+    "climate",
+    "events",
+    "hardware"
+   ],
+   "pairs_words": [
+    "pixel-dot-matrix-product-voice",
+    "fraunces-soft-wonk-dial"
+   ],
+   "avoid_words": [
+    "reading-size-serif-body"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.serif-italic-dek-paragraph",
+   "kind": "idea",
+   "name": "Serif italic dek paragraph",
+   "category": "typography",
+   "what": "The subhead under a sans headline is a 20 to 28px serif, often italic, with slightly negative tracking: Arc deks at 20 to 24px in ABC Oracle, Medium dek-serif 28px -0.5px, Figma subhead 26px at weight 340, Lovable's 'rare editorial italics' in Instrument Serif. Free: Newsreader Italic at opsz 24, Literata Italic, Fraunces Italic, Gambetta Italic, Erode Italic, Zodiak Italic. Weight 300 to 400, colour one step muted, measure 40 to 50ch.",
+   "why": "The dek carries tone while the headline carries message, and the serif makes the paragraph read as a sentence rather than a tagline.",
+   "implementation": ".dek{font-family:Newsreader,serif;font-style:italic;font-size:1.5rem;font-weight:300;line-height:1.3;letter-spacing:-.01em;color:var(--ink-2);max-inline-size:48ch}",
+   "pitfalls": "If the italic is Instrument Serif and the headline is Inter you have rebuilt the tell; use a text serif italic at paragraph length.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Italic as a whole paragraph is different from italic as one accent word; keep it to the dek and keep the face a text serif.",
+   "seen_on": [
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/medium",
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/figma"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/medium",
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/figma"
+   ],
+   "suits_words": [
+    "editorial",
+    "browser",
+    "publishing",
+    "studio"
+   ],
+   "pairs_words": [
+    "fontshare-serif-display-pairs",
+    "wordmark-scale-hero-96-120px"
+   ],
+   "avoid_words": [
+    "serif-italic-accent-word-in-sans-hero"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.two-monos-code-vs-labels",
+   "kind": "idea",
+   "name": "Two monos: code vs labels",
+   "category": "typography",
+   "what": "Code blocks and UI labels use different monospaces: Zed sets code in its writer-mono (iA Writer Mono lineage) while display is Plex Serif; Vercel keeps Geist Mono at 400 only, 12 to 13px; Cursor uses JetBrains Mono for code and an 11px uppercase sans caption for labels; Mintlify Geist Mono for code with Inter labels. Pick a ligature mono for code (JetBrains Mono, Google Sans Code 2024, Kode Mono with ss01, Commit Mono, Monaspace) and a plainer one for labels (DM Mono, Fragment Mono, Sometype Mono).",
+   "why": "Code needs ligatures and tall x-height; labels need a quieter, more typographic mono, and using one for both compromises each.",
+   "implementation": "pre,code{font-family:'JetBrains Mono',monospace;font-feature-settings:'liga','calt'} .label,kbd{font-family:'Fragment Mono',monospace;font-size:12px}",
+   "pitfalls": "Two monos with similar x-heights look like a mistake; choose one with a visibly different voice (Fragment Mono's grotesk feel against JetBrains' tall forms).",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated docs sites use one mono for everything.",
+   "seen_on": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.shadcn.io/design/mintlify"
+   ],
+   "opened": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.shadcn.io/design/mintlify"
+   ],
+   "suits_words": [
+    "developer tools",
+    "docs",
+    "AI products"
+   ],
+   "pairs_words": [
+    "mono-uppercase-label-voice",
+    "tabular-numerals-for-data"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.duospace-body-ia-writer",
+   "kind": "idea",
+   "name": "Duospace body text (iA Writer Quattro)",
+   "category": "typography",
+   "what": "Body copy in iA Writer Quattro or Duo, free SIL faces where most glyphs are monospaced but m, w and i get their own widths: Zed's body 'writer' family falls back to iA Writer Quattro; The Breach website; Saveku redesign 2026 (with Geist Mono); Linear's 2023 'Last Year You Said Next Year' campaign (with Redaction). Set at 16 to 18px, line-height 1.6, weight 400 to 500.",
+   "why": "It reads like a draft typed by a person, which suits editors, note tools and anything that wants a writerly voice without a serif.",
+   "implementation": "@font-face{font-family:'iA Writer Quattro';src:url(iAWriterQuattroS-Regular.woff2)} body{font-family:'iA Writer Quattro',monospace;font-size:17px;line-height:1.6}",
+   "pitfalls": "Long paragraphs in a near-mono get tiring past 60ch; keep measure at 55ch and sizes 17px plus.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Not on Google Fonts, so generated stacks never pick it.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=iA+Writer",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://github.com/iaolo/iA-Fonts"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=iA+Writer",
+    "https://www.webdesignhot.com/design.md/zed/"
+   ],
+   "suits_words": [
+    "editors",
+    "note apps",
+    "developer tools",
+    "personal sites"
+   ],
+   "pairs_words": [
+    "serif-display-sans-ui-two-voice",
+    "warm-paper-canvas-not-white"
+   ],
+   "avoid_words": [
+    "condensed-poster-gothic-hero"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2022
+  },
+  {
+   "id": "idea.redaction-degrading-editorial-face",
+   "kind": "idea",
+   "name": "Redaction with pixel-degrade cuts",
+   "category": "typography",
+   "what": "Redaction (free, by Titus Kaphar and Reginald Dwayne Betts with Forest Young and Jeremy Mickel) comes in a serif and a sans with degrade levels 10, 20, 35, 50, 70, 100 that progressively pixelate. Used by Linear's 2023 campaign (with iA Writer Quattro and Inter), Album Art Galerie website 2021 (with Manrope), Chandan Kolaparthi portfolio 2023 (with Sohne), Connessioni estetiche 2025 (with Inclusive Sans). Step the degrade across a scrolling sequence or use Redaction 35 for the hero and Redaction 10 for body.",
+   "why": "The degradation is built into the glyphs, so a crisp page carries a deliberate glitch without filters.",
+   "implementation": "@font-face{font-family:'Redaction 35';src:url(Redaction_35-Regular.woff2)} h1{font-family:'Redaction 35',serif;font-size:clamp(3rem,8vw,7rem)}",
+   "pitfalls": "Degrade 70 and 100 are illegible below 48px; and the font's origin (a criminal-justice art project) deserves a credit line.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Not in any default library; it reads as a specific choice.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Redaction",
+    "https://www.redaction.us/"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Redaction"
+   ],
+   "suits_words": [
+    "culture",
+    "justice and nonprofit",
+    "portfolio",
+    "developer tools campaigns"
+   ],
+   "pairs_words": [
+    "duospace-body-ia-writer",
+    "ink-is-the-brand"
+   ],
+   "avoid_words": [
+    "pastel-tinted-cards",
+    "ultralight-display-weights"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.libre-experimental-display-one-word",
+   "kind": "idea",
+   "name": "Libre experimental display for one word",
+   "category": "typography",
+   "what": "A Velvetyne, Collletttivo or similar libre display face carries the hero word while everything else is plain: Avara (XOXO Fest 2024, Footnote c. 2024), Pilowlava (Readymag 'Read me!', Ultramorbidi 2025), Basteleur (Chicano Batman 2024, Blason 2025), Karrik (Le Braquet 2025, Tapered Construction 2024), Le Murmure, Terminal Grotesque, Savate (Velvetyne, on Google Fonts since 2025), Sprat (Collletttivo; Carretta 2025, Multiple Tomorrows 2026), Mazius Display, Ortica (Of Soil and Smoke 2026), Apfel Grotezk (BergamoScienza 2024, En Chantier 2026). Body in a mono or a humanist sans at 16px.",
+   "why": "These faces were drawn as experiments, so a single word in one of them gives a studio-grade identity for free.",
+   "implementation": "@font-face{font-family:Avara;src:url(Avara-Bold.woff2)} .hero-word{font-family:Avara;font-weight:700;font-size:16vw;line-height:.85}",
+   "pitfalls": "Several Velvetyne faces lack a full character set or italics; check coverage and licence per font (OFL vs GPL).",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "These are absent from generated stacks and from most templates.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Avara",
+    "https://fontsinuse.com/search?terms=Pilowlava",
+    "https://fontsinuse.com/search?terms=Basteleur",
+    "https://fontsinuse.com/search?terms=Sprat"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Avara",
+    "https://fontsinuse.com/search?terms=Pilowlava",
+    "https://fontsinuse.com/search?terms=Basteleur",
+    "https://fontsinuse.com/search?terms=Sprat"
+   ],
+   "suits_words": [
+    "studio",
+    "culture",
+    "music",
+    "festival",
+    "fashion",
+    "food"
+   ],
+   "pairs_words": [
+    "quirky-grotesque-not-neo-grotesque",
+    "international-orange-signal-red-accent",
+    "colour-blocking-by-section"
+   ],
+   "avoid_words": [
+    "inter-for-everything",
+    "neutral-dark-surface-ladder"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.atipo-pwyw-luxury-serif",
+   "kind": "idea",
+   "name": "Atipo pay-what-you-want luxury serif",
+   "category": "typography",
+   "what": "Atipo's pay-what-you-want families give a single free weight of a refined face: Argesta (display regular free) for fashion headlines, Salome and Calendas Plus (regular free) for editorial, Geomanist, Basier, Silka and Wotfard regular free for body, Chaney ultra-extended free. The Party by Ostbahnhof used Calendas Plus with Roslindale. Set Argesta at 72px plus with +0.01em tracking and a 300-weight sans body.",
+   "why": "One premium-looking weight is enough for a headline system, and nobody expects a free font to look like this.",
+   "implementation": "@font-face{font-family:Argesta;src:url(argesta-display-regular.woff2)} h1{font-family:Argesta;font-size:clamp(3rem,8vw,6.5rem);letter-spacing:.01em;font-weight:400}",
+   "pitfalls": "Only one weight is free, so the system must be designed around size and case, not bold.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Atipo faces are not in Google Fonts or Fontshare and do not appear in generated output.",
+   "seen_on": [
+    "https://www.atipofoundry.com/",
+    "https://fontsinuse.com/search?terms=Pilowlava"
+   ],
+   "opened": [
+    "https://www.atipofoundry.com/",
+    "https://fontsinuse.com/search?terms=Pilowlava"
+   ],
+   "suits_words": [
+    "fashion",
+    "luxury",
+    "beauty",
+    "hospitality",
+    "wine"
+   ],
+   "pairs_words": [
+    "ultralight-display-weights",
+    "warm-paper-canvas-not-white",
+    "ivory-ink-inverse-pair"
+   ],
+   "avoid_words": [
+    "pixel-dot-matrix-product-voice",
+    "acid-lime-accent"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.newspaper-didone-free-serifs",
+   "kind": "idea",
+   "name": "Newspaper Didone free serifs, display only",
+   "category": "typography",
+   "what": "High-contrast headline serifs with thick-thin drama, used at 72px plus and never as body: Gloock (El Uniforme Menstrual 2026), Bodoni Moda (opsz 6 to 96), Libre Caslon Display, Imbue (opsz 10 to 100, condensed), Young Serif (bold old-style), Boska and Melodrama from Fontshare. Tracking -0.01em, leading 0.9, often two words stacked with a hairline rule.",
+   "why": "Hairline serifs at display size read as fashion and newsprint, a register no sans reaches.",
+   "implementation": "h1{font-family:Gloock,serif;font-size:clamp(3.5rem,10vw,9rem);line-height:.9;letter-spacing:-.01em}",
+   "pitfalls": "Playfair Display is the 2014 version of this and marks a template; Gloock, Bodoni Moda and Imbue do not.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generators reach for Playfair; the others are rarely emitted.",
+   "seen_on": [
+    "https://fontsinuse.com/search?terms=Gloock",
+    "https://fonts.google.com/specimen/Bodoni+Moda",
+    "https://fonts.google.com/specimen/Imbue"
+   ],
+   "opened": [
+    "https://fontsinuse.com/search?terms=Gloock",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/gloock/DESCRIPTION.en_us.html",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/bodonimoda/METADATA.pb",
+    "https://raw.githubusercontent.com/google/fonts/main/ofl/imbue/METADATA.pb"
+   ],
+   "suits_words": [
+    "fashion",
+    "beauty",
+    "magazines",
+    "culture",
+    "luxury"
+   ],
+   "pairs_words": [
+    "display-leading-at-or-below-one",
+    "ivory-ink-inverse-pair",
+    "duotone-monochrome-imagery"
+   ],
+   "avoid_words": [
+    "pixel-dot-matrix-product-voice",
+    "acid-lime-accent"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.warm-paper-canvas-not-white",
+   "kind": "idea",
+   "name": "Warm paper canvas, not white",
+   "category": "colour",
+   "what": "Page background a warm off-white in the #F4F1EA family instead of #fff: Anthropic #faf9f5 with cards #f0eee6; Cursor #f7f7f4 with soft #fafaf7; Zed #f5f5f3 then #eeede9 and #e7e6e1; PostHog #eeefe9; Lovable and Medium #f7f4ed; Perplexity #fdfbfa; Arc #fffcec; Granola #f7f7f2; Stripe's cream band #f5e9d4. White #fff is reserved for raised cards on top of the paper.",
+   "why": "A tinted ground makes true white cards and photos lift without shadows and makes the whole page read as printed stock.",
+   "implementation": ":root{--canvas:#f7f4ed;--card:#fff;--hairline:#e8e4da;--ink:#1c1917} or oklch: --canvas:oklch(97% .008 85)",
+   "pitfalls": "Pairing a warm canvas with cool #e5e7eb (Tailwind gray) borders looks dirty; every neutral must share the hue.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated pages default to #ffffff or #0a0a0a; a #f7f4ed canvas with matching warm greys is a system decision.",
+   "seen_on": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/posthog"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/posthog"
+   ],
+   "suits_words": [
+    "AI products",
+    "research",
+    "note apps",
+    "publishing",
+    "wellness",
+    "developer tools"
+   ],
+   "pairs_words": [
+    "ink-black-that-is-not-000",
+    "warm-hairline-elevation",
+    "reading-size-serif-body"
+   ],
+   "avoid_words": [
+    "neutral-dark-surface-ladder",
+    "purple-indigo-cta"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.ink-black-that-is-not-000",
+   "kind": "idea",
+   "name": "Ink black that is not #000",
+   "category": "colour",
+   "what": "Primary text and buttons in a near-black with a hint of warmth or cool: Anthropic #141413, Vercel and Supabase #171717, Mintlify #0a0a0a, Lovable #1c1c1c, Cursor #26251e, Perplexity #27251e, ElevenLabs #0c0a09 (Tailwind stone-950), Medium #242424, Substack #363737, Granola #292929, Zed #16181d (cool). Pure #000 appears only as a full-bleed band (Anthropic, Figma footer).",
+   "why": "Off-black softens contrast on bright screens and lets the black carry the canvas temperature.",
+   "implementation": "--ink:oklch(18% .006 60) /* warm */; --ink:oklch(20% .01 260) /* cool */",
+   "pitfalls": "#111 on #fff with no hue is still a default; the trick is matching the black's hue to the canvas (warm on cream, blue-black on cool grey).",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Tailwind's neutral-900 #171717 is itself common; shift to stone-950 #0c0a09 or a custom #1c1917 for warmth.",
+   "seen_on": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.shadcn.io/design/elevenlabs"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/cursor",
+    "https://www.shadcn.io/design/elevenlabs"
+   ],
+   "suits_words": [
+    "any"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "warm-grey-text-ladder",
+    "ink-is-the-brand"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.single-accent-under-five-percent",
+   "kind": "idea",
+   "name": "Single accent under five percent",
+   "category": "colour",
+   "what": "One chromatic colour on a monochrome page, used for a handful of pixels: PostHog #f54e00 only on hover and text accents (its handbook forbids it for errors); Framer #0099ff only on links, focus rings and selected states; Zed #004edb on the h1 accent, CTA and links; Substack #ff6719; Figma #ff3d8b promo only; Supabase #3ecf8e as a dot and CTA; Claude's #d97757 only on research sub-pages. Everything else is ink, canvas and greys.",
+   "why": "Scarcity makes the accent a wayfinding device and gives the brand a colour without a coloured page.",
+   "implementation": "--accent:#f54e00; a:hover,.cta:hover,:focus-visible{color:var(--accent)} /* nothing else */",
+   "pitfalls": "The accent on body text, on every button and on card borders at once is the coloured-stripe tell (13% of audited sites).",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated palettes use the accent as a theme; handmade ones use it as a signal.",
+   "seen_on": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/framer",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/supabase"
+   ],
+   "opened": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/framer",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/supabase"
+   ],
+   "suits_words": [
+    "developer tools",
+    "saas",
+    "publishing",
+    "any"
+   ],
+   "pairs_words": [
+    "ink-is-the-brand",
+    "international-orange-signal-red-accent",
+    "cobalt-ikb-blue-only-colour"
+   ],
+   "avoid_words": [
+    "gradient-restricted-to-one-stripe",
+    "purple-indigo-cta"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024,
+   "renders": "color-single-accent"
+  },
+  {
+   "id": "idea.ink-is-the-brand",
+   "kind": "idea",
+   "name": "Ink is the brand (no accent)",
+   "category": "colour",
+   "what": "No chromatic accent at all: Vercel's primary is #171717 ('the ink is the brand'); Teenage Engineering's primary button is a black rectangle; Nothing uses #000, #fff, #585a5a, #e5e7eb only; Medium's CTA is a #191919 pill; Resend and Raycast use a white CTA on near-black; Lovable #f7f5f0 CTA on #2b2622. Colour appears only in product photography or one illustration.",
+   "why": "A page with zero hue forces attention onto type, spacing and imagery, which is where handmade work shows.",
+   "implementation": ".btn-primary{background:var(--ink);color:var(--canvas);border-radius:0} :focus-visible{outline:2px solid var(--ink);outline-offset:2px}",
+   "pitfalls": "Without colour, hierarchy must come from a strict grey ladder and at least one strong typographic move; otherwise it is just unfinished.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generators almost always add an accent; its absence is a choice.",
+   "seen_on": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/resend"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/resend"
+   ],
+   "suits_words": [
+    "hardware",
+    "developer tools",
+    "fashion",
+    "studio",
+    "publishing"
+   ],
+   "pairs_words": [
+    "mono-uppercase-label-voice",
+    "duotone-monochrome-imagery",
+    "warm-hairline-elevation"
+   ],
+   "avoid_words": [
+    "pastel-tinted-cards",
+    "acid-lime-accent"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.neutral-dark-surface-ladder",
+   "kind": "idea",
+   "name": "Near-black surface ladder in 3 to 5% steps",
+   "category": "colour",
+   "what": "Dark mode depth from a ladder of near-blacks instead of grey cards: Linear #010102 canvas, #0f1011, #141516, #18191a, #191a1b surfaces; Raycast #07080a, #0d0d0d, #101111, #121212 with no drop shadows; Resend #000, #06060a, #0a0a0c, #101012; Framer #090909, #141414, #1c1c1c; GitHub #0d1117, #151a22, #24292f. Each step is roughly 2 to 4 OKLCH lightness points above the last.",
+   "why": "Tiny lightness steps give elevation without the 'cards on charcoal' look that reads as a default dark theme.",
+   "implementation": "--bg-0:oklch(10% .003 270);--bg-1:oklch(13% .003 270);--bg-2:oklch(15.5% .003 270);--bg-3:oklch(18% .003 270); .card{background:var(--bg-1);box-shadow:none}",
+   "pitfalls": "Krebs flags 'permanent dark mode with medium-grey body text and all-caps labels' (20.3%); the ladder only looks considered if body text stays at Lc 75 plus and labels are few.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Always-dark is itself a tell; the surface ladder is what separates Linear from a generated dark page, together with restraint in labels and glows.",
+   "seen_on": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/framer"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/framer"
+   ],
+   "suits_words": [
+    "developer tools",
+    "productivity",
+    "creative tools"
+   ],
+   "pairs_words": [
+    "translucent-white-hairlines-dark",
+    "off-white-text-on-dark",
+    "accent-as-low-alpha-glow"
+   ],
+   "avoid_words": [
+    "warm-paper-canvas-not-white",
+    "pastel-tinted-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.translucent-white-hairlines-dark",
+   "kind": "idea",
+   "name": "Translucent white hairlines in dark mode",
+   "category": "colour",
+   "what": "Borders on dark surfaces as white at 4 to 16% alpha rather than solid grey: Raycast rgba(255,255,255,0.08) soft and 0.16 strong, plus a solid #242728 for cards; Resend 0.04 divider, 0.06 hairline, 0.14 strong; Framer a top-edge highlight rgba(255,255,255,0.10) with rgba(0,0,0,0.25) shadow under floating cards; Linear solid #23252a, #34343a, #3e3e44. The alpha border adapts automatically to whichever surface step it sits on.",
+   "why": "Alpha borders stay proportional to their background, so one token works across the whole surface ladder.",
+   "implementation": "--hairline:rgb(255 255 255/.08);--hairline-strong:rgb(255 255 255/.16); .card{border:1px solid var(--hairline);box-shadow:inset 0 1px 0 rgb(255 255 255/.06)}",
+   "pitfalls": "Above 0.16 alpha the borders glow and the page turns into a wireframe; 1px only, never 2px.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated dark themes use solid border-gray-800 (#1f2937, blue-tinted) which clashes with neutral blacks.",
+   "seen_on": [
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/linear"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/linear"
+   ],
+   "suits_words": [
+    "developer tools",
+    "productivity",
+    "creative tools"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "off-white-text-on-dark"
+   ],
+   "avoid_words": [
+    "warm-hairline-elevation"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.accent-as-low-alpha-glow",
+   "kind": "idea",
+   "name": "Accent as low-alpha glow, never solid",
+   "category": "colour",
+   "what": "On dark sites chromatic colour appears as an atmospheric wash rather than a fill: Resend defines accent glows rgba(255,89,0,0.22), rgba(0,117,255,0.34), rgba(34,255,153,0.18), rgba(255,32,71,0.34) and uses the accents only as glows; Raycast's four accents exist only in illustrations with 15% alpha soft variants; GitHub's Copilot gradient #9350ff to #0e0aa2 is a single background scene. One glow per page, behind a product shot or the hero, radius 400px plus.",
+   "why": "A soft wash gives a dark page warmth and depth without introducing a second UI colour.",
+   "implementation": ".hero::before{content:'';position:absolute;inset:-20%;background:radial-gradient(60% 50% at 50% 0%,rgb(255 89 0/.22),transparent 70%);pointer-events:none}",
+   "pitfalls": "Krebs pattern 8 is 'large coloured glows and coloured box-shadows' on buttons and cards; a glow on a CTA or on every card is the tell, one scenic glow is not.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Depends entirely on count and placement: one radial-gradient behind the hero reads as photography lighting; glows on components read as generated.",
+   "seen_on": [
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/github"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/github"
+   ],
+   "suits_words": [
+    "developer tools",
+    "AI products",
+    "hardware launches"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "off-white-text-on-dark"
+   ],
+   "avoid_words": [
+    "single-accent-under-five-percent",
+    "pastel-tinted-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.off-white-text-on-dark",
+   "kind": "idea",
+   "name": "Off-white text ladder on dark",
+   "category": "colour",
+   "what": "Dark-mode text is never #fff for body: Linear #f7f8f8 headline, #d0d6e0 muted, #8a8f98 subtle, #62666d tertiary; Raycast #f4f4f6, #cdcdcd, #9c9c9d, #6a6b6c, #434345; Resend #fcfdff with body at 86% alpha and secondary at 70%; Mercury #ededf3 and an explicit rule never to use #000 fills or #fff text except on indigo. Body sits at the second step, not the first.",
+   "why": "Slightly dimmed body text reduces halation on OLED while keeping headlines bright, so hierarchy survives without size changes.",
+   "implementation": "--ink-1:#f4f4f6;--ink-2:#cdcdcd;--ink-3:#9c9c9d;--ink-4:#6a6b6c; body{color:var(--ink-2)} h1,h2{color:var(--ink-1)} small{color:var(--ink-3)}",
+   "pitfalls": "Krebs pattern 6 is 'barely passing body-text contrast in dark themes'; keep body at step two (around #cdcdcd on #0d0d0d, APCA Lc 80 plus), not at the muted step.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Grey-on-black body text is a tell when it fails contrast; a five-step ladder with body near the top is the considered version.",
+   "seen_on": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/mercury"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/mercury"
+   ],
+   "suits_words": [
+    "developer tools",
+    "productivity",
+    "fintech"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "translucent-white-hairlines-dark"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.warm-dark-mode-brown-black",
+   "kind": "idea",
+   "name": "Warm dark mode (brown-black)",
+   "category": "colour",
+   "what": "A dark theme tinted toward brown instead of blue: Lovable canvas #2b2622, soft #383330, hairline #3f3a36, body #c9c0ad, strong #dad2c1, primary #f7f5f0; PostHog's dark surface #23251d; ElevenLabs dark hero #0c0a09 with #1c1917 cards (Tailwind stone 950/900); Zed code blocks #1a1b1e; Medium's suggested dark #1a1a18 with ink #f1ede4. Hue 50 to 80 in OKLCH, chroma 0.004 to 0.012.",
+   "why": "Warm darks feel like a lit room instead of a terminal and sit well with serif type and photography.",
+   "implementation": "--canvas:oklch(22% .012 60);--surface:oklch(27% .01 60);--hairline:oklch(31% .01 60);--ink:oklch(85% .02 80)",
+   "pitfalls": "Warm darks with a cool accent (Tailwind blue-500) look muddy; pick an accent in the same hemisphere (orange, olive, clay) or none.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated dark modes are slate or zinc; a brown-black canvas is almost never emitted.",
+   "seen_on": [
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/posthog",
+    "https://www.shadcn.io/design/elevenlabs",
+    "https://tailwindcss.com/docs/colors"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/posthog",
+    "https://www.shadcn.io/design/elevenlabs",
+    "https://tailwindcss.com/docs/colors"
+   ],
+   "suits_words": [
+    "AI products",
+    "food",
+    "hospitality",
+    "publishing",
+    "audio"
+   ],
+   "pairs_words": [
+    "reading-size-serif-body",
+    "ivory-ink-inverse-pair",
+    "serif-display-sans-ui-two-voice"
+   ],
+   "avoid_words": [
+    "indigo-tinted-dark",
+    "cobalt-ikb-blue-only-colour"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.one-hue-tinted-neutrals",
+   "kind": "idea",
+   "name": "One-hue tinted neutrals",
+   "category": "colour",
+   "what": "Every grey derived from a single hue token so the whole neutral ramp leans the same way: Open Props defines --gray-0 to --gray-15 as oklch(L var(--gray-chroma) var(--gray-hue)) with L from 99% to 10%; Tailwind v4 ships slate (hue 248 to 265, chroma up to 0.042), zinc (286), stone (49 to 106, chroma 0.001 to 0.006), neutral (0); Radix pairs sand with yellow/amber/orange/brown, olive with grass/lime, sage with teal/green, slate with blue/indigo, mauve with red/pink/purple. Pick the hue of your accent and set chroma 0.005 to 0.02.",
+   "why": "Greys that share the accent's hue make the accent look native, and the ramp reads as one material rather than Photoshop grey.",
+   "implementation": ":root{--hue:70;--g-1:oklch(97% .006 var(--hue));--g-3:oklch(88% .008 var(--hue));--g-9:oklch(49% .01 var(--hue));--g-14:oklch(18% .008 var(--hue))}",
+   "pitfalls": "Chroma above 0.03 on light neutrals turns them into pastels; stay under 0.02 for backgrounds, under 0.01 at the 95% step.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Default Tailwind gray/slate are everywhere; a custom hue token with oklch is visibly different (warm or olive greys).",
+   "seen_on": [
+    "https://open-props.style/",
+    "https://tailwindcss.com/docs/colors",
+    "https://www.radix-ui.com/colors/docs/palette-composition/composing-a-palette"
+   ],
+   "opened": [
+    "https://raw.githubusercontent.com/argyleink/open-props/main/src/props.gray-oklch.css",
+    "https://tailwindcss.com/docs/colors",
+    "https://www.radix-ui.com/colors/docs/palette-composition/composing-a-palette"
+   ],
+   "suits_words": [
+    "design systems",
+    "saas",
+    "any"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "warm-dark-mode-brown-black",
+    "radix-twelve-step-semantics"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.linear-three-variable-theme",
+   "kind": "idea",
+   "name": "Three-variable theme (base, accent, contrast)",
+   "category": "colour",
+   "what": "Linear replaced 98 per-theme variables with three inputs: a base colour in LCH, an accent colour and a contrast number (30 to 100), from which surfaces, text, icons and controls are generated; elevated and translucent surfaces are derived by shifting lightness up a few points and lowering chroma slightly. A third-party reconstruction puts the default dark base near L 12, C 2, H 270. Modern CSS can do this in the browser with relative colour syntax.",
+   "why": "A generated palette is internally consistent by construction and lets users retheme without breaking contrast.",
+   "implementation": "--base:oklch(14% .006 270);--surface-1:oklch(from var(--base) calc(l + .03) calc(c * .9) h);--surface-2:oklch(from var(--base) calc(l + .06) calc(c * .8) h);--ink:oklch(from var(--base) calc(l + .8) c h)",
+   "pitfalls": "The LCH or OKLCH gamut clips at high chroma; clamp chroma per lightness or colours fall out of sRGB.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "The technique is invisible in the result but makes a dark theme coherent in a way a hand-picked gray-800/900 palette never is.",
+   "seen_on": [
+    "https://linear.app/now/how-we-redesigned-the-linear-ui",
+    "https://astro-thedjpetersen-com.pages.dev/thoughts/linear-theme"
+   ],
+   "opened": [
+    "https://linear.app/now/how-we-redesigned-the-linear-ui"
+   ],
+   "suits_words": [
+    "product UI",
+    "developer tools",
+    "theming features"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "one-hue-tinted-neutrals",
+    "dark-accent-lightened-for-contrast"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.radix-twelve-step-semantics",
+   "kind": "idea",
+   "name": "Radix 12-step scale semantics",
+   "category": "colour",
+   "what": "A scale where each step has a job: 1 to 2 app backgrounds, 3 to 5 component backgrounds (normal, hover, pressed), 6 to 8 borders (subtle, interactive, strong/focus), 9 to 10 solid fills (9 is peak chroma; sky, mint, lime, yellow and amber take dark text, the rest white), 11 to 12 text (Lc 60 and Lc 90 APCA guaranteed on step 2). Vercel's Geist uses the same logic in ten steps (100 default bg, 200 hover, 300 active, 400 to 600 borders, 700 to 800 high-contrast bg, 900 to 1000 text). Dark mode swaps in the dark scale with identical semantics.",
+   "why": "Assigning roles to steps removes guesswork and keeps hover, border and text contrast consistent across every hue.",
+   "implementation": ".btn{background:var(--blue-4);border:1px solid var(--blue-7);color:var(--blue-11)} .btn:hover{background:var(--blue-5);border-color:var(--blue-8)}",
+   "pitfalls": "Using step 9 for body text or step 3 for borders is the common misuse; stick to the map.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Tailwind's 50 to 950 steps have no semantic roles, which is why generated UIs pick 500 for everything.",
+   "seen_on": [
+    "https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale",
+    "https://vercel.com/geist/colors"
+   ],
+   "opened": [
+    "https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale",
+    "https://vercel.com/geist/colors",
+    "https://www.radix-ui.com/colors/docs/overview/usage"
+   ],
+   "suits_words": [
+    "product UI",
+    "design systems",
+    "dashboards"
+   ],
+   "pairs_words": [
+    "one-hue-tinted-neutrals",
+    "dark-accent-lightened-for-contrast"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.oklch-accents-even-brightness",
+   "kind": "idea",
+   "name": "OKLCH accents with even perceived brightness",
+   "category": "colour",
+   "what": "Accents specified in OKLCH so that different hues at the same lightness feel equally loud: Tailwind v4 rebuilt its palette this way (red-500 oklch(63.7% 0.237 25.331), orange-500 oklch(70.5% 0.213 47.604), lime-400 oklch(84.1% 0.238 128.85), blue-600 oklch(54.6% 0.245 262.881)); Evil Martians' Harmony builds shades with OKLCH plus APCA contrast targets and ships P3 variants; Substack's orange is oklch(0.70 0.20 42). Use chroma up to 0.3 inside @supports (color: oklch(0 0 0)) with a hex fallback.",
+   "why": "Equal-lightness accents let two or three colours coexist without one shouting, and P3 chroma reaches colours hex cannot.",
+   "implementation": "--accent:#f54e00; @supports (color:oklch(0 0 0)){:root{--accent:oklch(66% .22 40)}}",
+   "pitfalls": "Copying hex from a v3 palette into a v4 project shifts colours; and oklch() in older Safari needs the fallback line first.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Tailwind defaults are still recognisable by hue; the win is custom hues at matched lightness, not the syntax itself.",
+   "seen_on": [
+    "https://tailwindcss.com/docs/colors",
+    "https://github.com/evilmartians/harmony",
+    "https://www.shadcn.io/design/substack"
+   ],
+   "opened": [
+    "https://tailwindcss.com/docs/colors",
+    "https://raw.githubusercontent.com/evilmartians/harmony/main/README.md",
+    "https://www.shadcn.io/design/substack"
+   ],
+   "suits_words": [
+    "design systems",
+    "data viz",
+    "any"
+   ],
+   "pairs_words": [
+    "one-hue-tinted-neutrals",
+    "radix-twelve-step-semantics",
+    "acid-lime-accent"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2025
+  },
+  {
+   "id": "idea.international-orange-signal-red-accent",
+   "kind": "idea",
+   "name": "International Orange or signal red accent",
+   "category": "colour",
+   "what": "A warm safety colour as the only accent on paper or black: PostHog #f54e00 (its handbook bans it for warnings), Substack #ff6719, Mintlify testimonial cards #f55a3c, Raycast's hero stripe #ff5757 to #a1131a, Arc's red #fb3a4d, Teenage Engineering's --te-orange #f05a24, Vercel's error #ee0000, Anthropic clay #d97757. International Orange proper is #ff4f00; Golden Gate is #c0362c. Use it on one element per viewport.",
+   "why": "Orange-red reads as a physical label or warning tape, so it feels industrial and human against black or cream.",
+   "implementation": "--accent:#f54e00;--accent-ink:#fff; .marker{background:var(--accent);color:var(--accent-ink);padding:.1em .3em}",
+   "pitfalls": "Orange on a blue-tinted dark (#0f172a) looks like a Bootstrap alert; keep the dark neutral or warm.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated palettes pick blue, violet or teal; orange-red is a studio signal.",
+   "seen_on": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/substack",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/teenage-engineering"
+   ],
+   "opened": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/substack",
+    "https://www.shadcn.io/design/raycast",
+    "https://www.shadcn.io/design/teenage-engineering"
+   ],
+   "suits_words": [
+    "developer tools",
+    "hardware",
+    "publishing",
+    "sport",
+    "logistics"
+   ],
+   "pairs_words": [
+    "single-accent-under-five-percent",
+    "warm-paper-canvas-not-white",
+    "condensed-poster-gothic-hero"
+   ],
+   "avoid_words": [
+    "purple-indigo-cta",
+    "pastel-tinted-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "idea",
+   "name": "Cobalt or IKB blue as the only colour",
+   "category": "colour",
+   "what": "A deep, saturated blue as the single accent on paper, close to International Klein Blue (#002fa7) or cobalt: Zed #004edb with hover #003fb5 and pressed #003299 on #f5f5f3; Arc's press band #3139fb with navy text #000354 on #fffcec; Framer #0099ff on #090909; Vercel's link #0070f3; Mercury's #5266eb on indigo-dark #171721. Keep it away from violet (hue under 270 in OKLCH).",
+   "why": "Cobalt on warm paper is a classic print pairing that reads as serious and crafted rather than corporate.",
+   "implementation": "--accent:oklch(45% .24 262); /* approx #004edb */ --accent-hover:oklch(40% .22 262)",
+   "pitfalls": "Drifting the hue toward 280 turns cobalt into the indigo that marks generated CTAs; stay at hue 255 to 265 with chroma 0.2 plus.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Tailwind blue-600 is common, but deep IKB-range blue on cream paper is not.",
+   "seen_on": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/mercury"
+   ],
+   "opened": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/framer",
+    "https://www.shadcn.io/design/mercury"
+   ],
+   "suits_words": [
+    "developer tools",
+    "browsers",
+    "fintech",
+    "architecture",
+    "publishing"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "single-accent-under-five-percent",
+    "colour-blocking-by-section"
+   ],
+   "avoid_words": [
+    "purple-indigo-cta",
+    "warm-dark-mode-brown-black"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.acid-lime-accent",
+   "kind": "idea",
+   "name": "Acid or lime accent on dark or cream",
+   "category": "colour",
+   "what": "A yellow-green accent used sparingly: Granola olive #5b6f00 CTA with #788c15 hover, #b2c248 soft and #d1e043 gradient stop on cream #f7f7f2; Resend #11ff99; Supabase #3ecf8e; GitHub's #5fed83 glow and accent dots; Mintlify #00d4a4; Figma's lime block #dceeb1; Tailwind lime-400 oklch(84.1% 0.238 128.85). Dark text (#0e0f0c) on the acid, never white.",
+   "why": "Acid green is high-energy and still uncommon in corporate palettes, so it gives tech brands a street or studio edge.",
+   "implementation": "--acid:oklch(86% .22 125);--olive:oklch(48% .12 120); .btn{background:var(--acid);color:#0e0f0c}",
+   "pitfalls": "Pure #39ff14 at large areas vibrates; keep chroma under 0.24 and use the olive (#5b6f00) for text-weight uses.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Teal and emerald (#10b981) are generated defaults; acid lime and olive are not.",
+   "seen_on": [
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/supabase",
+    "https://www.shadcn.io/design/github"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/resend",
+    "https://www.shadcn.io/design/supabase",
+    "https://www.shadcn.io/design/github"
+   ],
+   "suits_words": [
+    "developer tools",
+    "fitness",
+    "music",
+    "youth brands",
+    "sustainability"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "ink-black-that-is-not-000",
+    "oklch-accents-even-brightness"
+   ],
+   "avoid_words": [
+    "newspaper-didone-free-serifs",
+    "atipo-pwyw-luxury-serif"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.yellow-highlighter-annotation",
+   "kind": "idea",
+   "name": "Yellow highlighter as annotation",
+   "category": "colour",
+   "what": "Marker yellow used only behind words or as a tag, never as a surface: Granola #febe29 behind action verbs in the hero; Notion's highlight banner #f9e79f and card tint #fef7d6; Clerk brand yellow #fff963; Supabase chart yellow #ffdb13; Teenage Engineering yellow #fab413 on product only; PostHog primary #f7a501. Rendered as a background gradient clipped to the text line with box-decoration-break so it wraps like a real marker.",
+   "why": "A highlighter stroke reads as a human edit on top of finished type.",
+   "implementation": ".hl{background:linear-gradient(transparent 55%,#febe29 55% 92%,transparent 92%);box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:0 .1em}",
+   "pitfalls": "More than one highlighted phrase per screen turns into a sale flyer.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated heroes colour a word with the accent via text colour; the background-marker form is distinct.",
+   "seen_on": [
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/notion",
+    "https://www.shadcn.io/design/clerk"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/granola",
+    "https://www.shadcn.io/design/notion",
+    "https://www.shadcn.io/design/clerk"
+   ],
+   "suits_words": [
+    "productivity",
+    "education",
+    "note apps",
+    "newsletters"
+   ],
+   "pairs_words": [
+    "handwritten-annotation-face",
+    "warm-paper-canvas-not-white"
+   ],
+   "avoid_words": [
+    "neutral-dark-surface-ladder",
+    "international-orange-signal-red-accent"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.pastel-tinted-cards",
+   "kind": "idea",
+   "name": "Pastel tinted cards instead of white cards",
+   "category": "colour",
+   "what": "Each feature card gets its own low-chroma tint with no border and no shadow: Notion #ffe8d4 peach, #fde0ec rose, #d9f3e1 mint, #e6e0f5 lavender, #dcecfa sky, #fef7d6 yellow, #f8f5e8 cream, #f0eeec grey at 24px radius; Figma blocks #dceeb1, #c5b0f4, #f4ecd6, #c8e6cd, #efd4d4, #f3c9b6 and one navy #1f1d3d; Anthropic #e3dacc, #ebdbbc, #d4a27f kraft tones; Cursor timeline pastels #dfa88f, #9fc9a2, #9fbbe0, #c0a8dd. Tints sit at OKLCH L 88 to 94, chroma 0.03 to 0.07.",
+   "why": "Tints separate cards by colour instead of by chrome, so the grid reads as a palette rather than a component list.",
+   "implementation": ".card{background:oklch(92% .05 var(--card-hue));border:0;border-radius:24px;padding:32px} .card:nth-child(2){--card-hue:140}",
+   "pitfalls": "Three identical tinted cards with an icon on top is still Krebs pattern 12; vary card size and content type, and drop the icons.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Pastel cards appear in generated 'friendly SaaS' pages; the handmade version uses warm, slightly dirty tints (kraft, olive, clay) and uneven card sizes.",
+   "seen_on": [
+    "https://www.shadcn.io/design/notion",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/notion",
+    "https://www.shadcn.io/design/figma",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor"
+   ],
+   "suits_words": [
+    "productivity",
+    "design tools",
+    "education",
+    "consumer apps"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "colour-blocking-by-section"
+   ],
+   "avoid_words": [
+    "neutral-dark-surface-ladder",
+    "ink-is-the-brand",
+    "three-icon-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.colour-blocking-by-section",
+   "kind": "idea",
+   "name": "Colour blocking by section",
+   "category": "colour",
+   "what": "Full-bleed sections in flat, different colours with hard edges and no gradient between: Arc's #3139fb press band on a #fffcec page; Stripe's cream #f5e9d4 band and navy #1c1e54 pricing card on white; Anthropic's #000 inverse bands with ivory text; Notion's navy #0a1530 hero and #070f24 promo strip; Vercel's polarity-flipped #171717 bands; Mintlify's inverted startups page. Two to three blocks per page, each with its own text colour, never a tinted gradient.",
+   "why": "Hard colour edges give a long page rhythm and make each section feel like a poster rather than a scroll.",
+   "implementation": "section.band{background:#3139fb;color:#fffcec;padding-block:clamp(4rem,10vw,9rem)} section.band+section{margin-top:0}",
+   "pitfalls": "Rounded section corners and soft shadows between blocks reintroduce the card look; keep the edges square and flush.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated pages alternate white and gray-50; a saturated flat band is a layout decision.",
+   "seen_on": [
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/stripe",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/notion"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/arc",
+    "https://www.shadcn.io/design/stripe",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/notion"
+   ],
+   "suits_words": [
+    "browser",
+    "fintech",
+    "AI products",
+    "culture",
+    "events"
+   ],
+   "pairs_words": [
+    "cobalt-ikb-blue-only-colour",
+    "condensed-poster-gothic-hero",
+    "two-canvas-tracks-never-blend"
+   ],
+   "avoid_words": [
+    "gradient-restricted-to-one-stripe",
+    "accent-as-low-alpha-glow"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024,
+   "renders": "color-blocking"
+  },
+  {
+   "id": "idea.two-canvas-tracks-never-blend",
+   "kind": "idea",
+   "name": "Two canvas tracks that never blend",
+   "category": "colour",
+   "what": "Instead of a light/dark toggle, two fixed tracks assigned by page type: Shopify uses a #000 cinematic track (white text, outline pill buttons) for marketing and a #fbfbf5 transactional track (black ink, solid pills, mint accents #c1fbd4 and #d4f9e0 only here); Mercury keeps the top of funnel on #171721 and inputs and dashboard on #fbfcfd; Teenage Engineering themes per product (#000 body, #f6f8f7 product pages). The two tracks are never mixed on one page.",
+   "why": "Each track is optimised for its job (atmosphere vs legibility) and the switch between them marks a change of intent.",
+   "implementation": "html[data-track=cinematic]{--canvas:#000;--ink:#fff;--btn:transparent;--btn-border:#fff} html[data-track=transactional]{--canvas:#fbfbf5;--ink:#000;--btn:#000}",
+   "pitfalls": "Accents must be re-specified per track (mint only on light at Shopify); reusing one accent across both looks like a theme toggle.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated sites add a dark-mode switch; fixed tracks by page type are a brand-architecture decision.",
+   "seen_on": [
+    "https://www.shadcn.io/design/shopify",
+    "https://www.shadcn.io/design/mercury",
+    "https://www.shadcn.io/design/teenage-engineering"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/shopify",
+    "https://www.shadcn.io/design/mercury",
+    "https://www.shadcn.io/design/teenage-engineering"
+   ],
+   "suits_words": [
+    "commerce",
+    "fintech",
+    "hardware",
+    "multi-product brands"
+   ],
+   "pairs_words": [
+    "colour-blocking-by-section",
+    "neutral-dark-surface-ladder",
+    "warm-paper-canvas-not-white"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "first_seen_year": 2025
+  },
+  {
+   "id": "idea.duotone-monochrome-imagery",
+   "kind": "idea",
+   "name": "Duotone or monochrome imagery",
+   "category": "imagery",
+   "what": "Photography stripped to greyscale or mapped to two brand colours so the UI stays colourless: Nothing keeps dark tones only in photography while UI tokens are black, white and two greys; Teenage Engineering product shots on #e5e5e5 greys; Medium's single green editorial illustration on cream. Implement with filter grayscale plus a mix-blend-mode multiply tint, or an SVG feComponentTransfer duotone for exact brand colours.",
+   "why": "Monochrome images let type and one accent own the colour budget, and they unify stock photos of different quality.",
+   "implementation": "img.mono{filter:grayscale(1) contrast(1.05)} .duo{background:var(--accent)} .duo img{mix-blend-mode:multiply;filter:grayscale(1) contrast(1.1)}",
+   "pitfalls": "Duotone in purple and teal is the 2016 Spotify look; use ink plus paper, or ink plus the single accent.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated pages use full-colour stock or gradient placeholders.",
+   "seen_on": [
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/medium"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/nothing",
+    "https://www.shadcn.io/design/teenage-engineering",
+    "https://www.shadcn.io/design/medium"
+   ],
+   "suits_words": [
+    "hardware",
+    "fashion",
+    "publishing",
+    "studio",
+    "music"
+   ],
+   "pairs_words": [
+    "ink-is-the-brand",
+    "newspaper-didone-free-serifs",
+    "single-accent-under-five-percent"
+   ],
+   "avoid_words": [
+    "pastel-tinted-cards",
+    "accent-as-low-alpha-glow"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7,
+   "first_seen_year": 2024,
+   "renders": "image-duotone"
+  },
+  {
+   "id": "idea.opacity-ramps-instead-of-grey-tokens",
+   "kind": "idea",
+   "name": "Opacity ramps instead of extra greys",
+   "category": "colour",
+   "what": "Secondary text and subtle fills derived from the ink colour at fixed alphas rather than separate grey hexes: PostHog paragraphs at 90%, links 95%, hover 100%; Lovable charcoal #1c1c1c at .83 (strong), .82 (body), .40 (interactive borders), .04 (hover bg), .03 (overlays); Resend body rgba(252,253,255,.86) and .70; Raycast on-dark-mute at .72. The ramp travels with the ink across light and dark.",
+   "why": "Alpha steps inherit the canvas tint automatically, so one ink token yields a coherent family of greys on any background.",
+   "implementation": "--ink:#1c1c1c;--ink-82:color-mix(in oklch,var(--ink) 82%,transparent);--ink-40:color-mix(in oklch,var(--ink) 40%,transparent);--ink-04:color-mix(in oklch,var(--ink) 4%,transparent)",
+   "pitfalls": "Alpha text over images or tinted cards changes colour unpredictably; use solid tokens where text sits on imagery.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated CSS uses text-gray-500; ink-at-alpha is a system choice that keeps hue consistent.",
+   "seen_on": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/resend"
+   ],
+   "opened": [
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.shadcn.io/design/lovable",
+    "https://www.shadcn.io/design/resend"
+   ],
+   "suits_words": [
+    "any"
+   ],
+   "pairs_words": [
+    "ink-black-that-is-not-000",
+    "warm-paper-canvas-not-white",
+    "off-white-text-on-dark"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.warm-hairline-elevation",
+   "kind": "idea",
+   "name": "Warm hairline instead of shadow",
+   "category": "colour",
+   "what": "Elevation comes from a 1px border whose hue matches the canvas, with shadows at 4 to 6% or none: Dub #e5e5e5 as 'the system's elevation mechanism'; Zed #e2e2de warm hairline with shadows at rgba(20,20,20,.04/.06); Anthropic #d1cfc5 on ivory; Supabase #dfdfdf; Vercel #ebebeb; Cursor #e6e5e0 on #f7f7f4; Raycast declares no drop shadows at all. Strong variant one step darker for inputs (#d4d4ce, #c7c7c7).",
+   "why": "Hairlines keep the surface flat and print-like, while shadows push a page toward the generic card look.",
+   "implementation": "--hairline:oklch(90% .008 80);--hairline-strong:oklch(84% .01 80); .card{border:1px solid var(--hairline);box-shadow:0 1px 2px rgb(20 20 20/.04)}",
+   "pitfalls": "A cool #e5e7eb border on a warm canvas is the most common giveaway of a Tailwind default left in place.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "shadow-md on cards is the generated default; a matched warm hairline is a correction a designer makes.",
+   "seen_on": [
+    "https://www.shadcn.io/design/dub",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/dub",
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/anthropic",
+    "https://www.shadcn.io/design/cursor"
+   ],
+   "suits_words": [
+    "developer tools",
+    "AI products",
+    "docs",
+    "publishing"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "ink-black-that-is-not-000"
+   ],
+   "avoid_words": [
+    "translucent-white-hairlines-dark",
+    "accent-as-low-alpha-glow"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.9,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.dark-accent-lightened-for-contrast",
+   "kind": "idea",
+   "name": "Dark-mode accent lightened, not reused",
+   "category": "colour",
+   "what": "The brand colour shifts lighter and slightly less saturated on dark surfaces: Zed #004edb becomes #5a8bff in its dark variant with on-brand text #0a0c10; Linear #5e6ad2 with hover #828fff; GitHub links #8dd6ff on #0d1117 versus #4493f8 in product; Perplexity shifts toward #00a1ac in dark. Rule: raise OKLCH lightness by 15 to 25 points and lower chroma by about 10%, and swap text-on-accent to dark.",
+   "why": "The light-mode accent fails contrast on black and looks dull; the lifted version keeps the hue identity and passes.",
+   "implementation": "--accent:oklch(45% .24 262); @media (prefers-color-scheme:dark){:root{--accent:oklch(from var(--accent) calc(l + .2) calc(c * .9) h);--on-accent:#0a0c10}}",
+   "pitfalls": "Lightening a purple accent lands at lavender and feeds the violet-CTA cliche; keep the hue honest and test on step-2 surface.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generated dark modes reuse the same accent hex; the shift is a craft step.",
+   "seen_on": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/github",
+    "https://www.shadcn.io/design/perplexity"
+   ],
+   "opened": [
+    "https://www.webdesignhot.com/design.md/zed/",
+    "https://www.shadcn.io/design/linear",
+    "https://www.shadcn.io/design/github",
+    "https://www.shadcn.io/design/perplexity"
+   ],
+   "suits_words": [
+    "product UI",
+    "developer tools"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "linear-three-variable-theme",
+    "radix-twelve-step-semantics"
+   ],
+   "avoid_words": [],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.purple-indigo-cta",
+   "kind": "idea",
+   "name": "Purple or indigo CTA on dark",
+   "category": "colour",
+   "what": "A saturated violet or indigo primary button (#6c47ff Clerk, #7928ca Vercel violet, #c084fc, #8b5cf6) on a dark or white page, often with a matching gradient and glow. Krebs names 'VibeCode Purple' as a core pattern and counts purple/indigo/violet CTAs on 10.7% of Show HN sites; it is also the shadcn/ui default-adjacent look.",
+   "why": "Purple once signalled 'creative tech' (Stripe, Twitch); saturation made it the path of least resistance for generators.",
+   "implementation": "Replace with ink, International Orange, cobalt or acid lime; if purple is required use oklch(45% .12 300) and white or ink CTAs.",
+   "pitfalls": "Included as a blacklist entry; if a violet brand colour is mandated, desaturate (Railway #553f83) and keep it off the primary button.",
+   "ai_tell_risk": "high",
+   "ai_tell_note": "Named explicitly in the 2026 audit.",
+   "seen_on": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://www.shadcn.io/design/clerk"
+   ],
+   "opened": [
+    "https://www.adriankrebs.ch/blog/design-slop/",
+    "https://www.shadcn.io/design/clerk"
+   ],
+   "suits_words": [],
+   "pairs_words": [],
+   "avoid_words": [
+    "indigo-tinted-dark",
+    "accent-as-low-alpha-glow"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.95,
+   "first_seen_year": 2023
+  },
+  {
+   "id": "idea.gradient-restricted-to-one-stripe",
+   "kind": "idea",
+   "name": "Gradient restricted to one stripe or illustration",
+   "category": "colour",
+   "what": "Gradients allowed only as a single named artefact: Vercel's three brand gradients (#007cf0 to #00dfd8, #7928ca to #ff0080, #ff4d4d to #f9cb28) live on the 'Develop, Preview, Ship' words only; Raycast's red stripe #ff5757 to #a1131a is used once per page at most; Mintlify's hero sky #87a8c8 to #f5e9d8; Railway's hero #291839 to #3d2259 to #180d43; PostHog's handbook sets 'no gradients by default'. Never on buttons, borders, text or card backgrounds.",
+   "why": "One gradient is an image; gradients on components are a theme, and the audit found gradients on 28% of generated sites.",
+   "implementation": ".stripe{height:6px;background:linear-gradient(90deg,#ff5757,#a1131a)} /* and nowhere else: audit with grep 'gradient' */",
+   "pitfalls": "Gradient text on the hero headline and gradient borders on cards are both on the tell list; one stripe, one place.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "The constraint is the idea; the presence of any gradient raises suspicion, so budget exactly one.",
+   "seen_on": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/raycast",
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.adriankrebs.ch/blog/design-slop/"
+   ],
+   "opened": [
+    "https://www.shadcn.io/design/vercel",
+    "https://www.shadcn.io/design/raycast",
+    "https://posthog.com/handbook/brand/visual-identity",
+    "https://www.adriankrebs.ch/blog/design-slop/"
+   ],
+   "suits_words": [
+    "developer tools",
+    "launch pages"
+   ],
+   "pairs_words": [
+    "neutral-dark-surface-ladder",
+    "ink-is-the-brand"
+   ],
+   "avoid_words": [
+    "colour-blocking-by-section",
+    "single-accent-under-five-percent"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.85,
+   "first_seen_year": 2024
+  },
+  {
+   "id": "idea.grain-overlay-on-flat-colour",
+   "kind": "idea",
+   "name": "Grain overlay on flat colour",
+   "category": "texture",
+   "what": "A fine monochrome noise at 3 to 8% opacity over flat canvases and colour blocks, usually via an SVG feTurbulence filter or a tiled 256px PNG, with mix-blend-mode overlay or soft-light; paired with warm paper (#f4f1ea family) it reads as uncoated stock, and over a dark #0c0a09 it reads as film. Daylight's e-paper hardware site and many 2024 to 2026 studio sites use it; keep the noise static (no animation) and below 0.08 alpha.",
+   "why": "Grain breaks the perfectly flat digital fill and makes colour blocks feel physical.",
+   "implementation": "body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:multiply;background:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")}",
+   "pitfalls": "Animated grain and grain over text at more than 8% hurt legibility and look like a 2019 Awwwards template.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Generators do not emit feTurbulence; it is a hand-authored texture, though it is also a known studio cliche when overdone.",
+   "seen_on": [
+    "https://daylightcomputer.com",
+    "https://www.typewolf.com/"
+   ],
+   "opened": [
+    "https://www.typewolf.com/"
+   ],
+   "suits_words": [
+    "studio",
+    "hardware",
+    "publishing",
+    "music",
+    "fashion"
+   ],
+   "pairs_words": [
+    "warm-paper-canvas-not-white",
+    "colour-blocking-by-section",
+    "duotone-monochrome-imagery"
+   ],
+   "avoid_words": [
+    "neutral-dark-surface-ladder",
+    "pastel-tinted-cards"
+   ],
+   "source": "research sweep 2026-10-30 (ideas-type.json)",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.6,
+   "first_seen_year": 2024,
+   "renders": "texture-grain"
+  },
+  {
+   "id": "idea.ruled-paper-lines",
+   "kind": "idea",
+   "name": "Ruled paper lines",
+   "category": "texture",
+   "renders": "texture-rules",
+   "what": "Horizontal rules every 32px at 8 percent alpha behind the hero and the feature section, like a ruled notebook, with the type sitting on the lines; nothing else is decorated.",
+   "implementation": "background-image: repeating-linear-gradient(0deg, transparent 0 31px, color-mix(in oklab, var(--pf-color-text) 8%, transparent) 31px 32px); align the line step with the body line height.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "A stationery reference tied to note-taking and writing products; not in any template kit.",
+   "seen_on": [
+    "https://granola.ai",
+    "https://www.fieldnotesbrand.com"
+   ],
+   "first_seen_year": 2024,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.65
   }
  ],
  "edges": [
@@ -63504,6 +66190,3209 @@
    "to": "style.clay-canvas",
    "kind": "pairs_with",
    "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.narrow-oldstyle-display-serif-at-96px",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.narrow-oldstyle-display-serif-at-96px",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.narrow-oldstyle-display-serif-at-96px",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.narrow-oldstyle-display-serif-at-96px",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.narrow-oldstyle-display-serif-at-96px",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.narrow-oldstyle-display-serif-at-96px",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.narrow-oldstyle-display-serif-at-96px",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.narrow-oldstyle-display-serif-at-96px",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "idea.narrow-oldstyle-display-serif-at-96px",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.bricolage-opsz-width-axis-headlines",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.bricolage-opsz-width-axis-headlines",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.bricolage-opsz-width-axis-headlines",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.bricolage-opsz-width-axis-headlines",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.bricolage-opsz-width-axis-headlines",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.bricolage-opsz-width-axis-headlines",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.bricolage-opsz-width-axis-headlines",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.nonprofit",
+   "to": "idea.bricolage-opsz-width-axis-headlines",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.playful",
+   "to": "idea.bricolage-opsz-width-axis-headlines",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.fraunces-soft-wonk-dial",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.fraunces-soft-wonk-dial",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.fraunces-soft-wonk-dial",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "idea.fraunces-soft-wonk-dial",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.fraunces-soft-wonk-dial",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.mono-uppercase-label-voice",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.mono-uppercase-label-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.mono-uppercase-label-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.mono-uppercase-label-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.mono-uppercase-label-voice",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.ultralight-display-weights",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ultralight-display-weights",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ultralight-display-weights",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.ultralight-display-weights",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.ultralight-display-weights",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.ultralight-display-weights",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.real-estate",
+   "to": "idea.ultralight-display-weights",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tracking-scaled-to-size",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tracking-scaled-to-size",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tracking-scaled-to-size",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tracking-scaled-to-size",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tracking-scaled-to-size",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.tracking-scaled-to-size",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.tracking-scaled-to-size",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.tracking-scaled-to-size",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.display-leading-at-or-below-one",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.display-leading-at-or-below-one",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.display-leading-at-or-below-one",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.display-leading-at-or-below-one",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-display-sans-ui-two-voice",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-display-sans-ui-two-voice",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-display-sans-ui-two-voice",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-display-sans-ui-two-voice",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-display-sans-ui-two-voice",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.serif-display-sans-ui-two-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.serif-display-sans-ui-two-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.serif-display-sans-ui-two-voice",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-weight-off-the-hundreds",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-weight-off-the-hundreds",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-weight-off-the-hundreds",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.variable-weight-off-the-hundreds",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.variable-weight-off-the-hundreds",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.variable-weight-off-the-hundreds",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.optical-size-axis-body-vs-display",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.optical-size-axis-body-vs-display",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.documentation",
+   "to": "idea.optical-size-axis-body-vs-display",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.optical-size-axis-body-vs-display",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.width-axis-compressed-headlines",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.width-axis-compressed-headlines",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.width-axis-compressed-headlines",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.width-axis-compressed-headlines",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.width-axis-compressed-headlines",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.stylistic-sets-to-de-default",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.stylistic-sets-to-de-default",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.stylistic-sets-to-de-default",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.stylistic-sets-to-de-default",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.tabular-numerals-for-data",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.dashboard",
+   "to": "idea.tabular-numerals-for-data",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.tabular-numerals-for-data",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ecommerce",
+   "to": "idea.tabular-numerals-for-data",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.tabular-numerals-for-data",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.tabular-numerals-for-data",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.pixel-dot-matrix-product-voice",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.pixel-dot-matrix-product-voice",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.pixel-dot-matrix-product-voice",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.pixel-dot-matrix-product-voice",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.pixel-dot-matrix-product-voice",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.pixel-dot-matrix-product-voice",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.viewport-scaled-type-no-breakpoints",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "idea.viewport-scaled-type-no-breakpoints",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "idea.viewport-scaled-type-no-breakpoints",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "idea.viewport-scaled-type-no-breakpoints",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.viewport-scaled-type-no-breakpoints",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.viewport-scaled-type-no-breakpoints",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "idea.viewport-scaled-type-no-breakpoints",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.teenage"
+   ]
+  },
+  {
+   "from": "idea.ink-trap-grotesque-headline",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-trap-grotesque-headline",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-trap-grotesque-headline",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-trap-grotesque-headline",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-trap-grotesque-headline",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.ink-trap-grotesque-headline",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.ink-trap-grotesque-headline",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.ink-trap-grotesque-headline",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.quirky-grotesque-not-neo-grotesque",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.quirky-grotesque-not-neo-grotesque",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.quirky-grotesque-not-neo-grotesque",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.quirky-grotesque-not-neo-grotesque",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.quirky-grotesque-not-neo-grotesque",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.quirky-grotesque-not-neo-grotesque",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.swiss-grid",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.fontshare-serif-display-pairs",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.fontshare-serif-display-pairs",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "idea.fontshare-serif-display-pairs",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.fontshare-serif-display-pairs",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.fontshare-serif-display-pairs",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.satoshi-clash-template-duo",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.satoshi-clash-template-duo",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.satoshi-clash-template-duo",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.satoshi-clash-template-duo",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.satoshi-clash-template-duo",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.satoshi-clash-template-duo",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.satoshi-clash-template-duo",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.inter-for-everything",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.inter-for-everything",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.condensed-poster-gothic-hero",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.condensed-poster-gothic-hero",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.condensed-poster-gothic-hero",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.condensed-poster-gothic-hero",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.condensed-poster-gothic-hero",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "idea.condensed-poster-gothic-hero",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.condensed-poster-gothic-hero",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.condensed-poster-gothic-hero",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.reading-size-serif-body",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.reading-size-serif-body",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.reading-size-serif-body",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.reading-size-serif-body",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.reading-size-serif-body",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.humanist-sans-instead-of-inter",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.humanist-sans-instead-of-inter",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.humanist-sans-instead-of-inter",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.humanist-sans-instead-of-inter",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.humanist-sans-instead-of-inter",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.community",
+   "to": "idea.humanist-sans-instead-of-inter",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "idea.humanist-sans-instead-of-inter",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "idea.humanist-sans-instead-of-inter",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.nonprofit",
+   "to": "idea.humanist-sans-instead-of-inter",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.humanist-sans-instead-of-inter",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-axis-animated-on-scroll",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-axis-animated-on-scroll",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-axis-animated-on-scroll",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-axis-animated-on-scroll",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.variable-axis-animated-on-scroll",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.dashboard",
+   "to": "idea.variable-axis-animated-on-scroll",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.variable-axis-animated-on-scroll",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.variable-axis-animated-on-scroll",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-italic-dek-paragraph",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-italic-dek-paragraph",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-italic-dek-paragraph",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.serif-italic-dek-paragraph",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.serif-italic-dek-paragraph",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.serif-italic-dek-paragraph",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-monos-code-vs-labels",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-monos-code-vs-labels",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-monos-code-vs-labels",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-monos-code-vs-labels",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-monos-code-vs-labels",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.two-monos-code-vs-labels",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.two-monos-code-vs-labels",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.documentation",
+   "to": "idea.two-monos-code-vs-labels",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.two-monos-code-vs-labels",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.duospace-body-ia-writer",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "idea.duospace-body-ia-writer",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "idea.duospace-body-ia-writer",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "idea.duospace-body-ia-writer",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.duospace-body-ia-writer",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "idea.duospace-body-ia-writer",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.duospace-body-ia-writer",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.github"
+   ]
+  },
+  {
+   "from": "idea.redaction-degrading-editorial-face",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.redaction-degrading-editorial-face",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.redaction-degrading-editorial-face",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.redaction-degrading-editorial-face",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.redaction-degrading-editorial-face",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.redaction-degrading-editorial-face",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.nonprofit",
+   "to": "idea.redaction-degrading-editorial-face",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "idea.redaction-degrading-editorial-face",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.redaction-degrading-editorial-face",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.libre-experimental-display-one-word",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.libre-experimental-display-one-word",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "idea.libre-experimental-display-one-word",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.libre-experimental-display-one-word",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.libre-experimental-display-one-word",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.atipo-pwyw-luxury-serif",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.atipo-pwyw-luxury-serif",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.atipo-pwyw-luxury-serif",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.atipo-pwyw-luxury-serif",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.atipo-pwyw-luxury-serif",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.atipo-pwyw-luxury-serif",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.atipo-pwyw-luxury-serif",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.newspaper-didone-free-serifs",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.newspaper-didone-free-serifs",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.newspaper-didone-free-serifs",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.newspaper-didone-free-serifs",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-paper-canvas-not-white",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-paper-canvas-not-white",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-paper-canvas-not-white",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-paper-canvas-not-white",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-paper-canvas-not-white",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.warm-paper-canvas-not-white",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.warm-paper-canvas-not-white",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.warm-paper-canvas-not-white",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "idea.warm-paper-canvas-not-white",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.warm-paper-canvas-not-white",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-black-that-is-not-000",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.single-accent-under-five-percent",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.single-accent-under-five-percent",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.single-accent-under-five-percent",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.single-accent-under-five-percent",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.single-accent-under-five-percent",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.single-accent-under-five-percent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.single-accent-under-five-percent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.single-accent-under-five-percent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.single-accent-under-five-percent",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ink-is-the-brand",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.ink-is-the-brand",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.ink-is-the-brand",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.ink-is-the-brand",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.ink-is-the-brand",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.ink-is-the-brand",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.neutral-dark-surface-ladder",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.neutral-dark-surface-ladder",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.neutral-dark-surface-ladder",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.neutral-dark-surface-ladder",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.neutral-dark-surface-ladder",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.neutral-dark-surface-ladder",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.translucent-white-hairlines-dark",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.translucent-white-hairlines-dark",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.translucent-white-hairlines-dark",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.translucent-white-hairlines-dark",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.translucent-white-hairlines-dark",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.translucent-white-hairlines-dark",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.accent-as-low-alpha-glow",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.accent-as-low-alpha-glow",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.accent-as-low-alpha-glow",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.accent-as-low-alpha-glow",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.accent-as-low-alpha-glow",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.accent-as-low-alpha-glow",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.accent-as-low-alpha-glow",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.accent-as-low-alpha-glow",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.off-white-text-on-dark",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.off-white-text-on-dark",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.off-white-text-on-dark",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.off-white-text-on-dark",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.off-white-text-on-dark",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.off-white-text-on-dark",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.off-white-text-on-dark",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-dark-mode-brown-black",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.warm-dark-mode-brown-black",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.warm-dark-mode-brown-black",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.warm-dark-mode-brown-black",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.warm-dark-mode-brown-black",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.warm-dark-mode-brown-black",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.warm-dark-mode-brown-black",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "idea.warm-dark-mode-brown-black",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.one-hue-tinted-neutrals",
+   "to": "style.bento-showcase",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.one-hue-tinted-neutrals",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.one-hue-tinted-neutrals",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.one-hue-tinted-neutrals",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.one-hue-tinted-neutrals",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.one-hue-tinted-neutrals",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.one-hue-tinted-neutrals",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.linear-three-variable-theme",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "idea.linear-three-variable-theme",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "idea.linear-three-variable-theme",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "idea.linear-three-variable-theme",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "idea.linear-three-variable-theme",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.linear-three-variable-theme",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.linear-three-variable-theme",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.linear-three-variable-theme",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.linear"
+   ]
+  },
+  {
+   "from": "idea.radix-twelve-step-semantics",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.vercel"
+   ]
+  },
+  {
+   "from": "idea.radix-twelve-step-semantics",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.vercel"
+   ]
+  },
+  {
+   "from": "idea.radix-twelve-step-semantics",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.vercel"
+   ]
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.radix-twelve-step-semantics",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.vercel"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.radix-twelve-step-semantics",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.vercel"
+   ]
+  },
+  {
+   "from": "idea.oklch-accents-even-brightness",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github",
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.oklch-accents-even-brightness",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github",
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "product-type.dashboard",
+   "to": "idea.oklch-accents-even-brightness",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.github",
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.oklch-accents-even-brightness",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.github",
+    "reference-site.tailwindcss"
+   ]
+  },
+  {
+   "from": "idea.international-orange-signal-red-accent",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.international-orange-signal-red-accent",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.international-orange-signal-red-accent",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.international-orange-signal-red-accent",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.international-orange-signal-red-accent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.international-orange-signal-red-accent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.international-orange-signal-red-accent",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.cobalt-ikb-blue-only-colour",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.cobalt-ikb-blue-only-colour",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.cobalt-ikb-blue-only-colour",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.cobalt-ikb-blue-only-colour",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.cobalt-ikb-blue-only-colour",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.real-estate",
+   "to": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.cobalt-ikb-blue-only-colour",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.acid-lime-accent",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.acid-lime-accent",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.acid-lime-accent",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.acid-lime-accent",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.acid-lime-accent",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.acid-lime-accent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "idea.acid-lime-accent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "idea.acid-lime-accent",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.acid-lime-accent",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.yellow-highlighter-annotation",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.yellow-highlighter-annotation",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.yellow-highlighter-annotation",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.yellow-highlighter-annotation",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "idea.yellow-highlighter-annotation",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.pastel-tinted-cards",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.pastel-tinted-cards",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.pastel-tinted-cards",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "idea.pastel-tinted-cards",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.colour-blocking-by-section",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.colour-blocking-by-section",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.colour-blocking-by-section",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.colour-blocking-by-section",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.two-canvas-tracks-never-blend",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.two-canvas-tracks-never-blend",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ecommerce",
+   "to": "idea.two-canvas-tracks-never-blend",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.fintech",
+   "to": "idea.two-canvas-tracks-never-blend",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.two-canvas-tracks-never-blend",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.duotone-monochrome-imagery",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.duotone-monochrome-imagery",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.duotone-monochrome-imagery",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.duotone-monochrome-imagery",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "idea.duotone-monochrome-imagery",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.duotone-monochrome-imagery",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.opacity-ramps-instead-of-grey-tokens",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.opacity-ramps-instead-of-grey-tokens",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.opacity-ramps-instead-of-grey-tokens",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.warm-hairline-elevation",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-hairline-elevation",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-hairline-elevation",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-hairline-elevation",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.warm-hairline-elevation",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ai-product",
+   "to": "idea.warm-hairline-elevation",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.warm-hairline-elevation",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.documentation",
+   "to": "idea.warm-hairline-elevation",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.warm-hairline-elevation",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.warm-hairline-elevation",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.dark-accent-lightened-for-contrast",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.dark-accent-lightened-for-contrast",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.dark-accent-lightened-for-contrast",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.dark-accent-lightened-for-contrast",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.dark-accent-lightened-for-contrast",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.dark-accent-lightened-for-contrast",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "idea.dark-accent-lightened-for-contrast",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.dark-accent-lightened-for-contrast",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "idea.purple-indigo-cta",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.purple-indigo-cta",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": []
+  },
+  {
+   "from": "idea.gradient-restricted-to-one-stripe",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.gradient-restricted-to-one-stripe",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.gradient-restricted-to-one-stripe",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.gradient-restricted-to-one-stripe",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.4,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.gradient-restricted-to-one-stripe",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "mood.technical",
+   "to": "idea.gradient-restricted-to-one-stripe",
+   "kind": "expresses",
+   "weight": 0.5,
+   "evidence": [
+    "reference-site.posthog"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.dark-console",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.lab-figures",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.grain-overlay-on-flat-colour",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "product-type.agency",
+   "to": "idea.grain-overlay-on-flat-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "product-type.developer-tool",
+   "to": "idea.grain-overlay-on-flat-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "idea.grain-overlay-on-flat-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "product-type.event",
+   "to": "idea.grain-overlay-on-flat-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "idea.grain-overlay-on-flat-colour",
+   "kind": "suits",
+   "weight": 0.6,
+   "evidence": [
+    "reference-site.daylightcomputer"
+   ]
+  },
+  {
+   "from": "idea.ruled-paper-lines",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ruled-paper-lines",
+   "to": "style.clay-canvas",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ruled-paper-lines",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.ruled-paper-lines",
+   "to": "style.giant-serif",
+   "kind": "pairs_with",
+   "weight": 0.6,
    "evidence": []
   }
  ]

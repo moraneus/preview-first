@@ -4,12 +4,12 @@
 
 [![CI](https://github.com/moraneus/preview-first/actions/workflows/ci.yml/badge.svg)](https://github.com/moraneus/preview-first/actions/workflows/ci.yml)
 ![styles](https://img.shields.io/badge/styles-26-1f2937)
-![design ideas](https://img.shields.io/badge/design_ideas-440-1f2937)
+![design ideas](https://img.shields.io/badge/design_ideas-500-1f2937)
 ![palettes](https://img.shields.io/badge/OKLCH_palettes-57-1f2937)
 ![type pairings](https://img.shields.io/badge/type_pairings-60-1f2937)
 ![motion patterns](https://img.shields.io/badge/motion_patterns-26-1f2937)
 ![devices](https://img.shields.io/badge/devices-36-1f2937)
-![reference sites](https://img.shields.io/badge/reference_sites-229-1f2937)
+![reference sites](https://img.shields.io/badge/reference_sites-235-1f2937)
 ![dependencies](https://img.shields.io/badge/runtime_dependencies-0-1f2937)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1f2937)](LICENSE)
 
@@ -17,7 +17,7 @@
 
 ## Not the template
 
-Generated sites share a page order before they share a colour: centred headline, two buttons, screenshot, three cards, logo bar, testimonials, footer. preview-first never opens a direction with it, and since 0.3.0 a direction is not a palette on a fixed skeleton either. Each one is a style plus eight to twelve **design ideas** drawn from a graph of 440 sourced moves observed on modern sites and templates: a split navigation with the studio's live local time, a specimen hero, giant numerals, a bordered grid with corner crosses, film grain, bracket buttons, a marquee of the product's real nouns, a colophon footer with the face in use and the version. Ideas with a render hook change the draft; the rest travel into the contract with their implementation notes and the sites they came from. No two directions in a set share a navigation device, a first screen or a texture.
+Generated sites share a page order before they share a colour: centred headline, two buttons, screenshot, three cards, logo bar, testimonials, footer. preview-first never opens a direction with it, and since 0.3.0 a direction is not a palette on a fixed skeleton either. Each one is a style plus eight to twelve **design ideas** drawn from a graph of 500 sourced moves observed on modern sites and templates: a split navigation with the studio's live local time, a specimen hero, giant numerals, a bordered grid with corner crosses, film grain, bracket buttons, a marquee of the product's real nouns, a colophon footer with the face in use and the version. Ideas with a render hook change the draft; the rest travel into the contract with their implementation notes and the sites they came from. No two directions in a set share a navigation device, a first screen or a texture.
 
 | Acid lab: ticker hero, marquee, cells with crosses, bracket buttons | Archive index: index column, hover list, mono counts, colophon |
 |---|---|
@@ -139,7 +139,7 @@ Decisions come from `skills/preview-first/knowledge/graph.json`, a graph of what
 | Nodes | Count | Edges |
 |---|---|---|
 | Styles (sixteen from 0.1 and 0.2, plus acid lab, paper and signal, archive index, raw document, night grain, phosphor terminal, cobalt block, giant serif, signal orange, clay canvas) | 26 | `defaults_to` treatments and motion, `requires` platform features, `ideas` lists |
-| Design ideas: sourced moves with a description, implementation note, tell risk, sites seen on and an optional render hook (66 hooks implemented in the drafts) | 440 | `pairs_with` styles, `suits` from product types, `expresses` from moods |
+| Design ideas: sourced moves with a description, implementation note, tell risk, sites seen on and an optional render hook (65 hooks implemented in the drafts) | 500 | `pairs_with` styles, `suits` from product types, `expresses` from moods |
 | Palettes, OKLCH, light and dark, every role contrast-checked | 57 | `pairs_with` and `avoid_with` styles |
 | Type pairings with fallbacks, scale ratio, licence, loading URL; families verified against the Google Fonts snapshot | 60 | `pairs_with` and `avoid_with` styles |
 | Component treatments (closed vocabulary across 10 axes) | 33 | |
@@ -147,7 +147,7 @@ Decisions come from `skills/preview-first/knowledge/graph.json`, a graph of what
 | Motion patterns with trigger, duration, easing, reduced-motion rule | 26 | |
 | Product types and moods with aliases | 22 and 20 | `suits` and `expresses` styles and ideas |
 | Icon sets, platform features with Baseline status | 6 and 16 | |
-| Reference sites, recorded as evidence on edges | 229 | cited by 2,212 edges |
+| Reference sites, recorded as evidence on edges | 235 | cited by 2,296 edges |
 | Devices with viewport, DPR, safe areas, cutout, share rank | 36 | |
 
 Every node carries a source and dates. `validate_graph.py` checks the schema, every edge endpoint, and fails any palette whose text does not reach WCAG 4.5:1 and APCA Lc 60 on its background in both modes.
