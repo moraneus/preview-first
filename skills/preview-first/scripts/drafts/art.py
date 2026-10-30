@@ -605,5 +605,160 @@ GENERATORS.update({
 })
 
 
+# ---------------------------------------------------------------- 0.4.0 generators (showcase styles)
+
+def mesh(seed: str, label: str = "") -> str:
+    """A dot lattice pushed by two invisible attractors; reads as a field, not a grid."""
+    r = _rng(seed, "mesh")
+    w, h = 800, 600
+    ax, ay = r.uniform(200, 600), r.uniform(150, 450)
+    bx, by = r.uniform(100, 700), r.uniform(100, 500)
+    parts = []
+    for j in range(19):
+        for i in range(25):
+            x, y = 16 + i * 32, 16 + j * 32
+            for cx, cy, k in ((ax, ay, 1.0), (bx, by, -0.6)):
+                d = math.hypot(x - cx, y - cy) + 1
+                f = 2200 * k / (d * d)
+                x += (x - cx) * f
+                y += (y - cy) * f
+            d = math.hypot(x - ax, y - ay)
+            rad = max(1.2, 5 - d / 60)
+            parts.append('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="%s"/>' % (x, y, rad, C["primary"] if d < 110 else C["text"]))
+    return _svg(w, h, "".join(parts), label, "pfd-art-mesh")
+
+
+def torus(seed: str, label: str = "") -> str:
+    """A wireframe torus drawn as rings, slightly tilted, one ring in primary."""
+    r = _rng(seed, "torus")
+    tilt = r.uniform(0.28, 0.45)
+    parts = []
+    for k in range(24):
+        a = k / 24 * math.tau
+        cx = 300 + 150 * math.cos(a)
+        cy = 300 + 150 * math.sin(a) * tilt
+        parts.append('<ellipse cx="%.0f" cy="%.0f" rx="%d" ry="%d" fill="none" stroke="%s" stroke-width="%s" opacity="%s" transform="rotate(%.0f %.0f %.0f)"/>' % (
+            cx, cy, 70, int(70 * (0.55 + 0.45 * abs(math.sin(a)))), C["primary"] if k == 5 else C["text"], "2" if k == 5 else "1", "1" if k == 5 else ".45", math.degrees(a) + 90, cx, cy))
+    return _svg(600, 600, "".join(parts), label, "pfd-art-torus")
+
+
+def letterstack(seed: str, label: str = "") -> str:
+    """One letter repeated down the page as outlines with the last one filled; a poster device."""
+    r = _rng(seed, "ls")
+    ch = r.choice(list("AKRSGMXW"))
+    parts = []
+    for i in range(6):
+        parts.append('<text x="%d" y="%d" style="font-family:var(--pf-font-heading);font-size:420px;font-weight:700;letter-spacing:-.05em" fill="%s" stroke="%s" stroke-width="2" opacity="%s">%s</text>' % (
+            60 + i * 22, 440 + i * 18, C["primary"] if i == 5 else "none", C["text"], 1 if i == 5 else .5, ch))
+    return _svg(600, 600, "".join(parts), label, "pfd-art-letterstack")
+
+
+def blob(seed: str, label: str = "") -> str:
+    """One flat organic shape from a smoothed polygon, with a hard offset shadow in ink."""
+    r = _rng(seed, "blob")
+    pts = []
+    for k in range(10):
+        a = k / 10 * math.tau
+        rad = r.uniform(170, 240)
+        pts.append((300 + rad * math.cos(a), 300 + rad * math.sin(a)))
+    def path(off):
+        d = []
+        for k in range(10):
+            x0, y0 = pts[k]; x1, y1 = pts[(k + 1) % 10]
+            mx, my = (x0 + x1) / 2 + off, (y0 + y1) / 2 + off
+            d.append(("M%.0f %.0f" % (mx, my)) if k == 0 else ("Q%.0f %.0f %.0f %.0f" % (x1 + off, y1 + off, (x1 + pts[(k + 2) % 10][0]) / 2 + off, (y1 + pts[(k + 2) % 10][1]) / 2 + off)))
+        return " ".join(d) + " Z"
+    body = '<path d="%s" fill="%s"/><path d="%s" fill="%s"/>' % (path(14), C["text"], path(0), C["accent"])
+    return _svg(600, 600, body, label, "pfd-art-blob")
+
+
+def mosaic(seed: str, label: str = "") -> str:
+    """Tiles of palette colour in an uneven mosaic, a few with a glyph; reads as a poster wall."""
+    r = _rng(seed, "mosaic")
+    cols = [C["primary"], C["accent"], C["text"], C["surface"], C["raised"]]
+    parts = []
+    cell = 100
+    for j in range(6):
+        for i in range(8):
+            col = r.choice(cols)
+            big = r.random() < .12
+            parts.append('<rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>' % (i * cell, j * cell, cell * (2 if big else 1) - 4, cell * (2 if big else 1) - 4, col))
+            if r.random() < .15:
+                parts.append('<circle cx="%d" cy="%d" r="%d" fill="%s"/>' % (i * cell + cell / 2, j * cell + cell / 2, 28, C["bg"]))
+    return _svg(800, 600, "".join(parts), label, "pfd-art-mosaic")
+
+
+def bars(seed: str, label: str = "") -> str:
+    """Tall vertical bars of varied width like a barcode or a sound wall, two in primary."""
+    r = _rng(seed, "bars")
+    x = 0
+    parts = []
+    k = 0
+    while x < 800:
+        wd = r.choice([8, 12, 20, 32, 48, 72])
+        hgt = r.randint(140, 560)
+        parts.append('<rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>' % (x, 600 - hgt, wd - 4, hgt, C["primary"] if k % 7 == 3 else C["text"]))
+        x += wd
+        k += 1
+    return _svg(800, 600, "".join(parts), label, "pfd-art-bars")
+
+
+def sun(seed: str, label: str = "") -> str:
+    """A flat disc with rays and a horizon, in two colours; no gradient."""
+    r = _rng(seed, "sun")
+    cx = r.randint(260, 540)
+    parts = ['<rect width="800" height="600" fill="%s"/>' % C["surface"]]
+    for k in range(36):
+        a = k / 36 * math.tau
+        parts.append('<line x1="%.0f" y1="%.0f" x2="%.0f" y2="%.0f" stroke="%s" stroke-width="2" opacity=".7"/>' % (cx + 200 * math.cos(a), 300 + 200 * math.sin(a), cx + 420 * math.cos(a), 300 + 420 * math.sin(a), C["text"]))
+    parts.append('<circle cx="%d" cy="300" r="170" fill="%s"/><rect x="0" y="330" width="800" height="270" fill="%s"/><line x1="0" y1="330" x2="800" y2="330" stroke="%s" stroke-width="2"/>' % (cx, C["primary"], C["surface"], C["text"]))
+    for k in range(5):
+        parts.append('<rect x="0" y="%d" width="800" height="%d" fill="%s" opacity=".55"/>' % (350 + k * 46, 6 + k * 4, C["text"]))
+    return _svg(800, 600, "".join(parts), label, "pfd-art-sun")
+
+
+def lattice(seed: str, label: str = "") -> str:
+    """Isometric lattice of cubes with a few filled faces; a construction drawing."""
+    r = _rng(seed, "lat")
+    parts = []
+    for j in range(5):
+        for i in range(6):
+            x = 80 + i * 120 + (60 if j % 2 else 0)
+            y = 80 + j * 100
+            s = 50
+            top = "%d,%d %d,%d %d,%d %d,%d" % (x, y - s / 2, x + s * .87, y, x, y + s / 2, x - s * .87, y)
+            fill = C["primary"] if r.random() < .14 else "none"
+            parts.append('<polygon points="%s" fill="%s" stroke="%s" stroke-width="1.2"/>' % (top, fill, C["text"]))
+            parts.append('<path d="M%d %dv%dM%.0f %dv%dM%.0f %dv%d" stroke="%s" stroke-width="1.2" fill="none"/>' % (x, y + s / 2, 30, x + s * .87, y, 30, x - s * .87, y, 30, C["text"]))
+    return _svg(800, 600, "".join(parts), label, "pfd-art-lattice")
+
+
+def rays(seed: str, label: str = "") -> str:
+    """Radiating wedges from an off-centre point, alternating ink and bg; a festival poster."""
+    r = _rng(seed, "rays")
+    cx, cy = r.randint(120, 680), r.randint(100, 500)
+    parts = []
+    n = 24
+    for k in range(n):
+        a0, a1 = k / n * math.tau, (k + 1) / n * math.tau
+        parts.append('<polygon points="%d,%d %.0f,%.0f %.0f,%.0f" fill="%s"/>' % (cx, cy, cx + 1200 * math.cos(a0), cy + 1200 * math.sin(a0), cx + 1200 * math.cos(a1), cy + 1200 * math.sin(a1), C["text"] if k % 2 else C["accent"]))
+    parts.append('<circle cx="%d" cy="%d" r="60" fill="%s"/>' % (cx, cy, C["primary"]))
+    return _svg(800, 600, '<clipPath id="pfr-%s"><rect width="800" height="600"/></clipPath><g clip-path="url(#pfr-%s)">%s</g>' % (E(seed), E(seed), "".join(parts)), label, "pfd-art-rays")
+
+
+def wordcloud(seed: str, label: str = "") -> str:
+    """The direction's short words scattered at different sizes and angles in the heading face."""
+    r = _rng(seed, "wc")
+    words = ["Made", "Now", "Open", "2026", "Yes", "Work", "Here", "New", "Go", "Live"]
+    parts = []
+    for i in range(12):
+        parts.append('<text x="%d" y="%d" style="font-family:var(--pf-font-heading);font-size:%dpx;font-weight:700;letter-spacing:-.04em" fill="%s" transform="rotate(%d %d %d)">%s</text>' % (
+            r.randint(20, 560), r.randint(80, 580), r.choice([48, 72, 96, 140]), C["primary"] if i % 4 == 0 else C["text"], r.choice([-12, -6, 0, 6, 12, 90]), 300, 300, r.choice(words)))
+    return _svg(800, 600, "".join(parts), label, "pfd-art-wordcloud")
+
+
+GENERATORS.update({"mesh": mesh, "torus": torus, "letterstack": letterstack, "blob": blob, "mosaic": mosaic, "bars": bars, "sun": sun, "lattice": lattice, "rays": rays, "wordcloud": wordcloud})
+
+
 def render(kind: str, seed: str = "A", label: str = "") -> str:
     return GENERATORS.get(kind, blueprint)(seed, label)

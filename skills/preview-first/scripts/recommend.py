@@ -421,7 +421,7 @@ def main(argv: Sequence[str]) -> int:
     if not ns.brief:
         ap.error("--brief or --list is required")
     brief = _common.load_json(ns.brief)
-    bundles = recommend(brief, graph, max(1, min(5, ns.count)))
+    bundles = recommend(brief, graph, max(1, min(8, ns.count)))
     print(json.dumps({"brief": normalise_brief(brief, graph), "bundles": bundles}, indent=2))
     return 0
 

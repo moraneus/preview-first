@@ -34275,6 +34275,1383 @@
    "added": "2026-10-30",
    "last_verified": "2026-10-30",
    "confidence": 0.65
+  },
+  {
+   "id": "idea.split-screen-hero",
+   "kind": "idea",
+   "name": "Split-screen hero",
+   "category": "hero",
+   "what": "Two full-height panels with no gutter: text bottom-left on the page colour, artwork centred on a panel in the primary colour; the fold is a hard vertical edge.",
+   "implementation": "A two-column grid at 88svh; the art panel background primary and colour on-primary; text aligned to the bottom.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Hard edges and a solid colour panel; no gradient, no screenshot.",
+   "seen_on": [
+    "https://www.polestar.com",
+    "https://www.cos.com"
+   ],
+   "renders": "hero-split-screen",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.diagonal-marquee-bands",
+   "kind": "idea",
+   "name": "Diagonal marquee bands",
+   "category": "hero",
+   "what": "Two marquee bands cross the first screen at opposite angles (about minus six and plus five degrees), one in ink, one in the primary colour, carrying the brand and the product nouns; the headline sits below them.",
+   "implementation": "Absolutely positioned bands rotated with `rotate`, each with a duplicated track and a linear 30s animation, the second reversed; reduced motion stops them.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "A festival device; one page, two bands, never on a product page.",
+   "seen_on": [
+    "https://dontboardme.com",
+    "https://basement.studio"
+   ],
+   "renders": "hero-diagonal",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.mosaic-hero",
+   "kind": "idea",
+   "name": "Mosaic hero",
+   "category": "hero",
+   "what": "The first screen is a four-column mosaic of artwork tiles with the headline and actions living in one dark tile that spans two columns and two rows.",
+   "implementation": "CSS grid with span classes; the text tile inverts to ink with bg-coloured type; tiles have 1px hairlines.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Tiles of real work or product shots; the text tile is part of the grid, not floating over it.",
+   "seen_on": [
+    "https://www.pentagram.com",
+    "https://www.figma.com"
+   ],
+   "renders": "hero-mosaic",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.kinetic-type-hero",
+   "kind": "idea",
+   "name": "Kinetic type hero",
+   "category": "hero",
+   "what": "Three giant lines of the headline, the middle one outlined, each indented a little more; as the page scrolls the lines slide at different speeds, the middle one the other way.",
+   "implementation": "Scroll-driven animation: `animation-timeline: scroll()` on each row with a translate keyframe, the middle row reversed; static when the feature or motion is off.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Kinetic type is a poster move; keep the lines to three and the motion to a few viewport widths.",
+   "seen_on": [
+    "https://lusion.co",
+    "https://www.landonorris.com"
+   ],
+   "renders": "hero-kinetic",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.fanned-cards-hero",
+   "kind": "idea",
+   "name": "Fanned cards hero",
+   "category": "hero",
+   "what": "Five rotated cards fanned from one corner beside the headline, each with artwork and a mono index; hovering lifts a card.",
+   "implementation": "Absolutely positioned cards with `rotate: calc(-10deg + var(--i) * 5deg)` and a bottom-centre transform origin; translate on hover.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Cards as objects, not as a grid; five, uneven, with real images.",
+   "seen_on": [
+    "https://www.craft.do",
+    "https://granola.ai"
+   ],
+   "renders": "hero-fan",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.image-mosaic-features",
+   "kind": "idea",
+   "name": "Image mosaic features",
+   "category": "section",
+   "what": "Features as an image-led masonry: wide and tall tiles with a caption strip at the bottom carrying an index, a title and (on large tiles) one sentence.",
+   "implementation": "Grid with `grid-auto-flow: dense`, 200px rows, span classes; captions over a translucent bg strip.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Imagery with captions instead of icon cards.",
+   "seen_on": [
+    "https://www.pentagram.com",
+    "https://www.ssense.com"
+   ],
+   "renders": "features-mosaic",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.poster-band",
+   "kind": "idea",
+   "name": "Poster band",
+   "category": "section",
+   "what": "A full-bleed band of artwork with the wordmark across it at 20vw in difference blend, and one mono line in the corner; sits between features and proof as a breath.",
+   "implementation": "A 70vh section, artwork absolutely positioned, the word in `mix-blend-mode: difference` so it reads on any colour.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "A poster moment, once per page.",
+   "seen_on": [
+    "https://basement.studio",
+    "https://www.landonorris.com"
+   ],
+   "renders": "section-poster-band",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.parallax-giant-word",
+   "kind": "idea",
+   "name": "Parallax giant word",
+   "category": "motion",
+   "what": "The giant wordmark in the footer or poster band drifts a few viewport widths sideways as it scrolls through the viewport.",
+   "implementation": "`animation-timeline: view()` with a translate keyframe on the word; nothing else moves; reduced motion disables it.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Scroll-linked, reversible, one element.",
+   "seen_on": [
+    "https://lusion.co",
+    "https://exo-ape.com"
+   ],
+   "renders": "motion-parallax-type",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.hero-art-scroll-scale",
+   "kind": "idea",
+   "name": "Hero art scales out",
+   "category": "motion",
+   "what": "The hero artwork grows slightly and fades as it leaves the viewport, so the first screen releases into the page.",
+   "implementation": "`animation-timeline: view()` with `animation-range: exit` and a scale and opacity keyframe.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Subtle, reversible, no library.",
+   "seen_on": [
+    "https://www.apple.com/iphone/",
+    "https://linear.app"
+   ],
+   "renders": "motion-scroll-scale",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.skewed-marquee",
+   "kind": "idea",
+   "name": "Skewed marquee",
+   "category": "motion",
+   "what": "The marquee line skews a few degrees as it scrolls through the viewport, as if dragged by the scroll.",
+   "implementation": "A second animation on the track driven by `animation-timeline: view()` with a skew keyframe.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "A studio flourish for one marquee.",
+   "seen_on": [
+    "https://basement.studio",
+    "https://lamalama.com"
+   ],
+   "renders": "motion-skew-marquee",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "idea.tilted-framed-images",
+   "kind": "idea",
+   "name": "Tilted framed images",
+   "category": "imagery",
+   "what": "Images sit on a raised card with a hard offset shadow in ink, rotated a degree or two, like prints laid on a table.",
+   "implementation": "`rotate: -1.5deg` and `box-shadow: 10px 12px 0 ink` on the artwork; alternate the angle per image.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "A physical reference that depends on real photographs.",
+   "seen_on": [
+    "https://www.craft.do",
+    "https://www.anthropic.com"
+   ],
+   "renders": "image-frame-tilt",
+   "first_seen_year": 2025,
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.7
+  },
+  {
+   "id": "palette.lime-velodrome",
+   "kind": "palette",
+   "name": "Lime velodrome",
+   "temperature": "cool",
+   "scheme": "dark",
+   "hue_family": "green",
+   "notes": "Lando Norris's lime on near-black with cream for text panels; one hot colour at speed.",
+   "light": {
+    "bg": "oklch(0.964 0.003 84.6)",
+    "surface": "oklch(0.934 0.003 84.6)",
+    "surface_raised": "oklch(0.904 0.003 84.6)",
+    "text": "oklch(0.178 0.002 286.2)",
+    "text_muted": "oklch(0.453 0.002 286.2)",
+    "border": "oklch(0.824 0.003 84.6)",
+    "primary": "oklch(0.486 0.124 126.4)",
+    "accent": "oklch(0.178 0.002 286.2)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.486 0.124 126.4)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.178 0.002 286.2)",
+    "surface": "oklch(0.208 0.002 286.2)",
+    "surface_raised": "oklch(0.238 0.002 286.2)",
+    "text": "oklch(0.949 0.013 106.6)",
+    "text_muted": "oklch(0.679 0.013 106.6)",
+    "border": "oklch(0.318 0.002 286.2)",
+    "primary": "oklch(0.935 0.226 121.7)",
+    "accent": "oklch(0.949 0.013 106.6)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.935 0.226 121.7)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://www.landonorris.com"
+   ]
+  },
+  {
+   "id": "palette.poster-red",
+   "kind": "palette",
+   "name": "Poster red",
+   "temperature": "warm",
+   "scheme": "light",
+   "hue_family": "red",
+   "notes": "Don't Board Me's bone white with a signal red and a mustard second; festival energy without gradients.",
+   "light": {
+    "bg": "oklch(0.961 0.013 106.6)",
+    "surface": "oklch(0.931 0.013 106.6)",
+    "surface_raised": "oklch(0.901 0.013 106.6)",
+    "text": "oklch(0.218 0.000 0.0)",
+    "text_muted": "oklch(0.478 0.000 0.0)",
+    "border": "oklch(0.821 0.013 106.6)",
+    "primary": "oklch(0.570 0.212 29.0)",
+    "accent": "oklch(0.696 0.126 106.6)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.600 0.212 29.0)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.160 0.013 106.6)",
+    "surface": "oklch(0.190 0.013 106.6)",
+    "surface_raised": "oklch(0.220 0.013 106.6)",
+    "text": "oklch(0.950 0.000 0.0)",
+    "text_muted": "oklch(0.673 0.000 0.0)",
+    "border": "oklch(0.300 0.013 106.6)",
+    "primary": "oklch(0.720 0.169 29.0)",
+    "accent": "oklch(0.740 0.101 106.6)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.720 0.169 29.0)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://dontboardme.com"
+   ]
+  },
+  {
+   "id": "palette.ultramarine-sand",
+   "kind": "palette",
+   "name": "Ultramarine & sand",
+   "temperature": "cool",
+   "scheme": "light",
+   "hue_family": "blue",
+   "notes": "Exo Ape's sand with a deep ultramarine; cool, architectural, calm.",
+   "light": {
+    "bg": "oklch(0.916 0.015 77.1)",
+    "surface": "oklch(0.886 0.015 77.1)",
+    "surface_raised": "oklch(0.856 0.015 77.1)",
+    "text": "oklch(0.165 0.011 276.3)",
+    "text_muted": "oklch(0.428 0.011 276.3)",
+    "border": "oklch(0.776 0.015 77.1)",
+    "primary": "oklch(0.434 0.249 267.7)",
+    "accent": "oklch(0.165 0.011 276.3)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.434 0.249 267.7)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.165 0.011 276.3)",
+    "surface": "oklch(0.195 0.011 276.3)",
+    "surface_raised": "oklch(0.225 0.011 276.3)",
+    "text": "oklch(0.908 0.008 73.7)",
+    "text_muted": "oklch(0.678 0.008 73.7)",
+    "border": "oklch(0.305 0.011 276.3)",
+    "primary": "oklch(0.711 0.152 277.7)",
+    "accent": "oklch(0.857 0.032 62.8)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.711 0.152 277.7)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://exo-ape.com"
+   ]
+  },
+  {
+   "id": "palette.pastel-studio",
+   "kind": "palette",
+   "name": "Pastel studio",
+   "temperature": "warm",
+   "scheme": "light",
+   "hue_family": "green",
+   "notes": "Craft's canvas with mint, butter and sky blocks; playful without a purple gradient.",
+   "light": {
+    "bg": "oklch(0.984 0.004 56.4)",
+    "surface": "oklch(0.954 0.004 56.4)",
+    "surface_raised": "oklch(0.924 0.004 56.4)",
+    "text": "oklch(0.096 0.005 107.3)",
+    "text_muted": "oklch(0.407 0.005 107.3)",
+    "border": "oklch(0.844 0.004 56.4)",
+    "primary": "oklch(0.513 0.124 150.6)",
+    "accent": "oklch(0.500 0.121 71.7)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.513 0.124 150.6)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.160 0.004 56.4)",
+    "surface": "oklch(0.190 0.004 56.4)",
+    "surface_raised": "oklch(0.220 0.004 56.4)",
+    "text": "oklch(0.950 0.005 107.3)",
+    "text_muted": "oklch(0.673 0.005 107.3)",
+    "border": "oklch(0.300 0.004 56.4)",
+    "primary": "oklch(0.720 0.099 150.6)",
+    "accent": "oklch(0.740 0.097 71.7)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.720 0.099 150.6)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://www.craft.do",
+    "https://www.figma.com"
+   ]
+  },
+  {
+   "id": "palette.ink-mustard",
+   "kind": "palette",
+   "name": "Ink & mustard",
+   "temperature": "warm",
+   "scheme": "dark",
+   "hue_family": "yellow",
+   "notes": "Warm black with a mustard primary and a bone second; poster contrast for events.",
+   "light": {
+    "bg": "oklch(0.959 0.016 86.4)",
+    "surface": "oklch(0.929 0.016 86.4)",
+    "surface_raised": "oklch(0.899 0.016 86.4)",
+    "text": "oklch(0.193 0.005 67.5)",
+    "text_muted": "oklch(0.461 0.005 67.5)",
+    "border": "oklch(0.819 0.016 86.4)",
+    "primary": "oklch(0.524 0.108 80.6)",
+    "accent": "oklch(0.193 0.005 67.5)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.524 0.108 80.6)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.193 0.005 67.5)",
+    "surface": "oklch(0.223 0.005 67.5)",
+    "surface_raised": "oklch(0.253 0.005 67.5)",
+    "text": "oklch(0.959 0.016 86.4)",
+    "text_muted": "oklch(0.691 0.016 86.4)",
+    "border": "oklch(0.333 0.005 67.5)",
+    "primary": "oklch(0.804 0.156 82.5)",
+    "accent": "oklch(0.959 0.016 86.4)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.804 0.156 82.5)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://www.hay.dk",
+    "https://www.walkerart.org"
+   ]
+  },
+  {
+   "id": "palette.marine-coral",
+   "kind": "palette",
+   "name": "Marine & coral",
+   "temperature": "cool",
+   "scheme": "light",
+   "hue_family": "blue",
+   "notes": "Maven's lapis navy with a coral accent on a cool white; confident and warm at once.",
+   "light": {
+    "bg": "oklch(0.973 0.006 264.5)",
+    "surface": "oklch(0.943 0.006 264.5)",
+    "surface_raised": "oklch(0.913 0.006 264.5)",
+    "text": "oklch(0.171 0.057 272.5)",
+    "text_muted": "oklch(0.452 0.057 272.5)",
+    "border": "oklch(0.833 0.006 264.5)",
+    "primary": "oklch(0.431 0.207 266.4)",
+    "accent": "oklch(0.500 0.170 37.7)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.431 0.207 266.4)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.171 0.057 272.5)",
+    "surface": "oklch(0.201 0.057 272.5)",
+    "surface_raised": "oklch(0.231 0.057 272.5)",
+    "text": "oklch(0.973 0.006 264.5)",
+    "text_muted": "oklch(0.692 0.006 264.5)",
+    "border": "oklch(0.311 0.057 272.5)",
+    "primary": "oklch(0.781 0.111 272.3)",
+    "accent": "oklch(0.725 0.160 42.8)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.781 0.111 272.3)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://maven.com"
+   ]
+  },
+  {
+   "id": "palette.sage-ink",
+   "kind": "palette",
+   "name": "Sage & ink",
+   "temperature": "neutral",
+   "scheme": "light",
+   "hue_family": "green",
+   "notes": "Causal's paint swatches: linen, sage, brick and ink.",
+   "light": {
+    "bg": "oklch(0.926 0.013 82.4)",
+    "surface": "oklch(0.896 0.013 82.4)",
+    "surface_raised": "oklch(0.866 0.013 82.4)",
+    "text": "oklch(0.250 0.022 57.5)",
+    "text_muted": "oklch(0.487 0.022 57.5)",
+    "border": "oklch(0.786 0.013 82.4)",
+    "primary": "oklch(0.486 0.068 156.1)",
+    "accent": "oklch(0.533 0.158 31.6)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.486 0.068 156.1)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.160 0.013 82.4)",
+    "surface": "oklch(0.190 0.013 82.4)",
+    "surface_raised": "oklch(0.220 0.013 82.4)",
+    "text": "oklch(0.950 0.020 57.5)",
+    "text_muted": "oklch(0.703 0.020 57.5)",
+    "border": "oklch(0.300 0.013 82.4)",
+    "primary": "oklch(0.720 0.055 156.1)",
+    "accent": "oklch(0.740 0.126 31.6)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.720 0.055 156.1)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://causal.so"
+   ]
+  },
+  {
+   "id": "palette.blush-navy",
+   "kind": "palette",
+   "name": "Blush & navy",
+   "temperature": "warm",
+   "scheme": "light",
+   "hue_family": "blue",
+   "notes": "Headspace's blush off-white with a saturated blue and a yellow highlight; playful consumer.",
+   "light": {
+    "bg": "oklch(0.970 0.006 43.3)",
+    "surface": "oklch(0.940 0.006 43.3)",
+    "surface_raised": "oklch(0.910 0.006 43.3)",
+    "text": "oklch(0.294 0.002 67.7)",
+    "text_muted": "oklch(0.531 0.002 67.7)",
+    "border": "oklch(0.830 0.006 43.3)",
+    "primary": "oklch(0.478 0.257 263.6)",
+    "accent": "oklch(0.500 0.134 87.5)",
+    "success": "oklch(0.500 0.140 150.0)",
+    "warning": "oklch(0.620 0.140 80.0)",
+    "danger": "oklch(0.520 0.190 25.0)",
+    "focus": "oklch(0.478 0.257 263.6)",
+    "on_primary": "oklch(1.000 0.000 0.0)",
+    "on_accent": "oklch(1.000 0.000 0.0)"
+   },
+   "dark": {
+    "bg": "oklch(0.160 0.006 43.3)",
+    "surface": "oklch(0.190 0.006 43.3)",
+    "surface_raised": "oklch(0.220 0.006 43.3)",
+    "text": "oklch(0.950 0.002 67.7)",
+    "text_muted": "oklch(0.673 0.002 67.7)",
+    "border": "oklch(0.300 0.006 43.3)",
+    "primary": "oklch(0.720 0.206 263.6)",
+    "accent": "oklch(0.740 0.107 87.5)",
+    "success": "oklch(0.720 0.140 150.0)",
+    "warning": "oklch(0.800 0.140 80.0)",
+    "danger": "oklch(0.720 0.190 25.0)",
+    "focus": "oklch(0.720 0.206 263.6)",
+    "on_primary": "oklch(0.178 0.000 0.0)",
+    "on_accent": "oklch(0.178 0.000 0.0)"
+   },
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "inspired_by": [
+    "https://www.headspace.com"
+   ]
+  },
+  {
+   "id": "type-pairing.big-shoulders-mona-sans",
+   "kind": "type-pairing",
+   "name": "Big Shoulders / Mona Sans",
+   "heading": {
+    "family": "Big Shoulders",
+    "category": "display",
+    "weights": [
+     700,
+     800,
+     900
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Mona Sans",
+    "category": "neo-grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Arial Narrow', Impact, sans-serif",
+   "fallback_body": "'Helvetica Neue', Arial, sans-serif",
+   "scale_ratio": 1.414,
+   "measure_ch": 62,
+   "css_url": "https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800;900&family=Mona+Sans:wght@400;500&family=Martian+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "speed",
+    "event",
+    "bold"
+   ],
+   "notes": "A condensed display face at 900 over a variable grotesque; the Lando Norris register with free faces.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Martian Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.anton-instrument-sans",
+   "kind": "type-pairing",
+   "name": "Anton / Instrument Sans",
+   "heading": {
+    "family": "Anton",
+    "category": "display",
+    "weights": [
+     400
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Instrument Sans",
+    "category": "grotesque",
+    "weights": [
+     400,
+     500,
+     600
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "Impact, 'Arial Narrow', sans-serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.414,
+   "measure_ch": 62,
+   "css_url": "https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "poster",
+    "festival",
+    "loud"
+   ],
+   "notes": "A heavy condensed gothic for one line per screen with a grotesque body that stays out of the way.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "IBM Plex Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.unbounded-geist",
+   "kind": "type-pairing",
+   "name": "Unbounded / Geist",
+   "heading": {
+    "family": "Unbounded",
+    "category": "display",
+    "weights": [
+     600,
+     700,
+     800
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Geist",
+    "category": "neo-grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Arial Black', sans-serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.414,
+   "measure_ch": 62,
+   "css_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "wide",
+    "bold",
+    "modern"
+   ],
+   "notes": "A wide display face that fills a line with few words over a quiet grotesque.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Geist Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.archivo-black-hanken-grotesk",
+   "kind": "type-pairing",
+   "name": "Archivo Black / Hanken Grotesk",
+   "heading": {
+    "family": "Archivo Black",
+    "category": "display",
+    "weights": [
+     400
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Hanken Grotesk",
+    "category": "grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Arial Black', sans-serif",
+   "fallback_body": "'Helvetica Neue', Arial, sans-serif",
+   "scale_ratio": 1.414,
+   "measure_ch": 64,
+   "css_url": "https://fonts.googleapis.com/css2?family=Archivo+Black:wght@400&family=Hanken+Grotesk:wght@400;500&family=Martian+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "poster",
+    "brutalist",
+    "direct"
+   ],
+   "notes": "The heaviest free grotesque for wordmarks and clipped type; Hanken for everything else.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Martian Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.syne-instrument-sans",
+   "kind": "type-pairing",
+   "name": "Syne / Instrument Sans",
+   "heading": {
+    "family": "Syne",
+    "category": "display",
+    "weights": [
+     700,
+     800
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Instrument Sans",
+    "category": "grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Helvetica Neue', Arial, sans-serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.333,
+   "measure_ch": 64,
+   "css_url": "https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Instrument+Sans:wght@400;500&family=Kode+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "studio",
+    "expressive",
+    "cultural"
+   ],
+   "notes": "Syne widens as it gets heavier; at 800 it is a poster face. Kept to the H1.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Kode Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.bricolage-grotesque-geist",
+   "kind": "type-pairing",
+   "name": "Bricolage Grotesque / Geist",
+   "heading": {
+    "family": "Bricolage Grotesque",
+    "category": "grotesque",
+    "weights": [
+     600,
+     700,
+     800
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Geist",
+    "category": "neo-grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Helvetica Neue', Arial, sans-serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.333,
+   "measure_ch": 64,
+   "css_url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "product",
+    "confident",
+    "warm"
+   ],
+   "notes": "Bricolage at its compressed optical sizes over Geist; character in the headline, neutrality below.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Geist Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.fraunces-instrument-sans",
+   "kind": "type-pairing",
+   "name": "Fraunces / Instrument Sans",
+   "heading": {
+    "family": "Fraunces",
+    "category": "serif-old-style",
+    "weights": [
+     500,
+     600,
+     700
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Instrument Sans",
+    "category": "grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Iowan Old Style', Georgia, serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.333,
+   "measure_ch": 64,
+   "css_url": "https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "soft",
+    "friendly",
+    "editorial"
+   ],
+   "notes": "Fraunces with its WONK axis for a headline that smiles, a plain grotesque body.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "IBM Plex Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "type-pairing.parkinsans-geist",
+   "kind": "type-pairing",
+   "name": "Parkinsans / Geist",
+   "heading": {
+    "family": "Parkinsans",
+    "category": "geometric",
+    "weights": [
+     600,
+     700,
+     800
+    ],
+    "source": "google"
+   },
+   "body": {
+    "family": "Geist",
+    "category": "neo-grotesque",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   },
+   "fallback_heading": "'Avenir Next', 'Segoe UI', sans-serif",
+   "fallback_body": "system-ui, -apple-system, 'Segoe UI', sans-serif",
+   "scale_ratio": 1.333,
+   "measure_ch": 64,
+   "css_url": "https://fonts.googleapis.com/css2?family=Parkinsans:wght@600;700;800&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap",
+   "license": "OFL",
+   "moods": [
+    "playful",
+    "consumer",
+    "warm"
+   ],
+   "notes": "Soft terminals at display size over a neutral body.",
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8,
+   "mono": {
+    "family": "Geist Mono",
+    "category": "mono",
+    "weights": [
+     400,
+     500
+    ],
+    "source": "google"
+   }
+  },
+  {
+   "id": "style.velodrome",
+   "kind": "style",
+   "name": "Velodrome",
+   "family": "bold",
+   "summary": "Lando Norris energy: near-black, lime and cream, a condensed display face at 900, kinetic type that slides with scroll, a marquee, a poster band and sourced count-ups. Speed as a design language.",
+   "traits": [
+    "lime on black",
+    "condensed display at 900",
+    "kinetic type",
+    "marquee",
+    "poster band"
+   ],
+   "signals": [
+    "energetic",
+    "confident",
+    "bold",
+    "current"
+   ],
+   "radius_scale": "none",
+   "shadow": "none",
+   "density": "regular",
+   "layout_defaults": {
+    "marketing": {
+     "hero": "kinetic",
+     "features": "numerals",
+     "proof": "stat-wall",
+     "cta": "giant",
+     "footer": "giant"
+    },
+    "store": {
+     "hero": "lookbook",
+     "grid": "editorial",
+     "product": "sticky-buy",
+     "cart": "drawer",
+     "footer": "giant"
+    },
+    "content": {
+     "header": "minimal",
+     "article": "single",
+     "list": "archive",
+     "footer": "giant"
+    }
+   },
+   "best_page_types": [
+    "marketing",
+    "store",
+    "content"
+   ],
+   "tells_to_avoid": [
+    "neon glow",
+    "gradient on the lime"
+   ],
+   "art": {
+    "hero": "bars",
+    "feature": "figure"
+   },
+   "conventionality": "distinct",
+   "inspired_by": [
+    "https://www.landonorris.com",
+    "https://basement.studio"
+   ],
+   "ideas": [
+    "idea.kinetic-type-hero",
+    "idea.one-hot-colour",
+    "idea.marquee-divider",
+    "idea.poster-band",
+    "idea.count-up-numbers",
+    "idea.tight-display",
+    "idea.parallax-giant-word",
+    "idea.split-nav-live-meta"
+   ],
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8
+  },
+  {
+   "id": "style.festival-poster",
+   "kind": "style",
+   "name": "Festival poster",
+   "family": "expressive",
+   "summary": "Bone white, signal red and mustard; a heavy condensed gothic; diagonal marquee bands crossing the hero; rays and stamps as artwork; a ticket for the call to action. Loud, flat, printed.",
+   "traits": [
+    "diagonal bands",
+    "condensed gothic",
+    "rays and stamps",
+    "ticket call to action",
+    "flat colour"
+   ],
+   "signals": [
+    "playful",
+    "loud",
+    "cultural",
+    "direct"
+   ],
+   "radius_scale": "none",
+   "shadow": "hard",
+   "density": "regular",
+   "layout_defaults": {
+    "marketing": {
+     "hero": "diagonal",
+     "features": "mosaic",
+     "proof": "giant-quote",
+     "cta": "ticket",
+     "footer": "giant"
+    },
+    "store": {
+     "hero": "tiles",
+     "grid": "editorial",
+     "product": "gallery-left",
+     "cart": "drawer",
+     "footer": "giant"
+    },
+    "content": {
+     "header": "broadsheet",
+     "article": "single",
+     "list": "archive",
+     "footer": "giant"
+    }
+   },
+   "best_page_types": [
+    "marketing",
+    "store",
+    "content"
+   ],
+   "tells_to_avoid": [
+    "gradient between the colours",
+    "emoji"
+   ],
+   "art": {
+    "hero": "rays",
+    "feature": "stamp"
+   },
+   "conventionality": "distinct",
+   "inspired_by": [
+    "https://dontboardme.com",
+    "https://www.walkerart.org"
+   ],
+   "ideas": [
+    "idea.diagonal-marquee-bands",
+    "idea.image-mosaic-features",
+    "idea.ticket-cta",
+    "idea.rotated-stickers",
+    "idea.outline-giant-word",
+    "idea.colour-blocking-sections",
+    "idea.skewed-marquee",
+    "idea.marquee-divider"
+   ],
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8
+  },
+  {
+   "id": "style.ultramarine",
+   "kind": "style",
+   "name": "Ultramarine",
+   "family": "minimal",
+   "summary": "Exo Ape's sand and deep ultramarine, a hairline-weight display face, a split-screen first screen with the artwork on a solid blue panel, a torus of rings, mosaic features and a colophon. Architectural calm.",
+   "traits": [
+    "split-screen hero",
+    "hairline display weight",
+    "solid colour panel",
+    "torus art",
+    "sand canvas"
+   ],
+   "signals": [
+    "calm",
+    "precise",
+    "premium",
+    "architectural"
+   ],
+   "radius_scale": "none",
+   "shadow": "none",
+   "density": "airy",
+   "layout_defaults": {
+    "marketing": {
+     "hero": "split-screen",
+     "features": "mosaic",
+     "proof": "statement",
+     "cta": "inline",
+     "footer": "colophon"
+    },
+    "store": {
+     "hero": "lookbook",
+     "grid": "editorial",
+     "product": "sticky-buy",
+     "cart": "page",
+     "footer": "colophon"
+    },
+    "content": {
+     "header": "minimal",
+     "article": "side-notes",
+     "list": "archive",
+     "footer": "colophon"
+    }
+   },
+   "best_page_types": [
+    "marketing",
+    "store",
+    "content"
+   ],
+   "tells_to_avoid": [
+    "bold display weight",
+    "rounded cards"
+   ],
+   "art": {
+    "hero": "torus",
+    "feature": "figure"
+   },
+   "conventionality": "distinct",
+   "inspired_by": [
+    "https://exo-ape.com",
+    "https://www.polestar.com"
+   ],
+   "ideas": [
+    "idea.split-screen-hero",
+    "idea.image-mosaic-features",
+    "idea.tight-display",
+    "idea.colophon-footer",
+    "idea.line-mask-reveal",
+    "idea.hero-art-scroll-scale",
+    "idea.index-numbers-mono",
+    "idea.underline-offset-links"
+   ],
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8
+  },
+  {
+   "id": "style.pastel-blocks",
+   "kind": "style",
+   "name": "Pastel blocks",
+   "family": "soft",
+   "summary": "Craft and Figma's tinted blocks: a warm canvas, sections in mint, butter and sky with hard edges, a geometric display with soft terminals, fanned cards, tilted framed images and stickers. Playful without a gradient.",
+   "traits": [
+    "tinted section blocks",
+    "fanned cards",
+    "tilted frames",
+    "soft geometric display",
+    "stickers"
+   ],
+   "signals": [
+    "playful",
+    "friendly",
+    "warm",
+    "current"
+   ],
+   "radius_scale": "md",
+   "shadow": "hard",
+   "density": "regular",
+   "layout_defaults": {
+    "marketing": {
+     "hero": "fan",
+     "features": "stack",
+     "proof": "giant-quote",
+     "cta": "band",
+     "footer": "columns"
+    },
+    "store": {
+     "hero": "product",
+     "grid": "three",
+     "product": "gallery-left",
+     "cart": "drawer",
+     "footer": "columns"
+    },
+    "app": {
+     "shell": "sidebar",
+     "table": "comfortable",
+     "detail": "panel"
+    }
+   },
+   "best_page_types": [
+    "marketing",
+    "store",
+    "app"
+   ],
+   "tells_to_avoid": [
+    "purple gradient",
+    "glass cards"
+   ],
+   "art": {
+    "hero": "blob",
+    "feature": "figure"
+   },
+   "conventionality": "distinct",
+   "inspired_by": [
+    "https://www.craft.do",
+    "https://www.figma.com",
+    "https://brilliant.org"
+   ],
+   "ideas": [
+    "idea.fanned-cards-hero",
+    "idea.tilted-framed-images",
+    "idea.colour-blocking-sections",
+    "idea.rotated-stickers",
+    "idea.stacking-cards",
+    "idea.count-up-numbers",
+    "idea.circle-icon-button"
+   ],
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8
+  },
+  {
+   "id": "style.mosaic-wall",
+   "kind": "style",
+   "name": "Mosaic wall",
+   "family": "expressive",
+   "summary": "A poster wall: the first screen is a mosaic of tiles with the text as one dark tile, mosaic features, a wide display face, a marine palette with a coral counter; image-led from the first pixel.",
+   "traits": [
+    "mosaic hero",
+    "image-led features",
+    "wide display",
+    "one counter colour",
+    "hard tiles"
+   ],
+   "signals": [
+    "bold",
+    "cultural",
+    "confident",
+    "current"
+   ],
+   "radius_scale": "none",
+   "shadow": "none",
+   "density": "regular",
+   "layout_defaults": {
+    "marketing": {
+     "hero": "mosaic",
+     "features": "mosaic",
+     "proof": "statement",
+     "cta": "giant",
+     "footer": "giant"
+    },
+    "store": {
+     "hero": "tiles",
+     "grid": "editorial",
+     "product": "gallery-top",
+     "cart": "page",
+     "footer": "giant"
+    },
+    "content": {
+     "header": "masthead",
+     "article": "single",
+     "list": "archive",
+     "footer": "giant"
+    }
+   },
+   "best_page_types": [
+    "marketing",
+    "store",
+    "content"
+   ],
+   "tells_to_avoid": [
+    "bento of equal cards",
+    "gradient tiles"
+   ],
+   "art": {
+    "hero": "mosaic",
+    "feature": "figure"
+   },
+   "conventionality": "distinct",
+   "inspired_by": [
+    "https://www.pentagram.com",
+    "https://maven.com"
+   ],
+   "ideas": [
+    "idea.mosaic-hero",
+    "idea.image-mosaic-features",
+    "idea.one-hot-colour",
+    "idea.tight-display",
+    "idea.poster-band",
+    "idea.index-numbers-mono",
+    "idea.hover-swap-images"
+   ],
+   "source": "docs/research/2026-10-30-modern-design-ideas.md",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.8
   }
  ],
  "edges": [
@@ -69393,6 +70770,1959 @@
    "to": "style.giant-serif",
    "kind": "pairs_with",
    "weight": 0.6,
+   "evidence": []
+  },
+  {
+   "from": "idea.split-screen-hero",
+   "to": "style.cobalt-block",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.split-screen-hero",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.split-screen-hero",
+   "to": "style.signal-orange",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.diagonal-marquee-bands",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.diagonal-marquee-bands",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.diagonal-marquee-bands",
+   "to": "style.signal-orange",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.mosaic-hero",
+   "to": "style.swiss-grid",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.mosaic-hero",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.mosaic-hero",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.kinetic-type-hero",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.kinetic-type-hero",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.kinetic-type-hero",
+   "to": "style.cobalt-block",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.fanned-cards-hero",
+   "to": "style.clay-canvas",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.fanned-cards-hero",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.fanned-cards-hero",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.swiss-grid",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.poster-band",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.poster-band",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.poster-band",
+   "to": "style.night-grain",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.parallax-giant-word",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.parallax-giant-word",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.parallax-giant-word",
+   "to": "style.cobalt-block",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.hero-art-scroll-scale",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.hero-art-scroll-scale",
+   "to": "style.night-grain",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.hero-art-scroll-scale",
+   "to": "style.luminous-dark",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.skewed-marquee",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.skewed-marquee",
+   "to": "style.poster-type",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.tilted-framed-images",
+   "to": "style.clay-canvas",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.tilted-framed-images",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "idea.tilted-framed-images",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.7,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.button-shape-square",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.button-fill-solid",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.input-edge-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.card-edge-flat",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.nav-compact",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.divider-rule",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.image-corner-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.focus-ring-inset",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.link-style-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "treatment.elevation-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.press-scale-97",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.hover-tint",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.underline-grow",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.exit-fade-fast",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.button-loading-swap",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.focus-ring-pulse-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.page-slide-vt",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.number-count-up",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.scroll-reveal-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "motion-pattern.hero-mask-reveal",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "icon-set.tabler",
+   "kind": "pairs_with",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "palette.lime-velodrome",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "palette.acid-lab",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "palette.midnight-lime",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "palette.ink-mustard",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "palette.carbon-signal",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "type-pairing.big-shoulders-mona-sans",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "type-pairing.anton-instrument-sans",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "type-pairing.archivo-black-hanken-grotesk",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "type-pairing.unbounded-geist",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.velodrome",
+   "to": "type-pairing.big-shoulders-work-sans",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ecommerce",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.82,
+   "evidence": []
+  },
+  {
+   "from": "product-type.community",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.74,
+   "evidence": []
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.66,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.58,
+   "evidence": []
+  },
+  {
+   "from": "product-type.mobile-app",
+   "to": "style.velodrome",
+   "kind": "suits",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "mood.energetic",
+   "to": "style.velodrome",
+   "kind": "expresses",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "mood.bold",
+   "to": "style.velodrome",
+   "kind": "expresses",
+   "weight": 0.83,
+   "evidence": []
+  },
+  {
+   "from": "mood.confident",
+   "to": "style.velodrome",
+   "kind": "expresses",
+   "weight": 0.76,
+   "evidence": []
+  },
+  {
+   "from": "mood.modern",
+   "to": "style.velodrome",
+   "kind": "expresses",
+   "weight": 0.69,
+   "evidence": []
+  },
+  {
+   "from": "mood.futuristic",
+   "to": "style.velodrome",
+   "kind": "expresses",
+   "weight": 0.62,
+   "evidence": []
+  },
+  {
+   "from": "idea.kinetic-type-hero",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.one-hot-colour",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.marquee-divider",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.poster-band",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.count-up-numbers",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.tight-display",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.parallax-giant-word",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.split-nav-live-meta",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.button-shape-square",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.button-fill-solid",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.input-edge-hairline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.card-edge-border",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.nav-compact",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.divider-rule",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.image-corner-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.focus-ring-offset",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.link-style-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "treatment.elevation-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.press-scale-97",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.hover-lift-2",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.exit-fade-fast",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.button-loading-swap",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.focus-ring-pulse-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.underline-grow",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.page-crossfade-vt",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.menu-stagger-30",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.spring-pop",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "motion-pattern.scroll-reveal-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "icon-set.tabler",
+   "kind": "pairs_with",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "palette.poster-red",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "palette.ink-mustard",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "palette.hazard-yellow",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "palette.poppy-cream",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "palette.cherry-paper",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "type-pairing.anton-instrument-sans",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "type-pairing.archivo-black-hanken-grotesk",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "type-pairing.big-shoulders-work-sans",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "type-pairing.syne-instrument-sans",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.festival-poster",
+   "to": "type-pairing.anton-work-sans",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "product-type.community",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.82,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.74,
+   "evidence": []
+  },
+  {
+   "from": "product-type.nonprofit",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.66,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.58,
+   "evidence": []
+  },
+  {
+   "from": "product-type.ecommerce",
+   "to": "style.festival-poster",
+   "kind": "suits",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "mood.playful",
+   "to": "style.festival-poster",
+   "kind": "expresses",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "mood.energetic",
+   "to": "style.festival-poster",
+   "kind": "expresses",
+   "weight": 0.83,
+   "evidence": []
+  },
+  {
+   "from": "mood.bold",
+   "to": "style.festival-poster",
+   "kind": "expresses",
+   "weight": 0.76,
+   "evidence": []
+  },
+  {
+   "from": "mood.raw",
+   "to": "style.festival-poster",
+   "kind": "expresses",
+   "weight": 0.69,
+   "evidence": []
+  },
+  {
+   "from": "mood.friendly",
+   "to": "style.festival-poster",
+   "kind": "expresses",
+   "weight": 0.62,
+   "evidence": []
+  },
+  {
+   "from": "idea.diagonal-marquee-bands",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.ticket-cta",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.rotated-stickers",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.outline-giant-word",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.colour-blocking-sections",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.skewed-marquee",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.marquee-divider",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.button-shape-square",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.button-fill-outline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.input-edge-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.card-edge-flat",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.nav-airy",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.divider-hairline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.image-corner-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.focus-ring-inset",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.link-style-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "treatment.elevation-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.hover-tint",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.underline-grow",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.page-crossfade-vt",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.exit-fade-fast",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.press-scale-97",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.focus-ring-pulse-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.button-loading-swap",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.hero-mask-reveal",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "motion-pattern.scroll-reveal-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "icon-set.radix",
+   "kind": "pairs_with",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "palette.ultramarine-sand",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "palette.cobalt-paper",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "palette.marine-bone",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "palette.nordic-ice",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "palette.slate-signal",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "type-pairing.bricolage-grotesque-geist",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "type-pairing.host-grotesk-funnel-sans",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "type-pairing.inter-tight-inter",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "type-pairing.mona-sans-kode-mono",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.ultramarine",
+   "to": "type-pairing.schibsted-grotesk-inter",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "product-type.real-estate",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.82,
+   "evidence": []
+  },
+  {
+   "from": "product-type.luxury-commerce",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.74,
+   "evidence": []
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.66,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.58,
+   "evidence": []
+  },
+  {
+   "from": "product-type.travel",
+   "to": "style.ultramarine",
+   "kind": "suits",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "mood.calm",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "mood.precise",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.83,
+   "evidence": []
+  },
+  {
+   "from": "mood.premium",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.76,
+   "evidence": []
+  },
+  {
+   "from": "mood.elegant",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.69,
+   "evidence": []
+  },
+  {
+   "from": "mood.minimal",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.62,
+   "evidence": []
+  },
+  {
+   "from": "mood.confident",
+   "to": "style.ultramarine",
+   "kind": "expresses",
+   "weight": 0.55,
+   "evidence": []
+  },
+  {
+   "from": "idea.split-screen-hero",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.tight-display",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.colophon-footer",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.line-mask-reveal",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.hero-art-scroll-scale",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.index-numbers-mono",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.underline-offset-links",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.button-shape-pill",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.button-fill-solid",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.input-edge-hairline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.card-edge-border",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.nav-airy",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.divider-space",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.image-corner-sm",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.focus-ring-offset",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.link-style-colour",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "treatment.elevation-one",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.press-scale-97",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.hover-lift-2",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.enter-fade-up-8",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.exit-fade-fast",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.button-loading-swap",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.focus-ring-pulse-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.page-crossfade-vt",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.spring-pop",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.number-count-up",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "motion-pattern.menu-stagger-30",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "icon-set.phosphor",
+   "kind": "pairs_with",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "palette.pastel-studio",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "palette.blush-navy",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "palette.butter-cobalt",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "palette.sky-tomato",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "palette.moss-cream",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "type-pairing.parkinsans-geist",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "type-pairing.fraunces-instrument-sans",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "type-pairing.parkinsans-hanken-grotesk",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "type-pairing.geologica-geologica",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.pastel-blocks",
+   "to": "type-pairing.bricolage-grotesque-figtree",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "product-type.mobile-app",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.82,
+   "evidence": []
+  },
+  {
+   "from": "product-type.saas",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.74,
+   "evidence": []
+  },
+  {
+   "from": "product-type.community",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.66,
+   "evidence": []
+  },
+  {
+   "from": "product-type.health",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.58,
+   "evidence": []
+  },
+  {
+   "from": "product-type.local-business",
+   "to": "style.pastel-blocks",
+   "kind": "suits",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "mood.playful",
+   "to": "style.pastel-blocks",
+   "kind": "expresses",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "mood.friendly",
+   "to": "style.pastel-blocks",
+   "kind": "expresses",
+   "weight": 0.83,
+   "evidence": []
+  },
+  {
+   "from": "mood.warm",
+   "to": "style.pastel-blocks",
+   "kind": "expresses",
+   "weight": 0.76,
+   "evidence": []
+  },
+  {
+   "from": "mood.energetic",
+   "to": "style.pastel-blocks",
+   "kind": "expresses",
+   "weight": 0.69,
+   "evidence": []
+  },
+  {
+   "from": "mood.modern",
+   "to": "style.pastel-blocks",
+   "kind": "expresses",
+   "weight": 0.62,
+   "evidence": []
+  },
+  {
+   "from": "idea.fanned-cards-hero",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.tilted-framed-images",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.colour-blocking-sections",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.rotated-stickers",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.stacking-cards",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.count-up-numbers",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.circle-icon-button",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.button-shape-square",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.button-fill-solid",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.input-edge-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.card-edge-flat",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.nav-compact",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.divider-space",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.image-corner-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.focus-ring-inset",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.link-style-underline",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "treatment.elevation-none",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.hover-tint",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.press-scale-97",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.exit-fade-fast",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.button-loading-swap",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.focus-ring-pulse-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.underline-grow",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.page-crossfade-vt",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.scroll-reveal-once",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "motion-pattern.layout-flip",
+   "kind": "defaults_to",
+   "weight": 1.0,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "icon-set.radix",
+   "kind": "pairs_with",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "palette.marine-coral",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "palette.cobalt-cream",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "palette.sage-ink",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "palette.navy-gold",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "palette.ink-coral",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "type-pairing.unbounded-geist",
+   "kind": "pairs_with",
+   "weight": 0.95,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "type-pairing.syne-instrument-sans",
+   "kind": "pairs_with",
+   "weight": 0.87,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "type-pairing.big-shoulders-mona-sans",
+   "kind": "pairs_with",
+   "weight": 0.79,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "type-pairing.funnel-display-funnel-sans",
+   "kind": "pairs_with",
+   "weight": 0.71,
+   "evidence": []
+  },
+  {
+   "from": "style.mosaic-wall",
+   "to": "type-pairing.archivo-black-archivo",
+   "kind": "pairs_with",
+   "weight": 0.63,
+   "evidence": []
+  },
+  {
+   "from": "product-type.agency",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "product-type.portfolio",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.82,
+   "evidence": []
+  },
+  {
+   "from": "product-type.event",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.74,
+   "evidence": []
+  },
+  {
+   "from": "product-type.education",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.66,
+   "evidence": []
+  },
+  {
+   "from": "product-type.nonprofit",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.58,
+   "evidence": []
+  },
+  {
+   "from": "product-type.editorial",
+   "to": "style.mosaic-wall",
+   "kind": "suits",
+   "weight": 0.5,
+   "evidence": []
+  },
+  {
+   "from": "mood.bold",
+   "to": "style.mosaic-wall",
+   "kind": "expresses",
+   "weight": 0.9,
+   "evidence": []
+  },
+  {
+   "from": "mood.confident",
+   "to": "style.mosaic-wall",
+   "kind": "expresses",
+   "weight": 0.83,
+   "evidence": []
+  },
+  {
+   "from": "mood.energetic",
+   "to": "style.mosaic-wall",
+   "kind": "expresses",
+   "weight": 0.76,
+   "evidence": []
+  },
+  {
+   "from": "mood.modern",
+   "to": "style.mosaic-wall",
+   "kind": "expresses",
+   "weight": 0.69,
+   "evidence": []
+  },
+  {
+   "from": "mood.playful",
+   "to": "style.mosaic-wall",
+   "kind": "expresses",
+   "weight": 0.62,
+   "evidence": []
+  },
+  {
+   "from": "idea.mosaic-hero",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.image-mosaic-features",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.one-hot-colour",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.tight-display",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.poster-band",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.index-numbers-mono",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.hover-swap-images",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
    "evidence": []
   }
  ]

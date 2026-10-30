@@ -14,15 +14,16 @@ from ._shared import (E, block_classes, brand, buttons, caption, explicit, featu
 VARIANTS = {
     "nav": ["bar", "split-meta", "menu-word", "pill", "rail"],
     "hero": ["statement", "mark", "wrap", "product-first", "object", "bleed", "index", "collage", "letter", "split", "editorial", "poster",
-             "ticker", "specimen", "manifesto", "numbers", "clip", "stacked", "centered"],
-    "features": ["figures", "spec", "index", "bands", "ledger", "numerals", "stack", "strip", "hover-list", "cells", "accordion", "list", "alternating", "bento", "columns"],
+             "ticker", "specimen", "manifesto", "numbers", "clip", "stacked", "split-screen", "diagonal", "mosaic", "kinetic", "fan", "centered"],
+    "features": ["figures", "spec", "index", "bands", "ledger", "numerals", "stack", "strip", "hover-list", "cells", "accordion", "mosaic", "list", "alternating", "bento", "columns"],
     "proof": ["statement", "quote", "giant-quote", "stat-wall", "logos-text", "stats-sourced", "none"],
     "cta": ["giant", "band", "inline", "form", "ticket"],
     "footer": ["giant", "columns", "minimal", "colophon"],
 }
-HERO_HOOKS = {"hero-ticker": "ticker", "hero-specimen": "specimen", "hero-manifesto": "manifesto", "hero-numbers": "numbers", "hero-clip": "clip", "hero-stacked": "stacked"}
+HERO_HOOKS = {"hero-ticker": "ticker", "hero-specimen": "specimen", "hero-manifesto": "manifesto", "hero-numbers": "numbers", "hero-clip": "clip", "hero-stacked": "stacked",
+              "hero-split-screen": "split-screen", "hero-diagonal": "diagonal", "hero-mosaic": "mosaic", "hero-kinetic": "kinetic", "hero-fan": "fan"}
 FEATURE_HOOKS = {"features-numerals": "numerals", "features-stack": "stack", "features-strip": "strip", "features-hover-list": "hover-list",
-                 "features-cells": "cells", "features-accordion": "accordion"}
+                 "features-cells": "cells", "features-accordion": "accordion", "features-mosaic": "mosaic"}
 PROOF_HOOKS = {"proof-giant-quote": "giant-quote", "proof-stat-wall": "stat-wall"}
 CTA_HOOKS = {"cta-ticket": "ticket"}
 FOOTER_HOOKS = {"footer-colophon": "colophon"}
@@ -157,6 +158,28 @@ def _hero(p, v: str) -> str:
         spans = "".join('<span class="%s">%s</span>' % ("pfd-outline" if i % 2 else "", E(l)) for i, l in enumerate(lines[:4]))
         inner = ('<h1 class="pfd-stacked%s">%s</h1><div class="pfd-stacked-foot"><p class="pf-lead">%s</p>%s</div>') % (
             " pfd-reveal" if has(p, "motion-line-reveal") else "", spans, _lead(p), buttons(p))
+    elif v == "split-screen":
+        inner = ('<div class="pfd-splitscreen"><div class="pfd-splitscreen-text">%s<p class="pf-lead">%s</p>%s</div>'
+                 '<div class="pfd-splitscreen-art">%s</div></div>') % (headline(p, c["headline"], "pfd-h1-mark"), _lead(p), buttons(p), _art(p, "hero"))
+    elif v == "diagonal":
+        words = " \u00b7 ".join([name, c["headline"]] + [f["title"] for f in feats[:2]])
+        band = '<div class="pfd-diag-band %s" aria-hidden="true"><div class="pfd-diag-track"><span>%s</span><span>%s</span></div></div>'
+        inner = ('<div class="pfd-diag">%s%s<div class="pfd-diag-text">%s<p class="pf-lead">%s</p>%s</div></div>') % (
+            band % ("is-a", E(words), E(words)), band % ("is-b", E(words), E(words)), headline(p, c["headline"], "pfd-h1-small"), _lead(p), buttons(p))
+    elif v == "mosaic":
+        kinds = ["mosaic", "figure", "mark", "halftone", "blob", "pixel", "stamp", "figure"]
+        tiles = "".join('<div class="pfd-mosaic-tile%s">%s</div>' % (" is-wide" if i in (0, 5) else "", art.render(kinds[i % len(kinds)], seed="%s-mo%d" % (p.id, i))) for i in range(7))
+        inner = ('<div class="pfd-mosaic">%s<div class="pfd-mosaic-text">%s<p class="pf-lead">%s</p>%s</div></div>') % (tiles, headline(p, c["headline"], "pfd-h1-mark"), _lead(p), buttons(p))
+    elif v == "kinetic":
+        words = c["headline"].split()
+        third = max(1, (len(words) + 2) // 3)
+        lines = [" ".join(words[i:i + third]) for i in range(0, len(words), third)][:3]
+        rows = "".join('<div class="pfd-kinetic-row" style="--k:%d"><span>%s</span></div>' % (i, E(l)) for i, l in enumerate(lines))
+        inner = ('<div class="pfd-kinetic" aria-label="%s">%s</div><div class="pfd-kinetic-foot"><p class="pf-lead">%s</p>%s</div>') % (E(c["headline"]), rows, _lead(p), buttons(p))
+    elif v == "fan":
+        kinds = ["object", "figure", "stamp", "mark", "halftone"]
+        cards = "".join('<div class="pfd-fan-card" style="--i:%d">%s<span class="pfd-index">%02d</span></div>' % (i, art.render(kinds[i % len(kinds)], seed="%s-fan%d" % (p.id, i)), i + 1) for i in range(5))
+        inner = ('<div class="pfd-fan-text">%s<p class="pf-lead">%s</p>%s</div><div class="pfd-fan">%s</div>') % (headline(p, c["headline"]), _lead(p), buttons(p), cards)
     elif v == "split":
         inner = '<div class="pfd-hero-text">%s</div>%s' % (head, _art(p, "hero"))
     elif v == "editorial":
@@ -217,6 +240,12 @@ def _features(p, v: str) -> str:
         cells = "".join('<div class="pfd-cell %s" id="f%d"><span class="pfd-index">%02d</span><h3>%s</h3><p>%s</p>%s</div>' % (
             spans[i % 6], i + 1, i + 1, E(f["title"]), E(f["body"]), _feature_art(p, i + 50) if spans[i % 6] else "") for i, f in enumerate(feats))
         inner = '<div class="pfd-cells">%s</div>' % cells
+    elif v == "mosaic":
+        spans = ["pfd-mo-wide", "", "pfd-mo-tall", "", "", "pfd-mo-wide"]
+        kinds = ["mosaic", "figure", "object", "halftone", "blob", "bars"]
+        cells = "".join('<figure class="pfd-mo-cell %s" id="f%d">%s<figcaption><span class="pfd-index">%02d</span><h3>%s</h3><p>%s</p></figcaption></figure>' % (
+            spans[i % 6], i + 1, art.render(kinds[i % 6], seed="%s-fm%d" % (p.id, i)), i + 1, E(f["title"]), E(f["body"])) for i, f in enumerate(feats))
+        inner = '<div class="pfd-mo-grid">%s</div>' % cells
     elif v == "accordion":
         items = "".join('<details class="pfd-acc" name="pfd-acc"%s id="f%d"><summary><span>%s</span><span class="pfd-acc-no">%02d</span></summary><p>%s</p></details>' % (
             " open" if i == 0 else "", i + 1, E(f["title"]), i + 1, E(f["body"])) for i, f in enumerate(feats))
@@ -285,6 +314,13 @@ def _cta(p, v: str) -> str:
     return section("cta", v, inner)
 
 
+def _poster_band(p) -> str:
+    if not has(p, "section-poster-band"):
+        return ""
+    return ('<section class="pfd-poster-band" data-section="band" data-variant="poster">%s<span class="pfd-poster-band-word" aria-hidden="true">%s</span>'
+            '<p class="pfd-poster-band-line">%s</p></section>') % (_art(p, "hero", n=9), E(brand(p)), E(p.copy.get("cta_line") or p.copy["headline"]))
+
+
 def render(p) -> str:
     order = ["hero", "features", "proof", "cta", "footer"]
     blocks = block_classes(p, order)
@@ -294,6 +330,7 @@ def render(p) -> str:
         with_class(_hero(p, hero_v), blocks["hero"]),
         marquee(p),
         with_class(_features(p, pick(p, "features", VARIANTS["features"], FEATURE_HOOKS)), blocks["features"]),
+        _poster_band(p),
         with_class(_proof(p, pick(p, "proof", VARIANTS["proof"], PROOF_HOOKS)), blocks["proof"]),
         with_class(_cta(p, pick(p, "cta", VARIANTS["cta"], CTA_HOOKS)), blocks["cta"]),
         with_class(footer(p, pick(p, "footer", VARIANTS["footer"], FOOTER_HOOKS)), blocks["footer"]),

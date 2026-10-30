@@ -29,7 +29,7 @@ PALETTES = [
  ("night-grain", "Night grain", "warm", "dark", "orange", "Warm near-black with grain, bone text and an amber accent; the warm dark of Warp and Resend rather than blue-black.",
   ("#f7f5f0", "#1c1917", "#b45309", "#1c1917"), ("#1c1917", "#f5f1ea", "#f59e0b", "#e7e5e4"), ["https://warp.dev", "https://resend.com"]),
  ("phosphor", "Phosphor", "cool", "dark", "green", "Black glass and phosphor green with a yellow warning tone; terminals, hardware, play.",
-  ("#f2f7f3", "#0a1a0f", "#157a3b", "#8a6a00"), ("#050806", "#d8f3dc", "#33ff66", "#ffd166")  # text_muted lifted to #9fcfae after the check, ["https://teenage.engineering", "https://ghostty.org"]),
+  ("#f2f7f3", "#0a1a0f", "#157a3b", "#8a6a00"), ("#050806", "#d8f3dc", "#33ff66", "#ffd166"), ["https://teenage.engineering", "https://ghostty.org"]),
  ("cobalt-cream", "Cobalt & cream", "cool", "light", "blue", "Cream canvas with International Klein Blue blocks and a coral counterpoint; colour as structure.",
   ("#fffcec", "#11131a", "#2b35f0", "#d9431c"), None, ["https://arc.net", "https://www.cos.com"]),
  ("stone-serif", "Stone & serif", "warm", "light", "teal", "Stone white, warm black and a deep teal for links; built for very large serif type and long reading.",

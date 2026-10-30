@@ -80,7 +80,7 @@ set and eight to twelve design ideas (`ideas`: sourced moves such as a split nav
 time, a specimen hero, giant numerals, film grain, bracket buttons, a colophon footer), with
 the graph edges that justified it and live alternatives for swapping. Diversity is
 enforced: distinct style families, at most two palettes of one temperature, at most two
-pairings of one type category, no palette or pairing used twice. Three to five bundles. Do not
+pairings of one type category, no palette or pairing used twice. Three to five bundles by default, up to eight when the developer asks to see more. Do not
 drop below three; if the brief is narrow (dark only, one brand colour), say so and still show three.
 
 ### 4. Author directions.json

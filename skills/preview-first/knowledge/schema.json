@@ -122,7 +122,17 @@
         "scan",
         "grain_disc",
         "ticket",
-        "object"
+        "object",
+        "mesh",
+        "torus",
+        "letterstack",
+        "blob",
+        "mosaic",
+        "bars",
+        "sun",
+        "lattice",
+        "rays",
+        "wordcloud"
       ],
       "enums": {
         "family": [
@@ -533,7 +543,18 @@
         "app-rail",
         "app-ledger",
         "app-inspector",
-        "app-command-palette"
+        "app-command-palette",
+        "hero-split-screen",
+        "hero-diagonal",
+        "hero-mosaic",
+        "hero-kinetic",
+        "hero-fan",
+        "features-mosaic",
+        "section-poster-band",
+        "motion-parallax-type",
+        "motion-scroll-scale",
+        "motion-skew-marquee",
+        "image-frame-tilt"
       ]
     }
   },
