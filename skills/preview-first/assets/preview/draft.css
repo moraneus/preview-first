@@ -648,3 +648,20 @@ section.pfd-hero-lookbook { padding: 0 !important; max-width: none !important; }
 .pfd-broadsheet-nav { display: flex; gap: var(--pf-space-4); }
 .pfd-broadsheet-nav a { color: inherit; text-decoration: none; }
 .pfd-broadsheet-nav a:hover { text-decoration: underline; text-underline-offset: .2em; }
+
+/* phone fixes for 0.3.0 variants */
+@media (max-width: 860px) {
+  .pfd-broadsheet { padding: var(--pf-space-4) var(--pf-space-5) var(--pf-space-3); }
+  .pfd-broadsheet-line { flex-wrap: wrap; row-gap: var(--pf-space-1); }
+  .pfd-broadsheet-line > span:first-child { flex: 1 1 100%; }
+  .pfd-broadsheet-line > *:not(:first-child) { white-space: nowrap; }
+  .pfd-broadsheet-nav { flex-wrap: wrap; flex: 1 1 100%; }
+  .pfd-actions { justify-content: flex-start; }
+  .pfd-actions .pf-link, .pfd-actions .pfd-bracket { width: auto; }
+  .pfd-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pfd-tile span { font-size: var(--pf-text-sm); left: var(--pf-space-3); bottom: var(--pf-space-3); }
+  .pfd-ed-grid { grid-auto-rows: auto; }
+  .pfd-index-side { order: 2; }
+  .pfd-index-main { order: 1; }
+  .pfd-hover-row { gap: var(--pf-space-2); padding: var(--pf-space-4) 0; }
+}
