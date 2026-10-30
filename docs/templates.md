@@ -4,6 +4,12 @@ One brief (Northwind, a weather service for sailors), every style, the first scr
 
 ![Contact sheet of every style](assets/templates.jpg)
 
+## Application page, every style
+
+The same brief as an application (`page_type: app`). Each style sets a shell (sidebar, top bar, icon rail, bottom tabs or none) and a primary view (focus board, cards, kanban, feed, ledger or table), so a set of app directions never shares one dashboard template.
+
+![Contact sheet of every style's application view](assets/templates-app.jpg)
+
 ## Acid lab
 
 ![Acid lab first screen](assets/templates/acid-lab.jpg)

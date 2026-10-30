@@ -13,7 +13,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parent
 SKILL_DIR = SCRIPTS_DIR.parent
 KNOWLEDGE_DIR = SKILL_DIR / "knowledge"
 ASSETS_DIR = SKILL_DIR / "assets"
-VERSION = "0.4.0"
+VERSION = "0.4.1"
 
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))

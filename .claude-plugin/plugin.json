@@ -1,7 +1,7 @@
 {
   "name": "preview-first",
   "displayName": "preview-first",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "See your design before you build it: palette, type, components, motion and device previews in the browser, then a design contract Claude follows.",
   "author": { "name": "Moran Omer", "url": "https://github.com/moraneus" },
   "homepage": "https://github.com/moraneus/preview-first",

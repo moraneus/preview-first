@@ -94,7 +94,10 @@ Call to action: `band` (surface panel, heading plus buttons; bordered when `card
 
 Footer: `columns` (wordmark plus three link columns) or `minimal` (wordmark plus three nav words).
 
-### App (`app.py`): shell, table, detail, then empty state and settings
+### App (`app.py`): shell, view, detail, extras
+
+Shell `sidebar`, `topbar`, `rail` (56px icon rail with an optional command palette), `bottom-tabs` (phone first, inside the safe area) or `none` (one slim bar, the view takes the viewport). View `table`, `ledger` (hairline rows, mono headers, lowercase status), `board` (the product's figure at display size with the next action and a live list), `cards`, `kanban` (three named columns) or `feed` (actor, verb, object, time). `table` keeps `dense` and `comfortable` as the table's density. Detail `panel`, `drawer`, `inspector` or `none`. Extras `settings`, `empty`, `both` or `none`. Every style sets all five in `layout_defaults.app`; the recommender keeps shells and views distinct across a set.
+
 
 - Shell `sidebar` (240px column with wordmark, vertical nav, account row; turns into a top strip with a horizontally scrolling nav under 860px) or `topbar` (56px header with inline links). Sidebar when there are five or more destinations or the product is used all day; topbar for three to four destinations.
 - Table `dense` (space-2 by space-3 cells) or `comfortable` (space-4). Dense for operators scanning many rows; comfortable for occasional admin screens.

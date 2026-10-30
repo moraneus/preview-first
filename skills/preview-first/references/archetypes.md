@@ -47,7 +47,7 @@ direction's palette so no section shows a wireframe.
 - Proof `stat-wall`: three or four sourced figures at 96px with footnote sources; renders only when `copy.stats` exists.
 - Call to action `ticket`: a ticket with a perforated stub, mono meta and the single action (https://basement.studio).
 - Footer `colophon`: one mono line with the brand, year, local time, the face in use, the version and the real links (https://rauno.me, https://paco.me).
-- Store: `lookbook` and `tiles` openings, the `editorial` uneven grid, the `sticky-buy` product page. Content: the `broadsheet` masthead, `side-notes` reading layout, `archive` index. App: the icon `rail` shell, `ledger` table, `inspector` panel, command palette.
+- Store: `lookbook` and `tiles` openings, the `editorial` uneven grid, the `sticky-buy` product page. Content: the `broadsheet` masthead, `side-notes` reading layout, `archive` index. App: shells `sidebar`, `topbar`, `rail`, `bottom-tabs`, `none`; views `board` (Oura, Whoop, a scoreboard), `cards`, `kanban` (Linear, Height), `feed` (GitHub, Are.na), `ledger` (Midday), `table`; `inspector` detail; command palette.
 - Proof `statement`: the proof line (or the headline) as a two-tone paragraph; use only sourced claims.
 - Call to action `giant`: the lead, two actions, then the wordmark at poster size in 8 percent ink as a closing gesture.
 - Footer `giant`: the wordmark at poster size, one true sentence, the real links.

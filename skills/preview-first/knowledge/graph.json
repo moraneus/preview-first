@@ -1266,6 +1266,13 @@
      "product": "sticky-buy",
      "cart": "page",
      "footer": "minimal"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -1340,6 +1347,13 @@
      "product": "gallery-left",
      "cart": "page",
      "footer": "minimal"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "kanban",
+     "table": "dense",
+     "detail": "inspector",
+     "extras": "none"
     }
    },
    "best_page_types": [
@@ -1403,8 +1417,10 @@
     },
     "app": {
      "shell": "rail",
-     "table": "ledger",
-     "detail": "inspector"
+     "view": "ledger",
+     "table": "dense",
+     "detail": "inspector",
+     "extras": "settings"
     },
     "content": {
      "header": "minimal",
@@ -1474,9 +1490,11 @@
      "footer": "columns"
     },
     "app": {
-     "shell": "topbar",
+     "shell": "sidebar",
+     "view": "cards",
      "table": "comfortable",
-     "detail": "drawer"
+     "detail": "drawer",
+     "extras": "both"
     }
    },
    "best_page_types": [
@@ -1540,8 +1558,10 @@
     },
     "app": {
      "shell": "rail",
-     "table": "ledger",
-     "detail": "panel"
+     "view": "ledger",
+     "table": "dense",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -1603,6 +1623,13 @@
      "proof": "stats-sourced",
      "cta": "giant",
      "footer": "columns"
+    },
+    "app": {
+     "shell": "sidebar",
+     "view": "board",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -1669,6 +1696,13 @@
      "product": "sticky-buy",
      "cart": "drawer",
      "footer": "minimal"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -1729,6 +1763,13 @@
      "proof": "stats-sourced",
      "cta": "giant",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "none",
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "none"
     }
    },
    "best_page_types": [
@@ -1789,6 +1830,13 @@
      "proof": "quote",
      "cta": "band",
      "footer": "columns"
+    },
+    "app": {
+     "shell": "bottom-tabs",
+     "view": "cards",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "empty"
     }
    },
    "best_page_types": [
@@ -1853,6 +1901,13 @@
      "grid": "three",
      "product": "gallery-top",
      "cart": "drawer"
+    },
+    "app": {
+     "shell": "sidebar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -1915,8 +1970,10 @@
     },
     "app": {
      "shell": "topbar",
+     "view": "cards",
      "table": "comfortable",
-     "detail": "drawer"
+     "detail": "drawer",
+     "extras": "both"
     }
    },
    "best_page_types": [
@@ -1975,6 +2032,13 @@
      "proof": "stats-sourced",
      "cta": "inline",
      "footer": "columns"
+    },
+    "app": {
+     "shell": "sidebar",
+     "view": "cards",
+     "table": "comfortable",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -2037,6 +2101,13 @@
      "header": "masthead",
      "article": "single",
      "list": "cards"
+    },
+    "app": {
+     "shell": "none",
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "none"
     }
    },
    "best_page_types": [
@@ -2094,8 +2165,10 @@
    "layout_defaults": {
     "app": {
      "shell": "rail",
+     "view": "table",
      "table": "dense",
-     "detail": "inspector"
+     "detail": "inspector",
+     "extras": "settings"
     },
     "marketing": {
      "hero": "split",
@@ -9857,6 +9930,13 @@
      "product": "gallery-top",
      "cart": "drawer",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -9924,6 +10004,13 @@
      "article": "side-notes",
      "list": "archive",
      "footer": "colophon"
+    },
+    "app": {
+     "shell": "sidebar",
+     "view": "ledger",
+     "table": "dense",
+     "detail": "inspector",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -30851,8 +30938,10 @@
     },
     "app": {
      "shell": "rail",
-     "table": "ledger",
-     "detail": "inspector"
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "settings"
     },
     "content": {
      "header": "minimal",
@@ -30944,6 +31033,13 @@
      "product": "sticky-buy",
      "cart": "page",
      "footer": "minimal"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -31021,6 +31117,13 @@
      "product": "gallery-top",
      "cart": "page",
      "footer": "colophon"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "ledger",
+     "table": "dense",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -31095,8 +31198,10 @@
     },
     "app": {
      "shell": "topbar",
-     "table": "ledger",
-     "detail": "panel"
+     "view": "ledger",
+     "table": "dense",
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -31162,9 +31267,11 @@
      "footer": "colophon"
     },
     "app": {
-     "shell": "rail",
-     "table": "ledger",
-     "detail": "inspector"
+     "shell": "none",
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "settings"
     },
     "content": {
      "header": "minimal",
@@ -31238,8 +31345,10 @@
     },
     "app": {
      "shell": "rail",
-     "table": "ledger",
-     "detail": "panel"
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "settings"
     },
     "store": {
      "hero": "tiles",
@@ -31325,6 +31434,13 @@
      "article": "single",
      "list": "archive",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "bottom-tabs",
+     "view": "board",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "none"
     }
    },
    "best_page_types": [
@@ -31402,6 +31518,13 @@
      "product": "sticky-buy",
      "cart": "page",
      "footer": "minimal"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "feed",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -31480,6 +31603,13 @@
      "article": "single",
      "list": "archive",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "bottom-tabs",
+     "view": "board",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "empty"
     }
    },
    "best_page_types": [
@@ -31553,8 +31683,10 @@
     },
     "app": {
      "shell": "sidebar",
+     "view": "cards",
      "table": "comfortable",
-     "detail": "panel"
+     "detail": "panel",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -35312,6 +35444,13 @@
      "article": "single",
      "list": "archive",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "none",
+     "view": "board",
+     "table": "dense",
+     "detail": "none",
+     "extras": "none"
     }
    },
    "best_page_types": [
@@ -35389,6 +35528,13 @@
      "article": "single",
      "list": "archive",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "bottom-tabs",
+     "view": "cards",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "empty"
     }
    },
    "best_page_types": [
@@ -35466,6 +35612,13 @@
      "article": "side-notes",
      "list": "archive",
      "footer": "colophon"
+    },
+    "app": {
+     "shell": "topbar",
+     "view": "kanban",
+     "table": "comfortable",
+     "detail": "inspector",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -35539,9 +35692,11 @@
      "footer": "columns"
     },
     "app": {
-     "shell": "sidebar",
+     "shell": "bottom-tabs",
+     "view": "cards",
      "table": "comfortable",
-     "detail": "panel"
+     "detail": "drawer",
+     "extras": "both"
     }
    },
    "best_page_types": [
@@ -35619,6 +35774,13 @@
      "article": "single",
      "list": "archive",
      "footer": "giant"
+    },
+    "app": {
+     "shell": "sidebar",
+     "view": "cards",
+     "table": "comfortable",
+     "detail": "none",
+     "extras": "settings"
     }
    },
    "best_page_types": [
@@ -35652,6 +35814,145 @@
    "added": "2026-10-30",
    "last_verified": "2026-10-30",
    "confidence": 0.8
+  },
+  {
+   "id": "idea.focus-board",
+   "kind": "idea",
+   "name": "Focus board",
+   "category": "app-shell",
+   "what": "The main screen is the one number or object the product is about, set at display size with tabular numerals, the next action beside it and a short list of the other live items; no table above the fold.",
+   "implementation": "A two-column grid: figure at clamp(6rem, 24vw, 22rem) on a surface panel, a hairline list on the right; count-up when the value changes.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Scoreboards, timers, balances and counters are read from a distance; the template dashboard is not.",
+   "seen_on": [
+    "https://www.oura.com",
+    "https://www.whoop.com",
+    "https://stripe.com/dashboard"
+   ],
+   "renders": "app-board",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
+  },
+  {
+   "id": "idea.cards-view",
+   "kind": "idea",
+   "name": "Cards view",
+   "category": "app-shell",
+   "what": "Items as cards with a small figure, an index, a title, one line and a status; the grid fills by available width.",
+   "implementation": "An auto-fill grid at 240px minimum; cards use the direction's card edge; the figure is artwork or a thumbnail.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Fine when every item has an image or a figure; otherwise a list.",
+   "seen_on": [
+    "https://www.notion.com",
+    "https://www.craft.do"
+   ],
+   "renders": "app-cards",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
+  },
+  {
+   "id": "idea.kanban-columns",
+   "kind": "idea",
+   "name": "Kanban columns",
+   "category": "app-shell",
+   "what": "Work laid out as three columns with counts in the headers and compact cards; the board is the primary view, not a tab.",
+   "implementation": "Three equal columns on a surface tint; cards with an index, a title and a meta line; drag can come later.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Columns name real states (up next, in play, done), never placeholder lanes.",
+   "seen_on": [
+    "https://linear.app",
+    "https://height.app"
+   ],
+   "renders": "app-kanban",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
+  },
+  {
+   "id": "idea.activity-feed",
+   "kind": "idea",
+   "name": "Activity feed",
+   "category": "app-shell",
+   "what": "A chronological feed as the home view: avatar, actor, verb, object and time per row, hairlines between rows, newest first.",
+   "implementation": "An ordered list with a three-column grid per row; times in mono; load more at the end.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Products about people and events open on what happened, not on a table.",
+   "seen_on": [
+    "https://github.com",
+    "https://www.are.na"
+   ],
+   "renders": "app-feed",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
+  },
+  {
+   "id": "idea.bottom-tab-shell",
+   "kind": "idea",
+   "name": "Bottom tab shell",
+   "category": "app-shell",
+   "what": "A phone-first shell: a slim app bar with the wordmark and the time, content, and a bottom tab bar with four destinations inside the safe area.",
+   "implementation": "Sticky bottom nav with padding-bottom including the safe-area inset; the active tab fills its glyph with the primary colour.",
+   "ai_tell_risk": "low",
+   "ai_tell_note": "Apps used standing up (scoring, timing, fitness) live in the thumb zone.",
+   "seen_on": [
+    "https://www.headspace.com",
+    "https://www.strava.com"
+   ],
+   "renders": "app-bottom-tabs",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
+  },
+  {
+   "id": "idea.focus-shell",
+   "kind": "idea",
+   "name": "Focus shell with no chrome",
+   "category": "app-shell",
+   "what": "No sidebar and no top nav: one slim bar with the wordmark, the current mode in mono and a Menu word; the view takes the whole viewport.",
+   "implementation": "A single-column shell; detail panels are dropped; the menu word opens the overlay from the marketing draft.",
+   "ai_tell_risk": "medium",
+   "ai_tell_note": "Right for a live mode (a game in progress, a presentation, a kiosk); wrong for admin tools.",
+   "seen_on": [
+    "https://www.raycast.com",
+    "https://play.date"
+   ],
+   "renders": "app-focus",
+   "page_types": [
+    "app"
+   ],
+   "first_seen_year": 2023,
+   "source": "session survey 2026-10-30",
+   "added": "2026-10-30",
+   "last_verified": "2026-10-30",
+   "confidence": 0.75
   }
  ],
  "edges": [
@@ -72721,6 +73022,216 @@
   {
    "from": "idea.hover-swap-images",
    "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-board",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-board",
+   "to": "style.signal-orange",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-board",
+   "to": "style.acid-lab",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-board",
+   "to": "style.phosphor-terminal",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-board",
+   "to": "style.cobalt-block",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.cards-view",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.cards-view",
+   "to": "style.soft-product",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.cards-view",
+   "to": "style.clay-canvas",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.cards-view",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.cards-view",
+   "to": "style.mosaic-wall",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.kanban-columns",
+   "to": "style.swiss-grid",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.kanban-columns",
+   "to": "style.mono-engineering",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.kanban-columns",
+   "to": "style.data-dense",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.kanban-columns",
+   "to": "style.ultramarine",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.kanban-columns",
+   "to": "style.archive-index",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.activity-feed",
+   "to": "style.paper-editorial",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.activity-feed",
+   "to": "style.studio-wrap",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.activity-feed",
+   "to": "style.warm-organic",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.activity-feed",
+   "to": "style.giant-serif",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.activity-feed",
+   "to": "style.quiet-luxury",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.bottom-tab-shell",
+   "to": "style.pastel-blocks",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.bottom-tab-shell",
+   "to": "style.signal-orange",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.bottom-tab-shell",
+   "to": "style.festival-poster",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.bottom-tab-shell",
+   "to": "style.playful-geometric",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.bottom-tab-shell",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-shell",
+   "to": "style.velodrome",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-shell",
+   "to": "style.phosphor-terminal",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-shell",
+   "to": "style.neo-brutalist",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-shell",
+   "to": "style.night-grain",
+   "kind": "pairs_with",
+   "weight": 0.8,
+   "evidence": []
+  },
+  {
+   "from": "idea.focus-shell",
+   "to": "style.cobalt-block",
    "kind": "pairs_with",
    "weight": 0.8,
    "evidence": []

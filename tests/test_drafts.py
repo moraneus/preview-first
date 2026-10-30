@@ -36,7 +36,8 @@ def test_page_types_and_variants_declared():
     assert set(PAGE_TYPES) == {"marketing", "app", "content", "store"}
     assert {"split", "centered", "editorial", "product-first", "poster"} <= set(VARIANTS["marketing"]["hero"])
     assert {"bento", "list", "alternating", "columns"} <= set(VARIANTS["marketing"]["features"])
-    assert {"sidebar", "topbar", "rail"} <= set(VARIANTS["app"]["shell"])
+    assert {"sidebar", "topbar", "rail", "bottom-tabs", "none"} <= set(VARIANTS["app"]["shell"])
+    assert {"table", "ledger", "board", "cards", "kanban", "feed"} <= set(VARIANTS["app"]["view"])
     assert {"two", "three", "four", "editorial"} <= set(VARIANTS["store"]["grid"])
     assert {"lookbook", "tiles"} <= set(VARIANTS["store"]["hero"]) and {"broadsheet"} <= set(VARIANTS["content"]["header"])
     assert {"ticker", "specimen", "manifesto", "numbers", "clip", "stacked"} <= set(VARIANTS["marketing"]["hero"])
@@ -197,7 +198,11 @@ def test_colour_blocking_and_inverted_ending(directions, idx):
 def test_store_content_app_variants_render(directions, idx):
     for pt, layout, needle in (("store", {"hero": "lookbook", "grid": "editorial", "product": "sticky-buy"}, "pfd-lookbook"),
                                ("content", {"header": "broadsheet", "article": "side-notes", "list": "archive"}, "pfd-broadsheet"),
-                               ("app", {"shell": "rail", "table": "ledger", "detail": "inspector"}, "pfd-shell-rail")):
+                               ("app", {"shell": "rail", "view": "ledger", "detail": "inspector"}, "pfd-shell-rail"),
+                               ("app", {"shell": "none", "view": "board"}, "pfd-board-figure"),
+                               ("app", {"shell": "bottom-tabs", "view": "cards"}, "pfd-bottom-tabs"),
+                               ("app", {"shell": "topbar", "view": "kanban"}, "pfd-kanban"),
+                               ("app", {"shell": "sidebar", "view": "feed"}, "pfd-feed")):
         html = render(pt, _prepared(directions, idx, 0, layout=layout, page_type=pt))
         assert needle in html, pt
 
@@ -234,3 +239,12 @@ def test_borrowed_hero_hook_does_not_replace_the_style_hero(directions, idx):
     d["bundle"]["ideas"] = ["idea.type-specimen-hero"]  # not among paper-editorial's own ideas
     html = render("marketing", Prepared(d, directions["brief"], idx))
     assert 'data-section="hero" data-variant="editorial"' in html
+
+
+def test_app_board_figure_comes_from_the_brief(directions, idx):
+    d = copy.deepcopy(directions["directions"][0])
+    brief = dict(directions["brief"], page_type="app")
+    d["layout"] = {"shell": "none", "view": "board"}
+    d["copy"] = dict(d["copy"], headline="Live scores for 501 and Cricket")
+    html = render("app", Prepared(d, brief, idx))
+    assert 'data-count="501"' in html

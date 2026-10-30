@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.1 (2026-10-30)
+
+The app page type stops being a dashboard template.
+
+- App drafts now have a primary **view** chosen per style: a focus board (the one number or object the product is about at display size, with the next action and a short live list), cards, kanban columns, an activity feed, a ledger or a table. Shells: sidebar, top bar, icon rail, phone-first bottom tabs, or none (a full-bleed focus screen). Detail panels can be dropped; extras (settings, empty state) are per style.
+- Every style carries app layout defaults, and six new app ideas with render hooks (focus board, cards view, kanban columns, activity feed, bottom tab shell, focus shell) feed the recommender, so four app directions for one brief no longer share a shell and a table.
+- The board's figure comes from the brief (a 501, a 90 days, a 3 steps), never from a placeholder; sample counts and dates stay visibly sample data.
+- Settings and empty states use the brief's own nouns.
+
 ## 0.4.0 (2026-10-30)
 
 More templates, bolder ones, and a page that shows them all.

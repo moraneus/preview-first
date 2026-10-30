@@ -9,7 +9,7 @@ E = html.escape
 
 NAV_VARIANTS = ["bar", "split-meta", "menu-word", "pill", "rail"]
 _NAV_HOOKS = (("nav-split-meta", "split-meta"), ("nav-menu-word", "menu-word"), ("nav-pill", "pill"), ("nav-rail", "rail"), ("nav-bar", "bar"))
-VERSION_LINE = "v0.4.0"
+VERSION_LINE = "v0.4.1"
 
 
 def hooks(p) -> set:

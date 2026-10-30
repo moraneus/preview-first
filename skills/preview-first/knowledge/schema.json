@@ -554,7 +554,13 @@
         "motion-parallax-type",
         "motion-scroll-scale",
         "motion-skew-marquee",
-        "image-frame-tilt"
+        "image-frame-tilt",
+        "app-board",
+        "app-cards",
+        "app-kanban",
+        "app-feed",
+        "app-bottom-tabs",
+        "app-focus"
       ]
     }
   },
