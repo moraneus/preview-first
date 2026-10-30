@@ -202,3 +202,11 @@ def test_tile_copy_follows_the_brief_not_invoicing(tmp_path):
     html = (tmp_path / "A/tile.html").read_text(encoding="utf-8")
     assert "Invoice 0142" not in html and "ledgerline" not in html.lower()
     assert "Pawfect" in html and "Reminders that work" in html
+
+
+def test_prepared_exposes_ideas_and_hooks(out):
+    out, _ = out
+    data = json.loads((out / "data.json").read_text(encoding="utf-8"))
+    for d in data["directions"]:
+        assert d["ideas"] and d["hooks"], d["id"]
+        assert all(i.startswith("idea.") for i in d["ideas"])

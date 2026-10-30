@@ -161,6 +161,16 @@ def validate(graph: Dict[str, Any], schema: Dict[str, Any], strict: bool = False
             _check_palette(node, schema, out)
         if kind == "type-pairing":
             _check_pairing(node, kspec, out)
+        if kind == "idea":
+            hook = node.get("renders")
+            if hook is not None and hook not in kspec.get("render_hooks", []):
+                out.append(Finding("error", nid, "renders %r is not a known render hook" % hook))
+            if not isinstance(node.get("seen_on"), list) or not node.get("seen_on"):
+                out.append(Finding("error", nid, "seen_on must list at least one URL"))
+        if kind == "style":
+            for iid in node.get("ideas", []) or []:
+                if not str(iid).startswith("idea."):
+                    out.append(Finding("error", nid, "ideas entries must be idea ids, got %r" % iid))
         conf = node.get("confidence")
         if isinstance(conf, (int, float)):
             if not 0 <= conf <= 1:
@@ -177,6 +187,11 @@ def validate(graph: Dict[str, Any], schema: Dict[str, Any], strict: bool = False
             if age > 365:
                 out.append(Finding("warn", nid, "last_verified is %d days old" % age))
 
+    for node in nodes:
+        if node.get("kind") == "style":
+            for iid in node.get("ideas", []) or []:
+                if iid not in seen:
+                    out.append(Finding("error", node["id"], "ideas references missing node %r" % iid))
     ref_ids = {n["id"] for n in nodes if n.get("kind") == "reference-site"}
     evidence_expected = set(schema.get("edge_evidence_expected", []))
     for edge in graph.get("edges", []):

@@ -114,6 +114,10 @@ class Prepared:
         layout = dict((self.style.get("layout_defaults") or {}).get(brief.get("page_type", "marketing"), {}))
         layout.update(direction.get("layout", {}) or {})
         self.layout = layout
+        # Design ideas: the bundle's list, or the style's defaults for directions authored before 0.3.0.
+        idea_ids = list(b.get("ideas") or self.style.get("ideas") or [])
+        self.ideas = [idx[i] for i in idea_ids if i in idx and idx[i].get("kind") == "idea"]
+        self.hooks = set(i["renders"] for i in self.ideas if i.get("renders"))
         self.brief = brief
         self.direction = direction
 
@@ -530,6 +534,7 @@ def build(directions: dict, out: Path, graph: dict, devices: List[dict], vendor_
             "icon_set": p.icon_set["id"], "radius_scale": p.radius_scale, "density": p.density,
             "alternatives": {"palettes": [x["id"] for x in p.alt_palettes], "type_pairings": [x["id"] for x in p.alt_pairings]},
             "palette_resolved": p.resolved, "copy": p.copy, "layout": p.layout,
+            "ideas": [i["id"] for i in p.ideas], "hooks": sorted(p.hooks),
         } for p in dirs],
         "devices": devices,
         "built": _common.now_iso(),

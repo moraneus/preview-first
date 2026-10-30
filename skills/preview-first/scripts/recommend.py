@@ -178,6 +178,107 @@ def _pair_key(g: _Graph, pairing_id: str) -> Tuple[str, str]:
     return (n["heading"]["category"], n["body"]["category"])
 
 
+# ---------------------------------------------------------------- ideas
+
+IDEA_SLOTS = [
+    ("navigation",), ("hero",), ("typography", "craft"), ("section", "layout"), ("imagery", "art", "colour", "texture"),
+    ("motion", "interaction", "cursor", "scroll", "loading"), ("footer", "component", "copy"),
+]
+EXCLUSIVE_PREFIXES = ("nav-", "hero-", "texture-", "features-", "footer-", "proof-", "cta-")
+IDEAS_PER_BUNDLE = 10
+
+
+def _idea_scores(g: _Graph, style: dict, product: str, moods: List[str], page_type: str) -> List[Tuple[str, float]]:
+    sid = style["id"]
+    defaults = list(style.get("ideas") or [])
+    out = []
+    for n in g.by_kind.get("idea", []):
+        iid = n["id"]
+        if g.edge(iid, sid, "avoid_with") or any(g.edge(m, iid, "avoid_with") for m in moods):
+            continue
+        pts = n.get("page_types")
+        if pts and page_type not in pts:
+            continue
+        score = 0.0
+        if iid in defaults:
+            score += 2.0 - defaults.index(iid) * 0.05
+        e = g.edge(iid, sid, "pairs_with")
+        if e:
+            score += float(e["weight"])
+        e = g.edge(product, iid, "suits")
+        if e:
+            score += 0.6 * float(e["weight"])
+        for m in moods:
+            e = g.edge(m, iid, "expresses")
+            if e:
+                score += 0.4 * float(e["weight"])
+        if n.get("ai_tell_risk") == "high" and iid not in defaults:
+            continue
+        if n.get("ai_tell_risk") == "medium":
+            score -= 0.25
+        if score < 0 or (score == 0 and n.get("ai_tell_risk") != "low"):
+            continue
+        out.append((iid, score))
+    out.sort(key=lambda t: (-t[1], t[0]))
+    return out
+
+
+def _ideas_for(g: _Graph, style: dict, product: str, moods: List[str], page_type: str,
+               used_hooks: set, used_ideas: set, count: int = IDEAS_PER_BUNDLE) -> List[str]:
+    """Pick ideas for one direction: one per hook, category coverage, and no nav, hero, texture or
+    section device shared with another direction in the set."""
+    ranked = _idea_scores(g, style, product, moods, page_type)
+    chosen: List[str] = []
+    hooks_here: set = set()
+
+    def ok(iid: str, strict: bool) -> bool:
+        n = g.idx[iid]
+        hook = n.get("renders")
+        if iid in chosen:
+            return False
+        if hook:
+            if hook in hooks_here:
+                return False
+            prefix = hook.split("-", 1)[0] + "-"
+            if prefix in ("hero-", "nav-", "footer-", "proof-", "cta-") and any(h.startswith(prefix) for h in hooks_here):
+                return False
+            if strict and hook.startswith(EXCLUSIVE_PREFIXES) and hook in used_hooks:
+                return False
+        if strict and iid in used_ideas and n["category"] in ("hero", "navigation"):
+            return False
+        return True
+
+    def take(iid: str) -> None:
+        chosen.append(iid)
+        hook = g.idx[iid].get("renders")
+        if hook:
+            hooks_here.add(hook)
+
+    for slot in IDEA_SLOTS:
+        allow_zero = slot in (("navigation",), ("typography", "craft"))  # every direction gets a nav device and one type craft; other slots need a real fit
+        pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and (sc > 0 or allow_zero) and ok(iid, True)), None)
+        if pick is None and allow_zero:
+            pick = next((iid for iid, sc in ranked if g.idx[iid]["category"] in slot and ok(iid, False)), None)
+        if pick:
+            take(pick)
+    for iid, score in ranked:
+        if len(chosen) >= count:
+            break
+        if score > 0 and ok(iid, True):
+            take(iid)
+    if len(chosen) < 6:  # pad with quiet craft ideas (no hero, nav or section device) that fit a mood or product
+        for iid, score in ranked:
+            if len(chosen) >= 6:
+                break
+            n = g.idx[iid]
+            hook = n.get("renders")
+            if score > 0 and n["category"] in ("craft", "typography", "motion", "component") and (not hook or not hook.startswith(EXCLUSIVE_PREFIXES)) and ok(iid, True):
+                take(iid)
+    used_hooks.update(h for h in hooks_here if h.startswith(EXCLUSIVE_PREFIXES))
+    used_ideas.update(chosen)
+    return chosen
+
+
 # ---------------------------------------------------------------- main entry
 
 def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
@@ -189,6 +290,9 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
 
     scores, why = _style_scores(g, product, moods)
     ranked = sorted(scores.items(), key=lambda kv: (-kv[1], kv[0]))
+    page_type = brief.get("page_type", "marketing")
+    used_hooks: set = set()
+    used_ideas: set = set()
 
     bundles: List[dict] = []
     families_used: set = set()
@@ -241,6 +345,7 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
             justification = [dict(e) for e in why.get(sid, [])] + [dict(pal[2]), dict(pair[2])]
             if icons:
                 justification.append(dict(icons[0]))
+            ideas = _ideas_for(g, style, product, moods, page_type, used_hooks, used_ideas)
             bundles.append({
                 "style": sid,
                 "style_family": style["family"],
@@ -250,6 +355,7 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
                 "motion": motion,
                 "motion_level": motion_level,
                 "icon_set": icon,
+                "ideas": ideas,
                 "radius_scale": style["radius_scale"],
                 "density": style["density"],
                 "alternatives": {

@@ -66,3 +66,25 @@ def test_validate_file_enforces_direction_id_pattern():
     assert any("pattern" in p for p in validate_file(base, "directions", schema))
     base["directions"][0]["id"] = "A"
     assert validate_file(base, "directions", schema) == []
+
+
+# ---------------------------------------------------------------- ideas (0.3.0)
+
+def _idea(**over):
+    base = {"id": "idea.x", "kind": "idea", "name": "X", "category": "hero", "what": "w", "implementation": "i",
+            "ai_tell_risk": "low", "seen_on": ["https://example.com"], "source": "t", "added": "2026-10-30",
+            "last_verified": "2026-10-30", "confidence": 0.8}
+    base.update(over)
+    return base
+
+
+def test_idea_kind_validates_and_rejects_unknown_hook():
+    from _common import load_schema
+    schema = load_schema()
+    ok = {"nodes": [_idea(renders="nav-split-meta")], "edges": []}
+    assert [f for f in validate(ok, schema) if f.level == "error"] == []
+    bad = {"nodes": [_idea(renders="nav-teleport")], "edges": []}
+    errs = [f for f in validate(bad, schema) if f.level == "error"]
+    assert errs and "renders" in errs[0].message
+    bad2 = {"nodes": [_idea(category="vibes")], "edges": []}
+    assert any("category" in f.message for f in validate(bad2, schema))

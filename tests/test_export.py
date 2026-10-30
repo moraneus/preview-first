@@ -147,3 +147,10 @@ def test_contract_records_archetype_and_art(tmp_project, directions):
     _export(tmp_project, directions)
     md = (tmp_project / "design" / "DESIGN.md").read_text(encoding="utf-8")
     assert "## Layout archetype" in md and "Hero: **" in md and "Artwork: **" in md
+
+
+def test_contract_lists_design_ideas(tmp_project, directions):
+    _export(tmp_project, directions)
+    md = (tmp_project / "design" / "DESIGN.md").read_text(encoding="utf-8")
+    assert "## Design ideas" in md
+    assert "in the draft" in md and "Build:" in md and "Seen on https://" in md

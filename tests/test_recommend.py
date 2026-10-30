@@ -132,3 +132,33 @@ def test_at_least_two_distinct_directions(saas, g, idx):
     assert sum(idx[x["style"]].get("conventionality") == "distinct" for x in b) >= 2
     b3 = recommend(saas, g, 3)
     assert sum(idx[x["style"]].get("conventionality") == "distinct" for x in b3) >= 2
+
+
+# ---------------------------------------------------------------- ideas (0.3.0)
+
+def test_bundles_carry_ideas_with_coverage_and_no_hero_reuse(saas, g, idx):
+    b = recommend(saas, g, 4)
+    hero_hooks = []
+    nav_hooks = []
+    for x in b:
+        ideas = x["ideas"]
+        assert 4 <= len(ideas) <= 12, ideas
+        nodes = [idx[i] for i in ideas]
+        assert all(n["kind"] == "idea" for n in nodes)
+        cats = {n["category"] for n in nodes}
+        assert "navigation" in cats and ("typography" in cats or "craft" in cats), cats
+        hooks = [n.get("renders") for n in nodes if n.get("renders")]
+        assert len(hooks) == len(set(hooks)), "one idea per hook inside a bundle"
+        hero_hooks += [h for h in hooks if h.startswith("hero-")]
+        nav_hooks += [h for h in hooks if h.startswith("nav-")]
+        assert all(idx[i].get("ai_tell_risk") != "high" or i in (idx[x["style"]].get("ideas") or []) for i in ideas)
+    assert len(nav_hooks) == len(set(nav_hooks)), "directions must not share a nav device"
+    assert len(hero_hooks) == len(set(hero_hooks))
+
+
+def test_ideas_respect_style_defaults_and_avoid(saas, g, idx):
+    b = recommend(saas, g, 3)
+    for x in b:
+        defaults = idx[x["style"]].get("ideas") or []
+        # at least half of the style's own defaults survive into the bundle
+        assert len(set(defaults) & set(x["ideas"])) >= max(1, len(defaults) // 2), (x["style"], x["ideas"])
