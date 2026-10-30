@@ -1,0 +1,12 @@
+{
+  "name": "preview-first",
+  "displayName": "preview-first",
+  "version": "0.1.0",
+  "description": "See your design before you build it: palette, type, components, motion and device previews in the browser, then a design contract Claude follows.",
+  "author": { "name": "Moran Omer", "url": "https://github.com/moraneus" },
+  "homepage": "https://github.com/moraneus/preview-first",
+  "repository": "https://github.com/moraneus/preview-first",
+  "license": "MIT",
+  "keywords": ["design", "web-design", "ui", "ux", "preview", "style-tile", "design-tokens", "color-palette", "typography", "device-preview", "claude-code", "agent-skills"],
+  "skills": ["./skills/preview-first"]
+}
