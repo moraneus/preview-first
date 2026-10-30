@@ -47,9 +47,9 @@ code { font-family: var(--pfc-mono); font-size: 0.85em; }
   padding: 8px 20px; background: var(--pfc-panel); border-bottom: 1px solid var(--pfc-line);
   font-size: 13px; color: var(--pfc-fg);
 }
-.pfc-bar .pfc-select { grid-column: 5; justify-self: end; }
-.pfc-bar .pfc-controls { grid-column: 1 / -1; margin-left: 0; padding-top: 6px; border-top: 1px solid var(--pfc-line); }
-@media (max-width: 900px) { .pfc-bar { grid-template-columns: 1fr 1fr; } .pfc-bar .pfc-select { grid-column: auto; } .pfc-dirs, .pfc-views { flex-wrap: wrap; } }
+.pfc-bar .pfc-select { grid-column: 5; grid-row: 1; justify-self: end; }
+.pfc-bar .pfc-controls { grid-column: 1 / -1; grid-row: 2; margin-left: 0; padding-top: 6px; border-top: 1px solid var(--pfc-line); }
+@media (max-width: 900px) { .pfc-bar { grid-template-columns: 1fr 1fr; } .pfc-bar .pfc-select { grid-column: auto; grid-row: auto; } .pfc-bar .pfc-controls { grid-row: auto; } .pfc-dirs, .pfc-views { flex-wrap: wrap; } }
 .pfc-back { color: var(--pfc-muted); text-decoration: none; }
 .pfc-back:hover { color: var(--pfc-fg); text-decoration: underline; }
 .pfc-dirs, .pfc-views { display: flex; gap: 4px; }

@@ -62,7 +62,8 @@
 .pf-device[data-kind="laptop"] .pf-device-base::after { content: ""; position: absolute; left: 50%; top: 0; width: 18%; height: 4px; transform: translateX(-50%); background: #0e0e10; border-radius: 0 0 4px 4px; }
 .pf-device[data-kind="desktop"] .pf-device-shell { --bezel: 14px; border-radius: 10px; }
 .pf-device[data-kind="desktop"] .pf-device-base { position: absolute; left: 50%; bottom: -44px; width: 36%; height: 44px; transform: translateX(-50%); background: #2a2a2e; clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); }
-.pf-device[data-kind="laptop"], .pf-device[data-kind="desktop"] { padding-bottom: var(--pf-space-8); }
+.pf-device[data-kind="laptop"] .pf-device-shell { margin-bottom: 18px; }
+.pf-device[data-kind="desktop"] .pf-device-shell { margin-bottom: 52px; }
 
 /* safe-area overlay */
 .pf-safe { position: absolute; inset: 0; z-index: 3; pointer-events: none; display: none;
