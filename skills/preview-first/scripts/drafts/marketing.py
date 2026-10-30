@@ -50,6 +50,14 @@ def _feature_art(p, i: int, label: str = "") -> str:
     return art.render(kind, seed="%s-f%d" % (p.id, i), label=label)
 
 
+def _meta_line(text: str) -> str:
+    """A short meta phrase for list rows: the first clause, cut at a word boundary, no dangling fragment."""
+    first = text.split(". ")[0].split(", ")[0].split(";")[0].rstrip(".")
+    if len(first) <= 44:
+        return first
+    return first[:44].rsplit(" ", 1)[0]
+
+
 def brief_line(p) -> str:
     text = (p.brief.get("audience") or p.brief.get("product", "")).split(",")[0]
     if len(text) <= 48:
@@ -201,7 +209,7 @@ def _features(p, v: str) -> str:
         inner = '<div class="pfd-strip-head"><h2>What you get</h2><span class="pfd-index">%02d / %02d</span></div><div class="pfd-strip" data-strip>%s</div>' % (1, n, cards)
     elif v == "hover-list":
         rows = "".join('<a class="pfd-hover-row" href="#f%d" id="f%d" data-hover-art="%d"><span class="pfd-hover-title">%s</span><span class="pfd-hover-meta">%s</span>%s</a>' % (
-            i + 1, i + 1, i, E(f["title"]), E(f["body"][:60].rsplit(" ", 1)[0] if len(f["body"]) > 60 else f["body"]), index_label(p, i + 1, n)) for i, f in enumerate(feats))
+            i + 1, i + 1, i, E(f["title"]), E(_meta_line(f["body"])), index_label(p, i + 1, n)) for i, f in enumerate(feats))
         arts = "".join('<div class="pfd-hover-art" data-hover-art-id="%d" aria-hidden="true">%s</div>' % (i, _feature_art(p, i + 40)) for i in range(n))
         inner = '<div class="pfd-hover-list" data-hover-list>%s%s</div>' % (rows, arts)
     elif v == "cells":

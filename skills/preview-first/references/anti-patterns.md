@@ -8,6 +8,8 @@ Do not use a tell unless the brief asks for it by name. If it does, use it and n
 
 Style nodes in `knowledge/graph.json` carry `tells_to_avoid`; read them for the chosen style before authoring and check the draft against them before showing it.
 
+A design idea attached to the direction (`bundle.ideas`, see `ideas.md`) counts as a request by name for the device it describes: a marquee of real nouns, mono index numbers, a preloader counter, a custom cursor. Those rows below mark the generic form of the device as a tell; the idea form, applied once and tied to real content, is allowed and the rationale names it.
+
 ## The template itself
 
 The strongest tell is not a colour, it is the order of the page: navigation, centred headline
@@ -17,7 +19,7 @@ sequence before they read a word.
 
 | Tell | Instead |
 |---|---|
-| Centred headline, subhead, two buttons, screenshot | One of the archetypes in `layout.md`: a two-tone statement paragraph with captioned figures, type wrapping a flat disc, a framed product stage with the real UI, a display face beside a single object, full-bleed artwork with small centred text, a sticky index column, poster type |
+| Centred headline, subhead, two buttons, screenshot | One of the archetypes in `archetypes.md` or a hero idea from `ideas.md` (ticker, specimen, manifesto, sourced numbers, clipped type, stacked words): a two-tone statement paragraph with captioned figures, type wrapping a flat disc, a framed product stage with the real UI, a display face beside a single object, full-bleed artwork with small centred text, a sticky index column, poster type |
 | Three identical icon cards | Captioned figures with hairline column rules, a specification list, an index with large titles, alternating colour bands with artwork |
 | Grey boxes with an icon standing in for images | Generated artwork from `drafts/art.py` (blueprint, isometric, terminal, Swiss, contours, halftone, orbit, stickers, sparklines, mark, product window) in the direction's own palette, later replaced by real imagery of equal weight |
 | Logo bar, stats row, testimonials carousel by default | Only what the brief can source; a two-tone statement or a single attributed quote otherwise, or nothing |
@@ -54,7 +56,7 @@ styles in a set.
 | All-caps labels anywhere (table headers, buttons, badges, section labels) | Sentence case; weight and colour do the labelling |
 | Centred hero copy in a generic sans | Left-aligned text, or centred only with a real image and a short headline |
 | One word in a different colour inside the headline | Plain headline; emphasis by structure |
-| Mono used for body copy or headings because it looks technical | Mono for code, ids, paths, timestamps and tabular data only |
+| Mono used for body copy or headings because it looks technical | Mono for code, ids, paths, timestamps, tabular data and the labelling voice (captions, indices, dates) at 11 to 12px; mono headings only under 48px in the mono pairings |
 | Headlines wider than 18ch, paragraphs past 70ch | Cap headlines at 12 to 18ch and prose at `--pf-measure` |
 | Letter-spacing added to body or display text | Default tracking; slight negative tracking on large display sizes only (`-0.01em` to `-0.04em`) |
 | Font sizes picked freely | The `--pf-text-*` scale from the pairing's ratio |
@@ -70,7 +72,7 @@ styles in a set.
 | Fake logo bars ("Trusted by" with invented or borrowed marks) | `proof` `logos-text` with names you are allowed to use, or `none` |
 | Invented stats (10k users, 99.9% uptime, 4.9 stars) | `proof` `stats-sourced` with a figure and its source, or no stats |
 | Testimonials with first names and initials, stock avatars or gradient initials | A real attributed quote with permission, or the placeholder that says one is needed |
-| Decorative step numbers 01, 02, 03 | Numbers only for ordered steps, set in the body face |
+| Decorative step numbers 01, 02, 03 pasted on three equal cards | Numbers only for ordered steps, or the `giant numerals` and `mono index numbers` ideas, where the numerals are the composition and sit in mono or at display size |
 | Arrows appended to links and buttons (an arrow glyph or chevron after "Learn more") | The label alone; underline or colour marks the link |
 | Emoji icons (in lists, cards, headings, buttons) | Icons from the bundle's icon set at 24px, or no icon |
 | Checkmark bullet lists of benefits | Prose, a numbered list, or a list with rules |
@@ -98,8 +100,8 @@ styles in a set.
 | Tell | Instead |
 |---|---|
 | Scroll-reveal on every section | Stillness by default; at most one entrance pattern, once, on the hero, respecting `prefers-reduced-motion` |
-| Marquees of logos or words | A static sentence |
-| Typing cursors and typewriter text | The finished sentence |
+| Marquees of borrowed logos, or a marquee as the only motion | A static sentence; or the `marquee divider` idea, one slow line of the product's real nouns, paused on hover |
+| Typing cursors and typewriter text | The finished sentence; the `line mask reveal` idea reveals finished lines once instead |
 | Pulsing dots, breathing glows, infinite ambient loops | A static status badge; ambient motion only at motion level 3 and when the brief asks |
 | Parallax backgrounds | Fixed layout |
 | Bounce easing on UI | `--pf-ease-out` for entrances, `--pf-ease-in-out` for moves, `ease` for colour; spring only for switches and drags |
@@ -143,6 +145,7 @@ Each direction:
 15. The draft reads at 360, 1280 and 1536 in the devices view; nothing clips, nothing is under a cutout or inside the safe-area band.
 16. The style's own `tells_to_avoid` list is clear.
 17. If the brief named a tell, the rationale says where it is used and why it is confined.
+18. The direction's ideas are visible: the nav device, the first screen and at least one section come from `bundle.ideas`, and no two directions in the set share a nav, hero or texture device.
 
 The preview chrome (`.pfc-*`, `.pfg-*`):
 

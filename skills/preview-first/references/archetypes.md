@@ -20,6 +20,12 @@ direction's palette so no section shows a wireframe.
 | `index` | A sticky left column with wordmark, one sentence and the page's table of contents; content and artwork on the right. | editorial sites, documentation, long product pages | content-heavy pages | the index must link to real sections |
 | `collage` | The wordmark at poster size with four to five images at hand-set, uneven positions and rotations; corner metadata (role, city, local time). | Framer "Caspia", https://rauno.me | designers, photographers, agencies, fashion | evenly spaced or mirrored images read as a grid again; respect reduced motion |
 | `letter` | A narrow essay: date line, centred title, first-person paragraphs at 19 to 21px, a signature. No media, no cards. | https://arc.net (farewell letter), https://press.stripe.com | announcements, manifestos, founders' notes | the prose must be specific; no call-to-action band mid-letter |
+| `ticker` | The brand name or a two-word claim at 20vw as a single-line marquee, one sentence and one link beneath. | https://basement.studio, https://lamalama.com | studios, launches, brutalist brands | one word, slow, paused on hover |
+| `specimen` | The headline presented like a foundry specimen: mono metadata in the corners (face, size, year, time), hairlines above and below, numerals in a strip. | https://klim.co.nz, https://pangrampangram.com | engineering, type-led brands | the metadata must be true |
+| `manifesto` | One paragraph of 60 to 120 words at 28 to 44px, left aligned, no headline, no buttons, one inline link. | https://arc.net, https://press.stripe.com | editorial, founders' notes, calm products | needs real prose |
+| `numbers` | Three sourced figures at 96 to 160px with captions as the first screen; renders only when `copy.numbers` exists. | https://stripe.com/newsroom, https://posthog.com | data products, annual letters | invented numbers are the tell |
+| `clip` | The name set larger than the viewport so the first and last letters bleed off; a small line in the exposed corner. | https://lusion.co, https://exo-ape.com | poster brands, agencies | needs a short name |
+| `stacked` | Three or four words stacked one per line, alternating solid and outlined. | https://obys.agency, https://cuberto.com | studios, events, colour-blocked brands | keep to four lines |
 | `poster` | Poster-scale headline as the image, subhead and actions beside, one mark at the side. | https://lusion.co, https://basement.studio | agencies, events, portfolios | headline under 12 words; tracking tight |
 | `editorial` | Kicker, headline, lead, a side note with a figure. | publishing, knowledge tools | content-first products | avoid oversized italic serif |
 | `split`, `centered` | The familiar layouts, kept for briefs that ask for them by name. | | | `centered` is the tell; never a default |
@@ -31,6 +37,17 @@ direction's palette so no section shows a wireframe.
 - Features `index`: a sticky figure on the left, large titles with one sentence each on the right.
 - Features `bands`: full-bleed alternating surface bands, text left, artwork right. Consumer products.
 - Features `ledger`: full-width rows with a big title left, one to three small thumbnails, a count in parentheses and a year on the right, hairlines between rows. Studios, portfolios, archives, changelogs (https://locomotive.ca, https://lamalama.com).
+- Features `numerals`: 01, 02, 03 at 120 to 200px in 12 percent ink beside a title and one sentence (https://locomotive.ca, https://significa.co).
+- Features `stack`: sticky cards that pile with a 16px lip, each a shade darker (https://www.apple.com/iphone/).
+- Features `strip`: a horizontal scroll-snap row with the last card cut by the viewport and a mono count (https://www.ssense.com).
+- Features `hover-list`: plain rows, hovering reveals an image that follows the pointer (https://dennissnellenberg.com, https://locomotive.ca).
+- Features `cells`: a bordered grid with plus marks at the intersections and uneven spans (https://vercel.com, https://linear.app/changelog).
+- Features `accordion`: hairline rows with a rotating plus, one open at a time (https://www.aesop.com).
+- Proof `giant-quote`: one attributed quote at 40 to 64px with hanging punctuation (https://linear.app/customers).
+- Proof `stat-wall`: three or four sourced figures at 96px with footnote sources; renders only when `copy.stats` exists.
+- Call to action `ticket`: a ticket with a perforated stub, mono meta and the single action (https://basement.studio).
+- Footer `colophon`: one mono line with the brand, year, local time, the face in use, the version and the real links (https://rauno.me, https://paco.me).
+- Store: `lookbook` and `tiles` openings, the `editorial` uneven grid, the `sticky-buy` product page. Content: the `broadsheet` masthead, `side-notes` reading layout, `archive` index. App: the icon `rail` shell, `ledger` table, `inspector` panel, command palette.
 - Proof `statement`: the proof line (or the headline) as a two-tone paragraph; use only sourced claims.
 - Call to action `giant`: the lead, two actions, then the wordmark at poster size in 8 percent ink as a closing gesture.
 - Footer `giant`: the wordmark at poster size, one true sentence, the real links.
@@ -54,16 +71,31 @@ rebuild gives the same picture and a palette swap recolours it live.
 | `sparklines` | A grid of numerals with sparklines | data dense |
 | `mark` | One large geometric mark | poster type, studio wrap |
 | `glass` | Translucent panels over a colour disc | glass layered |
-| `figure` | A small captioned line figure (stack, grid, flow, rings, bars) | feature sections |
+| `figure` | A small captioned line figure (stack, grid, flow, rings, bars, wave, dots, steps, cross, ladder, arc, target, beam; thirteen kinds chosen by seed) | feature sections |
+| `ascii` | A field of mono characters whose density follows a wave and a disc, peaks in primary | phosphor terminal, dark console |
+| `dither` | Bayer-ordered dithering of a radial light and a horizon band in two palette colours | acid lab, neo-brutalist |
+| `flowfield` | Particles traced through a vector field, every ninth path in primary | technical and scientific products |
+| `strands` | Horizontal wave strands bunching in the middle | night grain |
+| `stamp` | A rotated circular stamp with text on a path | signal orange, collage heroes |
+| `ruler` | Measurement ticks with one highlighted span | archive index, specification pages |
+| `globe` | A wireframe globe with markers | infrastructure, travel |
+| `specimen` | A type specimen block in the direction's own heading face | type-led heroes |
+| `pixel` | A coarse symmetric pixel mark | retro and games |
+| `scan` | An oscilloscope panel with scanlines and one waveform | hardware |
+| `grain_disc` | One flat disc with film grain and a horizon line | clay canvas, lookbooks |
+| `ticket` | A ticket with perforation, serial and barcode | events, launches |
+| `object` | A flat vessel, box, cup, tube or disc on a seamless with one hard shadow | store product stand-ins |
 
 Artwork is a stand-in with real visual weight. The contract tells the builder to replace it
 with product imagery or photography of equal weight, never stock photos or icon boxes.
 
 ## Choosing and overriding
 
-Styles carry `layout_defaults`, `art` and `conventionality`. The recommender puts at least two
-`distinct` styles in every set. Override per direction with `layout` and, for artwork, by
-switching style; do not fall back to `centered` plus `columns` because it is safe.
+Styles carry `layout_defaults`, `art`, `conventionality` and `ideas`. The recommender puts at
+least two `distinct` styles in every set and attaches eight to twelve ideas per direction; ideas
+with render hooks pick the nav, hero and section variants unless the author pinned them in
+`layout`. Override per direction with `layout` and `bundle.ideas`; do not fall back to
+`centered` plus `columns` because it is safe. See `ideas.md`.
 
 ## Measured on 47 admired sites (2026-10-30)
 

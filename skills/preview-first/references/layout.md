@@ -116,12 +116,18 @@ Footer: `columns` (wordmark plus three link columns) or `minimal` (wordmark plus
 - Cart `drawer` (over a scrim) or `page`. Drawer for stores where people keep browsing; page for considered purchases.
 - Footer is always `columns`.
 
+### Variants added in 0.3.0
+
+Marketing heroes `ticker`, `specimen`, `manifesto`, `numbers`, `clip`, `stacked`; features `numerals`, `stack`, `strip`, `hover-list`, `cells`, `accordion`; proof `giant-quote`, `stat-wall`; call to action `ticket`; footer `colophon`; nav `bar`, `split-meta`, `menu-word`, `pill`, `rail`. Store heroes `lookbook`, `tiles`, grid `editorial`, product `sticky-buy`. Content header `broadsheet`, article `side-notes`, list `archive`. App shell `rail`, table `ledger`, detail `inspector`. Each is described in `archetypes.md` and switched on by a render hook (see `ideas.md`) or by `layout` in directions.json.
+
 ## How a style's layout_defaults choose variants
 
 - Each `style.*` node carries `layout_defaults` keyed by page type, for example `style.swiss-grid.layout_defaults.marketing = {hero: poster, features: columns, proof: stats-sourced, cta: band, footer: minimal}`.
 - `build_preview.py` reads `layout_defaults[brief.page_type]`, then merges `direction.layout` on top; `pick()` in `_shared.py` uses the merged value when it is in the section's `VARIANTS`, otherwise the first variant.
 - A style with no defaults for the brief's page type (for example neo-brutalist on a store) renders the first variant of every section. When `recommend.py` proposes such a style, set `layout` explicitly so the draft is a design decision, not an accident.
 - Two directions in the same preview must not share the hero variant, and should share at most one other section variant. Defaults already differ per style; check after overriding.
+
+Precedence: a variant the author set in `directions.json` `layout` wins; otherwise a render hook from the direction's ideas; otherwise the style's `layout_defaults`; otherwise the first variant in the module's `VARIANTS`.
 
 ## Overriding layout in directions.json
 

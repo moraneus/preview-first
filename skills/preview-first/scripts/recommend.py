@@ -20,6 +20,7 @@ import _common  # noqa: E402
 
 FALLBACK_PRODUCT = "product-type.general-website"
 LIST_KINDS = {
+    "ideas": "idea",
     "product-types": "product-type",
     "moods": "mood",
     "styles": "style",
@@ -404,6 +405,8 @@ def main(argv: Sequence[str]) -> int:
         kind = LIST_KINDS[ns.list]
         for n in sorted(_common.nodes_by_kind(graph).get(kind, []), key=lambda x: x["id"]):
             aliases = ", ".join(n.get("aliases", [])) if "aliases" in n else n.get("summary", n.get("notes", ""))
+            if kind == "idea":
+                aliases = "%s | %s | %s" % (n.get("category", ""), n.get("renders") or "contract-only", n.get("what", "")[:110])
             print("%s\t%s\t%s" % (n["id"], n["name"], aliases))
         return 0
     if not ns.brief:

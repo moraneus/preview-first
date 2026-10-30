@@ -75,8 +75,10 @@ Unknown words are fine; the recommender falls back by alias and token overlap. F
 python3 <skill>/scripts/recommend.py --brief .design-preview/brief.json --count 4
 ```
 
-Each bundle is a style, palette, type pairing, component treatments, motion patterns and icon
-set, with the graph edges that justified it and live alternatives for swapping. Diversity is
+Each bundle is a style, palette, type pairing, component treatments, motion patterns, icon
+set and eight to twelve design ideas (`ideas`: sourced moves such as a split nav with live
+time, a specimen hero, giant numerals, film grain, bracket buttons, a colophon footer), with
+the graph edges that justified it and live alternatives for swapping. Diversity is
 enforced: distinct style families, at most two palettes of one temperature, at most two
 pairings of one type category, no palette or pairing used twice. Three to five bundles. Do not
 drop below three; if the brief is narrow (dark only, one brand colour), say so and still show three.
@@ -95,7 +97,14 @@ Turn bundles into `.design-preview/directions.json` (schema in `knowledge/schema
   product nouns, no em dashes, no emoji, no arrows, no "Whether you are X or Y", no tricolons,
   no lorem ipsum, no invented numbers. Copy is the same across directions unless a direction's
   voice genuinely differs.
-- `layout` (optional): override section variants; otherwise the style's defaults apply.
+- `layout` (optional): override section variants; otherwise the direction's ideas and then the
+  style's defaults choose them.
+- `bundle.ideas` (keep or edit): the ideas the recommender attached. Drop one that does not fit
+  the product, add one from `recommend.py --list ideas` when the brief or an admired site asks
+  for it. Ideas with a render hook change the draft; the rest go to the contract.
+- `copy.numbers` and `copy.stats` (optional): sourced figures `{value, label, source}`; the
+  numbers hero and the stat wall render only when these exist, never with invented figures.
+- `copy.meta` (optional): `{"city": "Lisbon"}` for the split nav, colophon and overlay clock.
 - `overrides` (optional): `{"brand_primary": "#hex", "brand_accent": "#hex"}` when the brief
   fixes a brand colour. The builder recomputes on-colours and reports any contrast failure.
 
@@ -109,7 +118,8 @@ disc, product-first stage, display face beside an object, full-bleed art, sideba
 poster type) and to generated artwork drawn from the palette (blueprint, isometric figures,
 terminal, Swiss composition, contours, halftone, orbit rings, stickers, sparklines, a single
 mark). Keep those defaults unless the brief asks for the familiar look by name. At least two of
-the directions come from styles marked `distinct`; the recommender enforces this.
+the directions come from styles marked `distinct`; the recommender enforces this, and it also
+makes sure no two directions share a navigation device, a first-screen device or a texture.
 
 ### 5. Build and open the preview
 
@@ -158,7 +168,8 @@ python3 <skill>/scripts/export_design.py --selection .design-preview/selection.j
   --directions .design-preview/directions.json --project .
 ```
 
-This writes `design/DESIGN.md` (the contract: identity, palette with contrast table, typography,
+This writes `design/DESIGN.md` (the contract: identity, design ideas with sources and build
+notes, palette with contrast table, typography,
 spacing and radius, elevation, layout, every component with states and tokens, motion tokens and
 allowed patterns, iconography, imagery, writing style, accessibility floor, device checks, and a
 "do not" list), `design/tokens.json` (W3C Design Tokens format), `design/tokens.css`,
@@ -248,6 +259,7 @@ into the graph.
 - `references/process.md`: the stage in detail, with the exact questions, message templates and edge cases.
 - `references/anti-patterns.md`: the tells list, the refusal rule and the pre-show checklist.
 - `references/archetypes.md`: the first-screen archetypes, section archetypes and generated artwork, with the sites they come from.
+- `references/ideas.md`: the design ideas graph, how directions get their ideas, the render hooks and how to author an idea.
 - `references/color.md`: OKLCH palettes, roles, contrast policy, dark mode, brand overrides.
 - `references/typography.md`: pairing rules, scales, measures, loading, licences.
 - `references/motion.md`: levels, durations, easings, springs, view transitions, reduced motion.

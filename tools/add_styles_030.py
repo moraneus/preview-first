@@ -105,7 +105,7 @@ STYLES = [
       icon="phosphor", suits=["editorial", "nonprofit", "education", "community", "general-website"], moods=["serious", "classic", "trustworthy", "calm", "precise", "elegant"], page_types=["content", "marketing"]),
  dict(id="archive-index", name="Archive index", family="minimal", summary="An index rather than a brochure: one grotesque, a wide mono for dates and counts, hover rows that reveal images, ledger lists, a colophon with the local time.",
       traits=["index lists", "mono dates and counts", "hover image reveal", "no cards", "one link colour"], signals=["considered", "quiet", "current", "honest"],
-      radius_scale="none", shadow="none", density="regular", art={"hero": "figure", "feature": "figure"},
+      radius_scale="none", shadow="none", density="regular", art={"hero": "ruler", "feature": "figure"},
       layout={"marketing": {"hero": "index", "features": "hover-list", "proof": "none", "cta": "inline", "footer": "colophon"}, "content": {"header": "minimal", "article": "single", "list": "archive", "footer": "colophon"}, "store": {"hero": "tiles", "grid": "editorial", "product": "gallery-top", "cart": "page", "footer": "colophon"}},
       tells=["cards around list items", "gradient anything"], inspired=["https://www.are.na", "https://read.cv", "https://klim.co.nz"],
       ideas=["hover-list-image", "index-numbers-mono", "archive-index-list", "colophon-footer", "underline-offset-links", "tabular-everything", "split-nav-live-meta", "editorial-product-grid"],

@@ -27,9 +27,10 @@ def _header(p, v: str) -> str:
         inner = ('<div class="pfd-masthead"><span class="pf-wordmark pfd-masthead-name">%s</span><p class="pf-muted">%s</p></div>%s') % (
             E(brand(p)), E(p.copy.get("subhead", "")), nav(p))
     elif v == "broadsheet":
+        links = "".join('<a href="#">%s</a>' % E(x) for x in p.copy.get("nav", [])[:5])
         inner = ('<div class="pfd-broadsheet"><div class="pfd-broadsheet-line"><span>%s</span><time data-live-time></time><span>No. 001</span></div>'
-                 '<span class="pfd-broadsheet-name">%s</span><div class="pfd-broadsheet-line"><span>%s</span><span>%s</span></div></div>%s') % (
-            E("Thursday 30 October 2026"), E(brand(p)), E(p.copy.get("subhead", "")[:70]), E(" · ".join(p.copy.get("nav", [])[:4])), nav(p))
+                 '<span class="pfd-broadsheet-name">%s</span><div class="pfd-broadsheet-line"><span>%s</span><nav class="pfd-broadsheet-nav" aria-label="Main">%s</nav></div></div>') % (
+            E("Thursday 30 October 2026"), E(brand(p)), E(p.copy.get("subhead", "")[:70]), links)
     else:
         inner = nav(p)
     return section("header", v, inner)
