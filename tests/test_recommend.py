@@ -119,3 +119,9 @@ def test_brief_cli_prints_bundles(capsys):
 
 def test_deterministic(saas, g):
     assert recommend(saas, g, 4) == recommend(saas, g, 4)
+
+
+def test_palettes_and_pairings_unique_across_bundles(saas, g):
+    b = recommend(saas, g, 5)
+    assert len({x["palette"] for x in b}) == len(b)
+    assert len({x["type_pairing"] for x in b}) == len(b)

@@ -210,8 +210,12 @@ def recommend(brief: dict, graph: dict, count: int = 4) -> List[dict]:
             pairings = _candidates(g, sid, "type-pairing.", moods, None)
             if not palettes or not pairings:
                 continue
-            pal = next((p for p in palettes if relax >= 1 or temp_count[g.idx[p[0]]["temperature"]] < 2), None)
-            pair = next((p for p in pairings if relax >= 2 or cat_count[_pair_key(g, p[0])] < 2), None)
+            used_pal = {b["palette"] for b in bundles}
+            used_pair = {b["type_pairing"] for b in bundles}
+            pal = next((p for p in palettes if p[0] not in used_pal
+                        and (relax >= 1 or temp_count[g.idx[p[0]]["temperature"]] < 2)), None)
+            pair = next((p for p in pairings if p[0] not in used_pair
+                         and (relax >= 2 or cat_count[_pair_key(g, p[0])] < 2)), None)
             if pal is None or pair is None:
                 continue
             treatments = {}
