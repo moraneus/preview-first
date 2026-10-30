@@ -6604,6 +6604,2971 @@
       "added": "2026-10-30",
       "last_verified": "2026-10-30",
       "confidence": 0.8
+    },
+    {
+      "id": "reference-site.linear",
+      "kind": "reference-site",
+      "name": "Linear",
+      "url": "https://linear.app",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#08090a",
+        "fg": "#f7f8f8",
+        "accent": "#5e6ad2",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "floating",
+        "motion": "staggered fade-up on scroll, product-shot parallax",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono (var)"
+      },
+      "notes": "One typeface, one accent, near-black not pure black; restraint reads as engineering quality.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.vercel",
+      "kind": "reference-site",
+      "name": "Vercel",
+      "url": "https://vercel.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#fafafa",
+        "fg": "#000000",
+        "accent": "#0070f3",
+        "heading_font": "Geist",
+        "body_font": "Geist",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "default to stillness; hover-reveal, grid-line reveals",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Black/white/grey with one typographic family; mono only where it carries meaning (vercel.com/design.md).",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "reference-site.stripe",
+      "kind": "reference-site",
+      "name": "Stripe",
+      "url": "https://stripe.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#0a2540",
+        "accent": "#635bff",
+        "heading_font": "Söhne",
+        "body_font": "Söhne",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "animated WebGL gradient hero, slanted sections",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "Navy for trust, violet gradient for energy; grotesk heading + code mono bridges finance and dev.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.resend",
+      "kind": "reference-site",
+      "name": "Resend",
+      "url": "https://resend.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": null,
+        "heading_font": "Domaine",
+        "body_font": "ABC Favorit",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "subtle 3D/particle hero",
+        "confirmed": true,
+        "mono_font": "Commit Mono"
+      },
+      "notes": "Serif display on pure black reads as premium infrastructure; mono for the API.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.supabase",
+      "kind": "reference-site",
+      "name": "Supabase",
+      "url": "https://supabase.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#000000",
+        "fg": "#ededed",
+        "accent": "#3ecf8e",
+        "heading_font": "Circular (custom sans)",
+        "body_font": "Circular (custom sans)",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "hover border glow, code tabs",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "Single saturated green on black is instantly identifiable; everything else grey.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.clerk",
+      "kind": "reference-site",
+      "name": "Clerk",
+      "url": "https://clerk.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#131316",
+        "accent": "#6c47ff",
+        "heading_font": "Suisse Intl",
+        "body_font": "Suisse Intl",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "component demos animate on scroll",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Swiss grotesk + one violet; real UI as hero imagery.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.raycast",
+      "kind": "reference-site",
+      "name": "Raycast",
+      "url": "https://raycast.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.glass-layered",
+        "bg": "#07080a",
+        "fg": "#ffffff",
+        "accent": "#ff6363",
+        "heading_font": "custom sans (Inter-like)",
+        "body_font": "custom sans (Inter-like)",
+        "button_shape": "rounded",
+        "card": "inset",
+        "nav": "floating",
+        "motion": "keyboard-shortcut demos, glow",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono"
+      },
+      "notes": "Glass + mono + keyboard hints read as a power-user tool; blur only on raised panels.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.cursor",
+      "kind": "reference-site",
+      "name": "Cursor",
+      "url": "https://cursor.com",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#f7f7f4",
+        "fg": "#1a1a1a",
+        "accent": "#34785c",
+        "heading_font": "EB Garamond",
+        "body_font": "CursorGothic (custom sans)",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "restrained; layered media, no scroll theatrics",
+        "confirmed": true
+      },
+      "notes": "AI product that avoids purple gradients: warm off-white + serif + forest green reads calm and credible.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.attio",
+      "kind": "reference-site",
+      "name": "Attio",
+      "url": "https://attio.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#1a1a1a",
+        "accent": "#266df0",
+        "heading_font": "Inter Display",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "UI micro-demos, cursor animations",
+        "confirmed": true
+      },
+      "notes": "Tight-tracked Inter Display headings + generous whitespace + zero-shadow 1px cards.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.cal",
+      "kind": "reference-site",
+      "name": "Cal.com",
+      "url": "https://cal.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#f4f4f4",
+        "fg": "#141414",
+        "accent": "#000000",
+        "heading_font": "Cal Sans",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "minimal",
+        "confirmed": true,
+        "mono_font": "Fragment Mono"
+      },
+      "notes": "Near-monochrome palette lets the calendar UI be the colour; Cal Sans display over Inter.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.posthog",
+      "kind": "reference-site",
+      "name": "PostHog",
+      "url": "https://posthog.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.neo-brutalist",
+        "bg": "#e5e7e0",
+        "fg": "#151515",
+        "accent": "#f54e00",
+        "heading_font": "RoundHog",
+        "body_font": "IBM Plex Sans",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "hover bounce, hand-drawn illustrations",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "Deliberately un-Linear: hard 1px borders, offset shadows, warm yellow/orange + rounded display face = friendly dev brand.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.mercury",
+      "kind": "reference-site",
+      "name": "Mercury",
+      "url": "https://mercury.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#1a1a2e",
+        "accent": "#5266eb",
+        "heading_font": "Tiempos Headline",
+        "body_font": "Arcadia",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "slow fade/scale reveals",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Serif headlines signal bank, grotesk body signals software.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.ramp",
+      "kind": "reference-site",
+      "name": "Ramp",
+      "url": "https://ramp.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#f4f2f0",
+        "fg": "#1f1f1d",
+        "accent": "#e4f222",
+        "heading_font": "Lausanne",
+        "body_font": "IBM Plex Sans",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "counters, data-viz reveals",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Warm off-white + near-black + acid lime: finance without the blue cliche.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.headspace",
+      "kind": "reference-site",
+      "name": "Headspace",
+      "url": "https://www.headspace.com",
+      "product_type": "product-type.health",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#f9f4f2",
+        "fg": "#2d2c2b",
+        "accent": "#f47d31",
+        "heading_font": "Headspace Apercu",
+        "body_font": "Headspace Apercu",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "blob illustrations, gentle float",
+        "confirmed": true,
+        "mono_font": "Apercu Pro Mono"
+      },
+      "notes": "Geometric sans + blush/orange + big radii = soft, safe, friendly.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.ouraring",
+      "kind": "reference-site",
+      "name": "Oura",
+      "url": "https://ouraring.com",
+      "product_type": "product-type.health",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#0a0a0a",
+        "fg": "#ffffff",
+        "accent": "#c9a46a",
+        "heading_font": "PP Editorial New",
+        "body_font": "Akkurat LL",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "product video scroll, slow fade",
+        "confirmed": true
+      },
+      "notes": "Ultralight serif + hairline grotesk on black = jewellery-grade wellness.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.brilliant",
+      "kind": "reference-site",
+      "name": "Brilliant",
+      "url": "https://brilliant.org",
+      "product_type": "product-type.education",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#1b1b1b",
+        "accent": "#000000",
+        "heading_font": "CoFo Brilliant",
+        "body_font": "CoFo Brilliant",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "interactive puzzle demos",
+        "confirmed": true
+      },
+      "notes": "Proprietary sans + black pill CTA + interactive content keeps learning from feeling childish.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.charitywater",
+      "kind": "reference-site",
+      "name": "charity: water",
+      "url": "https://www.charitywater.org",
+      "product_type": "product-type.nonprofit",
+      "observed": {
+        "style": "style.warm-organic",
+        "bg": "#faf7f0",
+        "fg": "#222520",
+        "accent": "#ffca0a",
+        "heading_font": "heavy sans (custom)",
+        "body_font": "Roboto",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "photo video hero, counters",
+        "confirmed": true
+      },
+      "notes": "Cream instead of white + a single saturated yellow CTA; photography carries emotion.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.flighty",
+      "kind": "reference-site",
+      "name": "Flighty",
+      "url": "https://flighty.com",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#05010d",
+        "fg": "#ffffff",
+        "accent": "#ff8a00",
+        "heading_font": "EB Garamond",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "phone mockup scroll-through, mono data labels",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Garamond + Plex Mono on near-black = aviation-instrument elegance; app screenshots supply colour.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.arc",
+      "kind": "reference-site",
+      "name": "Arc",
+      "url": "https://arc.net",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#fffcec",
+        "fg": "#000354",
+        "accent": "#3139fb",
+        "heading_font": "Marlin Soft",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "playful hover, video",
+        "confirmed": true,
+        "mono_font": "Space Mono"
+      },
+      "notes": "Saturated primaries on cream + quirky display face = a browser with personality.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.theverge",
+      "kind": "reference-site",
+      "name": "The Verge",
+      "url": "https://www.theverge.com",
+      "product_type": "product-type.editorial",
+      "observed": {
+        "style": "style.poster-type",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#5200ff",
+        "heading_font": "Manuka Condensed",
+        "body_font": "PolySans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "minimal; hover underline",
+        "confirmed": true
+      },
+      "notes": "Condensed black display + grotesk body + hard rules = newspaper energy online.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.joshwcomeau",
+      "kind": "reference-site",
+      "name": "Josh W. Comeau",
+      "url": "https://www.joshwcomeau.com",
+      "product_type": "product-type.portfolio",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#1e2a3a",
+        "accent": "#ff2d9a",
+        "heading_font": "Wotfard",
+        "body_font": "Wotfard",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "spring-physics micro-interactions, interactive widgets",
+        "confirmed": true,
+        "mono_font": "Fira Mono"
+      },
+      "notes": "Spring motion + a rounded humanist sans make deep technical content feel approachable.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
+    },
+    {
+      "id": "reference-site.basement-studio",
+      "kind": "reference-site",
+      "name": "basement.studio",
+      "url": "https://basement.studio",
+      "product_type": "product-type.agency",
+      "observed": {
+        "style": "style.poster-type",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#ff4d00",
+        "heading_font": "custom condensed display",
+        "body_font": "custom sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "WebGL, Lenis smooth-scroll, marquee",
+        "confirmed": true
+      },
+      "notes": "Zero chrome, huge type, motion as the product.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.aesop",
+      "kind": "reference-site",
+      "name": "Aesop",
+      "url": "https://www.aesop.com",
+      "product_type": "product-type.luxury-commerce",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#fffef2",
+        "fg": "#333333",
+        "accent": null,
+        "heading_font": "Suisse Int'l",
+        "body_font": "Suisse Int'l",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "almost none; slow fades",
+        "confirmed": true
+      },
+      "notes": "Cream + hairlines + sharp corners + no accent = restraint as luxury.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.allbirds",
+      "kind": "reference-site",
+      "name": "Allbirds",
+      "url": "https://www.allbirds.com",
+      "product_type": "product-type.ecommerce",
+      "observed": {
+        "style": "style.warm-organic",
+        "bg": "#f9f6f1",
+        "fg": "#212121",
+        "accent": "#212121",
+        "heading_font": "custom sans",
+        "body_font": "custom sans",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover image swap",
+        "confirmed": false
+      },
+      "notes": "Neutral cream chrome + black pill CTA; product photos carry the palette (bot-blocked, inferred).",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.6
+    },
+    {
+      "id": "reference-site.glossier",
+      "kind": "reference-site",
+      "name": "Glossier",
+      "url": "https://www.glossier.com",
+      "product_type": "product-type.ecommerce",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#f4e4e4",
+        "heading_font": "Apercu-like sans",
+        "body_font": "Apercu-like sans",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover image swap",
+        "confirmed": false
+      },
+      "notes": "White + millennial pink + black pills; UI stays neutral so product photos read (bot-blocked, inferred).",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.6
+    },
+    {
+      "id": "reference-site.shadcn-dashboard-01",
+      "kind": "reference-site",
+      "name": "shadcn/ui dashboard-01",
+      "url": "https://ui.shadcn.com/blocks",
+      "product_type": "product-type.dashboard",
+      "observed": {
+        "style": "style.data-dense",
+        "bg": "#ffffff",
+        "fg": "#09090b",
+        "accent": "#18181b",
+        "heading_font": "Geist",
+        "body_font": "Geist",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "sidebar",
+        "motion": "none by default; chart draw-in via Recharts",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Tokenised zinc neutrals + one primary + consistent 10px radius = the de facto admin baseline.",
+      "seen": "2026-10-30",
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.notion",
+      "kind": "reference-site",
+      "name": "Notion",
+      "url": "https://www.notion.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#f6f5f4",
+        "fg": "#31302e",
+        "accent": "#0075de",
+        "heading_font": "Lyon Text",
+        "body_font": "Inter (NotionInter)",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "subtle fade-ins, illustrated product tiles",
+        "confirmed": true,
+        "mono_font": "iA Writer Mono"
+      },
+      "notes": "Warm off-white, Lyon serif headlines over Inter, one blue; the knowledge-tool template.",
+      "seen": "2026-10-30",
+      "source": "https://www.notion.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.loom",
+      "kind": "reference-site",
+      "name": "Loom",
+      "url": "https://www.loom.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#172b4d",
+        "accent": "#1868db",
+        "heading_font": "Charlie Display",
+        "body_font": "Charlie Text",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "product video demos, soft fades",
+        "confirmed": true
+      },
+      "notes": "Atlassian Charlie type + one blue + soft shadows: friendly recording tool.",
+      "seen": "2026-10-30",
+      "source": "https://www.loom.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.intercom",
+      "kind": "reference-site",
+      "name": "Intercom",
+      "url": "https://www.intercom.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#050505",
+        "fg": "#ffffff",
+        "accent": "#0007cb",
+        "heading_font": "Saans",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "product film hero, slow reveals",
+        "confirmed": true,
+        "mono_font": "DM Mono"
+      },
+      "notes": "Near-black canvas, electric blue and orange accents, product footage doing the talking.",
+      "seen": "2026-10-30",
+      "source": "https://www.intercom.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.framer",
+      "kind": "reference-site",
+      "name": "Framer",
+      "url": "https://www.framer.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#cbff00",
+        "heading_font": "Inter Display",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "floating",
+        "motion": "site builder demos, canvas pans",
+        "confirmed": true,
+        "mono_font": "Azeret Mono"
+      },
+      "notes": "Black canvas, Inter Display, lime token accent; the product canvas is the imagery.",
+      "seen": "2026-10-30",
+      "source": "https://www.framer.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.pitch",
+      "kind": "reference-site",
+      "name": "Pitch",
+      "url": "https://pitch.com",
+      "product_type": "product-type.saas",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#0c021c",
+        "accent": "#5318eb",
+        "heading_font": "Mark Pro",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "slide transitions, scroll reveals",
+        "confirmed": true
+      },
+      "notes": "Deep violet primary on white with Mark Pro headings; presentation-tool friendliness.",
+      "seen": "2026-10-30",
+      "source": "https://pitch.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.neon",
+      "kind": "reference-site",
+      "name": "Neon",
+      "url": "https://neon.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#000000",
+        "fg": "#e4e5e7",
+        "accent": "#00e599",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "code tabs, hover borders",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Black + one Postgres-green accent + Geist Mono for code; borders earned.",
+      "seen": "2026-10-30",
+      "source": "https://neon.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.railway",
+      "kind": "reference-site",
+      "name": "Railway",
+      "url": "https://railway.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#13111c",
+        "fg": "#ffffff",
+        "accent": "#a898f0",
+        "heading_font": "Inter Tight",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "deploy-graph animations, glow",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono"
+      },
+      "notes": "Violet-tinted near-black with Inter Tight headings; Google Fonts link confirms Inter Tight + JetBrains Mono.",
+      "seen": "2026-10-30",
+      "source": "https://railway.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.fly-io",
+      "kind": "reference-site",
+      "name": "Fly.io",
+      "url": "https://fly.io",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#111827",
+        "accent": "#7c3aed",
+        "heading_font": "Mackinac",
+        "body_font": "Fricolage Grotesque",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "static illustrations, minimal motion",
+        "confirmed": true,
+        "mono_font": "Fragment Mono"
+      },
+      "notes": "Serif display (Mackinac) + Bricolage-style sans + violet on white; infra without the dark-mode cliche.",
+      "seen": "2026-10-30",
+      "source": "https://fly.io",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.bun",
+      "kind": "reference-site",
+      "name": "Bun",
+      "url": "https://bun.sh",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#fbf0df",
+        "fg": "#0d0a0c",
+        "accent": "#f472b6",
+        "heading_font": "Archivo",
+        "body_font": "Archivo",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "benchmark bars animate, otherwise still",
+        "confirmed": true,
+        "mono_font": "Martian Mono"
+      },
+      "notes": "Warm cream canvas + Archivo + Martian Mono; benchmark tables are the hero.",
+      "seen": "2026-10-30",
+      "source": "https://bun.sh",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.warp",
+      "kind": "reference-site",
+      "name": "Warp",
+      "url": "https://www.warp.dev",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#121212",
+        "fg": "#ffffff",
+        "accent": "#6366f1",
+        "heading_font": "Instrument Serif",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "terminal demos, typed commands",
+        "confirmed": true,
+        "mono_font": "Azeret Mono"
+      },
+      "notes": "Terminal product in terminal colours; Instrument Serif accents keep it from feeling like an IDE theme.",
+      "seen": "2026-10-30",
+      "source": "https://www.warp.dev",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.planetscale",
+      "kind": "reference-site",
+      "name": "PlanetScale",
+      "url": "https://planetscale.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#111111",
+        "fg": "#fafafa",
+        "accent": "#0b6ec5",
+        "heading_font": "custom mono (var --font-mono)",
+        "body_font": "custom mono (var --font-mono)",
+        "button_shape": "square",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none; static tables",
+        "confirmed": true,
+        "mono_font": "custom mono"
+      },
+      "notes": "Whole site set in monospace on #111 with one blue; database credibility through type alone.",
+      "seen": "2026-10-30",
+      "source": "https://planetscale.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.tailwindcss",
+      "kind": "reference-site",
+      "name": "Tailwind CSS",
+      "url": "https://tailwindcss.com",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#0c0a09",
+        "accent": "#00d2ef",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "live code demos, minimal motion",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Inter + Plex Mono, sky accent only on code; the docs are the marketing.",
+      "seen": "2026-10-30",
+      "source": "https://tailwindcss.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.sentry",
+      "kind": "reference-site",
+      "name": "Sentry",
+      "url": "https://sentry.io",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#362d59",
+        "accent": "#6a5fc1",
+        "heading_font": "Rubik",
+        "body_font": "Rubik",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "illustrated scenes, scroll reveals",
+        "confirmed": true
+      },
+      "notes": "Rubik + purple on white with rounded cards; friendlier than its category.",
+      "seen": "2026-10-30",
+      "source": "https://sentry.io/welcome/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.nextjs",
+      "kind": "reference-site",
+      "name": "Next.js",
+      "url": "https://nextjs.org",
+      "product_type": "product-type.developer-tool",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#0070f3",
+        "heading_font": "Geist",
+        "body_font": "Geist",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "still; code blocks only",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Geist family on black/white with the Vercel blue reserved for links.",
+      "seen": "2026-10-30",
+      "source": "https://nextjs.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.wise",
+      "kind": "reference-site",
+      "name": "Wise",
+      "url": "https://wise.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#163300",
+        "accent": "#9fe870",
+        "heading_font": "Wise Sans",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "bold colour blocks, currency counters",
+        "confirmed": true
+      },
+      "notes": "Forest-green text + bright-green pills + chunky Wise Sans: finance as a consumer brand.",
+      "seen": "2026-10-30",
+      "source": "https://wise.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.monzo",
+      "kind": "reference-site",
+      "name": "Monzo",
+      "url": "https://monzo.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#f2f8f3",
+        "fg": "#091723",
+        "accent": "#ff4f40",
+        "heading_font": "Monzo Sans Display",
+        "body_font": "Monzo Sans Text",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "card illustrations, gentle reveals",
+        "confirmed": true,
+        "mono_font": "Maison Neue Mono"
+      },
+      "notes": "Navy text, coral accent, pill CTAs and rounded cards; bank that feels like an app.",
+      "seen": "2026-10-30",
+      "source": "https://monzo.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.plaid",
+      "kind": "reference-site",
+      "name": "Plaid",
+      "url": "https://plaid.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#111111",
+        "accent": "#0a85ea",
+        "heading_font": "Cern",
+        "body_font": "Cern",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "API diagrams, minimal motion",
+        "confirmed": true,
+        "mono_font": "Inconsolata"
+      },
+      "notes": "Grotesk + one blue + Inconsolata for code; infra trust through restraint.",
+      "seen": "2026-10-30",
+      "source": "https://plaid.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.robinhood",
+      "kind": "reference-site",
+      "name": "Robinhood",
+      "url": "https://robinhood.com",
+      "product_type": "product-type.fintech",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#110e08",
+        "fg": "#ffffff",
+        "accent": "#ccff00",
+        "heading_font": "Nib Pro Display",
+        "body_font": "Capsule Sans Text",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "product video, glowing lime highlights",
+        "confirmed": true,
+        "mono_font": "Capsule Sans Text Mono"
+      },
+      "notes": "Warm near-black + acid lime + a contrast serif display; finance styled as nightlife.",
+      "seen": "2026-10-30",
+      "source": "https://robinhood.com/eu/en/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.everlane",
+      "kind": "reference-site",
+      "name": "Everlane",
+      "url": "https://www.everlane.com",
+      "product_type": "product-type.ecommerce",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#121212",
+        "accent": "#121212",
+        "heading_font": "Maison Neue",
+        "body_font": "Maison Neue",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover image swap",
+        "confirmed": true
+      },
+      "notes": "Black-on-white grotesk grid; product photography supplies every colour.",
+      "seen": "2026-10-30",
+      "source": "https://www.everlane.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.bellroy",
+      "kind": "reference-site",
+      "name": "Bellroy",
+      "url": "https://bellroy.com",
+      "product_type": "product-type.ecommerce",
+      "observed": {
+        "style": "style.warm-organic",
+        "bg": "#ffffff",
+        "fg": "#333333",
+        "accent": "#cd4c20",
+        "heading_font": "GT Ultra",
+        "body_font": "GT Ultra",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "product 360 spins, hover swaps",
+        "confirmed": true
+      },
+      "notes": "Rust-orange accent, soft grotesk, generous photography; considered-carry warmth.",
+      "seen": "2026-10-30",
+      "source": "https://bellroy.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.cotopaxi",
+      "kind": "reference-site",
+      "name": "Cotopaxi",
+      "url": "https://www.cotopaxi.com",
+      "product_type": "product-type.ecommerce",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#eeece9",
+        "fg": "#25282a",
+        "accent": "#e03100",
+        "heading_font": "Mont",
+        "body_font": "Gotham",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "colour-block banners, hover swaps",
+        "confirmed": true
+      },
+      "notes": "Warm off-white chrome with saturated red-orange and blue blocks; gear brand energy.",
+      "seen": "2026-10-30",
+      "source": "https://www.cotopaxi.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.hermes",
+      "kind": "reference-site",
+      "name": "Hermès",
+      "url": "https://www.hermes.com/us/en/",
+      "product_type": "product-type.luxury-commerce",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#fcf7f1",
+        "fg": "#2e2d2d",
+        "accent": "#f37021",
+        "heading_font": "EB Garamond",
+        "body_font": "Manrope",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow fades, editorial scroll",
+        "confirmed": true,
+        "mono_font": "Overpass Mono"
+      },
+      "notes": "Cream canvas, EB Garamond over Manrope, orange only on the logo; craft-house calm.",
+      "seen": "2026-10-30",
+      "source": "https://www.hermes.com/us/en/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.loewe",
+      "kind": "reference-site",
+      "name": "Loewe",
+      "url": "https://www.loewe.com/usa/en/home",
+      "product_type": "product-type.luxury-commerce",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": null,
+        "heading_font": "Avus",
+        "body_font": "Loewe (custom sans)",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "full-bleed campaign video, fades",
+        "confirmed": true
+      },
+      "notes": "Pure white, black type, no accent; campaign imagery alone.",
+      "seen": "2026-10-30",
+      "source": "https://www.loewe.com/eur/en/home",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.byredo",
+      "kind": "reference-site",
+      "name": "Byredo",
+      "url": "https://www.byredo.com",
+      "product_type": "product-type.luxury-commerce",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": null,
+        "heading_font": "Byredo Stencil",
+        "body_font": "Byredo Sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none; hover image swap",
+        "confirmed": true
+      },
+      "notes": "Stark black/white grid and a stencil display face; perfume as graphic design.",
+      "seen": "2026-10-30",
+      "source": "https://www.byredo.com/eu_en",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.lemaire",
+      "kind": "reference-site",
+      "name": "Lemaire",
+      "url": "https://www.lemaire.fr",
+      "product_type": "product-type.luxury-commerce",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#100a0d",
+        "accent": null,
+        "heading_font": "Garamond Premier Pro",
+        "body_font": "Brown Std",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "almost none",
+        "confirmed": true
+      },
+      "notes": "Garamond + Brown on white, hairline rules; quiet Parisian restraint.",
+      "seen": "2026-10-30",
+      "source": "https://www.lemaire.fr",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.rauno",
+      "kind": "reference-site",
+      "name": "Rauno Freiberg",
+      "url": "https://rauno.me",
+      "product_type": "product-type.portfolio",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#ff6100",
+        "heading_font": "JetBrains Mono",
+        "body_font": "custom sans",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "craft micro-interactions, interruptible springs",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono"
+      },
+      "notes": "Black, mono labels, one orange; interaction craft demos are the content.",
+      "seen": "2026-10-30",
+      "source": "https://rauno.me",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.emilkowalski",
+      "kind": "reference-site",
+      "name": "Emil Kowalski",
+      "url": "https://emilkowal.ski",
+      "product_type": "product-type.portfolio",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#0b0b09",
+        "fg": "#d6d6d6",
+        "accent": null,
+        "heading_font": "custom serif (inline)",
+        "body_font": "custom sans",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "100-300ms ease-out micro-animations",
+        "confirmed": true,
+        "mono_font": "custom mono"
+      },
+      "notes": "Warm near-black, muted grey text, serif italics inline; space and motion restraint as taste.",
+      "seen": "2026-10-30",
+      "source": "https://emilkowal.ski",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.brittanychiang",
+      "kind": "reference-site",
+      "name": "Brittany Chiang",
+      "url": "https://brittanychiang.com",
+      "product_type": "product-type.portfolio",
+      "observed": {
+        "style": "style.dark-console",
+        "bg": "#0f172a",
+        "fg": "#e2e8f0",
+        "accent": "#5eead4",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "sidebar",
+        "motion": "hover glow cursor spotlight",
+        "confirmed": true
+      },
+      "notes": "Slate-900 canvas, Inter, teal accent, sticky left column; Tailwind-native portfolio.",
+      "seen": "2026-10-30",
+      "source": "https://brittanychiang.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.leerob",
+      "kind": "reference-site",
+      "name": "Lee Robinson",
+      "url": "https://leerob.com",
+      "product_type": "product-type.portfolio",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#fafafa",
+        "fg": "#171717",
+        "accent": null,
+        "heading_font": "Iowan Old Style (local)",
+        "body_font": "system-ui",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "none",
+        "confirmed": true,
+        "mono_font": "SF Mono"
+      },
+      "notes": "Local serif + system stack on off-white; nothing to load, nothing to distract.",
+      "seen": "2026-10-30",
+      "source": "https://leerob.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.pentagram",
+      "kind": "reference-site",
+      "name": "Pentagram",
+      "url": "https://www.pentagram.com",
+      "product_type": "product-type.agency",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#1a1a1a",
+        "accent": "#e61428",
+        "heading_font": "Neue Haas Grotesk",
+        "body_font": "Plain",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover image swap, minimal",
+        "confirmed": true
+      },
+      "notes": "White, Neue Haas, hairline grid, one red; the work is the layout.",
+      "seen": "2026-10-30",
+      "source": "https://www.pentagram.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.instrument",
+      "kind": "reference-site",
+      "name": "Instrument",
+      "url": "https://www.instrument.com",
+      "product_type": "product-type.agency",
+      "observed": {
+        "style": "style.poster-type",
+        "bg": "#070708",
+        "fg": "#ffffff",
+        "accent": "#d7330f",
+        "heading_font": "Instrument Serif",
+        "body_font": "Instrument Sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "large type reveals, case-study video",
+        "confirmed": true,
+        "mono_font": "Instrument Mono"
+      },
+      "notes": "Near-black with Instrument's own serif/sans/mono trio; poster-scale headlines.",
+      "seen": "2026-10-30",
+      "source": "https://www.instrument.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.locomotive",
+      "kind": "reference-site",
+      "name": "Locomotive",
+      "url": "https://locomotive.ca",
+      "product_type": "product-type.agency",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#da382e",
+        "heading_font": "Helvetica Now Display",
+        "body_font": "Locomotive New",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "Lenis smooth scroll, parallax media",
+        "confirmed": true
+      },
+      "notes": "Black/white Helvetica grid with red and blue; smooth-scroll agency archetype.",
+      "seen": "2026-10-30",
+      "source": "https://locomotive.ca/en",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.newyorker",
+      "kind": "reference-site",
+      "name": "The New Yorker",
+      "url": "https://www.newyorker.com",
+      "product_type": "product-type.editorial",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#231f20",
+        "accent": "#0066ff",
+        "heading_font": "Irvin",
+        "body_font": "Adobe Caslon",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Irvin display + Caslon body + hairline rules; magazine typography intact online.",
+      "seen": "2026-10-30",
+      "source": "https://www.newyorker.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.ted",
+      "kind": "reference-site",
+      "name": "TED",
+      "url": "https://www.ted.com",
+      "product_type": "product-type.editorial",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#121212",
+        "accent": "#eb0028",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "video thumbnails, hover",
+        "confirmed": true
+      },
+      "notes": "Inter on white with TED red reserved for the mark and CTAs.",
+      "seen": "2026-10-30",
+      "source": "https://www.ted.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.grafana",
+      "kind": "reference-site",
+      "name": "Grafana",
+      "url": "https://grafana.com",
+      "product_type": "product-type.dashboard",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#f4f4f6",
+        "fg": "#1b1b1f",
+        "accent": "#ff671d",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "dashboard screenshots, minimal",
+        "confirmed": true
+      },
+      "notes": "Cool grey canvas, Inter, orange only for the brand mark and CTAs.",
+      "seen": "2026-10-30",
+      "source": "https://grafana.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.metabase",
+      "kind": "reference-site",
+      "name": "Metabase",
+      "url": "https://www.metabase.com",
+      "product_type": "product-type.dashboard",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#2b333f",
+        "accent": "#509ee3",
+        "heading_font": "Lato",
+        "body_font": "Lato",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "chart demos, gentle reveals",
+        "confirmed": true,
+        "mono_font": "Fira Code"
+      },
+      "notes": "Lato + soft blue + green on white; Google Fonts link confirms Lato/Merriweather/Fira Code.",
+      "seen": "2026-10-30",
+      "source": "https://www.metabase.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.plausible",
+      "kind": "reference-site",
+      "name": "Plausible",
+      "url": "https://plausible.io",
+      "product_type": "product-type.dashboard",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#1a202c",
+        "accent": "#5145cd",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Plain Inter, slate text, indigo accent; the chart screenshot is the pitch.",
+      "seen": "2026-10-30",
+      "source": "https://plausible.io",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.65
+    },
+    {
+      "id": "reference-site.calm",
+      "kind": "reference-site",
+      "name": "Calm",
+      "url": "https://www.calm.com",
+      "product_type": "product-type.health",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#1a3e6f",
+        "accent": "#6461e0",
+        "heading_font": "Neue Plak",
+        "body_font": "Figtree",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "gradient skies, slow breathing animation",
+        "confirmed": true
+      },
+      "notes": "Navy text, indigo pills, Figtree body; calm without pastel cliche.",
+      "seen": "2026-10-30",
+      "source": "https://www.calm.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.eightsleep",
+      "kind": "reference-site",
+      "name": "Eight Sleep",
+      "url": "https://www.eightsleep.com",
+      "product_type": "product-type.health",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#1862ff",
+        "heading_font": "Neue Montreal",
+        "body_font": "Neue Montreal",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "product video, data labels in mono",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Black/white hardware photography with Plex Mono readouts; sleep tech as engineering.",
+      "seen": "2026-10-30",
+      "source": "https://www.eightsleep.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.function-health",
+      "kind": "reference-site",
+      "name": "Function Health",
+      "url": "https://www.functionhealth.com",
+      "product_type": "product-type.health",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#fef9ef",
+        "fg": "#2a2b2f",
+        "accent": "#b05a36",
+        "heading_font": "Financier Display",
+        "body_font": "FT Base",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow fades, lab-data counters",
+        "confirmed": true,
+        "mono_font": "Fragment Mono"
+      },
+      "notes": "Cream canvas, Financier serif, terracotta accent, mono for lab values.",
+      "seen": "2026-10-30",
+      "source": "https://www.functionhealth.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.khanacademy",
+      "kind": "reference-site",
+      "name": "Khan Academy",
+      "url": "https://www.khanacademy.org",
+      "product_type": "product-type.education",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#21242c",
+        "accent": "#1865f2",
+        "heading_font": "Plus Jakarta Sans",
+        "body_font": "Lato",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none; illustrations",
+        "confirmed": true
+      },
+      "notes": "Plus Jakarta Sans headings, Lato body, one blue; approachable and legible.",
+      "seen": "2026-10-30",
+      "source": "https://www.khanacademy.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.codecademy",
+      "kind": "reference-site",
+      "name": "Codecademy",
+      "url": "https://www.codecademy.com",
+      "product_type": "product-type.education",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#10162f",
+        "fg": "#ffffff",
+        "accent": "#ffd301",
+        "heading_font": "Apercu",
+        "body_font": "Apercu",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "flat colour-block reveals",
+        "confirmed": true
+      },
+      "notes": "Navy canvas, yellow and lime blocks, square corners; learning with graphic punch.",
+      "seen": "2026-10-30",
+      "source": "https://www.codecademy.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.coursera",
+      "kind": "reference-site",
+      "name": "Coursera",
+      "url": "https://www.coursera.org",
+      "product_type": "product-type.education",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#1f1f1f",
+        "accent": "#0056d2",
+        "heading_font": "Source Sans Pro",
+        "body_font": "Source Sans Pro",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Coursera blue, Source Sans, rounded cards; dependable catalogue UI.",
+      "seen": "2026-10-30",
+      "source": "https://www.coursera.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
+    },
+    {
+      "id": "reference-site.maven",
+      "kind": "reference-site",
+      "name": "Maven",
+      "url": "https://maven.com",
+      "product_type": "product-type.education",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#ff6255",
+        "heading_font": "Sentient",
+        "body_font": "Graphik",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "instructor photo reveals",
+        "confirmed": true
+      },
+      "notes": "White, Sentient serif headlines, coral accent; cohort courses with editorial tone.",
+      "seen": "2026-10-30",
+      "source": "https://maven.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.anthropic",
+      "kind": "reference-site",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#faf9f5",
+        "fg": "#141413",
+        "accent": "#d97757",
+        "heading_font": "Anthropic Serif (Tiempos-like)",
+        "body_font": "Anthropic Sans (Styrene-like)",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "restrained; fades",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono"
+      },
+      "notes": "Warm paper, serif display over humanist sans, terracotta accent; research-lab credibility.",
+      "seen": "2026-10-30",
+      "source": "https://www.anthropic.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.elevenlabs",
+      "kind": "reference-site",
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#f5f3f1",
+        "fg": "#090f15",
+        "accent": "#2b7fff",
+        "heading_font": "Waldenburg",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "waveform demos, minimal",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Warm grey canvas, grotesk display, Geist Mono labels, one blue.",
+      "seen": "2026-10-30",
+      "source": "https://elevenlabs.io",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.mistral",
+      "kind": "reference-site",
+      "name": "Mistral AI",
+      "url": "https://mistral.ai",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.neo-brutalist",
+        "bg": "#f5f4ef",
+        "fg": "#000000",
+        "accent": "#b75002",
+        "heading_font": "ALT Mistral (custom)",
+        "body_font": "Inter",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "pixel-art reveals, flat blocks",
+        "confirmed": true
+      },
+      "notes": "Flat orange/yellow stripes on warm off-white, pixel display face, square corners.",
+      "seen": "2026-10-30",
+      "source": "https://mistral.ai",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.runway",
+      "kind": "reference-site",
+      "name": "Runway",
+      "url": "https://runwayml.com",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#0c0c0c",
+        "fg": "#ffffff",
+        "accent": null,
+        "heading_font": "Times Now",
+        "body_font": "ABC Normal",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "generated video hero, slow fades",
+        "confirmed": true
+      },
+      "notes": "Black canvas, grotesk + Times Now serif, video supplies colour.",
+      "seen": "2026-10-30",
+      "source": "https://runway.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.cohere",
+      "kind": "reference-site",
+      "name": "Cohere",
+      "url": "https://cohere.com",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#fcf8f3",
+        "fg": "#1f1f1f",
+        "accent": "#2d4cb9",
+        "heading_font": "Cohere Headline",
+        "body_font": "Unica77",
+        "button_shape": "pill",
+        "card": "border",
+        "nav": "compact",
+        "motion": "minimal fades",
+        "confirmed": true
+      },
+      "notes": "Cream canvas, serif headline face, cobalt accent; enterprise AI without neon.",
+      "seen": "2026-10-30",
+      "source": "https://cohere.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.huggingface",
+      "kind": "reference-site",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co",
+      "product_type": "product-type.ai-product",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#111827",
+        "accent": "#ffd21e",
+        "heading_font": "Source Sans Pro",
+        "body_font": "Source Sans Pro",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none; emoji and cards",
+        "confirmed": true,
+        "mono_font": "IBM Plex Mono"
+      },
+      "notes": "Tailwind-grey cards, yellow brand, Source Sans + Plex Mono; community-first AI hub.",
+      "seen": "2026-10-30",
+      "source": "https://huggingface.co",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.wikimedia",
+      "kind": "reference-site",
+      "name": "Wikimedia Foundation",
+      "url": "https://wikimediafoundation.org",
+      "product_type": "product-type.nonprofit",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#3a25ff",
+        "heading_font": "Montserrat",
+        "body_font": "Inter",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Black on white, Inter body, blue/red marks; institutional clarity.",
+      "seen": "2026-10-30",
+      "source": "https://wikimediafoundation.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.msf",
+      "kind": "reference-site",
+      "name": "Doctors Without Borders",
+      "url": "https://www.doctorswithoutborders.org",
+      "product_type": "product-type.nonprofit",
+      "observed": {
+        "style": "style.poster-type",
+        "bg": "#ffffff",
+        "fg": "#333333",
+        "accent": "#ee0000",
+        "heading_font": "Oswald",
+        "body_font": "Avenir",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "photo heroes, counters",
+        "confirmed": true
+      },
+      "notes": "Oswald condensed headlines + MSF red + photography; Google Fonts link confirms Oswald/Bitter.",
+      "seen": "2026-10-30",
+      "source": "https://www.doctorswithoutborders.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.80000hours",
+      "kind": "reference-site",
+      "name": "80,000 Hours",
+      "url": "https://80000hours.org",
+      "product_type": "product-type.nonprofit",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#2a2e30",
+        "accent": "#106470",
+        "heading_font": "Museo Sans",
+        "body_font": "Proxima Nova",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Longform-first layout, teal accent, plain sans; research nonprofit tone.",
+      "seen": "2026-10-30",
+      "source": "https://80000hours.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.65
+    },
+    {
+      "id": "reference-site.bear",
+      "kind": "reference-site",
+      "name": "Bear",
+      "url": "https://bear.app",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#f3f5f7",
+        "fg": "#262626",
+        "accent": "#dd4c4f",
+        "heading_font": "Bear Sans Headline",
+        "body_font": "Bear Sans",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "device mockups, gentle fades",
+        "confirmed": true,
+        "mono_font": "Roboto Mono"
+      },
+      "notes": "Cool light grey, red accent, rounded device shots; note app warmth.",
+      "seen": "2026-10-30",
+      "source": "https://bear.app",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.craft",
+      "kind": "reference-site",
+      "name": "Craft",
+      "url": "https://www.craft.do",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#fcf9f7",
+        "fg": "#030302",
+        "accent": "#4ba2b4",
+        "heading_font": "Source Serif 4",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "product video, soft reveals",
+        "confirmed": true
+      },
+      "notes": "Warm white, Source Serif accents over Inter, teal/coral accents, soft shadows.",
+      "seen": "2026-10-30",
+      "source": "https://www.craft.do",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.halide",
+      "kind": "reference-site",
+      "name": "Halide",
+      "url": "https://halide.cam",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#fffe4f",
+        "heading_font": "Halide Router",
+        "body_font": "HK Grotesk",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "camera UI demos, glow",
+        "confirmed": true
+      },
+      "notes": "Black canvas, custom display face, yellow accent; pro camera app as instrument.",
+      "seen": "2026-10-30",
+      "source": "https://halide.cam",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.flexibits",
+      "kind": "reference-site",
+      "name": "Fantastical",
+      "url": "https://flexibits.com/fantastical",
+      "product_type": "product-type.mobile-app",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#262627",
+        "accent": "#408fff",
+        "heading_font": "Effra",
+        "body_font": "Effra",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "app screenshots, fades",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "White, blue accent, rounded screenshots; classic Mac-app marketing.",
+      "seen": "2026-10-30",
+      "source": "https://flexibits.com/fantastical",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
+    },
+    {
+      "id": "reference-site.mintlify",
+      "kind": "reference-site",
+      "name": "Mintlify",
+      "url": "https://mintlify.com",
+      "product_type": "product-type.documentation",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#0a0b0f",
+        "accent": "#0c8c5e",
+        "heading_font": "Arizona Flare",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "docs demos, minimal",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Inter + Geist Mono, green accent, serif only in display moments.",
+      "seen": "2026-10-30",
+      "source": "https://www.mintlify.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.mdn",
+      "kind": "reference-site",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/",
+      "product_type": "product-type.documentation",
+      "observed": {
+        "style": "style.mono-engineering",
+        "bg": "#ffffff",
+        "fg": "#18191b",
+        "accent": "#0069c2",
+        "heading_font": "Inter",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "sidebar",
+        "motion": "none",
+        "confirmed": true,
+        "mono_font": "JetBrains Mono"
+      },
+      "notes": "Inter + JetBrains Mono, neutral greys, blue links only; reference-grade restraint.",
+      "seen": "2026-10-30",
+      "source": "https://developer.mozilla.org/en-US/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.starlight",
+      "kind": "reference-site",
+      "name": "Starlight (Astro docs theme)",
+      "url": "https://starlight.astro.build",
+      "product_type": "product-type.documentation",
+      "observed": {
+        "style": "style.data-dense",
+        "bg": "#ffffff",
+        "fg": "#17181c",
+        "accent": "#0f1c8a",
+        "heading_font": "system-ui",
+        "body_font": "system-ui",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "sidebar",
+        "motion": "none",
+        "confirmed": true,
+        "mono_font": "ui-monospace"
+      },
+      "notes": "System font stack, cool greys, left sidebar + right TOC; the docs-theme baseline.",
+      "seen": "2026-10-30",
+      "source": "https://starlight.astro.build",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.stripe-docs",
+      "kind": "reference-site",
+      "name": "Stripe Docs",
+      "url": "https://docs.stripe.com",
+      "product_type": "product-type.documentation",
+      "observed": {
+        "style": "style.data-dense",
+        "bg": "#ffffff",
+        "fg": "#1a1b25",
+        "accent": "#0055bc",
+        "heading_font": "Söhne",
+        "body_font": "Söhne",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "sidebar",
+        "motion": "none",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "Three-column docs with blue links and purple code accents; dense but legible.",
+      "seen": "2026-10-30",
+      "source": "https://docs.stripe.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.65
+    },
+    {
+      "id": "reference-site.discord",
+      "kind": "reference-site",
+      "name": "Discord",
+      "url": "https://discord.com",
+      "product_type": "product-type.community",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#23272a",
+        "accent": "#5865f2",
+        "heading_font": "ABC Ginto Nord",
+        "body_font": "gg sans",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "character illustrations, bouncy reveals",
+        "confirmed": true
+      },
+      "notes": "Blurple, chunky Ginto Nord, pill buttons and mascots; community as play.",
+      "seen": "2026-10-30",
+      "source": "https://discord.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.are-na",
+      "kind": "reference-site",
+      "name": "Are.na",
+      "url": "https://www.are.na",
+      "product_type": "product-type.community",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#696969",
+        "heading_font": "Areal (Arial-based)",
+        "body_font": "Areal (Arial-based)",
+        "button_shape": "square",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Arial, grey, white, nothing else; anti-design as a community value.",
+      "seen": "2026-10-30",
+      "source": "https://www.are.na",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.discourse",
+      "kind": "reference-site",
+      "name": "Discourse",
+      "url": "https://www.discourse.org",
+      "product_type": "product-type.community",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#1e1e1e",
+        "accent": "#28abe2",
+        "heading_font": "Crimson Text",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "colour-block illustrations",
+        "confirmed": true,
+        "mono_font": "Sometype Mono"
+      },
+      "notes": "Bright sky/yellow/violet blocks with a serif display over Inter; forum software made cheerful.",
+      "seen": "2026-10-30",
+      "source": "https://www.discourse.org",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.dev-to",
+      "kind": "reference-site",
+      "name": "DEV Community",
+      "url": "https://dev.to",
+      "product_type": "product-type.community",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#171717",
+        "accent": "#3b82f6",
+        "heading_font": "system-ui",
+        "body_font": "system-ui",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "System fonts, blue links, rounded cards; a feed that gets out of the way.",
+      "seen": "2026-10-30",
+      "source": "https://dev.to",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.65
+    },
+    {
+      "id": "reference-site.figma-config",
+      "kind": "reference-site",
+      "name": "Figma Config",
+      "url": "https://config.figma.com",
+      "product_type": "product-type.event",
+      "observed": {
+        "style": "style.poster-type",
+        "bg": "#000000",
+        "fg": "#ffffff",
+        "accent": "#24cb71",
+        "heading_font": "Figma Sans",
+        "body_font": "Figma Sans",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "giant type reveals, video",
+        "confirmed": true,
+        "mono_font": "Figma Mono"
+      },
+      "notes": "Black, giant Figma Sans, one green; conference identity carried by type scale.",
+      "seen": "2026-10-30",
+      "source": "https://config.figma.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.websummit",
+      "kind": "reference-site",
+      "name": "Web Summit",
+      "url": "https://websummit.com",
+      "product_type": "product-type.event",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#0c1439",
+        "accent": "#de0e7b",
+        "heading_font": "Korolev",
+        "body_font": "Inter",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "speaker carousels, colour blocks",
+        "confirmed": true
+      },
+      "notes": "Magenta, violet and teal blocks with a condensed display face over Inter.",
+      "seen": "2026-10-30",
+      "source": "https://websummit.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.sxsw",
+      "kind": "reference-site",
+      "name": "SXSW",
+      "url": "https://www.sxsw.com",
+      "product_type": "product-type.event",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#00d084",
+        "heading_font": "Founders Grotesk Condensed",
+        "body_font": "Founders Grotesk Text",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true,
+        "mono_font": "Founders Grotesk Mono"
+      },
+      "notes": "Founders Grotesk family on black/white; festival identity through one type system.",
+      "seen": "2026-10-30",
+      "source": "https://sxsw.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.reactconf",
+      "kind": "reference-site",
+      "name": "React Conf",
+      "url": "https://conf.react.dev",
+      "product_type": "product-type.event",
+      "observed": {
+        "style": "style.luminous-dark",
+        "bg": "#051726",
+        "fg": "#ffffff",
+        "accent": "#57c4dc",
+        "heading_font": "Optimistic Display",
+        "body_font": "Optimistic Text",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "glowing gradient hero",
+        "confirmed": true,
+        "mono_font": "Source Code Pro"
+      },
+      "notes": "Deep navy with React cyan glow and Meta's Optimistic type.",
+      "seen": "2026-10-30",
+      "source": "https://conf.react.dev",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.nextconf",
+      "kind": "reference-site",
+      "name": "Next.js Conf",
+      "url": "https://nextjs.org/conf",
+      "product_type": "product-type.event",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#000000",
+        "fg": "#fafafa",
+        "accent": "#0070f3",
+        "heading_font": "Geist",
+        "body_font": "Geist",
+        "button_shape": "rounded",
+        "card": "border",
+        "nav": "compact",
+        "motion": "pixel-font reveals, otherwise still",
+        "confirmed": true,
+        "mono_font": "Geist Mono"
+      },
+      "notes": "Geist and Geist Pixel on black; event page that stays inside the Vercel system.",
+      "seen": "2026-10-30",
+      "source": "https://nextjs.org/conf",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.bluebottle",
+      "kind": "reference-site",
+      "name": "Blue Bottle Coffee",
+      "url": "https://bluebottlecoffee.com",
+      "product_type": "product-type.local-business",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#2563eb",
+        "heading_font": "ABC Marfa",
+        "body_font": "ABC Diatype",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow fades",
+        "confirmed": true
+      },
+      "notes": "White space, ABC Diatype, blue only on the logo; cafe as gallery.",
+      "seen": "2026-10-30",
+      "source": "https://bluebottlecoffee.com/us/eng",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.tartine",
+      "kind": "reference-site",
+      "name": "Tartine Bakery",
+      "url": "https://tartinebakery.com",
+      "product_type": "product-type.local-business",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#ffffff",
+        "fg": "#231f20",
+        "accent": "#c87e1e",
+        "heading_font": "Pitch Sans",
+        "body_font": "Pitch Sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Pitch Sans, ochre accent, photography-led; bakery warmth without clutter.",
+      "seen": "2026-10-30",
+      "source": "https://tartinebakery.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
+    },
+    {
+      "id": "reference-site.sweetgreen",
+      "kind": "reference-site",
+      "name": "sweetgreen",
+      "url": "https://www.sweetgreen.com",
+      "product_type": "product-type.local-business",
+      "observed": {
+        "style": "style.warm-organic",
+        "bg": "#f4f3e7",
+        "fg": "#0e150e",
+        "accent": "#e6ff55",
+        "heading_font": "Grenette",
+        "body_font": "Sweet Sans Text",
+        "button_shape": "pill",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "photo reveals, menu hover",
+        "confirmed": true
+      },
+      "notes": "Cream canvas, deep green, sage and lime accents, Grenette serif over Sweet Sans.",
+      "seen": "2026-10-30",
+      "source": "https://www.sweetgreen.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.stumptown",
+      "kind": "reference-site",
+      "name": "Stumptown Coffee",
+      "url": "https://www.stumptowncoffee.com",
+      "product_type": "product-type.local-business",
+      "observed": {
+        "style": "style.paper-editorial",
+        "bg": "#f6f5f3",
+        "fg": "#1f1815",
+        "accent": "#c0a868",
+        "heading_font": "Windsor",
+        "body_font": "GT Flexa",
+        "button_shape": "rounded",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover swaps",
+        "confirmed": true,
+        "mono_font": "GT Flexa Mono"
+      },
+      "notes": "Warm off-white, Windsor serif over GT Flexa, gold accent; roaster heritage.",
+      "seen": "2026-10-30",
+      "source": "https://www.stumptowncoffee.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.gumroad",
+      "kind": "reference-site",
+      "name": "Gumroad",
+      "url": "https://gumroad.com",
+      "product_type": "product-type.marketplace",
+      "observed": {
+        "style": "style.neo-brutalist",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": "#ff90e8",
+        "heading_font": "ABC Favorit",
+        "body_font": "ABC Favorit",
+        "button_shape": "square",
+        "card": "border",
+        "nav": "compact",
+        "motion": "hard offset shadow hovers",
+        "confirmed": true
+      },
+      "notes": "Thick black borders, hard offset shadows, pink accent, ABC Favorit; creator-market brutalism.",
+      "seen": "2026-10-30",
+      "source": "https://gumroad.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.faire",
+      "kind": "reference-site",
+      "name": "Faire",
+      "url": "https://www.faire.com",
+      "product_type": "product-type.marketplace",
+      "observed": {
+        "style": "style.swiss-grid",
+        "bg": "#ffffff",
+        "fg": "#333333",
+        "accent": "#333333",
+        "heading_font": "Graphik",
+        "body_font": "Graphik",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "hover swaps",
+        "confirmed": true
+      },
+      "notes": "Graphik on white, black buttons, product grids; wholesale minimalism.",
+      "seen": "2026-10-30",
+      "source": "https://www.faire.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.1stdibs",
+      "kind": "reference-site",
+      "name": "1stDibs",
+      "url": "https://www.1stdibs.com",
+      "product_type": "product-type.marketplace",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#222222",
+        "accent": "#c2a661",
+        "heading_font": "Cardinal Classic",
+        "body_font": "Proxima Nova",
+        "button_shape": "square",
+        "card": "border",
+        "nav": "compact",
+        "motion": "hover swaps",
+        "confirmed": true
+      },
+      "notes": "Cardinal serif display, gold accent, dense product grid; antiques market with gallery tone.",
+      "seen": "2026-10-30",
+      "source": "https://www.1stdibs.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.depop",
+      "kind": "reference-site",
+      "name": "Depop",
+      "url": "https://www.depop.com",
+      "product_type": "product-type.marketplace",
+      "observed": {
+        "style": "style.neo-brutalist",
+        "bg": "#ffffff",
+        "fg": "#262626",
+        "accent": "#ffda0a",
+        "heading_font": "Aktiv Grotesk Extended",
+        "body_font": "Aktiv Grotesk Extended",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "none",
+        "confirmed": true
+      },
+      "notes": "Extended grotesk, yellow and red blocks, square corners; Gen-Z resale energy.",
+      "seen": "2026-10-30",
+      "source": "https://www.depop.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.zillow",
+      "kind": "reference-site",
+      "name": "Zillow",
+      "url": "https://www.zillow.com",
+      "product_type": "product-type.real-estate",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#111116",
+        "accent": "#0041d9",
+        "heading_font": "Ivar Headline",
+        "body_font": "Inter",
+        "button_shape": "rounded",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "map and card hovers",
+        "confirmed": true
+      },
+      "notes": "Ivar serif headlines over Inter, Zillow blue, rounded search; listings with warmth.",
+      "seen": "2026-10-30",
+      "source": "https://www.zillow.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.compass",
+      "kind": "reference-site",
+      "name": "Compass",
+      "url": "https://www.compass.com",
+      "product_type": "product-type.real-estate",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#171717",
+        "accent": null,
+        "heading_font": "Compass Serif",
+        "body_font": "Compass Sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow photo fades",
+        "confirmed": true
+      },
+      "notes": "Black/white, Compass Serif over Compass Sans, hairline rules; brokerage as luxury.",
+      "seen": "2026-10-30",
+      "source": "https://www.compass.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.themodernhouse",
+      "kind": "reference-site",
+      "name": "The Modern House",
+      "url": "https://www.themodernhouse.com",
+      "product_type": "product-type.real-estate",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#f5f1ed",
+        "fg": "#000000",
+        "accent": "#d8d5ce",
+        "heading_font": "custom serif",
+        "body_font": "custom sans",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow fades",
+        "confirmed": true
+      },
+      "notes": "Warm stone canvas, serif + sans, stone-grey accent; architecture-led listings.",
+      "seen": "2026-10-30",
+      "source": "https://themodernhouse.com/",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "reference-site.corcoran",
+      "kind": "reference-site",
+      "name": "Corcoran",
+      "url": "https://www.corcoran.com",
+      "product_type": "product-type.real-estate",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#000000",
+        "accent": null,
+        "heading_font": "Chronicle Display",
+        "body_font": "Avenir",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "photo fades",
+        "confirmed": true
+      },
+      "notes": "Chronicle Display over Avenir on white; classic brokerage elegance.",
+      "seen": "2026-10-30",
+      "source": "https://www.corcoran.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
+    },
+    {
+      "id": "reference-site.airbnb",
+      "kind": "reference-site",
+      "name": "Airbnb",
+      "url": "https://www.airbnb.com",
+      "product_type": "product-type.travel",
+      "observed": {
+        "style": "style.soft-product",
+        "bg": "#ffffff",
+        "fg": "#222222",
+        "accent": "#ff385c",
+        "heading_font": "Airbnb Cereal",
+        "body_font": "Airbnb Cereal",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "card hovers, map transitions",
+        "confirmed": true
+      },
+      "notes": "Cereal VF, rausch red, pill search, soft shadows; the consumer soft-product reference.",
+      "seen": "2026-10-30",
+      "source": "https://www.airbnb.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.aman",
+      "kind": "reference-site",
+      "name": "Aman",
+      "url": "https://www.aman.com",
+      "product_type": "product-type.travel",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#f3eee7",
+        "fg": "#313131",
+        "accent": null,
+        "heading_font": "Lyon Display",
+        "body_font": "Beausite",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "airy",
+        "motion": "slow full-bleed video, fades",
+        "confirmed": true
+      },
+      "notes": "Sand canvas (theme-color #f3eee7), Lyon serif, no accent; resort luxury by subtraction.",
+      "seen": "2026-10-30",
+      "source": "https://www.aman.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "reference-site.mrandmrssmith",
+      "kind": "reference-site",
+      "name": "Mr & Mrs Smith",
+      "url": "https://www.mrandmrssmith.com",
+      "product_type": "product-type.travel",
+      "observed": {
+        "style": "style.quiet-luxury",
+        "bg": "#ffffff",
+        "fg": "#19242f",
+        "accent": "#ff5a00",
+        "heading_font": "Signifier",
+        "body_font": "Circular",
+        "button_shape": "square",
+        "card": "flat",
+        "nav": "compact",
+        "motion": "photo fades",
+        "confirmed": true
+      },
+      "notes": "Signifier serif over Circular, orange only for CTAs; boutique-hotel editorial.",
+      "seen": "2026-10-30",
+      "source": "https://www.mrandmrssmith.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.75
+    },
+    {
+      "id": "reference-site.hopper",
+      "kind": "reference-site",
+      "name": "Hopper",
+      "url": "https://www.hopper.com",
+      "product_type": "product-type.travel",
+      "observed": {
+        "style": "style.playful-geometric",
+        "bg": "#ffffff",
+        "fg": "#111111",
+        "accent": "#01aae4",
+        "heading_font": "Proxima Nova",
+        "body_font": "Proxima Nova",
+        "button_shape": "pill",
+        "card": "shadow",
+        "nav": "compact",
+        "motion": "bunny mascot, bouncy cards",
+        "confirmed": true
+      },
+      "notes": "Sky blue and pink, pill CTAs, mascot illustration; travel app cheer.",
+      "seen": "2026-10-30",
+      "source": "https://www.hopper.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.7
     }
   ],
   "edges": [
@@ -8803,14 +11768,20 @@
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.loom",
+        "reference-site.pitch"
+      ]
     },
     {
       "from": "product-type.saas",
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.attio",
+        "reference-site.cal"
+      ]
     },
     {
       "from": "product-type.saas",
@@ -8824,14 +11795,20 @@
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.notion"
+      ]
     },
     {
       "from": "product-type.saas",
       "to": "style.luminous-dark",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.framer",
+        "reference-site.intercom",
+        "reference-site.linear"
+      ]
     },
     {
       "from": "product-type.saas",
@@ -8845,14 +11822,22 @@
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.nextjs",
+        "reference-site.tailwindcss",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "product-type.developer-tool",
       "to": "style.dark-console",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.neon",
+        "reference-site.resend",
+        "reference-site.supabase"
+      ]
     },
     {
       "from": "product-type.developer-tool",
@@ -8866,28 +11851,36 @@
       "to": "style.luminous-dark",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.railway"
+      ]
     },
     {
       "from": "product-type.developer-tool",
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.bun"
+      ]
     },
     {
       "from": "product-type.fintech",
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.plaid"
+      ]
     },
     {
       "from": "product-type.fintech",
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.mercury"
+      ]
     },
     {
       "from": "product-type.fintech",
@@ -8901,42 +11894,56 @@
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.ramp"
+      ]
     },
     {
       "from": "product-type.fintech",
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.monzo",
+        "reference-site.stripe"
+      ]
     },
     {
       "from": "product-type.ecommerce",
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.glossier"
+      ]
     },
     {
       "from": "product-type.ecommerce",
       "to": "style.warm-organic",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.allbirds",
+        "reference-site.bellroy"
+      ]
     },
     {
       "from": "product-type.ecommerce",
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.cotopaxi"
+      ]
     },
     {
       "from": "product-type.ecommerce",
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.everlane"
+      ]
     },
     {
       "from": "product-type.ecommerce",
@@ -8950,7 +11957,11 @@
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.hermes",
+        "reference-site.loewe"
+      ]
     },
     {
       "from": "product-type.luxury-commerce",
@@ -8971,7 +11982,9 @@
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.byredo"
+      ]
     },
     {
       "from": "product-type.portfolio",
@@ -8992,7 +12005,9 @@
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.leerob"
+      ]
     },
     {
       "from": "product-type.portfolio",
@@ -9006,14 +12021,19 @@
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.emilkowalski"
+      ]
     },
     {
       "from": "product-type.agency",
       "to": "style.poster-type",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.basement-studio",
+        "reference-site.instrument"
+      ]
     },
     {
       "from": "product-type.agency",
@@ -9027,7 +12047,10 @@
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.locomotive",
+        "reference-site.pentagram"
+      ]
     },
     {
       "from": "product-type.agency",
@@ -9048,21 +12071,27 @@
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.newyorker"
+      ]
     },
     {
       "from": "product-type.editorial",
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.ted"
+      ]
     },
     {
       "from": "product-type.editorial",
       "to": "style.poster-type",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.theverge"
+      ]
     },
     {
       "from": "product-type.editorial",
@@ -9076,14 +12105,19 @@
       "to": "style.data-dense",
       "kind": "suits",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01"
+      ]
     },
     {
       "from": "product-type.dashboard",
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.grafana",
+        "reference-site.plausible"
+      ]
     },
     {
       "from": "product-type.dashboard",
@@ -9097,7 +12131,9 @@
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.metabase"
+      ]
     },
     {
       "from": "product-type.health",
@@ -9111,42 +12147,56 @@
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.calm"
+      ]
     },
     {
       "from": "product-type.health",
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.function-health"
+      ]
     },
     {
       "from": "product-type.health",
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.4,
-      "evidence": []
+      "evidence": [
+        "reference-site.ouraring"
+      ]
     },
     {
       "from": "product-type.education",
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.brilliant",
+        "reference-site.coursera",
+        "reference-site.khanacademy"
+      ]
     },
     {
       "from": "product-type.education",
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.codecademy"
+      ]
     },
     {
       "from": "product-type.education",
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.maven"
+      ]
     },
     {
       "from": "product-type.education",
@@ -9160,21 +12210,29 @@
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.anthropic",
+        "reference-site.cohere",
+        "reference-site.cursor"
+      ]
     },
     {
       "from": "product-type.ai-product",
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.elevenlabs"
+      ]
     },
     {
       "from": "product-type.ai-product",
       "to": "style.luminous-dark",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.runway"
+      ]
     },
     {
       "from": "product-type.ai-product",
@@ -9188,49 +12246,65 @@
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.huggingface"
+      ]
     },
     {
       "from": "product-type.nonprofit",
       "to": "style.warm-organic",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.charitywater"
+      ]
     },
     {
       "from": "product-type.nonprofit",
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.80000hours"
+      ]
     },
     {
       "from": "product-type.nonprofit",
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.wikimedia"
+      ]
     },
     {
       "from": "product-type.nonprofit",
       "to": "style.poster-type",
       "kind": "suits",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.msf"
+      ]
     },
     {
       "from": "product-type.mobile-app",
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.bear",
+        "reference-site.craft",
+        "reference-site.flexibits"
+      ]
     },
     {
       "from": "product-type.mobile-app",
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.arc"
+      ]
     },
     {
       "from": "product-type.mobile-app",
@@ -9244,21 +12318,30 @@
       "to": "style.luminous-dark",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.flighty",
+        "reference-site.halide"
+      ]
     },
     {
       "from": "product-type.documentation",
       "to": "style.mono-engineering",
       "kind": "suits",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.mdn",
+        "reference-site.mintlify"
+      ]
     },
     {
       "from": "product-type.documentation",
       "to": "style.data-dense",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.starlight",
+        "reference-site.stripe-docs"
+      ]
     },
     {
       "from": "product-type.documentation",
@@ -9279,14 +12362,19 @@
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.dev-to"
+      ]
     },
     {
       "from": "product-type.community",
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.discord",
+        "reference-site.discourse"
+      ]
     },
     {
       "from": "product-type.community",
@@ -9307,7 +12395,9 @@
       "to": "style.poster-type",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.figma-config"
+      ]
     },
     {
       "from": "product-type.event",
@@ -9321,28 +12411,38 @@
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.websummit"
+      ]
     },
     {
       "from": "product-type.event",
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.nextconf",
+        "reference-site.sxsw"
+      ]
     },
     {
       "from": "product-type.local-business",
       "to": "style.warm-organic",
       "kind": "suits",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.sweetgreen"
+      ]
     },
     {
       "from": "product-type.local-business",
       "to": "style.paper-editorial",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.stumptown",
+        "reference-site.tartine"
+      ]
     },
     {
       "from": "product-type.local-business",
@@ -9356,7 +12456,9 @@
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.bluebottle"
+      ]
     },
     {
       "from": "product-type.marketplace",
@@ -9370,7 +12472,9 @@
       "to": "style.swiss-grid",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.faire"
+      ]
     },
     {
       "from": "product-type.marketplace",
@@ -9391,7 +12495,11 @@
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.compass",
+        "reference-site.corcoran",
+        "reference-site.themodernhouse"
+      ]
     },
     {
       "from": "product-type.real-estate",
@@ -9426,21 +12534,28 @@
       "to": "style.quiet-luxury",
       "kind": "suits",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.aman",
+        "reference-site.mrandmrssmith"
+      ]
     },
     {
       "from": "product-type.travel",
       "to": "style.playful-geometric",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.hopper"
+      ]
     },
     {
       "from": "product-type.travel",
       "to": "style.soft-product",
       "kind": "suits",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.airbnb"
+      ]
     },
     {
       "from": "product-type.general-website",
@@ -9538,21 +12653,31 @@
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.cursor",
+        "reference-site.function-health",
+        "reference-site.notion"
+      ]
     },
     {
       "from": "mood.calm",
       "to": "style.warm-organic",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.allbirds"
+      ]
     },
     {
       "from": "mood.calm",
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.aman",
+        "reference-site.themodernhouse"
+      ]
     },
     {
       "from": "mood.calm",
@@ -9573,21 +12698,33 @@
       "to": "style.poster-type",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.figma-config",
+        "reference-site.instrument",
+        "reference-site.msf"
+      ]
     },
     {
       "from": "mood.bold",
       "to": "style.neo-brutalist",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.depop",
+        "reference-site.gumroad",
+        "reference-site.mistral"
+      ]
     },
     {
       "from": "mood.bold",
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.byredo",
+        "reference-site.pentagram",
+        "reference-site.ramp"
+      ]
     },
     {
       "from": "mood.bold",
@@ -9608,28 +12745,39 @@
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.plaid"
+      ]
     },
     {
       "from": "mood.trustworthy",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.anthropic",
+        "reference-site.cursor",
+        "reference-site.notion"
+      ]
     },
     {
       "from": "mood.trustworthy",
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.faire",
+        "reference-site.wikimedia"
+      ]
     },
     {
       "from": "mood.trustworthy",
       "to": "style.data-dense",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.stripe-docs"
+      ]
     },
     {
       "from": "mood.trustworthy",
@@ -9643,21 +12791,32 @@
       "to": "style.playful-geometric",
       "kind": "expresses",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.arc",
+        "reference-site.codecademy",
+        "reference-site.headspace"
+      ]
     },
     {
       "from": "mood.playful",
       "to": "style.neo-brutalist",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.gumroad",
+        "reference-site.posthog"
+      ]
     },
     {
       "from": "mood.playful",
       "to": "style.soft-product",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.brilliant",
+        "reference-site.huggingface",
+        "reference-site.pitch"
+      ]
     },
     {
       "from": "mood.playful",
@@ -9678,14 +12837,22 @@
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.aman",
+        "reference-site.compass",
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "mood.premium",
       "to": "style.luminous-dark",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.flighty",
+        "reference-site.linear",
+        "reference-site.runway"
+      ]
     },
     {
       "from": "mood.premium",
@@ -9699,7 +12866,9 @@
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.function-health"
+      ]
     },
     {
       "from": "mood.premium",
@@ -9720,21 +12889,33 @@
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.elevenlabs",
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "mood.technical",
       "to": "style.dark-console",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.neon",
+        "reference-site.resend",
+        "reference-site.supabase"
+      ]
     },
     {
       "from": "mood.technical",
       "to": "style.data-dense",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01",
+        "reference-site.starlight",
+        "reference-site.stripe-docs"
+      ]
     },
     {
       "from": "mood.technical",
@@ -9762,21 +12943,31 @@
       "to": "style.warm-organic",
       "kind": "expresses",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.bellroy",
+        "reference-site.charitywater",
+        "reference-site.sweetgreen"
+      ]
     },
     {
       "from": "mood.warm",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.fly-io",
+        "reference-site.maven",
+        "reference-site.stumptown"
+      ]
     },
     {
       "from": "mood.warm",
       "to": "style.playful-geometric",
       "kind": "expresses",
       "weight": 0.5,
-      "evidence": []
+      "evidence": [
+        "reference-site.headspace"
+      ]
     },
     {
       "from": "mood.warm",
@@ -9797,28 +12988,42 @@
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.are-na",
+        "reference-site.byredo",
+        "reference-site.everlane"
+      ]
     },
     {
       "from": "mood.minimal",
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.attio",
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "mood.minimal",
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.emilkowalski",
+        "reference-site.loewe"
+      ]
     },
     {
       "from": "mood.minimal",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.leerob"
+      ]
     },
     {
       "from": "mood.minimal",
@@ -9839,28 +13044,40 @@
       "to": "style.playful-geometric",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.arc",
+        "reference-site.codecademy",
+        "reference-site.wise"
+      ]
     },
     {
       "from": "mood.energetic",
       "to": "style.luminous-dark",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.robinhood"
+      ]
     },
     {
       "from": "mood.energetic",
       "to": "style.neo-brutalist",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.depop",
+        "reference-site.mistral",
+        "reference-site.posthog"
+      ]
     },
     {
       "from": "mood.energetic",
       "to": "style.poster-type",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.theverge"
+      ]
     },
     {
       "from": "mood.energetic",
@@ -9874,21 +13091,33 @@
       "to": "style.soft-product",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.airbnb",
+        "reference-site.metabase",
+        "reference-site.monzo"
+      ]
     },
     {
       "from": "mood.friendly",
       "to": "style.warm-organic",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.bellroy",
+        "reference-site.charitywater",
+        "reference-site.sweetgreen"
+      ]
     },
     {
       "from": "mood.friendly",
       "to": "style.playful-geometric",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.arc",
+        "reference-site.discourse",
+        "reference-site.headspace"
+      ]
     },
     {
       "from": "mood.friendly",
@@ -9909,28 +13138,37 @@
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.wikimedia"
+      ]
     },
     {
       "from": "mood.serious",
       "to": "style.data-dense",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01"
+      ]
     },
     {
       "from": "mood.serious",
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.mdn"
+      ]
     },
     {
       "from": "mood.serious",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.80000hours",
+        "reference-site.newyorker"
+      ]
     },
     {
       "from": "mood.serious",
@@ -9951,7 +13189,11 @@
       "to": "style.soft-product",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.brilliant",
+        "reference-site.loom",
+        "reference-site.stripe"
+      ]
     },
     {
       "from": "mood.modern",
@@ -9965,28 +13207,41 @@
       "to": "style.glass-layered",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.raycast"
+      ]
     },
     {
       "from": "mood.modern",
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.attio",
+        "reference-site.elevenlabs",
+        "reference-site.mintlify"
+      ]
     },
     {
       "from": "mood.classic",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.newyorker",
+        "reference-site.stumptown"
+      ]
     },
     {
       "from": "mood.classic",
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.1stdibs",
+        "reference-site.corcoran",
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "mood.classic",
@@ -10007,7 +13262,11 @@
       "to": "style.luminous-dark",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.railway",
+        "reference-site.reactconf",
+        "reference-site.runway"
+      ]
     },
     {
       "from": "mood.futuristic",
@@ -10021,7 +13280,9 @@
       "to": "style.glass-layered",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.raycast"
+      ]
     },
     {
       "from": "mood.futuristic",
@@ -10042,14 +13303,20 @@
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.aman",
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "mood.elegant",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.mercury"
+      ]
     },
     {
       "from": "mood.elegant",
@@ -10070,14 +13337,20 @@
       "to": "style.neo-brutalist",
       "kind": "expresses",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.gumroad",
+        "reference-site.mistral",
+        "reference-site.posthog"
+      ]
     },
     {
       "from": "mood.raw",
       "to": "style.poster-type",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.basement-studio"
+      ]
     },
     {
       "from": "mood.raw",
@@ -10105,7 +13378,9 @@
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.tartine"
+      ]
     },
     {
       "from": "mood.cozy",
@@ -10126,21 +13401,32 @@
       "to": "style.mono-engineering",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.elevenlabs",
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "mood.precise",
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.bun",
+        "reference-site.pentagram",
+        "reference-site.ramp"
+      ]
     },
     {
       "from": "mood.precise",
       "to": "style.data-dense",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01",
+        "reference-site.starlight"
+      ]
     },
     {
       "from": "mood.precise",
@@ -10161,14 +13447,22 @@
       "to": "style.poster-type",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.figma-config",
+        "reference-site.instrument",
+        "reference-site.msf"
+      ]
     },
     {
       "from": "mood.confident",
       "to": "style.swiss-grid",
       "kind": "expresses",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.bun",
+        "reference-site.pentagram",
+        "reference-site.ramp"
+      ]
     },
     {
       "from": "mood.confident",
@@ -10182,21 +13476,33 @@
       "to": "style.luminous-dark",
       "kind": "expresses",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.flighty",
+        "reference-site.framer",
+        "reference-site.linear"
+      ]
     },
     {
       "from": "mood.quiet",
       "to": "style.quiet-luxury",
       "kind": "expresses",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.aman",
+        "reference-site.themodernhouse"
+      ]
     },
     {
       "from": "mood.quiet",
       "to": "style.paper-editorial",
       "kind": "expresses",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.anthropic",
+        "reference-site.cursor",
+        "reference-site.leerob"
+      ]
     },
     {
       "from": "mood.quiet",
@@ -10224,42 +13530,59 @@
       "to": "palette.paper-ink",
       "kind": "pairs_with",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.cursor",
+        "reference-site.newyorker",
+        "reference-site.notion"
+      ]
     },
     {
       "from": "style.paper-editorial",
       "to": "palette.cherry-paper",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.maven"
+      ]
     },
     {
       "from": "style.paper-editorial",
       "to": "palette.cobalt-paper",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.cohere",
+        "reference-site.notion"
+      ]
     },
     {
       "from": "style.paper-editorial",
       "to": "palette.sage-linen",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.cursor"
+      ]
     },
     {
       "from": "style.paper-editorial",
       "to": "palette.marine-bone",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.mercury"
+      ]
     },
     {
       "from": "style.paper-editorial",
       "to": "palette.espresso-cream",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.function-health",
+        "reference-site.stumptown",
+        "reference-site.tartine"
+      ]
     },
     {
       "from": "style.swiss-grid",
@@ -10273,14 +13596,21 @@
       "to": "palette.paper-ink",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.bun",
+        "reference-site.ramp"
+      ]
     },
     {
       "from": "style.swiss-grid",
       "to": "palette.ruby-chalk",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.locomotive",
+        "reference-site.pentagram",
+        "reference-site.ted"
+      ]
     },
     {
       "from": "style.swiss-grid",
@@ -10294,7 +13624,9 @@
       "to": "palette.cobalt-paper",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.locomotive"
+      ]
     },
     {
       "from": "style.swiss-grid",
@@ -10315,21 +13647,29 @@
       "to": "palette.harbor-grey",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.mdn"
+      ]
     },
     {
       "from": "style.mono-engineering",
       "to": "palette.slate-signal",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.elevenlabs",
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "style.mono-engineering",
       "to": "palette.charcoal-saffron",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.grafana"
+      ]
     },
     {
       "from": "style.mono-engineering",
@@ -10350,42 +13690,60 @@
       "to": "palette.butter-cobalt",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.huggingface"
+      ]
     },
     {
       "from": "style.soft-product",
       "to": "palette.sky-tomato",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.airbnb",
+        "reference-site.bear",
+        "reference-site.monzo"
+      ]
     },
     {
       "from": "style.soft-product",
       "to": "palette.slate-signal",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.calm",
+        "reference-site.khanacademy",
+        "reference-site.metabase"
+      ]
     },
     {
       "from": "style.soft-product",
       "to": "palette.teal-sand",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.craft"
+      ]
     },
     {
       "from": "style.soft-product",
       "to": "palette.iris-fog",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.pitch",
+        "reference-site.sentry",
+        "reference-site.stripe"
+      ]
     },
     {
       "from": "style.soft-product",
       "to": "palette.cocoa-peach",
       "kind": "pairs_with",
       "weight": 0.65,
-      "evidence": []
+      "evidence": [
+        "reference-site.glossier"
+      ]
     },
     {
       "from": "style.dark-console",
@@ -10399,28 +13757,40 @@
       "to": "palette.carbon-signal",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.rauno"
+      ]
     },
     {
       "from": "style.dark-console",
       "to": "palette.terminal-green",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.neon",
+        "reference-site.supabase"
+      ]
     },
     {
       "from": "style.dark-console",
       "to": "palette.steel-cyan",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.brittanychiang",
+        "reference-site.planetscale"
+      ]
     },
     {
       "from": "style.dark-console",
       "to": "palette.mint-charcoal",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.brittanychiang",
+        "reference-site.neon",
+        "reference-site.supabase"
+      ]
     },
     {
       "from": "style.dark-console",
@@ -10434,14 +13804,18 @@
       "to": "palette.midnight-lime",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.robinhood"
+      ]
     },
     {
       "from": "style.luminous-dark",
       "to": "palette.steel-cyan",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.reactconf"
+      ]
     },
     {
       "from": "style.luminous-dark",
@@ -10455,7 +13829,9 @@
       "to": "palette.obsidian-copper",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.flighty"
+      ]
     },
     {
       "from": "style.luminous-dark",
@@ -10469,14 +13845,22 @@
       "to": "palette.lime-graphite",
       "kind": "pairs_with",
       "weight": 0.65,
-      "evidence": []
+      "evidence": [
+        "reference-site.framer",
+        "reference-site.halide",
+        "reference-site.robinhood"
+      ]
     },
     {
       "from": "style.quiet-luxury",
       "to": "palette.espresso-cream",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.aesop",
+        "reference-site.aman",
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "style.quiet-luxury",
@@ -10497,7 +13881,10 @@
       "to": "palette.harbor-grey",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.bluebottle",
+        "reference-site.compass"
+      ]
     },
     {
       "from": "style.quiet-luxury",
@@ -10525,7 +13912,10 @@
       "to": "palette.hazard-yellow",
       "kind": "pairs_with",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.depop",
+        "reference-site.posthog"
+      ]
     },
     {
       "from": "style.neo-brutalist",
@@ -10539,14 +13929,18 @@
       "to": "palette.poppy-cream",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.mistral"
+      ]
     },
     {
       "from": "style.neo-brutalist",
       "to": "palette.tangerine-slate",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.mistral"
+      ]
     },
     {
       "from": "style.neo-brutalist",
@@ -10574,35 +13968,47 @@
       "to": "palette.sky-tomato",
       "kind": "pairs_with",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.discourse",
+        "reference-site.hopper"
+      ]
     },
     {
       "from": "style.playful-geometric",
       "to": "palette.butter-cobalt",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.arc"
+      ]
     },
     {
       "from": "style.playful-geometric",
       "to": "palette.poppy-cream",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.cotopaxi",
+        "reference-site.headspace"
+      ]
     },
     {
       "from": "style.playful-geometric",
       "to": "palette.tangerine-slate",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.cotopaxi"
+      ]
     },
     {
       "from": "style.playful-geometric",
       "to": "palette.hazard-yellow",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.codecademy"
+      ]
     },
     {
       "from": "style.playful-geometric",
@@ -10616,14 +14022,18 @@
       "to": "palette.moss-cream",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.sweetgreen"
+      ]
     },
     {
       "from": "style.warm-organic",
       "to": "palette.olive-ivory",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.sweetgreen"
+      ]
     },
     {
       "from": "style.warm-organic",
@@ -10644,14 +14054,19 @@
       "to": "palette.sage-linen",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.allbirds"
+      ]
     },
     {
       "from": "style.warm-organic",
       "to": "palette.clay-bone",
       "kind": "pairs_with",
       "weight": 0.65,
-      "evidence": []
+      "evidence": [
+        "reference-site.allbirds",
+        "reference-site.bellroy"
+      ]
     },
     {
       "from": "style.warm-organic",
@@ -10763,7 +14178,9 @@
       "to": "palette.cherry-paper",
       "kind": "pairs_with",
       "weight": 0.85,
-      "evidence": []
+      "evidence": [
+        "reference-site.msf"
+      ]
     },
     {
       "from": "style.poster-type",
@@ -10784,7 +14201,10 @@
       "to": "palette.carbon-signal",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.basement-studio",
+        "reference-site.instrument"
+      ]
     },
     {
       "from": "style.poster-type",
@@ -10798,14 +14218,20 @@
       "to": "palette.harbor-grey",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01",
+        "reference-site.starlight"
+      ]
     },
     {
       "from": "style.data-dense",
       "to": "palette.slate-signal",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.shadcn-dashboard-01",
+        "reference-site.stripe-docs"
+      ]
     },
     {
       "from": "style.data-dense",
@@ -11253,14 +14679,19 @@
       "to": "type-pairing.system-serif-stack",
       "kind": "pairs_with",
       "weight": 0.6,
-      "evidence": []
+      "evidence": [
+        "reference-site.leerob"
+      ]
     },
     {
       "from": "style.swiss-grid",
       "to": "type-pairing.schibsted-grotesk-inter",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.ted",
+        "reference-site.wikimedia"
+      ]
     },
     {
       "from": "style.swiss-grid",
@@ -11281,14 +14712,19 @@
       "to": "type-pairing.archivo-archivo",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.bun"
+      ]
     },
     {
       "from": "style.swiss-grid",
       "to": "type-pairing.inter-tight-inter",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.ted",
+        "reference-site.wikimedia"
+      ]
     },
     {
       "from": "style.swiss-grid",
@@ -11302,7 +14738,10 @@
       "to": "type-pairing.geist-geist",
       "kind": "pairs_with",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "style.mono-engineering",
@@ -11316,14 +14755,21 @@
       "to": "type-pairing.inter-tight-inter",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.attio",
+        "reference-site.mdn",
+        "reference-site.tailwindcss"
+      ]
     },
     {
       "from": "style.mono-engineering",
       "to": "type-pairing.geist-mono-geist",
       "kind": "pairs_with",
       "weight": 0.75,
-      "evidence": []
+      "evidence": [
+        "reference-site.nextjs",
+        "reference-site.vercel"
+      ]
     },
     {
       "from": "style.mono-engineering",
@@ -11344,7 +14790,9 @@
       "to": "type-pairing.plus-jakarta-sans",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.khanacademy"
+      ]
     },
     {
       "from": "style.soft-product",
@@ -11386,7 +14834,11 @@
       "to": "type-pairing.jetbrains-mono-inter",
       "kind": "pairs_with",
       "weight": 0.95,
-      "evidence": []
+      "evidence": [
+        "reference-site.brittanychiang",
+        "reference-site.neon",
+        "reference-site.rauno"
+      ]
     },
     {
       "from": "style.dark-console",
@@ -11428,7 +14880,11 @@
       "to": "type-pairing.inter-tight-inter",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.framer",
+        "reference-site.linear",
+        "reference-site.railway"
+      ]
     },
     {
       "from": "style.luminous-dark",
@@ -11463,7 +14919,9 @@
       "to": "type-pairing.eb-garamond-onest",
       "kind": "pairs_with",
       "weight": 0.9,
-      "evidence": []
+      "evidence": [
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "style.quiet-luxury",
@@ -11477,7 +14935,9 @@
       "to": "type-pairing.gloock-manrope",
       "kind": "pairs_with",
       "weight": 0.8,
-      "evidence": []
+      "evidence": [
+        "reference-site.hermes"
+      ]
     },
     {
       "from": "style.quiet-luxury",
@@ -11771,7 +15231,9 @@
       "to": "type-pairing.system-ui-stack",
       "kind": "pairs_with",
       "weight": 0.7,
-      "evidence": []
+      "evidence": [
+        "reference-site.starlight"
+      ]
     },
     {
       "from": "style.data-dense",

@@ -143,3 +143,22 @@ def test_every_dark_style_has_a_dark_first_palette(graph, by):
         if s["family"] == "dark":
             schemes = {idx[e["to"]]["scheme"] for e in _edges(graph, s["id"], "pairs_with", "palette.")}
             assert "dark" in schemes or "both" in schemes, s["id"]
+
+
+# ---------------------------------------------------------------- Task 6: reference sites as evidence
+
+def test_reference_sites_and_evidence(graph, by):
+    assert len(by["reference-site"]) >= 60
+    with_evidence = [e for e in graph["edges"] if e.get("evidence")]
+    assert len(with_evidence) >= 80
+    ids = {n["id"] for n in by["reference-site"]}
+    for e in with_evidence:
+        assert set(e["evidence"]) <= ids, e
+    for r in by["reference-site"]:
+        assert r["url"].startswith("http") and r["observed"].get("style", "").startswith("style."), r["id"]
+        assert r["product_type"].startswith("product-type."), r["id"]
+
+
+def test_every_product_type_has_a_reference_site(by):
+    covered = {r["product_type"] for r in by["reference-site"]}
+    assert {p["id"] for p in by["product-type"]} - {"product-type.general-website"} <= covered

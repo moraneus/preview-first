@@ -8,6 +8,7 @@
 ![type pairings](https://img.shields.io/badge/type_pairings-43-1f2937)
 ![motion patterns](https://img.shields.io/badge/motion_patterns-26-1f2937)
 ![devices](https://img.shields.io/badge/devices-36-1f2937)
+![reference sites](https://img.shields.io/badge/reference_sites-112-1f2937)
 ![dependencies](https://img.shields.io/badge/runtime_dependencies-0-1f2937)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1f2937)](LICENSE)
 
@@ -125,6 +126,7 @@ Decisions come from `skills/preview-first/knowledge/graph.json`, a graph of what
 | Motion patterns with trigger, duration, easing, reduced-motion rule | 26 | |
 | Product types and moods with aliases | 22 and 20 | `suits` and `expresses` styles |
 | Icon sets, platform features with Baseline status | 6 and 16 | |
+| Reference sites, fetched and recorded as evidence on edges | 112 | cited by 174 edges |
 | Devices with viewport, DPR, safe areas, cutout, share rank | 36 | |
 
 Every node carries a source and dates. `validate_graph.py` checks the schema, every edge endpoint, and fails any palette whose text does not reach WCAG 4.5:1 and APCA Lc 60 on its background in both modes.
