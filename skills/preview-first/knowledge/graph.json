@@ -1,0 +1,6328 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-10-30",
+  "nodes": [
+    {
+      "id": "treatment.button-shape-pill",
+      "kind": "treatment",
+      "name": "button_shape: pill",
+      "axis": "button_shape",
+      "value": "pill",
+      "css_class": "pf-button-shape-pill",
+      "description": "Fully rounded ends; friendly, consumer, soft products.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-shape-rounded",
+      "kind": "treatment",
+      "name": "button_shape: rounded",
+      "axis": "button_shape",
+      "value": "rounded",
+      "css_class": "pf-button-shape-rounded",
+      "description": "Radius from the scale (6 to 10px); the neutral default for product UI.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-shape-square",
+      "kind": "treatment",
+      "name": "button_shape: square",
+      "axis": "button_shape",
+      "value": "square",
+      "css_class": "pf-button-shape-square",
+      "description": "No radius; editorial, Swiss, brutalist and luxury directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-fill-solid",
+      "kind": "treatment",
+      "name": "button_fill: solid",
+      "axis": "button_fill",
+      "value": "solid",
+      "css_class": "pf-button-fill-solid",
+      "description": "Primary fill with on-primary text; one per view.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-fill-outline",
+      "kind": "treatment",
+      "name": "button_fill: outline",
+      "axis": "button_fill",
+      "value": "outline",
+      "css_class": "pf-button-fill-outline",
+      "description": "1px border in text colour, transparent fill; quiet and editorial.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-fill-ghost",
+      "kind": "treatment",
+      "name": "button_fill: ghost",
+      "axis": "button_fill",
+      "value": "ghost",
+      "css_class": "pf-button-fill-ghost",
+      "description": "No border, tinted on hover; toolbars and secondary actions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.button-fill-soft",
+      "kind": "treatment",
+      "name": "button_fill: soft",
+      "axis": "button_fill",
+      "value": "soft",
+      "css_class": "pf-button-fill-soft",
+      "description": "Low-chroma tint of primary with primary text; dark and soft directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.input-edge-hairline",
+      "kind": "treatment",
+      "name": "input_edge: hairline",
+      "axis": "input_edge",
+      "value": "hairline",
+      "css_class": "pf-input-edge-hairline",
+      "description": "1px border, 2px focus ring; the accessible default.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.input-edge-filled",
+      "kind": "treatment",
+      "name": "input_edge: filled",
+      "axis": "input_edge",
+      "value": "filled",
+      "css_class": "pf-input-edge-filled",
+      "description": "Surface fill, no border until focus; soft and dark directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.input-edge-underline",
+      "kind": "treatment",
+      "name": "input_edge: underline",
+      "axis": "input_edge",
+      "value": "underline",
+      "css_class": "pf-input-edge-underline",
+      "description": "Bottom rule only; editorial and luxury forms with few fields.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.card-edge-border",
+      "kind": "treatment",
+      "name": "card_edge: border",
+      "axis": "card_edge",
+      "value": "border",
+      "css_class": "pf-card-edge-border",
+      "description": "1px border, no shadow; borders earn their place.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.card-edge-shadow",
+      "kind": "treatment",
+      "name": "card_edge: shadow",
+      "axis": "card_edge",
+      "value": "shadow",
+      "css_class": "pf-card-edge-shadow",
+      "description": "Soft layered shadow under 6% total opacity; one radius from the scale.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.card-edge-flat",
+      "kind": "treatment",
+      "name": "card_edge: flat",
+      "axis": "card_edge",
+      "value": "flat",
+      "css_class": "pf-card-edge-flat",
+      "description": "No border, no shadow; grouping by spacing and background only.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.card-edge-inset",
+      "kind": "treatment",
+      "name": "card_edge: inset",
+      "axis": "card_edge",
+      "value": "inset",
+      "css_class": "pf-card-edge-inset",
+      "description": "Translucent surface over colour with a 1px inner highlight; glass and luminous directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.nav-airy",
+      "kind": "treatment",
+      "name": "nav: airy",
+      "axis": "nav",
+      "value": "airy",
+      "css_class": "pf-nav-airy",
+      "description": "Wordmark left, few links right, 72px tall, no border until scrolled.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.nav-compact",
+      "kind": "treatment",
+      "name": "nav: compact",
+      "axis": "nav",
+      "value": "compact",
+      "css_class": "pf-nav-compact",
+      "description": "56px tall, hairline bottom border, dense links; technical sites.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.nav-floating",
+      "kind": "treatment",
+      "name": "nav: floating",
+      "axis": "nav",
+      "value": "floating",
+      "css_class": "pf-nav-floating",
+      "description": "Detached pill or panel with blur, 16px from the top edge.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.nav-sidebar",
+      "kind": "treatment",
+      "name": "nav: sidebar",
+      "axis": "nav",
+      "value": "sidebar",
+      "css_class": "pf-nav-sidebar",
+      "description": "Vertical navigation for app shells and documentation.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.divider-hairline",
+      "kind": "treatment",
+      "name": "divider: hairline",
+      "axis": "divider",
+      "value": "hairline",
+      "css_class": "pf-divider-hairline",
+      "description": "1px rule in border colour between sections.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.divider-space",
+      "kind": "treatment",
+      "name": "divider: space",
+      "axis": "divider",
+      "value": "space",
+      "css_class": "pf-divider-space",
+      "description": "Whitespace only; section rhythm from the spacing scale.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.divider-rule",
+      "kind": "treatment",
+      "name": "divider: rule",
+      "axis": "divider",
+      "value": "rule",
+      "css_class": "pf-divider-rule",
+      "description": "2px to 4px rule in text colour; Swiss and brutalist directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.image-corner-none",
+      "kind": "treatment",
+      "name": "image_corner: none",
+      "axis": "image_corner",
+      "value": "none",
+      "css_class": "pf-image-corner-none",
+      "description": "Square imagery.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.image-corner-sm",
+      "kind": "treatment",
+      "name": "image_corner: sm",
+      "axis": "image_corner",
+      "value": "sm",
+      "css_class": "pf-image-corner-sm",
+      "description": "Small radius matching cards.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.image-corner-lg",
+      "kind": "treatment",
+      "name": "image_corner: lg",
+      "axis": "image_corner",
+      "value": "lg",
+      "css_class": "pf-image-corner-lg",
+      "description": "Large radius; soft and playful directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.focus-ring-offset",
+      "kind": "treatment",
+      "name": "focus_ring: offset",
+      "axis": "focus_ring",
+      "value": "offset",
+      "css_class": "pf-focus-ring-offset",
+      "description": "2px ring in focus colour, 2px offset; default and most visible.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.focus-ring-inset",
+      "kind": "treatment",
+      "name": "focus_ring: inset",
+      "axis": "focus_ring",
+      "value": "inset",
+      "css_class": "pf-focus-ring-inset",
+      "description": "2px ring inside the element; square directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.focus-ring-glow",
+      "kind": "treatment",
+      "name": "focus_ring: glow",
+      "axis": "focus_ring",
+      "value": "glow",
+      "css_class": "pf-focus-ring-glow",
+      "description": "0 0 0 4px ring at 40% alpha; dark and soft directions.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.link-style-underline",
+      "kind": "treatment",
+      "name": "link_style: underline",
+      "axis": "link_style",
+      "value": "underline",
+      "css_class": "pf-link-style-underline",
+      "description": "Always underlined in text colour; editorial and accessible default.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.link-style-colour",
+      "kind": "treatment",
+      "name": "link_style: colour",
+      "axis": "link_style",
+      "value": "colour",
+      "css_class": "pf-link-style-colour",
+      "description": "Primary colour, underline on hover.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.link-style-both",
+      "kind": "treatment",
+      "name": "link_style: both",
+      "axis": "link_style",
+      "value": "both",
+      "css_class": "pf-link-style-both",
+      "description": "Primary colour and underline.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.elevation-none",
+      "kind": "treatment",
+      "name": "elevation: none",
+      "axis": "elevation",
+      "value": "none",
+      "css_class": "pf-elevation-none",
+      "description": "Nothing floats; layering by colour and border.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.elevation-one",
+      "kind": "treatment",
+      "name": "elevation: one",
+      "axis": "elevation",
+      "value": "one",
+      "css_class": "pf-elevation-one",
+      "description": "A single soft shadow level for raised surfaces.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "treatment.elevation-layered",
+      "kind": "treatment",
+      "name": "elevation: layered",
+      "axis": "elevation",
+      "value": "layered",
+      "css_class": "pf-elevation-layered",
+      "description": "Two or three shadow levels plus blur for glass surfaces.",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "motion-pattern.none",
+      "kind": "motion-pattern",
+      "name": "No motion",
+      "trigger": "ambient",
+      "duration_ms": 0,
+      "easing": "linear",
+      "communicates": "Stillness; state changes snap",
+      "implementation": "css",
+      "reduced_motion": "n/a",
+      "level": 0,
+      "css": "",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.press-scale-97",
+      "kind": "motion-pattern",
+      "name": "Press scale",
+      "trigger": "press",
+      "duration_ms": 120,
+      "easing": "ease",
+      "communicates": "The control is physical and responded",
+      "implementation": "css",
+      "reduced_motion": "keep (no translation)",
+      "level": 1,
+      "css": ":active{transform:scale(.97)}",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.hover-lift-2",
+      "kind": "motion-pattern",
+      "name": "Hover lift",
+      "trigger": "hover",
+      "duration_ms": 160,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "This card is interactive",
+      "implementation": "css",
+      "reduced_motion": "replace with background tint",
+      "level": 1,
+      "css": ":hover{transform:translateY(-2px)}",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.hover-tint",
+      "kind": "motion-pattern",
+      "name": "Hover tint",
+      "trigger": "hover",
+      "duration_ms": 150,
+      "easing": "ease",
+      "communicates": "Interactive surface",
+      "implementation": "css",
+      "reduced_motion": "keep",
+      "level": 1,
+      "css": ":hover{background:color-mix(in oklab,var(--pf-color-text) 6%,transparent)}",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.underline-grow",
+      "kind": "motion-pattern",
+      "name": "Underline grow",
+      "trigger": "hover",
+      "duration_ms": 200,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Link is live",
+      "implementation": "css",
+      "reduced_motion": "keep (opacity only)",
+      "level": 1,
+      "css": "text-decoration-color transition",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.focus-ring-pulse-once",
+      "kind": "motion-pattern",
+      "name": "Focus ring settle",
+      "trigger": "focus",
+      "duration_ms": 180,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Focus arrived here",
+      "implementation": "css",
+      "reduced_motion": "snap",
+      "level": 1,
+      "css": "box-shadow transition on :focus-visible",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.enter-fade-up-8",
+      "kind": "motion-pattern",
+      "name": "Enter fade up",
+      "trigger": "enter",
+      "duration_ms": 240,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Content arrived from below",
+      "implementation": "css",
+      "reduced_motion": "fade only",
+      "level": 1,
+      "css": "@starting-style{opacity:0;translate:0 8px}",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.enter-scale-95",
+      "kind": "motion-pattern",
+      "name": "Enter scale from 95",
+      "trigger": "enter",
+      "duration_ms": 200,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Popover grew from its trigger",
+      "implementation": "css",
+      "reduced_motion": "fade only",
+      "level": 1,
+      "css": "@starting-style{opacity:0;scale:.95}",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.exit-fade-fast",
+      "kind": "motion-pattern",
+      "name": "Exit fade",
+      "trigger": "exit",
+      "duration_ms": 150,
+      "easing": "ease-in",
+      "communicates": "Gone, quickly",
+      "implementation": "css",
+      "reduced_motion": "keep",
+      "level": 1,
+      "css": "transition:opacity 150ms ease-in",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.button-loading-swap",
+      "kind": "motion-pattern",
+      "name": "Button loading swap",
+      "trigger": "layout",
+      "duration_ms": 200,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Working; label replaced by spinner, width held",
+      "implementation": "css",
+      "reduced_motion": "keep",
+      "level": 1,
+      "css": "min-width lock + crossfade",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.skeleton-shimmer",
+      "kind": "motion-pattern",
+      "name": "Skeleton shimmer",
+      "trigger": "ambient",
+      "duration_ms": 1400,
+      "easing": "linear",
+      "communicates": "Loading, structure known",
+      "implementation": "css",
+      "reduced_motion": "static grey blocks",
+      "level": 1,
+      "css": "background-position keyframes",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.toast-slide-in",
+      "kind": "motion-pattern",
+      "name": "Toast slide in",
+      "trigger": "enter",
+      "duration_ms": 260,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "A message arrived at the edge",
+      "implementation": "css",
+      "reduced_motion": "fade only",
+      "level": 1,
+      "css": "translate from 16px",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.tab-indicator-slide",
+      "kind": "motion-pattern",
+      "name": "Tab indicator slide",
+      "trigger": "layout",
+      "duration_ms": 220,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "Selection moved along the row",
+      "implementation": "css",
+      "reduced_motion": "snap",
+      "level": 1,
+      "css": "left/width via transform",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.switch-thumb-spring",
+      "kind": "motion-pattern",
+      "name": "Switch thumb spring",
+      "trigger": "press",
+      "duration_ms": 260,
+      "easing": "linear(0, 0.4 20%, 0.95 45%, 1.04 65%, 1)",
+      "communicates": "Toggled, with weight",
+      "implementation": "css",
+      "reduced_motion": "linear 150ms",
+      "level": 2,
+      "css": "translate with linear() spring",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.accordion-height",
+      "kind": "motion-pattern",
+      "name": "Accordion open",
+      "trigger": "layout",
+      "duration_ms": 240,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "Content unfolded here",
+      "implementation": "css",
+      "reduced_motion": "snap",
+      "level": 1,
+      "css": "grid-template-rows 0fr to 1fr",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.menu-stagger-30",
+      "kind": "motion-pattern",
+      "name": "Menu stagger",
+      "trigger": "enter",
+      "duration_ms": 180,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Items arrived in order",
+      "implementation": "css",
+      "reduced_motion": "no stagger, fade",
+      "level": 2,
+      "css": "animation-delay: calc(var(--i) * 30ms)",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.page-crossfade-vt",
+      "kind": "motion-pattern",
+      "name": "Page crossfade",
+      "trigger": "page",
+      "duration_ms": 220,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "Same place, new content",
+      "implementation": "view-transitions",
+      "reduced_motion": "instant swap",
+      "level": 1,
+      "css": "::view-transition-old/new fade",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.page-slide-vt",
+      "kind": "motion-pattern",
+      "name": "Page shared-element slide",
+      "trigger": "page",
+      "duration_ms": 320,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "This element travelled to the next page",
+      "implementation": "view-transitions",
+      "reduced_motion": "crossfade",
+      "level": 2,
+      "css": "view-transition-name on the moving element",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.scroll-reveal-once",
+      "kind": "motion-pattern",
+      "name": "Scroll reveal, once",
+      "trigger": "scroll",
+      "duration_ms": 400,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "One orchestrated entrance for the hero",
+      "implementation": "scroll-driven",
+      "reduced_motion": "static",
+      "level": 2,
+      "css": "animation-timeline:view(); one section only",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.scroll-progress-bar",
+      "kind": "motion-pattern",
+      "name": "Reading progress",
+      "trigger": "scroll",
+      "duration_ms": 0,
+      "easing": "linear",
+      "communicates": "How far along the article",
+      "implementation": "scroll-driven",
+      "reduced_motion": "keep",
+      "level": 1,
+      "css": "animation-timeline:scroll(root)",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.layout-flip",
+      "kind": "motion-pattern",
+      "name": "Layout FLIP",
+      "trigger": "layout",
+      "duration_ms": 300,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "Items reordered, nothing teleported",
+      "implementation": "motion",
+      "reduced_motion": "snap",
+      "level": 2,
+      "css": "layout animations via Motion",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.spring-pop",
+      "kind": "motion-pattern",
+      "name": "Spring pop",
+      "trigger": "enter",
+      "duration_ms": 400,
+      "easing": "spring(duration 0.4, bounce 0.25)",
+      "communicates": "Something new and delightful appeared",
+      "implementation": "motion",
+      "reduced_motion": "fade",
+      "level": 3,
+      "css": "Motion spring visualDuration 0.4 bounce 0.25",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.card-tilt-subtle",
+      "kind": "motion-pattern",
+      "name": "Card tilt",
+      "trigger": "hover",
+      "duration_ms": 200,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "Depth on pointer; showcase only",
+      "implementation": "css",
+      "reduced_motion": "none",
+      "level": 3,
+      "css": "perspective + rotate 2deg max",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.hero-mask-reveal",
+      "kind": "motion-pattern",
+      "name": "Hero mask reveal",
+      "trigger": "enter",
+      "duration_ms": 700,
+      "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+      "communicates": "The single page-load moment",
+      "implementation": "css",
+      "reduced_motion": "fade",
+      "level": 3,
+      "css": "clip-path inset animation on load",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.ambient-glow-slow",
+      "kind": "motion-pattern",
+      "name": "Ambient glow drift",
+      "trigger": "ambient",
+      "duration_ms": 12000,
+      "easing": "linear",
+      "communicates": "Alive but quiet; dark directions only",
+      "implementation": "css",
+      "reduced_motion": "static gradient",
+      "level": 3,
+      "css": "background-position over 12s",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "motion-pattern.number-count-up",
+      "kind": "motion-pattern",
+      "name": "Number count up",
+      "trigger": "enter",
+      "duration_ms": 800,
+      "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+      "communicates": "A real, sourced figure landing",
+      "implementation": "css",
+      "reduced_motion": "static",
+      "level": 2,
+      "css": "@property counter animation",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "platform-feature.container-queries",
+      "kind": "platform-feature",
+      "name": "Container queries",
+      "baseline": "widely",
+      "support": {
+        "chrome": 106,
+        "firefox": 110,
+        "safari": 16.0
+      },
+      "global_pct": 95.9,
+      "web_features_id": "container-queries",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.has",
+      "kind": "platform-feature",
+      "name": ":has() selector",
+      "baseline": "widely",
+      "support": {
+        "chrome": 105,
+        "firefox": 121,
+        "safari": 15.4
+      },
+      "global_pct": 95.9,
+      "web_features_id": "has",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.oklch",
+      "kind": "platform-feature",
+      "name": "oklch() colour",
+      "baseline": "widely",
+      "support": {
+        "chrome": 111,
+        "firefox": 113,
+        "safari": 15.4
+      },
+      "global_pct": 95.1,
+      "web_features_id": "oklch",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.color-mix",
+      "kind": "platform-feature",
+      "name": "color-mix()",
+      "baseline": "widely",
+      "support": {
+        "chrome": 111,
+        "firefox": 113,
+        "safari": 16.2
+      },
+      "global_pct": 94.8,
+      "web_features_id": "color-mix",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.relative-color",
+      "kind": "platform-feature",
+      "name": "Relative colour syntax",
+      "baseline": "newly",
+      "support": {
+        "chrome": 131,
+        "firefox": 133,
+        "safari": 18.0
+      },
+      "global_pct": 93.5,
+      "web_features_id": "relative-color",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.light-dark",
+      "kind": "platform-feature",
+      "name": "light-dark()",
+      "baseline": "newly",
+      "support": {
+        "chrome": 123,
+        "firefox": 120,
+        "safari": 17.5
+      },
+      "global_pct": 91.3,
+      "web_features_id": "light-dark",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.property",
+      "kind": "platform-feature",
+      "name": "@property",
+      "baseline": "widely",
+      "support": {
+        "chrome": 85,
+        "firefox": 128,
+        "safari": 16.4
+      },
+      "global_pct": 96.1,
+      "web_features_id": "registered-custom-properties",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.starting-style",
+      "kind": "platform-feature",
+      "name": "@starting-style",
+      "baseline": "newly",
+      "support": {
+        "chrome": 117,
+        "firefox": 129,
+        "safari": 17.5
+      },
+      "global_pct": 93.1,
+      "web_features_id": "starting-style",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.popover",
+      "kind": "platform-feature",
+      "name": "Popover API",
+      "baseline": "newly",
+      "support": {
+        "chrome": 114,
+        "firefox": 125,
+        "safari": 17.0
+      },
+      "global_pct": 93.6,
+      "web_features_id": "popover",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.text-wrap-balance",
+      "kind": "platform-feature",
+      "name": "text-wrap: balance",
+      "baseline": "widely",
+      "support": {
+        "chrome": 114,
+        "firefox": 121,
+        "safari": 17.5
+      },
+      "global_pct": 94.0,
+      "web_features_id": "text-wrap-balance",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.text-wrap-pretty",
+      "kind": "platform-feature",
+      "name": "text-wrap: pretty",
+      "baseline": "limited",
+      "support": {
+        "chrome": 117,
+        "firefox": null,
+        "safari": 26.0
+      },
+      "global_pct": 87.6,
+      "web_features_id": "text-wrap-pretty",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.anchor-positioning",
+      "kind": "platform-feature",
+      "name": "Anchor positioning",
+      "baseline": "limited",
+      "support": {
+        "chrome": 125,
+        "firefox": null,
+        "safari": 27.0
+      },
+      "global_pct": 87.4,
+      "web_features_id": "anchor-positioning",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.linear-easing",
+      "kind": "platform-feature",
+      "name": "linear() easing",
+      "baseline": "widely",
+      "support": {
+        "chrome": 113,
+        "firefox": 112,
+        "safari": 17.2
+      },
+      "global_pct": 94.0,
+      "web_features_id": "linear-easing",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.view-transitions",
+      "kind": "platform-feature",
+      "name": "View Transitions (same document)",
+      "baseline": "newly",
+      "support": {
+        "chrome": 111,
+        "firefox": 144,
+        "safari": 18.0
+      },
+      "global_pct": 90.0,
+      "web_features_id": "view-transitions",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.scroll-driven-animations",
+      "kind": "platform-feature",
+      "name": "Scroll-driven animations",
+      "baseline": "limited",
+      "support": {
+        "chrome": 115,
+        "firefox": 159,
+        "safari": 26.0
+      },
+      "global_pct": 88.3,
+      "web_features_id": "scroll-driven-animations",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "platform-feature.backdrop-filter",
+      "kind": "platform-feature",
+      "name": "backdrop-filter",
+      "baseline": "widely",
+      "support": {
+        "chrome": 76,
+        "firefox": 103,
+        "safari": 18.0
+      },
+      "global_pct": 96.0,
+      "web_features_id": "backdrop-filter",
+      "source": "https://caniuse.com/ (Sep 2026 data) and https://web.dev/baseline/2025",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.9
+    },
+    {
+      "id": "icon-set.lucide",
+      "kind": "icon-set",
+      "name": "Lucide",
+      "stroke": 2,
+      "license": "ISC",
+      "url": "https://lucide.dev",
+      "cdn": "https://unpkg.com/lucide-static@latest/icons/",
+      "source": "https://lucide.dev",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "icon-set.phosphor",
+      "kind": "icon-set",
+      "name": "Phosphor",
+      "stroke": 1.5,
+      "license": "MIT",
+      "url": "https://phosphoricons.com",
+      "cdn": "https://unpkg.com/@phosphor-icons/core@latest/assets/regular/",
+      "source": "https://phosphoricons.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "icon-set.heroicons",
+      "kind": "icon-set",
+      "name": "Heroicons",
+      "stroke": 1.5,
+      "license": "MIT",
+      "url": "https://heroicons.com",
+      "cdn": "https://unpkg.com/heroicons@latest/24/outline/",
+      "source": "https://heroicons.com",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "icon-set.tabler",
+      "kind": "icon-set",
+      "name": "Tabler Icons",
+      "stroke": 2,
+      "license": "MIT",
+      "url": "https://tabler.io/icons",
+      "cdn": "https://unpkg.com/@tabler/icons@latest/icons/outline/",
+      "source": "https://tabler.io/icons",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "icon-set.radix",
+      "kind": "icon-set",
+      "name": "Radix Icons",
+      "stroke": 1.25,
+      "license": "MIT",
+      "url": "https://www.radix-ui.com/icons",
+      "cdn": "https://unpkg.com/@radix-ui/react-icons@latest/",
+      "source": "https://www.radix-ui.com/icons",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "icon-set.material-symbols",
+      "kind": "icon-set",
+      "name": "Material Symbols",
+      "stroke": 2,
+      "license": "Apache-2.0",
+      "url": "https://fonts.google.com/icons",
+      "cdn": "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined",
+      "source": "https://fonts.google.com/icons",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.95
+    },
+    {
+      "id": "style.paper-editorial",
+      "kind": "style",
+      "name": "Paper editorial",
+      "family": "editorial",
+      "summary": "Warm off-white canvas that reads like paper, a serif display face over a quiet sans, hairline rules, one restrained accent.",
+      "traits": [
+        "warm neutral canvas",
+        "serif display + quiet sans body",
+        "1px dividers",
+        "layered shadows under 5%",
+        "8px radius",
+        "one accent"
+      ],
+      "signals": [
+        "considered",
+        "literate",
+        "trustworthy",
+        "calm"
+      ],
+      "radius_scale": "sm",
+      "shadow": "hairline",
+      "density": "airy",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "editorial",
+          "features": "list",
+          "proof": "quote",
+          "cta": "inline",
+          "footer": "columns"
+        },
+        "content": {
+          "header": "masthead",
+          "article": "with-toc",
+          "list": "lines"
+        }
+      },
+      "best_page_types": [
+        "content",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "cream canvas with terracotta accent",
+        "oversized italic serif headline"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.swiss-grid",
+      "kind": "style",
+      "name": "Swiss grid",
+      "family": "minimal",
+      "summary": "Black, white and one accent on a visible grid; type does the work, nothing is decorated.",
+      "traits": [
+        "strict grid",
+        "square corners",
+        "grotesque type at two sizes",
+        "rules not shadows",
+        "asymmetric whitespace"
+      ],
+      "signals": [
+        "precise",
+        "confident",
+        "institutional",
+        "modern"
+      ],
+      "radius_scale": "none",
+      "shadow": "none",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "poster",
+          "features": "columns",
+          "proof": "stats-sourced",
+          "cta": "band",
+          "footer": "minimal"
+        },
+        "content": {
+          "header": "minimal",
+          "article": "single",
+          "list": "lines"
+        }
+      },
+      "best_page_types": [
+        "content",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "hairline broadsheet columns everywhere"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.mono-engineering",
+      "kind": "style",
+      "name": "Monochrome engineering",
+      "family": "technical",
+      "summary": "Greys with colour only where it means something, one sans for everything and mono for code, borders that are earned.",
+      "traits": [
+        "monochrome by default",
+        "semantic colour only",
+        "tabular numerals",
+        "60 to 68ch prose",
+        "no ornamental shadow"
+      ],
+      "signals": [
+        "precise",
+        "fast",
+        "trustworthy",
+        "technical"
+      ],
+      "radius_scale": "sm",
+      "shadow": "hairline",
+      "density": "compact",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "split",
+          "features": "list",
+          "proof": "logos-text",
+          "cta": "inline",
+          "footer": "columns"
+        },
+        "app": {
+          "shell": "sidebar",
+          "table": "dense",
+          "detail": "panel"
+        }
+      },
+      "best_page_types": [
+        "app",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "all-caps tracked eyebrow labels",
+        "mono for anything that is not data"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.soft-product",
+      "kind": "style",
+      "name": "Soft product",
+      "family": "soft",
+      "summary": "Friendly product UI: large radius, soft layered shadows, a clear primary, airy cards, pill buttons.",
+      "traits": [
+        "large radius",
+        "soft shadows",
+        "pill buttons",
+        "filled inputs",
+        "one bright primary"
+      ],
+      "signals": [
+        "friendly",
+        "approachable",
+        "modern",
+        "easy"
+      ],
+      "radius_scale": "lg",
+      "shadow": "soft",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "centered",
+          "features": "bento",
+          "proof": "quote",
+          "cta": "band",
+          "footer": "columns"
+        },
+        "app": {
+          "shell": "topbar",
+          "table": "comfortable",
+          "detail": "drawer"
+        }
+      },
+      "best_page_types": [
+        "app",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "identical rounded cards in threes",
+        "the same grey shadow under everything",
+        "indigo to purple gradient"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.dark-console",
+      "kind": "style",
+      "name": "Dark console",
+      "family": "dark",
+      "summary": "Near-black neutral surfaces, hairline borders, mono labels for data, one restrained accent; the look of a good terminal.",
+      "traits": [
+        "near-black with a cool tint",
+        "hairline borders",
+        "mono for data",
+        "dense tables",
+        "one accent"
+      ],
+      "signals": [
+        "technical",
+        "serious",
+        "capable",
+        "focused"
+      ],
+      "radius_scale": "sm",
+      "shadow": "none",
+      "density": "compact",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "product-shot",
+          "features": "list",
+          "proof": "logos-text",
+          "cta": "inline",
+          "footer": "minimal"
+        },
+        "app": {
+          "shell": "sidebar",
+          "table": "dense",
+          "detail": "panel"
+        }
+      },
+      "best_page_types": [
+        "app",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "purple glow blobs",
+        "medium grey body text on black"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.luminous-dark",
+      "kind": "style",
+      "name": "Luminous dark",
+      "family": "dark",
+      "summary": "Dark canvas with one glowing hue, blurred gradient light, glassy raised panels and product imagery doing the talking.",
+      "traits": [
+        "dark canvas",
+        "single glow hue",
+        "blurred gradient light",
+        "glass panels",
+        "product screenshots"
+      ],
+      "signals": [
+        "ambitious",
+        "modern",
+        "premium",
+        "energetic"
+      ],
+      "radius_scale": "md",
+      "shadow": "layered",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "centered",
+          "features": "bento",
+          "proof": "stats-sourced",
+          "cta": "band",
+          "footer": "columns"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "purple to pink glow",
+        "fake trusted-by logo bar",
+        "glass on everything"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.quiet-luxury",
+      "kind": "style",
+      "name": "Quiet luxury",
+      "family": "editorial",
+      "summary": "Generous space, a refined serif, muted low-chroma palette, square corners and almost no chrome.",
+      "traits": [
+        "extreme whitespace",
+        "refined serif",
+        "muted palette",
+        "square corners",
+        "thin outline buttons"
+      ],
+      "signals": [
+        "premium",
+        "calm",
+        "exclusive",
+        "timeless"
+      ],
+      "radius_scale": "none",
+      "shadow": "none",
+      "density": "airy",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "poster",
+          "features": "alternating",
+          "proof": "quote",
+          "cta": "inline",
+          "footer": "minimal"
+        },
+        "store": {
+          "hero": "collection",
+          "grid": "two",
+          "product": "gallery-left",
+          "cart": "page"
+        }
+      },
+      "best_page_types": [
+        "marketing",
+        "store"
+      ],
+      "tells_to_avoid": [
+        "gold gradient",
+        "script fonts"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.neo-brutalist",
+      "kind": "style",
+      "name": "Neo-brutalist",
+      "family": "bold",
+      "summary": "Flat saturated fills, thick dark borders, hard offset shadows, raw grotesque type; deliberately unpolished.",
+      "traits": [
+        "thick borders",
+        "hard offset shadow",
+        "flat fills",
+        "raw type",
+        "visible grid"
+      ],
+      "signals": [
+        "raw",
+        "bold",
+        "independent",
+        "playful"
+      ],
+      "radius_scale": "none",
+      "shadow": "hard",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "poster",
+          "features": "columns",
+          "proof": "stats-sourced",
+          "cta": "band",
+          "footer": "columns"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "soft shadows",
+        "gradients"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.playful-geometric",
+      "kind": "style",
+      "name": "Playful geometric",
+      "family": "expressive",
+      "summary": "Bright flat colour blocks, geometric shapes, pill everything, bouncy motion; made to be liked.",
+      "traits": [
+        "bright flat colour",
+        "geometric shapes",
+        "pill buttons",
+        "big rounded cards",
+        "bouncy motion"
+      ],
+      "signals": [
+        "playful",
+        "friendly",
+        "energetic",
+        "young"
+      ],
+      "radius_scale": "pill",
+      "shadow": "soft",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "split",
+          "features": "bento",
+          "proof": "quote",
+          "cta": "band",
+          "footer": "columns"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "emoji as icons",
+        "gradient initial avatars"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.warm-organic",
+      "kind": "style",
+      "name": "Warm organic",
+      "family": "soft",
+      "summary": "Earth tones, rounded forms, generous line height, photography with large radius; calm and human.",
+      "traits": [
+        "earth tones",
+        "large radius",
+        "soft type",
+        "photography led",
+        "generous leading"
+      ],
+      "signals": [
+        "warm",
+        "human",
+        "calm",
+        "cozy"
+      ],
+      "radius_scale": "lg",
+      "shadow": "soft",
+      "density": "airy",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "editorial",
+          "features": "alternating",
+          "proof": "quote",
+          "cta": "inline",
+          "footer": "minimal"
+        },
+        "store": {
+          "hero": "product",
+          "grid": "three",
+          "product": "gallery-top",
+          "cart": "drawer"
+        }
+      },
+      "best_page_types": [
+        "marketing",
+        "store"
+      ],
+      "tells_to_avoid": [
+        "cream and terracotta as a default",
+        "blob backgrounds"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.glass-layered",
+      "kind": "style",
+      "name": "Glass layered",
+      "family": "expressive",
+      "summary": "Translucent panels over a coloured field, blur used only where a surface really floats over content.",
+      "traits": [
+        "translucent panels",
+        "blur on floating surfaces",
+        "coloured field",
+        "medium radius",
+        "inner highlight"
+      ],
+      "signals": [
+        "modern",
+        "native-feeling",
+        "fluid",
+        "premium"
+      ],
+      "radius_scale": "md",
+      "shadow": "layered",
+      "density": "regular",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "centered",
+          "features": "bento",
+          "proof": "logos-text",
+          "cta": "band",
+          "footer": "columns"
+        },
+        "app": {
+          "shell": "topbar",
+          "table": "comfortable",
+          "detail": "drawer"
+        }
+      },
+      "best_page_types": [
+        "app",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "glass with nothing behind it",
+        "low contrast text on glass"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.bento-showcase",
+      "kind": "style",
+      "name": "Bento showcase",
+      "family": "technical",
+      "summary": "A grid of unequal cells, each showing one real product capability with a small mono caption.",
+      "traits": [
+        "unequal grid cells",
+        "real product shots",
+        "mono captions",
+        "medium radius",
+        "hairline borders"
+      ],
+      "signals": [
+        "capable",
+        "modern",
+        "organised",
+        "confident"
+      ],
+      "radius_scale": "md",
+      "shadow": "hairline",
+      "density": "compact",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "product-shot",
+          "features": "bento",
+          "proof": "stats-sourced",
+          "cta": "inline",
+          "footer": "columns"
+        }
+      },
+      "best_page_types": [
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "six identical cards",
+        "cells with icons instead of product"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.poster-type",
+      "kind": "style",
+      "name": "Poster type",
+      "family": "bold",
+      "summary": "Display type at poster scale is the image; everything else is small, aligned and quiet.",
+      "traits": [
+        "huge display type",
+        "tight tracking",
+        "small body",
+        "square corners",
+        "asymmetry"
+      ],
+      "signals": [
+        "bold",
+        "confident",
+        "cultural",
+        "direct"
+      ],
+      "radius_scale": "none",
+      "shadow": "none",
+      "density": "airy",
+      "layout_defaults": {
+        "marketing": {
+          "hero": "poster",
+          "features": "list",
+          "proof": "quote",
+          "cta": "band",
+          "footer": "minimal"
+        },
+        "content": {
+          "header": "masthead",
+          "article": "single",
+          "list": "cards"
+        }
+      },
+      "best_page_types": [
+        "content",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "one word in a different colour",
+        "italic serif as the only idea"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "style.data-dense",
+      "kind": "style",
+      "name": "Data dense",
+      "family": "technical",
+      "summary": "Tables first: tabular numerals, tight rows, sidebar navigation, colour reserved for status.",
+      "traits": [
+        "tables first",
+        "tabular numerals",
+        "tight rows",
+        "sidebar",
+        "status colour only"
+      ],
+      "signals": [
+        "precise",
+        "serious",
+        "efficient",
+        "trustworthy"
+      ],
+      "radius_scale": "sm",
+      "shadow": "hairline",
+      "density": "compact",
+      "layout_defaults": {
+        "app": {
+          "shell": "sidebar",
+          "table": "dense",
+          "detail": "panel"
+        },
+        "marketing": {
+          "hero": "split",
+          "features": "list",
+          "proof": "stats-sourced",
+          "cta": "inline",
+          "footer": "columns"
+        }
+      },
+      "best_page_types": [
+        "app",
+        "marketing"
+      ],
+      "tells_to_avoid": [
+        "cards around every table",
+        "charts as decoration"
+      ],
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.saas",
+      "kind": "product-type",
+      "name": "SaaS product",
+      "aliases": [
+        "saas",
+        "b2b",
+        "software",
+        "platform",
+        "startup",
+        "web app marketing"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "trust",
+        "clarity"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.developer-tool",
+      "kind": "product-type",
+      "name": "Developer tool",
+      "aliases": [
+        "devtool",
+        "api",
+        "sdk",
+        "cli",
+        "infrastructure",
+        "database",
+        "devops",
+        "open source"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "precision",
+        "speed"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.fintech",
+      "kind": "product-type",
+      "name": "Fintech",
+      "aliases": [
+        "finance",
+        "banking",
+        "payments",
+        "investing",
+        "insurance",
+        "accounting",
+        "crypto"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "trust",
+        "precision"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.ecommerce",
+      "kind": "product-type",
+      "name": "E-commerce",
+      "aliases": [
+        "shop",
+        "store",
+        "retail",
+        "d2c",
+        "products",
+        "merch"
+      ],
+      "page_type": "store",
+      "needs": [
+        "imagery",
+        "speed"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.luxury-commerce",
+      "kind": "product-type",
+      "name": "Luxury commerce",
+      "aliases": [
+        "luxury",
+        "fashion",
+        "jewellery",
+        "jewelry",
+        "watches",
+        "couture",
+        "high-end"
+      ],
+      "page_type": "store",
+      "needs": [
+        "imagery",
+        "restraint"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.portfolio",
+      "kind": "product-type",
+      "name": "Portfolio",
+      "aliases": [
+        "personal site",
+        "designer portfolio",
+        "photographer",
+        "freelancer",
+        "cv",
+        "resume"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "personality"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.agency",
+      "kind": "product-type",
+      "name": "Agency or studio",
+      "aliases": [
+        "studio",
+        "consultancy",
+        "design agency",
+        "creative agency",
+        "firm"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "personality",
+        "proof"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.editorial",
+      "kind": "product-type",
+      "name": "Editorial or blog",
+      "aliases": [
+        "blog",
+        "magazine",
+        "newsletter",
+        "publication",
+        "journal",
+        "news"
+      ],
+      "page_type": "content",
+      "needs": [
+        "readability"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.dashboard",
+      "kind": "product-type",
+      "name": "Dashboard or admin",
+      "aliases": [
+        "admin",
+        "analytics",
+        "back office",
+        "internal tool",
+        "console",
+        "ops"
+      ],
+      "page_type": "app",
+      "needs": [
+        "density",
+        "clarity"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.health",
+      "kind": "product-type",
+      "name": "Health and wellness",
+      "aliases": [
+        "healthcare",
+        "clinic",
+        "wellness",
+        "fitness",
+        "mental health",
+        "therapy",
+        "medical"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "trust",
+        "calm"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.education",
+      "kind": "product-type",
+      "name": "Education",
+      "aliases": [
+        "course",
+        "school",
+        "learning",
+        "university",
+        "tutoring",
+        "bootcamp",
+        "edtech"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "clarity",
+        "friendliness"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.ai-product",
+      "kind": "product-type",
+      "name": "AI product",
+      "aliases": [
+        "ai",
+        "llm",
+        "assistant",
+        "copilot",
+        "agent",
+        "machine learning",
+        "model"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "trust",
+        "clarity"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.nonprofit",
+      "kind": "product-type",
+      "name": "Nonprofit",
+      "aliases": [
+        "charity",
+        "ngo",
+        "foundation",
+        "cause",
+        "community organisation",
+        "donation"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "warmth",
+        "trust"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.mobile-app",
+      "kind": "product-type",
+      "name": "Mobile app marketing",
+      "aliases": [
+        "app store",
+        "ios app",
+        "android app",
+        "app landing"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "product shots"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.documentation",
+      "kind": "product-type",
+      "name": "Documentation",
+      "aliases": [
+        "docs",
+        "developer docs",
+        "knowledge base",
+        "handbook",
+        "wiki",
+        "reference"
+      ],
+      "page_type": "content",
+      "needs": [
+        "readability",
+        "navigation"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.community",
+      "kind": "product-type",
+      "name": "Community",
+      "aliases": [
+        "forum",
+        "social",
+        "membership",
+        "club",
+        "network"
+      ],
+      "page_type": "app",
+      "needs": [
+        "friendliness"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.event",
+      "kind": "product-type",
+      "name": "Event or conference",
+      "aliases": [
+        "conference",
+        "meetup",
+        "festival",
+        "summit",
+        "webinar",
+        "launch event"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "energy",
+        "dates"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.local-business",
+      "kind": "product-type",
+      "name": "Local business",
+      "aliases": [
+        "restaurant",
+        "cafe",
+        "bakery",
+        "salon",
+        "gym",
+        "dentist",
+        "plumber",
+        "boutique",
+        "hotel"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "warmth",
+        "contact"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.marketplace",
+      "kind": "product-type",
+      "name": "Marketplace",
+      "aliases": [
+        "two-sided",
+        "listings",
+        "booking",
+        "rentals",
+        "gig"
+      ],
+      "page_type": "app",
+      "needs": [
+        "density",
+        "trust"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.real-estate",
+      "kind": "product-type",
+      "name": "Real estate",
+      "aliases": [
+        "property",
+        "homes",
+        "architecture",
+        "interiors",
+        "construction"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "imagery",
+        "trust"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.travel",
+      "kind": "product-type",
+      "name": "Travel and hospitality",
+      "aliases": [
+        "hotel",
+        "tourism",
+        "airline",
+        "trips",
+        "experiences"
+      ],
+      "page_type": "marketing",
+      "needs": [
+        "imagery",
+        "warmth"
+      ],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "product-type.general-website",
+      "kind": "product-type",
+      "name": "General website",
+      "aliases": [
+        "website",
+        "site",
+        "landing page",
+        "homepage",
+        "other"
+      ],
+      "page_type": "marketing",
+      "needs": [],
+      "source": "docs/research/2026-10-30-template-survey-and-live-sources.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.85
+    },
+    {
+      "id": "mood.calm",
+      "kind": "mood",
+      "name": "Calm",
+      "aliases": [
+        "serene",
+        "quiet",
+        "relaxed",
+        "soothing",
+        "peaceful"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.bold",
+      "kind": "mood",
+      "name": "Bold",
+      "aliases": [
+        "loud",
+        "striking",
+        "punchy",
+        "strong"
+      ],
+      "motion_level": 2,
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.trustworthy",
+      "kind": "mood",
+      "name": "Trustworthy",
+      "aliases": [
+        "reliable",
+        "credible",
+        "safe",
+        "secure",
+        "dependable"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "cool",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.playful",
+      "kind": "mood",
+      "name": "Playful",
+      "aliases": [
+        "fun",
+        "cheerful",
+        "whimsical",
+        "lively"
+      ],
+      "motion_level": 2,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.premium",
+      "kind": "mood",
+      "name": "Premium",
+      "aliases": [
+        "luxurious",
+        "high-end",
+        "exclusive",
+        "upscale",
+        "refined"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "neutral",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.technical",
+      "kind": "mood",
+      "name": "Technical",
+      "aliases": [
+        "engineering",
+        "developer",
+        "hacker",
+        "systems"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "cool",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.warm",
+      "kind": "mood",
+      "name": "Warm",
+      "aliases": [
+        "inviting",
+        "homely",
+        "earthy",
+        "comforting"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.minimal",
+      "kind": "mood",
+      "name": "Minimal",
+      "aliases": [
+        "simple",
+        "clean",
+        "sparse",
+        "uncluttered",
+        "essential"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "neutral",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.energetic",
+      "kind": "mood",
+      "name": "Energetic",
+      "aliases": [
+        "dynamic",
+        "vibrant",
+        "exciting",
+        "fast"
+      ],
+      "motion_level": 2,
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.friendly",
+      "kind": "mood",
+      "name": "Friendly",
+      "aliases": [
+        "approachable",
+        "welcoming",
+        "kind",
+        "human"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.serious",
+      "kind": "mood",
+      "name": "Serious",
+      "aliases": [
+        "formal",
+        "professional",
+        "corporate",
+        "sober"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "cool",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.modern",
+      "kind": "mood",
+      "name": "Modern",
+      "aliases": [
+        "contemporary",
+        "current",
+        "fresh",
+        "sleek"
+      ],
+      "motion_level": 1,
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.classic",
+      "kind": "mood",
+      "name": "Classic",
+      "aliases": [
+        "traditional",
+        "heritage",
+        "established",
+        "timeless"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.futuristic",
+      "kind": "mood",
+      "name": "Futuristic",
+      "aliases": [
+        "sci-fi",
+        "next-gen",
+        "cutting-edge",
+        "space"
+      ],
+      "motion_level": 2,
+      "temperature_hint": "cool",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.elegant",
+      "kind": "mood",
+      "name": "Elegant",
+      "aliases": [
+        "graceful",
+        "sophisticated",
+        "polished",
+        "tasteful"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "neutral",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.raw",
+      "kind": "mood",
+      "name": "Raw",
+      "aliases": [
+        "unpolished",
+        "honest",
+        "gritty",
+        "underground",
+        "punk"
+      ],
+      "motion_level": 1,
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.cozy",
+      "kind": "mood",
+      "name": "Cozy",
+      "aliases": [
+        "cosy",
+        "snug",
+        "homemade",
+        "artisan",
+        "handmade"
+      ],
+      "motion_level": 1,
+      "temperature_hint": "warm",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.precise",
+      "kind": "mood",
+      "name": "Precise",
+      "aliases": [
+        "exact",
+        "accurate",
+        "rigorous",
+        "sharp"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "cool",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.confident",
+      "kind": "mood",
+      "name": "Confident",
+      "aliases": [
+        "assured",
+        "assertive",
+        "direct",
+        "ambitious"
+      ],
+      "motion_level": 1,
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    },
+    {
+      "id": "mood.quiet",
+      "kind": "mood",
+      "name": "Quiet",
+      "aliases": [
+        "understated",
+        "subtle",
+        "muted",
+        "soft-spoken",
+        "restrained"
+      ],
+      "motion_level": 0,
+      "temperature_hint": "neutral",
+      "source": "docs/research/2026-10-30-design-directions-motion-platform.md",
+      "added": "2026-10-30",
+      "last_verified": "2026-10-30",
+      "confidence": 0.8
+    }
+  ],
+  "edges": [
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.input-edge-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.image-corner-sm",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.focus-ring-offset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.scroll-progress-bar",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.underline-grow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.page-slide-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.accordion-height",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "icon-set.phosphor",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.input-edge-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.card-edge-flat",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.nav-compact",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.divider-rule",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.tab-indicator-slide",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.underline-grow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.page-slide-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "icon-set.radix",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.button-fill-outline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.input-edge-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.nav-compact",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.image-corner-sm",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.focus-ring-offset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.link-style-both",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.enter-scale-95",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.tab-indicator-slide",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.accordion-height",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.layout-flip",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "icon-set.lucide",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.button-shape-pill",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.card-edge-shadow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.nav-floating",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.image-corner-lg",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.focus-ring-glow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "treatment.elevation-one",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.toast-slide-in",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.switch-thumb-spring",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.layout-flip",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.spring-pop",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.soft-product",
+      "to": "icon-set.heroicons",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.button-fill-soft",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.nav-sidebar",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.image-corner-sm",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.focus-ring-glow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.enter-scale-95",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.skeleton-shimmer",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.tab-indicator-slide",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.ambient-glow-slow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "icon-set.lucide",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.dark-console",
+      "to": "platform-feature.color-mix",
+      "kind": "requires",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.button-shape-pill",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.card-edge-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.nav-floating",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.image-corner-lg",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.focus-ring-glow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "treatment.elevation-layered",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.number-count-up",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.ambient-glow-slow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "icon-set.lucide",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "platform-feature.color-mix",
+      "kind": "requires",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "platform-feature.backdrop-filter",
+      "kind": "requires",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.button-fill-outline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.input-edge-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.card-edge-flat",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.underline-grow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "icon-set.phosphor",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.input-edge-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.nav-compact",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.divider-rule",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.link-style-both",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.spring-pop",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "icon-set.tabler",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.button-shape-pill",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.card-edge-shadow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.image-corner-lg",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.focus-ring-offset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "treatment.elevation-one",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.toast-slide-in",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.switch-thumb-spring",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.spring-pop",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.card-tilt-subtle",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "icon-set.phosphor",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.button-shape-pill",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.button-fill-soft",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.card-edge-flat",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.image-corner-lg",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.focus-ring-offset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.accordion-height",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.warm-organic",
+      "to": "icon-set.phosphor",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.input-edge-filled",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.card-edge-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.nav-floating",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.divider-space",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.image-corner-sm",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.focus-ring-glow",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "treatment.elevation-layered",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.enter-scale-95",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.switch-thumb-spring",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.page-slide-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.spring-pop",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "icon-set.heroicons",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "platform-feature.backdrop-filter",
+      "kind": "requires",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "platform-feature.color-mix",
+      "kind": "requires",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.button-shape-rounded",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.button-fill-solid",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.input-edge-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.nav-compact",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.image-corner-sm",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.focus-ring-offset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.link-style-colour",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "treatment.elevation-one",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.hover-lift-2",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.enter-fade-up-8",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.number-count-up",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.card-tilt-subtle",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.bento-showcase",
+      "to": "icon-set.lucide",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.button-fill-outline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.input-edge-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.card-edge-flat",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.nav-airy",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.divider-rule",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.link-style-underline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.page-crossfade-vt",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.underline-grow",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.scroll-reveal-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.hero-mask-reveal",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "icon-set.radix",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.button-shape-square",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.button-fill-outline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.input-edge-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.card-edge-border",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.nav-sidebar",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.divider-hairline",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.image-corner-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.focus-ring-inset",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.link-style-both",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "treatment.elevation-none",
+      "kind": "defaults_to",
+      "weight": 1.0,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.hover-tint",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.enter-scale-95",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.skeleton-shimmer",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.tab-indicator-slide",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.menu-stagger-30",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.accordion-height",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.layout-flip",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.press-scale-97",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.exit-fade-fast",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.button-loading-swap",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "motion-pattern.focus-ring-pulse-once",
+      "kind": "defaults_to",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "icon-set.tabler",
+      "kind": "pairs_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.neo-brutalist",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.quiet-luxury",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.paper-editorial",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.luminous-dark",
+      "to": "style.paper-editorial",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.mono-engineering",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.playful-geometric",
+      "to": "style.mono-engineering",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.swiss-grid",
+      "to": "style.glass-layered",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.glass-layered",
+      "to": "style.swiss-grid",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.data-dense",
+      "to": "style.poster-type",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "style.poster-type",
+      "to": "style.data-dense",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.bento-showcase",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.luminous-dark",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.saas",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.dark-console",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.bento-showcase",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.luminous-dark",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.developer-tool",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.data-dense",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ecommerce",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ecommerce",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ecommerce",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ecommerce",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ecommerce",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.luxury-commerce",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "product-type.luxury-commerce",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.luxury-commerce",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.luxury-commerce",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.neo-brutalist",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.portfolio",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.neo-brutalist",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.agency",
+      "to": "style.glass-layered",
+      "kind": "suits",
+      "weight": 0.4,
+      "evidence": []
+    },
+    {
+      "from": "product-type.editorial",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "product-type.editorial",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.editorial",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.editorial",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.dashboard",
+      "to": "style.data-dense",
+      "kind": "suits",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "product-type.dashboard",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "product-type.dashboard",
+      "to": "style.dark-console",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.dashboard",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.4,
+      "evidence": []
+    },
+    {
+      "from": "product-type.education",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "product-type.education",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.education",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.education",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.luminous-dark",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.bento-showcase",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.ai-product",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.nonprofit",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.nonprofit",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.nonprofit",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.nonprofit",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.mobile-app",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.mobile-app",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.mobile-app",
+      "to": "style.glass-layered",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.mobile-app",
+      "to": "style.luminous-dark",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.data-dense",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.community",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "product-type.community",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.community",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.community",
+      "to": "style.dark-console",
+      "kind": "suits",
+      "weight": 0.4,
+      "evidence": []
+    },
+    {
+      "from": "product-type.event",
+      "to": "style.poster-type",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.event",
+      "to": "style.neo-brutalist",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.event",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.event",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.local-business",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.local-business",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.local-business",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.local-business",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.marketplace",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.marketplace",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.marketplace",
+      "to": "style.data-dense",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.marketplace",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "product-type.real-estate",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "product-type.real-estate",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.real-estate",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.real-estate",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.travel",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.85,
+      "evidence": []
+    },
+    {
+      "from": "product-type.travel",
+      "to": "style.quiet-luxury",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.travel",
+      "to": "style.playful-geometric",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.travel",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.paper-editorial",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.soft-product",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.swiss-grid",
+      "kind": "suits",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.mono-engineering",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.general-website",
+      "to": "style.warm-organic",
+      "kind": "suits",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.health",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.luxury-commerce",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.documentation",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.nonprofit",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.dashboard",
+      "to": "style.poster-type",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "product-type.fintech",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.warm-organic",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.calm",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.neo-brutalist",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.bold",
+      "to": "style.warm-organic",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.trustworthy",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.trustworthy",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.trustworthy",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.trustworthy",
+      "to": "style.data-dense",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.trustworthy",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.playful-geometric",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.neo-brutalist",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.soft-product",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.playful",
+      "to": "style.data-dense",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.luminous-dark",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.premium",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.dark-console",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.data-dense",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.bento-showcase",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.warm-organic",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.technical",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.warm-organic",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.playful-geometric",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.dark-console",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.warm",
+      "to": "style.swiss-grid",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.glass-layered",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.minimal",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.energetic",
+      "to": "style.playful-geometric",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.energetic",
+      "to": "style.luminous-dark",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.energetic",
+      "to": "style.neo-brutalist",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.energetic",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.energetic",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.friendly",
+      "to": "style.soft-product",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.friendly",
+      "to": "style.warm-organic",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.friendly",
+      "to": "style.playful-geometric",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.friendly",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.friendly",
+      "to": "style.data-dense",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.data-dense",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.serious",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.modern",
+      "to": "style.soft-product",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.modern",
+      "to": "style.bento-showcase",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.modern",
+      "to": "style.glass-layered",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.modern",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.classic",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.luminous-dark",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.dark-console",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.glass-layered",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.paper-editorial",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.futuristic",
+      "to": "style.warm-organic",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.elegant",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.elegant",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.elegant",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.5,
+      "evidence": []
+    },
+    {
+      "from": "mood.elegant",
+      "to": "style.neo-brutalist",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.raw",
+      "to": "style.neo-brutalist",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.raw",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.raw",
+      "to": "style.soft-product",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.raw",
+      "to": "style.quiet-luxury",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.cozy",
+      "to": "style.warm-organic",
+      "kind": "expresses",
+      "weight": 0.95,
+      "evidence": []
+    },
+    {
+      "from": "mood.cozy",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.cozy",
+      "to": "style.dark-console",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.cozy",
+      "to": "style.swiss-grid",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.data-dense",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.warm-organic",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.precise",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.confident",
+      "to": "style.poster-type",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.confident",
+      "to": "style.swiss-grid",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.confident",
+      "to": "style.bento-showcase",
+      "kind": "expresses",
+      "weight": 0.7,
+      "evidence": []
+    },
+    {
+      "from": "mood.confident",
+      "to": "style.luminous-dark",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.quiet",
+      "to": "style.quiet-luxury",
+      "kind": "expresses",
+      "weight": 0.9,
+      "evidence": []
+    },
+    {
+      "from": "mood.quiet",
+      "to": "style.paper-editorial",
+      "kind": "expresses",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.quiet",
+      "to": "style.mono-engineering",
+      "kind": "expresses",
+      "weight": 0.6,
+      "evidence": []
+    },
+    {
+      "from": "mood.quiet",
+      "to": "style.luminous-dark",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    },
+    {
+      "from": "mood.quiet",
+      "to": "style.playful-geometric",
+      "kind": "avoid_with",
+      "weight": 0.8,
+      "evidence": []
+    }
+  ]
+}
