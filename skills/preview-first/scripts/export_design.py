@@ -182,11 +182,9 @@ def _ideas_md(p: Prepared) -> str:
     rows = []
     for i in p.ideas:
         where = "in the draft" if i.get("renders") else "for the build"
-        seen = ", ".join(i.get("seen_on", [])[:3])
-        rows.append("- **%s** (%s, %s). %s Build: %s%s%s" % (
+        rows.append("- **%s** (%s, %s). %s Build: %s%s" % (
             i["name"], i.get("category", ""), where, i.get("what", ""), i.get("implementation", ""),
-            (" Pitfall: %s" % i["pitfalls"]) if i.get("pitfalls") else "",
-            (" Seen on %s." % seen) if seen else ""))
+            (" Pitfall: %s" % i["pitfalls"]) if i.get("pitfalls") else ""))
     return "\n".join(rows)
 
 
@@ -231,7 +229,6 @@ The first screen is not the generic template (centred headline, two buttons, scr
 
 - Hero: **{p.layout.get("hero", "see draft")}**. Sections: {", ".join("%s %s" % (k, v) for k, v in sorted(p.layout.items()) if k != "hero") or "per the draft"}.
 - Artwork: **{(p.style.get("art") or {}).get("hero", "none")}** in the hero, **{(p.style.get("art") or {}).get("feature", "none")}** in sections; generated from the palette, replace with real product imagery or photography of equal weight, never stock.
-- Inspired by: {", ".join(p.style.get("inspired_by", [])) or "the reference sites cited in the graph"}.
 
 ## Design ideas
 

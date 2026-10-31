@@ -351,6 +351,7 @@
         "page_type"
       ],
       "optional": [
+        "kit",
         "needs",
         "notes"
       ],
@@ -560,7 +561,18 @@
         "app-kanban",
         "app-feed",
         "app-bottom-tabs",
-        "app-focus"
+        "app-focus",
+        "type-dot-matrix",
+        "motion-char-reveal",
+        "motion-scramble",
+        "motion-variable-weight",
+        "motion-velocity-skew",
+        "motion-pointer-grid",
+        "motion-trail",
+        "texture-stripes",
+        "motion-blink",
+        "image-rotating-badge",
+        "cta-pinned"
       ]
     }
   },

@@ -295,3 +295,6 @@ code { font-family: var(--pfc-mono); font-size: 0.85em; }
   .pf-root *, .pf-root *::before, .pf-root *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   .pf-motion-demo.is-playing .pf-demo-el { animation-name: pf-d-crossfade; animation-duration: 200ms !important; }
 }
+
+.pfc-shuffle { background: transparent; color: var(--pfc-fg); border-color: var(--pfc-line); margin-right: 8px; }
+.pfc-shuffle:disabled { opacity: .6; cursor: progress; }

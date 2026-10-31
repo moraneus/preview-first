@@ -51,7 +51,10 @@ contract for the builder. Hooks by group:
 | Motion | `motion-line-reveal`, `motion-cursor`, `motion-magnetic`, `motion-preloader`, `motion-count-up`, `motion-hover-swap`, `motion-scroll-progress`, `motion-view-transitions` | line mask reveal on the headline, custom cursor (fine pointers, never in embeds), magnetic primary buttons, counter preloader at level 3, count-up figures, hover image swap, a 1px progress hairline, cross-page transitions |
 | Imagery | `image-duotone`, `image-dither`, `image-ascii`, `image-caption`, `image-sticker` | duotone filter on artwork, dithered or ASCII hero art, figure captions, rotated stickers with true words |
 | Colour | `color-blocking`, `color-inverted-section`, `color-single-accent` | full-bleed blocks in bg, primary and ink; the last two sections inverted to ink; accent equals primary |
+| Liveness | `type-dot-matrix`, `motion-char-reveal`, `motion-scramble`, `motion-variable-weight`, `motion-velocity-skew`, `motion-pointer-grid`, `motion-trail`, `texture-stripes`, `motion-blink`, `image-rotating-badge`, `cta-pinned` | dot-matrix headline, per-character reveal, decode scramble, weight following the pointer, tickers leaning with scroll, a pointer-reactive dot grid behind the hero, artwork trail, moving stripes, a blinking caret on the action, a slow rotating stamp, a pinned action bar |
 | Store, content, app | `store-lookbook`, `store-tiles`, `store-editorial-grid`, `store-sticky-buy`, `content-broadsheet`, `content-side-notes`, `content-archive`, `app-rail`, `app-bottom-tabs`, `app-focus`, `app-board`, `app-cards`, `app-kanban`, `app-feed`, `app-ledger`, `app-inspector`, `app-command-palette` | the page-type variants of the same names |
+
+Topic components (`data-section="topic"`) are not hooks: they come from the product type's `kit` and render after the first screen; set `layout.topic` to `none` to drop them.
 
 Motion hooks respect `prefers-reduced-motion`, the motion level and the reduced-motion
 simulation switch; the cursor and preloader never run inside gallery thumbnails or device

@@ -9,7 +9,7 @@ E = html.escape
 
 NAV_VARIANTS = ["bar", "split-meta", "menu-word", "pill", "rail"]
 _NAV_HOOKS = (("nav-split-meta", "split-meta"), ("nav-menu-word", "menu-word"), ("nav-pill", "pill"), ("nav-rail", "rail"), ("nav-bar", "bar"))
-VERSION_LINE = "v0.4.1"
+VERSION_LINE = "v0.5.0"
 
 
 def hooks(p) -> set:
@@ -248,3 +248,77 @@ def with_class(section_html: str, cls: str) -> str:
     if not cls:
         return section_html
     return re.sub(r'^(<section class="[^"]*)"', r'\1 %s"' % cls, section_html, count=1)
+
+
+# ---------------------------------------------------------------- topic components
+
+def kit(p) -> dict:
+    return dict(getattr(p, "kit", {}) or {})
+
+
+def topic_block(p) -> str:
+    """A component that belongs to this kind of product (a terminal, a balance, a schedule, a composer),
+    placed after the first screen so the page reads as the product and not as a template."""
+    from . import art  # local import to avoid a cycle
+    k = kit(p).get("component") or "none"
+    feats = features(p)
+    name = E(brand(p))
+    if k == "none" or explicit(p, "topic") == "none":
+        return ""
+    if k == "terminal":
+        lines = "".join('<div><span class="pfd-term-prompt">$</span> %s</div>' % E(f["title"].lower().replace(" ", "-")) for f in feats[:4])
+        inner = '<div class="pfd-term"><div class="pfd-term-bar"><span></span><span></span><span></span><span class="pfd-index">%s</span></div><pre class="pfd-term-body">%s<div><span class="pfd-term-prompt">$</span> <span class="pfd-cursor">█</span></div></pre></div>' % (name, lines)
+    elif k == "composer":
+        chips = "".join('<button class="pf-btn pf-btn-secondary pf-btn-sm" type="button">%s</button>' % E(f["title"]) for f in feats[:3])
+        inner = ('<div class="pfd-composer"><div class="pfd-composer-box"><p class="pf-muted">%s</p><div class="pfd-composer-row"><span class="pfd-index">%s</span><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button></div></div><div class="pf-row">%s</div></div>') % (
+            E("Ask %s about %s" % (brand(p), feats[0]["title"].lower())), E("Sources shown with every answer"), E(p.copy.get("cta_primary", "Ask")), chips)
+    elif k == "balance":
+        rows = "".join('<li><span>%s</span><span class="pfd-num">%s</span></li>' % (E(f["title"]), ("+" if i % 2 else "-") + "%d.00" % (120 + i * 37)) for i, f in enumerate(feats[:4]))
+        inner = '<div class="pfd-balance"><span class="pfd-index">%s</span><span class="pfd-balance-figure">4,250.00</span><ul class="pfd-balance-list">%s</ul><p class="pf-small">Sample figures; the build shows real ones.</p></div>' % (E("Balance"), rows)
+    elif k == "product-row":
+        tiles = "".join('<a class="pfd-topic-tile" href="#">%s<span>%s</span><span class="pfd-price">%s</span></a>' % (art.render("object", seed="%s-tp%d" % (p.id, i)), E(f["title"]), ["48.00", "140.00", "32.00", "26.00"][i % 4]) for i, f in enumerate(feats[:4]))
+        inner = '<div class="pfd-topic-row">%s</div>' % tiles
+    elif k == "work-list":
+        rows = "".join('<a class="pfd-hover-row" href="#"><span class="pfd-hover-title">%s</span><span class="pfd-hover-meta">%s</span>%s</a>' % (E(f["title"]), E(brand(p)), index_label(p, i + 1, len(feats))) for i, f in enumerate(feats[:5]))
+        inner = '<div class="pfd-hover-list">%s</div>' % rows
+    elif k == "article-list":
+        rows = "".join('<a class="pfd-archive-row" href="#"><span class="pfd-index">%s</span><span class="pfd-archive-title">%s</span><span class="pfd-archive-meta">%s</span></a>' % (E("2026.%02d" % (10 - i)), E(f["title"]), E("%d min" % (4 + i * 2))) for i, f in enumerate(feats[:4]))
+        inner = '<div class="pfd-archive">%s</div>' % rows
+    elif k == "metrics":
+        cells = "".join('<div class="pfd-metric"><span class="pfd-index">%s</span><span class="pfd-metric-figure" data-count="%s">%s</span>%s</div>' % (E(f["title"]), v, v, art.render("figure", seed="%s-mt%d" % (p.id, i + 11))) for i, (f, v) in enumerate(zip(feats[:4], ["1,284", "97.2", "312", "48"])))
+        inner = '<div class="pfd-metrics">%s</div><p class="pf-small">Sample figures; the build shows real ones.</p>' % cells
+    elif k == "rings":
+        rings = "".join('<figure class="pfd-ring" style="--v:%d"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="var(--pf-color-border)" stroke-width="10"/><circle cx="60" cy="60" r="52" fill="none" stroke="var(--pf-color-primary)" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="var(--v) 100" transform="rotate(-90 60 60)"/></svg><figcaption><strong>%d%%</strong><span>%s</span></figcaption></figure>' % (v, v, E(f["title"])) for f, v in zip(feats[:3], (72, 48, 90)))
+        inner = '<div class="pfd-rings">%s</div>' % rings
+    elif k == "progress":
+        steps = "".join('<li class="%s"><span class="pfd-index">%02d</span><span>%s</span></li>' % ("is-done" if i < 2 else "", i + 1, E(f["title"])) for i, f in enumerate(feats[:5]))
+        inner = '<ol class="pfd-progress">%s</ol>' % steps
+    elif k == "phone":
+        inner = ('<div class="pfd-phone"><div class="pfd-phone-screen"><div class="pfd-phone-bar"><time data-live-time></time></div><h3>%s</h3><p>%s</p><button class="pf-btn pf-btn-primary" type="button">%s</button></div></div>') % (E(feats[0]["title"]), E(feats[0]["body"]), E(p.copy.get("cta_primary", "Open")))
+    elif k == "toc":
+        rows = "".join('<li><a href="#">%s</a><span class="pfd-index">%s</span></li>' % (E(f["title"]), E("%d.%d" % (1, i + 1))) for i, f in enumerate(feats[:5]))
+        inner = '<div class="pfd-toc-block"><p class="pfd-index">Contents</p><ol>%s</ol></div>' % rows
+    elif k == "feed":
+        rows = "".join('<li class="pfd-feed-item"><span class="pfd-avatar" aria-hidden="true"></span><div><strong>%s</strong> <span class="pf-muted">%s</span></div><time class="pfd-index">%s</time></li>' % (E(brand(p)), E(f["title"].lower()), E("%dh" % (i + 1))) for i, f in enumerate(feats[:4]))
+        inner = '<ol class="pfd-feed">%s</ol>' % rows
+    elif k == "schedule":
+        rows = "".join('<div class="pfd-sched-row"><time class="pfd-index">%02d:00</time><strong>%s</strong><span class="pf-muted">%s</span></div>' % (10 + i * 2, E(f["title"]), E(_short(f["body"]))) for i, f in enumerate(feats[:4]))
+        inner = '<div class="pfd-sched">%s</div>' % rows
+    elif k == "hours":
+        days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        rows = "".join('<div><span>%s</span><span class="pfd-num">%s</span></div>' % (d, "Closed" if i == 6 else "09:00 to 18:00") for i, d in enumerate(days))
+        inner = '<div class="pfd-hours"><p class="pfd-index">Opening hours</p>%s<button class="pf-btn pf-btn-primary" type="button">%s</button></div>' % (rows, E(p.copy.get("cta_primary", "Book")))
+    elif k == "spec-sheet":
+        rows = "".join('<div><dt>%s</dt><dd>%s</dd></div>' % (E(f["title"]), E(_short(f["body"]))) for f in feats[:4])
+        inner = '<dl class="pfd-spec-sheet">%s</dl>' % rows
+    elif k == "itinerary":
+        rows = "".join('<li><span class="pfd-index">Day %d</span><strong>%s</strong><span class="pf-muted">%s</span></li>' % (i + 1, E(f["title"]), E(_short(f["body"]))) for i, f in enumerate(feats[:4]))
+        inner = '<div class="pfd-itin">%s<ol>%s</ol></div>' % (art.render("globe", seed=p.id + "-it"), rows)
+    else:  # product-window
+        inner = art.render("ui_mock", seed=p.id + "-topic")
+    return '<section class="pfd-topic pfd-topic-%s" data-section="topic" data-variant="%s">%s</section>' % (E(k), E(k), inner)
+
+
+def _short(text: str) -> str:
+    first = text.split(". ")[0]
+    return first if len(first) <= 56 else first[:56].rsplit(" ", 1)[0]

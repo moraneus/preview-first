@@ -34,6 +34,7 @@ from validate_graph import validate_file  # noqa: E402
 
 LOCAL_HOSTS = {"localhost", "127.0.0.1", "[::1]", "::1"}
 PING_PATH = "/__pf/ping"
+_SHUFFLE_LOCK = threading.Lock()
 MAX_BODY = 64 * 1024
 
 
@@ -88,7 +89,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if not self._guard():
             return
-        if self.path.split("?", 1)[0] != "/select":
+        route = self.path.split("?", 1)[0]
+        if route not in ("/select", "/shuffle"):
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         # Cross-site protection: a foreign page cannot send application/json without a CORS
@@ -113,6 +115,9 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         except (ValueError, UnicodeDecodeError):
             self.send_error(HTTPStatus.BAD_REQUEST, "body must be JSON")
             return
+        if route == "/shuffle":
+            self._shuffle()
+            return
         problems = validate_file(body, "selection", _common.load_schema())
         if problems:
             self.send_error(HTTPStatus.BAD_REQUEST, "; ".join(problems[:3]))
@@ -126,6 +131,39 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         _common.dump_json(Path(self.directory) / "selection.json", body)
         self.send_response(HTTPStatus.NO_CONTENT)
         self.end_headers()
+
+    def _shuffle(self):
+        directory = Path(self.directory)
+        if not (directory / "directions.json").exists():
+            self.send_error(HTTPStatus.BAD_REQUEST, "no directions.json beside the preview")
+            return
+        try:
+            with _SHUFFLE_LOCK:
+                result = _shuffle_impl(directory)
+        except Exception as exc:  # the page shows the message; nothing else to do
+            self.send_error(HTTPStatus.INTERNAL_SERVER_ERROR, str(exc)[:200])
+            return
+        payload = json.dumps(result).encode("utf-8")
+        self.send_response(HTTPStatus.OK)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(payload)))
+        self.end_headers()
+        self.wfile.write(payload)
+
+
+def _shuffle_impl(directory: Path) -> dict:
+    """Append a random direction to directions.json beside the preview and rebuild in place."""
+    import random
+    from build_preview import build
+    from random_direction import random_direction
+    directions_path = directory / "directions.json"
+    directions = _common.load_json(directions_path)
+    graph = _common.load_graph()
+    d = random_direction(directions, graph, random.Random())
+    directions["directions"].append(d)
+    _common.dump_json(directions_path, directions)
+    build(directions, directory, graph, _common.load_devices())
+    return {"id": d["id"], "name": d["name"]}
 
 
 def _known_directions(directory: Path):

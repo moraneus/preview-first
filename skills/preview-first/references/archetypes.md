@@ -52,6 +52,10 @@ direction's palette so no section shows a wireframe.
 - Call to action `giant`: the lead, two actions, then the wordmark at poster size in 8 percent ink as a closing gesture.
 - Footer `giant`: the wordmark at poster size, one true sentence, the real links.
 
+## Topic components (`product-type.kit`)
+
+Each product type names artwork kinds, a component and its nouns. The component renders after the first screen: terminal (developer tools), composer (AI products), balance (fintech), product row (shops, marketplaces, luxury), work list (studios, portfolios), article list (editorial), metrics (dashboards), rings (health), progress (education, nonprofits), phone (mobile apps), contents (documentation), feed (communities), schedule (events), opening hours (local businesses), spec sheet (real estate), itinerary (travel). The hero's artwork falls back to the kit's first kind when the style's own kind is generic.
+
 ## Generated artwork (`style.art`)
 
 `drafts/art.py` renders deterministic SVG from the palette tokens, seeded by direction id so a

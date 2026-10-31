@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from . import art
 from ._shared import (E, block_classes, brand, buttons, caption, explicit, features, footer, has, headline, index_label,
-                      marquee, meta, nav, pick, section, stickers, vlabel, with_class)
+                      kit, marquee, meta, nav, pick, section, stickers, topic_block, vlabel, with_class)
 
 VARIANTS = {
     "nav": ["bar", "split-meta", "menu-word", "pill", "rail"],
@@ -34,7 +34,11 @@ def _art_kind(p, slot: str) -> str:
     for hook, kind in ART_HOOKS.items():
         if has(p, hook) and slot == "hero":
             return kind
-    return (p.style.get("art") or {}).get(slot) or ("ui_mock" if slot == "hero" else "figure")
+    styled = (p.style.get("art") or {}).get(slot)
+    topic = kit(p).get("art") or []
+    if slot == "hero" and styled in (None, "figure", "ui_mock") and topic:
+        return topic[sum(ord(ch) for ch in p.id) % len(topic)]  # the product's own kind of picture, varied per direction
+    return styled or ("ui_mock" if slot == "hero" else "figure")
 
 
 def _art(p, slot: str, label: str = "", n: int = 0) -> str:
@@ -321,6 +325,13 @@ def _poster_band(p) -> str:
             '<p class="pfd-poster-band-line">%s</p></section>') % (_art(p, "hero", n=9), E(brand(p)), E(p.copy.get("cta_line") or p.copy["headline"]))
 
 
+def _pinned(p) -> str:
+    if not has(p, "cta-pinned"):
+        return ""
+    return ('<div class="pfd-pinned" data-pinned-cta hidden><span>%s</span><button class="pf-btn pf-btn-primary pf-btn-sm" type="button">%s</button></div>') % (
+        E(p.copy.get("cta_line") or brand(p)), E(p.copy.get("cta_primary", "Start")))
+
+
 def render(p) -> str:
     order = ["hero", "features", "proof", "cta", "footer"]
     blocks = block_classes(p, order)
@@ -328,11 +339,13 @@ def render(p) -> str:
     parts = [
         nav(p),
         with_class(_hero(p, hero_v), blocks["hero"]),
+        topic_block(p),
         marquee(p),
         with_class(_features(p, pick(p, "features", VARIANTS["features"], FEATURE_HOOKS)), blocks["features"]),
         _poster_band(p),
         with_class(_proof(p, pick(p, "proof", VARIANTS["proof"], PROOF_HOOKS)), blocks["proof"]),
         with_class(_cta(p, pick(p, "cta", VARIANTS["cta"], CTA_HOOKS)), blocks["cta"]),
         with_class(footer(p, pick(p, "footer", VARIANTS["footer"], FOOTER_HOOKS)), blocks["footer"]),
+        _pinned(p),
     ]
     return "".join(parts)

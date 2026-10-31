@@ -110,6 +110,16 @@
     document.body.appendChild(el);
     setTimeout(function () { el.remove(); }, 4000);
   }
+  // Surprise me: ask the local server for a randomly composed direction, then show it.
+  document.querySelectorAll('[data-action="shuffle"]').forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      btn.disabled = true; var label = btn.textContent; btn.textContent = "Drawing";
+      fetch(new URL("/shuffle", location.origin), { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function (d) { location.href = d.id + "/draft.html"; })
+        .catch(function () { btn.disabled = false; btn.textContent = label; toast("Surprise me needs the local preview server (serve_preview.py). Ask Claude for a random direction instead."); });
+    });
+  });
   document.querySelectorAll('[data-action="select"]').forEach(function (btn) {
     btn.addEventListener("click", function () {
       var id = btn.getAttribute("data-direction");
@@ -475,6 +485,191 @@
         var i = Math.min(cards, 1 + Math.round(strip.scrollLeft / Math.max(1, strip.firstElementChild.getBoundingClientRect().width + 16)));
         if (counter) counter.textContent = ("0" + i).slice(-2) + " / " + ("0" + cards).slice(-2);
       }, { passive: true });
+    }
+  })();
+
+  // ------------------------------------------------------------ liveness hooks (0.5.0)
+  (function liveness() {
+    var page = document.querySelector(".pfd[data-hooks]");
+    if (!page) return;
+    var set = {};
+    (page.getAttribute("data-hooks") || "").split(" ").forEach(function (h) { if (h) set[h] = true; });
+    var embed = root.hasAttribute("data-embed");
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function level() { return parseInt(root.getAttribute("data-motion") || "1", 10); }
+    function moving() { return !reduce && !root.hasAttribute("data-reduced") && level() > 0; }
+    function fine() { return window.matchMedia("(pointer: fine)").matches; }
+    function cssVar(name) { return getComputedStyle(page).getPropertyValue(name).trim(); }
+    var hero = page.querySelector(".pfd-hero") || page;
+    var h1 = page.querySelector(".pfd-hero h1, .pfd-hero .pfd-statement, .pfd-hero .pfd-clip-word, .pfd-board-figure, .pfd-article h1");
+
+    // Dot-matrix headline: the text drawn as a field of dots that light up near the pointer.
+    if (set["type-dot-matrix"] && h1 && window.HTMLCanvasElement) {
+      h1.classList.add("pfd-dotmatrix-pending");
+      var dm = { dots: [], px: -9999, py: -9999, raf: null, cvs: null, ctx: null, w: 0, h: 0 };
+      var build = function () {
+        var rect = h1.getBoundingClientRect();
+        if (rect.width < 40 || rect.height < 20) return;
+        var cs = getComputedStyle(h1);
+        var dpr = Math.min(2, window.devicePixelRatio || 1);
+        var off = document.createElement("canvas"); off.width = Math.ceil(rect.width); off.height = Math.ceil(rect.height);
+        var octx = off.getContext("2d", { willReadFrequently: true });
+        octx.font = cs.fontWeight + " " + cs.fontSize + "/" + cs.lineHeight + " " + cs.fontFamily;
+        octx.fillStyle = "#000"; octx.textBaseline = "alphabetic";
+        // draw each rendered line of text at its own position using Range rects
+        var lines = [];
+        var walker = document.createTreeWalker(h1, NodeFilter.SHOW_TEXT);
+        var node; var range = document.createRange();
+        while ((node = walker.nextNode())) {
+          var text = node.textContent; var start = 0;
+          for (var i = 0; i <= text.length; i++) {
+            range.setStart(node, start); range.setEnd(node, i);
+            var rs = range.getClientRects();
+            if (rs.length > 1 || i === text.length) {
+              var endAt = rs.length > 1 ? i - 1 : i;
+              range.setStart(node, start); range.setEnd(node, endAt);
+              var r = range.getBoundingClientRect();
+              if (r.width > 0) lines.push({ text: text.slice(start, endAt), x: r.left - rect.left, y: r.bottom - rect.top - parseFloat(cs.fontSize) * 0.22 });
+              start = endAt;
+            }
+          }
+        }
+        lines.forEach(function (l) { octx.fillText(l.text.trim(), l.x, l.y); });
+        var size = parseFloat(cs.fontSize);
+        var step = Math.max(4, Math.round(size / 11));
+        var data = octx.getImageData(0, 0, off.width, off.height).data;
+        dm.dots = [];
+        for (var y = Math.floor(step / 2); y < off.height; y += step) {
+          for (var x = Math.floor(step / 2); x < off.width; x += step) {
+            if (data[(y * off.width + x) * 4 + 3] > 120) dm.dots.push({ x: x, y: y });
+          }
+        }
+        if (!dm.dots.length) return;
+        if (!dm.cvs) {
+          dm.cvs = document.createElement("canvas"); dm.cvs.className = "pfd-dotmatrix-canvas"; dm.cvs.setAttribute("aria-hidden", "true");
+          h1.classList.add("pfd-dotmatrix"); h1.appendChild(dm.cvs); dm.ctx = dm.cvs.getContext("2d");
+        }
+        dm.w = off.width; dm.h = off.height; dm.step = step; dm.dpr = dpr;
+        dm.cvs.width = off.width * dpr; dm.cvs.height = off.height * dpr; dm.cvs.style.width = off.width + "px"; dm.cvs.style.height = off.height + "px";
+        draw();
+      };
+      var draw = function () {
+        var ctx = dm.ctx; if (!ctx) return;
+        ctx.setTransform(dm.dpr, 0, 0, dm.dpr, 0, 0); ctx.clearRect(0, 0, dm.w, dm.h);
+        var ink = cssVar("--pf-color-text") || "currentColor", hot = cssVar("--pf-color-primary") || ink;
+        var base = dm.step * 0.36, radius = dm.step * 9, live = moving() && level() >= 2;
+        for (var i = 0; i < dm.dots.length; i++) {
+          var d = dm.dots[i], r = base, col = ink, ox = 0, oy = 0;
+          if (live) {
+            var dx = d.x - dm.px, dy = d.y - dm.py, dist = Math.hypot(dx, dy);
+            if (dist < radius) { var k = 1 - dist / radius; r = base * (1 + k * 1.1); col = k > 0.55 ? hot : ink; ox = dx / (dist || 1) * k * dm.step * 0.6; oy = dy / (dist || 1) * k * dm.step * 0.6; }
+          }
+          ctx.fillStyle = col; ctx.beginPath(); ctx.arc(d.x + ox, d.y + oy, r, 0, 6.2832); ctx.fill();
+        }
+      };
+      var onMove = function (e) {
+        var rect = h1.getBoundingClientRect(); dm.px = e.clientX - rect.left; dm.py = e.clientY - rect.top;
+        if (!dm.raf) dm.raf = requestAnimationFrame(function () { dm.raf = null; draw(); });
+      };
+      var ready = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+      ready.then(function () { setTimeout(build, 50); });
+      window.addEventListener("resize", function () { clearTimeout(dm.t); dm.t = setTimeout(build, 150); });
+      if (fine()) { document.addEventListener("pointermove", onMove); document.addEventListener("pointerleave", function () { dm.px = dm.py = -9999; draw(); }); }
+      new MutationObserver(function () { setTimeout(draw, 30); }).observe(root, { attributes: true, attributeFilter: ["data-palette", "data-theme", "data-motion"] });
+    }
+
+    // Per-character reveal on the headline.
+    if (set["motion-char-reveal"] && h1 && moving() && !set["type-dot-matrix"]) {
+      var splitChars = function (el) {
+        if (el.querySelector(".pfd-ch")) return;
+        Array.prototype.slice.call(el.childNodes).forEach(function (n) {
+          if (n.nodeType !== 3) return;
+          var frag = document.createDocumentFragment(), text = n.textContent;
+          for (var i = 0; i < text.length; i++) {
+            var s = document.createElement("span"); s.className = text[i] === " " ? "pfd-ch pfd-ch-space" : "pfd-ch"; s.textContent = text[i]; frag.appendChild(s);
+          }
+          el.replaceChild(frag, n);
+        });
+        el.querySelectorAll(".pfd-ch").forEach(function (s, i) { s.style.setProperty("--c", i); });
+        el.classList.add("pfd-chars");
+      };
+      (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(function () { splitChars(h1); });
+    }
+
+    // Scramble: the headline decodes from a glyph set over about 700ms; nav links re-scramble on hover.
+    if (set["motion-scramble"] && moving()) {
+      var GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#%&*+-";
+      var scramble = function (el, duration) {
+        var original = el.getAttribute("data-text") || el.textContent; el.setAttribute("data-text", original);
+        var t0 = null;
+        var step = function (ts) {
+          if (t0 === null) t0 = ts;
+          var k = Math.min(1, (ts - t0) / duration), out = "";
+          for (var i = 0; i < original.length; i++) {
+            var ch = original[i];
+            out += (ch === " " || i / original.length < k) ? ch : GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+          }
+          el.textContent = out;
+          if (k < 1) requestAnimationFrame(step); else el.textContent = original;
+        };
+        requestAnimationFrame(step);
+      };
+      var target = page.querySelector(".pfd-hero h1:not(.pfd-dotmatrix):not(.pfd-dotmatrix-pending), .pfd-board-figure, .pfd-statement strong");
+      if (target && !target.children.length) scramble(target, 900);
+      page.querySelectorAll(".pf-nav-links a, .pfd-menu-links a").forEach(function (a) { a.addEventListener("pointerenter", function () { scramble(a, 400); }); });
+    }
+
+    // Variable weight: the headline's weight follows the pointer across the viewport.
+    if (set["motion-variable-weight"] && h1 && moving() && fine()) {
+      var cur = 600, want = 600;
+      var tick = function () { cur += (want - cur) * 0.12; h1.style.fontVariationSettings = '"wght" ' + Math.round(cur); if (Math.abs(want - cur) > 1) requestAnimationFrame(tick); };
+      document.addEventListener("pointermove", function (e) { want = 300 + (e.clientX / window.innerWidth) * 600; requestAnimationFrame(tick); });
+    }
+
+    // Velocity skew: tickers and marquees lean with scroll speed.
+    if (set["motion-velocity-skew"] && moving()) {
+      var targets = page.querySelectorAll(".pfd-marquee-track, .pfd-ticker-track, .pfd-kinetic-row, .pfd-diag-track");
+      var last = window.scrollY, vel = 0, skewRaf = null;
+      var applySkew = function () { skewRaf = null; vel *= 0.86; targets.forEach(function (t) { t.style.transform = "skewX(" + Math.max(-12, Math.min(12, vel * 0.08)) + "deg)"; }); if (Math.abs(vel) > 0.2) skewRaf = requestAnimationFrame(applySkew); };
+      document.addEventListener("scroll", function () { var y = window.scrollY; vel += (y - last); last = y; if (!skewRaf) skewRaf = requestAnimationFrame(applySkew); }, { passive: true });
+    }
+
+    // Pointer grid: a dot lattice behind the hero that bulges toward the pointer.
+    if (set["motion-pointer-grid"] && hero && window.HTMLCanvasElement && !embed) {
+      var gc = document.createElement("canvas"); gc.className = "pfd-pointer-grid"; gc.setAttribute("aria-hidden", "true"); hero.style.position = "relative"; hero.insertBefore(gc, hero.firstChild);
+      var gctx = gc.getContext("2d"), gp = { x: -9999, y: -9999 }, graf = null;
+      var size = function () { var r = hero.getBoundingClientRect(); var dpr = Math.min(2, window.devicePixelRatio || 1); gc.width = r.width * dpr; gc.height = r.height * dpr; gc.style.width = r.width + "px"; gc.style.height = r.height + "px"; gctx.setTransform(dpr, 0, 0, dpr, 0, 0); drawGrid(); };
+      var drawGrid = function () {
+        graf = null; var w = gc.clientWidth, h = gc.clientHeight; gctx.clearRect(0, 0, w, h);
+        gctx.fillStyle = cssVar("--pf-color-text") || "#000"; gctx.globalAlpha = 0.22;
+        var gap = 28, live = moving() && level() >= 2;
+        for (var y = gap / 2; y < h; y += gap) for (var x = gap / 2; x < w; x += gap) {
+          var r = 1.2, ox = 0, oy = 0;
+          if (live) { var dx = x - gp.x, dy = y - gp.y, d = Math.hypot(dx, dy); if (d < 180) { var k = 1 - d / 180; r = 1.2 + k * 3; ox = dx / (d || 1) * k * 14; oy = dy / (d || 1) * k * 14; } }
+          gctx.beginPath(); gctx.arc(x + ox, y + oy, r, 0, 6.2832); gctx.fill();
+        }
+      };
+      size(); window.addEventListener("resize", size);
+      if (fine()) hero.addEventListener("pointermove", function (e) { var r = hero.getBoundingClientRect(); gp.x = e.clientX - r.left; gp.y = e.clientY - r.top; if (!graf) graf = requestAnimationFrame(drawGrid); });
+      hero.addEventListener("pointerleave", function () { gp.x = gp.y = -9999; if (!graf) graf = requestAnimationFrame(drawGrid); });
+    }
+
+    // Trail: small copies of the page's artwork follow the pointer across the hero and fade.
+    if (set["motion-trail"] && hero && moving() && level() >= 2 && fine() && !embed) {
+      var arts = Array.prototype.slice.call(page.querySelectorAll(".pfd-art")).slice(0, 8), n = 0, lastT = 0;
+      if (arts.length) hero.addEventListener("pointermove", function (e) {
+        var now = performance.now(); if (now - lastT < 90) return; lastT = now;
+        var r = hero.getBoundingClientRect(); var ghost = document.createElement("div"); ghost.className = "pfd-trail"; ghost.setAttribute("aria-hidden", "true");
+        ghost.style.left = (e.clientX - r.left) + "px"; ghost.style.top = (e.clientY - r.top) + "px"; ghost.style.setProperty("--r", (Math.random() * 20 - 10) + "deg");
+        ghost.innerHTML = arts[n++ % arts.length].outerHTML; hero.appendChild(ghost);
+        setTimeout(function () { ghost.remove(); }, 900);
+      });
+    }
+
+    // Pinned action: a slim bar with the primary action that appears once the hero has scrolled away.
+    var pinned = page.querySelector("[data-pinned-cta]");
+    if (pinned && "IntersectionObserver" in window && hero) {
+      new IntersectionObserver(function (es) { es.forEach(function (en) { pinned.hidden = en.isIntersecting; }); }, { threshold: 0.1 }).observe(hero);
     }
   })();
 })();

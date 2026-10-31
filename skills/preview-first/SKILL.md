@@ -4,7 +4,7 @@ description: This skill should be used before building or restyling any website 
 license: MIT
 metadata:
   author: moraneus
-  version: "0.4.1"
+  version: "0.5.0"
   repository: https://github.com/moraneus/preview-first
 ---
 
@@ -69,7 +69,24 @@ Map free text to node ids with `recommend.py --list product-types` and `--list m
 Unknown words are fine; the recommender falls back by alias and token overlap. Free text in
 `product_type` is accepted too.
 
-### 3. Get candidate bundles
+### 3. Open the preview within a minute: quick start
+
+```bash
+python3 <skill>/scripts/quick_start.py --brief .design-preview/brief.json --count 4 --open
+```
+
+One command recommends bundles, authors `directions.json` with the styles' names and honest copy
+derived from the brief, builds the preview and starts the server. Give the developer the URL
+immediately; do not make them wait for hand-written copy. Then, while they look, refine
+`directions.json` (names, rationale, copy, layout) and rebuild; the page refreshes to the same
+URL. Steps 3a and 4 describe what quick start does and what to refine.
+
+The gallery has a **Surprise me** button: it asks the local server for a randomly composed
+direction (an unused style, a fitting palette and pairing, a random draw of ideas and section
+variants) and opens it. The developer can draw as often as they like and select any draw. The
+same thing from the terminal: `random_direction.py --directions .design-preview/directions.json --build .design-preview`.
+
+### 3a. Candidate bundles by hand
 
 ```bash
 python3 <skill>/scripts/recommend.py --brief .design-preview/brief.json --count 4
@@ -105,6 +122,10 @@ Turn bundles into `.design-preview/directions.json` (schema in `knowledge/schema
 - `copy.numbers` and `copy.stats` (optional): sourced figures `{value, label, source}`; the
   numbers hero and the stat wall render only when these exist, never with invented figures.
 - `copy.meta` (optional): `{"city": "Lisbon"}` for the split nav, colophon and overlay clock.
+- The product type carries a topic kit (artwork kinds, a topic component such as a terminal, a
+  balance, a schedule, a composer, a score board, and the product's nouns). The first screen and
+  the section after it use it, so a scoreboard opens on a score and a shop on products. Set
+  `layout.topic` to `none` to drop the topic component.
 - `overrides` (optional): `{"brand_primary": "#hex", "brand_accent": "#hex"}` when the brief
   fixes a brand colour. The builder recomputes on-colours and reports any contrast failure.
 
@@ -260,6 +281,7 @@ into the graph.
 - `references/anti-patterns.md`: the tells list, the refusal rule and the pre-show checklist.
 - `references/archetypes.md`: the first-screen archetypes, section archetypes and generated artwork, with the sites they come from.
 - `references/ideas.md`: the design ideas graph, how directions get their ideas, the render hooks and how to author an idea.
+- `scripts/quick_start.py` and `scripts/random_direction.py`: the one-command open and the random draw described in step 3.
 - `references/color.md`: OKLCH palettes, roles, contrast policy, dark mode, brand overrides.
 - `references/typography.md`: pairing rules, scales, measures, loading, licences.
 - `references/motion.md`: levels, durations, easings, springs, view transitions, reduced motion.

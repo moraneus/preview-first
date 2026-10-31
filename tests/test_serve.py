@@ -166,3 +166,30 @@ def test_watch_directory_shuts_server_down(tmp_path):
     shutil.rmtree(d)
     _watch_directory(d, Fake(), interval=0.01, max_checks=3)
     assert events == ["shutdown"]
+
+
+def test_shuffle_endpoint_adds_a_direction(tmp_path):
+    import json as _json
+    import urllib.request
+    from build_preview import build
+    from _common import load_devices, load_graph
+    from quick_start import author_directions
+    from serve_preview import make_server
+    from conftest import FIXTURES
+    import threading
+    graph = load_graph()
+    brief = _json.load(open(FIXTURES / "brief_saas.json", encoding="utf-8"))
+    d = author_directions(brief, graph, 3)
+    (tmp_path / "directions.json").write_text(_json.dumps(d), encoding="utf-8")
+    build(d, tmp_path, graph, load_devices())
+    httpd = make_server(tmp_path, 0, "tok")
+    port = httpd.server_address[1]
+    t = threading.Thread(target=httpd.serve_forever, daemon=True); t.start()
+    try:
+        req = urllib.request.Request("http://127.0.0.1:%d/shuffle" % port, data=b"{}", method="POST",
+                                     headers={"Content-Type": "application/json", "Host": "127.0.0.1:%d" % port, "Origin": "http://127.0.0.1:%d" % port})
+        body = _json.loads(urllib.request.urlopen(req, timeout=60).read().decode("utf-8"))
+        assert body["id"] == "R4" and (tmp_path / "R4" / "draft.html").exists()
+        assert len(_json.load(open(tmp_path / "directions.json", encoding="utf-8"))["directions"]) == 4
+    finally:
+        httpd.shutdown(); httpd.server_close()

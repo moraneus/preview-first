@@ -115,6 +115,8 @@ class Prepared:
         layout.update(direction.get("layout", {}) or {})
         self.layout = layout
         self.layout_explicit = dict(direction.get("layout", {}) or {})
+        pt = idx.get(brief.get("product_type", "")) or {}
+        self.kit = dict(pt.get("kit") or {})  # topic kit: artwork, a topic component and nouns for this kind of product
         # Design ideas: the bundle's list, or the style's defaults for directions authored before 0.3.0.
         idea_ids = list(b.get("ideas") or self.style.get("ideas") or [])
         self.ideas = [idx[i] for i in idea_ids if i in idx and idx[i].get("kind") == "idea"]
@@ -419,7 +421,8 @@ def _gallery(dirs: List[Prepared], brief: dict) -> str:
     links = "".join('<link rel="stylesheet" href="%s">' % E(u) for p in dirs for u in p.font_links())  # gallery sits at out/, vendored paths are already relative to it
     body = (
         '<header class="pfg-head"><p class="pfc-kicker">preview-first</p><h1>Design directions for %s</h1>'
-        '<p class="pfc-muted">%s</p><div class="pfc-controls"><button class="pfc-theme" type="button" data-control="theme" aria-pressed="false">Dark</button></div></header>'
+        '<p class="pfc-muted">%s</p><div class="pfc-controls"><button class="pfc-select pfc-shuffle" type="button" data-action="shuffle" title="Add a randomly composed direction to this set">Surprise me</button>'
+        '<button class="pfc-theme" type="button" data-control="theme" aria-pressed="false">Dark</button></div></header>'
         '<section class="pfg-grid">%s</section>'
         '<footer class="pfg-foot"><p>Pick a direction, or open a tile to swap palette, type, radius, density and motion live. '
         'Selecting writes <code>.design-preview/selection.json</code>; Claude then exports the design contract.</p></footer>'

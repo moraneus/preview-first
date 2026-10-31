@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0 (2026-10-31)
+
+Liveness, topic fit, a random draw and a faster first open.
+
+- **Live behaviours**, learned from a browser probe of eight studio sites and implemented in plain JavaScript and CSS: a dot-matrix headline (the heading face sampled into a field of dots that swell and take the accent colour under the pointer), per-character reveal, decode scramble, weight that follows the pointer on variable faces, scroll-velocity skew on tickers, a pointer-reactive dot grid behind the hero, an artwork trail, moving diagonal stripe fields, a blinking caret on the action, a slowly rotating badge and a pinned action bar. All respect reduced motion, the motion level and pointer type; none run inside thumbnails or device frames.
+- **Topic kits.** Every product type carries artwork kinds, a topic component and its nouns: a terminal for developer tools, a balance for fintech, a schedule for events, a composer for AI products, rings for health, a product row for shops, an itinerary for travel, opening hours for local businesses, and so on. The first screen uses the product's own kind of picture and the section after it is that component, so a scoreboard opens on a score and a shop on products.
+- **Surprise me.** The gallery draws a randomly composed direction (an unused style, a fitting palette and pairing, a random draw of ideas and section variants) through the local server and opens it; draw as often as you like, select any draw. `random_direction.py` does the same from the terminal, seeded for tests.
+- **Quick start.** `quick_start.py --brief ... --open` goes from brief to an open preview in one command, with honest copy derived from the brief; Claude refines copy while the developer is already looking.
+- Five styles built on the above: LED board, Broadcast, Workshop, Variable, Pixel arcade; four palettes; seven pairings using distinctive free display faces (Doto, Silkscreen, Tiny5, Rubik Mono One, Bungee, Big Shoulders Stencil, Bricolage Grotesque across its weight axis).
+- The contract and the docs no longer name the sites behind an idea; provenance stays in the knowledge files for maintainers.
+
 ## 0.4.1 (2026-10-30)
 
 The app page type stops being a dashboard template.
