@@ -158,7 +158,7 @@ def test_ledger_rows_and_collage_render(directions, idx):
 def test_hooks_change_nav_texture_and_sections(directions, idx):
     d = copy.deepcopy(directions["directions"][0])
     d["bundle"]["ideas"] = ["idea.split-nav-live-meta", "idea.film-grain", "idea.giant-numerals-features", "idea.colophon-footer", "idea.marquee-divider", "idea.outline-giant-word"]
-    d["layout"] = {}  # the fixture pins every section by hand; hooks only fill what the author left open
+    d["layout"] = {"programme": "classic"}  # the fixture pins every section by hand; hooks only fill what the author left open
     p = Prepared(d, directions["brief"], idx)
     assert {"nav-split-meta", "texture-grain", "features-numerals", "footer-colophon", "section-marquee", "type-outline"} <= p.hooks
     html = render("marketing", p)
@@ -248,3 +248,24 @@ def test_app_board_figure_comes_from_the_brief(directions, idx):
     d["copy"] = dict(d["copy"], headline="Live scores for 501 and Cricket")
     html = render("app", Prepared(d, brief, idx))
     assert 'data-count="501"' in html
+
+
+def test_programmes_change_the_section_order(directions, idx):
+    seen = set()
+    for prog in ("classic", "showcase", "editorial", "launch", "index", "bare"):
+        d = copy.deepcopy(directions["directions"][0])
+        d["layout"] = {"programme": prog}
+        d["bundle"]["ideas"] = ["idea.marquee-divider", "idea.poster-band"]
+        html = render("marketing", Prepared(d, directions["brief"], idx))
+        assert 'data-section="programme" data-variant="%s"' % prog in html
+        order = tuple(re.findall(r'data-section="([a-z-]+)"', html))
+        seen.add(order)
+    assert len(seen) == 6, "every programme must produce a different section order"
+
+
+def test_default_copy_uses_the_products_nouns():
+    c = default_copy({"product": "Oche, a dart scoreboard web app that keeps live scores for 501, Cricket and Around the Clock games", "page_type": "app"})
+    assert [f["title"] for f in c["features"]][:2] == ["501", "Cricket"]
+    assert "Pricing copy goes here" not in json.dumps(c) and "What it does" not in json.dumps(c)
+    c2 = default_copy({"product": "Hollow is a small ceramics studio selling tableware: bowls, cups and plates", "page_type": "store"})
+    assert c2["nav"][:3] == ["Bowls", "Cups", "Plates"]

@@ -892,3 +892,31 @@ section.pfd-hero-fan { display: grid; grid-template-columns: minmax(0, 1fr) minm
   .pfd-itin { grid-template-columns: 1fr; }
   .pfd-sched-row, .pfd-itin li { grid-template-columns: 6ch 1fr; }
 }
+
+
+/* ------------------------------------------------------------------ programmes and living artwork (0.6.0) */
+.pfd-manifesto { padding-top: var(--pf-space-12) !important; }
+.pfd-manifesto .pfd-manifesto-text { max-width: 40ch; }
+@media (prefers-reduced-motion: no-preference) {
+  [data-motion="2"] .pfd-art-torus, [data-motion="3"] .pfd-art-torus { animation: pfd-turn 28s linear infinite; transform-style: preserve-3d; }
+  [data-motion="2"] .pfd-art-orbit, [data-motion="3"] .pfd-art-orbit { animation: pfd-spin 60s linear infinite; }
+  [data-motion="2"] .pfd-art-globe, [data-motion="3"] .pfd-art-globe { animation: pfd-tilt 18s ease-in-out infinite alternate; }
+  [data-motion="2"] .pfd-art-strands polyline, [data-motion="3"] .pfd-art-strands polyline { stroke-dasharray: 1200; stroke-dashoffset: 0; animation: pfd-dash 14s linear infinite; }
+  [data-motion="2"] .pfd-art-flow polyline, [data-motion="3"] .pfd-art-flow polyline { stroke-dasharray: 600 200; animation: pfd-dash 9s linear infinite; }
+  [data-motion="2"] .pfd-art-contours polygon, [data-motion="3"] .pfd-art-contours polygon { animation: pfd-breathe 10s ease-in-out infinite alternate; transform-origin: center; transform-box: fill-box; }
+  [data-motion="2"] .pfd-art-mesh circle, [data-motion="3"] .pfd-art-mesh circle { animation: pfd-twinkle 6s ease-in-out infinite alternate; }
+  [data-motion="2"] .pfd-art-halftone circle:nth-child(7n), [data-motion="3"] .pfd-art-halftone circle:nth-child(7n) { animation: pfd-twinkle 4s ease-in-out infinite alternate; }
+  [data-motion="2"] .pfd-art-rays, [data-motion="3"] .pfd-art-rays { animation: pfd-spin 90s linear infinite; }
+  [data-motion="2"] .pfd-art-bars rect:nth-child(odd), [data-motion="3"] .pfd-art-bars rect:nth-child(odd) { transform-origin: bottom; transform-box: fill-box; animation: pfd-equalise 3.2s ease-in-out infinite alternate; }
+  [data-motion="2"] .pfd-art-wordcloud text, [data-motion="3"] .pfd-art-wordcloud text { animation: pfd-twinkle 5s ease-in-out infinite alternate; }
+  [data-motion="3"] .pfd-art-letterstack text { animation: pfd-stack 2.4s ease-in-out infinite alternate; }
+  [data-motion="2"] .pfd-art-terminal .pfd-cursor, [data-motion="3"] .pfd-art-terminal .pfd-cursor { animation: pfd-blink 1s steps(1) infinite; }
+}
+@keyframes pfd-turn { from { transform: perspective(900px) rotateX(55deg) rotateZ(0deg); } to { transform: perspective(900px) rotateX(55deg) rotateZ(360deg); } }
+@keyframes pfd-spin { to { rotate: 360deg; } }
+@keyframes pfd-tilt { from { rotate: -6deg; } to { rotate: 6deg; } }
+@keyframes pfd-dash { to { stroke-dashoffset: -1200; } }
+@keyframes pfd-breathe { to { transform: scale(1.04); } }
+@keyframes pfd-twinkle { to { opacity: .35; } }
+@keyframes pfd-equalise { to { transform: scaleY(.72); } }
+@keyframes pfd-stack { to { translate: 6px -4px; } }

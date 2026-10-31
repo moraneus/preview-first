@@ -12,17 +12,17 @@
 
 ## What you get
 
-Tell Claude what you are building. Within a minute a local page opens with three to eight directions, each a complete look and not a theme on a shared skeleton:
+Tell Claude what you are building. Within a minute a local page opens with three to eight directions, each a complete look and not a theme on a shared skeleton, and every page carries **Surprise me**, **Variations** and **Show all styles** so the set is never the limit:
 
 - a first screen chosen for the kind of product (a scoreboard opens on the score, a shop on products, a developer tool on a terminal), drawn from 36 styles and 24 hero archetypes;
 - a palette authored in OKLCH with every role contrast-checked in light and dark, a type pairing from Google Fonts chosen for character (dot-matrix and pixel faces, condensed display, variable grotesques, old-style serifs), and the components in every state;
 - eight to twelve design ideas attached to each direction from a graph of 529 sourced moves: navigation devices, textures, type details, sections, imagery treatments and live behaviours (dot-matrix headlines that light up under the pointer, character reveals, decode effects, tickers that lean with scroll, pointer-reactive grids, artwork trails);
 - the draft inside frames of the best-selling phones, foldables, tablets and laptops;
-- a **Surprise me** button that draws a randomly composed direction as often as you like.
+- copy written from your product's own nouns before the first open, and a page programme per direction, so no two drafts share a section order.
 
 Select one, and Claude writes `design/DESIGN.md` with tokens (W3C Design Tokens, CSS, Tailwind v4) that later work follows.
 
-| ![A dark page with a giant lime headline, a marquee and bordered cells](docs/assets/example-velodrome.png) | ![A warm page with a serif headline, contour figures and a hairline accordion](docs/assets/example-clay.png) | ![A black scoreboard app with the score at display size](docs/assets/example-app.png) |
+| ![A black page whose headline is drawn as a field of dots that light up under the pointer](docs/assets/example-led.png) | ![A cream page with a stacked headline, one word outlined, on blocks of cobalt and coral](docs/assets/example-cobalt.png) | ![A black scoreboard app with the score at display size](docs/assets/example-app.png) |
 |---|---|---|
 
 Every template, as a contact sheet: [docs/templates.md](docs/templates.md).

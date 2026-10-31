@@ -110,15 +110,29 @@
     document.body.appendChild(el);
     setTimeout(function () { el.remove(); }, 4000);
   }
-  // Surprise me: ask the local server for a randomly composed direction, then show it.
+  // Generators: Surprise me (random), Variations (five takes on a direction), Show all styles.
+  function generate(btn, body, after) {
+    var label = btn.textContent; btn.disabled = true; btn.textContent = "Drawing";
+    var up = document.querySelector("main[data-direction]") ? "../" : "";
+    fetch(new URL("/more", location.origin), { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (d) { after(d, up); })
+      .catch(function () { btn.disabled = false; btn.textContent = label; toast("Generating needs the local preview server (serve_preview.py). Ask Claude for more directions instead."); });
+  }
   document.querySelectorAll('[data-action="shuffle"]').forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      btn.disabled = true; var label = btn.textContent; btn.textContent = "Drawing";
-      fetch(new URL("/shuffle", location.origin), { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" })
-        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-        .then(function (d) { location.href = d.id + "/draft.html"; })
-        .catch(function () { btn.disabled = false; btn.textContent = label; toast("Surprise me needs the local preview server (serve_preview.py). Ask Claude for a random direction instead."); });
+    btn.addEventListener("click", function (e) { e.preventDefault(); generate(btn, { mode: "random" }, function (d, up) { location.href = up + d.id + "/draft.html"; }); });
+  });
+  document.querySelectorAll('[data-action="variations"]').forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      generate(btn, { mode: "like", direction: btn.getAttribute("data-direction") }, function (d, up) {
+        if (root.hasAttribute("data-gallery")) location.href = "index.html#card-" + d.id; else location.href = up + d.id + "/draft.html";
+        if (root.hasAttribute("data-gallery")) location.reload();
+      });
     });
+  });
+  document.querySelectorAll('[data-action="all-styles"]').forEach(function (btn) {
+    btn.addEventListener("click", function (e) { e.preventDefault(); generate(btn, { mode: "all" }, function (d) { location.href = "index.html#card-" + (d.id || ""); location.reload(); }); });
   });
   document.querySelectorAll('[data-action="select"]').forEach(function (btn) {
     btn.addEventListener("click", function () {

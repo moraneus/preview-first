@@ -66,7 +66,11 @@ Baseline widely available (Chrome 106, Firefox 110, Safari 16; 95.9% global, see
 
 `brief.page_type` picks the template. Each section has variants (`VARIANTS` in `scripts/drafts/<page>.py`); the section element carries `data-section` and `data-variant` so the preview and the tests can see what was chosen.
 
-### Marketing (`marketing.py`): nav, hero, features, proof, cta, footer
+### Marketing (`marketing.py`): a programme of sections
+
+`layout.programme` picks the set and order of sections: `classic` (hero, topic, marquee, features, band, proof, cta, footer), `showcase` (hero, band, topic, features, marquee, proof, footer), `editorial` (hero, manifesto, features, topic, proof, cta, footer), `launch` (hero, marquee, topic, proof, features, band, cta, footer), `index` (hero, features, topic, manifesto, footer), `bare` (hero, topic, features, footer). Topic, marquee, band and the pinned bar render only when the direction carries them. Every style sets a default programme; random draws pick one.
+
+#### Sections: nav, hero, features, proof, cta, footer
 
 Hero:
 

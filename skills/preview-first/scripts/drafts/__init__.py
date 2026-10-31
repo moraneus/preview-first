@@ -20,40 +20,80 @@ VARIANTS: Dict[str, Dict[str, List[str]]] = {name: mod.VARIANTS for name, mod in
 
 def _split_product(product: str):
     product = (product or "").strip().rstrip(".")
-    if "," in product:
-        name, rest = product.split(",", 1)
-        return name.strip(), rest.strip()
-    if " is " in product:
-        name, rest = product.split(" is ", 1)
-        return name.strip(), rest.strip()
+    m = re.match(r"^([^,:]{1,40}?)\s+is\s+(.+)$", product)
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    m = re.match(r"^([^,:]{1,40}?),\s*(.+)$", product)
+    if m and re.match(r"^(an?|the)\s", m.group(2), flags=re.I):
+        return m.group(1).strip(), m.group(2).strip()
     return "", product
 
 
+def _things(rest: str):
+    """Pull the product's own nouns out of the description: the items after 'for', 'with', 'of' or a
+    colon, split on commas and 'and'. 'keeps live scores for 501, Cricket and Around the Clock games'
+    gives ['501', 'Cricket', 'Around the Clock games'] and the verb phrase 'keeps live scores for'."""
+    m = re.search(r"\b(that|which|to)\s+([a-z][^,:]*?\b(?:for|with|of|across|between)\b)\s+(.+)$", rest, flags=re.I)
+    m2 = re.search(r"\b(that|which)\s+(\w+)\s+(.+?)\s+for\s+(.+)$", rest, flags=re.I)
+    verb, tail = "", None
+    if m2 and ("," in m2.group(3) or " and " in m2.group(3)):
+        verb, tail = m2.group(2) + " %s for " + m2.group(4), m2.group(3)  # 'makes %s for music labels'
+    elif m:
+        verb, tail = m.group(2).strip(), m.group(3)
+    elif ":" in rest:
+        tail = rest.split(":", 1)[1]
+    if tail is None:
+        return "", []
+    parts = [x.strip(" .") for x in re.split(r",\s*|\s+and\s+|\s+or\s+", tail) if x.strip(" .")]
+    parts = [x for x in parts if 1 <= len(x.split()) <= 5]
+    return (verb, parts[:6]) if len(parts) >= 2 else ("", [])
+
+
 def default_copy(brief: dict) -> dict:
-    """Neutral copy built only from the brief's own words. No lorem ipsum, no filler claims, and
-    no sentence repeated across sections."""
+    """Copy built only from the brief's own words: the product's nouns become the navigation and
+    the sections, the description becomes the sentences. No lorem ipsum, no invented claims, no
+    'what it does' furniture."""
     words = brief.get("words") or {}
     name, rest = _split_product(brief.get("product", ""))
     name = words.get("name") or name or "Your product"
     rest = re.sub(r"^(an?|the)\s+", "", rest, flags=re.I)
     audience = (brief.get("audience") or "").strip().rstrip(".")
     moods = [m.split(".")[-1].replace("-", " ") for m in (brief.get("moods") or [])]
+    verb, things = _things(rest)
     headline = words.get("tagline") or (rest[:1].upper() + rest[1:] if rest else name)
     article = ("an " if rest[:1].lower() in "aeiou" else "a ") if rest else ""
-    subhead = ("%s is %s%s." % (name, article, rest)) if rest else "%s, described in one honest sentence." % name
+    subhead = ("%s is %s%s." % (name, article, rest)) if rest else "%s, in one sentence." % name
     lead = ("Made for %s." % audience) if audience else subhead
     statement = subhead + ((" We built it for %s." % audience) if audience else "")
     if moods:
         statement += " It should feel %s." % (", ".join(moods[:-1]) + " and " + moods[-1] if len(moods) > 1 else moods[0])
     page_type = brief.get("page_type", "marketing")
-    primary = {"marketing": "Get started", "app": "New item", "content": "Start reading", "store": "Shop the collection"}[page_type]
-    secondary = {"marketing": "See how it works", "app": "Import", "content": "Browse the archive", "store": "View all"}[page_type]
-    features = [
-        {"title": "What it does", "body": subhead},
-        {"title": "Who it is for", "body": ("Built for %s." % audience) if audience else "Built for the people named in the brief."},
-        {"title": "How it works", "body": "Three steps from first visit to the result, each one visible on screen."},
-        {"title": "What it costs", "body": "Pricing copy goes here once it is decided; the draft does not invent a number."},
-    ]
+    primary = words.get("cta") or {"marketing": "Get started", "app": "New", "content": "Start reading", "store": "Shop"}[page_type]
+    secondary = {"marketing": "See it in use", "app": "Import", "content": "Browse the archive", "store": "View all"}[page_type]
+    if things:
+        features = []
+        for t in things:
+            title = t[:1].upper() + t[1:]
+            if verb and "%s" in verb:
+                body = "%s %s." % (name, verb % t)
+            elif verb:
+                body = "%s %s %s." % (name, verb, t)
+            else:
+                body = ("%s from %s." % (title, name)) if page_type == "store" else ("%s, part of %s." % (title, name))
+            features.append({"title": title, "body": body})
+        while len(features) < 3:
+            features.append({"title": "Made for %s" % audience if audience else name, "body": lead})
+        nav = [f["title"] for f in features[:3]] + ["About"]
+    else:
+        features = [
+            {"title": name, "body": subhead},
+            {"title": ("For %s" % audience) if audience else "Who it is for", "body": lead},
+            {"title": "Start today", "body": "The first visit ends with a result on screen."},
+        ]
+        nav = {"marketing": ["Product", "Pricing", "About", "Sign in"], "app": ["Overview", "Items", "Reports", "Settings"],
+               "content": ["Latest", "Topics", "About", "Subscribe"], "store": ["New", "Collections", "About", "Cart"]}[page_type]
+    if page_type == "app" and things:
+        nav = [f["title"] for f in features[:3]] + ["Settings"]
     return {
         "headline": headline,
         "subhead": subhead,
@@ -62,13 +102,12 @@ def default_copy(brief: dict) -> dict:
         "cta_primary": primary,
         "cta_secondary": secondary,
         "cta_line": "Start with %s today." % name,
-        "nav": {"marketing": ["Product", "Pricing", "About", "Sign in"], "app": ["Overview", "Items", "Reports", "Settings"],
-                "content": ["Latest", "Topics", "About", "Subscribe"], "store": ["New", "Collections", "About", "Cart"]}[page_type],
+        "nav": nav,
         "features": features,
         "proof": "",
         "meta": {"city": "", "year": "2026"},
         "form": {"title": "Stay in touch", "fields": ["Email"], "submit": "Subscribe"},
-        "footer": "%s. Copy in this draft comes from the brief; replace it with your own." % name,
+        "footer": "%s. Draft copy comes from the brief; replace it with your own." % name,
     }
 
 

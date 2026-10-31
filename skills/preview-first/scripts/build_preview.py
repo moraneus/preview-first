@@ -221,8 +221,10 @@ def _chrome(p: Prepared, all_dirs: List[Prepared], view: str, depth: int = 1) ->
         '<nav class="pfc-dirs" aria-label="Directions">%s</nav>'
         '<nav class="pfc-views" aria-label="Views">%s</nav>'
         '<div class="pfc-controls">%s</div>'
+        '<div class="pfc-gen"><button class="pfc-gen-btn" type="button" data-action="shuffle" title="A randomly composed direction">Surprise me</button>'
+        '<button class="pfc-gen-btn" type="button" data-action="variations" data-direction="%s" title="Five takes on this direction">Variations</button></div>'
         '<button class="pfc-select" type="button" data-action="select" data-direction="%s">Select %s</button>'
-        '</header>' % (E(p.id), up, dirs, views, controls, E(p.id), E(p.name))
+        '</header>' % (E(p.id), up, dirs, views, controls, E(p.id), E(p.id), E(p.name))
     )
 
 
@@ -407,26 +409,28 @@ def _gallery(dirs: List[Prepared], brief: dict) -> str:
         r = p.resolved["dark" if p.palette.get("scheme") == "dark" else "light"]
         strip = "".join('<span style="background:%s" title="%s"></span>' % (r[k]["hex"], k) for k in ("bg", "surface", "text", "primary", "accent"))
         cards.append(
-            '<article class="pfg-card" data-direction="%s">'
+            '<article class="pfg-card" id="card-%s" data-direction="%s">'
             '<div class="pfg-thumb"><iframe class="pfg-frame" loading="lazy" src="%s/draft.html?embed=1%s" title="%s draft" tabindex="-1"></iframe></div>'
             '<div class="pfg-body"><p class="pfc-kicker">Direction %s · %s</p><h2>%s</h2><p>%s</p>'
             '<div class="pfg-strip">%s</div>'
             '<p class="pfg-type"><span style="font-family:%s">%s</span> <span class="pfc-muted">with %s</span></p>'
-            '<nav class="pfg-links"><a href="%s/tile.html">Tile</a><a href="%s/draft.html">Draft</a><a href="%s/devices.html">Devices</a></nav>'
+            '<nav class="pfg-links"><a href="%s/tile.html">Tile</a><a href="%s/draft.html">Draft</a><a href="%s/devices.html">Devices</a><a href="#" data-action="variations" data-direction="%s">Variations</a></nav>'
             '<button class="pfc-select" type="button" data-action="select" data-direction="%s">Select %s</button></div></article>'
-            % (E(p.id), E(p.id), "&theme=dark" if p.palette.get("scheme") == "dark" else "", E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
+            % (E(p.id), E(p.id), E(p.id), "&theme=dark" if p.palette.get("scheme") == "dark" else "", E(p.name), E(p.id), E(p.style["name"]), E(p.name), E(p.rationale or p.style.get("summary", "")), strip,
                E("'%s', %s" % (p.pairing["heading"]["family"], p.pairing["fallback_heading"])), E(p.pairing["heading"]["family"]),
-               E(p.pairing["body"]["family"]), E(p.id), E(p.id), E(p.id), E(p.id), E(p.name))
+               E(p.pairing["body"]["family"]), E(p.id), E(p.id), E(p.id), E(p.id), E(p.id), E(p.name))
         )
     links = "".join('<link rel="stylesheet" href="%s">' % E(u) for p in dirs for u in p.font_links())  # gallery sits at out/, vendored paths are already relative to it
     body = (
         '<header class="pfg-head"><p class="pfc-kicker">preview-first</p><h1>Design directions for %s</h1>'
         '<p class="pfc-muted">%s</p><div class="pfc-controls"><button class="pfc-select pfc-shuffle" type="button" data-action="shuffle" title="Add a randomly composed direction to this set">Surprise me</button>'
+        '<button class="pfc-select pfc-shuffle" type="button" data-action="all-styles" title="One direction per style for this brief">Show all styles</button>'
         '<button class="pfc-theme" type="button" data-control="theme" aria-pressed="false">Dark</button></div></header>'
+        '<p class="pfc-muted pfg-count">%d directions. Every page has Surprise me and Variations; Show all styles adds one direction per style.</p>'
         '<section class="pfg-grid">%s</section>'
         '<footer class="pfg-foot"><p>Pick a direction, or open a tile to swap palette, type, radius, density and motion live. '
         'Selecting writes <code>.design-preview/selection.json</code>; Claude then exports the design contract.</p></footer>'
-        % (E(name), E(brief.get("product", "")), "".join(cards))
+        % (E(name), E(brief.get("product", "")), len(dirs), "".join(cards))
     )
     return render_template("shell.html", {
         "lang": "en", "title": "Design directions · preview-first",

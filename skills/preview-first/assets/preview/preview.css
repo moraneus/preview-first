@@ -298,3 +298,13 @@ code { font-family: var(--pfc-mono); font-size: 0.85em; }
 
 .pfc-shuffle { background: transparent; color: var(--pfc-fg); border-color: var(--pfc-line); margin-right: 8px; }
 .pfc-shuffle:disabled { opacity: .6; cursor: progress; }
+
+.pfc-gen { display: flex; gap: 6px; }
+.pfc-gen-btn { padding: 5px 10px; border: 1px solid var(--pfc-line); border-radius: 6px; background: var(--pfc-panel); color: var(--pfc-fg); cursor: pointer; }
+.pfc-gen-btn:hover { background: var(--pfc-bg); }
+.pfc-gen-btn:disabled { opacity: .6; cursor: progress; }
+.pfc-bar { grid-template-columns: auto auto auto 1fr auto auto; }
+.pfc-bar .pfc-gen { grid-column: 5; grid-row: 1; }
+.pfc-bar .pfc-select { grid-column: 6; }
+.pfg-count { margin: -16px 0 20px; font-size: 13px; }
+@media (max-width: 900px) { .pfc-bar .pfc-gen, .pfc-bar .pfc-select { grid-column: auto; grid-row: auto; } }

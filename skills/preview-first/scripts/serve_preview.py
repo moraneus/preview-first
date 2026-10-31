@@ -90,7 +90,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         if not self._guard():
             return
         route = self.path.split("?", 1)[0]
-        if route not in ("/select", "/shuffle"):
+        if route not in ("/select", "/shuffle", "/more"):
             self.send_error(HTTPStatus.NOT_FOUND)
             return
         # Cross-site protection: a foreign page cannot send application/json without a CORS
@@ -115,8 +115,8 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         except (ValueError, UnicodeDecodeError):
             self.send_error(HTTPStatus.BAD_REQUEST, "body must be JSON")
             return
-        if route == "/shuffle":
-            self._shuffle()
+        if route in ("/shuffle", "/more"):
+            self._shuffle(body if route == "/more" else {})
             return
         problems = validate_file(body, "selection", _common.load_schema())
         if problems:
@@ -132,14 +132,14 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         self.send_response(HTTPStatus.NO_CONTENT)
         self.end_headers()
 
-    def _shuffle(self):
+    def _shuffle(self, body: dict = None):
         directory = Path(self.directory)
         if not (directory / "directions.json").exists():
             self.send_error(HTTPStatus.BAD_REQUEST, "no directions.json beside the preview")
             return
         try:
             with _SHUFFLE_LOCK:
-                result = _shuffle_impl(directory)
+                result = _shuffle_impl(directory, body if isinstance(body, dict) else {})
         except Exception as exc:  # the page shows the message; nothing else to do
             self.send_error(HTTPStatus.INTERNAL_SERVER_ERROR, str(exc)[:200])
             return
@@ -151,19 +151,35 @@ class PreviewHandler(SimpleHTTPRequestHandler):
         self.wfile.write(payload)
 
 
-def _shuffle_impl(directory: Path) -> dict:
-    """Append a random direction to directions.json beside the preview and rebuild in place."""
+def _shuffle_impl(directory: Path, body: dict = None) -> dict:
+    """Append directions to directions.json beside the preview and rebuild in place.
+    body.mode: "random" (default), "like" with body.direction, or "all"."""
     import random
     from build_preview import build
-    from random_direction import random_direction
+    from random_direction import all_styles, random_direction, variation_of
+    body = body or {}
     directions_path = directory / "directions.json"
     directions = _common.load_json(directions_path)
     graph = _common.load_graph()
-    d = random_direction(directions, graph, random.Random())
-    directions["directions"].append(d)
+    mode = body.get("mode", "random")
+    if mode == "all":
+        added = all_styles(directions, graph)
+    elif mode == "like":
+        known = {d["id"] for d in directions["directions"]}
+        if body.get("direction") not in known:
+            raise ValueError("unknown direction")
+        added = []
+        rng = random.Random()
+        for _ in range(5):
+            added.append(variation_of({"brief": directions["brief"], "directions": directions["directions"] + added}, graph, body["direction"], rng))
+    else:
+        added = [random_direction(directions, graph, random.Random())]
+    if not added:
+        return {"id": None, "name": None, "added": []}
+    directions["directions"].extend(added)
     _common.dump_json(directions_path, directions)
     build(directions, directory, graph, _common.load_devices())
-    return {"id": d["id"], "name": d["name"]}
+    return {"id": added[0]["id"], "name": added[0]["name"], "added": [d["id"] for d in added]}
 
 
 def _known_directions(directory: Path):

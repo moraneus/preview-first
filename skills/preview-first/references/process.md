@@ -2,6 +2,11 @@
 
 This expands the flow in SKILL.md with the exact wording, decisions and edge cases.
 
+
+## Copy before the first open
+
+Write `.design-preview/copy.json` from the brief before running quick start: the navigation is the product's sections, the features are the things it does in its own nouns, the headline is a claim a user would repeat, the call to action is the verb of the first visit. Thirty seconds of writing is the difference between a product page and a template.
+
 ## Reading the project first
 
 Look for, in this order, and record anything found as a constraint in `brief.json`:

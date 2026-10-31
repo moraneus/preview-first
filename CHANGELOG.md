@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.0 (2026-10-31)
+
+No fixed rhythm, no placeholder copy, and generation from every page.
+
+- **Page programmes.** A marketing draft no longer always runs hero, features, proof, call to action, footer. Six programmes set which sections appear and in what order (classic, showcase, editorial, launch, index, bare); each style has a default, random draws pick one, and `layout.programme` overrides. The manifesto statement can be its own section; the topic component, marquee and poster band slot in where the programme says.
+- **Copy from the product's nouns.** Default copy now reads the brief's description: "keeps live scores for 501, Cricket and Around the Clock games" becomes sections named 501, Cricket and Around the Clock, each with a sentence built from the verb phrase. The "What it does / Who it is for / What it costs" furniture and the "pricing copy goes here" line are gone. The skill now writes `copy.json` before the first open, and `quick_start.py --copy` takes it.
+- **Generate from anywhere.** Every preview page carries Surprise me and Variations in its bar; the gallery adds Show all styles. Variations produces five takes on the direction in view (same style, other palette, pairing, ideas and programme); Show all styles adds one direction per style for the brief. The server's `/more` endpoint and `random_direction.py --like ID` and `--all` do the same from the terminal. Each result lands on a page that carries the same buttons.
+- **Living artwork.** At motion level 2 and above the generated artwork moves: the torus turns in perspective, orbit rings and ray fields spin slowly, strands and flow lines travel, contours breathe, meshes twinkle, bars equalise, the terminal cursor blinks. Still under reduced motion and at levels 0 and 1.
+
 ## 0.5.0 (2026-10-31)
 
 Liveness, topic fit, a random draw and a faster first open.

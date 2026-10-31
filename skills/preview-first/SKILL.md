@@ -4,7 +4,7 @@ description: This skill should be used before building or restyling any website 
 license: MIT
 metadata:
   author: moraneus
-  version: "0.5.0"
+  version: "0.6.0"
   repository: https://github.com/moraneus/preview-first
 ---
 
@@ -69,22 +69,44 @@ Map free text to node ids with `recommend.py --list product-types` and `--list m
 Unknown words are fine; the recommender falls back by alias and token overlap. Free text in
 `product_type` is accepted too.
 
-### 3. Open the preview within a minute: quick start
+### 3. Write the copy, then open the preview within a minute
 
-```bash
-python3 <skill>/scripts/quick_start.py --brief .design-preview/brief.json --count 4 --open
+Write `.design-preview/copy.json` first; it takes one short reply and it is what makes a draft
+read as the product instead of a template. Use the product's own nouns: the navigation is its
+sections, the features are the things it does, the headline is a claim a user would repeat.
+
+```json
+{
+  "headline": "Live scores for 501, Cricket and Around the Clock",
+  "subhead": "Oche keeps the score so the players can keep playing.",
+  "lead": "Made for pub league players and friends at home.",
+  "cta_primary": "New game", "cta_secondary": "Resume",
+  "nav": ["Games", "Players", "Stats", "Settings"],
+  "features": [{"title": "501 and 301 with checkouts", "body": "Every remaining score shows the standard checkout route."}],
+  "proof": "", "meta": {"city": "Leeds", "year": "2026"},
+  "footer": "Oche keeps the score."
+}
 ```
 
-One command recommends bundles, authors `directions.json` with the styles' names and honest copy
-derived from the brief, builds the preview and starts the server. Give the developer the URL
-immediately; do not make them wait for hand-written copy. Then, while they look, refine
-`directions.json` (names, rationale, copy, layout) and rebuild; the page refreshes to the same
-URL. Steps 3a and 4 describe what quick start does and what to refine.
+Then one command:
 
-The gallery has a **Surprise me** button: it asks the local server for a randomly composed
-direction (an unused style, a fitting palette and pairing, a random draw of ideas and section
-variants) and opens it. The developer can draw as often as they like and select any draw. The
-same thing from the terminal: `random_direction.py --directions .design-preview/directions.json --build .design-preview`.
+```bash
+python3 <skill>/scripts/quick_start.py --brief .design-preview/brief.json --copy .design-preview/copy.json --count 5 --open
+```
+
+It recommends bundles, authors `directions.json`, builds the preview and starts the server. Give
+the developer the URL immediately. If you skip `--copy`, the drafts use copy derived from the
+brief's own nouns; never leave that in a direction you present as finished. Refine
+`directions.json` (names, rationale, layout, programme) while they look, and rebuild; the page
+refreshes to the same URL.
+
+Every preview page carries three generators in its bar, so the developer never has to go back
+to get more: **Surprise me** (a randomly composed direction: an unused style, a fitting palette
+and pairing, a random draw of ideas, sections and programme), **Variations** (five takes on the
+direction they are looking at: same style, other palettes, pairings, ideas and programmes) and,
+on the gallery, **Show all styles** (one direction per style for this brief). Each lands on the
+new draft, which carries the same buttons. From the terminal:
+`random_direction.py --directions .design-preview/directions.json --build .design-preview [--like B | --all]`.
 
 ### 3a. Candidate bundles by hand
 

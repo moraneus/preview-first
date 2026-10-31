@@ -30,6 +30,10 @@ direction's palette so no section shows a wireframe.
 | `editorial` | Kicker, headline, lead, a side note with a figure. | publishing, knowledge tools | content-first products | avoid oversized italic serif |
 | `split`, `centered` | The familiar layouts, kept for briefs that ask for them by name. | | | `centered` is the tell; never a default |
 
+## Programmes
+
+The order of a page is itself a tell. Six programmes change which sections exist and where: `classic`, `showcase` (artwork band high on the page), `editorial` (a manifesto statement after the hero), `launch` (marquee and proof before the features), `index` (features first, a manifesto, no call-to-action band), `bare` (hero, topic component, features, footer). See `layout.md`.
+
 ## Section archetypes
 
 - Features `figures`: three captioned figures (Fig 1.1, 1.2, 1.3) with hairline rules, title and one sentence each. Captions in mono. Linear.

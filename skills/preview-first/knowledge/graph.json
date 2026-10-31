@@ -1252,7 +1252,8 @@
      "features": "index",
      "proof": "quote",
      "cta": "inline",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "editorial"
     },
     "content": {
      "header": "broadsheet",
@@ -1333,7 +1334,8 @@
      "features": "spec",
      "proof": "statement",
      "cta": "giant",
-     "footer": "minimal"
+     "footer": "minimal",
+     "programme": "index"
     },
     "content": {
      "header": "broadsheet",
@@ -1413,7 +1415,8 @@
      "features": "figures",
      "proof": "logos-text",
      "cta": "inline",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "classic"
     },
     "app": {
      "shell": "rail",
@@ -1487,7 +1490,8 @@
      "features": "bands",
      "proof": "quote",
      "cta": "band",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "classic"
     },
     "app": {
      "shell": "sidebar",
@@ -1554,7 +1558,8 @@
      "features": "figures",
      "proof": "logos-text",
      "cta": "inline",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "bare"
     },
     "app": {
      "shell": "rail",
@@ -1622,7 +1627,8 @@
      "features": "bands",
      "proof": "stats-sourced",
      "cta": "giant",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "launch"
     },
     "app": {
      "shell": "sidebar",
@@ -1688,7 +1694,8 @@
      "features": "index",
      "proof": "quote",
      "cta": "inline",
-     "footer": "minimal"
+     "footer": "minimal",
+     "programme": "editorial"
     },
     "store": {
      "hero": "lookbook",
@@ -1762,7 +1769,8 @@
      "features": "bands",
      "proof": "stats-sourced",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "launch"
     },
     "app": {
      "shell": "none",
@@ -1829,7 +1837,8 @@
      "features": "bands",
      "proof": "quote",
      "cta": "band",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "showcase"
     },
     "app": {
      "shell": "bottom-tabs",
@@ -1894,7 +1903,8 @@
      "features": "alternating",
      "proof": "quote",
      "cta": "inline",
-     "footer": "minimal"
+     "footer": "minimal",
+     "programme": "editorial"
     },
     "store": {
      "hero": "product",
@@ -1966,7 +1976,8 @@
      "features": "bands",
      "proof": "logos-text",
      "cta": "band",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "classic"
     },
     "app": {
      "shell": "topbar",
@@ -2031,7 +2042,8 @@
      "features": "bento",
      "proof": "stats-sourced",
      "cta": "inline",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "classic"
     },
     "app": {
      "shell": "sidebar",
@@ -2095,7 +2107,8 @@
      "features": "index",
      "proof": "statement",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "showcase"
     },
     "content": {
      "header": "masthead",
@@ -2175,7 +2188,8 @@
      "features": "spec",
      "proof": "stats-sourced",
      "cta": "inline",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "bare"
     }
    },
    "best_page_types": [
@@ -10204,7 +10218,8 @@
      "features": "index",
      "proof": "statement",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "index"
     },
     "content": {
      "header": "minimal",
@@ -10285,7 +10300,8 @@
      "features": "figures",
      "proof": "logos-text",
      "cta": "inline",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "index"
     },
     "content": {
      "header": "minimal",
@@ -31222,7 +31238,8 @@
      "features": "cells",
      "proof": "statement",
      "cta": "giant",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "launch"
     },
     "app": {
      "shell": "rail",
@@ -31307,7 +31324,8 @@
      "features": "numerals",
      "proof": "giant-quote",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "editorial"
     },
     "content": {
      "header": "broadsheet",
@@ -31391,7 +31409,8 @@
      "features": "hover-list",
      "proof": "none",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "index"
     },
     "content": {
      "header": "minimal",
@@ -31476,7 +31495,8 @@
      "features": "spec",
      "proof": "none",
      "cta": "inline",
-     "footer": "minimal"
+     "footer": "minimal",
+     "programme": "bare"
     },
     "content": {
      "header": "minimal",
@@ -31552,7 +31572,8 @@
      "features": "numerals",
      "proof": "giant-quote",
      "cta": "giant",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "editorial"
     },
     "app": {
      "shell": "none",
@@ -31629,7 +31650,8 @@
      "features": "spec",
      "proof": "none",
      "cta": "ticket",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "bare"
     },
     "app": {
      "shell": "rail",
@@ -31708,7 +31730,8 @@
      "features": "bands",
      "proof": "statement",
      "cta": "band",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "showcase"
     },
     "store": {
      "hero": "lookbook",
@@ -31792,7 +31815,8 @@
      "features": "ledger",
      "proof": "giant-quote",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "editorial"
     },
     "content": {
      "header": "masthead",
@@ -31877,7 +31901,8 @@
      "features": "numerals",
      "proof": "stat-wall",
      "cta": "ticket",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "launch"
     },
     "store": {
      "hero": "product",
@@ -31961,7 +31986,8 @@
      "features": "bands",
      "proof": "giant-quote",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "editorial"
     },
     "content": {
      "header": "masthead",
@@ -35718,7 +35744,8 @@
      "features": "numerals",
      "proof": "stat-wall",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "launch"
     },
     "store": {
      "hero": "lookbook",
@@ -35802,7 +35829,8 @@
      "features": "mosaic",
      "proof": "giant-quote",
      "cta": "ticket",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "showcase"
     },
     "store": {
      "hero": "tiles",
@@ -35886,7 +35914,8 @@
      "features": "mosaic",
      "proof": "statement",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "showcase"
     },
     "store": {
      "hero": "lookbook",
@@ -35970,7 +35999,8 @@
      "features": "stack",
      "proof": "giant-quote",
      "cta": "band",
-     "footer": "columns"
+     "footer": "columns",
+     "programme": "classic"
     },
     "store": {
      "hero": "product",
@@ -36048,7 +36078,8 @@
      "features": "mosaic",
      "proof": "statement",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "showcase"
     },
     "store": {
      "hero": "tiles",
@@ -37011,7 +37042,8 @@
      "features": "ledger",
      "proof": "none",
      "cta": "ticket",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "bare"
     },
     "app": {
      "shell": "none",
@@ -37092,7 +37124,8 @@
      "features": "numerals",
      "proof": "none",
      "cta": "band",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "launch"
     },
     "app": {
      "shell": "none",
@@ -37173,7 +37206,8 @@
      "features": "spec",
      "proof": "giant-quote",
      "cta": "ticket",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "classic"
     },
     "store": {
      "hero": "product",
@@ -37247,7 +37281,8 @@
      "features": "hover-list",
      "proof": "giant-quote",
      "cta": "inline",
-     "footer": "colophon"
+     "footer": "colophon",
+     "programme": "index"
     },
     "content": {
      "header": "broadsheet",
@@ -37321,7 +37356,8 @@
      "features": "cells",
      "proof": "none",
      "cta": "giant",
-     "footer": "giant"
+     "footer": "giant",
+     "programme": "launch"
     },
     "app": {
      "shell": "bottom-tabs",

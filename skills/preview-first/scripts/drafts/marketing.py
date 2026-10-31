@@ -19,6 +19,17 @@ VARIANTS = {
     "proof": ["statement", "quote", "giant-quote", "stat-wall", "logos-text", "stats-sourced", "none"],
     "cta": ["giant", "band", "inline", "form", "ticket"],
     "footer": ["giant", "columns", "minimal", "colophon"],
+    "programme": ["classic", "showcase", "editorial", "launch", "index", "bare"],
+}
+# Programmes: which sections appear, in what order. "topic", "marquee", "band" and "pinned" only
+# render when the direction carries them; "manifesto" is the statement as its own section.
+PROGRAMMES = {
+    "classic": ["hero", "topic", "marquee", "features", "band", "proof", "cta", "footer"],
+    "showcase": ["hero", "band", "topic", "features", "marquee", "proof", "footer"],
+    "editorial": ["hero", "manifesto", "features", "topic", "proof", "cta", "footer"],
+    "launch": ["hero", "marquee", "topic", "proof", "features", "band", "cta", "footer"],
+    "index": ["hero", "features", "topic", "manifesto", "footer"],
+    "bare": ["hero", "topic", "features", "footer"],
 }
 HERO_HOOKS = {"hero-ticker": "ticker", "hero-specimen": "specimen", "hero-manifesto": "manifesto", "hero-numbers": "numbers", "hero-clip": "clip", "hero-stacked": "stacked",
               "hero-split-screen": "split-screen", "hero-diagonal": "diagonal", "hero-mosaic": "mosaic", "hero-kinetic": "kinetic", "hero-fan": "fan"}
@@ -332,20 +343,31 @@ def _pinned(p) -> str:
         E(p.copy.get("cta_line") or brand(p)), E(p.copy.get("cta_primary", "Start")))
 
 
+def _manifesto(p) -> str:
+    c = p.copy
+    text = c.get("statement") or ("%s %s" % (c["headline"].rstrip(".") + ".", c["subhead"]))
+    return section("manifesto", "statement", '<p class="pfd-manifesto-text">%s</p>' % E(text))
+
+
 def render(p) -> str:
-    order = ["hero", "features", "proof", "cta", "footer"]
-    blocks = block_classes(p, order)
+    programme = pick(p, "programme", VARIANTS["programme"])
+    order = PROGRAMMES[programme]
+    blocks = block_classes(p, [n for n in order if n in ("hero", "features", "proof", "cta", "footer", "manifesto")])
     hero_v = pick(p, "hero", VARIANTS["hero"], HERO_HOOKS)
-    parts = [
-        nav(p),
-        with_class(_hero(p, hero_v), blocks["hero"]),
-        topic_block(p),
-        marquee(p),
-        with_class(_features(p, pick(p, "features", VARIANTS["features"], FEATURE_HOOKS)), blocks["features"]),
-        _poster_band(p),
-        with_class(_proof(p, pick(p, "proof", VARIANTS["proof"], PROOF_HOOKS)), blocks["proof"]),
-        with_class(_cta(p, pick(p, "cta", VARIANTS["cta"], CTA_HOOKS)), blocks["cta"]),
-        with_class(footer(p, pick(p, "footer", VARIANTS["footer"], FOOTER_HOOKS)), blocks["footer"]),
-        _pinned(p),
-    ]
+    features_v = pick(p, "features", VARIANTS["features"], FEATURE_HOOKS)
+    # a topic component that repeats the features archetype (a work list next to a hover list) is dropped
+    clash = {"work-list": {"hover-list", "ledger"}, "article-list": {"ledger"}, "metrics": {"numerals"}, "product-row": {"mosaic"}}
+    topic_ok = features_v not in clash.get(kit(p).get("component") or "", set())
+    builders = {
+        "hero": lambda: with_class(_hero(p, hero_v), blocks.get("hero", "")),
+        "topic": lambda: topic_block(p) if topic_ok else "",
+        "marquee": lambda: marquee(p),
+        "features": lambda: with_class(_features(p, features_v), blocks.get("features", "")),
+        "band": lambda: _poster_band(p),
+        "manifesto": lambda: with_class(_manifesto(p), blocks.get("manifesto", "")),
+        "proof": lambda: with_class(_proof(p, pick(p, "proof", VARIANTS["proof"], PROOF_HOOKS)), blocks.get("proof", "")),
+        "cta": lambda: with_class(_cta(p, pick(p, "cta", VARIANTS["cta"], CTA_HOOKS)), blocks.get("cta", "")),
+        "footer": lambda: with_class(footer(p, pick(p, "footer", VARIANTS["footer"], FOOTER_HOOKS)), blocks.get("footer", "")),
+    }
+    parts = [nav(p)] + [builders[name]() for name in order] + [_pinned(p), '<span hidden data-section="programme" data-variant="%s"></span>' % E(programme)]
     return "".join(parts)

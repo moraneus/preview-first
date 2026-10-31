@@ -80,3 +80,34 @@ def test_liveness_hooks_are_wired():
     for cls in ("pfd-dotmatrix-canvas", "pfd-pointer-grid", "pfd-trail", "pfd-pinned", "pfd-hook-texture-stripes"):
         assert cls in css, cls
     assert "prefers-reduced-motion" in js and "pointer: fine" in js
+
+
+def test_variations_keep_the_style_and_change_the_rest(graph, saas):
+    from random_direction import variation_of
+    d = author_directions(saas, graph, 3)
+    base = d["directions"][0]
+    v = variation_of(d, graph, base["id"], random.Random(5))
+    assert v["bundle"]["style"] == base["bundle"]["style"]
+    assert v["bundle"]["palette"] != base["bundle"]["palette"] or v["bundle"]["type_pairing"] != base["bundle"]["type_pairing"]
+    assert v["id"] == "V4" and v["copy"] == base.get("copy", {})
+
+
+def test_all_styles_adds_one_per_missing_style(graph, saas):
+    from random_direction import all_styles
+    d = author_directions(saas, graph, 3)
+    added = all_styles(d, graph)
+    styles = {n["id"] for n in graph["nodes"] if n["kind"] == "style"}
+    assert len(added) == len(styles) - 3
+    assert len({a["bundle"]["style"] for a in added} | {x["bundle"]["style"] for x in d["directions"]}) == len(styles)
+    from _common import load_schema
+    d["directions"].extend(added)
+    assert validate_file(d, "directions", load_schema()) == []
+
+
+def test_every_page_has_generators(tmp_path, graph, saas):
+    d = author_directions(saas, graph, 3)
+    build(d, tmp_path, graph, load_devices())
+    for page in ("index.html", "A/draft.html", "A/tile.html"):
+        html = (tmp_path / page).read_text(encoding="utf-8")
+        assert 'data-action="shuffle"' in html and 'data-action="variations"' in html, page
+    assert 'data-action="all-styles"' in (tmp_path / "index.html").read_text(encoding="utf-8")

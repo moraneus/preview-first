@@ -20,15 +20,18 @@ from recommend import normalise_brief, recommend  # noqa: E402
 IDS = "ABCDEFGH"
 
 
-def author_directions(brief: dict, graph: dict, count: int) -> dict:
+def author_directions(brief: dict, graph: dict, count: int, copy: dict = None) -> dict:
     """directions.json with one direction per bundle: the style's name, its summary as the rationale,
-    and copy derived from the brief by the draft engine (no invented claims)."""
+    and the copy Claude wrote (or copy derived from the brief by the draft engine, no invented claims)."""
     idx = _common.node_index(graph)
     bundles = recommend(brief, graph, max(3, min(8, count)))
     dirs = []
     for i, b in enumerate(bundles):
         style = idx[b["style"]]
-        dirs.append({"id": IDS[i], "name": style["name"], "rationale": style.get("summary", ""), "bundle": b})
+        d = {"id": IDS[i], "name": style["name"], "rationale": style.get("summary", ""), "bundle": b}
+        if copy:
+            d["copy"] = dict(copy)
+        dirs.append(d)
     return {"version": 1, "brief": normalise_brief(brief, graph), "directions": dirs}
 
 
@@ -36,6 +39,7 @@ def main(argv: Sequence[str]) -> int:
     ap = argparse.ArgumentParser(description="Brief to open preview in one step.")
     ap.add_argument("--brief", required=True)
     ap.add_argument("--count", type=int, default=4)
+    ap.add_argument("--copy", help="copy.json written by Claude from the brief (headline, subhead, nav, features, calls to action)")
     ap.add_argument("--dir", default=".design-preview")
     ap.add_argument("--graph", default=str(_common.KNOWLEDGE_DIR / "graph.json"))
     ap.add_argument("--open", action="store_true")
@@ -51,7 +55,8 @@ def main(argv: Sequence[str]) -> int:
         pass
     brief = _common.load_json(ns.brief)
     out = Path(ns.dir)
-    directions = author_directions(brief, graph, ns.count)
+    copy = _common.load_json(ns.copy) if ns.copy else None
+    directions = author_directions(brief, graph, ns.count, copy)
     _common.dump_json(out / "directions.json", directions)
     report = build(directions, out, graph, _common.load_json(_common.KNOWLEDGE_DIR / "devices.json")["devices"])
     result = {"directions": [(d["id"], d["name"]) for d in directions["directions"]], "pages": len(report["pages"]), "warnings": report["warnings"]}
