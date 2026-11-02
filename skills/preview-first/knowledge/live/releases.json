@@ -1,14 +1,19 @@
 {
-  "fetched": "2026-10-30T06:21:47+00:00",
+  "fetched": "2026-11-02T14:30:41+00:00",
   "releases": {
     "motion": {
       "url": "https://github.com/motiondivision/motion/releases.atom",
       "latest": {
-        "title": "v14.8.0",
-        "link": "https://github.com/motiondivision/motion/releases/tag/v14.8.0",
-        "updated": "2026-10-29T17:50:27Z"
+        "title": "v14.9.0",
+        "link": "https://github.com/motiondivision/motion/releases/tag/v14.9.0",
+        "updated": "2026-10-30T10:22:53Z"
       },
       "recent": [
+        {
+          "title": "v14.9.0",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.9.0",
+          "updated": "2026-10-30T10:22:53Z"
+        },
         {
           "title": "v14.8.0",
           "link": "https://github.com/motiondivision/motion/releases/tag/v14.8.0",
@@ -28,14 +33,9 @@
           "title": "v14.7.0",
           "link": "https://github.com/motiondivision/motion/releases/tag/v14.7.0",
           "updated": "2026-10-27T08:04:34Z"
-        },
-        {
-          "title": "v14.6.0",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.6.0",
-          "updated": "2026-10-22T07:43:26Z"
         }
       ],
-      "npm_weekly_downloads": 34079637
+      "npm_weekly_downloads": 33410483
     },
     "gsap": {
       "url": "https://github.com/greensock/GSAP/releases.atom",
@@ -71,7 +71,7 @@
           "updated": "2025-04-30T15:11:25Z"
         }
       ],
-      "npm_weekly_downloads": 7990988
+      "npm_weekly_downloads": 8486951
     },
     "tailwindcss": {
       "url": "https://github.com/tailwindlabs/tailwindcss/releases.atom",
@@ -107,7 +107,7 @@
           "updated": "2026-04-21T13:09:56Z"
         }
       ],
-      "npm_weekly_downloads": 169977879
+      "npm_weekly_downloads": 165252499
     },
     "shadcn": {
       "url": "https://github.com/shadcn-ui/ui/releases.atom",
@@ -143,7 +143,7 @@
           "updated": "2026-10-16T13:24:25Z"
         }
       ],
-      "npm_weekly_downloads": 16556361
+      "npm_weekly_downloads": 16711958
     },
     "radix-primitives": {
       "url": "https://github.com/radix-ui/primitives/releases.atom",
@@ -159,16 +159,21 @@
           "updated": "2026-07-25T00:00:41Z"
         }
       ],
-      "npm_weekly_downloads": 90486566
+      "npm_weekly_downloads": 88502473
     },
     "lucide": {
       "url": "https://github.com/lucide-icons/lucide/releases.atom",
       "latest": {
-        "title": "Version 1.65.0",
-        "link": "https://github.com/lucide-icons/lucide/releases/tag/1.65.0",
-        "updated": "2026-10-30T06:09:54Z"
+        "title": "Version 1.66.0",
+        "link": "https://github.com/lucide-icons/lucide/releases/tag/1.66.0",
+        "updated": "2026-10-31T06:08:09Z"
       },
       "recent": [
+        {
+          "title": "Version 1.66.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.66.0",
+          "updated": "2026-10-31T06:08:09Z"
+        },
         {
           "title": "Version 1.65.0",
           "link": "https://github.com/lucide-icons/lucide/releases/tag/1.65.0",
@@ -188,14 +193,9 @@
           "title": "Version 1.62.0",
           "link": "https://github.com/lucide-icons/lucide/releases/tag/1.62.0",
           "updated": "2026-10-27T06:10:27Z"
-        },
-        {
-          "title": "Version 1.61.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.61.0",
-          "updated": "2026-10-21T06:10:24Z"
         }
       ],
-      "npm_weekly_downloads": 130088213
+      "npm_weekly_downloads": 127187701
     },
     "phosphor": {
       "url": "https://github.com/phosphor-icons/core/releases.atom",
@@ -231,18 +231,18 @@
           "updated": "2023-03-05T10:27:51Z"
         }
       ],
-      "npm_weekly_downloads": 2640391
+      "npm_weekly_downloads": 2698072
     },
     "_npm": {
-      "motion": 34079637,
-      "gsap": 7990988,
-      "tailwindcss": 169977879,
-      "shadcn": 16556361,
-      "@radix-ui/react-dialog": 90486566,
-      "lucide-react": 130088213,
-      "@phosphor-icons/core": 2640391,
-      "@heroicons/react": 5930909,
-      "@tabler/icons-react": 5063519
+      "motion": 33410483,
+      "gsap": 8486951,
+      "tailwindcss": 165252499,
+      "shadcn": 16711958,
+      "@radix-ui/react-dialog": 88502473,
+      "lucide-react": 127187701,
+      "@phosphor-icons/core": 2698072,
+      "@heroicons/react": 5880348,
+      "@tabler/icons-react": 5054297
     }
   }
 }
