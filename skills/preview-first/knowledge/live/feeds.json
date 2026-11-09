@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-30T06:21:54+00:00",
+  "fetched": "2026-11-09T14:55:06+00:00",
   "feeds": {
     "web.dev": {
       "url": "https://web.dev/static/blog/feed.xml",
@@ -115,6 +115,26 @@
       "url": "https://www.smashingmagazine.com/feed/",
       "items": [
         {
+          "title": "A New Community For In-House UX People",
+          "link": "https://smashingmagazine.com/2026/11/ux-insiders-community-in-house-ux-people/",
+          "updated": "Fri, 06 Nov 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Making Immersive LLM Chat Experiences More Accessible",
+          "link": "https://smashingmagazine.com/2026/11/making-immersive-llm-chat-experiences-more-accessible/",
+          "updated": "Thu, 05 Nov 2026 13:00:00 GMT"
+        },
+        {
+          "title": "Modern CSS Might Make Your Front-End More Complex",
+          "link": "https://smashingmagazine.com/2026/11/modern-css-might-make-your-front-end-more-complex/",
+          "updated": "Tue, 03 Nov 2026 10:00:00 GMT"
+        },
+        {
+          "title": "A Spark Of Color In November’s Gray (2026 Wallpapers Edition)",
+          "link": "https://smashingmagazine.com/2026/10/desktop-wallpaper-calendars-november-2026/",
+          "updated": "Sat, 31 Oct 2026 08:00:00 GMT"
+        },
+        {
           "title": "Accordion Icons: Which Work Best?",
           "link": "https://smashingmagazine.com/2026/10/accordion-icons-which-work-best/",
           "updated": "Fri, 23 Oct 2026 13:00:00 GMT"
@@ -168,32 +188,37 @@
           "title": "Why Your Website Should Never Stop Changing",
           "link": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
           "updated": "Tue, 25 Aug 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Timing Charts: A Blueprint For SMIL Animations",
-          "link": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
-          "updated": "Thu, 20 Aug 2026 13:00:00 GMT"
-        },
-        {
-          "title": "New EU Guidelines For AI Labelling",
-          "link": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/",
-          "updated": "Thu, 13 Aug 2026 10:00:00 GMT"
-        },
-        {
-          "title": "Building Tactile UX: Honoring Intentional Design With Lottie",
-          "link": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
-          "updated": "Tue, 11 Aug 2026 10:00:00 GMT"
-        },
-        {
-          "title": "How Baseline Can Help You Ship Less JavaScript",
-          "link": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
-          "updated": "Fri, 07 Aug 2026 13:00:00 GMT"
         }
       ]
     },
     "CSS-Tricks": {
       "url": "https://css-tricks.com/feed/",
       "items": [
+        {
+          "title": "RSS Club: CSS-Tricks Redesign Preview",
+          "link": "https://css-tricks.com/css-tricks-redesign-preview/",
+          "updated": "Fri, 06 Nov 2026 18:52:59 +0000"
+        },
+        {
+          "title": "Taming Typography: Building a Modern CSS Reset",
+          "link": "https://css-tricks.com/taming-typography-modern-css-reset/",
+          "updated": "Thu, 05 Nov 2026 14:55:31 +0000"
+        },
+        {
+          "title": "Smashing AI Conference",
+          "link": "https://css-tricks.com/smashing-ai-conference/",
+          "updated": "Wed, 04 Nov 2026 15:02:51 +0000"
+        },
+        {
+          "title": "Re-Implementing :nth-child() With Modern CSS",
+          "link": "https://css-tricks.com/re-implementing-nth-child-with-modern-css/",
+          "updated": "Tue, 03 Nov 2026 14:50:32 +0000"
+        },
+        {
+          "title": "What’s !important #20: GTA 6 Scroll Effects, Scrollspies, random()",
+          "link": "https://css-tricks.com/whats-important-20/",
+          "updated": "Mon, 02 Nov 2026 15:06:07 +0000"
+        },
         {
           "title": "The Frankenstein Table",
           "link": "https://css-tricks.com/the-frankenstein-table/",
@@ -243,31 +268,6 @@
           "title": "Resolved: CSS Class Prefix Selector",
           "link": "https://css-tricks.com/resolved-css-class-prefix-selector/",
           "updated": "Fri, 21 Aug 2026 15:13:03 +0000"
-        },
-        {
-          "title": "CSS Navigation Matching, Early Days",
-          "link": "https://css-tricks.com/css-navigation-matching-early-days/",
-          "updated": "Wed, 19 Aug 2026 14:44:41 +0000"
-        },
-        {
-          "title": "WordPress.com Student Plan",
-          "link": "https://css-tricks.com/wordpress-student-plan/",
-          "updated": "Wed, 19 Aug 2026 08:50:00 +0000"
-        },
-        {
-          "title": "Dark mode toggles: two states are enough",
-          "link": "https://css-tricks.com/dark-mode-toggles-two-states-are-enough/",
-          "updated": "Mon, 17 Aug 2026 14:15:50 +0000"
-        },
-        {
-          "title": "What’s !important #17: Custom Highlight API, CSS Navigation Matching, Fixing text-stroke, and More",
-          "link": "https://css-tricks.com/whats-important-17/",
-          "updated": "Fri, 14 Aug 2026 14:01:51 +0000"
-        },
-        {
-          "title": "Blocked aria-hidden: The Warning is Right, and Every Fix You’ve Found is Wrong",
-          "link": "https://css-tricks.com/blocked-aria-hidden-fix/",
-          "updated": "Wed, 12 Aug 2026 13:43:56 +0000"
         }
       ]
     },
@@ -435,85 +435,95 @@
       "url": "https://vercel.com/atom",
       "items": [
         {
-          "title": "Strix now supports Vercel AI Gateway",
-          "link": "https://vercel.com/changelog/strix-now-supports-vercel-ai-gateway",
-          "updated": "2026-10-29T18:44:00.000Z"
+          "title": "DeepSeek V4.1 Flash 1017 Ultrafast now available on AI Gateway",
+          "link": "https://vercel.com/changelog/deepseek-v4-1-flash-1017-ultrafast-now-available-on-ai-gateway",
+          "updated": "2026-11-07T00:00:00.000Z"
         },
         {
-          "title": "IP geolocation now covers more visitors at higher resolution",
-          "link": "https://vercel.com/changelog/improved-ip-geolocation-data",
-          "updated": "2026-10-29T17:00:00.000Z"
+          "title": "Chat SDK agents can now stream generative UI with json-render",
+          "link": "https://vercel.com/changelog/json-render-and-chat-sdk-agents",
+          "updated": "2026-11-06T21:00:00.000Z"
         },
         {
-          "title": "Vercel Flags starts 7x faster and no longer extends function duration",
-          "link": "https://vercel.com/changelog/vercel-flags-starts-7x-faster-and-no-longer-extends-function-duration",
-          "updated": "2026-10-29T06:00:00.000Z"
+          "title": "AI Gateway adds DeepSeek Search and Fetch tools",
+          "link": "https://vercel.com/changelog/ai-gateway-adds-deepseek-search-and-fetch-tools",
+          "updated": "2026-11-06T21:00:00.000Z"
         },
         {
-          "title": "The fx adapter now runs the harness on the host",
-          "link": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox",
-          "updated": "2026-10-29T06:00:00.000Z"
+          "title": "Vercel CLI can now set new projects to expire",
+          "link": "https://vercel.com/changelog/vercel-cli-can-now-set-new-projects-to-expire",
+          "updated": "2026-11-06T18:00:00.000Z"
         },
         {
-          "title": "Node.js 26 LTS is now Generally Available on Vercel",
-          "link": "https://vercel.com/changelog/node-js-26-lts-is-now-generally-available-on-vercel",
-          "updated": "2026-10-29T00:00:00.000Z"
+          "title": "Vercel Tracing is now generally available",
+          "link": "https://vercel.com/changelog/vercel-tracing-is-now-generally-available",
+          "updated": "2026-11-06T17:00:00.000Z"
         },
         {
-          "title": "Vercel Connect adds webhook triggers for more providers",
-          "link": "https://vercel.com/changelog/vercel-connect-adds-webhook-triggers-for-more-providers",
-          "updated": "2026-10-29T00:00:00.000Z"
+          "title": "Token Pass credit now applies automatically across AI Gateway",
+          "link": "https://vercel.com/changelog/token-pass-credit-now-applies-automatically-across-ai-gateway",
+          "updated": "2026-11-06T01:00:00.000Z"
         },
         {
-          "title": "Control AI crawlers and assistants separately in Vercel Firewall",
-          "link": "https://vercel.com/changelog/block-ai-crawlers-and-assistants-independently-with-managed-rules",
-          "updated": "2026-10-29T00:00:00.000Z"
+          "title": "Ampersand from Humans& now available on AI Gateway",
+          "link": "https://vercel.com/changelog/humans-and-ampersand-now-available-on-ai-gateway",
+          "updated": "2026-11-06T00:00:00.000Z"
         },
         {
-          "title": "Vercel Plugin is now available in Antigravity",
-          "link": "https://vercel.com/changelog/vercel-plugin-is-now-available-in-antigravity",
-          "updated": "2026-10-29T00:00:00.000Z"
+          "title": "Vercel Schedules is now in public beta",
+          "link": "https://vercel.com/changelog/vercel-schedules-is-now-in-public-beta",
+          "updated": "2026-11-05T17:00:00.000Z"
         },
         {
-          "title": "Mistral Large 4 updated weights and lower pricing on AI Gateway",
-          "link": "https://vercel.com/changelog/mistral-large-4-updated-weights-and-lower-pricing-on-ai-gateway",
-          "updated": "2026-10-29T00:00:00.000Z"
+          "title": "Gemini Omni 1.2 Flash now available on AI Gateway",
+          "link": "https://vercel.com/changelog/gemini-omni-1-2-flash-now-available-on-ai-gateway",
+          "updated": "2026-11-05T00:00:00.000Z"
         },
         {
-          "title": "Vercel CI is now in beta",
-          "link": "https://vercel.com/changelog/vercel-ci-is-now-in-beta",
-          "updated": "2026-10-28T19:00:00.000Z"
+          "title": "Workflow SDK adds idempotent starts",
+          "link": "https://vercel.com/changelog/atomic-start-hooks-in-the-workflow-sdk",
+          "updated": "2026-11-04T18:55:00.000Z"
         },
         {
-          "title": "Box Mount now runs in Vercel Sandbox",
-          "link": "https://vercel.com/changelog/box-mount-now-runs-in-vercel-sandbox",
-          "updated": "2026-10-28T18:00:00.000Z"
+          "title": "Kimi K3.1 Pro now has more ZDR providers on AI Gateway",
+          "link": "https://vercel.com/changelog/kimi-k3-1-pro-now-has-more-zdr-providers-on-ai-gateway",
+          "updated": "2026-11-04T17:00:00.000Z"
         },
         {
-          "title": "Vercel Container Registry now supports 2 GB compressed image layers",
-          "link": "https://vercel.com/changelog/vercel-container-registry-now-supports-2-gb-compressed-image-layers-new",
-          "updated": "2026-10-28T09:32:00.000Z"
+          "title": "Introducing Vercel Schedules",
+          "link": "https://vercel.com/blog/introducing-vercel-schedules",
+          "updated": "2026-11-04T13:00:00.000Z"
         },
         {
-          "title": "Introducing Virtual Models on AI Gateway",
-          "link": "https://vercel.com/blog/ai-gateway-virtual-models",
-          "updated": "2026-10-28T07:25:00.000Z"
+          "title": "Vercel token scanning expands to more public sources",
+          "link": "https://vercel.com/changelog/vercel-token-scanning-expands-to-more-public-sources",
+          "updated": "2026-11-04T13:00:00.000Z"
         },
         {
-          "title": "Introducing Vercel CI",
-          "link": "https://vercel.com/blog/introducing-vercel-ci",
-          "updated": "2026-10-28T07:00:00.000Z"
+          "title": "Vercel Security Review now in public beta",
+          "link": "https://vercel.com/changelog/vercel-security-review-public-beta",
+          "updated": "2026-11-03T20:00:00.000Z"
         },
         {
-          "title": "Vercel Agent can now validate alerts before paging",
-          "link": "https://vercel.com/changelog/vercel-agent-can-now-validate-alerts-before-paging-you",
-          "updated": "2026-10-28T06:00:00.000Z"
+          "title": "Vercel CI no longer requires a linked Vercel project",
+          "link": "https://vercel.com/changelog/vercel-ci-no-longer-requires-a-linked-vercel-project",
+          "updated": "2026-11-03T18:00:00.000Z"
         }
       ]
     },
     "WebKit blog": {
       "url": "https://webkit.org/feed/",
       "items": [
+        {
+          "title": "Release Notes for Safari Technology Preview 256",
+          "link": "https://webkit.org/blog/18602/release-notes-for-safari-technology-preview-256/",
+          "updated": "Thu, 05 Nov 2026 00:09:57 +0000"
+        },
+        {
+          "title": "Introducing Adaptive Dark Mode",
+          "link": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+          "updated": "Tue, 03 Nov 2026 18:00:35 +0000"
+        },
         {
           "title": "WebKit Features for Safari 27.2",
           "link": "https://webkit.org/blog/18515/webkit-features-for-safari-27-2/",
@@ -553,16 +563,6 @@
           "title": "Release Notes for Safari Technology Preview 252",
           "link": "https://webkit.org/blog/18304/release-notes-for-safari-technology-preview-252/",
           "updated": "Fri, 11 Sep 2026 17:02:22 +0000"
-        },
-        {
-          "title": "Submit your ideas for Interop 2027",
-          "link": "https://webkit.org/blog/18283/submit-your-ideas-for-interop-2027/",
-          "updated": "Thu, 03 Sep 2026 21:53:33 +0000"
-        },
-        {
-          "title": "Fixing Top-Level Await in Safari",
-          "link": "https://webkit.org/blog/18227/fixing-top-level-await-in-safari/",
-          "updated": "Wed, 02 Sep 2026 17:05:29 +0000"
         }
       ]
     },

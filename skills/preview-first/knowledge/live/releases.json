@@ -1,50 +1,55 @@
 {
-  "fetched": "2026-10-30T06:21:47+00:00",
+  "fetched": "2026-11-09T14:55:02+00:00",
   "releases": {
     "motion": {
       "url": "https://github.com/motiondivision/motion/releases.atom",
       "latest": {
-        "title": "v14.8.0",
-        "link": "https://github.com/motiondivision/motion/releases/tag/v14.8.0",
-        "updated": "2026-10-29T17:50:27Z"
+        "title": "v14.11.1",
+        "link": "https://github.com/motiondivision/motion/releases/tag/v14.11.1",
+        "updated": "2026-11-09T13:12:28Z"
       },
       "recent": [
         {
-          "title": "v14.8.0",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.8.0",
-          "updated": "2026-10-29T17:50:27Z"
+          "title": "v14.11.1",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.11.1",
+          "updated": "2026-11-09T13:12:28Z"
         },
         {
-          "title": "v14.7.2",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.7.2",
-          "updated": "2026-10-29T15:12:41Z"
+          "title": "v14.11.0",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.11.0",
+          "updated": "2026-11-09T10:31:22Z"
         },
         {
-          "title": "v14.7.1",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.7.1",
-          "updated": "2026-10-27T11:07:27Z"
+          "title": "v14.10.1",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.10.1",
+          "updated": "2026-11-06T14:05:42Z"
         },
         {
-          "title": "v14.7.0",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.7.0",
-          "updated": "2026-10-27T08:04:34Z"
+          "title": "v14.10.0",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.10.0",
+          "updated": "2026-11-06T09:25:56Z"
         },
         {
-          "title": "v14.6.0",
-          "link": "https://github.com/motiondivision/motion/releases/tag/v14.6.0",
-          "updated": "2026-10-22T07:43:26Z"
+          "title": "v14.9.1",
+          "link": "https://github.com/motiondivision/motion/releases/tag/v14.9.1",
+          "updated": "2026-11-04T06:29:03Z"
         }
       ],
-      "npm_weekly_downloads": 34079637
+      "npm_weekly_downloads": 34120754
     },
     "gsap": {
       "url": "https://github.com/greensock/GSAP/releases.atom",
       "latest": {
-        "title": "3.15.0",
-        "link": "https://github.com/greensock/GSAP/releases/tag/3.15.0",
-        "updated": "2026-04-13T13:08:30Z"
+        "title": "3.15.1",
+        "link": "https://github.com/greensock/GSAP/releases/tag/3.15.1",
+        "updated": "2026-11-04T00:56:17Z"
       },
       "recent": [
+        {
+          "title": "3.15.1",
+          "link": "https://github.com/greensock/GSAP/releases/tag/3.15.1",
+          "updated": "2026-11-04T00:56:17Z"
+        },
         {
           "title": "3.15.0",
           "link": "https://github.com/greensock/GSAP/releases/tag/3.15.0",
@@ -64,23 +69,28 @@
           "title": "3.14.0",
           "link": "https://github.com/greensock/GSAP/releases/tag/3.14.0",
           "updated": "2025-12-08T15:48:19Z"
-        },
-        {
-          "title": "3.13.0",
-          "link": "https://github.com/greensock/GSAP/releases/tag/3.13.0",
-          "updated": "2025-04-30T15:11:25Z"
         }
       ],
-      "npm_weekly_downloads": 7990988
+      "npm_weekly_downloads": 8085340
     },
     "tailwindcss": {
       "url": "https://github.com/tailwindlabs/tailwindcss/releases.atom",
       "latest": {
-        "title": "v4.3.3",
-        "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3",
-        "updated": "2026-07-16T11:55:08Z"
+        "title": "v4.3.5",
+        "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5",
+        "updated": "2026-11-06T15:05:05Z"
       },
       "recent": [
+        {
+          "title": "v4.3.5",
+          "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5",
+          "updated": "2026-11-06T15:05:05Z"
+        },
+        {
+          "title": "v4.3.4",
+          "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.4",
+          "updated": "2026-11-02T21:16:50Z"
+        },
         {
           "title": "v4.3.3",
           "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3",
@@ -95,19 +105,9 @@
           "title": "v4.3.1",
           "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.1",
           "updated": "2026-06-12T17:50:58Z"
-        },
-        {
-          "title": "v4.3.0",
-          "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.0",
-          "updated": "2026-05-08T20:17:25Z"
-        },
-        {
-          "title": "v4.2.4",
-          "link": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.4",
-          "updated": "2026-04-21T13:09:56Z"
         }
       ],
-      "npm_weekly_downloads": 169977879
+      "npm_weekly_downloads": 175805888
     },
     "shadcn": {
       "url": "https://github.com/shadcn-ui/ui/releases.atom",
@@ -143,7 +143,7 @@
           "updated": "2026-10-16T13:24:25Z"
         }
       ],
-      "npm_weekly_downloads": 16556361
+      "npm_weekly_downloads": 17840494
     },
     "radix-primitives": {
       "url": "https://github.com/radix-ui/primitives/releases.atom",
@@ -159,43 +159,43 @@
           "updated": "2026-07-25T00:00:41Z"
         }
       ],
-      "npm_weekly_downloads": 90486566
+      "npm_weekly_downloads": 92417178
     },
     "lucide": {
       "url": "https://github.com/lucide-icons/lucide/releases.atom",
       "latest": {
-        "title": "Version 1.65.0",
-        "link": "https://github.com/lucide-icons/lucide/releases/tag/1.65.0",
-        "updated": "2026-10-30T06:09:54Z"
+        "title": "Version 1.70.0",
+        "link": "https://github.com/lucide-icons/lucide/releases/tag/1.70.0",
+        "updated": "2026-11-06T06:07:53Z"
       },
       "recent": [
         {
-          "title": "Version 1.65.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.65.0",
-          "updated": "2026-10-30T06:09:54Z"
+          "title": "Version 1.70.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.70.0",
+          "updated": "2026-11-06T06:07:53Z"
         },
         {
-          "title": "Version 1.64.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.64.0",
-          "updated": "2026-10-29T06:10:25Z"
+          "title": "Version 1.69.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.69.0",
+          "updated": "2026-11-05T06:09:13Z"
         },
         {
-          "title": "Version 1.63.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.63.0",
-          "updated": "2026-10-28T06:08:39Z"
+          "title": "Version 1.68.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.68.0",
+          "updated": "2026-11-04T06:07:43Z"
         },
         {
-          "title": "Version 1.62.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.62.0",
-          "updated": "2026-10-27T06:10:27Z"
+          "title": "Version 1.67.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.67.0",
+          "updated": "2026-11-03T06:07:55Z"
         },
         {
-          "title": "Version 1.61.0",
-          "link": "https://github.com/lucide-icons/lucide/releases/tag/1.61.0",
-          "updated": "2026-10-21T06:10:24Z"
+          "title": "@lucide/lab@0.12.0",
+          "link": "https://github.com/lucide-icons/lucide/releases/tag/%40lucide%2Flab%400.12.0",
+          "updated": "2026-11-02T16:35:04Z"
         }
       ],
-      "npm_weekly_downloads": 130088213
+      "npm_weekly_downloads": 131189045
     },
     "phosphor": {
       "url": "https://github.com/phosphor-icons/core/releases.atom",
@@ -231,18 +231,18 @@
           "updated": "2023-03-05T10:27:51Z"
         }
       ],
-      "npm_weekly_downloads": 2640391
+      "npm_weekly_downloads": 2983488
     },
     "_npm": {
-      "motion": 34079637,
-      "gsap": 7990988,
-      "tailwindcss": 169977879,
-      "shadcn": 16556361,
-      "@radix-ui/react-dialog": 90486566,
-      "lucide-react": 130088213,
-      "@phosphor-icons/core": 2640391,
-      "@heroicons/react": 5930909,
-      "@tabler/icons-react": 5063519
+      "motion": 34120754,
+      "gsap": 8085340,
+      "tailwindcss": 175805888,
+      "shadcn": 17840494,
+      "@radix-ui/react-dialog": 92417178,
+      "lucide-react": 131189045,
+      "@phosphor-icons/core": 2983488,
+      "@heroicons/react": 6183416,
+      "@tabler/icons-react": 5220384
     }
   }
 }
